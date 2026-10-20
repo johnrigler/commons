@@ -1,0 +1,10 @@
+<section id="verify" aria-labelledby="verify-heading">
+    <div class="section-heading"><div><p class="eyebrow">02 / CHECK THE BYTES</p><h2 id="verify-heading">Verify a file</h2></div></div>
+    <p class="section-note">Choose a local file to check its CID filename or calculate a new name. Files stay in this browser until you explicitly pin them.</p>
+    <label class="file-drop">Choose a file<input id="local-file" type="file"></label>
+    <label class="field">Expected CID <span class="muted">optional; otherwise read from the filename</span><input id="expected-cid" type="text" spellcheck="false" autocomplete="off" placeholder="bafkrei…"></label>
+    <button id="verify-file" type="button">Calculate / verify</button>
+    <output id="file-result" class="file-result" aria-live="polite"></output>
+    <button id="download-file" type="button" hidden>Download with CID filename</button>
+    <button id="pin-file" type="button" disabled>Pin this file</button>
+</section>

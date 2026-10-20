@@ -1,0 +1,1 @@
+A statement records where and when its reasoning is intended to apply. Country, state, institution and administration period are separate descriptions of scope. An assembled case selects applicable statements and explains their relevance; it does not assume that every statement in a broader collection applies to every person or event.

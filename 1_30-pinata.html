@@ -1,0 +1,7 @@
+<section id="pinata" aria-labelledby="pinata-heading">
+    <div class="section-heading"><div><p class="eyebrow">03 / KEEP A PUBLIC COPY</p><h2 id="pinata-heading">Pinata</h2></div><span id="connection-state" class="badge">Disconnected</span></div>
+    <p class="section-note">Connect your account to pin selected statements and their edition manifest to public IPFS. Your token is held in memory and cleared when you disconnect or reload.</p>
+    <form id="pinata-form" class="connect-form"><label class="field">Pinata JWT<input id="pinata-token" type="password" autocomplete="off" spellcheck="false" placeholder="Paste a token with file read/write access" required></label><button type="submit" id="connect">Connect</button><button id="disconnect" type="button" disabled>Disconnect</button></form>
+    <div class="controls"><button id="pin-selected" class="primary" type="button" disabled>Pin selected edition</button><button id="check-pins" type="button" disabled>Check selected pins</button><button id="pin-page" type="button" disabled>Pin this page</button><button id="download-receipt" type="button" hidden>Download pin receipt</button></div>
+    <p class="fine-print">Public uploads keep the locally verified CID. Pin status reports the connected Pinata account; the tool never unpins existing editions.</p>
+</section>

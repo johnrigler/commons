@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Shared statements, individual cases, verifiable editions.">
+<title>Commons</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%231f4443'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-size='48' font-family='serif' fill='%23fff'%3EC%3C/text%3E%3C/svg%3E">
+<style>:root{color-scheme:light;--paper:#faf9f5;--ink:#233332;--muted:#61716e;--line:#d6ddd7;--accent:#245c51;--tint:#edf2eb;font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--paper);color:var(--ink)}a{color:var(--accent);text-underline-offset:4px}button,input,textarea{font:inherit}button{background:transparent;border:1px solid #a3b3aa;border-radius:4px;padding:9px 15px;cursor:pointer;color:var(--ink);font-size:.88rem}button:hover:enabled{background:var(--tint);border-color:var(--accent)}button:disabled{opacity:.45;cursor:default}button.primary{background:var(--accent);border-color:var(--accent);color:white}button.primary:hover:enabled{background:#1c493f}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #81b2a3;outline-offset:3px}input,textarea{background:#fff;border:1px solid #aebbb3;border-radius:4px;padding:10px 12px;min-width:0;color:var(--ink)}input[type=checkbox]{width:18px;height:18px;accent-color:var(--accent);cursor:pointer}input[type=search],input[type=password],input[type=text],textarea{width:100%}textarea{resize:vertical}.masthead,main,footer{max-width:1160px;margin:auto;padding-left:44px;padding-right:44px}.masthead{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:104px;border-bottom:1px solid var(--line)}.wordmark{font:36px/1.1 Georgia,serif;letter-spacing:-1.3px;text-decoration:none;color:var(--ink)}.edition{display:block;font:10px/2 system-ui,sans-serif;letter-spacing:2px;color:var(--muted)}nav{display:flex;flex-wrap:wrap;gap:24px;font-size:.85rem}nav a{text-decoration:none}.introduction{padding:66px 0 35px}.eyebrow{font-size:10px;letter-spacing:2px;font-weight:650;color:var(--accent);margin:0 0 14px}h1{font:clamp(44px,6.2vw,74px)/1.04 Georgia,serif;letter-spacing:-2.5px;margin:0 0 25px;font-weight:400}h2{font:34px/1.2 Georgia,serif;font-weight:400;margin:0}.lede{font:20px/1.5 Georgia,serif;max-width:600px;margin:0 0 28px;color:#485c56}.intro-meta{display:flex;gap:12px 26px;flex-wrap:wrap;font-size:11px;color:var(--muted)}.intro-meta a{color:inherit}.status{background:var(--tint);border-left:3px solid var(--accent);padding:13px 17px;font-size:.88rem;margin:14px 0 10px;overflow-wrap:anywhere}.status[data-error]{border-color:#9b3d2e;background:#f8eae3}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:16px}.section-heading .eyebrow{margin-bottom:8px}section:not(.introduction){padding:38px 0 42px;border-bottom:1px solid var(--line)}.section-note{max-width:800px;color:var(--muted);font-size:.88rem;margin:0 0 25px}.controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:16px 0}.search-label{flex:1;min-width:210px;font-size:11px;color:var(--muted)}.search-label input{margin-top:5px;display:block}.muted,.fine-print{color:var(--muted);font-size:.78rem}.fine-print{max-width:800px;margin-top:16px}.records{border-top:1px solid var(--line);margin-top:20px}.record{display:grid;grid-template-columns:30px 1fr;gap:10px;padding:18px 12px;border-bottom:1px solid var(--line)}.record:nth-child(even){background:#f0f2ec}.record[hidden]{display:none}.record>input{margin-top:5px}.record summary{cursor:pointer;display:flex;justify-content:space-between;align-items:start;gap:14px;list-style:none}.record summary::-webkit-details-marker{display:none}.record-title{font:21px/1.3 Georgia,serif}.record-title:before{content:'+';font:18px/1 monospace;display:inline-block;width:24px;color:var(--accent)}.record details[open] .record-title:before{content:'−'}.record-meta{font-size:10px;color:var(--muted);margin:8px 0 0 24px;letter-spacing:.5px}.badges{display:flex;flex-wrap:wrap;gap:5px;justify-content:end}.badge{display:inline-block;padding:3px 8px;border:1px solid var(--line);border-radius:3px;color:var(--muted);font-size:10px;white-space:nowrap}.badge.good{background:#e1eee4;border-color:#a1b9a8;color:#275236}.badge.bad{background:#f6e4df;border-color:#c79a8d;color:#8a3226}.statement-text{font:18px/1.65 Georgia,serif;white-space:pre-wrap;max-width:78ch;margin:24px 0 16px}.cid{font:11px/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere;word-break:break-all}.record-actions{display:flex;gap:8px;margin:14px 0}.record-actions button{padding:5px 10px;font-size:11px}.source-list{font-size:.78rem}.source-list a{overflow-wrap:anywhere}.bottom-controls{justify-content:space-between;font-size:.8rem}.field{display:block;font-size:12px;margin-bottom:16px}.field>input,.field>textarea{display:block;margin-top:6px}.file-drop{display:block;padding:22px;border:1px dashed #a3b3aa;border-radius:4px;margin-bottom:18px;font-size:.88rem}.file-drop input{display:block;max-width:100%;margin-top:10px;border:0;background:transparent;padding:0;font-size:12px}.file-result{display:block;font:12px/1.6 ui-monospace,monospace;overflow-wrap:anywhere;white-space:pre-wrap;margin:18px 0}.connect-form{display:flex;gap:10px;align-items:end;flex-wrap:wrap}.connect-form .field{flex:1;min-width:240px;margin:0}.tag-fields{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.prefix-field{display:flex;gap:8px;align-items:center;margin-top:8px;font-size:11px;color:var(--muted)}.prefix-field input{width:70px;font-family:monospace;padding:4px 8px}.table-scroll{overflow:auto}table{border-collapse:collapse;width:100%;font-size:12px;margin:24px 0}th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}th{color:var(--muted);font-weight:500}td:last-child{font-family:ui-monospace,monospace;overflow-wrap:anywhere}footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:27px;padding-bottom:34px;font-size:10px;color:var(--muted)}[hidden]{display:none!important}
+@media(max-width:650px){.masthead,main,footer{padding-left:20px;padding-right:20px}.masthead{align-items:start;flex-direction:column;justify-content:center;padding-top:22px;padding-bottom:19px;gap:15px}nav{gap:23px;font-size:12px}.introduction{padding-top:40px}h1{letter-spacing:-1.5px}.lede{font-size:18px}.section-heading{align-items:start}.record{padding:16px 6px;grid-template-columns:22px 1fr;gap:8px}.record summary{flex-direction:column;gap:10px}.badges{justify-content:start;margin-left:24px}.record-title{font-size:20px}.tag-fields{grid-template-columns:1fr;gap:0}.connect-form .field{min-width:100%}.controls button{padding:8px 10px;font-size:12px}.statement-text{font-size:17px}h2{font-size:29px}th,td{padding:10px 6px}}
+@media print{@page{size:letter;margin:.7in}body{background:white;color:black}.masthead nav,.controls,.record>input,.record-actions,#verify,#pinata,.connect-form,#announcement-form,button,.status{display:none!important}.masthead,main,footer{max-width:none;padding-left:0;padding-right:0}.masthead{min-height:65px}.introduction{padding:28px 0}h1{font-size:38px}.record{display:block;padding:12px 0;break-inside:avoid}.record[hidden]{display:none}.record details::details-content{display:block;content-visibility:visible}.record summary{display:block}.badges{display:block;margin-top:8px}.record-title:before{display:none}.record-meta{margin-left:0}.statement-text{font-size:12pt}.fine-print,.section-note{font-size:9pt}footer{font-size:8pt}a{color:black}}
+</style>
+</head>
+<body>
+<header class="masthead">
+    <a class="wordmark" href="#">Commons<span class="edition">01 / INITIAL EDITION</span></a>
+    <nav aria-label="Sections"><a href="#statements">Statements</a><a href="#verify">Verify</a><a href="#pinata">Pinata</a><a href="#announce">Litecoin</a></nav>
+</header>
+<main>
+<section class="introduction" aria-labelledby="page-title">
+    <p class="eyebrow">SHARED ARGUMENTS. INDIVIDUAL RECORDS.</p>
+    <h1 id="page-title">A common place<br>to build a case.</h1>
+    <p class="lede">Short statements with sources and scope. Reuse the applicable parts, add the evidence, and preserve the exact edition.</p>
+    <div class="intro-meta"><span>Maintained with SB Shell</span><span>Content addressed · CC0</span><a href="https://github.com/johnrigler/commons">Source on GitHub ↗</a></div>
+</section>
+<p id="status" class="status" role="status" aria-live="polite">Checking this edition…</p>
+<section id="statements" aria-labelledby="statements-heading">
+    <div class="section-heading"><div><p class="eyebrow">01 / SHARED MATERIAL</p><h2 id="statements-heading">Statements</h2></div><span id="statement-count" class="muted"></span></div>
+    <p class="section-note">The first entries describe the Commons design. Each is marked as a draft; a matching CID establishes its bytes.</p>
+    <div class="controls"><label class="search-label">Find a statement<input id="search" type="search" placeholder="Search text, scope, jurisdiction…"></label><button id="select-all" type="button">Select visible</button><button id="clear-selection" type="button">Clear</button><button id="verify-all" type="button">Verify edition</button></div>
+    <div id="records" class="records"></div>
+    <div class="controls bottom-controls"><span id="selection-count">0 selected</span><button id="download-edition" type="button">Download selected edition</button></div>
+</section>
+<section id="verify" aria-labelledby="verify-heading">
+    <div class="section-heading"><div><p class="eyebrow">02 / CHECK THE BYTES</p><h2 id="verify-heading">Verify a file</h2></div></div>
+    <p class="section-note">Choose a local file to check its CID filename or calculate a new name. Files stay in this browser until you explicitly pin them.</p>
+    <label class="file-drop">Choose a file<input id="local-file" type="file"></label>
+    <label class="field">Expected CID <span class="muted">optional; otherwise read from the filename</span><input id="expected-cid" type="text" spellcheck="false" autocomplete="off" placeholder="bafkrei…"></label>
+    <button id="verify-file" type="button">Calculate / verify</button>
+    <output id="file-result" class="file-result" aria-live="polite"></output>
+    <button id="download-file" type="button" hidden>Download with CID filename</button>
+    <button id="pin-file" type="button" disabled>Pin this file</button>
+</section>
+<section id="pinata" aria-labelledby="pinata-heading">
+    <div class="section-heading"><div><p class="eyebrow">03 / KEEP A PUBLIC COPY</p><h2 id="pinata-heading">Pinata</h2></div><span id="connection-state" class="badge">Disconnected</span></div>
+    <p class="section-note">Connect your account to pin selected statements and their edition manifest to public IPFS. Your token is held in memory and cleared when you disconnect or reload.</p>
+    <form id="pinata-form" class="connect-form"><label class="field">Pinata JWT<input id="pinata-token" type="password" autocomplete="off" spellcheck="false" placeholder="Paste a token with file read/write access" required></label><button type="submit" id="connect">Connect</button><button id="disconnect" type="button" disabled>Disconnect</button></form>
+    <div class="controls"><button id="pin-selected" class="primary" type="button" disabled>Pin selected edition</button><button id="check-pins" type="button" disabled>Check selected pins</button><button id="pin-page" type="button" disabled>Pin this page</button><button id="download-receipt" type="button" hidden>Download pin receipt</button></div>
+    <p class="fine-print">Public uploads keep the locally verified CID. Pin status reports the connected Pinata account; the tool never unpins existing editions.</p>
+</section>
+<section id="announce" aria-labelledby="announce-heading">
+    <div class="section-heading"><div><p class="eyebrow">04 / ANNOUNCE AN EDITION</p><h2 id="announce-heading">Litecoin Thunderwords</h2></div><span class="badge">Draft preparation</span></div>
+    <p class="section-note">Prepare the all-L index output and three readable tags for a later Chisel transaction. Edit the example to match the message body.</p>
+    <form id="announcement-form">
+        <div class="tag-fields">
+            <label class="field">Name / entity<input id="tag-name" value="NCS" maxlength="60"><span class="prefix-field">Prefix <input id="prefix-name" value="LLx" maxlength="3" aria-label="Name prefix"></span></label>
+            <label class="field">Transport<input id="tag-transport" value="GitHub" maxlength="60"><span class="prefix-field">Prefix <input id="prefix-transport" value="LMx" maxlength="3" aria-label="Transport prefix"></span></label>
+            <label class="field">Subject<input id="tag-subject" value="Rent escalation" maxlength="60"><span class="prefix-field">Prefix <input id="prefix-subject" value="LNx" maxlength="3" aria-label="Subject prefix"></span></label>
+        </div>
+        <label class="field">Announcement body<textarea id="announcement-body" rows="2" spellcheck="false">https://github.com/johnrigler/commons</textarea></label>
+        <div class="controls"><span id="message-bytes" class="muted"></span><button id="use-edition" type="button">Use selected edition CID</button><button type="submit" class="primary">Prepare Thunderwords</button></div>
+    </form>
+    <div id="announcement-result" hidden><div class="table-scroll"><table><thead><tr><th>Role</th><th>Thunderword / address</th></tr></thead><tbody id="announcement-outputs"></tbody></table></div><button id="download-announcement" type="button" disabled>Download announcement draft</button><p class="fine-print">Amounts remain unset. Chisel supplies funding, output amounts, fees, signing and broadcast.</p></div>
+</section>
+</main>
+<footer><span>Commons / first public edition</span><span>Daisy records · SB Shell assembles · Chisel anchors</span></footer>
+<noscript><p class="status">Enable JavaScript to verify files, connect Pinata and prepare Thunderwords.</p></noscript>
+<script id="commons-data" type="application/json">{"schema":"commons/catalog/1","profile":"cidv1-raw-sha256","repository":"https://github.com/johnrigler/commons","statements":[{"cid":"bafkreiapnlvuthyv6t7wes6ex3mhslakcjhu7d2oahjqxkjy7uz4hql7q4","path":"statements/bafkreiapnlvuthyv6t7wes6ex3mhslakcjhu7d2oahjqxkjy7uz4hql7q4.md","title":"Purpose of Commons","kind":"design","status":"draft","author":"Initial text drafted with Codex from John Rigler's project direction.","jurisdictions":[],"effective":"2026-10-20 project design","sources":[],"text":"Commons is a public collection of short, reusable statements with recorded sources, scope and review status. A person can select the statements that apply to a situation and combine them with their own evidence and dated actions. Each published edition preserves the exact statement versions it used, so another reader can reconstruct the argument and inspect its foundations.\n"},{"cid":"bafkreiecn6ckr5wnnzthk2tac6vlb3faaf3hbyyo64347z6l4tymj72wdy","path":"statements/bafkreiecn6ckr5wnnzthk2tac6vlb3faaf3hbyyo64347z6l4tymj72wdy.md","title":"Scope belongs to the statement","kind":"design","status":"draft","author":"Initial text drafted with Codex from John Rigler's project direction.","jurisdictions":[],"effective":"2026-10-20 project design","sources":[],"text":"A statement records where and when its reasoning is intended to apply. Country, state, institution and administration period are separate descriptions of scope. An assembled case selects applicable statements and explains their relevance; it does not assume that every statement in a broader collection applies to every person or event.\n"},{"cid":"bafkreib6kuivl44bymb2hhbgtwworzc24mox4jsmntextjk4pzpvykr7ia","path":"statements/bafkreib6kuivl44bymb2hhbgtwworzc24mox4jsmntextjk4pzpvykr7ia.md","title":"Evidence and interpretation","kind":"design","status":"draft","author":"Initial text drafted with Codex from John Rigler's project direction.","jurisdictions":[],"effective":"2026-10-20 project design","sources":[],"text":"A case keeps source records, a dated sequence of events, the author's interpretation and unresolved questions distinguishable. Reusable paragraphs provide shared reasoning. The individual record supplies the facts on which a particular request depends. A shared paragraph can be revised without rewriting the historical edition that an earlier case cited.\n"},{"cid":"bafkreihpfprw4ajlpobidwr4oybizftl43vxdxt2v7wxfhm4m4fqsylije","path":"statements/bafkreihpfprw4ajlpobidwr4oybizftl43vxdxt2v7wxfhm4m4fqsylije.md","title":"What a content identifier verifies","kind":"technical","status":"draft","author":"Initial text drafted with Codex from John Rigler's project direction.","jurisdictions":[],"effective":"2026-10-20 project design","sources":["https://docs.ipfs.tech/concepts/content-addressing/"],"text":"A content identifier identifies particular bytes using a declared encoding and cryptographic hash. In the Commons profile, a small file is one raw block addressed by CIDv1 with SHA-256. A matching filename lets a reader check that the bytes are the ones named. Sources and review support the meaning of a statement; a CID alone does not establish its truth, authorship or delivery.\n"}]}</script>
+<script>
+/* Commons profile: CIDv1, raw (0x55), sha2-256, lowercase base32. */
+globalThis.CommonsCID = (() => {
+    const MAX_BYTES = 1024 * 1024;
+    const alphabet = 'abcdefghijklmnopqrstuvwxyz234567';
+    const encoder = new TextEncoder();
+
+    function bytes(value) {
+        if (value instanceof Uint8Array) return value;
+        if (value instanceof ArrayBuffer) return new Uint8Array(value);
+        if (typeof value === 'string') return encoder.encode(value);
+        throw new TypeError('Expected UTF-8 text or file bytes.');
+    }
+
+    function base32(data) {
+        let output = '', buffer = 0, bits = 0;
+        for (const byte of data) {
+            buffer = (buffer << 8) | byte;
+            bits += 8;
+            while (bits >= 5) {
+                bits -= 5;
+                output += alphabet[(buffer >>> bits) & 31];
+            }
+        }
+        if (bits) output += alphabet[(buffer << (5 - bits)) & 31];
+        return output;
+    }
+
+    async function block(value) {
+        const data = bytes(value);
+        if (data.length > MAX_BYTES) throw new Error('This raw-block profile supports files up to 1 MiB.');
+        if (!globalThis.crypto?.subtle) throw new Error('Web Crypto requires HTTPS or localhost.');
+        const digest = new Uint8Array(await crypto.subtle.digest('SHA-256', data));
+        const id = new Uint8Array(36);
+        id.set([1, 0x55, 0x12, 0x20]);
+        id.set(digest, 4);
+        return { bytes: data, id, cid: 'b' + base32(id) };
+    }
+
+    async function cid(value) { return (await block(value)).cid; }
+
+    function filenameCID(name) {
+        const stem = name.split(/[\\/]/).pop().split('.')[0];
+        return /^bafkrei[a-z2-7]{52}$/.test(stem) ? stem : null;
+    }
+
+    async function verify(value, filename) {
+        const expected = filenameCID(filename);
+        if (!expected) throw new Error('The filename must be a raw CIDv1, optionally followed by an extension.');
+        const actual = await cid(value);
+        return { expected, actual, valid: expected === actual };
+    }
+
+    function varint(number) {
+        const output = [];
+        do {
+            let byte = number & 127;
+            number = Math.floor(number / 128);
+            if (number) byte |= 128;
+            output.push(byte);
+        } while (number);
+        return new Uint8Array(output);
+    }
+
+    function join(...arrays) {
+        const output = new Uint8Array(arrays.reduce((size, item) => size + item.length, 0));
+        let offset = 0;
+        for (const item of arrays) { output.set(item, offset); offset += item.length; }
+        return output;
+    }
+
+    async function car(value) {
+        const item = await block(value);
+        // DAG-CBOR { roots: [tag42(bytes(0x00 + CID))], version: 1 }.
+        const header = join(
+            new Uint8Array([0xa2, 0x65]), encoder.encode('roots'),
+            new Uint8Array([0x81, 0xd8, 0x2a, 0x58, 0x25, 0]), item.id,
+            new Uint8Array([0x67]), encoder.encode('version'), new Uint8Array([1])
+        );
+        return { cid: item.cid, bytes: join(varint(header.length), header, varint(36 + item.bytes.length), item.id, item.bytes) };
+    }
+
+    return { MAX_BYTES, bytes, cid, filenameCID, verify, car };
+})();
+</script>
+<script>
+/* Direct browser API calls. Tokens belong to the caller's session only. */
+globalThis.CommonsPinata = (() => {
+    async function request(url, token, options = {}, send = fetch) {
+        const controller = new AbortController();
+        const timer = setTimeout(() => controller.abort(), 60000);
+        try {
+            const response = await send(url, {
+                ...options, signal: controller.signal, credentials: 'omit',
+                headers: { Authorization: 'Bearer ' + token }
+            });
+            if (!response.ok) {
+                if (response.status === 401 || response.status === 403) {
+                    throw new Error('Pinata rejected the token. Check its file read/write permissions.');
+                }
+                throw new Error('Pinata returned HTTP ' + response.status + '.');
+            }
+            return await response.json();
+        } catch (error) {
+            if (error.name === 'AbortError') throw new Error('Pinata request timed out. Check pin status before retrying.');
+            if (error instanceof SyntaxError) throw new Error('Pinata returned an unreadable response.');
+            // Never display a provider/network error that might echo a credential.
+            if (!error.message.startsWith('Pinata ')) throw new Error('Pinata connection failed. Check your network and retry.');
+            throw error;
+        } finally { clearTimeout(timer); }
+    }
+
+    async function list(token, cid = '', send = fetch) {
+        const url = new URL('https://api.pinata.cloud/v3/files/public');
+        url.searchParams.set('limit', '10');
+        if (cid) url.searchParams.set('cid', cid);
+        const result = await request(url.href, token, {}, send);
+        if (!Array.isArray(result.data?.files)) throw new Error('Pinata returned an unexpected file listing.');
+        return result.data.files;
+    }
+
+    async function pin(token, value, expected, name = expected, send = fetch) {
+        if (!token?.trim()) throw new Error('Connect a Pinata token first.');
+        const archive = await CommonsCID.car(value);
+        if (archive.cid !== expected) throw new Error('CID mismatch. This file was not uploaded.');
+        const existing = (await list(token, expected, send)).find(file => file.cid === expected);
+        if (existing) return { cid: expected, id: existing.id, status: 'already-pinned' };
+        const form = new FormData();
+        form.append('network', 'public');
+        form.append('car', 'true');
+        form.append('file', new Blob([archive.bytes], { type: 'application/vnd.ipld.car' }), expected + '.car');
+        form.append('name', name);
+        const result = await request('https://uploads.pinata.cloud/v3/files', token, { method: 'POST', body: form }, send);
+        if (result.data?.cid !== expected || !result.data?.id) {
+            throw new Error('Pinata returned a different CID or an incomplete receipt. Publication was not confirmed.');
+        }
+        return { cid: expected, id: result.data.id, status: 'pinned', created_at: result.data.created_at || null };
+    }
+
+    return { list, pin };
+})();
+</script>
+<script>
+/* Litecoin announcement preparation, compatible with Chisel's 28+6 grammar. */
+globalThis.CommonsThunderwords = (() => {
+    const B58 = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz';
+    const ROOT = 'LLLLLLLLLLLLLLLLLLLLLLLLLLLLXgkk2V';
+    // Explicit Commons role profile; these are configurable, not a change to Chisel's parser.
+    const PREFIXES = Object.freeze({ name: 'LLx', transport: 'LMx', subject: 'LNx' });
+
+    function encode(text) {
+        return Array.from(String(text).trim().toUpperCase()).map(character => {
+            if (/\s/.test(character)) return 'x';
+            if (character === 'I') return 'i';
+            if (character === 'O' || character === '0') return 'o';
+            if (character === '-') return 'y';
+            if (character === '.') return 'v';
+            if (character === "'") return 't';
+            if (!B58.includes(character)) throw new Error('Cannot encode this Thunderword character: ' + character);
+            return character;
+        }).join('');
+    }
+
+    function decode58(text) {
+        let number = 0n;
+        for (const character of text) {
+            const digit = B58.indexOf(character);
+            if (digit < 0) throw new Error('Invalid Base58 character.');
+            number = number * 58n + BigInt(digit);
+        }
+        const output = new Uint8Array(25);
+        for (let i = 24; i >= 0; i--) { output[i] = Number(number & 255n); number >>= 8n; }
+        if (number) throw new Error('Address exceeds 25 bytes.');
+        return output;
+    }
+
+    function encode58(bytes) {
+        let number = 0n, output = '';
+        for (const byte of bytes) number = (number << 8n) + BigInt(byte);
+        while (number) { output = B58[Number(number % 58n)] + output; number /= 58n; }
+        return output;
+    }
+
+    async function checksum(bytes) {
+        const first = await crypto.subtle.digest('SHA-256', bytes);
+        return new Uint8Array(await crypto.subtle.digest('SHA-256', first)).slice(0, 4);
+    }
+
+    async function inspect(address) {
+        if (!/^L[1-9A-HJ-NP-Za-km-z]{33}$/.test(address)) throw new Error('Expected a 34-character Litecoin address.');
+        const bytes = decode58(address);
+        const check = await checksum(bytes.slice(0, 21));
+        if (bytes[0] !== 0x30 || !check.every((byte, index) => byte === bytes[21 + index])) {
+            throw new Error('Invalid Litecoin version or Base58Check checksum.');
+        }
+        return { address, version: bytes[0], valid: true };
+    }
+
+    async function generate(prefix, phrase) {
+        if (!/^L[1-9A-HJ-NP-Za-km-z]x$/.test(prefix)) throw new Error('Use an L, a Base58 modifier, and x as the prefix.');
+        const encoded = encode(phrase);
+        if (!encoded) throw new Error('Enter a name, transport or subject.');
+        if (prefix.length + encoded.length > 28) throw new Error('A Thunderword body can use at most 25 encoded characters; shorten this tag.');
+        const stem = (prefix + encoded).padEnd(28, 'z');
+        const bytes = decode58(stem + 'XXXXXX');
+        if (bytes[0] !== 0x30) throw new Error('This prefix is outside Litecoin mainnet P2PKH; use LLx, LMx or LNx.');
+        bytes.set(await checksum(bytes.slice(0, 21)), 21);
+        const address = encode58(bytes);
+        if (!address.startsWith(stem)) throw new Error('The checksum changed the requested stem. Choose a different tag or prefix.');
+        await inspect(address);
+        return { prefix, phrase: String(phrase).trim(), encoded, address };
+    }
+
+    async function draft({ name, transport, subject, message, prefixes = PREFIXES }) {
+        await inspect(ROOT);
+        const tags = [];
+        for (const [role, text] of Object.entries({ name, transport, subject })) {
+            tags.push({ role, ...await generate(prefixes[role], text) });
+        }
+        const payload = new TextEncoder().encode(message);
+        if (payload.length > 80) throw new Error('The announcement body exceeds the Chisel 80-byte OP_RETURN profile.');
+        const hex = Array.from(payload, byte => byte.toString(16).padStart(2, '0')).join('');
+        const push = payload.length <= 75 ? payload.length.toString(16).padStart(2, '0') : '4c' + payload.length.toString(16);
+        return {
+            schema: 'commons/litecoin-announcement/1', state: 'draft', coin: 'litecoin', network: 'mainnet',
+            roleProfile: { name: prefixes.name, transport: prefixes.transport, subject: prefixes.subject },
+            mainThunderword: { address: ROOT, label: 'Litecoin general Thunderword' }, tags,
+            message: { text: message, encoding: 'utf-8', hex, bytes: payload.length },
+            outputs: [
+                { role: 'general-index', address: ROOT, amountLitoshis: null },
+                ...tags.map(tag => ({ role: tag.role, address: tag.address, amountLitoshis: null })),
+                { role: 'op-return', amountLitoshis: 0, scriptPubKey: '6a' + push + hex }
+            ]
+        };
+    }
+
+    return { ROOT, PREFIXES, encode, generate, inspect, draft };
+})();
+</script>
+<script>
+(async () => {
+    'use strict';
+    const $ = selector => document.querySelector(selector);
+    const catalog = JSON.parse($('#commons-data').textContent);
+    const records = catalog.statements.map(record => ({ ...record, selected: true, valid: false, pin: 'Not checked' }));
+    let token = '', busy = false, local = null, receipt = null, announcement = null, announcementVersion = 0;
+
+    function status(message, error = false) {
+        $('#status').textContent = message;
+        $('#status').toggleAttribute('data-error', error);
+    }
+
+    function download(value, name, type = 'application/octet-stream') {
+        const url = URL.createObjectURL(new Blob([value], { type }));
+        const link = document.createElement('a');
+        link.href = url; link.download = name; link.click();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+
+    function selected() { return records.filter(record => record.selected); }
+
+    function edition() {
+        if (!selected().length) throw new Error('Select at least one statement.');
+        return {
+            schema: 'commons/edition/1', profile: catalog.profile, repository: catalog.repository,
+            statements: selected().map(({ cid, path, title, kind, status, author, jurisdictions, effective, sources }) =>
+                ({ cid, path, title, kind, status, author, jurisdictions, effective, sources }))
+        };
+    }
+
+    function editionBytes() { return CommonsCID.bytes(JSON.stringify(edition(), null, 2) + '\n'); }
+
+    function controls() {
+        const count = selected().length;
+        $('#selection-count').textContent = count + ' selected';
+        $('#download-edition').disabled = busy || !count;
+        $('#pin-selected').disabled = busy || !token || !count;
+        $('#check-pins').disabled = busy || !token || !count;
+        $('#pin-page').disabled = busy || !token;
+        $('#pin-file').disabled = busy || !token || !local || local.valid === false;
+        $('#connect').disabled = busy || !!token;
+        $('#disconnect').disabled = busy || !token;
+        $('#pinata-token').disabled = busy || !!token;
+        for (const element of document.querySelectorAll('#select-all, #clear-selection, #verify-all, .record > input')) element.disabled = busy;
+    }
+
+    async function operation(work) {
+        if (busy) return;
+        busy = true; controls();
+        try { await work(); } catch (error) { status(error.message, true); }
+        finally { busy = false; controls(); }
+    }
+
+    function badge(text, className = '') {
+        const item = document.createElement('span');
+        item.className = 'badge ' + className; item.textContent = text;
+        return item;
+    }
+
+    function updateRecord(record) {
+        record.badges.replaceChildren(
+            badge(record.status || 'draft'),
+            badge(record.valid ? 'CID match' : 'CID unchecked', record.valid ? 'good' : ''),
+            badge(record.pin, record.pin === 'Pinned' ? 'good' : record.pin === 'Error' ? 'bad' : '')
+        );
+    }
+
+    function render() {
+        const container = $('#records');
+        for (const record of records) {
+            const row = document.createElement('article'); row.className = 'record';
+            const check = document.createElement('input'); check.type = 'checkbox'; check.checked = record.selected;
+            check.setAttribute('aria-label', 'Select ' + record.title);
+            check.addEventListener('change', () => { record.selected = check.checked; controls(); });
+            const details = document.createElement('details');
+            const summary = document.createElement('summary');
+            const title = document.createElement('span'); title.className = 'record-title'; title.textContent = record.title;
+            record.badges = document.createElement('span'); record.badges.className = 'badges';
+            summary.append(title, record.badges);
+            const meta = document.createElement('p'); meta.className = 'record-meta';
+            meta.textContent = [record.kind, (record.jurisdictions || []).join(' / ') || 'General', record.effective || 'No date restriction'].join(' · ');
+            const text = document.createElement('p'); text.className = 'statement-text'; text.textContent = record.text;
+            const cid = document.createElement('p'); cid.className = 'cid'; cid.textContent = record.cid;
+            const author = document.createElement('p'); author.className = 'fine-print'; author.textContent = record.author;
+            const actions = document.createElement('div'); actions.className = 'record-actions';
+            const save = document.createElement('button'); save.type = 'button'; save.textContent = 'Download statement';
+            save.onclick = () => download(CommonsCID.bytes(record.text), record.cid + '.md', 'text/markdown;charset=utf-8');
+            const copy = document.createElement('button'); copy.type = 'button'; copy.textContent = 'Copy CID';
+            copy.onclick = async () => {
+                try { await navigator.clipboard.writeText(record.cid); status('CID copied.'); }
+                catch { status('Clipboard unavailable. The full CID is displayed in the statement.', true); }
+            };
+            actions.append(save, copy);
+            details.append(summary, meta, text, cid, author, actions);
+            if (record.sources?.length) {
+                const sources = document.createElement('p'); sources.className = 'source-list'; sources.append('Sources: ');
+                for (const source of record.sources) {
+                    const url = new URL(source);
+                    if (url.protocol !== 'https:') continue;
+                    const link = document.createElement('a'); link.href = url.href; link.textContent = url.hostname + url.pathname;
+                    link.target = '_blank'; link.rel = 'noopener noreferrer'; sources.append(link, ' ');
+                }
+                details.append(sources);
+            }
+            row.append(check, details); container.append(row); record.element = row;
+            updateRecord(record);
+        }
+        $('#statement-count').textContent = records.length + ' statements';
+        controls();
+    }
+
+    async function verifyRecord(record) {
+        const result = await CommonsCID.verify(CommonsCID.bytes(record.text), record.path);
+        record.valid = result.valid && result.expected === record.cid;
+        updateRecord(record);
+        if (!record.valid) throw new Error('CID mismatch: ' + record.title + '.');
+    }
+
+    async function verifyEdition() {
+        let failed = 0;
+        for (const record of records) {
+            try { await verifyRecord(record); } catch { failed++; }
+        }
+        status(failed ? failed + ' statement(s) failed verification.' : records.length + ' statement filenames match their bundled bytes. Pinata ' + (token ? 'connected.' : 'disconnected.'), !!failed);
+    }
+
+    $('#search').addEventListener('input', event => {
+        const query = event.target.value.toLowerCase();
+        let count = 0;
+        for (const record of records) {
+            record.element.hidden = ![record.title, record.text, record.kind, ...(record.jurisdictions || [])].join(' ').toLowerCase().includes(query);
+            if (!record.element.hidden) count++;
+        }
+        $('#statement-count').textContent = count + ' of ' + records.length + ' statements';
+    });
+    $('#select-all').onclick = () => { for (const record of records) if (!record.element.hidden) { record.selected = true; record.element.firstChild.checked = true; } controls(); };
+    $('#clear-selection').onclick = () => { for (const record of records) { record.selected = false; record.element.firstChild.checked = false; } controls(); };
+    $('#verify-all').onclick = () => operation(verifyEdition);
+    $('#download-edition').onclick = () => operation(async () => {
+        for (const record of selected()) await verifyRecord(record);
+        const bytes = editionBytes(); download(bytes, await CommonsCID.cid(bytes) + '.json', 'application/json');
+        status('Selected edition manifest downloaded.');
+    });
+
+    $('#verify-file').onclick = () => operation(async () => {
+        local = null; $('#download-file').hidden = true;
+        const file = $('#local-file').files[0];
+        if (!file) throw new Error('Choose a local file first.');
+        if (file.size > CommonsCID.MAX_BYTES) throw new Error('This profile supports files up to 1 MiB.');
+        const bytes = new Uint8Array(await file.arrayBuffer());
+        const cid = await CommonsCID.cid(bytes);
+        const explicit = $('#expected-cid').value.trim();
+        const expected = explicit || CommonsCID.filenameCID(file.name);
+        if (explicit && CommonsCID.filenameCID(explicit) !== explicit) throw new Error('Expected CID must use the Commons raw CIDv1 profile.');
+        const valid = expected ? cid === expected : null;
+        $('#file-result').textContent = (valid === true ? 'MATCH' : valid === false ? 'MISMATCH' : 'CID CALCULATED') + '\n' + cid + '\n' + bytes.length + ' bytes' + (expected ? '\nExpected: ' + expected : '\nThe original filename contains no supported CID.');
+        const suffix = file.name.match(/\.[a-z0-9]{1,10}$/i)?.[0] || '';
+        local = { bytes, cid, suffix, valid, type: file.type || 'application/octet-stream' };
+        $('#download-file').hidden = false;
+        status(valid === false ? 'The file differs from the expected CID.' : 'Local file processed; no upload was made.', valid === false);
+    });
+    for (const element of [$('#local-file'), $('#expected-cid')]) element.addEventListener('input', () => { local = null; $('#file-result').textContent = ''; $('#download-file').hidden = true; controls(); });
+    $('#download-file').onclick = () => { if (local) download(local.bytes, local.cid + local.suffix, local.type); };
+    $('#pin-file').onclick = () => operation(async () => {
+        if (!local || local.valid === false) throw new Error('Calculate a matching local file CID first.');
+        status('Pinning the local file to public IPFS…');
+        const result = await CommonsPinata.pin(token, local.bytes, local.cid, local.cid + local.suffix);
+        receipt = { schema: 'commons/pin-receipt/1', checkedAt: new Date().toISOString(), complete: true, files: [result], manifest: null };
+        $('#download-receipt').hidden = false; status('Local file stored in Pinata: ' + result.cid);
+    });
+
+    $('#pinata-form').addEventListener('submit', event => {
+        event.preventDefault();
+        operation(async () => {
+            const candidate = $('#pinata-token').value.trim(); $('#pinata-token').value = '';
+            if (!candidate) throw new Error('Enter a Pinata JWT.');
+            status('Checking the Pinata connection…');
+            await CommonsPinata.list(candidate);
+            token = candidate; $('#connection-state').textContent = 'Connected'; $('#connection-state').className = 'badge good';
+            status('Pinata connected. Select statements, then pin the edition.');
+        });
+    });
+    $('#disconnect').onclick = () => {
+        token = ''; $('#pinata-token').value = ''; $('#connection-state').textContent = 'Disconnected'; $('#connection-state').className = 'badge';
+        for (const record of records) { record.pin = 'Not checked'; updateRecord(record); }
+        status('Pinata token cleared from this session.'); controls();
+    };
+    $('#check-pins').onclick = () => operation(async () => {
+        for (const record of selected()) {
+            const files = await CommonsPinata.list(token, record.cid);
+            record.pin = files.some(file => file.cid === record.cid) ? 'Pinned' : 'Not in account'; updateRecord(record);
+        }
+        status('Selected pin statuses checked against the connected account.');
+    });
+    $('#pin-page').onclick = () => operation(async () => {
+        if (!/^https?:$/.test(location.protocol)) throw new Error('Serve this page over HTTP/HTTPS, or choose the HTML snapshot under Verify a file.');
+        status('Reading the published HTML bytes…');
+        const url = new URL(location.href); url.hash = '';
+        const response = await fetch(url.href, { cache: 'no-store', credentials: 'omit' });
+        if (!response.ok) throw new Error('Could not read the published page.');
+        const bytes = new Uint8Array(await response.arrayBuffer()), cid = await CommonsCID.cid(bytes);
+        const expected = CommonsCID.filenameCID(url.pathname);
+        if (expected && expected !== cid) throw new Error('The page bytes do not match its CID filename.');
+        const result = await CommonsPinata.pin(token, bytes, cid, cid + '.html');
+        receipt = { schema: 'commons/pin-receipt/1', checkedAt: new Date().toISOString(), complete: true, files: [result], manifest: null };
+        $('#download-receipt').hidden = false; status('Self-contained page stored in Pinata: ' + result.cid);
+    });
+    $('#pin-selected').onclick = () => operation(async () => {
+        const chosen = selected();
+        receipt = { schema: 'commons/pin-receipt/1', checkedAt: new Date().toISOString(), complete: false, files: [], manifest: null };
+        $('#download-receipt').hidden = false;
+        for (const record of chosen) {
+            try {
+                status('Verifying and pinning ' + record.title + '…');
+                await verifyRecord(record);
+                const result = await CommonsPinata.pin(token, CommonsCID.bytes(record.text), record.cid, record.cid + '.md');
+                receipt.files.push(result); record.pin = 'Pinned'; updateRecord(record);
+            } catch (error) {
+                record.pin = 'Error'; updateRecord(record); throw error;
+            }
+        }
+        const bytes = editionBytes(), cid = await CommonsCID.cid(bytes);
+        status('Pinning the edition manifest…');
+        receipt.manifest = await CommonsPinata.pin(token, bytes, cid, cid + '.json');
+        receipt.complete = true;
+        status(chosen.length + ' statements and the edition manifest are in Pinata. Edition: ' + cid);
+    });
+    $('#download-receipt').onclick = () => { if (receipt) download(JSON.stringify(receipt, null, 2) + '\n', 'commons-pin-receipt.json', 'application/json'); };
+
+    function invalidateAnnouncement() {
+        announcementVersion++; announcement = null; $('#download-announcement').disabled = true; $('#announcement-result').hidden = true;
+        const size = CommonsCID.bytes($('#announcement-body').value).length;
+        $('#message-bytes').textContent = size + ' / 80 bytes';
+    }
+    $('#announcement-form').addEventListener('input', invalidateAnnouncement);
+    $('#use-edition').onclick = () => operation(async () => {
+        for (const record of selected()) await verifyRecord(record);
+        const cid = await CommonsCID.cid(editionBytes());
+        $('#announcement-body').value = 'ipfs://' + cid; invalidateAnnouncement();
+        status('Edition CID placed in the announcement body. Pin the edition to make that reference available through IPFS.');
+    });
+    $('#announcement-form').addEventListener('submit', event => {
+        event.preventDefault();
+        operation(async () => {
+            invalidateAnnouncement(); const version = announcementVersion;
+            const result = await CommonsThunderwords.draft({
+                name: $('#tag-name').value, transport: $('#tag-transport').value, subject: $('#tag-subject').value,
+                prefixes: { name: $('#prefix-name').value, transport: $('#prefix-transport').value, subject: $('#prefix-subject').value },
+                message: $('#announcement-body').value
+            });
+            if (version !== announcementVersion) throw new Error('The announcement changed while preparing it. Prepare it again.');
+            announcement = result;
+            const table = $('#announcement-outputs'); table.replaceChildren();
+            for (const output of result.outputs) {
+                const row = document.createElement('tr'), role = document.createElement('td'), address = document.createElement('td');
+                role.textContent = output.role; address.textContent = output.address || output.scriptPubKey;
+                row.append(role, address); table.append(row);
+            }
+            $('#announcement-result').hidden = false; $('#download-announcement').disabled = false;
+            status('Litecoin Thunderwords and OP_RETURN prepared. Output amounts and transaction signing remain in Chisel.');
+        });
+    });
+    $('#download-announcement').onclick = () => { if (announcement) download(JSON.stringify(announcement, null, 2) + '\n', 'commons-litecoin-announcement.json', 'application/json'); };
+
+    window.addEventListener('pagehide', () => { token = ''; $('#pinata-token').value = ''; });
+    render(); invalidateAnnouncement();
+    await operation(verifyEdition);
+})().catch(() => {
+    const output = document.querySelector('#status');
+    if (output) { output.textContent = 'This edition could not be loaded. Check the source catalog and rebuild.'; output.setAttribute('data-error', ''); }
+});
+</script>
+</body>
+</html>

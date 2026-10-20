@@ -1,0 +1,17 @@
+<section id="announce" aria-labelledby="announce-heading">
+    <div class="section-heading"><div><p class="eyebrow">04 / ANNOUNCE AN EDITION</p><h2 id="announce-heading">Litecoin Thunderwords</h2></div><span class="badge">Draft preparation</span></div>
+    <p class="section-note">Prepare the all-L index output and three readable tags for a later Chisel transaction. Edit the example to match the message body.</p>
+    <form id="announcement-form">
+        <div class="tag-fields">
+            <label class="field">Name / entity<input id="tag-name" value="NCS" maxlength="60"><span class="prefix-field">Prefix <input id="prefix-name" value="LLx" maxlength="3" aria-label="Name prefix"></span></label>
+            <label class="field">Transport<input id="tag-transport" value="GitHub" maxlength="60"><span class="prefix-field">Prefix <input id="prefix-transport" value="LMx" maxlength="3" aria-label="Transport prefix"></span></label>
+            <label class="field">Subject<input id="tag-subject" value="Rent escalation" maxlength="60"><span class="prefix-field">Prefix <input id="prefix-subject" value="LNx" maxlength="3" aria-label="Subject prefix"></span></label>
+        </div>
+        <label class="field">Announcement body<textarea id="announcement-body" rows="2" spellcheck="false">https://github.com/johnrigler/commons</textarea></label>
+        <div class="controls"><span id="message-bytes" class="muted"></span><button id="use-edition" type="button">Use selected edition CID</button><button type="submit" class="primary">Prepare Thunderwords</button></div>
+    </form>
+    <div id="announcement-result" hidden><div class="table-scroll"><table><thead><tr><th>Role</th><th>Thunderword / address</th></tr></thead><tbody id="announcement-outputs"></tbody></table></div><button id="download-announcement" type="button" disabled>Download announcement draft</button><p class="fine-print">Amounts remain unset. Chisel supplies funding, output amounts, fees, signing and broadcast.</p></div>
+</section>
+</main>
+<footer><span>Commons / first public edition</span><span>Daisy records · SB Shell assembles · Chisel anchors</span></footer>
+<noscript><p class="status">Enable JavaScript to verify files, connect Pinata and prepare Thunderwords.</p></noscript>

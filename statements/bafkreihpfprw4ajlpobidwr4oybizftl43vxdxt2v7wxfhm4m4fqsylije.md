@@ -1,0 +1,1 @@
+A content identifier identifies particular bytes using a declared encoding and cryptographic hash. In the Commons profile, a small file is one raw block addressed by CIDv1 with SHA-256. A matching filename lets a reader check that the bytes are the ones named. Sources and review support the meaning of a statement; a CID alone does not establish its truth, authorship or delivery.

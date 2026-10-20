@@ -1,0 +1,71 @@
+{
+  "schema": "commons/litecoin-announcement/1",
+  "state": "draft",
+  "coin": "litecoin",
+  "network": "mainnet",
+  "roleProfile": {
+    "name": "LLx",
+    "transport": "LMx",
+    "subject": "LNx"
+  },
+  "mainThunderword": {
+    "address": "LLLLLLLLLLLLLLLLLLLLLLLLLLLLXgkk2V",
+    "label": "Litecoin general Thunderword"
+  },
+  "tags": [
+    {
+      "role": "name",
+      "prefix": "LLx",
+      "phrase": "NCS",
+      "encoded": "NCS",
+      "address": "LLxNCSzzzzzzzzzzzzzzzzzzzzzzd6Kx4V"
+    },
+    {
+      "role": "transport",
+      "prefix": "LMx",
+      "phrase": "GitHub",
+      "encoded": "GiTHUB",
+      "address": "LMxGiTHUBzzzzzzzzzzzzzzzzzzzTEK6sA"
+    },
+    {
+      "role": "subject",
+      "prefix": "LNx",
+      "phrase": "Rent escalation",
+      "encoded": "RENTxESCALATioN",
+      "address": "LNxRENTxESCALATioNzzzzzzzzzzaSZbWd"
+    }
+  ],
+  "message": {
+    "text": "https://github.com/johnrigler/commons",
+    "encoding": "utf-8",
+    "hex": "68747470733a2f2f6769746875622e636f6d2f6a6f686e7269676c65722f636f6d6d6f6e73",
+    "bytes": 37
+  },
+  "outputs": [
+    {
+      "role": "general-index",
+      "address": "LLLLLLLLLLLLLLLLLLLLLLLLLLLLXgkk2V",
+      "amountLitoshis": null
+    },
+    {
+      "role": "name",
+      "address": "LLxNCSzzzzzzzzzzzzzzzzzzzzzzd6Kx4V",
+      "amountLitoshis": null
+    },
+    {
+      "role": "transport",
+      "address": "LMxGiTHUBzzzzzzzzzzzzzzzzzzzTEK6sA",
+      "amountLitoshis": null
+    },
+    {
+      "role": "subject",
+      "address": "LNxRENTxESCALATioNzzzzzzzzzzaSZbWd",
+      "amountLitoshis": null
+    },
+    {
+      "role": "op-return",
+      "amountLitoshis": 0,
+      "scriptPubKey": "6a2568747470733a2f2f6769746875622e636f6d2f6a6f686e7269676c65722f636f6d6d6f6e73"
+    }
+  ]
+}

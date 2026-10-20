@@ -1,0 +1,1 @@
+Commons is a public collection of short, reusable statements with recorded sources, scope and review status. A person can select the statements that apply to a situation and combine them with their own evidence and dated actions. Each published edition preserves the exact statement versions it used, so another reader can reconstruct the argument and inspect its foundations.

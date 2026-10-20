@@ -1,0 +1,1 @@
+A case keeps source records, a dated sequence of events, the author's interpretation and unresolved questions distinguishable. Reusable paragraphs provide shared reasoning. The individual record supplies the facts on which a particular request depends. A shared paragraph can be revised without rewriting the historical edition that an earlier case cited.

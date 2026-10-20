@@ -1,0 +1,53 @@
+{
+  "schema": "commons/catalog/1",
+  "profile": "cidv1-raw-sha256",
+  "repository": "https://github.com/johnrigler/commons",
+  "statements": [
+    {
+      "cid": "bafkreiapnlvuthyv6t7wes6ex3mhslakcjhu7d2oahjqxkjy7uz4hql7q4",
+      "path": "statements/bafkreiapnlvuthyv6t7wes6ex3mhslakcjhu7d2oahjqxkjy7uz4hql7q4.md",
+      "title": "Purpose of Commons",
+      "kind": "design",
+      "status": "draft",
+      "author": "Initial text drafted with Codex from John Rigler's project direction.",
+      "jurisdictions": [],
+      "effective": "2026-10-20 project design",
+      "sources": []
+    },
+    {
+      "cid": "bafkreiecn6ckr5wnnzthk2tac6vlb3faaf3hbyyo64347z6l4tymj72wdy",
+      "path": "statements/bafkreiecn6ckr5wnnzthk2tac6vlb3faaf3hbyyo64347z6l4tymj72wdy.md",
+      "title": "Scope belongs to the statement",
+      "kind": "design",
+      "status": "draft",
+      "author": "Initial text drafted with Codex from John Rigler's project direction.",
+      "jurisdictions": [],
+      "effective": "2026-10-20 project design",
+      "sources": []
+    },
+    {
+      "cid": "bafkreib6kuivl44bymb2hhbgtwworzc24mox4jsmntextjk4pzpvykr7ia",
+      "path": "statements/bafkreib6kuivl44bymb2hhbgtwworzc24mox4jsmntextjk4pzpvykr7ia.md",
+      "title": "Evidence and interpretation",
+      "kind": "design",
+      "status": "draft",
+      "author": "Initial text drafted with Codex from John Rigler's project direction.",
+      "jurisdictions": [],
+      "effective": "2026-10-20 project design",
+      "sources": []
+    },
+    {
+      "cid": "bafkreihpfprw4ajlpobidwr4oybizftl43vxdxt2v7wxfhm4m4fqsylije",
+      "path": "statements/bafkreihpfprw4ajlpobidwr4oybizftl43vxdxt2v7wxfhm4m4fqsylije.md",
+      "title": "What a content identifier verifies",
+      "kind": "technical",
+      "status": "draft",
+      "author": "Initial text drafted with Codex from John Rigler's project direction.",
+      "jurisdictions": [],
+      "effective": "2026-10-20 project design",
+      "sources": [
+        "https://docs.ipfs.tech/concepts/content-addressing/"
+      ]
+    }
+  ]
+}
