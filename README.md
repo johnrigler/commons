@@ -18,6 +18,16 @@ The initial entries are **draft descriptions of this design**. They do not make
 findings about a debt, company or individual. The NCS / GitHub / rent escalation
 fields in the announcement form are editable examples.
 
+## Current reading draft
+
+[Open the interactive request and explanations](reading/bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq.html)
+or [download the four-page PDF for printing or email](reading/Commons-Request-and-Explanations.pdf).
+
+The draft covers **unsupported rent acceleration** and **deterrence through
+administrative burden**, with linked explanations and editable organization
+names. [Reading-edition notes and source parts](reading/) record authorship,
+scope, review status and exact artifact hashes.
+
 ## Label sources, then tell the story
 
 The preferred case workflow is to give the sources descriptive labels, then
@@ -230,3 +240,4 @@ symlink behavior. Run browser checks after changing the interface.
 
 The repository retains its existing CC0 1.0 Universal dedication in `LICENSE`.
 Record third-party material and its terms separately when adding sources.
+

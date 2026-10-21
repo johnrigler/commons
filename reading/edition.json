@@ -1,0 +1,54 @@
+{
+  "title": "Commons: Dispute Request and Shared Explanations",
+  "author": "John Rigler",
+  "date": "2026-10-21",
+  "status": "Unsigned reading draft; reviewed by the author in conversation; no independent legal review recorded",
+  "scope": "Reusable credit-report dispute opening and general explanatory pages; no private case evidence included",
+  "artifacts": [
+    {
+      "path": "bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq.html",
+      "media_type": "text/html",
+      "sha256": "54d8ec7ffd6e41e64764321f1c1c082b8135c0db68b0e22c66ea4900b14d8a6c",
+      "cid": "bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq"
+    },
+    {
+      "path": "Commons-Request-and-Explanations.pdf",
+      "media_type": "application/pdf",
+      "pages": 4,
+      "sha256": "7164851476fd0f9cb5caf7a2de827d8a202769104b8d3c528388b32568931f40",
+      "cid": "bafkreidrmscri5x5b6ollsxxulpie7mkeatwseclru6ffa4iwmswrey7ia"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sludge Audits",
+      "author": "Cass R. Sunstein",
+      "date": "2020",
+      "url": "https://hls.harvard.edu/bibliography/sludge-audits/"
+    },
+    {
+      "title": "Administrative Burden as a Mechanism of Inequality in Policy Implementation",
+      "authors": [
+        "Pamela Herd",
+        "Hilary Hoynes",
+        "Jamila Michener",
+        "Donald Moynihan"
+      ],
+      "date": "2023",
+      "url": "https://www.rsfjournal.org/content/9/5/1"
+    },
+    {
+      "title": "FDCPA Annual Report 2024, section 1.2.1",
+      "author": "Consumer Financial Protection Bureau",
+      "date": "2024-09",
+      "url": "https://files.consumerfinance.gov/f/documents/cfpb_fdcpa-2024-annual-report_2024-09.pdf#page=12"
+    }
+  ],
+  "checks": [
+    "Exact imported HTML and PDF bytes preserved",
+    "Authoring files reconstruct the frozen HTML byte for byte",
+    "Four-page PDF visually reviewed before import",
+    "HTML anchor and control checks completed before import; browser rendering unavailable"
+  ],
+  "publication": "GitHub copy only; no IPFS pin, signature, or ledger transaction claimed"
+}
