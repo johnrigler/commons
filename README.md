@@ -2,11 +2,17 @@
 
 Shared statements, individual cases, verifiable editions.
 
-Commons holds paragraph-sized arguments and source references that people can
+Commons holds reusable arguments and source references that people can
 reuse in their own cases. Country, state, institution and administration period
 describe a statement's scope. The individual case adds its evidence, dated
 events, correspondence and requested actions. An edition names the exact
 versions it selected.
+
+Documents can be as long as their argument needs. HTML/SB Shell is the
+authoring and reading path; a PDF can be a signed publication edition.
+[The October 20 direction](docs/SIGNED-EDITIONS.md) records the rent/NCS/Experian
+cluster, embedded and external signatures, paper QR references and next steps.
+This does not change the current reader's CID profile or frozen statements.
 
 The initial entries are **draft descriptions of this design**. They do not make
 findings about a debt, company or individual. The NCS / GitHub / rent escalation
@@ -16,7 +22,7 @@ fields in the announcement form are editable examples.
 
 The preferred case workflow is to give the sources descriptive labels, then
 have an assistant assemble a source-grounded narrative using reusable Commons
-paragraphs. Manual attachment placement is optional. See
+documents. Manual attachment placement is optional. See
 [Source labels to narrative](docs/SOURCE-LABELS.md). Individual evidence stays
 in its intended Daisy record; private identity fields stay in the local home
 database used by Mogwai.

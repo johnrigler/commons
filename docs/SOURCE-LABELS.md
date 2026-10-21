@@ -30,7 +30,7 @@ documented facts and inferences distinguishable. An unfamiliar signature
 appearance alone does not establish fabrication, approval scope or signer
 identity.
 
-Select reusable Commons paragraphs by their exact CIDs where they fit.
+Select reusable Commons statements/documents by their exact CIDs where they fit.
 Connect them to the individual case's sources and requested action. Preserve
 source references so the reader can follow each factual claim. A claim may
 remain an open question rather than becoming a categorical assertion.
@@ -47,10 +47,14 @@ one edition. Existing exhibit identifiers can be retained when an earlier
 edition already uses them. Manual placement remains an optional editorial
 tool; it is not a prerequisite for labeling sources.
 
-Freeze the selected paragraphs, source references and order only after the
+Freeze the selected statement versions, source references and order only after the
 edition has been reviewed. Existing CID-named statements and snapshots are
 immutable; a changed argument or edition gets a new CID.
 
 This note records the preferred authoring workflow. It does not claim an
 automatic AI narrative service or new source-labeling interface is already
 implemented in the public Commons reader.
+
+The [October 20 signed-edition direction](SIGNED-EDITIONS.md) removes the
+paragraph-length editorial assumption. HTML authoring, a signed PDF edition
+and an external wallet/ledger commitment are distinct artifacts and stages.
