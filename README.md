@@ -12,6 +12,15 @@ The initial entries are **draft descriptions of this design**. They do not make
 findings about a debt, company or individual. The NCS / GitHub / rent escalation
 fields in the announcement form are editable examples.
 
+## Label sources, then tell the story
+
+The preferred case workflow is to give the sources descriptive labels, then
+have an assistant assemble a source-grounded narrative using reusable Commons
+paragraphs. Manual attachment placement is optional. See
+[Source labels to narrative](docs/SOURCE-LABELS.md). Individual evidence stays
+in its intended Daisy record; private identity fields stay in the local home
+database used by Mogwai.
+
 ## Run it
 
 Open `index.html`, or serve the repository with any static web server:
@@ -111,7 +120,7 @@ The working filesystem provides the structure:
 
 This is a small publication assembler for Commons, using SB Shell's ordered
 includes and symlink conventions. SB Shell's live directory viewer, catalog,
-clipboard and PHP endpoints remain in `johnrigler/sbshell`; they are not copied
+clipboard and PHP endpoints remain in `johnrigler/mogwai/sbshell/`; they are not copied
 into the public reader.
 
 Rebuild with PHP 8+ and Bash:
@@ -205,7 +214,7 @@ symlink behavior. Run browser checks after changing the interface.
 
 - [Daisy 2026](https://github.com/johnrigler/daisy_2026): chronological records;
   the week 43 design brief provides background for this direction.
-- [SB Shell](https://github.com/johnrigler/sbshell): filesystem organization,
+- [SB Shell](https://github.com/johnrigler/mogwai/tree/main/sbshell): filesystem organization,
   ordered publication and print layout.
 - [Chisel](https://github.com/johnrigler/chisel): transaction tooling and
   Thunderword streams.
