@@ -20,8 +20,48 @@ test('portal references existing frozen documents and valid fragments without in
         assert.equal(await CommonsCID.cid(text), item.cid);
         assert.ok(text.includes('id="' + item.fragment + '"'));
         assert.ok(item.related.every(id=>ids.has(id)));
+        assert.ok((item.companies || []).every(id=>catalog.items.some(target=>target.id===id && P.recordClass(target)==='company')));
         assert.notEqual(item.kind, 'attestation');
     }
+});
+
+test('company and article views filter independently and search company roles and legal names', () => {
+    const companies=P.visible(catalog.items,'','','company');
+    const articles=P.visible(catalog.items,'','','article');
+    assert.equal(companies.length,7);
+    assert.equal(articles.length,25);
+    assert.equal(companies.length+articles.length,P.visible(catalog.items).length);
+    assert.ok(companies.every(item=>item.kind==='description' && item.legal_name && item.role));
+    assert.ok(articles.every(item=>P.recordClass(item)==='article'));
+    assert.equal(P.visible(catalog.items,'','NCS','company')[0].id,'company-ncs');
+    assert.equal(P.visible(catalog.items,'','Experian Information Solutions','company')[0].id,'company-experian');
+    assert.equal(P.visible(catalog.items,'','creditor representation','company')[0].id,'company-rausch-sturm');
+    assert.deepEqual(P.visible(catalog.items,'attestation','','company'),[]);
+});
+
+test('company references preserve separate entity labels and exact profile sections', async () => {
+    const profiles=catalog.items.filter(item=>P.recordClass(item)==='company');
+    const manifest=JSON.parse(await readFile(new URL('../reading/companies/edition.json',import.meta.url),'utf8'));
+    for (const profile of profiles) {
+        const ref=P.companyReference(profile);
+        assert.equal(ref.schema,'commons/company-reference/1');
+        assert.equal(ref.company.legal_name,profile.legal_name);
+        assert.deepEqual(ref.profile,P.reference(profile));
+        assert.ok(manifest.profiles.some(item=>item.id===profile.id && item.cid===ref.profile.cid && item.fragment===ref.profile.fragment));
+    }
+    const funding=P.companyReference(profiles.find(item=>item.id==='company-midland-funding'));
+    const servicing=P.companyReference(profiles.find(item=>item.id==='company-midland-credit'));
+    assert.notEqual(funding.company.legal_name,servicing.company.legal_name);
+    assert.ok(!P.sameReference(funding.profile,servicing.profile));
+    assert.throws(()=>P.companyReference(parent),/company profile/);
+    assert.throws(()=>P.companyReference({...profiles[0],cid:'invalid'}),/company profile/);
+    const reply=await P.create(profiles[0],{...fields,indexed:true,record_class:'company'});
+    const item=P.item(reply);
+    assert.equal(P.recordClass(item),'article');
+    assert.deepEqual(item.parent,P.reference(profiles[0]));
+    assert.equal(P.visible([item],'','','company').length,0);
+    assert.equal(P.visible([item],'','','article').length,1);
+    assert.throws(()=>P.companyReference(item),/company profile/);
 });
 
 test('consolidated entry URLs open the current article without duplicating the feed', () => {

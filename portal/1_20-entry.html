@@ -7,9 +7,16 @@
     <p id="reader-loading" class="reader-loading" role="status" hidden>Opening article…</p>
     <div id="reader-content" class="reader-content" hidden></div>
     <div id="detail-links" class="document-links"></div>
+    <section id="company-reference" class="company-reference" aria-labelledby="company-reference-title" hidden>
+      <h2 id="company-reference-title">Reuse this company profile</h2>
+      <p>Reference the company alongside the relevant argument. The case supplies the records connecting the company to a particular event.</p>
+      <button id="download-company-reference" type="button">Download company reference</button>
+      <details><summary>Show company reference</summary><pre><code id="company-reference-json"></code></pre></details>
+    </section>
     <button id="add-below" type="button">Add below</button>
     <details class="reference-details"><summary>Edition reference</summary><code id="detail-cid"></code><p id="document-check"></p></details>
   </article>
+  <section id="companies-section" class="connection-section" aria-labelledby="companies-title" hidden><h2 id="companies-title">Company profiles</h2><p id="companies-description">Organizational background connected to this subject.</p><div id="company-items" class="portal-grid"></div></section>
   <section id="related-section" class="connection-section" aria-labelledby="related-title"><h2 id="related-title">Connected material</h2><div id="related-items" class="portal-grid"></div></section>
   <section class="connection-section" aria-labelledby="responses-title"><h2 id="responses-title">Added below</h2><div id="response-items" class="portal-grid"></div><p id="responses-empty" class="empty">No contributions here yet.</p></section>
   <section class="contribution-section" aria-labelledby="contribution-heading">

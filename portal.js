@@ -2,7 +2,7 @@
     'use strict';
     const $ = selector => document.querySelector(selector);
     const data = JSON.parse($('#portal-data').textContent);
-    let drafts = [], selected = null, kind = '', topic = '';
+    let drafts = [], selected = null, kind = '', topic = '', view = 'article';
     const dialog = $('#portal-reader');
     let storageError = '';
     try { drafts = await CommonsPortal.load(); }
@@ -21,6 +21,8 @@
         return items;
     };
     const find = id => all().find(item => item.id === id);
+    const isCompany = item => CommonsPortal.recordClass(item) === 'company';
+    const closeReader = () => { location.hash = view === 'company' ? 'view=companies' : ''; };
 
     function message(text, error = false) {
         for (const status of [$('#portal-status'), $('#reader-message')]) {
@@ -38,19 +40,19 @@
 
     function meta(item) {
         const p = document.createElement('p'); p.className = 'item-meta';
-        p.textContent = item.kind + ' · ' + item.author + (item.local ? ' · ' + item.status : '');
+        p.textContent = (isCompany(item) ? 'Company profile · ' + item.role : item.kind + ' · ' + item.author) + (item.local ? ' · ' + item.status : '');
         return p;
     }
 
     function card(item) {
-        const article = document.createElement('article'); article.className = 'portal-card';
+        const article = document.createElement('article'); article.className = 'portal-card' + (isCompany(item) ? ' company-card' : '');
         const heading = document.createElement('h2');
         heading.append(link(item.title, '#item=' + encodeURIComponent(item.id)));
         const p = document.createElement('p'); p.textContent = item.summary;
         const bottom = document.createElement('div'); bottom.className = 'card-bottom';
         bottom.append(link('Open →', '#item=' + encodeURIComponent(item.id)));
         const count = document.createElement('span');
-        count.textContent = item.parent ? 'Response' : (item.related?.length || 0) + ' connections';
+        count.textContent = item.parent ? 'Response' : (item.related?.length || 0) + (isCompany(item) ? ' related articles' : ' connections');
         const subjects = document.createElement('div'); subjects.className = 'card-subjects';
         for (const subject of item.topics || []) {
             const label = document.createElement('span'); label.textContent = subject; subjects.append(label);
@@ -61,8 +63,9 @@
 
     function renderTopics() {
         const container = $('#portal-topics');
-        if (!container.children.length) {
-            for (const subject of ['', ...new Set(data.items.flatMap(item => item.topics || []))]) {
+        if (container.dataset.view !== view) {
+            container.replaceChildren(); container.dataset.view = view;
+            for (const subject of ['', ...new Set(data.items.filter(item => CommonsPortal.recordClass(item) === view).flatMap(item => item.topics || []))]) {
                 const button = document.createElement('button'); button.type = 'button'; button.dataset.topic = subject;
                 button.textContent = subject || 'All subjects';
                 button.onclick = () => { topic = subject; renderFeed(); };
@@ -73,9 +76,16 @@
     }
 
     function renderFeed() {
-        const items = CommonsPortal.visible(all(), kind, $('#portal-search').value).filter(item => !topic || item.topics?.includes(topic));
+        const items = CommonsPortal.visible(all(), kind, $('#portal-search').value, view).filter(item => !topic || item.topics?.includes(topic));
         $('#portal-cards').replaceChildren(...items.map(card));
-        $('#portal-count').textContent = items.length + (items.length === 1 ? ' entry' : ' entries');
+        $('#portal-count').textContent = items.length + (view === 'company' ? (items.length === 1 ? ' company profile' : ' company profiles') : (items.length === 1 ? ' entry' : ' entries'));
+        $('#entry-types').hidden = view === 'company';
+        $('#view-title').textContent = view === 'company' ? 'Company profiles' : 'Articles';
+        $('#view-description').textContent = view === 'company'
+            ? 'Legal identities, business roles, official records, and connections to the broader arguments. Each company can be referenced separately.'
+            : 'Reusable arguments, explanations, stories, and contributions across subjects.';
+        $('#portal-search').placeholder = view === 'company' ? 'Experian, NCS, debt buyer…' : 'Disability, New Mexico, Grapevine…';
+        for (const button of document.querySelectorAll('[data-view]')) button.setAttribute('aria-pressed', String((button.dataset.view === 'companies') === (view === 'company')));
         $('#portal-empty').hidden = !!items.length;
         $('#portal-empty').textContent = kind === 'attestation'
             ? 'No attestations in this collection yet. Open a document to add one.'
@@ -116,6 +126,14 @@
         setTimeout(() => URL.revokeObjectURL(url), 1000);
     }
 
+    function downloadCompanyReference() {
+        if (!selected || !isCompany(selected)) return;
+        const text = JSON.stringify(CommonsPortal.companyReference(selected), null, 2) + '\n';
+        const url = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
+        const a = link('Download', url); a.download = selected.id + '-reference.json'; a.click();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+
     function show(item) {
         selected = item;
         $('#portal-detail').hidden = !item;
@@ -126,7 +144,8 @@
             return;
         }
         $('#detail-title').textContent = item.title;
-        $('#detail-meta').textContent = item.kind + ' · ' + item.status + ' · ' + item.author;
+        $('#detail-meta').textContent = (isCompany(item) ? 'Company profile · ' + item.role : item.kind) + ' · ' + item.status + ' · ' + item.author;
+        $('#reader-print').textContent = isCompany(item) ? 'Print profile' : 'Print article';
         $('#detail-text').textContent = item.text || item.summary;
         $('#detail-cid').textContent = item.cid + (item.fragment ? '#' + item.fragment : '');
         $('#detail-links').replaceChildren();
@@ -138,11 +157,19 @@
             save.onclick = () => download(item);
             $('#detail-links').append(save, link('Publish / announce', 'publish.html#contribution=' + item.id));
         }
+        $('#company-reference').hidden = !isCompany(item);
+        $('#company-reference-json').textContent = isCompany(item) ? JSON.stringify(CommonsPortal.companyReference(item), null, 2) : '';
+        const companies = (item.companies || []).map(find).filter(entry => entry && isCompany(entry));
+        $('#company-items').replaceChildren(...companies.map(card));
+        $('#companies-section').hidden = !companies.length;
+        $('#companies-title').textContent = isCompany(item) ? 'Related companies' : 'Company profiles';
+        $('#companies-description').textContent = isCompany(item) ? 'Keep each legal entity and its role identifiable.' : 'Organizational background connected to this subject.';
         const related = (item.related || []).map(find).filter(Boolean);
         const parent = item.parent && all().find(candidate => CommonsPortal.sameReference(CommonsPortal.reference(candidate), item.parent));
         if (parent && !related.includes(parent)) related.unshift(parent);
         $('#related-items').replaceChildren(...related.map(card));
         $('#related-section').hidden = !related.length;
+        $('#related-title').textContent = isCompany(item) ? 'Related articles' : 'Connected material';
         const children = all().filter(child => child.parent && CommonsPortal.sameReference(child.parent, CommonsPortal.reference(item)));
         $('#response-items').replaceChildren(...children.map(card));
         $('#responses-empty').hidden = !!children.length;
@@ -158,22 +185,28 @@
         const hash = new URLSearchParams(location.hash.slice(1));
         const id = hash.get('item');
         const item = id && find(id);
+        const nextView = item ? CommonsPortal.recordClass(item) : hash.get('view') === 'companies' ? 'company' : 'article';
+        if (nextView !== view) {
+            view = nextView; kind = ''; topic = ''; $('#portal-search').value = '';
+        }
+        renderFeed();
         show(item || null);
         if (id && !item) message('That entry is not in this collection or your saved contributions.', true);
         else if (!storageError) message('');
     }
 
     $('#portal-search').addEventListener('input', renderFeed);
-    $('#reader-close').onclick = () => { location.hash = ''; };
+    $('#reader-close').onclick = closeReader;
     $('#reader-print').onclick = () => window.print();
+    $('#download-company-reference').onclick = downloadCompanyReference;
     dialog.addEventListener('close', () => {
         document.body.classList.remove('reader-open');
-        if (new URLSearchParams(location.hash.slice(1)).has('item')) location.hash = '';
+        if (selected && new URLSearchParams(location.hash.slice(1)).has('item')) closeReader();
     });
     dialog.addEventListener('click', event => {
         if (event.target !== dialog) return;
         const box = dialog.getBoundingClientRect();
-        if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) location.hash = '';
+        if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) closeReader();
     });
     $('#reader-content').addEventListener('click', event => {
         const anchor = event.target.closest('a[data-reader-anchor]');
@@ -182,6 +215,7 @@
         document.getElementById(anchor.dataset.readerAnchor)?.scrollIntoView({ block: 'start' });
     });
     for (const button of document.querySelectorAll('[data-kind]')) button.onclick = () => { kind = button.dataset.kind; renderFeed(); };
+    for (const button of document.querySelectorAll('[data-view]')) button.onclick = () => { location.hash = button.dataset.view === 'companies' ? 'view=companies' : ''; };
     $('#add-below').onclick = () => { $('#contribution-form').scrollIntoView({ behavior: 'smooth' }); $('#contribution-title').focus(); };
     $('#contribution-form').addEventListener('submit', async event => {
         event.preventDefault();

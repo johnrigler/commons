@@ -98,13 +98,27 @@ The religious-exemption subject is another possible article area within Religion
 with scope and sources still to be selected. It need not connect to the burden
 article. Parsonage Exemption illustrates an intersection, not a new legal claim.
 
+## Company profiles
+
+Recorded October 22, 2026. Company profiles are a separate class between broad
+arguments and individual case evidence. They identify organizations such as
+Experian, National Credit Systems, Rausch Sturm, and the distinct Midland
+entities, using public sources. They connect to relevant arguments and to
+related companies without becoming accounts of individual disputes.
+
+The portal's **Companies** view implements this distinction. Articles link
+company profiles through a typed `companies` relationship. Profiles provide a
+`commons/company-reference/1` download naming the company and exact profile
+edition. A final case can cite an argument for its reasoning and a company
+profile for organizational background; its own records establish the actor,
+account, conduct, and requested action. See [the portal format](PORTAL.md).
+
 ## Publication structure
 
 Keep articles identifiable by title, author, scope, sources and exact edition.
 Retain the established numbered source parts and immutable snapshots. Existing
-HTML articles remain the concrete documents. This note records the relationship
-model; it does not claim a topic-filtering interface or new catalog schema has
-already been implemented.
+HTML articles remain the concrete documents. Subject filters and the separate
+company directory are views of this catalog, not mandatory stream categories.
 
 ## Why this structure matters
 

@@ -31,6 +31,42 @@ Independent publishers do not need this catalog's approval to publish to the
 shared address. Later readers and scribes can retrieve those records and build
 their own views, as described in [the address and scribes](ADDRESS-AND-SCRIBES.md).
 
+## Company profiles and typed references
+
+The **Articles** and **Companies** collections are separate views. Open
+`index.html#view=companies` for the company directory, or `#item=company-experian`
+for a profile. Closing a profile returns to Companies; opening an argument
+selects Articles. Subject and search filters apply within the selected class.
+
+Catalog entries with `record_class: "company"` have `legal_name`, `role`, and
+`sources_checked` fields. Missing `record_class` means `article`, preserving
+existing editions and local contributions. Profiles use the existing
+`description` kind; the four contribution kinds and contribution wire format
+are unchanged. A reply to a company profile is a contribution, and does not
+inherit company-profile status.
+
+`related` connects articles; `companies` explicitly links company profile IDs.
+The PHP assembler rejects company links to missing or ordinary article entries.
+These links describe relevance, not an allegation that a company took part in
+any particular case. Company assertions name their sources and dates; a
+company description, complaint, procedural order, and settled finding retain
+their different meanings.
+
+**Download company reference** exports `commons/company-reference/1` JSON:
+
+```json
+{
+  "schema": "commons/company-reference/1",
+  "company": {"id": "company-experian", "name": "Experian", "legal_name": "Experian Information Solutions, Inc."},
+  "profile": {"cid": "<exact edition CID>", "fragment": "company-experian"}
+}
+```
+
+This lets a later document distinguish a company reference from a reference to
+a general argument. The CID and fragment identify the profile edition; the
+label is not independent legal-identity verification. Case evidence must
+establish the company's involvement and its role in the specific event.
+
 ## B form: Commons as transport
 
 The intended meeting point is the Commons **transport tag**, the B / second

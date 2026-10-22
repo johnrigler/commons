@@ -253,6 +253,12 @@
       "topics": [
         "Courts & civil process",
         "Housing & credit"
+      ],
+      "companies": [
+        "company-ncs",
+        "company-rausch-sturm",
+        "company-midland-funding",
+        "company-midland-credit"
       ]
     },
     {
@@ -274,6 +280,11 @@
       "topics": [
         "Courts & civil process",
         "Housing & credit"
+      ],
+      "companies": [
+        "company-rausch-sturm",
+        "company-midland-funding",
+        "company-midland-credit"
       ]
     },
     {
@@ -295,6 +306,9 @@
       ],
       "topics": [
         "Housing & credit"
+      ],
+      "companies": [
+        "company-ncs"
       ]
     },
     {
@@ -316,6 +330,13 @@
       ],
       "topics": [
         "Housing & credit"
+      ],
+      "companies": [
+        "company-experian",
+        "company-equifax",
+        "company-transunion",
+        "company-ncs",
+        "company-midland-credit"
       ]
     },
     {
@@ -377,6 +398,13 @@
       "topics": [
         "Housing & credit",
         "Commons practice"
+      ],
+      "companies": [
+        "company-experian",
+        "company-equifax",
+        "company-transunion",
+        "company-ncs",
+        "company-midland-credit"
       ]
     },
     {
@@ -566,7 +594,12 @@
         "Courts & civil process",
         "Housing & credit"
       ],
-      "consolidated_into": "debt-default"
+      "consolidated_into": "debt-default",
+      "companies": [
+        "company-rausch-sturm",
+        "company-midland-funding",
+        "company-midland-credit"
+      ]
     },
     {
       "id": "debt-ownership",
@@ -589,7 +622,13 @@
         "Courts & civil process",
         "Housing & credit"
       ],
-      "consolidated_into": "records-proof"
+      "consolidated_into": "records-proof",
+      "companies": [
+        "company-ncs",
+        "company-rausch-sturm",
+        "company-midland-funding",
+        "company-midland-credit"
+      ]
     },
     {
       "id": "records-recollection",
@@ -612,7 +651,13 @@
         "Courts & civil process",
         "Housing & credit"
       ],
-      "consolidated_into": "records-proof"
+      "consolidated_into": "records-proof",
+      "companies": [
+        "company-ncs",
+        "company-rausch-sturm",
+        "company-midland-funding",
+        "company-midland-credit"
+      ]
     },
     {
       "id": "debt-recollection",
@@ -634,7 +679,12 @@
         "Courts & civil process",
         "Housing & credit"
       ],
-      "consolidated_into": "debt-default"
+      "consolidated_into": "debt-default",
+      "companies": [
+        "company-rausch-sturm",
+        "company-midland-funding",
+        "company-midland-credit"
+      ]
     },
     {
       "id": "traffic-toll",
@@ -656,6 +706,196 @@
         "Traffic & public revenue"
       ],
       "consolidated_into": "traffic-insurance"
+    },
+    {
+      "id": "company-experian",
+      "record_class": "company",
+      "kind": "description",
+      "title": "Experian",
+      "legal_name": "Experian Information Solutions, Inc.",
+      "role": "Credit reporting",
+      "summary": "The U.S. reporting entity, its dispute process, and the status of the CFPB lawsuit.",
+      "cid": "bafkreia6cikakacd6dpsj4ctn2p4jwchc4qzkdp4ig5ghcxbtivu25uw3q",
+      "path": "reading/companies/bafkreia6cikakacd6dpsj4ctn2p4jwchc4qzkdp4ig5ghcxbtivu25uw3q.html",
+      "fragment": "company-experian",
+      "author": "John Rigler",
+      "status": "Unsigned researched company profile · 22 October 2026",
+      "sources_checked": "2026-10-22",
+      "indexed": true,
+      "related": [
+        "credit-reporting",
+        "records-proof",
+        "request"
+      ],
+      "companies": [
+        "company-equifax",
+        "company-transunion"
+      ],
+      "topics": [
+        "Housing & credit"
+      ]
+    },
+    {
+      "id": "company-equifax",
+      "record_class": "company",
+      "kind": "description",
+      "title": "Equifax",
+      "legal_name": "Equifax Information Services LLC",
+      "role": "Credit reporting",
+      "summary": "The consumer-reporting entity, the 2025 consent order, and official dispute routes.",
+      "cid": "bafkreia6cikakacd6dpsj4ctn2p4jwchc4qzkdp4ig5ghcxbtivu25uw3q",
+      "path": "reading/companies/bafkreia6cikakacd6dpsj4ctn2p4jwchc4qzkdp4ig5ghcxbtivu25uw3q.html",
+      "fragment": "company-equifax",
+      "author": "John Rigler",
+      "status": "Unsigned researched company profile · 22 October 2026",
+      "sources_checked": "2026-10-22",
+      "indexed": true,
+      "related": [
+        "credit-reporting",
+        "records-proof",
+        "request"
+      ],
+      "companies": [
+        "company-experian",
+        "company-transunion"
+      ],
+      "topics": [
+        "Housing & credit"
+      ]
+    },
+    {
+      "id": "company-transunion",
+      "record_class": "company",
+      "kind": "description",
+      "title": "TransUnion",
+      "legal_name": "Trans Union LLC",
+      "role": "Credit and background reporting",
+      "summary": "Credit-report and tenant-screening identities, the 2023 settlement, and traceable information sources.",
+      "cid": "bafkreia6cikakacd6dpsj4ctn2p4jwchc4qzkdp4ig5ghcxbtivu25uw3q",
+      "path": "reading/companies/bafkreia6cikakacd6dpsj4ctn2p4jwchc4qzkdp4ig5ghcxbtivu25uw3q.html",
+      "fragment": "company-transunion",
+      "author": "John Rigler",
+      "status": "Unsigned researched company profile · 22 October 2026",
+      "sources_checked": "2026-10-22",
+      "indexed": true,
+      "related": [
+        "credit-reporting",
+        "records-proof",
+        "rent-acceleration"
+      ],
+      "companies": [
+        "company-experian",
+        "company-equifax"
+      ],
+      "topics": [
+        "Housing & credit"
+      ]
+    },
+    {
+      "id": "company-ncs",
+      "record_class": "company",
+      "kind": "description",
+      "title": "National Credit Systems",
+      "legal_name": "National Credit Systems, Inc.",
+      "role": "Rental collections",
+      "summary": "NCS, its property-collection services, and the scope of a CFPB investigative order.",
+      "cid": "bafkreia6cikakacd6dpsj4ctn2p4jwchc4qzkdp4ig5ghcxbtivu25uw3q",
+      "path": "reading/companies/bafkreia6cikakacd6dpsj4ctn2p4jwchc4qzkdp4ig5ghcxbtivu25uw3q.html",
+      "fragment": "company-ncs",
+      "author": "John Rigler",
+      "status": "Unsigned researched company profile · 22 October 2026",
+      "sources_checked": "2026-10-22",
+      "indexed": true,
+      "related": [
+        "rent-acceleration",
+        "credit-reporting",
+        "records-proof",
+        "request"
+      ],
+      "companies": [],
+      "topics": [
+        "Housing & credit"
+      ]
+    },
+    {
+      "id": "company-rausch-sturm",
+      "record_class": "company",
+      "kind": "description",
+      "title": "Rausch Sturm LLP",
+      "legal_name": "Rausch Sturm LLP",
+      "role": "Creditor representation",
+      "summary": "A creditor law firm, its published dispute routes, and the distinction between representation and account ownership.",
+      "cid": "bafkreia6cikakacd6dpsj4ctn2p4jwchc4qzkdp4ig5ghcxbtivu25uw3q",
+      "path": "reading/companies/bafkreia6cikakacd6dpsj4ctn2p4jwchc4qzkdp4ig5ghcxbtivu25uw3q.html",
+      "fragment": "company-rausch-sturm",
+      "author": "John Rigler",
+      "status": "Unsigned researched company profile · 22 October 2026",
+      "sources_checked": "2026-10-22",
+      "indexed": true,
+      "related": [
+        "debt-default",
+        "records-proof"
+      ],
+      "companies": [],
+      "topics": [
+        "Courts & civil process"
+      ]
+    },
+    {
+      "id": "company-midland-funding",
+      "record_class": "company",
+      "kind": "description",
+      "title": "Midland Funding LLC",
+      "legal_name": "Midland Funding LLC",
+      "role": "Debt purchasing",
+      "summary": "A debt buyer, its relationship to MCM, and the dated Encore enforcement records.",
+      "cid": "bafkreia6cikakacd6dpsj4ctn2p4jwchc4qzkdp4ig5ghcxbtivu25uw3q",
+      "path": "reading/companies/bafkreia6cikakacd6dpsj4ctn2p4jwchc4qzkdp4ig5ghcxbtivu25uw3q.html",
+      "fragment": "company-midland-funding",
+      "author": "John Rigler",
+      "status": "Unsigned researched company profile · 22 October 2026",
+      "sources_checked": "2026-10-22",
+      "indexed": true,
+      "related": [
+        "records-proof",
+        "debt-default",
+        "credit-reporting"
+      ],
+      "companies": [
+        "company-midland-credit"
+      ],
+      "topics": [
+        "Housing & credit",
+        "Courts & civil process"
+      ]
+    },
+    {
+      "id": "company-midland-credit",
+      "record_class": "company",
+      "kind": "description",
+      "title": "Midland Credit Management, Inc.",
+      "legal_name": "Midland Credit Management, Inc.",
+      "role": "Debt purchasing and servicing",
+      "summary": "MCM as buyer, servicer, and furnisher; company reporting policy and selected official records.",
+      "cid": "bafkreia6cikakacd6dpsj4ctn2p4jwchc4qzkdp4ig5ghcxbtivu25uw3q",
+      "path": "reading/companies/bafkreia6cikakacd6dpsj4ctn2p4jwchc4qzkdp4ig5ghcxbtivu25uw3q.html",
+      "fragment": "company-midland-credit",
+      "author": "John Rigler",
+      "status": "Unsigned researched company profile · 22 October 2026",
+      "sources_checked": "2026-10-22",
+      "indexed": true,
+      "related": [
+        "credit-reporting",
+        "records-proof",
+        "debt-default"
+      ],
+      "companies": [
+        "company-midland-funding"
+      ],
+      "topics": [
+        "Housing & credit",
+        "Courts & civil process"
+      ]
     }
   ]
 }

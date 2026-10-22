@@ -13,6 +13,21 @@ globalThis.CommonsPortal = (() => {
         return !!a && !!b && a.cid === b.cid && (a.fragment || '') === (b.fragment || '');
     }
 
+    function recordClass(item) {
+        return item.record_class || 'article';
+    }
+
+    function companyReference(item) {
+        if (recordClass(item) !== 'company' || !/^company-[a-z0-9-]+$/.test(item.id)
+            || !CID.test(item.cid) || !/^[a-zA-Z0-9_-]{1,100}$/.test(item.fragment || '')
+            || !item.title || !item.legal_name) throw new Error('Select a published company profile.');
+        return {
+            schema: 'commons/company-reference/1',
+            company: { id: item.id, name: item.title, legal_name: item.legal_name },
+            profile: reference(item)
+        };
+    }
+
     function validate(record) {
         if (!record || record.schema !== 'commons/contribution/1' || !KINDS.includes(record.kind)) throw new Error('Unsupported contribution record.');
         for (const [key, max] of [['title', 160], ['text', 10000], ['author', 160]]) {
@@ -73,15 +88,16 @@ globalThis.CommonsPortal = (() => {
             title: entry.record.title, summary: entry.record.text.slice(0, 220),
             text: entry.record.text, author: entry.record.author || 'Unstated author',
             indexed: entry.record.indexed, status: 'Local unsigned draft',
-            parent: entry.record.parent, source: entry.record.source, related: [], local: true
+            parent: entry.record.parent, source: entry.record.source, related: [], record_class: 'article', local: true
         };
     }
 
-    function visible(items, kind = '', query = '') {
+    function visible(items, kind = '', query = '', recordType = '') {
         const needle = query.trim().toLowerCase();
         return items.filter(entry => entry.indexed && (!kind || entry.kind === kind)
-            && [entry.title, entry.summary, entry.author, ...(entry.topics || [])].join(' ').toLowerCase().includes(needle));
+            && (!recordType || recordClass(entry) === recordType)
+            && [entry.title, entry.summary, entry.author, entry.legal_name || '', entry.role || '', ...(entry.topics || [])].join(' ').toLowerCase().includes(needle));
     }
 
-    return { KEY, INDEX, KINDS, reference, sameReference, validate, create, bytes, verify, load, save, item, visible };
+    return { KEY, INDEX, KINDS, reference, sameReference, recordClass, companyReference, validate, create, bytes, verify, load, save, item, visible };
 })();
