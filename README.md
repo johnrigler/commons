@@ -2,8 +2,21 @@
 
 Shared statements, individual cases, verifiable editions.
 
-Commons holds reusable arguments and source references that people can
-reuse in their own cases. Country, state, institution and administration period
+Commons is an address-based public stream. People can publish articles,
+advertisements, cases, services and other material associated with the shared
+address. This GitHub repository supplies one collection of reusable arguments,
+source references and tools within that wider stream; publication does not
+require a maintainer's approval.
+
+Independent servers can preserve, index and present different views of the
+records. **Byzantine scribes** is a tentative name for that role.
+[The address and the scribes](docs/ADDRESS-AND-SCRIBES.md) records this distinction,
+the language connection and the service model: lawyers provide legal work,
+John teaches, and operators can charge for hosting and retrieval. Rigler.org,
+which John owns, is one possible service endpoint; owning a DNS name is not a
+prerequisite for participation in the intended model.
+
+Within this collection, country, state, institution and administration period
 describe a statement's scope. The individual case adds its evidence, dated
 events, correspondence and requested actions. An edition names the exact
 versions it selected.

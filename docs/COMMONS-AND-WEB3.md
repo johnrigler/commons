@@ -58,6 +58,38 @@ and retain their own resulting records. Its broader subject scope remains open.
 The ambition is infrastructure that different people can use on their own terms,
 rather than a claim that one procedure or argument resolves every person's case.
 
+## An address people can publish into
+
+The Commons is an address-based meeting point in that public record. People
+can publish articles, advertisements, cases, service offers or other material
+associated with it. The repository's documents are one collection within the
+Commons; the repository is not an approval desk for the underlying stream.
+
+Independent servers can preserve and index records and provide different
+readers. Rigler's tentative term is **Byzantine scribes**: keepers of the record
+whose views people can compare. The ledger's consensus and each scribe's
+interpretation are distinct. The language connects the published records to
+the people and tools reading them.
+
+Lawyers can charge for their ordinary work while developing this additional
+skill. Rigler can charge for teaching. Operators can charge for hosting,
+preservation, indexing and retrieval. The shared record remains independent
+of any one service. [The address and the scribes](ADDRESS-AND-SCRIBES.md)
+sets out this model and the naming discussion.
+
+## Participation without owning a domain
+
+Rigler owns Rigler.org, the .org domain matching his surname, while arguing that
+such ownership should not be a prerequisite for anybody else. A domain can offer
+a convenient route to his services. The record and the participant's identity
+should remain usable through another reader, another server or local tools.
+
+This extends the removal of mandatory gatekeepers to naming. People should not
+have to compete for globally exclusive DNS names to publish, be identified or
+offer work. Readable labels can coexist; explicit record and identity references
+supply the context needed to distinguish them. This is a design principle, not
+a claim that a new naming protocol has already been deployed.
+
 ## From public memory to reusable understanding
 
 Commons begins with a practical question: why should each person have to

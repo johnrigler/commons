@@ -8,6 +8,15 @@ multiple foundations. A case can reference multiple articles. Commons is a
 network of these relationships rather than a directory tree in which every
 article has exactly one parent.
 
+## These are relationships within an open stream
+
+Foundations, articles and cases describe one way to read and organize the
+Commons. They are not mandatory admission categories. Anyone can publish
+articles, advertisements, cases or other records associated with the shared
+address without submitting them to this repository. The repository's catalog
+and individual server views select and interpret material within that wider
+stream. See [the address and the scribes](ADDRESS-AND-SCRIBES.md).
+
 ## Open subject scope
 
 Commons is a vessel for reusable explanations, arguments and practical material
@@ -39,7 +48,8 @@ most important topic. Popularity can shape prominence; supporting sources,
 authorship, scope and review status remain separate ways to assess reliability.
 
 This records the intended direction. It does not claim that voting, popularity
-ranking, contribution submission or subject filters are already implemented.
+ranking or subject filters are already implemented in this repository. Public
+ledger publication is distinct from submission to a repository or server.
 
 ## The example that defines the model
 

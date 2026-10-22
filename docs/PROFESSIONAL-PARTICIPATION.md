@@ -9,6 +9,19 @@ Publicly reusable articles and paid professional work can reinforce one another.
 The project aims to make professional participation productive within the
 system, while keeping the underlying material independently accessible.
 
+## Ordinary services around an open address
+
+People can publish articles, advertisements, cases and service offers associated
+with the Commons address. They do not need professional approval to enter the
+public stream. This repository and any particular server present collections
+and views within it.
+
+Lawyers can charge for their ordinary legal work while adding the skill to use
+these records. John can charge for teaching the system and language. Server
+operators can charge for preservation, indexing, hosting or retrieval.
+The legal-service examples below are part of this wider service economy.
+[The address and the scribes](ADDRESS-AND-SCRIBES.md) describes the model.
+
 ## A real competence principle, with a defined scope
 
 ABA Model Rule 1.1 Comment 8 describes maintaining competence through awareness
