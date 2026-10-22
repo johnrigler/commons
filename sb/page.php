@@ -32,7 +32,7 @@ try {
 <body>
 <?php foreach (glob($root . '/1_*.html') as $part) include $part; ?>
 <script id="commons-data" type="application/json"><?= $json ?></script>
-<?php foreach (['verify.js', 'pinata.js', 'thunderwords.js', 'index.js'] as $script) { ?>
+<?php foreach (['verify.js', 'pinata.js', 'thunderwords.js', 'portal-core.js', 'index.js'] as $script) { ?>
 <script>
 <?= str_ireplace('</script', '<\/script', file_get_contents($root . '/' . $script)) ?>
 </script>

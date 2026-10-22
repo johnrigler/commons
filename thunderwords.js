@@ -4,6 +4,7 @@ globalThis.CommonsThunderwords = (() => {
     const ROOT = 'LLLLLLLLLLLLLLLLLLLLLLLLLLLLXgkk2V';
     // Explicit Commons role profile; these are configurable, not a change to Chisel's parser.
     const PREFIXES = Object.freeze({ name: 'LLx', transport: 'LMx', subject: 'LNx' });
+    const COMMONS_INDEX = 'LMxCoMMoNSzzzzzzzzzzzzzzzzzzZU8MFW';
 
     function encode(text) {
         return Array.from(String(text).trim().toUpperCase()).map(character => {
@@ -68,7 +69,7 @@ globalThis.CommonsThunderwords = (() => {
         return { prefix, phrase: String(phrase).trim(), encoded, address };
     }
 
-    async function draft({ name, transport, subject, message, prefixes = PREFIXES }) {
+    async function draft({ name, transport, subject, message, prefixes = PREFIXES, includeCommons = false }) {
         await inspect(ROOT);
         const tags = [];
         for (const [role, text] of Object.entries({ name, transport, subject })) {
@@ -78,7 +79,7 @@ globalThis.CommonsThunderwords = (() => {
         if (payload.length > 80) throw new Error('The announcement body exceeds the Chisel 80-byte OP_RETURN profile.');
         const hex = Array.from(payload, byte => byte.toString(16).padStart(2, '0')).join('');
         const push = payload.length <= 75 ? payload.length.toString(16).padStart(2, '0') : '4c' + payload.length.toString(16);
-        return {
+        const result = {
             schema: 'commons/litecoin-announcement/1', state: 'draft', coin: 'litecoin', network: 'mainnet',
             roleProfile: { name: prefixes.name, transport: prefixes.transport, subject: prefixes.subject },
             mainThunderword: { address: ROOT, label: 'Litecoin general Thunderword' }, tags,
@@ -89,7 +90,16 @@ globalThis.CommonsThunderwords = (() => {
                 { role: 'op-return', amountLitoshis: 0, scriptPubKey: '6a' + push + hex }
             ]
         };
+        if (includeCommons) {
+            const commons = await generate(PREFIXES.transport, 'Commons');
+            if (commons.address !== COMMONS_INDEX) throw new Error('Commons index address mismatch.');
+            result.commonsIndex = { ...commons, role: 'commons-index', form: 'B / transport' };
+            if (!result.outputs.some(output => output.address === commons.address)) {
+                result.outputs.splice(-1, 0, { role: 'commons-index', address: commons.address, amountLitoshis: null });
+            }
+        }
+        return result;
     }
 
-    return { ROOT, PREFIXES, encode, generate, inspect, draft };
+    return { ROOT, PREFIXES, COMMONS_INDEX, encode, generate, inspect, draft };
 })();

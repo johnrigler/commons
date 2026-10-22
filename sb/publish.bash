@@ -2,11 +2,13 @@
 sb.publish() (
     local sb_php="${SB_PHP:-php}"
     local sb_source="${1:-index.php}"
+    local sb_entry="${2:-index.html}"
     local sb_cid_tool="${BASH_SOURCE[0]%/*}/cid.php"
     local sb_temp sb_link sb_cid sb_snapshot
     command -v "$sb_php" >/dev/null || { echo 'Set SB_PHP to your PHP CLI binary.' >&2; return 1; }
     [ -f "$sb_source" ] && [ -f "$sb_cid_tool" ] || { echo 'Cannot find the PHP assembler or CID tool.' >&2; return 1; }
-    [ ! -d index.html ] || { echo 'index.html must not be a directory or a link to a directory.' >&2; return 1; }
+    case "$sb_entry" in index.html|about.html|publish.html) ;; *) echo 'Choose index.html, about.html or publish.html as the entry link.' >&2; return 1;; esac
+    [ ! -d "$sb_entry" ] || { echo 'The entry link must not be a directory or a link to a directory.' >&2; return 1; }
     sb_temp=$(mktemp .commons-build.XXXXXX) || return 1
     sb_link=$(mktemp .commons-index.XXXXXX) || { rm -f "$sb_temp"; return 1; }
     trap 'rm -f "$sb_temp" "$sb_link"' EXIT
@@ -24,6 +26,6 @@ sb.publish() (
     fi
     rm -f "$sb_link"
     ln -s "$sb_snapshot" "$sb_link" || return 1
-    mv -f "$sb_link" index.html || return 1
+    mv -f "$sb_link" "$sb_entry" || return 1
     printf '%s\n' "$sb_snapshot"
 )

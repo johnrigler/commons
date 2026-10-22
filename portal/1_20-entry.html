@@ -1,0 +1,29 @@
+<section id="portal-detail" hidden aria-labelledby="detail-title">
+  <a class="back-link" href="#">← All entries</a>
+  <article class="detail-document">
+    <p id="detail-meta" class="item-meta"></p>
+    <h1 id="detail-title"></h1>
+    <p id="detail-text" class="detail-text"></p>
+    <div id="detail-links" class="document-links"></div>
+    <button id="add-below" type="button">Add below</button>
+    <details class="reference-details"><summary>Edition reference</summary><code id="detail-cid"></code><p id="document-check"></p></details>
+  </article>
+  <section id="related-section" class="connection-section" aria-labelledby="related-title"><h2 id="related-title">Connected material</h2><div id="related-items" class="portal-grid"></div></section>
+  <section class="connection-section" aria-labelledby="responses-title"><h2 id="responses-title">Added below</h2><div id="response-items" class="portal-grid"></div><p id="responses-empty" class="empty">No contributions here yet.</p></section>
+  <section class="contribution-section" aria-labelledby="contribution-heading">
+    <p class="eyebrow">ADD A CONNECTION</p><h2 id="contribution-heading">Your contribution</h2>
+    <p>Below <strong id="contribution-parent"></strong></p>
+    <form id="contribution-form">
+      <div class="form-pair"><label>Type<select id="contribution-kind"><option value="story">Story</option><option value="attestation">Attestation</option><option value="explanation" selected>Explanation</option><option value="description">Description</option></select></label><label>Your name or identity label <span class="optional">optional</span><input id="contribution-author" maxlength="160" autocomplete="off"></label></div>
+      <label>Title<input id="contribution-title" maxlength="160" required></label>
+      <label>What would you like to add?<textarea id="contribution-text" rows="6" maxlength="10000" required></textarea></label>
+      <label>Source or related document <span class="optional">optional</span><input id="contribution-source" type="text" placeholder="https://… or ipfs://…" maxlength="2000"></label>
+      <label class="index-choice"><input id="contribution-indexed" type="checkbox" checked><span>Include in the Commons index</span></label>
+      <p class="form-note">Go saves an unsigned draft in this browser. Publication is a separate step. Leave the index unchecked to keep this contribution out of the main view.</p>
+      <button class="primary" id="contribution-go" type="submit">Go</button>
+    </form>
+  </section>
+</section>
+</main>
+<footer class="portal-footer"><span>Commons · Connected records</span><nav aria-label="More"><a href="about.html">About</a><a href="publish.html#pinata">Pinata</a><a href="publish.html#announce">Litecoin</a><a href="https://github.com/johnrigler/commons">Source ↗</a></nav></footer>
+<noscript><p class="portal-status">Open the <a href="reading/bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq.html">request and explanations</a> or <a href="reading/assistance/">preparation companion</a>. Enable JavaScript to browse connections and add contributions.</p></noscript>

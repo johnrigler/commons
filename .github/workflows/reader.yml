@@ -1,0 +1,36 @@
+name: Commons reader checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  reader:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install PHP CLI for publication checks
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y php8.3-cli
+      - name: Check content, index behavior and frozen editions
+        env:
+          SB_PHP: php8.3
+        run: node --test tests/core.mjs tests/portal.mjs tests/publication.mjs
+      - name: Install development browser
+        run: |
+          npm install --prefix "$RUNNER_TEMP/commons-browser" playwright
+          node "$RUNNER_TEMP/commons-browser/node_modules/playwright/cli.js" install --with-deps chromium
+      - name: Check portal in a browser
+        run: |
+          COMMONS_PLAYWRIGHT="$RUNNER_TEMP/commons-browser/node_modules/playwright" \
+          COMMONS_SCREENSHOTS="$RUNNER_TEMP/commons-screenshots" node tests/browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: commons-browser-views
+          path: ${{ runner.temp }}/commons-screenshots

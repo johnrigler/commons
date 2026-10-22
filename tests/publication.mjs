@@ -11,16 +11,32 @@ const php = process.env.SB_PHP || 'php';
 const available = spawnSync(php, ['-n', '-v']).status === 0;
 const options = available ? {} : { skip: 'Set SB_PHP to an installed PHP 8+ CLI binary.' };
 
-test('committed snapshot matches a fresh PHP render and its CID filename', options, async () => {
-    const html = execFileSync(php, ['-n', join(root, 'index.php')]);
-    const target = await readlink(join(root, 'index.html'));
-    assert.deepEqual(await readFile(join(root, target)), html);
-    const cid = execFileSync(php, ['-n', join(root, 'sb/cid.php'), join(root, target)], { encoding: 'utf8' }).trim();
-    assert.equal(target, cid + '.html');
-    const text = html.toString('utf8');
-    assert.ok(text.includes('id="commons-data"'));
-    assert.ok(!/<script[^>]+src=/.test(text));
-    assert.ok(!/<link[^>]+rel="stylesheet"/.test(text));
+test('portal, about and publishing snapshots match their PHP sources and CID filenames', options, async () => {
+    for (const [entry, source, marker] of [['index.html', 'index.php', 'id="portal-data"'], ['about.html', 'sb/about.php', 'About Commons'], ['publish.html', 'sb/page.php', 'id="commons-data"']]) {
+        const html = execFileSync(php, ['-n', join(root, source)]);
+        const target = await readlink(join(root, entry));
+        assert.deepEqual(await readFile(join(root, target)), html);
+        const cid = execFileSync(php, ['-n', join(root, 'sb/cid.php'), join(root, target)], { encoding: 'utf8' }).trim();
+        assert.equal(target, cid + '.html');
+        const text = html.toString('utf8');
+        assert.ok(text.includes(marker));
+        assert.ok(!/<script[^>]+src=/.test(text));
+        assert.ok(!/<link[^>]+rel="stylesheet"/.test(text));
+    }
+});
+
+test('named publication does not replace the portal entry link', options, async () => {
+    const folder = await mkdtemp(join(tmpdir(), 'commons-named-'));
+    try {
+        await writeFile(join(folder, 'index.php'), '<?php echo "portal";');
+        const run = entry => execFileSync('bash', ['-c', 'source "$1"; cd "$2"; sb.publish index.php "$3"', 'test', join(root, 'sb/publish.bash'), folder, entry], {env:{...process.env, SB_PHP:php}, encoding:'utf8', stdio:['ignore','pipe','pipe']}).trim();
+        const portal = run('index.html');
+        await writeFile(join(folder, 'index.php'), '<?php echo "about";');
+        const about = run('about.html');
+        assert.equal(await readlink(join(folder, 'index.html')), portal);
+        assert.equal(await readlink(join(folder, 'about.html')), about);
+        assert.throws(() => run('../outside.html'));
+    } finally { await rm(folder, {recursive:true, force:true}); }
 });
 
 test('publishing moves the symlink while preserving old bytes and failed renders', options, async () => {

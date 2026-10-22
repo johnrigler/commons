@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Browse connected Commons stories, attestations, explanations and descriptions.">
+<title>Commons — Portal</title><style>:root{color-scheme:light;--paper:#faf9f5;--ink:#233332;--muted:#63716c;--line:#d6ddd7;--accent:#245c51;--tint:#edf2eb;font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+*{box-sizing:border-box}[hidden]{display:none!important}html{scroll-padding-top:20px}body{margin:0;background:var(--paper);color:var(--ink)}a{color:var(--accent);text-underline-offset:4px}button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer;background:transparent;border:1px solid #b6c2b9;border-radius:4px;padding:9px 16px}button:hover:enabled{background:var(--tint)}button:disabled{opacity:.5;cursor:wait}button.primary,.primary-link{background:var(--accent);border:1px solid var(--accent);color:white;border-radius:4px;padding:11px 19px;text-decoration:none}a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #81b2a3;outline-offset:3px}input,select,textarea{width:100%;background:#fff;border:1px solid #acb9af;border-radius:4px;padding:11px 12px;min-width:0}textarea{resize:vertical}label{display:block;font-size:.88rem;font-weight:550}label input,label select,label textarea{display:block;margin-top:6px}.portal-masthead,.portal-main,.portal-footer{max-width:1160px;margin:auto;padding-left:44px;padding-right:44px}.portal-masthead{min-height:108px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line)}.portal-brand{font:36px/1.1 Georgia,serif;text-decoration:none;color:var(--ink);letter-spacing:-1px}.portal-brand span{display:block;font:9px/2.4 system-ui,sans-serif;letter-spacing:2px;color:var(--muted)}nav{display:flex;flex-wrap:wrap;gap:24px;font-size:.85rem}nav a{text-decoration:none}nav [aria-current]{text-decoration:underline;text-underline-offset:8px}.portal-intro{padding:52px 0 28px}.eyebrow{font-size:10px;letter-spacing:1.7px;color:var(--accent);font-weight:650;margin:0 0 14px}h1{font:clamp(36px,5.5vw,62px)/1.08 Georgia,serif;font-weight:400;letter-spacing:-1.5px;margin:0 0 19px}h2{font:27px/1.25 Georgia,serif;font-weight:400;margin:0 0 16px}.portal-intro>p:last-child{max-width:630px;color:#52665e;font:20px/1.6 Georgia,serif;margin:0}.portal-search{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:5px 20px;align-items:center}.portal-search label{grid-column:1/-1;font-weight:400;color:var(--muted);font-size:.78rem}.portal-search input{max-width:690px}.portal-search>span{font-size:.8rem;color:var(--muted)}.portal-filters{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 26px}.portal-filters button{font-size:.82rem;padding:6px 14px;border-radius:20px}.portal-filters [aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:white}.portal-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.portal-card{display:flex;flex-direction:column;min-width:0;background:#fff;border:1px solid var(--line);border-radius:5px;padding:25px 26px}.portal-card h2{font-size:27px;margin:10px 0 12px}.portal-card h2 a{color:var(--ink);text-decoration:none}.portal-card h2 a:hover{text-decoration:underline}.portal-card>p:not(.item-meta){font-size:.94rem;color:#52635b;margin:0 0 24px}.item-meta{font-size:10px;letter-spacing:.5px;color:var(--muted);margin:0;text-transform:uppercase;overflow-wrap:anywhere}.card-bottom{margin-top:auto;display:flex;justify-content:space-between;gap:12px;align-items:center;font-size:.8rem}.card-bottom a{font-weight:650;text-decoration:none}.card-bottom span{color:var(--muted)}.collection-note{font-size:.78rem;color:var(--muted);margin:26px 0 0}.collection-note a{white-space:normal}.portal-footer{border-top:1px solid var(--line);margin-top:55px;padding-top:25px;padding-bottom:30px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:15px;font-size:.75rem;color:var(--muted)}.portal-footer nav{font-size:.75rem;gap:19px}.portal-status{padding:12px 16px;border-left:3px solid var(--accent);background:var(--tint);font-size:.88rem;overflow-wrap:anywhere}.portal-status[data-error]{background:#f8eae3;border-color:#9b3d2e}.back-link{display:inline-block;margin:28px 0 24px;font-size:.85rem}.detail-document{max-width:820px}.detail-document h1{margin-top:15px;font-size:clamp(33px,4.5vw,52px)}.detail-text{white-space:pre-wrap;overflow-wrap:anywhere;font:21px/1.65 Georgia,serif}.document-links{display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin:24px 0}.document-links a{font-size:.9rem}.reference-details{font-size:.78rem;color:var(--muted);margin:20px 0}.reference-details code{display:block;overflow-wrap:anywhere;margin-top:10px}.connection-section{border-top:1px solid var(--line);margin-top:30px;padding-top:24px}.connection-section .portal-card{padding:20px}.connection-section .portal-card h2{font-size:23px}.empty{padding:22px 0;color:var(--muted)}.contribution-section{margin-top:35px;padding:28px;background:#edf2eb;border:1px solid var(--line);border-radius:5px}.contribution-section form{max-width:790px}.contribution-section label{margin:15px 0}.form-pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}.optional{font-weight:400;color:var(--muted);font-size:.78rem}.index-choice{display:flex;align-items:center;gap:10px}.index-choice input{width:18px;height:18px;margin:0;accent-color:var(--accent)}.form-note{font-size:.8rem;color:var(--muted);max-width:670px}.about-intro{padding:46px 0 28px;max-width:820px}.about-intro p{font:20px/1.6 Georgia,serif}.about-reading article{max-width:820px;margin:30px 0;padding-top:25px;border-top:1px solid var(--line)}.about-reading article h1{font-size:35px;letter-spacing:-.7px}.about-reading article h2{font-size:24px;margin-top:25px}.about-reading article .masthead{display:none}.about-reading article .deck{font:21px/1.5 Georgia,serif;color:#52665e}.about-reading article .review-prompt{padding:15px;background:var(--tint)}.about-reading article footer{color:var(--muted);font-size:.8rem;margin-top:25px}.about-reading .reading-tools{padding:20px;background:white;border:1px solid var(--line);border-radius:5px}.about-reading .reading-tools p{margin:10px 0}.about-reading code{overflow-wrap:anywhere}
+@media(max-width:680px){.portal-masthead,.portal-main,.portal-footer{padding-left:20px;padding-right:20px}.portal-masthead{min-height:100px;align-items:start;padding-top:23px;padding-bottom:20px;flex-wrap:wrap;gap:18px}.portal-brand{font-size:31px}.portal-masthead nav{gap:18px}.portal-intro{padding-top:35px}.portal-intro .eyebrow{font-size:9px;letter-spacing:1px}.portal-intro>p:last-child{font-size:18px}.portal-grid{grid-template-columns:1fr}.portal-card{padding:21px}.portal-card h2{font-size:26px}.portal-search{gap:10px}.portal-search>span{font-size:.72rem}.portal-filters{gap:6px}.portal-filters button{padding:6px 11px}.form-pair{grid-template-columns:1fr;gap:0}.contribution-section{padding:20px}.detail-text{font-size:19px}.portal-footer{margin-top:35px}.document-links{gap:16px}}
+@media print{body{background:white}.portal-masthead nav,.portal-footer,.portal-search,.portal-filters,.contribution-section,#add-below,.back-link,.portal-status{display:none!important}.portal-main,.portal-masthead{max-width:none;padding:0}.portal-masthead{min-height:65px}.portal-card{break-inside:avoid}.portal-grid{grid-template-columns:1fr}.detail-text{font-size:12pt}.about-reading article{break-before:page}.about-reading article h1{font-size:28pt}.about-reading .reading-tools{display:none}}
+</style></head><body>
+<header class="portal-masthead">
+  <a class="portal-brand" href="index.html">Commons<span>AN OPEN COLLECTION</span></a>
+  <nav aria-label="Main navigation"><a href="index.html" aria-current="page">Portal</a><a href="about.html">About</a><a href="publish.html">Publish / verify</a></nav>
+</header>
+<main class="portal-main">
+<p id="portal-status" class="portal-status" role="status" aria-live="polite" hidden></p>
+<section id="portal-feed" aria-labelledby="portal-title">
+  <div class="portal-intro"><p class="eyebrow">STORIES · ATTESTATIONS · EXPLANATIONS · DESCRIPTIONS</p>
+  <h1 id="portal-title">Follow the connections.</h1>
+  <p>Open a document, explore what it connects to, and add something of your own.</p></div>
+  <div class="portal-search"><label for="portal-search">Find something in this collection</label><input id="portal-search" type="search" placeholder="Rent acceleration, administrative burden…"><span id="portal-count" aria-live="polite"></span></div>
+  <div class="portal-filters" role="group" aria-label="Entry type">
+    <button type="button" data-kind="" aria-pressed="true">All</button>
+    <button type="button" data-kind="story" aria-pressed="false">Stories</button>
+    <button type="button" data-kind="attestation" aria-pressed="false">Attestations</button>
+    <button type="button" data-kind="explanation" aria-pressed="false">Explanations</button>
+    <button type="button" data-kind="description" aria-pressed="false">Descriptions</button>
+  </div>
+  <div id="portal-cards" class="portal-grid"></div>
+  <p id="portal-empty" class="empty" hidden>No matching entries.</p>
+  <p class="collection-note">This view starts with the published collection and your saved contributions. <a href="about.html#stream">About the Commons stream →</a></p>
+</section>
+<section id="portal-detail" hidden aria-labelledby="detail-title">
+  <a class="back-link" href="#">← All entries</a>
+  <article class="detail-document">
+    <p id="detail-meta" class="item-meta"></p>
+    <h1 id="detail-title"></h1>
+    <p id="detail-text" class="detail-text"></p>
+    <div id="detail-links" class="document-links"></div>
+    <button id="add-below" type="button">Add below</button>
+    <details class="reference-details"><summary>Edition reference</summary><code id="detail-cid"></code><p id="document-check"></p></details>
+  </article>
+  <section id="related-section" class="connection-section" aria-labelledby="related-title"><h2 id="related-title">Connected material</h2><div id="related-items" class="portal-grid"></div></section>
+  <section class="connection-section" aria-labelledby="responses-title"><h2 id="responses-title">Added below</h2><div id="response-items" class="portal-grid"></div><p id="responses-empty" class="empty">No contributions here yet.</p></section>
+  <section class="contribution-section" aria-labelledby="contribution-heading">
+    <p class="eyebrow">ADD A CONNECTION</p><h2 id="contribution-heading">Your contribution</h2>
+    <p>Below <strong id="contribution-parent"></strong></p>
+    <form id="contribution-form">
+      <div class="form-pair"><label>Type<select id="contribution-kind"><option value="story">Story</option><option value="attestation">Attestation</option><option value="explanation" selected>Explanation</option><option value="description">Description</option></select></label><label>Your name or identity label <span class="optional">optional</span><input id="contribution-author" maxlength="160" autocomplete="off"></label></div>
+      <label>Title<input id="contribution-title" maxlength="160" required></label>
+      <label>What would you like to add?<textarea id="contribution-text" rows="6" maxlength="10000" required></textarea></label>
+      <label>Source or related document <span class="optional">optional</span><input id="contribution-source" type="text" placeholder="https://… or ipfs://…" maxlength="2000"></label>
+      <label class="index-choice"><input id="contribution-indexed" type="checkbox" checked><span>Include in the Commons index</span></label>
+      <p class="form-note">Go saves an unsigned draft in this browser. Publication is a separate step. Leave the index unchecked to keep this contribution out of the main view.</p>
+      <button class="primary" id="contribution-go" type="submit">Go</button>
+    </form>
+  </section>
+</section>
+</main>
+<footer class="portal-footer"><span>Commons · Connected records</span><nav aria-label="More"><a href="about.html">About</a><a href="publish.html#pinata">Pinata</a><a href="publish.html#announce">Litecoin</a><a href="https://github.com/johnrigler/commons">Source ↗</a></nav></footer>
+<noscript><p class="portal-status">Open the <a href="reading/bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq.html">request and explanations</a> or <a href="reading/assistance/">preparation companion</a>. Enable JavaScript to browse connections and add contributions.</p></noscript>
+<script id="portal-data" type="application/json">{"schema":"commons/portal/1","index":{"coin":"litecoin","form":"B / transport","prefix":"LMx","phrase":"Commons","address":"LMxCoMMoNSzzzzzzzzzzzzzzzzzzZU8MFW"},"items":[{"id":"request","kind":"story","title":"Unsupported rent acceleration","summary":"A request for the records behind a disputed balance, with explanations of the charge and the process of challenging it.","cid":"bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq","path":"reading/bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq.html","fragment":"request","pdf":"reading/Commons-Request-and-Explanations.pdf","author":"John Rigler","status":"Unsigned reading draft","indexed":true,"related":["rent-acceleration","administrative-burden","prepare"]},{"id":"rent-acceleration","kind":"explanation","title":"What makes rent acceleration unsupported?","summary":"The basis, calculation, credits and adjustments needed to examine a demand for the remaining rent on a lease.","cid":"bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq","path":"reading/bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq.html","fragment":"rent-acceleration","pdf":"reading/Commons-Request-and-Explanations.pdf","author":"John Rigler","status":"Unsigned explanatory draft","indexed":true,"related":["request","administrative-burden"]},{"id":"administrative-burden","kind":"explanation","title":"Deterrence through administrative burden","summary":"When complexity, repetition, delay or expense discourages a person from pursuing a substantive answer.","cid":"bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq","path":"reading/bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq.html","fragment":"administrative-burden","pdf":"reading/Commons-Request-and-Explanations.pdf","author":"John Rigler","status":"Unsigned explanatory draft","indexed":true,"related":["rent-acceleration","request","prepare"]},{"id":"prepare","kind":"description","title":"Prepare, print, retain","summary":"A walkthrough from a reusable request to a reviewed document, a sent copy and a retained record.","cid":"bafkreibydv3yrnxjkxw6ep22ku5fucwpolllwplmbyzlnrsqdxwhlfpbc4","path":"reading/assistance/bafkreibydv3yrnxjkxw6ep22ku5fucwpolllwplmbyzlnrsqdxwhlfpbc4.html","fragment":"walkthrough","pdf":"reading/assistance/Commons-Preparation-and-Assistance.pdf","author":"John Rigler","status":"Unsigned procedural draft","indexed":true,"related":["request","assistance-record"]},{"id":"assistance-record","kind":"description","title":"A record of preparation and assistance","summary":"A blank form for recording review, assistance, authority and delivery. Completed records belong with the individual case.","cid":"bafkreibydv3yrnxjkxw6ep22ku5fucwpolllwplmbyzlnrsqdxwhlfpbc4","path":"reading/assistance/bafkreibydv3yrnxjkxw6ep22ku5fucwpolllwplmbyzlnrsqdxwhlfpbc4.html","fragment":"assistance-record","pdf":"reading/assistance/Commons-Preparation-and-Assistance.pdf","author":"John Rigler","status":"Blank template \u2014 no attestation made","indexed":true,"related":["prepare","request"]}]}</script>
+<script>/* Commons profile: CIDv1, raw (0x55), sha2-256, lowercase base32. */
+globalThis.CommonsCID = (() => {
+    const MAX_BYTES = 1024 * 1024;
+    const alphabet = 'abcdefghijklmnopqrstuvwxyz234567';
+    const encoder = new TextEncoder();
+
+    function bytes(value) {
+        if (value instanceof Uint8Array) return value;
+        if (value instanceof ArrayBuffer) return new Uint8Array(value);
+        if (typeof value === 'string') return encoder.encode(value);
+        throw new TypeError('Expected UTF-8 text or file bytes.');
+    }
+
+    function base32(data) {
+        let output = '', buffer = 0, bits = 0;
+        for (const byte of data) {
+            buffer = (buffer << 8) | byte;
+            bits += 8;
+            while (bits >= 5) {
+                bits -= 5;
+                output += alphabet[(buffer >>> bits) & 31];
+            }
+        }
+        if (bits) output += alphabet[(buffer << (5 - bits)) & 31];
+        return output;
+    }
+
+    async function block(value) {
+        const data = bytes(value);
+        if (data.length > MAX_BYTES) throw new Error('This raw-block profile supports files up to 1 MiB.');
+        if (!globalThis.crypto?.subtle) throw new Error('Web Crypto requires HTTPS or localhost.');
+        const digest = new Uint8Array(await crypto.subtle.digest('SHA-256', data));
+        const id = new Uint8Array(36);
+        id.set([1, 0x55, 0x12, 0x20]);
+        id.set(digest, 4);
+        return { bytes: data, id, cid: 'b' + base32(id) };
+    }
+
+    async function cid(value) { return (await block(value)).cid; }
+
+    function filenameCID(name) {
+        const stem = name.split(/[\\/]/).pop().split('.')[0];
+        return /^bafkrei[a-z2-7]{52}$/.test(stem) ? stem : null;
+    }
+
+    async function verify(value, filename) {
+        const expected = filenameCID(filename);
+        if (!expected) throw new Error('The filename must be a raw CIDv1, optionally followed by an extension.');
+        const actual = await cid(value);
+        return { expected, actual, valid: expected === actual };
+    }
+
+    function varint(number) {
+        const output = [];
+        do {
+            let byte = number & 127;
+            number = Math.floor(number / 128);
+            if (number) byte |= 128;
+            output.push(byte);
+        } while (number);
+        return new Uint8Array(output);
+    }
+
+    function join(...arrays) {
+        const output = new Uint8Array(arrays.reduce((size, item) => size + item.length, 0));
+        let offset = 0;
+        for (const item of arrays) { output.set(item, offset); offset += item.length; }
+        return output;
+    }
+
+    async function car(value) {
+        const item = await block(value);
+        // DAG-CBOR { roots: [tag42(bytes(0x00 + CID))], version: 1 }.
+        const header = join(
+            new Uint8Array([0xa2, 0x65]), encoder.encode('roots'),
+            new Uint8Array([0x81, 0xd8, 0x2a, 0x58, 0x25, 0]), item.id,
+            new Uint8Array([0x67]), encoder.encode('version'), new Uint8Array([1])
+        );
+        return { cid: item.cid, bytes: join(varint(header.length), header, varint(36 + item.bytes.length), item.id, item.bytes) };
+    }
+
+    return { MAX_BYTES, bytes, cid, filenameCID, verify, car };
+})();
+</script>
+<script>/* Public contribution records. No wallet keys, account tokens or network reader. */
+globalThis.CommonsPortal = (() => {
+    const KEY = 'commons.contributions.v1';
+    const INDEX = 'LMxCoMMoNSzzzzzzzzzzzzzzzzzzZU8MFW';
+    const KINDS = ['story', 'attestation', 'explanation', 'description'];
+    const CID = /^bafkrei[a-z2-7]{52}$/;
+
+    function reference(item) {
+        return { cid: item.cid, fragment: item.fragment || '' };
+    }
+
+    function sameReference(a, b) {
+        return !!a && !!b && a.cid === b.cid && (a.fragment || '') === (b.fragment || '');
+    }
+
+    function validate(record) {
+        if (!record || record.schema !== 'commons/contribution/1' || !KINDS.includes(record.kind)) throw new Error('Unsupported contribution record.');
+        for (const [key, max] of [['title', 160], ['text', 10000], ['author', 160]]) {
+            if (typeof record[key] !== 'string' || record[key].length > max || (key !== 'author' && !record[key].trim())) throw new Error('Enter a title and contribution within the displayed limits.');
+        }
+        if (!record.parent || !CID.test(record.parent.cid) || typeof record.parent.fragment !== 'string' || !/^[a-zA-Z0-9_-]{0,100}$/.test(record.parent.fragment)) throw new Error('The parent reference is invalid.');
+        if (typeof record.indexed !== 'boolean' || !Number.isFinite(Date.parse(record.created))) throw new Error('Invalid contribution date or index selection.');
+        if (record.indexed && record.transport !== INDEX || !record.indexed && record.transport !== null) throw new Error('The Commons transport tag does not match the index selection.');
+        if (typeof record.source !== 'string' || record.source.length > 2000) throw new Error('Use a source reference up to 2000 characters.');
+        if (record.source) {
+            const url = new URL(record.source);
+            if (!['https:', 'ipfs:'].includes(url.protocol) || !url.hostname) throw new Error('Use an https:// or ipfs:// source reference.');
+        }
+        return record;
+    }
+
+    async function create(parent, fields) {
+        const record = validate({
+            schema: 'commons/contribution/1', kind: fields.kind,
+            title: fields.title.trim(), text: fields.text.trim(), author: fields.author.trim(),
+            parent: reference(parent), indexed: !!fields.indexed,
+            transport: fields.indexed ? INDEX : null, source: fields.source.trim(),
+            created: fields.created || new Date().toISOString()
+        });
+        const text = JSON.stringify(record, null, 2) + '\n';
+        return { cid: await CommonsCID.cid(CommonsCID.bytes(text)), record };
+    }
+
+    function bytes(entry) {
+        return CommonsCID.bytes(JSON.stringify(entry.record, null, 2) + '\n');
+    }
+
+    async function verify(entry) {
+        if (!entry || !CID.test(entry.cid)) throw new Error('Invalid contribution CID.');
+        validate(entry.record);
+        if (await CommonsCID.cid(bytes(entry)) !== entry.cid) throw new Error('Contribution bytes do not match their CID.');
+        return entry;
+    }
+
+    async function load(storage = localStorage) {
+        const entries = JSON.parse(storage.getItem(KEY) || '[]');
+        if (!Array.isArray(entries)) throw new Error('The saved contribution list is invalid.');
+        for (const entry of entries) await verify(entry);
+        return entries;
+    }
+
+    async function save(entry, storage = localStorage) {
+        await verify(entry);
+        const entries = await load(storage);
+        if (!entries.some(item => item.cid === entry.cid)) entries.unshift(entry);
+        storage.setItem(KEY, JSON.stringify(entries));
+        return entries;
+    }
+
+    function item(entry) {
+        return {
+            id: entry.cid, cid: entry.cid, fragment: '', kind: entry.record.kind,
+            title: entry.record.title, summary: entry.record.text.slice(0, 220),
+            text: entry.record.text, author: entry.record.author || 'Unstated author',
+            indexed: entry.record.indexed, status: 'Local unsigned draft',
+            parent: entry.record.parent, source: entry.record.source, related: [], local: true
+        };
+    }
+
+    function visible(items, kind = '', query = '') {
+        const needle = query.trim().toLowerCase();
+        return items.filter(entry => entry.indexed && (!kind || entry.kind === kind)
+            && [entry.title, entry.summary, entry.author].join(' ').toLowerCase().includes(needle));
+    }
+
+    return { KEY, INDEX, KINDS, reference, sameReference, validate, create, bytes, verify, load, save, item, visible };
+})();
+</script>
+<script>(async () => {
+    'use strict';
+    const $ = selector => document.querySelector(selector);
+    const data = JSON.parse($('#portal-data').textContent);
+    let drafts = [], selected = null, kind = '';
+    let storageError = '';
+    try { drafts = await CommonsPortal.load(); }
+    catch { storageError = 'Saved contributions could not be read or verified. You can still browse this collection.'; }
+    const all = () => [...drafts.map(CommonsPortal.item), ...data.items];
+    const find = id => all().find(item => item.id === id);
+
+    function message(text, error = false) {
+        $('#portal-status').textContent = text;
+        $('#portal-status').hidden = !text;
+        $('#portal-status').toggleAttribute('data-error', error);
+    }
+
+    function link(text, href, className = '') {
+        const a = document.createElement('a');
+        a.textContent = text; a.href = href; a.className = className;
+        return a;
+    }
+
+    function meta(item) {
+        const p = document.createElement('p'); p.className = 'item-meta';
+        p.textContent = item.kind + ' · ' + item.status;
+        return p;
+    }
+
+    function card(item) {
+        const article = document.createElement('article'); article.className = 'portal-card';
+        const heading = document.createElement('h2');
+        heading.append(link(item.title, '#item=' + encodeURIComponent(item.id)));
+        const p = document.createElement('p'); p.textContent = item.summary;
+        const bottom = document.createElement('div'); bottom.className = 'card-bottom';
+        bottom.append(link('Open →', '#item=' + encodeURIComponent(item.id)));
+        const count = document.createElement('span');
+        count.textContent = item.parent ? 'Response' : (item.related?.length || 0) + ' connections';
+        bottom.append(count); article.append(meta(item), heading, p, bottom);
+        return article;
+    }
+
+    function renderFeed() {
+        const items = CommonsPortal.visible(all(), kind, $('#portal-search').value);
+        $('#portal-cards').replaceChildren(...items.map(card));
+        $('#portal-count').textContent = items.length + (items.length === 1 ? ' entry' : ' entries');
+        $('#portal-empty').hidden = !!items.length;
+        $('#portal-empty').textContent = kind === 'attestation'
+            ? 'No attestations in this collection yet. Open a document to add one.'
+            : 'No matching entries. Try another term or type.';
+        for (const button of document.querySelectorAll('[data-kind]')) button.setAttribute('aria-pressed', String(button.dataset.kind === kind));
+    }
+
+    async function checkDocument(item) {
+        $('#document-check').textContent = '';
+        if (!item.path) return;
+        if (!/^https?:$/.test(location.protocol)) {
+            $('#document-check').textContent = 'Open the document to read this edition; serve the portal on localhost or HTTPS to check its bytes.';
+            return;
+        }
+        $('#document-check').textContent = 'Checking document bytes…';
+        try {
+            const response = await fetch(item.path, { credentials: 'omit', cache: 'no-store' });
+            if (!response.ok) throw new Error('Document unavailable.');
+            const bytes = new Uint8Array(await response.arrayBuffer());
+            if (await CommonsCID.cid(bytes) !== item.cid) throw new Error('Document bytes differ from this edition reference.');
+            if (selected?.id === item.id) $('#document-check').textContent = 'Document bytes match this edition CID.';
+        } catch (error) {
+            if (selected?.id === item.id) $('#document-check').textContent = error.message;
+        }
+    }
+
+    function download(item) {
+        const entry = drafts.find(entry => entry.cid === item.id);
+        if (!entry) return;
+        const url = URL.createObjectURL(new Blob([CommonsPortal.bytes(entry)], { type: 'application/json' }));
+        const a = link('Download', url); a.download = entry.cid + '.json'; a.click();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+
+    function show(item) {
+        selected = item;
+        $('#portal-feed').hidden = !!item; $('#portal-detail').hidden = !item;
+        $('#contribution-form').reset();
+        if (!item) return;
+        $('#detail-title').textContent = item.title;
+        $('#detail-meta').textContent = item.kind + ' · ' + item.status + ' · ' + item.author;
+        $('#detail-text').textContent = item.text || item.summary;
+        $('#detail-cid').textContent = item.cid + (item.fragment ? '#' + item.fragment : '');
+        $('#detail-links').replaceChildren();
+        if (item.path) $('#detail-links').append(link('Read document ↗', item.path + (item.fragment ? '#' + item.fragment : ''), 'primary-link'));
+        if (item.pdf) $('#detail-links').append(link('PDF for printing or email', item.pdf));
+        if (item.source) $('#detail-links').append(link('Source reference', item.source));
+        if (item.local) {
+            const save = document.createElement('button'); save.type = 'button'; save.textContent = 'Download contribution';
+            save.onclick = () => download(item);
+            $('#detail-links').append(save, link('Publish / announce', 'publish.html#contribution=' + item.id));
+        }
+        const related = (item.related || []).map(find).filter(Boolean);
+        const parent = item.parent && all().find(candidate => CommonsPortal.sameReference(CommonsPortal.reference(candidate), item.parent));
+        if (parent && !related.includes(parent)) related.unshift(parent);
+        $('#related-items').replaceChildren(...related.map(card));
+        $('#related-section').hidden = !related.length;
+        const children = all().filter(child => child.parent && CommonsPortal.sameReference(child.parent, CommonsPortal.reference(item)));
+        $('#response-items').replaceChildren(...children.map(card));
+        $('#responses-empty').hidden = !!children.length;
+        $('#contribution-parent').textContent = item.title;
+        checkDocument(item);
+    }
+
+    function route() {
+        const hash = new URLSearchParams(location.hash.slice(1));
+        const id = hash.get('item');
+        const item = id && find(id);
+        show(item || null);
+        if (id && !item) message('That entry is not in this collection or your saved contributions.', true);
+        else if (!storageError) message('');
+    }
+
+    $('#portal-search').addEventListener('input', renderFeed);
+    for (const button of document.querySelectorAll('[data-kind]')) button.onclick = () => { kind = button.dataset.kind; renderFeed(); };
+    $('#add-below').onclick = () => { $('#contribution-form').scrollIntoView({ behavior: 'smooth' }); $('#contribution-title').focus(); };
+    $('#contribution-form').addEventListener('submit', async event => {
+        event.preventDefault();
+        if (!selected) return;
+        const button = $('#contribution-go'); button.disabled = true;
+        try {
+            const entry = await CommonsPortal.create(selected, {
+                kind: $('#contribution-kind').value, title: $('#contribution-title').value,
+                text: $('#contribution-text').value, author: $('#contribution-author').value,
+                source: $('#contribution-source').value, indexed: $('#contribution-indexed').checked
+            });
+            drafts = await CommonsPortal.save(entry);
+            renderFeed(); show(selected);
+            message('Saved in this browser. Open your contribution to download it or prepare publication.');
+            $('#response-items').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        } catch (error) { message(error.message || 'Could not save the contribution.', true); }
+        finally { button.disabled = false; }
+    });
+    window.addEventListener('hashchange', route);
+    renderFeed(); route();
+    if (storageError) message(storageError, true);
+})().catch(error => {
+    const status = document.querySelector('#portal-status');
+    if (status) { status.hidden = false; status.textContent = 'The portal could not load: ' + error.message; status.setAttribute('data-error', ''); }
+});
+</script>
+</body></html>

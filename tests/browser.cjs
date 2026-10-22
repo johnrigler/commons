@@ -1,0 +1,94 @@
+// Development-only browser check; readers require no Node runtime or dependencies.
+const assert = require('node:assert/strict');
+const fs = require('node:fs/promises');
+const path = require('node:path');
+const http = require('node:http');
+const {chromium} = require(process.env.COMMONS_PLAYWRIGHT || 'playwright');
+const root = path.resolve(__dirname,'..');
+
+(async()=>{
+  const server = http.createServer(async(req,res)=>{
+    try {
+      const pathname = decodeURIComponent(new URL(req.url,'http://localhost').pathname);
+      const file = await fs.realpath(path.join(root,pathname.endsWith('/')?pathname+'index.html':pathname));
+      if(!file.startsWith(root+path.sep)) throw new Error('Outside root');
+      res.setHeader('Content-Type',file.endsWith('.html')?'text/html; charset=utf-8':file.endsWith('.json')?'application/json':'text/plain');
+      res.end(await fs.readFile(file));
+    }catch {res.writeHead(404);res.end('Not found');}
+  });
+  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+  const origin='http://127.0.0.1:'+server.address().port;
+  const browser=await chromium.launch({headless:true,executablePath:process.env.COMMONS_BROWSER_EXECUTABLE||undefined,args:['--no-sandbox']});
+  try {
+    const context=await browser.newContext({viewport:{width:1280,height:1000}});
+    const page=await context.newPage(); const errors=[],outbound=[];
+    page.on('pageerror',error=>errors.push(error.message));
+    page.on('request',req=>{if(!req.url().startsWith(origin))outbound.push(req.url());});
+    await page.goto(origin);
+    await page.locator('#portal-cards .portal-card').first().waitFor();
+    assert.equal(await page.locator('#portal-cards .portal-card').count(),5);
+    assert.equal(await page.locator('#pinata-form').count(),0);
+    await page.getByRole('button',{name:'Attestations',exact:true}).click();
+    assert.ok(await page.locator('#portal-empty').isVisible());
+    await page.getByRole('button',{name:'All',exact:true}).click();
+    await page.locator('#portal-cards a').filter({hasText:'Unsupported rent acceleration'}).first().click();
+    await page.locator('#portal-detail').waitFor({state:'visible'});
+    await page.getByText('Edition reference',{exact:true}).click();
+    await page.getByText('Document bytes match this edition CID.',{exact:true}).waitFor();
+    const document=await page.locator('#detail-links a').first().getAttribute('href');
+    assert.match(document,/#request$/);
+    await page.locator('#contribution-title').fill('Synthetic private branch');
+    await page.locator('#contribution-text').fill('A test observation <img src=x onerror=alert(1)>');
+    await page.locator('#contribution-indexed').uncheck();
+    await page.getByRole('button',{name:'Go',exact:true}).click();
+    await page.locator('#response-items .portal-card').first().waitFor();
+    await page.locator('#response-items').getByRole('link',{name:'Synthetic private branch',exact:true}).click();
+    assert.equal(await page.locator('#detail-text img').count(),0);
+    const draftURL=page.url();
+    await page.getByRole('link',{name:'Publish / announce',exact:true}).click();
+    await page.getByText(/Contribution loaded\. Connect Pinata/).waitFor();
+    assert.equal(await page.locator('#commons-index').isChecked(),false);
+    assert.equal(await page.locator('#tag-transport').inputValue(),'IPFS');
+    await page.getByRole('button',{name:'Prepare Thunderwords',exact:true}).click();
+    await page.locator('#announcement-result').waitFor({state:'visible'});
+    assert.ok(!(await page.locator('#announcement-outputs').innerText()).includes('LMxCoMMoNS'));
+    await page.goto(origin+'/#item=request');
+    await page.locator('#portal-detail').waitFor({state:'visible'});
+    await page.locator('#contribution-kind').selectOption('attestation');
+    await page.locator('#contribution-title').fill('Synthetic indexed attestation draft');
+    await page.locator('#contribution-text').fill('A synthetic statement, unsigned and unpublished.');
+    await page.getByRole('button',{name:'Go',exact:true}).click();
+    await page.locator('#portal-status').filter({hasText:'Saved in this browser.'}).waitFor();
+    await page.goto(origin);
+    await page.locator('#portal-cards .portal-card').first().waitFor();
+    assert.equal(await page.locator('#portal-cards .portal-card').count(),6);
+    assert.equal(await page.getByRole('link',{name:'Synthetic private branch',exact:true}).count(),0);
+    await page.getByRole('button',{name:'Attestations',exact:true}).click();
+    assert.equal(await page.locator('#portal-cards .portal-card').count(),1);
+    assert.match(await page.locator('#portal-cards').innerText(),/Local unsigned draft/i);
+    await page.getByRole('link',{name:'About',exact:true}).first().click();
+    await page.getByRole('heading',{name:'About Commons',exact:true}).waitFor();
+    assert.ok(await page.locator('#value').isVisible());
+    await page.goto(draftURL);
+    await page.locator('#portal-detail').waitFor({state:'visible'});
+    assert.equal(await page.locator('#detail-title').innerText(),'Synthetic private branch');
+    assert.deepEqual(errors,[]); assert.deepEqual(outbound,[]);
+    await context.close();
+    const fresh=await browser.newContext({viewport:{width:390,height:844}});
+    const mobile=await fresh.newPage();
+    await mobile.goto(origin);
+    await mobile.locator('#portal-cards .portal-card').first().waitFor();
+    assert.equal(await mobile.locator('#portal-cards .portal-card').count(),5);
+    assert.ok(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+    if(process.env.COMMONS_SCREENSHOTS){
+      await fs.mkdir(process.env.COMMONS_SCREENSHOTS,{recursive:true});
+      await mobile.screenshot({path:path.join(process.env.COMMONS_SCREENSHOTS,'portal-mobile.png'),fullPage:true});
+    }
+    await mobile.locator('#portal-cards h2 a').first().click();
+    await mobile.locator('#portal-detail').waitFor({state:'visible'});
+    assert.ok(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+    if(process.env.COMMONS_SCREENSHOTS) await mobile.screenshot({path:path.join(process.env.COMMONS_SCREENSHOTS,'entry-mobile.png'),fullPage:true});
+    await fresh.close();
+    console.log('Portal browser checks passed: connected reading, exact references, safe local additions, index filtering, publication handoff, reload, About and mobile layout.');
+  } finally {await browser.close();await new Promise(resolve=>server.close(resolve));}
+})().catch(error=>{console.error(error);process.exitCode=1;});
