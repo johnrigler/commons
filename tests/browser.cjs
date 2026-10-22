@@ -59,7 +59,7 @@ const root = path.resolve(__dirname,'..');
     await page.locator('#reader-content .author-commentary').getByRole('heading',{name:'John Rigler’s view',exact:true}).waitFor();
     await page.locator('#reader-content .author-commentary').getByRole('link',{name:'portal argument',exact:true}).click();
     await page.locator('#reader-content').getByRole('heading',{name:'A status is not a copy of the submission',exact:true}).waitFor();
-    assert.match(await page.locator('#detail-meta').innerText(),/Opinion.*John Rigler/);
+    assert.match(await page.locator('#detail-meta').textContent(),/Opinion.*John Rigler/);
     await page.locator('#reader-content').getByRole('link',{name:'amicus research agenda',exact:true}).click();
     await page.locator('#reader-content').getByRole('heading',{name:'The argument I would want a brief to carry',exact:true}).waitFor();
     await page.locator('#company-items').getByRole('link',{name:'National Credit Systems',exact:true}).click();
