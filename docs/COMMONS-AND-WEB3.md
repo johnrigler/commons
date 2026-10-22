@@ -2,6 +2,64 @@
 
 John Rigler's project direction. Editorial draft, October 21, 2026.
 
+## The starting point: Satoshi's payment system
+
+Rigler starts his definition of Web3 with Satoshi Nakamoto's
+[Bitcoin white paper](https://bitcoin.org/bitcoin.pdf). Its abstract and introduction
+propose direct electronic payments without a trusted financial intermediary and
+describe mediation costs as a limitation of the existing model. The central
+technical problem is double-spending. [1]
+
+Bitcoin's response combines a public transaction history with proof-of-work.
+This is the practical consensus breakthrough Rigler connects to the Byzantine
+Generals Problem: participants coordinate on a history without appointing a
+central record keeper. Its guarantees are probabilistic and depend on assumptions
+about honest hash power. Section 6 also allows transaction fees; removing a
+mandatory financial intermediary does not mean that every transaction is free. [1]
+
+Rigler's broader institutional argument is that a gatekeeper's role can arise
+from its responsibilities, costs and incentives, regardless of the intentions
+of the people operating it. His discussion of banks includes KYC and
+anti-money-laundering obligations as part of that institutional setting.
+That is his extension of the argument; the paper's stated introductory
+emphasis is trusted mediation and its costs.
+
+## The ledger was already carrying language
+
+The financial record also contains bytes that people can read as language.
+Bitcoin's genesis transaction carries the newspaper headline:
+
+> The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
+
+Bitcoin Core's genesis construction records that text in the coinbase input.
+It is a concrete example of human-readable non-payment information in the
+ledger from its beginning. [2]
+
+Rigler's Web3 argument extends that observation: the transaction system can be
+repurposed as a data and language medium. People can publish readable marks,
+labels, statements and references in the shared record, then build independent
+readers around them. This is the engineering sense in which the financial
+system can be hacked into a data system.
+
+## Carry the removal of gatekeepers into the data layer
+
+For Rigler, the same principle has to survive that extension. If one required
+publisher, identity provider, indexer or interpreter controls participation,
+the architecture recreates the dependency he was trying to remove.
+
+Tools and services can contribute work. The design requirement is that no
+single one becomes the mandatory authority over the shared record or its
+interpretation. Publishing and reading must remain possible through independent
+tools, subject to the underlying network's actual rules and resource costs.
+
+Commons is the legal and procedural application of this wider model. People can
+publish reusable reasoning, reference exact editions, connect their own evidence,
+and retain their own resulting records. Its broader subject scope remains open.
+The ambition is infrastructure that different people can use on their own terms,
+rather than a claim that one procedure or argument resolves every person's case.
+
+## From public memory to reusable understanding
+
 Commons begins with a practical question: why should each person have to
 reconstruct an explanation that other people have already needed?
 
@@ -90,3 +148,16 @@ This narrative explains the direction. It does not claim that Commons already
 has automatic contribution tracking, wallet-bound authorship, universal ledger
 verification or a ranking system. Existing unsigned reading drafts remain
 unsigned unless an actual signing step is completed.
+
+## Primary references and interpretation
+
+1. Satoshi Nakamoto, [Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf),
+   especially the abstract and sections 1, 4, 6 and 11.
+2. Bitcoin Core, [genesis construction in src/kernel/chainparams.cpp](https://github.com/bitcoin/bitcoin/blob/master/src/kernel/chainparams.cpp),
+   including the timestamp text and its placement in the coinbase input.
+
+Sources checked October 21, 2026. The genesis example establishes the presence
+of readable text, not the later Commons architecture. The language-medium,
+institutional-gatekeeper and Commons connections are Rigler's interpretation
+and project direction. This note does not claim that Bitcoin alone supplies
+unlimited data capacity, universal availability or the truth of published claims.

@@ -48,7 +48,9 @@ grows; sources and review remain separate from popularity.
 
 ## Commons and the internet of value
 
-[The project story](docs/COMMONS-AND-WEB3.md) connects reusable understanding
+[The project story](docs/COMMONS-AND-WEB3.md) starts with Satoshi's white paper,
+the genesis transaction's readable text, and Rigler's extension of peer-to-peer
+exchange into a public data and language medium. It connects reusable understanding
 with John Rigler's meaning of Web3: public memory, portable contributions and
 independent use. It records the hypothesis that shared explanations can reduce
 repeated paid work while keeping professional judgment and representation distinct.
