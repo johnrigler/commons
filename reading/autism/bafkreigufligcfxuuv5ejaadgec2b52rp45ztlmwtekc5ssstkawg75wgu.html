@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Commons — Autism, Assessment, and Disability Benefits</title>
+<meta name="description" content="Childhood autism screening, adults without an earlier diagnosis, functional evidence, and access to disability benefits and services.">
+<style>
+    :root { color-scheme: light; --ink: #242624; --muted: #60655f; --rule: #cdd0c7; --accent: #86503c; }
+    * { box-sizing: border-box; }
+    html { background: #eeeee8; color: var(--ink); }
+    body { margin: 0; padding: 36px 18px; font-family: Georgia, 'Times New Roman', serif; }
+    article { max-width: 840px; margin: 0 auto 28px; padding: 48px 70px 40px; background: #fffef9; border: 1px solid #dbddd3; scroll-margin-top: 20px; }
+    a { color: #77432f; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    .reading-links { margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--rule); font: 13px/1.8 Arial, sans-serif; }
+    .reading-links a { display: block; width: fit-content; }
+    .return-link { font: 13px/1.5 Arial, sans-serif; }
+    .source-note { margin-top: 25px; padding-top: 14px; border-top: 1px solid var(--rule); font: 13px/1.55 Arial, sans-serif; color: var(--muted); }
+    .masthead { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; padding-bottom: 16px; border-bottom: 2px solid var(--ink); font-family: Arial, sans-serif; }
+    .brand { font-size: 16px; letter-spacing: .16em; font-weight: 700; text-transform: uppercase; }
+    .status { color: var(--muted); font-size: 12px; }
+    .eyebrow { margin: 34px 0 13px; font: 700 12px/1.5 Arial, sans-serif; color: var(--accent); letter-spacing: .11em; text-transform: uppercase; }
+    h1 { margin: 0 0 19px; font-size: clamp(36px, 6vw, 50px); font-weight: 400; line-height: 1.06; letter-spacing: -.035em; }
+    .deck { margin: 0 0 28px; font-size: 21px; line-height: 1.45; color: #454b44; }
+    p { margin: 0 0 17px; font-size: 17px; line-height: 1.66; }
+    h2 { margin: 29px 0 12px; font: 700 15px/1.4 Arial, sans-serif; }
+    .principle { margin: 26px 0; padding: 17px 0 17px 21px; border-left: 3px solid var(--accent); font-size: 21px; line-height: 1.45; }
+    .transition { border-top: 1px solid var(--rule); margin-top: 30px; padding-top: 23px; }
+    .transition h2 { margin-top: 0; }
+    footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 9px 20px; border-top: 1px solid var(--rule); margin-top: 30px; padding-top: 14px; color: var(--muted); font: 12px/1.5 Arial, sans-serif; }
+    @media (max-width: 600px) {
+      body { padding: 0; }
+      article { border: 0; padding: 27px 24px 30px; }
+      .masthead { gap: 12px; }
+      .brand { font-size: 14px; }
+      .status { font-size: 11px; }
+      .eyebrow { margin-top: 27px; }
+      p { font-size: 17px; }
+    }
+    .tools { max-width: 840px; margin: 0 auto 20px; padding: 20px 24px; background: #fffef9; border: 1px solid var(--rule); font: 14px/1.5 Arial, sans-serif; }
+    .tools summary { cursor: pointer; font-weight: 700; }
+    .fields { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 16px; }
+    label { display: block; font-weight: 700; }
+    input, select, button { font: inherit; }
+    input, select { display: block; width: 100%; margin-top: 5px; padding: 9px; border: 1px solid #9b9f95; background: white; color: var(--ink); border-radius: 3px; }
+    button { cursor: pointer; padding: 8px 12px; border: 1px solid #9b9f95; border-radius: 3px; background: white; color: var(--ink); }
+    .print-tools { display: flex; flex-wrap: wrap; align-items: end; gap: 12px; margin-top: 16px; }
+    .print-tools label { flex: 1; min-width: 190px; }
+    .tools .hint { font: 13px/1.5 Arial, sans-serif; margin: 13px 0 0; color: var(--muted); }
+    .term-link, .party { font-weight: 700; }
+    .party { text-decoration-style: dotted; }
+    .fields input:focus, .fields select:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+    @media (max-width: 600px) { .tools { margin: 12px; padding: 16px; } .fields { grid-template-columns: 1fr; } }
+    @page { size: Letter; margin: .7in .75in; }
+    @media print {
+      html, body { background: white; }
+      .screen-only { display: none !important; }
+      body[data-print="request"] article:not(#request) { display: none; }
+      a.party { text-decoration: none; }
+      .reading-links a { font-weight: 700; }
+      body { padding: 0; }
+      article { max-width: none; margin: 0; padding: 0; border: 0; background: white; }
+      article + article { break-before: page; }
+      a { color: inherit; }
+      .return-link { display: none; }
+      h1 { font-size: 29pt; }
+      p { font-size: 11pt; line-height: 1.5; margin-bottom: 10pt; orphans: 3; widows: 3; }
+      .deck { font-size: 14pt; margin-bottom: 18pt; }
+      .principle { font-size: 14pt; margin: 16pt 0; padding-top: 8pt; padding-bottom: 8pt; }
+      h2 { break-after: avoid; margin-top: 17pt; }
+      .eyebrow { margin-top: 21pt; }
+      footer { break-inside: avoid; }
+    }
+  
+.byline, .scope-note { font: 13px/1.6 Arial, sans-serif; color: var(--muted); }
+.scope-note { padding: 14px 16px; border-left: 2px solid var(--rule); background: #f6f5ef; }
+sup { font: 11px/1 Arial, sans-serif; white-space: nowrap; }
+table { width: 100%; border-collapse: collapse; margin: 18px 0 22px; font: 15px/1.55 Arial, sans-serif; }
+th, td { text-align: left; vertical-align: top; padding: 12px; border-bottom: 1px solid var(--rule); }
+thead { background: #eeeee6; }
+tbody th { width: 28%; font-size: 14px; }
+.money-table td { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sources { padding-left: 23px; font: 15px/1.6 Arial, sans-serif; }
+.sources li { padding-left: 3px; margin-bottom: 15px; overflow-wrap: anywhere; }
+.tools { display: flex; flex-wrap: wrap; gap: 9px 18px; align-items: center; }
+[id] { scroll-margin-top: 20px; }
+@media (max-width: 600px) {
+  th, td { padding: 10px 8px; }
+  table { font-size: 14px; }
+  tbody th { width: 31%; font-size: 13px; }
+  .masthead { align-items: flex-start; }
+}
+@media print {
+  table { font-size: 9.5pt; }
+  tbody th { font-size: 9pt; }
+  tr { break-inside: avoid; }
+  th, td { padding: 8pt; }
+  .byline, .scope-note { font-size: 8.5pt; }
+  .sources { font-size: 9.5pt; line-height: 1.5; }
+  .sources li { break-inside: avoid; margin-bottom: 9pt; }
+  sup { font-size: 8pt; }
+}
+</style>
+</head><body>
+<nav class="tools screen-only" aria-label="Read and print this collection">
+<a href="../../index.html">Commons feed</a><a href="#autism-assessment">Autism and assessment</a><a href="#autism-sources">Sources</a><button id="print-button" type="button">Print / save PDF</button>
+</nav>
+<article id="autism-assessment">
+  <header>
+    <div class="masthead"><span class="brand">Commons</span><span class="status">Explanation · Autism across the lifespan</span></div>
+    <p class="eyebrow">Autism · Assessment · Public benefits</p>
+    <h1>Autism, assessment, and access to disability benefits</h1>
+    <p class="deck">Autistic people can qualify for disability benefits. Access depends on documenting the relevant limitations and meeting the rules of the particular program.</p>
+    <p class="byline">John Rigler · 22 October 2026 · AI-assisted research and editing</p>
+  </header>
+  <p>Autism can affect communication, sensory experience, adaptation, and the ability to manage daily demands. Support needs differ between people.<sup><a href="#autism-source-nimh">[1]</a></sup> Social Security explicitly includes autism in its adult and childhood disability listings.<sup><a href="#autism-source-adult-listing">[6]</a></sup><sup><a href="#autism-source-child-listing">[7]</a></sup> A diagnosis identifies a condition; a benefits decision also asks about its effects and the program's other eligibility requirements.</p>
+  <h2>Children: screening and diagnosis are different steps</h2>
+  <p>CDC reports the American Academy of Pediatrics recommendation for autism-specific screening at 18 and 24 months, alongside broader developmental monitoring and screening.<sup><a href="#autism-source-screening">[2]</a></sup> Screening identifies a reason for further evaluation. A clinical assessment combines developmental history, observations, and relevant assessments; CDC cautions against basing a diagnosis on one tool alone.<sup><a href="#autism-source-diagnosis">[3]</a></sup> A screening result is therefore a starting point, rather than a complete diagnostic or benefit determination.</p>
+  <p>Some developmental services can begin before a formal autism diagnosis. CDC describes parent-initiated requests for early-intervention evaluation for children under three and school-system evaluations for older children.<sup><a href="#autism-source-services">[4]</a></sup> A family does not have to treat every service as the last stage of one long diagnostic queue. Each service has its own evaluation and eligibility process.</p>
+  <h2>Adults who were never assessed as children</h2>
+  <p>Childhood screening does not cover everyone who later seeks an explanation for longstanding difficulties. Adults can receive an autism diagnosis. CDC notes that reconstructing early development and separating a long history of other diagnoses can make adult assessment more difficult.<sup><a href="#autism-source-adult-diagnosis">[5]</a></sup> The absence of a childhood label does not settle what an adult's present assessment will find.</p>
+  <p>NIMH describes referral to a clinician experienced in adult autism, such as a psychologist, neuropsychologist, or psychiatrist. An evaluation considers communication and social interaction, sensory experiences, repetitive behavior, and interests, and may include information about early development from family or caregivers.<sup><a href="#autism-source-nimh">[1]</a></sup> Available school reports, earlier evaluations, and a dated history can help organize that conversation; missing information should be identified as missing.</p>
+  <p>Self-recognition can prompt an assessment. It remains distinct from the medical evidence SSA requires to establish an impairment.<sup><a href="#autism-source-evidence">[11]</a></sup> “Untested” describes a gap in assessment or documentation; it does not measure the amount of help a person needs.</p>
+  <h2>Which benefit or service is being considered?</h2>
+  <table>
+    <thead><tr><th scope="col">Route</th><th scope="col">Relevant distinction</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">SSI for a child</th><td>Uses the childhood disability standard and financial rules; some parental income and resources may count.<sup><a href="#autism-source-child-ssi">[8]</a></sup></td></tr>
+      <tr><th scope="row">SSI for an adult</th><td>Uses the adult disability standard, with income, resource, and other conditions. It does not require a worker's SSDI earnings record.<sup><a href="#autism-source-ssi">[9]</a></sup></td></tr>
+      <tr><th scope="row">SSDI</th><td>Ordinarily requires sufficient covered work history as well as a qualifying disability. Certain family-benefit routes use a parent's record.<sup><a href="#autism-source-qualify">[10]</a></sup></td></tr>
+      <tr><th scope="row">Education and health services</th><td>Have separate eligibility routes. A school evaluation, service plan, and Social Security award answer different questions.<sup><a href="#autism-source-services">[4]</a></sup><sup><a href="#autism-source-child-ssi">[8]</a></sup></td></tr>
+    </tbody>
+  </table>
+  <p>For adult federal cash benefits based on disability, the impairment must prevent substantial gainful activity and satisfy the duration rule—generally at least twelve continuous months, already elapsed or expected, or an expectation of death.<sup><a href="#autism-source-ssi">[9]</a></sup> Daily-life evidence helps explain the limitations. Adult cash-benefit eligibility turns on their effect on sustained work under SSA's standard.</p>
+  <p>A separate adult-child benefit route may apply when disability began before age 22 and a qualifying parent receives Social Security retirement or disability benefits, or has died. Other conditions apply.<sup><a href="#autism-source-qualify">[10]</a></sup> The relevant question is when the qualifying disability began; the age at which someone first obtained a diagnosis is a different date.</p>
+  <h2>What functional evidence needs to show</h2>
+  <p>Adult listing 12.10 requires medical documentation of the specified communication/social and restricted or repetitive features, together with an extreme limitation in one, or marked limitations in two, of four functional areas: using information, social interaction, maintaining attention and pace, and adaptation or self-management.<sup><a href="#autism-source-adult-listing">[6]</a></sup> Those severity terms have defined meanings; a diagnosis alone does not establish them.</p>
+  <p>Failing to meet or medically equal a listing is not automatically the end of an adult claim. SSA then considers remaining work capacity, past work, and, when necessary, the ability to adjust to other work.<sup><a href="#autism-source-work-decision">[12]</a></sup> For children, functional equivalence is a separate route that examines age-appropriate activities across home, school, and community.<sup><a href="#autism-source-child-function">[13]</a></sup> Children are not assessed by asking whether they can hold an adult job.</p>
+  <p>Useful documentation makes the effect concrete: what task is difficult, how often the difficulty occurs, what happens under ordinary demands, what support is needed, and whether the activity can be sustained. Examples might include difficulty following changing instructions, interacting under pressure, tolerating a particular sensory environment, or maintaining attendance and pace. Describe the individual's actual experience rather than treating these examples as a diagnostic checklist.</p>
+  <p>SSA's mental-disorder guidance recognizes that completing tasks in a highly supportive setting does not necessarily demonstrate the ability to do them throughout regular employment. It calls for assessment over time and in context.<sup><a href="#autism-source-adult-listing">[6]</a></sup> An account should therefore describe the help, structure, breaks, or reduced demands behind an apparent success, along with strengths and activities the person can perform.</p>
+  <h2>Assessment itself can become an access barrier</h2>
+  <p>For an adult without earlier documentation, there may be two substantial projects: obtaining a competent assessment and assembling evidence for the relevant benefit. Finding an evaluator, making appointments, reconstructing history, and tracking requests require time and coordination. Where those tasks depend on capacities the person's condition limits, the route to recognition can add another filter before eligibility is examined. This is an access argument, not evidence that every delay was deliberately designed to exclude.</p>
+  <p>The <a href="../../index.html#item=disability-evidence">disability-record article</a> explains the division of evidence work and SSA's instruction not to delay filing while waiting for medical records.<sup><a href="#autism-source-medical-records">[14]</a></sup> The connected articles on <a href="../../index.html#item=disability-assistance">assistance</a>, <a href="../../index.html#item=disability-new-mexico">New Mexico programs</a>, and the <a href="../../index.html#item=disability-texas">Texas comparison</a> identify different routes and responsibilities. Personal assessment reports and claim evidence belong in the private case record; shared explanations can make the process easier to understand without exposing those records.</p>
+  <div class="reading-links"><a href="../../index.html#item=disability-access">Disability benefits and the cost of proving eligibility →</a><a href="../../index.html#item=disability-evidence">The work of building a disability record →</a><a href="#autism-sources">Research and program rules →</a></div>
+</article>
+<article id="autism-sources">
+  <header><p class="eyebrow">Sources · Checked 22 October 2026</p><h1>Autism: assessment and benefit standards</h1><p class="deck">Clinical assessment, service eligibility, and disability-benefit decisions have different purposes.</p></header>
+  <ol class="sources">
+    <li id="autism-source-nimh"><a href="https://www.nimh.nih.gov/health/publications/autism-spectrum-disorder">National Institute of Mental Health, Autism Spectrum Disorder</a>. Differences in support needs and assessment across ages, including adult referral and developmental history.</li>
+    <li id="autism-source-screening"><a href="https://www.cdc.gov/autism/hcp/diagnosis/screening.html">CDC, Clinical Screening for Autism Spectrum Disorder</a>. Reports AAP recommendations for autism-specific screening at 18 and 24 months. Screening and diagnostic evaluation remain separate steps.</li>
+    <li id="autism-source-diagnosis"><a href="https://www.cdc.gov/autism/hcp/diagnosis/index.html">CDC, Clinical Testing and Diagnosis for Autism Spectrum Disorder</a>. Developmental history, professional observation, diagnostic criteria, and the limits of a single assessment tool.</li>
+    <li id="autism-source-services"><a href="https://www.cdc.gov/autism/treatment/accessing-services.html">CDC, Accessing Services for Autism Spectrum Disorder</a>. Early-intervention and school evaluation routes; a medical diagnosis is not a prerequisite for requesting those evaluations. Services have their own eligibility criteria.</li>
+    <li id="autism-source-adult-diagnosis"><a href="https://www.cdc.gov/autism/faq/index.html">CDC, Autism Spectrum Disorder FAQ, adult diagnosis section</a>. Adult assessment and the challenges of reconstructing early development; page dated 1 October 2026.</li>
+    <li id="autism-source-adult-listing"><a href="https://www.ssa.gov/disability/professionals/bluebook/12.00-MentalDisorders-Adult.htm#12_10">SSA, Adult Mental Disorders, listing 12.10 and sections 12.00C–F</a>. Autism medical and functional criteria, evidence over time, and the effects of structured or supportive settings.</li>
+    <li id="autism-source-child-listing"><a href="https://www.ssa.gov/disability/professionals/bluebook/112.00-MentalDisorders-Childhood.htm#112_10">SSA, Childhood Mental Disorders, listing 112.10</a>. Autism listing for ages three to under eighteen. Section 112.00A identifies separate developmental-disorder criteria for children under three.</li>
+    <li id="autism-source-child-ssi"><a href="https://www.ssa.gov/ssi/text-child-ussi.htm">SSA, SSI for Children</a>. Childhood disability, duration, financial eligibility, parental deeming, and possible Medicaid routes apart from SSI.</li>
+    <li id="autism-source-ssi"><a href="https://www.ssa.gov/ssi/text-eligibility-ussi.htm">SSA, SSI Eligibility, 2026 edition</a>. Adult and childhood disability definitions, income and resources, and other eligibility conditions.</li>
+    <li id="autism-source-qualify"><a href="https://www.ssa.gov/benefits/disability/qualify.html">SSA, How Does Someone Become Eligible?</a>. SSDI work and medical requirements, and the adult-child route for qualifying disability beginning before age 22. Benefit onset and diagnosis dates should not be conflated.</li>
+    <li id="autism-source-evidence"><a href="https://www.ssa.gov/disability/professionals/bluebook/evidentiary.htm">SSA, Evidentiary Requirements</a>. Objective medical evidence establishes a medically determinable impairment; medical and nonmedical evidence inform severity and function.</li>
+    <li id="autism-source-work-decision"><a href="https://www.ssa.gov/pubs/EN-05-10029.pdf">SSA Publication 05-10029, <em>Disability Benefits</em></a>. Sequential evaluation: when a severe impairment does not meet or medically equal a listing, evaluation proceeds to work-related steps.</li>
+    <li id="autism-source-child-function"><a href="https://www.ssa.gov/OP_Home/cfr20/416/416-0926a.htm">20 CFR §416.926a, Functional equivalence for children</a>. Six functional domains, age-peer comparison, supportive settings, and the severity and duration requirements for this route.</li>
+    <li id="autism-source-medical-records"><a href="https://www.ssa.gov/help/iClaim_medicalEvidence.html">SSA, Medical Evidence</a>. Do not delay filing for records; agency evidence requests and possible examinations. This does not dispense with the evidence needed for a decision.</li>
+  </ol>
+  <p class="source-note">The discussion of assessment as an access barrier and the proposed organization of evidence are editorial analysis. This entry explains selected U.S. federal benefit rules and links the separate New Mexico/Texas series. It does not diagnose a person, estimate how many adults are undiagnosed, or treat a screening score or autism diagnosis as an automatic benefit award. No independent clinical or legal review is recorded.</p>
+</article>
+<script>document.getElementById('print-button').addEventListener('click', () => window.print());
+</script>
+</body></html>

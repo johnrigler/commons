@@ -9,6 +9,29 @@
   },
   "items": [
     {
+      "id": "autism-assessment",
+      "kind": "explanation",
+      "title": "Autism, assessment, and access to disability benefits",
+      "summary": "Childhood screening, adults without an earlier assessment, and the functional evidence used for disability benefits and services.",
+      "cid": "bafkreihgo2yzb62esmlxxsnpj64xxla6x2273ppg6qghknfh4gjbyzcgs4",
+      "path": "reading/autism/bafkreihgo2yzb62esmlxxsnpj64xxla6x2273ppg6qghknfh4gjbyzcgs4.html",
+      "fragment": "autism-assessment",
+      "author": "John Rigler",
+      "status": "Unsigned researched explanation · 22 October 2026",
+      "indexed": true,
+      "related": [
+        "disability-access",
+        "disability-evidence",
+        "disability-assistance",
+        "disability-new-mexico",
+        "disability-texas"
+      ],
+      "topics": [
+        "Autism",
+        "Disability & public benefits"
+      ]
+    },
+    {
       "id": "disability-access",
       "kind": "explanation",
       "title": "Disability benefits and the cost of proving eligibility",
@@ -23,7 +46,8 @@
         "disability-new-mexico",
         "disability-texas",
         "disability-evidence",
-        "administrative-burden"
+        "administrative-burden",
+        "autism-assessment"
       ],
       "topics": [
         "Disability & public benefits"
@@ -63,7 +87,8 @@
       "related": [
         "disability-general-assistance",
         "disability-assistance",
-        "disability-review"
+        "disability-review",
+        "autism-assessment"
       ],
       "topics": [
         "Disability & public benefits"
@@ -124,7 +149,8 @@
         "disability-evidence",
         "prepare",
         "assistance-record",
-        "disability-texas"
+        "disability-texas",
+        "autism-assessment"
       ],
       "topics": [
         "Disability & public benefits"

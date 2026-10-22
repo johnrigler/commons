@@ -1,0 +1,124 @@
+{
+  "title": "Commons - Autism, Assessment, and Disability Benefits",
+  "author": "John Rigler",
+  "date": "2026-10-22",
+  "status": "Unsigned AI-assisted research and editorial draft; no independent clinical or legal review recorded",
+  "scope": "One foundational autism entry covering childhood screening, adult assessment without an earlier diagnosis, and evidence for U.S. disability benefits and services",
+  "base_commons_commit": "64c5147fc8cb43b76773bebceaf1b5056e4bb5f3",
+  "artifacts": [
+    {
+      "path": "bafkreihgo2yzb62esmlxxsnpj64xxla6x2273ppg6qghknfh4gjbyzcgs4.html",
+      "media_type": "text/html",
+      "sha256": "e676b190fb4493177bc9af4fb97bac1ebeb5fdbde6f40c7534a7e1921c644697",
+      "cid": "bafkreihgo2yzb62esmlxxsnpj64xxla6x2273ppg6qghknfh4gjbyzcgs4"
+    }
+  ],
+  "articles": [
+    {
+      "id": "autism-assessment",
+      "title": "Autism, assessment, and access to disability benefits",
+      "cid": "bafkreihgo2yzb62esmlxxsnpj64xxla6x2273ppg6qghknfh4gjbyzcgs4",
+      "fragment": "autism-assessment",
+      "related": [
+        "disability-access",
+        "disability-evidence",
+        "disability-assistance",
+        "disability-new-mexico",
+        "disability-texas"
+      ]
+    }
+  ],
+  "sources_checked": "2026-10-22",
+  "sources": [
+    {
+      "id": "autism-source-nimh",
+      "url": "https://www.nimh.nih.gov/health/publications/autism-spectrum-disorder",
+      "description": "National Institute of Mental Health, Autism Spectrum Disorder. Differences in support needs and assessment across ages, including adult referral and developmental history."
+    },
+    {
+      "id": "autism-source-screening",
+      "url": "https://www.cdc.gov/autism/hcp/diagnosis/screening.html",
+      "description": "CDC, Clinical Screening for Autism Spectrum Disorder. Reports AAP recommendations for autism-specific screening at 18 and 24 months. Screening and diagnostic evaluation remain separate steps."
+    },
+    {
+      "id": "autism-source-diagnosis",
+      "url": "https://www.cdc.gov/autism/hcp/diagnosis/index.html",
+      "description": "CDC, Clinical Testing and Diagnosis for Autism Spectrum Disorder. Developmental history, professional observation, diagnostic criteria, and the limits of a single assessment tool."
+    },
+    {
+      "id": "autism-source-services",
+      "url": "https://www.cdc.gov/autism/treatment/accessing-services.html",
+      "description": "CDC, Accessing Services for Autism Spectrum Disorder. Early-intervention and school evaluation routes; a medical diagnosis is not a prerequisite for requesting those evaluations. Services have their own eligibility criteria."
+    },
+    {
+      "id": "autism-source-adult-diagnosis",
+      "url": "https://www.cdc.gov/autism/faq/index.html",
+      "description": "CDC, Autism Spectrum Disorder FAQ, adult diagnosis section. Adult assessment and the challenges of reconstructing early development; page dated 1 October 2026."
+    },
+    {
+      "id": "autism-source-adult-listing",
+      "url": "https://www.ssa.gov/disability/professionals/bluebook/12.00-MentalDisorders-Adult.htm",
+      "description": "SSA, Adult Mental Disorders, listing 12.10 and sections 12.00C–F. Autism medical and functional criteria, evidence over time, and the effects of structured or supportive settings."
+    },
+    {
+      "id": "autism-source-child-listing",
+      "url": "https://www.ssa.gov/disability/professionals/bluebook/112.00-MentalDisorders-Childhood.htm",
+      "description": "SSA, Childhood Mental Disorders, listing 112.10. Autism listing for ages three to under eighteen. Section 112.00A identifies separate developmental-disorder criteria for children under three."
+    },
+    {
+      "id": "autism-source-child-ssi",
+      "url": "https://www.ssa.gov/ssi/text-child-ussi.htm",
+      "description": "SSA, SSI for Children. Childhood disability, duration, financial eligibility, parental deeming, and possible Medicaid routes apart from SSI."
+    },
+    {
+      "id": "autism-source-ssi",
+      "url": "https://www.ssa.gov/ssi/text-eligibility-ussi.htm",
+      "description": "SSA, SSI Eligibility, 2026 edition. Adult and childhood disability definitions, income and resources, and other eligibility conditions."
+    },
+    {
+      "id": "autism-source-qualify",
+      "url": "https://www.ssa.gov/benefits/disability/qualify.html",
+      "description": "SSA, How Does Someone Become Eligible?. SSDI work and medical requirements, and the adult-child route for qualifying disability beginning before age 22. Benefit onset and diagnosis dates should not be conflated."
+    },
+    {
+      "id": "autism-source-evidence",
+      "url": "https://www.ssa.gov/disability/professionals/bluebook/evidentiary.htm",
+      "description": "SSA, Evidentiary Requirements. Objective medical evidence establishes a medically determinable impairment; medical and nonmedical evidence inform severity and function."
+    },
+    {
+      "id": "autism-source-work-decision",
+      "url": "https://www.ssa.gov/pubs/EN-05-10029.pdf",
+      "description": "SSA Publication 05-10029, Disability Benefits. Sequential evaluation: when a severe impairment does not meet or medically equal a listing, evaluation proceeds to work-related steps."
+    },
+    {
+      "id": "autism-source-child-function",
+      "url": "https://www.ssa.gov/OP_Home/cfr20/416/416-0926a.htm",
+      "description": "20 CFR §416.926a, Functional equivalence for children. Six functional domains, age-peer comparison, supportive settings, and the severity and duration requirements for this route."
+    },
+    {
+      "id": "autism-source-medical-records",
+      "url": "https://www.ssa.gov/help/iClaim_medicalEvidence.html",
+      "description": "SSA, Medical Evidence. Do not delay filing for records; agency evidence requests and possible examinations. This does not dispense with the evidence needed for a decision."
+    }
+  ],
+  "research_scope": {
+    "clinical": "CDC and NIMH explain screening and assessment across ages; no individual diagnosis or estimate of undiagnosed adults is offered",
+    "benefits": "Selected U.S. federal adult and childhood disability standards, functional evidence, SSI financial conditions, SSDI work conditions, and the adult-child route",
+    "services": "Developmental, educational, health, and cash-benefit routes remain distinct; no automatic award is inferred from a screening result or diagnosis",
+    "analysis": "The assessment-access barrier and proposed record organization are editorial analysis; friction alone does not establish deliberate exclusion",
+    "privacy": "Reusable public explanation; personal medical and claim evidence remains outside this collection"
+  },
+  "publication": {
+    "repository": "johnrigler/commons",
+    "state": "Public reading edition and prepared ledger reference",
+    "signature": null,
+    "ipfs_pin_receipt": null,
+    "chain": "litecoin",
+    "transaction_id": null
+  },
+  "ledger_preparation": {
+    "schema": "commons/litecoin-announcement/1",
+    "path": "../../examples/autism-assessment.draft.json",
+    "state": "Unsigned draft; funding, fees, signing, pinning, and broadcast not performed"
+  }
+}

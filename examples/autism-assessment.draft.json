@@ -1,0 +1,79 @@
+{
+  "schema": "commons/litecoin-announcement/1",
+  "state": "draft",
+  "coin": "litecoin",
+  "network": "mainnet",
+  "roleProfile": {
+    "name": "LLx",
+    "transport": "LMx",
+    "subject": "LNx"
+  },
+  "mainThunderword": {
+    "address": "LLLLLLLLLLLLLLLLLLLLLLLLLLLLXgkk2V",
+    "label": "Litecoin general Thunderword"
+  },
+  "tags": [
+    {
+      "role": "name",
+      "prefix": "LLx",
+      "phrase": "John Rigler",
+      "encoded": "JoHNxRiGLER",
+      "address": "LLxJoHNxRiGLERzzzzzzzzzzzzzzV5pZ1p"
+    },
+    {
+      "role": "transport",
+      "prefix": "LMx",
+      "phrase": "Commons",
+      "encoded": "CoMMoNS",
+      "address": "LMxCoMMoNSzzzzzzzzzzzzzzzzzzZU8MFW"
+    },
+    {
+      "role": "subject",
+      "prefix": "LNx",
+      "phrase": "Autism assessment",
+      "encoded": "AUTiSMxASSESSMENT",
+      "address": "LNxAUTiSMxASSESSMENTzzzzzzzzXCyv5C"
+    }
+  ],
+  "message": {
+    "text": "ipfs://bafkreibaath2iznfyjkj5al4gpwovldrzjefmnwdykhkz35vrpxdtwmu5e",
+    "encoding": "utf-8",
+    "hex": "697066733a2f2f6261666b726569626161746832697a6e66796a6b6a35616c346770776f766c64727a6a65666d6e7764796b686b7a3335767270786474776d753565",
+    "bytes": 66
+  },
+  "outputs": [
+    {
+      "role": "general-index",
+      "address": "LLLLLLLLLLLLLLLLLLLLLLLLLLLLXgkk2V",
+      "amountLitoshis": null
+    },
+    {
+      "role": "name",
+      "address": "LLxJoHNxRiGLERzzzzzzzzzzzzzzV5pZ1p",
+      "amountLitoshis": null
+    },
+    {
+      "role": "transport",
+      "address": "LMxCoMMoNSzzzzzzzzzzzzzzzzzzZU8MFW",
+      "amountLitoshis": null
+    },
+    {
+      "role": "subject",
+      "address": "LNxAUTiSMxASSESSMENTzzzzzzzzXCyv5C",
+      "amountLitoshis": null
+    },
+    {
+      "role": "op-return",
+      "amountLitoshis": 0,
+      "scriptPubKey": "6a42697066733a2f2f6261666b726569626161746832697a6e66796a6b6a35616c346770776f766c64727a6a65666d6e7764796b686b7a3335767270786474776d753565"
+    }
+  ],
+  "commonsIndex": {
+    "prefix": "LMx",
+    "phrase": "Commons",
+    "encoded": "CoMMoNS",
+    "address": "LMxCoMMoNSzzzzzzzzzzzzzzzzzzZU8MFW",
+    "role": "commons-index",
+    "form": "B / transport"
+  }
+}

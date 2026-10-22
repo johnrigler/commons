@@ -12,6 +12,7 @@ const root = path.resolve(__dirname,'..');
   const courtCount=catalog.items.filter(item=>item.indexed && item.topics?.includes('Courts & civil process')).length;
   const trafficCount=catalog.items.filter(item=>item.indexed && item.topics?.includes('Traffic & public revenue')).length;
   const disabilityCount=catalog.items.filter(item=>item.indexed && item.topics?.includes('Disability & public benefits')).length;
+  const autismCount=catalog.items.filter(item=>item.indexed && item.topics?.includes('Autism')).length;
   const server = http.createServer(async(req,res)=>{
     try {
       const pathname = decodeURIComponent(new URL(req.url,'http://localhost').pathname);
@@ -33,6 +34,19 @@ const root = path.resolve(__dirname,'..');
     await page.locator('#portal-cards .portal-card').first().waitFor();
     assert.equal(await page.locator('#portal-cards .portal-card').count(),publishedCount);
     assert.equal(await page.locator('#pinata-form').count(),0);
+    await page.getByRole('button',{name:'Autism',exact:true}).click();
+    assert.equal(await page.locator('#portal-cards .portal-card').count(),autismCount);
+    await page.context().setOffline(true);
+    await page.getByRole('link',{name:'Autism, assessment, and access to disability benefits',exact:true}).click();
+    await page.locator('#reader-content table').waitFor({state:'visible'});
+    assert.match(await page.locator('#reader-content').innerText(),/Adults who were never assessed as children/);
+    assert.match(await page.locator('#reader-content').innerText(),/listing 12\.10/);
+    assert.ok(await page.locator('#reader-content .reader-sources li').count()>=10);
+    await page.locator('#reader-content').getByRole('link',{name:'disability-record article',exact:true}).click();
+    await page.locator('#reader-content').getByRole('heading',{name:'Filing and assembling evidence can proceed together',exact:true}).waitFor();
+    assert.match(page.url(),/#item=disability-evidence$/);
+    await page.getByRole('button',{name:'Back to the feed',exact:false}).click();
+    await page.context().setOffline(false);
     await page.getByRole('button',{name:'Disability & public benefits',exact:true}).click();
     assert.equal(await page.locator('#portal-cards .portal-card').count(),disabilityCount);
     await page.context().setOffline(true);
@@ -153,6 +167,6 @@ const root = path.resolve(__dirname,'..');
     assert.ok(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
     assert.ok(await mobile.locator('#portal-reader').evaluate(e=>e.scrollWidth<=e.clientWidth));
     await fresh.close();
-    console.log('Portal browser checks passed: connected reading, disability/state comparisons, exact references, safe local additions, index filtering, publication handoff, reload, About and mobile layout.');
+    console.log('Portal browser checks passed: connected reading, autism/assessment and disability/state comparisons, exact references, safe local additions, index filtering, publication handoff, reload, About and mobile layout.');
   } finally {await browser.close();await new Promise(resolve=>server.close(resolve));}
 })().catch(error=>{console.error(error);process.exitCode=1;});

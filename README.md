@@ -47,6 +47,11 @@ fields in the announcement form are editable examples.
 
 ## Current arguments and reading editions
 
+[Autism, assessment, and access to disability benefits](reading/autism/index.html)
+opens the **Autism** subject. It covers childhood screening, adults without an
+earlier diagnosis, medical and functional evidence, and the distinct routes to
+services, SSI, and SSDI. It connects to the disability series in the live reader.
+
 [Disability benefits and the work of access](reading/disability/index.html)
 adds seven connected articles on eligibility, evidence gathering, agency duties,
 review, and assistance. New Mexico's General Assistance is a concrete example;
