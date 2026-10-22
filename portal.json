@@ -9,6 +9,28 @@
   },
   "items": [
     {
+      "id": "records-recollection",
+      "kind": "story",
+      "title": "A stack of records without an explanation",
+      "summary": "A separate debt-case recollection: twenty to forty pages of spreadsheet-like printouts and an unanswered request to explain the numbers.",
+      "cid": "bafkreibqmerfobc7uqlj32lajrghi7bphp7r4ogamejy6etr5v72agezp4",
+      "path": "reading/records/bafkreibqmerfobc7uqlj32lajrghi7bphp7r4ogamejy6etr5v72agezp4.html",
+      "fragment": "records-recollection",
+      "author": "John Rigler",
+      "status": "Unsigned research draft; attributed recollection and primary sources",
+      "indexed": true,
+      "related": [
+        "records-proof",
+        "administrative-burden",
+        "debt-recollection",
+        "rent-acceleration"
+      ],
+      "topics": [
+        "Courts & civil process",
+        "Housing & credit"
+      ]
+    },
+    {
       "id": "debt-recollection",
       "kind": "story",
       "title": "Paying $1,000 to get past the process",
@@ -23,7 +45,8 @@
         "debt-default",
         "administrative-burden",
         "traffic-toll",
-        "credit-reporting"
+        "credit-reporting",
+        "records-recollection"
       ],
       "topics": [
         "Courts & civil process",
@@ -52,6 +75,29 @@
       ]
     },
     {
+      "id": "records-proof",
+      "kind": "explanation",
+      "title": "What the records actually prove",
+      "summary": "Business-record foundations, qualified witnesses, affidavits, and the explanation needed to trace a packet of entries to the amount claimed.",
+      "cid": "bafkreibqmerfobc7uqlj32lajrghi7bphp7r4ogamejy6etr5v72agezp4",
+      "path": "reading/records/bafkreibqmerfobc7uqlj32lajrghi7bphp7r4ogamejy6etr5v72agezp4.html",
+      "fragment": "records-proof",
+      "author": "John Rigler",
+      "status": "Unsigned research draft; attributed recollection and primary sources",
+      "indexed": true,
+      "related": [
+        "records-recollection",
+        "administrative-burden",
+        "rent-acceleration",
+        "credit-reporting",
+        "value"
+      ],
+      "topics": [
+        "Courts & civil process",
+        "Housing & credit"
+      ]
+    },
+    {
       "id": "debt-default",
       "kind": "explanation",
       "title": "A default risk before the trial",
@@ -66,7 +112,8 @@
         "debt-recollection",
         "administrative-burden",
         "credit-reporting",
-        "traffic-toll"
+        "traffic-toll",
+        "records-proof"
       ],
       "topics": [
         "Courts & civil process",
@@ -90,7 +137,8 @@
         "request",
         "traffic-toll",
         "debt-recollection",
-        "debt-default"
+        "debt-default",
+        "records-proof"
       ],
       "topics": [
         "Housing & credit"
@@ -111,7 +159,8 @@
       "related": [
         "scribes",
         "open-commons",
-        "work"
+        "work",
+        "records-proof"
       ],
       "topics": [
         "Technology & public memory"
@@ -171,7 +220,8 @@
       "related": [
         "request",
         "administrative-burden",
-        "credit-reporting"
+        "credit-reporting",
+        "records-proof"
       ],
       "topics": [
         "Housing & credit"
@@ -198,7 +248,9 @@
         "traffic-revenue",
         "credit-reporting",
         "debt-recollection",
-        "debt-default"
+        "debt-default",
+        "records-recollection",
+        "records-proof"
       ],
       "topics": [
         "Commons practice"
@@ -306,7 +358,8 @@
         "administrative-burden",
         "traffic-toll",
         "credit-reporting",
-        "debt-default"
+        "debt-default",
+        "records-proof"
       ],
       "topics": [
         "Commons practice"

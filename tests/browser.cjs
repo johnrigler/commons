@@ -9,6 +9,7 @@ const root = path.resolve(__dirname,'..');
 (async()=>{
   const catalog=JSON.parse(await fs.readFile(path.join(root,'portal.json'),'utf8'));
   const publishedCount=catalog.items.filter(item=>item.indexed).length;
+  const courtCount=catalog.items.filter(item=>item.indexed && item.topics?.includes('Courts & civil process')).length;
   const server = http.createServer(async(req,res)=>{
     try {
       const pathname = decodeURIComponent(new URL(req.url,'http://localhost').pathname);
@@ -51,7 +52,7 @@ const root = path.resolve(__dirname,'..');
     await page.getByRole('button',{name:'Back to the feed',exact:false}).click();
     await page.getByRole('button',{name:'All subjects',exact:true}).click();
     await page.getByRole('button',{name:'Courts & civil process',exact:true}).click();
-    assert.equal(await page.locator('#portal-cards .portal-card').count(),2);
+    assert.equal(await page.locator('#portal-cards .portal-card').count(),courtCount);
     await page.context().setOffline(true);
     await page.getByRole('link',{name:'Paying $1,000 to get past the process',exact:true}).click();
     await page.locator('#reader-content').waitFor({state:'visible'});

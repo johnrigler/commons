@@ -75,6 +75,13 @@ scope, review status and exact artifact hashes.
 
 ### Debt claims and pretrial mediation
 
+[A stack of records without an explanation](https://johnrigler.github.io/commons/#item=records-recollection)
+records a separate debt-case recollection about spreadsheet-like printouts.
+[What the records actually prove](https://johnrigler.github.io/commons/#item=records-proof)
+examines records witnesses, affidavit foundations, and the work of tracing entries
+to a demanded balance. The [edition and numbered sources](reading/records/)
+keep the uncertain firm identification and unknown court details explicit.
+
 [Paying $1,000 to get past the process](https://johnrigler.github.io/commons/#item=debt-recollection)
 records Rigler's Tarrant County recollection. Its companion,
 [A default risk before the trial](https://johnrigler.github.io/commons/#item=debt-default),

@@ -156,7 +156,7 @@ test('OP_RETURN handles the 75/76 boundary and counts UTF-8 bytes', async () => 
 });
 
 test('included announcement files match the actual generator', async () => {
-    for (const name of ['commons-announcement.draft.json', 'ncs-rent-escalation.draft.json', 'traffic-tickets.draft.json', 'debt-mediation.draft.json']) {
+    for (const name of ['commons-announcement.draft.json', 'ncs-rent-escalation.draft.json', 'traffic-tickets.draft.json', 'debt-mediation.draft.json', 'account-records.draft.json']) {
         const value = JSON.parse(await readFile(new URL('../examples/' + name, import.meta.url), 'utf8'));
         const tags = Object.fromEntries(value.tags.map(tag => [tag.role, tag.phrase]));
         assert.deepEqual(await TW.draft({ ...tags, message: value.message.text, prefixes: value.roleProfile, includeCommons: Boolean(value.commonsIndex) }), value);
