@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Commons - Prepare, print, retain</title>
+  <style>:root { color-scheme: light; color: #242624; background: #eeeee8; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 30px 16px; font: 16px/1.55 Georgia, 'Times New Roman', serif; }
+article, .tools { max-width: 840px; margin: 0 auto 24px; padding: 40px 58px; background: #fffef9; border: 1px solid #cdd0c7; }
+.tools { padding: 16px 24px; font: 14px/1.5 Arial, sans-serif; }
+a { color: #77432f; overflow-wrap: anywhere; }
+button { padding: 8px 12px; font: inherit; cursor: pointer; background: white; border: 1px solid #60655f; border-radius: 3px; }
+button:focus-visible, a:focus-visible { outline: 2px solid #86503c; outline-offset: 3px; }
+.eyebrow { font: bold 12px/1.5 Arial, sans-serif; color: #86503c; text-transform: uppercase; letter-spacing: .06em; border-bottom: 2px solid #242624; padding-bottom: 12px; }
+h1 { font-size: 36px; font-weight: normal; line-height: 1.1; margin: 22px 0 15px; }
+.deck { font-size: 19px; line-height: 1.4; margin-bottom: 24px; }
+h2 { font: bold 15px/1.4 Arial, sans-serif; margin: 20px 0 8px; }
+p { margin: 0 0 12px; }
+.small { font: 12px/1.45 Arial, sans-serif; color: #53584f; }
+.field { font: 13px/1.7 Arial, sans-serif; overflow-wrap: anywhere; }
+footer { margin-top: 24px; border-top: 1px solid #cdd0c7; padding-top: 10px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font: 11px/1.5 Arial, sans-serif; color: #60655f; }
+@media (max-width:600px) { body { padding: 10px; } article { padding: 24px 20px; } h1 { font-size: 30px; } }
+@page { size: Letter; margin: .6in .65in; }
+@media print {
+  :root, body { background: white; }
+  body { padding: 0; font-size: 10.5pt; line-height: 1.35; }
+  .tools { display: none; }
+  article { margin: 0; padding: 0; border: 0; background: white; max-width: none; }
+  article + article { break-before: page; }
+  h1 { font-size: 25pt; margin: 16pt 0 10pt; }
+  h2 { font-size: 10.5pt; margin-top: 13pt; break-after: avoid; }
+  p { margin-bottom: 8pt; orphans: 2; widows: 2; }
+  .deck { font-size: 12pt; margin-bottom: 14pt; }
+  .small { font-size: 8.5pt; }
+  .field { font-size: 9.2pt; line-height: 1.6; }
+  footer { break-inside: avoid; margin-top: 14pt; }
+}
+</style>
+</head>
+<body>
+  <nav class="tools" aria-label="Use these pages">
+    <button id="print-button" type="button">Print / save PDF</button>
+    <a href="Commons-Preparation-and-Assistance.pdf">Download the three-page PDF</a>
+    <p>Read the walkthrough, then print the optional blank record. Complete it privately.</p>
+  </nav>
+<article id="walkthrough" aria-labelledby="walkthrough-title">
+  <header><p class="eyebrow">Commons / Self-service / 21 October 2026</p>
+  <h1 id="walkthrough-title">Prepare, print, retain</h1>
+  <p class="deck">A person can use the documents independently or ask someone to help with the paperwork.</p></header>
+  <p>The Commons publishes reusable explanations and blank records for free reuse. Its purpose is to reduce unnecessary work in asking for a substantive answer: the opposite of sludge. These materials provide procedural information, not individual legal advice.</p>
+  <h2>1. Start with the requested action</h2>
+  <p>Open the request and explanations in the parent reading directory. Select the credit reporting agency and change the collector and lessor names. Review every paragraph against the actual case. Editing names alone does not complete a dispute.</p>
+  <h2>2. Add the individual record</h2>
+  <p>State what is disputed, why, and what correction or explanation is requested. Label supporting copies with dates and descriptive names. Include the relevant calculations, correspondence and unanswered questions. Keep identification and address-verification material in a separate private attachment.</p>
+  <h2>3. Review and record any help</h2>
+  <p>The person whose case it is reviews the completed request and signs their own name. A helper can record typing, reading, organizing, printing or mailing on the next page. Preparing or sending a document does not by itself authorize signing it for someone else.</p>
+  <h2>4. Print or save the completed version</h2>
+  <p>Use Print / save PDF in the request. Choose the request alone or all explanatory pages. Check the resulting pages, names, attachments and signature spaces. The prebuilt request PDF contains the example names; edits in an open HTML page do not change that download.</p>
+  <h2>5. Send and keep the exact copy</h2>
+  <p>Use the recipient's current submission instructions and address. Keep the completed packet and any signed original; retain the sent copy or scan, attachment list, actual sending date, receipt and responses. Complete the delivery record after sending. Publishing a template on GitHub does not send anyone's dispute.</p>
+  <p class="small">The assistance record is optional. Keep completed records private and supply authorization material only where appropriate to the recipient and task. This template does not grant power of attorney, establish representation, or guarantee acceptance.</p>
+  <p class="small">Source context: the CFPB's guidance on submitting a complaint for another consumer calls for identifying the helper and obtaining authorization. That guidance concerns CFPB complaints; it is not a universal signing rule for courts or credit bureaus. Source and scope notes are in the directory README.</p>
+  <footer>John Rigler / Commons / Unsigned procedural draft<span>1 / Walkthrough</span></footer>
+</article>
+
+<article id="assistance-record" aria-labelledby="record-title">
+  <header><p class="eyebrow">Commons / Optional private record</p>
+  <h1 id="record-title">Preparation and assistance record</h1>
+  <p class="deck">For credit correspondence. Record what each person actually did. Leave unused sections blank.</p></header>
+  <p class="field">Person whose case this is: __________________________________________________</p>
+  <p class="field">Document / version / date: __________________________________________________</p>
+  <!-- The person's approval covers the identified document, not every later revision. -->
+  <h2>A. Person's review and limited permission</h2>
+  <p>I reviewed the identified document and attachments. They reflect the request I want to make. I permit the named helper to perform only the tasks marked below for this document.</p>
+  <p class="field">Helper's name: ____________________________________________________________</p>
+  <p class="field">Tasks: [ ] type / fill fields  [ ] read aloud  [ ] organize copies  [ ] print / scan  [ ] send</p>
+  <p class="field">Limits / permission end date, if any: __________________________________________</p>
+  <p class="field">Person's own signature: ______________________________ Date: ________________</p>
+  <!-- Clerical assistance is separate from authorship, representation and signature authority. -->
+  <h2>B. Prepared or assisted by</h2>
+  <p>I provided the assistance described here. This entry identifies my work; it does not substitute my signature for the person's signature or certify every underlying fact.</p>
+  <p class="field">Work performed: __________________________________________________________</p>
+  <p class="field">Helper's own signature: ______________________________ Date: ________________</p>
+  <!-- Complete this only for an actual signature under separately established authority. -->
+  <h2>C. If someone signed on the person's behalf</h2>
+  <p>This section records an action under separately established authority. Section A's permission to help does not grant authority to sign. Identify the actual signer and capacity; do not imitate the person's signature.</p>
+  <p class="field">Actual signer / capacity: ___________________________________________________</p>
+  <p class="field">Authority document / date / scope: ___________________________________________</p>
+  <p class="field">Authority copy supplied to recipient, if required: _______________________________</p>
+  <p class="field">Actual signer's own signature: __________________________ Date: ______________</p>
+  <!-- Delivery is an observed event, never prefilled merely because a PDF exists. -->
+  <h2>D. Sent by / delivery record</h2>
+  <p class="field">Sender / recipient: ________________________________________________________</p>
+  <p class="field">Method / actual date / receipt reference: ______________________________________</p>
+  <p class="field">Exact copy and attachment list retained at: ____________________________________</p>
+  <p class="small">Private when completed. This record does not establish the sufficiency of authority or the recipient's acceptance. Responses should go to the person unless separately arranged and authorized.</p>
+  <footer>John Rigler / Commons / Blank template<span>2 / Assistance record</span></footer>
+</article>
+
+<article id="common-structure" aria-labelledby="structure-title">
+  <header><p class="eyebrow">Commons / Further case areas / 21 October 2026</p>
+  <h1 id="structure-title">Foundations, articles and cases</h1>
+  <p class="deck">Foundations organize subjects. Reusable articles can connect several foundations, and cases can cite several articles.</p></header>
+  <p>Deterrence through administrative burden is one reusable article, often called the sludge document. It explains how unnecessary complexity, repetition, delay or expense can discourage a person from pursuing a substantive answer. Excessive or unjustified procedural friction is often called sludge.</p>
+  <h2>Articles and cases connected by an issue</h2>
+  <p>Unsupported rent acceleration connects Real Estate with procedural burden. Veterans dealing with the VA and people challenging traffic tickets are further case areas in which to examine procedural burden. Each case identifies its requested action, evidence, unanswered questions, steps, costs, dates and downstream consequences. The shared explanation does not replace the rules of the particular process.</p>
+  <h2>Credit reporting and traffic insurance</h2>
+  <p>In the credit case, a reported balance can affect later decisions about a person. In a traffic case, a driving-record entry can affect insurance. The comparison concerns a record's downstream consequences. Credit bureaus maintain and distribute credit records; insurers use risk information in underwriting and pricing. Those are different institutional roles.</p>
+  <h2>Traffic tickets as a proposed sludge case</h2>
+  <p>John Rigler proposes studying traffic-ticket procedures as an example of sludge, including situations where payment and compliance with a diversion process affect insurance consequences. His personal experience challenging tickets is a proposed case source; the jurisdiction, ticket, offer and outcome have not yet been documented here.</p>
+  <p>A documented mechanism is Arizona's defensive-driving diversion program: eligible completion can lead to dismissal and no driving-record points, with court, state and school charges. Its stated purposes include education, diversion and a sanction. The sludge inquiry asks which burdens are necessary and which discourage a challenge or make a better outcome depend on resources. Preserve the offer, reporting rule, conditions and actual insurer effect.</p>
+  <h2>Veterans and the VA</h2>
+  <p>VA decisions can be studied through the same evidence-and-burden structure. The review path depends on the decision. VA benefit-claim preparation and representation have specific accreditation and appointment rules; this credit-correspondence assistance record does not replace them. VA-accredited VSO assistance is free.</p>
+  <h2>Where foundations intersect</h2>
+  <p>Real Estate and Religion can be separate foundations. A proposed Parsonage Exemption article would connect both. Foundations are broad subjects; articles develop specific issues and may belong to several. A case can cite several articles. Religious exemption is another possible subject that need not derive from the burden article. These are organizational examples, with substantive scope and sources still to be selected.</p>
+  <p class="small">Primary sources: Arizona Judicial Branch, Defensive Driving FAQ and Cost to Attend School; VA, Decision Reviews and Appeals and Accredited Representative FAQs. Links, access date and scope limits are recorded in the directory README. These are further case areas, not completed individual dossiers.</p>
+  <footer>John Rigler / Commons / Research direction<span>3 / Foundations and articles</span></footer>
+</article>
+
+<script>// Printing is local. There is no submit endpoint, storage, account or paid step.
+document.getElementById('print-button').addEventListener('click', () => window.print());
+</script>
+</body>
+</html>

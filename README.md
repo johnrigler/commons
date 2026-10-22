@@ -28,6 +28,20 @@ administrative burden**, with linked explanations and editable organization
 names. [Reading-edition notes and source parts](reading/) record authorship,
 scope, review status and exact artifact hashes.
 
+## Self-service, helpers and other case areas
+
+[Prepare, print, retain](reading/assistance/) adds a three-page PDF, a blank
+assistance record and commented, numbered HTML sources. It separates the person's
+review, the helper's work, signing under stated authority, and actual delivery.
+
+The third page records further article and case areas: veterans dealing with the
+VA, and traffic tickets with insurance consequences. The burden article connects
+these issues. Commons can also organize broad foundations such as **Real Estate**
+and **Religion**; a proposed **Parsonage Exemption** article connects both.
+Articles may connect several foundations, and cases may cite several articles.
+[Self-service design notes](docs/SELF-SERVICE.md) explain the free-reuse model.
+[Foundations, articles and cases](docs/FOUNDATIONS.md) records the broader structure.
+
 ## Label sources, then tell the story
 
 The preferred case workflow is to give the sources descriptive labels, then
@@ -240,4 +254,5 @@ symlink behavior. Run browser checks after changing the interface.
 
 The repository retains its existing CC0 1.0 Universal dedication in `LICENSE`.
 Record third-party material and its terms separately when adding sources.
+
 

@@ -20,6 +20,13 @@ is claimed. [Edition metadata](edition.json) records hashes, CIDs, scope,
 review status and sources; byte verification does not establish the argument's
 truth or the PDF's legal effect.
 
+## Walk through the process
+
+The [preparation and assistance directory](assistance/) provides a separate
+three-page PDF: a self-service walkthrough, an optional blank credit-correspondence
+assistance record, and the shared structure for future traffic-ticket and VA cases.
+The original four-page reading edition remains unchanged.
+
 ## Sources and future editions
 
 The HTML and PDF above were imported without changing the delivered bytes.
@@ -42,3 +49,4 @@ the selected HTML through Chrome to create a new PDF edition, review its
 pages and record the exact resulting hash. The current PDF was independently
 typeset from the same four articles and visually checked; it is not claimed
 to be a Chrome print export. Preserve completed signed editions unchanged.
+

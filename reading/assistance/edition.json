@@ -1,0 +1,33 @@
+{
+  "title": "Commons - Preparation and Assistance",
+  "author": "John Rigler",
+  "date": "2026-10-21",
+  "status": "Unsigned draft implementing conversation direction; no independent legal review recorded",
+  "scope": "Self-service walkthrough, optional private credit-correspondence record, and independent foundations with traffic and VA case branches",
+  "pdf_expected_pages": 3,
+  "pdf_method": "ReportLab typesetting of the same numbered HTML text; not a Chrome print export",
+  "artifacts": [
+    {
+      "path": "bafkreibydv3yrnxjkxw6ep22ku5fucwpolllwplmbyzlnrsqdxwhlfpbc4.html",
+      "media_type": "text/html",
+      "sha256": "381d7788b6e955ede23f5a553a5a0acf72d6bb3d6c0e32b6c6501dec7595e117",
+      "cid": "bafkreibydv3yrnxjkxw6ep22ku5fucwpolllwplmbyzlnrsqdxwhlfpbc4"
+    },
+    {
+      "path": "Commons-Preparation-and-Assistance.pdf",
+      "media_type": "application/pdf",
+      "sha256": "5883bfe82cbfef0e29a8a3f334f819584dc328ef0cda0791d08f99592315b988",
+      "cid": "bafkreicyqo76qlf754hctkfd6m2pqgkyjxbsr3ym3idzdueptfmsgfnzra"
+    }
+  ],
+  "publication": "GitHub publication only; no submission, signature, IPFS pin or ledger transaction claimed",
+  "sources": [
+    "https://www.consumerfinance.gov/complaint/submitting-a-complaint-on-behalf-of-a-consumer/",
+    "https://www.azcourts.gov/DefensiveDriving/FAQ",
+    "https://www.azcourts.gov/drive/cost-to-attend-school",
+    "https://www.azcourts.gov/drive/court-information",
+    "https://www.va.gov/decision-reviews/",
+    "https://www.va.gov/resources/va-accredited-representative-faqs/"
+  ],
+  "sources_checked": "2026-10-21"
+}

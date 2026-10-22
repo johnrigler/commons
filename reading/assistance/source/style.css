@@ -1,0 +1,32 @@
+:root { color-scheme: light; color: #242624; background: #eeeee8; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 30px 16px; font: 16px/1.55 Georgia, 'Times New Roman', serif; }
+article, .tools { max-width: 840px; margin: 0 auto 24px; padding: 40px 58px; background: #fffef9; border: 1px solid #cdd0c7; }
+.tools { padding: 16px 24px; font: 14px/1.5 Arial, sans-serif; }
+a { color: #77432f; overflow-wrap: anywhere; }
+button { padding: 8px 12px; font: inherit; cursor: pointer; background: white; border: 1px solid #60655f; border-radius: 3px; }
+button:focus-visible, a:focus-visible { outline: 2px solid #86503c; outline-offset: 3px; }
+.eyebrow { font: bold 12px/1.5 Arial, sans-serif; color: #86503c; text-transform: uppercase; letter-spacing: .06em; border-bottom: 2px solid #242624; padding-bottom: 12px; }
+h1 { font-size: 36px; font-weight: normal; line-height: 1.1; margin: 22px 0 15px; }
+.deck { font-size: 19px; line-height: 1.4; margin-bottom: 24px; }
+h2 { font: bold 15px/1.4 Arial, sans-serif; margin: 20px 0 8px; }
+p { margin: 0 0 12px; }
+.small { font: 12px/1.45 Arial, sans-serif; color: #53584f; }
+.field { font: 13px/1.7 Arial, sans-serif; overflow-wrap: anywhere; }
+footer { margin-top: 24px; border-top: 1px solid #cdd0c7; padding-top: 10px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font: 11px/1.5 Arial, sans-serif; color: #60655f; }
+@media (max-width:600px) { body { padding: 10px; } article { padding: 24px 20px; } h1 { font-size: 30px; } }
+@page { size: Letter; margin: .6in .65in; }
+@media print {
+  :root, body { background: white; }
+  body { padding: 0; font-size: 10.5pt; line-height: 1.35; }
+  .tools { display: none; }
+  article { margin: 0; padding: 0; border: 0; background: white; max-width: none; }
+  article + article { break-before: page; }
+  h1 { font-size: 25pt; margin: 16pt 0 10pt; }
+  h2 { font-size: 10.5pt; margin-top: 13pt; break-after: avoid; }
+  p { margin-bottom: 8pt; orphans: 2; widows: 2; }
+  .deck { font-size: 12pt; margin-bottom: 14pt; }
+  .small { font-size: 8.5pt; }
+  .field { font-size: 9.2pt; line-height: 1.6; }
+  footer { break-inside: avoid; margin-top: 14pt; }
+}
