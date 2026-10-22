@@ -113,6 +113,13 @@ as part of this repository change.
 
 ## Build and checks
 
+The public website is served by the existing GitHub Pages deployment from
+`portal-first`. Development on `main` does not update that website by itself.
+After the reader checks pass, fast-forward `portal-first` to the tested commit;
+the existing Pages build and deployment publishes that branch. The reader
+workflow checks both branches. Preserve the configured publication branch and
+its environment rules.
+
 Numbered HTML parts, ordinary source scripts and deliberate symlinks remain
 the publication mechanism. Historical CID-named HTML files are retained.
 
