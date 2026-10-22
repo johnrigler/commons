@@ -3,7 +3,8 @@
 Shared statements, individual cases, verifiable editions.
 
 **[Open the Commons website](https://johnrigler.github.io/commons/)** to browse
-articles across traffic enforcement, housing and credit, technology, and other
+articles across disability and public benefits, traffic enforcement, housing
+and credit, technology, and other
 subjects. Filter the feed, open a title to read the full article in a popup,
 follow its connections or add a contribution below it. The first view includes
 this published collection and your locally saved, indexed drafts. The
@@ -45,6 +46,14 @@ findings about a debt, company or individual. The NCS / GitHub / rent escalation
 fields in the announcement form are editable examples.
 
 ## Current arguments and reading editions
+
+[Disability benefits and the work of access](reading/disability/index.html)
+adds seven connected articles on eligibility, evidence gathering, agency duties,
+review, and assistance. New Mexico's General Assistance is a concrete example;
+the Texas comparison separates the shared federal SSDI/SSI standard from state
+Medicaid and assistance routes. The articles are in the live feed under
+**Disability & public benefits**, with sources and connected reading in each
+popup. [Edition notes](reading/disability/) record the dated research scope.
 
 [The cost of challenging a claim](reading/arguments/index.html) consolidates the
 collection into seven general arguments and an adaptable reporting-dispute

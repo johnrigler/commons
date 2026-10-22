@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Commons — Disability Benefits and the Work of Access</title>
+<meta name="description" content="Seven connected articles on disability benefits, evidence gathering, administrative burden, New Mexico General Assistance, and comparisons with Texas.">
+<style>
+    :root { color-scheme: light; --ink: #242624; --muted: #60655f; --rule: #cdd0c7; --accent: #86503c; }
+    * { box-sizing: border-box; }
+    html { background: #eeeee8; color: var(--ink); }
+    body { margin: 0; padding: 36px 18px; font-family: Georgia, 'Times New Roman', serif; }
+    article { max-width: 840px; margin: 0 auto 28px; padding: 48px 70px 40px; background: #fffef9; border: 1px solid #dbddd3; scroll-margin-top: 20px; }
+    a { color: #77432f; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    .reading-links { margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--rule); font: 13px/1.8 Arial, sans-serif; }
+    .reading-links a { display: block; width: fit-content; }
+    .return-link { font: 13px/1.5 Arial, sans-serif; }
+    .source-note { margin-top: 25px; padding-top: 14px; border-top: 1px solid var(--rule); font: 13px/1.55 Arial, sans-serif; color: var(--muted); }
+    .masthead { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; padding-bottom: 16px; border-bottom: 2px solid var(--ink); font-family: Arial, sans-serif; }
+    .brand { font-size: 16px; letter-spacing: .16em; font-weight: 700; text-transform: uppercase; }
+    .status { color: var(--muted); font-size: 12px; }
+    .eyebrow { margin: 34px 0 13px; font: 700 12px/1.5 Arial, sans-serif; color: var(--accent); letter-spacing: .11em; text-transform: uppercase; }
+    h1 { margin: 0 0 19px; font-size: clamp(36px, 6vw, 50px); font-weight: 400; line-height: 1.06; letter-spacing: -.035em; }
+    .deck { margin: 0 0 28px; font-size: 21px; line-height: 1.45; color: #454b44; }
+    p { margin: 0 0 17px; font-size: 17px; line-height: 1.66; }
+    h2 { margin: 29px 0 12px; font: 700 15px/1.4 Arial, sans-serif; }
+    .principle { margin: 26px 0; padding: 17px 0 17px 21px; border-left: 3px solid var(--accent); font-size: 21px; line-height: 1.45; }
+    .transition { border-top: 1px solid var(--rule); margin-top: 30px; padding-top: 23px; }
+    .transition h2 { margin-top: 0; }
+    footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 9px 20px; border-top: 1px solid var(--rule); margin-top: 30px; padding-top: 14px; color: var(--muted); font: 12px/1.5 Arial, sans-serif; }
+    @media (max-width: 600px) {
+      body { padding: 0; }
+      article { border: 0; padding: 27px 24px 30px; }
+      .masthead { gap: 12px; }
+      .brand { font-size: 14px; }
+      .status { font-size: 11px; }
+      .eyebrow { margin-top: 27px; }
+      p { font-size: 17px; }
+    }
+    .tools { max-width: 840px; margin: 0 auto 20px; padding: 20px 24px; background: #fffef9; border: 1px solid var(--rule); font: 14px/1.5 Arial, sans-serif; }
+    .tools summary { cursor: pointer; font-weight: 700; }
+    .fields { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 16px; }
+    label { display: block; font-weight: 700; }
+    input, select, button { font: inherit; }
+    input, select { display: block; width: 100%; margin-top: 5px; padding: 9px; border: 1px solid #9b9f95; background: white; color: var(--ink); border-radius: 3px; }
+    button { cursor: pointer; padding: 8px 12px; border: 1px solid #9b9f95; border-radius: 3px; background: white; color: var(--ink); }
+    .print-tools { display: flex; flex-wrap: wrap; align-items: end; gap: 12px; margin-top: 16px; }
+    .print-tools label { flex: 1; min-width: 190px; }
+    .tools .hint { font: 13px/1.5 Arial, sans-serif; margin: 13px 0 0; color: var(--muted); }
+    .term-link, .party { font-weight: 700; }
+    .party { text-decoration-style: dotted; }
+    .fields input:focus, .fields select:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+    @media (max-width: 600px) { .tools { margin: 12px; padding: 16px; } .fields { grid-template-columns: 1fr; } }
+    @page { size: Letter; margin: .7in .75in; }
+    @media print {
+      html, body { background: white; }
+      .screen-only { display: none !important; }
+      body[data-print="request"] article:not(#request) { display: none; }
+      a.party { text-decoration: none; }
+      .reading-links a { font-weight: 700; }
+      body { padding: 0; }
+      article { max-width: none; margin: 0; padding: 0; border: 0; background: white; }
+      article + article { break-before: page; }
+      a { color: inherit; }
+      .return-link { display: none; }
+      h1 { font-size: 29pt; }
+      p { font-size: 11pt; line-height: 1.5; margin-bottom: 10pt; orphans: 3; widows: 3; }
+      .deck { font-size: 14pt; margin-bottom: 18pt; }
+      .principle { font-size: 14pt; margin: 16pt 0; padding-top: 8pt; padding-bottom: 8pt; }
+      h2 { break-after: avoid; margin-top: 17pt; }
+      .eyebrow { margin-top: 21pt; }
+      footer { break-inside: avoid; }
+    }
+  
+.byline, .scope-note { font: 13px/1.6 Arial, sans-serif; color: var(--muted); }
+.scope-note { padding: 14px 16px; border-left: 2px solid var(--rule); background: #f6f5ef; }
+sup { font: 11px/1 Arial, sans-serif; white-space: nowrap; }
+table { width: 100%; border-collapse: collapse; margin: 18px 0 22px; font: 15px/1.55 Arial, sans-serif; }
+th, td { text-align: left; vertical-align: top; padding: 12px; border-bottom: 1px solid var(--rule); }
+thead { background: #eeeee6; }
+tbody th { width: 28%; font-size: 14px; }
+.money-table td { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sources { padding-left: 23px; font: 15px/1.6 Arial, sans-serif; }
+.sources li { padding-left: 3px; margin-bottom: 15px; overflow-wrap: anywhere; }
+.tools { display: flex; flex-wrap: wrap; gap: 9px 18px; align-items: center; }
+[id] { scroll-margin-top: 20px; }
+@media (max-width: 600px) {
+  th, td { padding: 10px 8px; }
+  table { font-size: 14px; }
+  tbody th { width: 31%; font-size: 13px; }
+  .masthead { align-items: flex-start; }
+}
+@media print {
+  table { font-size: 9.5pt; }
+  tbody th { font-size: 9pt; }
+  tr { break-inside: avoid; }
+  th, td { padding: 8pt; }
+  .byline, .scope-note { font-size: 8.5pt; }
+  .sources { font-size: 9.5pt; line-height: 1.5; }
+  .sources li { break-inside: avoid; margin-bottom: 9pt; }
+  sup { font-size: 8pt; }
+}
+</style>
+</head><body>
+<nav class="tools screen-only" aria-label="Read and print this collection">
+<a href="../../index.html">Commons feed</a><a href="#disability-access">Access</a><a href="#disability-new-mexico">New Mexico pathways</a><a href="#disability-evidence">Evidence</a><a href="#disability-general-assistance">General Assistance</a><a href="#disability-review">Review</a><a href="#disability-assistance">Help</a><a href="#disability-texas">Texas comparison</a><a href="#disability-sources">Sources</a>
+<button id="print-button" type="button">Print / save PDF</button>
+</nav>
+<article id="disability-access">
+  <header>
+    <div class="masthead"><span class="brand">Commons</span><span class="status">Argument · Research and public rules</span></div>
+    <p class="eyebrow">Disability and public benefits</p>
+    <h1>Disability benefits and the cost of proving eligibility</h1>
+    <p class="deck">An eligibility rule reaches people through an application process. The work required by that process can change who receives support.</p>
+    <p class="byline">John Rigler · 22 October 2026 · AI-assisted research and editing</p>
+  </header>
+  <p>A benefit can be available under law yet difficult to obtain in practice. Identifying the right program, locating medical records, describing work limitations, responding to notices, and preserving review rights all require effort. When a disability limits memory, concentration, mobility, or stamina, the application can demand the very capacities the applicant is seeking help because they lack.</p>
+  <h2>Friction changes the population that gets through</h2>
+  <p>Manasi Deshpande and Yue Li's 2019 study used Social Security field-office closures to examine application costs. They estimated that applications fell by 10 percent and disability-recipient numbers by 16 percent in surrounding areas. The largest effects involved people with moderately severe conditions and less education; congestion at remaining offices was an important mechanism.<sup><a href="#disability-source-closures">[1]</a></sup> This is evidence that access costs can screen out people who would otherwise receive benefits. It does not measure present-day New Mexico or Texas performance.</p>
+  <p>The institutional concern is therefore more precise than a claim that paperwork is annoying. A process intended to distinguish eligibility can also distinguish access to transportation, reliable mail, medical care, record systems, and assistance. Its selection effect can extend beyond the substantive standard.</p>
+  <table>
+    <thead><tr><th scope="col">Question</th><th scope="col">What an answer should establish</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Does the person meet the rule?</th><td>The relevant medical, work, financial, and other eligibility facts.</td></tr>
+      <tr><th scope="row">Did the application become complete?</th><td>Which information arrived, which remained missing, and who could obtain it.</td></tr>
+      <tr><th scope="row">Why did the case stop?</th><td>A substantive decision, an unmet procedural requirement, a withdrawal, or a funding restriction.</td></tr>
+    </tbody>
+  </table>
+  <h2>Responsibility includes the agency's work</h2>
+  <p>Applicants have evidence obligations. SSA's rules also provide for agency help obtaining medical evidence with permission.<sup><a href="#disability-source-ssa-evidence">[8]</a></sup> Describing the process as entirely the applicant's burden obscures that division of work. An unanswered records request should be visible as an unanswered request, with its source and status, rather than silently treated as proof that no impairment exists.</p>
+  <p>Different benefits also create different kinds of claims. Federal disability benefits have statutory eligibility conditions; New Mexico's General Assistance operates within limited state funding.<sup><a href="#disability-source-ga-funding">[5]</a></sup> Calling everything an entitlement can hide the difference between meeting a condition and having a funded benefit available.</p>
+  <h2>Evaluate the filter</h2>
+  <p>A useful audit measures incomplete applications, repeated requests, inaccessible interviews, undelivered notices, time spent obtaining records, and outcomes after assistance or review. It asks whether each requirement contributes necessary information and whether the agency completed its own assigned work. A denial count alone cannot answer those questions.</p>
+  <p>Friction can function as a rationing mechanism through its effects. Establishing that an official deliberately designed a particular obstacle to exclude eligible people requires further evidence. The observable question is who disappears from the process before eligibility is reliably determined.</p>
+  <div class="reading-links"><a href="#disability-new-mexico">New Mexico's disability benefit pathways →</a><a href="#disability-texas">New Mexico and Texas: the same federal standard, different paths →</a><a href="../../index.html#item=administrative-burden">Deterrence through administrative burden →</a></div>
+</article>
+<article id="disability-new-mexico">
+  <header>
+    <div class="masthead"><span class="brand">Commons</span><span class="status">Explanation · Program responsibilities</span></div>
+    <p class="eyebrow">Start with the program</p>
+    <h1>New Mexico's disability benefit pathways</h1>
+    <p class="deck">“Applying for disability” can mean several applications with different decision makers, evidence rules, and purposes.</p>
+    <p class="byline">John Rigler · 22 October 2026 · AI-assisted research and editing</p>
+  </header>
+  <p>SSDI and SSI are federal cash-benefit programs. SSDI has insurance and work-record conditions; SSI has income and resource conditions. A person may qualify for both.<sup><a href="#disability-source-redbook">[3]</a></sup> For adults applying on the basis of disability, both generally use the federal standard of inability to perform substantial gainful activity because of a medically determinable impairment expected to result in death or last at least twelve continuous months. The childhood SSI standard differs.<sup><a href="#disability-source-ssa-definition">[2]</a></sup></p>
+  <table>
+    <thead><tr><th scope="col">Route</th><th scope="col">Purpose</th><th scope="col">Decision structure</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">SSDI</th><td>Federal disability insurance payments.</td><td>SSA checks nonmedical conditions; the state DDS ordinarily develops the initial medical decision.</td></tr>
+      <tr><th scope="row">SSI</th><td>Federal payments for eligible people with limited income and resources.</td><td>SSA checks financial and other conditions; DDS ordinarily handles the initial disability evaluation.</td></tr>
+      <tr><th scope="row">General Assistance</th><td>State cash assistance for eligible disabled adults and certain children outside specified federal cash programs.</td><td>New Mexico Health Care Authority rules govern a separate application and disability process.</td></tr>
+      <tr><th scope="row">Medicaid</th><td>Health coverage, rather than a disability cash payment.</td><td>The applicable eligibility category matters; a disability determination is not required for every category.</td></tr>
+    </tbody>
+  </table>
+  <p>SSA describes the federal division of responsibilities between its field offices and state Disability Determination Services.<sup><a href="#disability-source-ssa-process">[4]</a></sup> In New Mexico, DDS sits within the Division of Vocational Rehabilitation and adjudicates Social Security disability claims under a federally funded arrangement.<sup><a href="#disability-source-nm-dds">[6]</a></sup> DDS is not the office administering every New Mexico disability-related benefit.</p>
+  <h2>Separate the questions before collecting the file</h2>
+  <p>General Assistance has its own medical-evidence rules and state funding constraint.<sup><a href="#disability-source-ga-evidence">[7]</a></sup><sup><a href="#disability-source-ga-funding">[5]</a></sup> New Mexico Medicaid includes an “other adult” category whose listed conditions concern age, income, Medicare status, and other ACA eligibility requirements, without requiring proof of disability.<sup><a href="#disability-source-nm-adults">[21]</a></sup> A disability-benefit decision therefore does not, by itself, answer every health-coverage question.</p>
+  <p>A practical record starts with the program name, application date, responsible office, information requested, and current decision or notice. Those details identify which rules apply. A stack of medical records without that map can leave the applicant doing work for the wrong question.</p>
+  <p class="scope-note">This series focuses on adult access. It is a dated explanation of selected programs, not an exhaustive catalog of veterans' benefits, workers' compensation, private insurance, children's programs, or every Medicaid category.</p>
+  <div class="reading-links"><a href="#disability-evidence">The work of building a disability record →</a><a href="#disability-general-assistance">New Mexico's General Assistance evidence process →</a><a href="#disability-texas">Compare New Mexico and Texas →</a></div>
+</article>
+<article id="disability-evidence">
+  <header>
+    <div class="masthead"><span class="brand">Commons</span><span class="status">Explanation · Evidence and access</span></div>
+    <p class="eyebrow">The record behind the application</p>
+    <h1>The work of building a disability record</h1>
+    <p class="deck">A diagnosis, a functional limitation, a treatment history, and an eligibility decision answer different questions.</p>
+    <p class="byline">John Rigler · 22 October 2026 · AI-assisted research and editing</p>
+  </header>
+  <p>The record has to connect a medical condition to the program's actual standard. For Social Security, objective medical evidence from an acceptable medical source establishes a medically determinable impairment. Medical and nonmedical evidence then help explain severity and function.<sup><a href="#disability-source-ssa-evidence">[8]</a></sup> A symptom account matters, but it does not perform every evidentiary job by itself.</p>
+  <table>
+    <thead><tr><th scope="col">Record component</th><th scope="col">Question it helps answer</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Provider and treatment map</th><td>Who examined or treated the person, when, and where records can be requested?</td></tr>
+      <tr><th scope="row">Examinations and findings</th><td>What medical evidence establishes and describes the impairment?</td></tr>
+      <tr><th scope="row">Function over time</th><td>How do symptoms, treatment, and side effects affect physical and mental work activities?</td></tr>
+      <tr><th scope="row">Work and education history</th><td>What tasks did work require, and what vocational facts does the agency need?</td></tr>
+      <tr><th scope="row">Request and delivery log</th><td>What was requested, by whom, from which source, and what was actually received?</td></tr>
+    </tbody>
+  </table>
+  <h2>Filing and assembling evidence can proceed together</h2>
+  <p>SSA explicitly tells applicants not to delay filing while waiting for medical records. Existing copies can help; SSA requests evidence from the sources the applicant identifies. If available information is inadequate, it may arrange an examination at its expense.<sup><a href="#disability-source-ssa-medical">[9]</a></sup> “Collect documents” should therefore mean identify and track the evidence, not assume that an applicant must privately finance a finished medical file before approaching the agency.</p>
+  <p>The federal evidence regulation assigns applicants an ongoing duty to identify or submit known relevant evidence. It also assigns SSA medical-history development and reasonable-effort duties when permission to request records is given.<sup><a href="#disability-source-ssa-duty">[10]</a></sup> These are complementary responsibilities. A release form, a provider's delay, and an agency's follow-up are separate events worth recording.</p>
+  <h2>Describe function accurately</h2>
+  <p>A useful account distinguishes what happens regularly, what varies, and what assistance makes an activity possible. It identifies dates and sources rather than converting uncertain recollections into precise facts. The record should remain complete; selecting only favorable fragments can distort the question the agency must decide.</p>
+  <p>SSA's medical guidance seeks information about activities such as walking, sitting, lifting, and following instructions; it does not ask a treating clinician simply to decide the legal conclusion “disabled.”<sup><a href="#disability-source-ssa-medical">[9]</a></sup> A detailed explanation of limitations can therefore contribute more than an unexplained label.</p>
+  <p>The access issue is the work needed to turn scattered clinical and personal information into an intelligible record. Better forms, clear requests, and reliable assistance can reduce that work while preserving the requirement for accurate evidence.</p>
+  <div class="reading-links"><a href="#disability-general-assistance">New Mexico's General Assistance evidence process →</a><a href="#disability-assistance">Help with the application is part of access →</a></div>
+</article>
+<article id="disability-general-assistance">
+  <header>
+    <div class="masthead"><span class="brand">Commons</span><span class="status">Explanation · New Mexico rules</span></div>
+    <p class="eyebrow">A separate state process</p>
+    <h1>New Mexico's General Assistance evidence process</h1>
+    <p class="deck">The state rule places duties on the applicant and on the agency developing the case.</p>
+    <p class="byline">John Rigler · 22 October 2026 · AI-assisted research and editing</p>
+  </header>
+  <p>New Mexico General Assistance is a state cash-assistance route with its own eligibility rules. Its governing regulation permits benefit reductions or suspensions when state funding is insufficient.<sup><a href="#disability-source-ga-funding">[5]</a></sup> A funding limit and a finding that a person's impairment does not qualify are different reasons support may be unavailable.</p>
+  <h2>What the medical file must explain</h2>
+  <p>Rule 8.106.420 calls for medical evidence and an account of severity and capacity for work. Its documentation provisions allow the approved medical release/physician statement or a physician statement containing the required information: examination findings, impairment, expected duration, and capacity for employment. Evidence more than six months old may support recurrence but should be accompanied by current evidence.<sup><a href="#disability-source-ga-evidence">[7]</a></sup></p>
+  <p>The rule makes the applicant responsible for obtaining evidence. It also directs appropriate case-development assistance, requires help requesting existing medical reports when necessary, and provides for scheduling an examination, with payment dependent on available funding.<sup><a href="#disability-source-ga-evidence">[7]</a></sup> The operational question is which part of this shared process remains unfinished.</p>
+  <h2>Keep the evidence gap specific</h2>
+  <p>A request for “more proof” should identify the missing proposition. Is a current examination absent? Does a report omit expected duration? Is the source unclear? Has the agency requested an existing report that the provider has not sent? These situations call for different actions. Treating them as a single failure to cooperate makes it difficult to correct the actual gap.</p>
+  <p>The application rule recognizes a right to apply regardless of apparent eligibility, calls for caseworker help completing the form when no other helper is available, and allows alternatives to an office interview for specified hardships.<sup><a href="#disability-source-ga-application">[11]</a></sup> Assistance is therefore part of the written process, even though its availability and execution must be checked in an individual case.</p>
+  <h2>The burden can recur</h2>
+  <p>A record assembled once may still need updating as the condition, certification period, or program changes. A useful case history preserves the prior submission and records exactly what new information is being sought. Repeated requests should have an identifiable purpose, especially when obtaining a new appointment consumes scarce time and money.</p>
+  <p>The policy test is whether the state obtains enough reliable evidence to decide eligibility while avoiding unnecessary repetition. A completed checklist is useful only insofar as it clarifies the decision and the remaining work.</p>
+  <div class="reading-links"><a href="#disability-review">When a missing document becomes a lost claim →</a><a href="#disability-texas">New Mexico and Texas: the same federal standard, different paths →</a></div>
+</article>
+<article id="disability-review">
+  <header>
+    <div class="masthead"><span class="brand">Commons</span><span class="status">Explanation · Decisions and review</span></div>
+    <p class="eyebrow">Preserving a route to an answer</p>
+    <h1>When a missing document becomes a lost claim</h1>
+    <p class="deck">A medical denial, a financial denial, and a case that stops for procedural reasons should remain distinguishable.</p>
+    <p class="byline">John Rigler · 22 October 2026 · AI-assisted research and editing</p>
+  </header>
+  <p>A notice should reveal what was decided and what remained unresolved. If a file lacked a requested report, that fact does not tell the reader whether the report would have established eligibility. If income exceeded a program limit, additional medical detail may not address the reason for denial. Effective review starts by identifying the decision actually made.</p>
+  <h2>Deadlines belong to particular procedures</h2>
+  <table>
+    <thead><tr><th scope="col">Procedure</th><th scope="col">Selected rule</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">SSA reconsideration</th><td>SSA states that a disability or nonmedical reconsideration request is due within 60 days after receiving the decision.<sup><a href="#disability-source-ssa-review">[12]</a></sup></td></tr>
+      <tr><th scope="row">New Mexico GA medical reconsideration</th><td>The request may be oral or written within 15 days of the denial date. The reconsideration period, for additional medical evidence, ends no later than 30 days from denial.<sup><a href="#disability-source-ga-application">[11]</a></sup></td></tr>
+      <tr><th scope="row">New Mexico cash-assistance fair hearing</th><td>The general hearing rule allows an oral or written request and sets a 90-day period following the adverse-action notice, with a next-business-day provision when the agency is closed.<sup><a href="#disability-source-nm-hearing">[13]</a></sup></td></tr>
+    </tbody>
+  </table>
+  <p>The short GA medical-reconsideration process is separate from the fair-hearing route. A conversation about a missing record should not be assumed to preserve another deadline. Payment-continuation requests and other stages can have additional time limits; the actual notice and applicable program rule identify the required action.</p>
+  <h2>Evidence delays and appeal requests are different tasks</h2>
+  <p>SSA's online appeal guidance says that a person unable to supply required information within the appeal period can file by mail or at a Social Security office.<sup><a href="#disability-source-ssa-appeal-filing">[14]</a></sup> Waiting for a complete new medical file can therefore create an avoidable timing problem. Filing the request and developing the supporting record need to be tracked separately.</p>
+  <p>SSA also recognizes possible good cause for late filing, including limitations or circumstances that prevented a timely request. Its policy requires an explanation and an agency determination; relief is not automatic.<sup><a href="#disability-source-ssa-good-cause">[15]</a></sup></p>
+  <p>A review record should retain the notice, date received, stated reason, evidence already submitted, outstanding requests, review request, and delivery confirmation. For institutional evaluation, the same distinctions matter: a closed case, an unappealed decision, and a completed substantive review describe different outcomes.</p>
+  <div class="reading-links"><a href="#disability-assistance">Help with the application is part of access →</a><a href="#disability-access">Disability benefits and the cost of proving eligibility →</a></div>
+</article>
+<article id="disability-assistance">
+  <header>
+    <div class="masthead"><span class="brand">Commons</span><span class="status">Argument · Assistance and responsibility</span></div>
+    <p class="eyebrow">Who does the work?</p>
+    <h1>Help with the application is part of access</h1>
+    <p class="deck">Assistance can make an existing eligibility rule usable. Its availability should not depend on already being able to navigate the whole system.</p>
+    <p class="byline">John Rigler · 22 October 2026 · AI-assisted research and editing</p>
+  </header>
+  <p>Preparing a benefits application involves several kinds of work: locating a program, answering factual questions, obtaining records, explaining medical limitations, managing notices, and requesting review. One helper may perform only some of them. Clear roles prevent both duplicated effort and an application falling between offices.</p>
+  <p>SSA distinguishes ordinary assistance—such as help completing forms, translating documents, or reaching appointments—from appointing a representative. An appointed attorney or qualified non-attorney can obtain file information, develop evidence, and request review; the appointment uses SSA's prescribed process.<sup><a href="#disability-source-ssa-representation">[16]</a></sup> Paying someone is not the only form assistance can take, and general help does not automatically create representation.</p>
+  <table>
+    <thead><tr><th scope="col">Source of help</th><th scope="col">Role and scope</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Agency staff</th><td>Clarify requests and carry out the assistance assigned by the relevant program, including specified evidence-development work.</td></tr>
+      <tr><th scope="row">Medical provider</th><td>Supply clinical records and an accurate account of findings, treatment, and limitations.</td></tr>
+      <tr><th scope="row">New Mexico ADRC</th><td>Options counseling for long-term services and supports, including Medicaid, Medicare, and related resources.<sup><a href="#disability-source-nm-adrc">[17]</a></sup></td></tr>
+      <tr><th scope="row">Disability Rights New Mexico</th><td>Free, confidential intake and possible assistance within its priorities and capacity. A prior SSA disability finding is not required for intake; representation is not guaranteed.<sup><a href="#disability-source-drnm">[18]</a></sup></td></tr>
+      <tr><th scope="row">Texas resource navigation</th><td>Texas's housing agency identifies ADRCs as sources of information and assistance with state and federal benefits.<sup><a href="#disability-source-tx-adrc">[24]</a></sup></td></tr>
+    </tbody>
+  </table>
+  <p>The source links below describe these services and their contact routes. A resource referral does not establish that a counselor or organization will represent someone in an SSDI, SSI, or state-benefit appeal. The useful question is which task the service can accept, when it can act, and what the applicant must still do.</p>
+  <h2>Count assistance as part of program design</h2>
+  <p>When help changes whether an otherwise eligible person completes an application, that help affects access. A system that assumes every applicant has a dependable relative, a printer, transportation, or money for representation makes those resources part of its practical entry conditions. Programs can measure the difference by tracking unmet requests for assistance and outcomes after support is provided.</p>
+  <p>Shared explanations can reduce repeated research. Personal medical records, identifying information, and application files still belong in the appropriate private case record. A public article can explain an evidence requirement without making an applicant publish the evidence itself.</p>
+  <div class="reading-links"><a href="#disability-evidence">The work of building a disability record →</a><a href="../../index.html#item=prepare">Prepare, print, retain →</a><a href="#disability-texas">Compare New Mexico and Texas →</a></div>
+</article>
+<article id="disability-texas">
+  <header>
+    <div class="masthead"><span class="brand">Commons</span><span class="status">Comparison · New Mexico and Texas</span></div>
+    <p class="eyebrow">The state layer changes the route</p>
+    <h1>New Mexico and Texas: the same federal standard, different paths</h1>
+    <p class="deck">Federal disability benefits share a legal framework. State health coverage and assistance programs change what other routes exist while a claim is developed.</p>
+    <p class="byline">John Rigler · 22 October 2026 · AI-assisted research and editing</p>
+  </header>
+  <p>Moving between New Mexico and Texas does not substitute a new state definition for the federal adult SSDI/SSI disability standard. State DDS agencies develop initial medical decisions within SSA's framework.<sup><a href="#disability-source-ssa-definition">[2]</a></sup><sup><a href="#disability-source-ssa-process">[4]</a></sup> That shared framework does not make the two states' entire benefit systems equivalent.</p>
+  <table>
+    <thead><tr><th scope="col">Issue</th><th scope="col">New Mexico</th><th scope="col">Texas</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Adult Medicaid expansion</th><td>Adopted. The state has an “other adult” category without a disability-proof condition.</td><td>Not adopted as of October 2026. Eligibility must fit an available coverage category.</td></tr>
+      <tr><th scope="row">State cash assistance examined here</th><td>General Assistance has a separate disability-evidence process and a state-funding limit.</td><td>The Texas Medicaid routes below provide health coverage. They are not a counterpart cash payment.</td></tr>
+      <tr><th scope="row">SSI and Medicaid</th><td>SSI cash recipients generally receive Medicaid eligibility automatically, subject to specified exceptions.</td><td>HHSC says SSI recipients are eligible for Medicaid automatically, without a separate HHSC application.</td></tr>
+      <tr><th scope="row">Additional medical development</th><td>GA has its own medical statement, evidence, and assistance provisions.</td><td>For certain Medicaid determinations, HHSC's DDU uses medical records and state forms H3034 and H3035.</td></tr>
+    </tbody>
+  </table>
+  <p>The expansion comparison uses KFF's October 2026 state-policy tracker and New Mexico's other-adult rule.<sup><a href="#disability-source-expansion">[22]</a></sup><sup><a href="#disability-source-nm-adults">[21]</a></sup> The other rows use the New Mexico GA rules, SSA's New Mexico Medicaid policy, and Texas HHSC's SSI and medical-determination guidance.<sup><a href="#disability-source-ga-funding">[5]</a></sup><sup><a href="#disability-source-ga-evidence">[7]</a></sup><sup><a href="#disability-source-nm-ssi">[25]</a></sup><sup><a href="#disability-source-tx-ssi">[19]</a></sup><sup><a href="#disability-source-tx-ddu">[20]</a></sup> This selected comparison is not an inventory of every state or local program.</p>
+  <h2>Coverage affects the evidence problem</h2>
+  <p>In New Mexico, an adult who meets the other-adult category's conditions can seek Medicaid without first winning a disability determination. In Texas, low income alone does not open that expansion route. Other categories can still apply. For a person who needs care while developing a disability claim, this difference can change how much depends on establishing disability at the outset.</p>
+  <p>That creates a potential feedback problem: medical evidence helps establish disability, while access to care helps create the evidence. This is an inference about the structure of access, not a measured comparison of record quality or approval rates between the two states.</p>
+  <h2>Different programs can use different work rules</h2>
+  <p>Texas Medicaid Buy-In illustrates why “disability” is not one universal application test. HHSC's guidance applies the SSI disability definition with an exception that disregards substantial gainful activity for this program.<sup><a href="#disability-source-tx-buy-in">[23]</a></sup> Working does not answer the eligibility question the same way in every program.</p>
+  <p>A meaningful state comparison asks which route is available, whether an existing finding is reused, what additional documents are required, and who helps obtain them. Ranking states solely by approval percentages would mix applicant populations, programs, and decision stages. The comparison here identifies rules and plausible burdens; it does not establish that either state deliberately obstructs applicants or performs better overall.</p>
+  <div class="reading-links"><a href="#disability-new-mexico">New Mexico's disability benefit pathways →</a><a href="#disability-general-assistance">New Mexico's General Assistance evidence process →</a><a href="#disability-access">Disability benefits and the cost of proving eligibility →</a></div>
+</article>
+<article id="disability-sources">
+  <header><p class="eyebrow">Sources · Checked 22 October 2026</p><h1>Disability access: research and program rules</h1><p class="deck">Federal standards, state programs, empirical findings, and editorial analysis are identified separately.</p></header>
+  <ol class="sources">
+    <li id="disability-source-closures"><a href="https://www.aeaweb.org/articles?id=10.1257/pol.20180076">Manasi Deshpande and Yue Li, “Who Is Screened Out? Application Costs and the Targeting of Disability Programs,” <em>American Economic Journal: Economic Policy</em> 11(4), 2019, pp. 213–248</a>. Published estimates concerning SSA field-office closures. The 10% and 16% findings are study estimates, not current state-specific rates.</li>
+    <li id="disability-source-ssa-definition"><a href="https://www.ssa.gov/disability/professionals/bluebook/general-info.htm">SSA, Disability Evaluation Under Social Security, Part I: General Information</a>. Federal adult definition, different childhood standard, and program responsibilities.</li>
+    <li id="disability-source-redbook"><a href="https://www.ssa.gov/redbook/eng/overview-disability.htm?tl=1">SSA Red Book, Overview of Disability Programs</a>. SSDI insurance conditions, SSI financial conditions, and concurrent eligibility.</li>
+    <li id="disability-source-ssa-process"><a href="https://www.ssa.gov/disability/determination.htm">SSA, Disability Determination Process</a>. Field-office and state DDS responsibilities in federal claims.</li>
+    <li id="disability-source-ga-funding"><a href="https://www.srca.nm.gov/parts/title08/08.106.0500.html">8.106.500 NMAC, General Assistance benefit and eligibility provisions</a>. Section 8: state funding limits; current compilation includes amendments effective 1 March 2025. A rule permitting suspension is not evidence of a current suspension.</li>
+    <li id="disability-source-nm-dds"><a href="https://www.dvr.state.nm.us/disability-determination-services/">New Mexico Division of Vocational Rehabilitation, Disability Determination Services</a>. State DDS role in Social Security claims.</li>
+    <li id="disability-source-ga-evidence"><a href="https://www.srca.nm.gov/parts/title08/08.106.0420.html">8.106.420 NMAC, Requirements for Determining Disability</a>. Sections 8–9: case development, medical statements, current evidence, applicant responsibilities, and department assistance. Agency payment for an examination is funding-dependent.</li>
+    <li id="disability-source-ssa-evidence"><a href="https://www.ssa.gov/disability/professionals/bluebook/evidentiary.htm">SSA, Disability Evaluation Under Social Security, Part II: Evidentiary Requirements</a>. Impairment, severity, medical and nonmedical evidence, and assistance obtaining reports.</li>
+    <li id="disability-source-ssa-medical"><a href="https://www.ssa.gov/help/iClaim_medicalEvidence.html">SSA, Medical Evidence</a>. Do not delay filing for records; sources, agency requests, examinations, and information about function.</li>
+    <li id="disability-source-ssa-duty"><a href="https://www.ssa.gov/OP_Home/cfr20/404/404-1512.htm">20 CFR §404.1512, Responsibility for evidence</a>. Title II claimant duties, complete submissions, medical-history development, and reasonable efforts to obtain reports.</li>
+    <li id="disability-source-ga-application"><a href="https://www.srca.nm.gov/parts/title08/08.106.0110.html">8.106.110 NMAC, General Assistance application procedures</a>. Sections 9–13: right to apply, form assistance, interview hardship alternatives, medical reconsideration, delay, and written notice. The 15-day request and 30-day evidence periods run from the denial date.</li>
+    <li id="disability-source-ssa-review"><a href="https://www.ssa.gov/apply/appeal-decision-we-made/request-reconsideration">SSA, Request reconsideration</a>. Disability and nonmedical reconsideration requests; 60 days from receipt of the decision.</li>
+    <li id="disability-source-nm-hearing"><a href="https://www.srca.nm.gov/parts/title08/08.100.0970.html">8.100.970 NMAC, Administrative Hearings</a>. Section 9(A)–(B): request methods and 90-day adverse-action notice period; separate program and service rules can apply.</li>
+    <li id="disability-source-ssa-appeal-filing"><a href="https://www.ssa.gov/disability/appeal.html">SSA, Electronic Appeal filing guidance</a>. Alternative filing when required information cannot be supplied within the appeal period.</li>
+    <li id="disability-source-ssa-good-cause"><a href="https://secure.ssa.gov/poms.nsf/lnx/0203101020">SSA POMS GN 03101.020, Good Cause for Extending the Time Limit to File an Appeal</a>. Relevant barriers, written explanation, assistance, and an individualized agency determination.</li>
+    <li id="disability-source-ssa-representation"><a href="https://www.ssa.gov/pubs/EN-05-10075.pdf">SSA Publication 05-10075, <em>Your Right to Representation</em>, December 2024</a>. Ordinary assistance, formal appointment, representative functions, and fee authorization.</li>
+    <li id="disability-source-nm-adrc"><a href="https://www.aging.nm.gov/consumer-and-elder-rights/options-counseling/">New Mexico Aging and Long-Term Services Department, Options Counseling / ADRC</a>. Long-term service and support navigation, Medicaid and Medicare counseling. This service description does not promise representation in a federal disability appeal.</li>
+    <li id="disability-source-drnm"><a href="https://drnm.org/intake-information/">Disability Rights New Mexico, Intake and Referral Process</a>. Free confidential services, priorities and capacity limits, no prior SSA finding required, and no representation created merely by contacting the organization.</li>
+    <li id="disability-source-tx-ssi"><a href="https://fhb.hhs.texas.gov/handbooks/medicaid-elderly-people-disabilities-handbook/a-2100-supplemental-security-income">Texas HHSC, MEPD Handbook A-2100, Supplemental Security Income</a>. Revision effective 1 September 2025: automatic Medicaid eligibility for SSI recipients and the state data interface.</li>
+    <li id="disability-source-tx-ddu"><a href="https://fhb.hhs.texas.gov/handbooks/medicaid-elderly-people-disabilities-handbook/d-2300-requesting-a-decision-disability-determination-unit">Texas HHSC, MEPD Handbook D-2300, Requesting a Decision from the Disability Determination Unit</a>. State Medicaid medical determinations, records, and forms H3034/H3035. This DDU route is distinct from the federal claim described by SSA.</li>
+    <li id="disability-source-nm-adults"><a href="https://www.srca.nm.gov/parts/title08/08.296.0400.html">8.296.400 NMAC, Medicaid Eligibility—Other Adults</a>. Section 9 lists this category's conditions without a disability-proof requirement; other ACA requirements still apply.</li>
+    <li id="disability-source-expansion"><a href="https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/">KFF State Health Facts, Status of State Action on the Medicaid Expansion Decision, October 2026</a>. KFF's original state-policy tracking: New Mexico adopted expansion; Texas had not. A dated policy comparison, not an approval-rate study.</li>
+    <li id="disability-source-tx-buy-in"><a href="https://fhb.hhs.texas.gov/handbooks/medicaid-elderly-people-disabilities-handbook/m-3200-disability">Texas HHSC, MEPD Handbook M-3200, Disability</a>. Medicaid Buy-In's disability standard and substantial-gainful-activity exception. Other program conditions remain separate.</li>
+    <li id="disability-source-tx-adrc"><a href="https://cooler.tdhca.state.tx.us/housing-center/pwd-tools.htm">Texas Department of Housing and Community Affairs, Tools for Serving People with Disabilities</a>. Identifies ADRCs as information and benefit-assistance resources.</li>
+    <li id="disability-source-nm-ssi"><a href="https://secure.ssa.gov/POMS.nsf/lnx/0501730008DAL">SSA POMS SI DAL01730.008, New Mexico SSA/State Agreement under Section 1634</a>. Automatic Medicaid eligibility for SSI cash and Section 1619(b) recipients, subject to stated limitations. Reviewed policy dated 30 May 2024.</li>
+  </ol>
+  <p class="source-note">The proposed access audit, the organization of an applicant's records, and the coverage/evidence feedback argument are editorial analysis. The office-closure study supports a mechanism, not a current ranking of states. This edition records selected rules as checked on 22 October 2026; individual notices, benefit categories, and decision stages determine which procedures apply. No independent legal review is recorded.</p>
+</article>
+<script>document.getElementById('print-button').addEventListener('click', () => window.print());
+</script>
+</body></html>

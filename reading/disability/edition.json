@@ -1,0 +1,247 @@
+{
+  "title": "Commons - Disability Benefits and the Work of Access",
+  "author": "John Rigler",
+  "date": "2026-10-22",
+  "status": "Unsigned AI-assisted research and editorial draft; no independent legal review recorded",
+  "scope": "Seven connected adult-access articles on disability benefits, evidence gathering, General Assistance, review and assistance, with a New Mexico/Texas comparison",
+  "base_commons_commit": "e7ac721ad4e1a155a0cb9ca09e66970968141f9d",
+  "artifacts": [
+    {
+      "path": "bafkreigbs2umxd6go76elbg2v35pe7sipvsttdahq2muftzkewdtjps5re.html",
+      "media_type": "text/html",
+      "sha256": "c196a8cb8fc677fc4584daaefaf27e487d65398c07869942cf2a258734be5d89",
+      "cid": "bafkreigbs2umxd6go76elbg2v35pe7sipvsttdahq2muftzkewdtjps5re"
+    }
+  ],
+  "articles": [
+    {
+      "id": "disability-access",
+      "title": "Disability benefits and the cost of proving eligibility",
+      "cid": "bafkreigbs2umxd6go76elbg2v35pe7sipvsttdahq2muftzkewdtjps5re",
+      "fragment": "disability-access",
+      "related": [
+        "disability-new-mexico",
+        "disability-texas",
+        "disability-evidence",
+        "administrative-burden"
+      ]
+    },
+    {
+      "id": "disability-new-mexico",
+      "title": "New Mexico's disability benefit pathways",
+      "cid": "bafkreigbs2umxd6go76elbg2v35pe7sipvsttdahq2muftzkewdtjps5re",
+      "fragment": "disability-new-mexico",
+      "related": [
+        "disability-evidence",
+        "disability-general-assistance",
+        "disability-texas"
+      ]
+    },
+    {
+      "id": "disability-evidence",
+      "title": "The work of building a disability record",
+      "cid": "bafkreigbs2umxd6go76elbg2v35pe7sipvsttdahq2muftzkewdtjps5re",
+      "fragment": "disability-evidence",
+      "related": [
+        "disability-general-assistance",
+        "disability-assistance",
+        "disability-review"
+      ]
+    },
+    {
+      "id": "disability-general-assistance",
+      "title": "New Mexico's General Assistance evidence process",
+      "cid": "bafkreigbs2umxd6go76elbg2v35pe7sipvsttdahq2muftzkewdtjps5re",
+      "fragment": "disability-general-assistance",
+      "related": [
+        "disability-new-mexico",
+        "disability-review",
+        "disability-texas"
+      ]
+    },
+    {
+      "id": "disability-review",
+      "title": "When a missing document becomes a lost claim",
+      "cid": "bafkreigbs2umxd6go76elbg2v35pe7sipvsttdahq2muftzkewdtjps5re",
+      "fragment": "disability-review",
+      "related": [
+        "disability-general-assistance",
+        "disability-assistance",
+        "administrative-burden"
+      ]
+    },
+    {
+      "id": "disability-assistance",
+      "title": "Help with the application is part of access",
+      "cid": "bafkreigbs2umxd6go76elbg2v35pe7sipvsttdahq2muftzkewdtjps5re",
+      "fragment": "disability-assistance",
+      "related": [
+        "disability-evidence",
+        "prepare",
+        "assistance-record",
+        "disability-texas"
+      ]
+    },
+    {
+      "id": "disability-texas",
+      "title": "New Mexico and Texas: the same federal standard, different paths",
+      "cid": "bafkreigbs2umxd6go76elbg2v35pe7sipvsttdahq2muftzkewdtjps5re",
+      "fragment": "disability-texas",
+      "related": [
+        "disability-new-mexico",
+        "disability-general-assistance",
+        "disability-access",
+        "disability-assistance"
+      ]
+    }
+  ],
+  "sources_checked": "2026-10-22",
+  "sources": [
+    {
+      "id": "disability-source-closures",
+      "url": "https://www.aeaweb.org/articles?id=10.1257/pol.20180076",
+      "description": "Manasi Deshpande and Yue Li, “Who Is Screened Out? Application Costs and the Targeting of Disability Programs,” American Economic Journal: Economic Policy 11(4), 2019, pp. 213–248. Published estimates concerning SSA field-office closures. The 10% and 16% findings are study estimates, not current state-specific rates."
+    },
+    {
+      "id": "disability-source-ssa-definition",
+      "url": "https://www.ssa.gov/disability/professionals/bluebook/general-info.htm",
+      "description": "SSA, Disability Evaluation Under Social Security, Part I: General Information. Federal adult definition, different childhood standard, and program responsibilities."
+    },
+    {
+      "id": "disability-source-redbook",
+      "url": "https://www.ssa.gov/redbook/eng/overview-disability.htm?tl=1",
+      "description": "SSA Red Book, Overview of Disability Programs. SSDI insurance conditions, SSI financial conditions, and concurrent eligibility."
+    },
+    {
+      "id": "disability-source-ssa-process",
+      "url": "https://www.ssa.gov/disability/determination.htm",
+      "description": "SSA, Disability Determination Process. Field-office and state DDS responsibilities in federal claims."
+    },
+    {
+      "id": "disability-source-ga-funding",
+      "url": "https://www.srca.nm.gov/parts/title08/08.106.0500.html",
+      "description": "8.106.500 NMAC, General Assistance benefit and eligibility provisions. Section 8: state funding limits; current compilation includes amendments effective 1 March 2025. A rule permitting suspension is not evidence of a current suspension."
+    },
+    {
+      "id": "disability-source-nm-dds",
+      "url": "https://www.dvr.state.nm.us/disability-determination-services/",
+      "description": "New Mexico Division of Vocational Rehabilitation, Disability Determination Services. State DDS role in Social Security claims."
+    },
+    {
+      "id": "disability-source-ga-evidence",
+      "url": "https://www.srca.nm.gov/parts/title08/08.106.0420.html",
+      "description": "8.106.420 NMAC, Requirements for Determining Disability. Sections 8–9: case development, medical statements, current evidence, applicant responsibilities, and department assistance. Agency payment for an examination is funding-dependent."
+    },
+    {
+      "id": "disability-source-ssa-evidence",
+      "url": "https://www.ssa.gov/disability/professionals/bluebook/evidentiary.htm",
+      "description": "SSA, Disability Evaluation Under Social Security, Part II: Evidentiary Requirements. Impairment, severity, medical and nonmedical evidence, and assistance obtaining reports."
+    },
+    {
+      "id": "disability-source-ssa-medical",
+      "url": "https://www.ssa.gov/help/iClaim_medicalEvidence.html",
+      "description": "SSA, Medical Evidence. Do not delay filing for records; sources, agency requests, examinations, and information about function."
+    },
+    {
+      "id": "disability-source-ssa-duty",
+      "url": "https://www.ssa.gov/OP_Home/cfr20/404/404-1512.htm",
+      "description": "20 CFR §404.1512, Responsibility for evidence. Title II claimant duties, complete submissions, medical-history development, and reasonable efforts to obtain reports."
+    },
+    {
+      "id": "disability-source-ga-application",
+      "url": "https://www.srca.nm.gov/parts/title08/08.106.0110.html",
+      "description": "8.106.110 NMAC, General Assistance application procedures. Sections 9–13: right to apply, form assistance, interview hardship alternatives, medical reconsideration, delay, and written notice. The 15-day request and 30-day evidence periods run from the denial date."
+    },
+    {
+      "id": "disability-source-ssa-review",
+      "url": "https://www.ssa.gov/apply/appeal-decision-we-made/request-reconsideration",
+      "description": "SSA, Request reconsideration. Disability and nonmedical reconsideration requests; 60 days from receipt of the decision."
+    },
+    {
+      "id": "disability-source-nm-hearing",
+      "url": "https://www.srca.nm.gov/parts/title08/08.100.0970.html",
+      "description": "8.100.970 NMAC, Administrative Hearings. Section 9(A)–(B): request methods and 90-day adverse-action notice period; separate program and service rules can apply."
+    },
+    {
+      "id": "disability-source-ssa-appeal-filing",
+      "url": "https://www.ssa.gov/disability/appeal.html",
+      "description": "SSA, Electronic Appeal filing guidance. Alternative filing when required information cannot be supplied within the appeal period."
+    },
+    {
+      "id": "disability-source-ssa-good-cause",
+      "url": "https://secure.ssa.gov/poms.nsf/lnx/0203101020",
+      "description": "SSA POMS GN 03101.020, Good Cause for Extending the Time Limit to File an Appeal. Relevant barriers, written explanation, assistance, and an individualized agency determination."
+    },
+    {
+      "id": "disability-source-ssa-representation",
+      "url": "https://www.ssa.gov/pubs/EN-05-10075.pdf",
+      "description": "SSA Publication 05-10075, Your Right to Representation, December 2024. Ordinary assistance, formal appointment, representative functions, and fee authorization."
+    },
+    {
+      "id": "disability-source-nm-adrc",
+      "url": "https://www.aging.nm.gov/consumer-and-elder-rights/options-counseling/",
+      "description": "New Mexico Aging and Long-Term Services Department, Options Counseling / ADRC. Long-term service and support navigation, Medicaid and Medicare counseling. This service description does not promise representation in a federal disability appeal."
+    },
+    {
+      "id": "disability-source-drnm",
+      "url": "https://drnm.org/intake-information/",
+      "description": "Disability Rights New Mexico, Intake and Referral Process. Free confidential services, priorities and capacity limits, no prior SSA finding required, and no representation created merely by contacting the organization."
+    },
+    {
+      "id": "disability-source-tx-ssi",
+      "url": "https://fhb.hhs.texas.gov/handbooks/medicaid-elderly-people-disabilities-handbook/a-2100-supplemental-security-income",
+      "description": "Texas HHSC, MEPD Handbook A-2100, Supplemental Security Income. Revision effective 1 September 2025: automatic Medicaid eligibility for SSI recipients and the state data interface."
+    },
+    {
+      "id": "disability-source-tx-ddu",
+      "url": "https://fhb.hhs.texas.gov/handbooks/medicaid-elderly-people-disabilities-handbook/d-2300-requesting-a-decision-disability-determination-unit",
+      "description": "Texas HHSC, MEPD Handbook D-2300, Requesting a Decision from the Disability Determination Unit. State Medicaid medical determinations, records, and forms H3034/H3035. This DDU route is distinct from the federal claim described by SSA."
+    },
+    {
+      "id": "disability-source-nm-adults",
+      "url": "https://www.srca.nm.gov/parts/title08/08.296.0400.html",
+      "description": "8.296.400 NMAC, Medicaid Eligibility—Other Adults. Section 9 lists this category's conditions without a disability-proof requirement; other ACA requirements still apply."
+    },
+    {
+      "id": "disability-source-expansion",
+      "url": "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+      "description": "KFF State Health Facts, Status of State Action on the Medicaid Expansion Decision, October 2026. KFF's original state-policy tracking: New Mexico adopted expansion; Texas had not. A dated policy comparison, not an approval-rate study."
+    },
+    {
+      "id": "disability-source-tx-buy-in",
+      "url": "https://fhb.hhs.texas.gov/handbooks/medicaid-elderly-people-disabilities-handbook/m-3200-disability",
+      "description": "Texas HHSC, MEPD Handbook M-3200, Disability. Medicaid Buy-In's disability standard and substantial-gainful-activity exception. Other program conditions remain separate."
+    },
+    {
+      "id": "disability-source-tx-adrc",
+      "url": "https://cooler.tdhca.state.tx.us/housing-center/pwd-tools.htm",
+      "description": "Texas Department of Housing and Community Affairs, Tools for Serving People with Disabilities. Identifies ADRCs as information and benefit-assistance resources."
+    },
+    {
+      "id": "disability-source-nm-ssi",
+      "url": "https://secure.ssa.gov/POMS.nsf/lnx/0501730008DAL",
+      "description": "SSA POMS SI DAL01730.008, New Mexico SSA/State Agreement under Section 1634. Automatic Medicaid eligibility for SSI cash and Section 1619(b) recipients, subject to stated limitations. Reviewed policy dated 30 May 2024."
+    }
+  ],
+  "research_scope": {
+    "empirical_findings": "Published 2019 SSA office-closure estimates support an access-cost mechanism, not current New Mexico/Texas approval rates or an overall state ranking",
+    "federal_programs": "Adult SSDI/SSI disability standards and federal evidence responsibilities; financial and other program conditions remain separate",
+    "state_programs": "Selected New Mexico General Assistance and Medicaid rules and Texas HHSC Medicaid guidance; no claim that a health-coverage program is a cash-assistance counterpart",
+    "policy_date": "Medicaid expansion comparison uses KFF original state-policy tracking for October 2026 and primary state/federal program materials",
+    "analysis": "Process audit, proposed record organization, and the care/evidence feedback relationship are editorial analysis; deliberate exclusion is not inferred from friction alone",
+    "privacy": "Public reusable explanations only; personal medical, identity, and claim evidence remains outside this collection"
+  },
+  "publication": {
+    "repository": "johnrigler/commons",
+    "state": "Public reading edition and prepared ledger reference",
+    "signature": null,
+    "ipfs_pin_receipt": null,
+    "chain": "litecoin",
+    "transaction_id": null
+  },
+  "ledger_preparation": {
+    "schema": "commons/litecoin-announcement/1",
+    "path": "../../examples/disability-access.draft.json",
+    "state": "Unsigned draft; funding, fees, signing, pinning, and broadcast not performed"
+  }
+}
