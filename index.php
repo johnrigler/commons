@@ -1,1 +1,1 @@
-sb/page.php
+sb/portal.php

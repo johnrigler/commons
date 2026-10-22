@@ -1,0 +1,82 @@
+{
+  "schema": "commons/portal/1",
+  "index": {
+    "coin": "litecoin",
+    "form": "B / transport",
+    "prefix": "LMx",
+    "phrase": "Commons",
+    "address": "LMxCoMMoNSzzzzzzzzzzzzzzzzzzZU8MFW"
+  },
+  "items": [
+    {
+      "id": "request",
+      "kind": "story",
+      "title": "Unsupported rent acceleration",
+      "summary": "A request for the records behind a disputed balance, with explanations of the charge and the process of challenging it.",
+      "cid": "bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq",
+      "path": "reading/bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq.html",
+      "fragment": "request",
+      "pdf": "reading/Commons-Request-and-Explanations.pdf",
+      "author": "John Rigler",
+      "status": "Unsigned reading draft",
+      "indexed": true,
+      "related": ["rent-acceleration", "administrative-burden", "prepare"]
+    },
+    {
+      "id": "rent-acceleration",
+      "kind": "explanation",
+      "title": "What makes rent acceleration unsupported?",
+      "summary": "The basis, calculation, credits and adjustments needed to examine a demand for the remaining rent on a lease.",
+      "cid": "bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq",
+      "path": "reading/bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq.html",
+      "fragment": "rent-acceleration",
+      "pdf": "reading/Commons-Request-and-Explanations.pdf",
+      "author": "John Rigler",
+      "status": "Unsigned explanatory draft",
+      "indexed": true,
+      "related": ["request", "administrative-burden"]
+    },
+    {
+      "id": "administrative-burden",
+      "kind": "explanation",
+      "title": "Deterrence through administrative burden",
+      "summary": "When complexity, repetition, delay or expense discourages a person from pursuing a substantive answer.",
+      "cid": "bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq",
+      "path": "reading/bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq.html",
+      "fragment": "administrative-burden",
+      "pdf": "reading/Commons-Request-and-Explanations.pdf",
+      "author": "John Rigler",
+      "status": "Unsigned explanatory draft",
+      "indexed": true,
+      "related": ["rent-acceleration", "request", "prepare"]
+    },
+    {
+      "id": "prepare",
+      "kind": "description",
+      "title": "Prepare, print, retain",
+      "summary": "A walkthrough from a reusable request to a reviewed document, a sent copy and a retained record.",
+      "cid": "bafkreibydv3yrnxjkxw6ep22ku5fucwpolllwplmbyzlnrsqdxwhlfpbc4",
+      "path": "reading/assistance/bafkreibydv3yrnxjkxw6ep22ku5fucwpolllwplmbyzlnrsqdxwhlfpbc4.html",
+      "fragment": "walkthrough",
+      "pdf": "reading/assistance/Commons-Preparation-and-Assistance.pdf",
+      "author": "John Rigler",
+      "status": "Unsigned procedural draft",
+      "indexed": true,
+      "related": ["request", "assistance-record"]
+    },
+    {
+      "id": "assistance-record",
+      "kind": "description",
+      "title": "A record of preparation and assistance",
+      "summary": "A blank form for recording review, assistance, authority and delivery. Completed records belong with the individual case.",
+      "cid": "bafkreibydv3yrnxjkxw6ep22ku5fucwpolllwplmbyzlnrsqdxwhlfpbc4",
+      "path": "reading/assistance/bafkreibydv3yrnxjkxw6ep22ku5fucwpolllwplmbyzlnrsqdxwhlfpbc4.html",
+      "fragment": "assistance-record",
+      "pdf": "reading/assistance/Commons-Preparation-and-Assistance.pdf",
+      "author": "John Rigler",
+      "status": "Blank template — no attestation made",
+      "indexed": true,
+      "related": ["prepare", "request"]
+    }
+  ]
+}

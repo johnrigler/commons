@@ -246,7 +246,7 @@
             const result = await CommonsThunderwords.draft({
                 name: $('#tag-name').value, transport: $('#tag-transport').value, subject: $('#tag-subject').value,
                 prefixes: { name: $('#prefix-name').value, transport: $('#prefix-transport').value, subject: $('#prefix-subject').value },
-                message: $('#announcement-body').value
+                message: $('#announcement-body').value, includeCommons: $('#commons-index').checked
             });
             if (version !== announcementVersion) throw new Error('The announcement changed while preparing it. Prepare it again.');
             announcement = result;
@@ -265,6 +265,24 @@
     window.addEventListener('pagehide', () => { token = ''; $('#pinata-token').value = ''; });
     render(); invalidateAnnouncement();
     await operation(verifyEdition);
+    // A portal draft remains local until the operator explicitly pins or announces it.
+    const contribution = new URLSearchParams(location.hash.slice(1)).get('contribution');
+    if (contribution) await operation(async () => {
+        const entry = (await CommonsPortal.load()).find(entry => entry.cid === contribution);
+        if (!entry) throw new Error('This contribution is not saved in this browser. Choose its downloaded file under Verify a file.');
+        const bytes = CommonsPortal.bytes(entry);
+        local = { bytes, cid: entry.cid, suffix: '.json', valid: true, type: 'application/json' };
+        $('#file-result').textContent = 'LOCAL CONTRIBUTION / CID MATCH\n' + entry.cid + '\n' + bytes.length + ' bytes';
+        $('#download-file').hidden = false;
+        $('#tag-name').value = entry.record.author || 'Unstated author';
+        $('#tag-transport').value = entry.record.indexed ? 'Commons' : 'IPFS';
+        $('#tag-subject').value = entry.record.kind;
+        $('#commons-index').checked = entry.record.indexed;
+        $('#announcement-body').value = 'ipfs://' + entry.cid;
+        invalidateAnnouncement();
+        status('Contribution loaded. Connect Pinata to pin its bytes, then prepare the announcement for Chisel. Nothing has been published yet.');
+        $('#verify').scrollIntoView();
+    });
 })().catch(() => {
     const output = document.querySelector('#status');
     if (output) { output.textContent = 'This edition could not be loaded. Check the source catalog and rebuild.'; output.setAttribute('data-error', ''); }

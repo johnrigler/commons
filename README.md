@@ -2,6 +2,17 @@
 
 Shared statements, individual cases, verifiable editions.
 
+**[Open the portal](index.html)** to browse connected stories, attestations,
+explanations and descriptions. Open an entry, read its document, follow its
+connections or add a contribution below it. The first view includes this
+published collection and your locally saved, indexed drafts.
+
+**[About](about.html)** contains the goals, structure and longer project
+explanations. **[Publish / verify](publish.html)** retains the byte verifier,
+Pinata and Litecoin announcement tools. [Portal notes](docs/PORTAL.md) explain
+the transport index and exact-parent contribution format. Go saves locally;
+publication and ledger announcement remain explicit subsequent actions.
+
 Commons is an address-based public stream. People can publish articles,
 advertisements, cases, services and other material associated with the shared
 address. This GitHub repository supplies one collection of reusable arguments,
@@ -31,7 +42,7 @@ The initial entries are **draft descriptions of this design**. They do not make
 findings about a debt, company or individual. The NCS / GitHub / rent escalation
 fields in the announcement form are editable examples.
 
-## Start here: documents to read and refine
+## Background: documents to read and refine
 
 [The new six-page overview](reading/overview/README.md) gives one short article
 per page, with a review prompt for each. Read the model first, then examine
@@ -124,7 +135,8 @@ Pinata requires a network connection.
 - `verify.js` calculates CIDs from exact bytes and checks CID filenames.
 - `pinata.js` uploads verified bytes to **public IPFS** through the Pinata V3 API.
 
-`index.js` supplies the interface. `thunderwords.js` prepares a Litecoin
+`portal.js` supplies the entry reader; `index.js` supplies the publishing
+workbench. `thunderwords.js` prepares a Litecoin
 announcement for later use in Chisel. These are ordinary browser scripts;
 Node.js is used only by the optional development tests.
 
@@ -194,11 +206,14 @@ The working filesystem provides the structure:
 
 | Path | Meaning |
 | --- | --- |
-| `index.php` | Relative symlink to `sb/page.php`, the Commons publication assembler |
-| `1_*.html` | Ordered page parts; deliberate symlinks work here too |
+| `index.php` | Relative symlink to `sb/portal.php`, the portal assembler |
+| `portal/1_*.html` | Ordered portal parts |
+| `1_*.html` | Ordered publishing-workbench parts |
 | `statements/` | Immutable paragraph files |
 | `<CID>.html` | Completed self-contained rendering |
 | `index.html` | Relative symlink selecting the current rendering |
+| `about.html` | Relative symlink selecting the goals and structure edition |
+| `publish.html` | Relative symlink selecting the verification / Pinata / Litecoin workbench |
 | `sb/publish.bash` | Inspectable `sb.publish` function |
 
 This is a small publication assembler for Commons, using SB Shell's ordered
@@ -212,6 +227,8 @@ Rebuild with PHP 8+ and Bash:
 source ~/commons/sb/publish.bash
 cd ~/commons
 sb.publish
+sb.publish ./sb/about.php about.html
+sb.publish ./sb/page.php publish.html
 ```
 
 Select the local PHP binary when needed:
@@ -240,6 +257,13 @@ changed directory produces a new directory CID. The self-contained HTML can
 also be pinned directly as one file.
 
 ## Litecoin announcement draft
+
+The Commons-only index uses the transport role (B form), encoded on Litecoin
+with the existing `LMx` profile: `LMxCoMMoNSzzzzzzzzzzzzzzzzzzZU8MFW`.
+The portal's main view is intended for this tag, rather than the broader all-L
+stream or automatic traversal of every untagged reply. The first version reads
+its bundled collection and browser-local additions; live address retrieval
+remains a later reader feature. See [the portal contract](docs/PORTAL.md).
 
 The announcement form produces checksum-verified Litecoin mainnet P2PKH
 addresses and an OP_RETURN script. It includes the general Thunderword:
@@ -285,6 +309,7 @@ Both have unset address-output amounts and have not been broadcast.
 
 ```bash
 node --test tests/core.mjs
+node --test tests/portal.mjs
 SB_PHP=php8.2 node --test tests/publication.mjs
 ```
 
