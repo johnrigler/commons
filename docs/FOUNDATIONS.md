@@ -92,3 +92,11 @@ Retain the established numbered source parts and immutable snapshots. Existing
 HTML articles remain the concrete documents. This note records the relationship
 model; it does not claim a topic-filtering interface or new catalog schema has
 already been implemented.
+
+## Why this structure matters
+
+[Commons and the internet of value](COMMONS-AND-WEB3.md) develops the project
+story: reusable reasoning can accumulate across foundations and cases, retain
+its sources and versions, and reduce dependence on repeatedly purchased
+explanations. This is an economic and editorial hypothesis, not a finding about
+the motives of the legal profession.

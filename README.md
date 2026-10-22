@@ -46,6 +46,13 @@ investing, criminal matters, fraud and further subjects. Its scope is not limite
 to the original author's experience. Reader interest and reuse can shape what
 grows; sources and review remain separate from popularity.
 
+## Commons and the internet of value
+
+[The project story](docs/COMMONS-AND-WEB3.md) connects reusable understanding
+with John Rigler's meaning of Web3: public memory, portable contributions and
+independent use. It records the hypothesis that shared explanations can reduce
+repeated paid work while keeping professional judgment and representation distinct.
+
 ## Label sources, then tell the story
 
 The preferred case workflow is to give the sources descriptive labels, then
