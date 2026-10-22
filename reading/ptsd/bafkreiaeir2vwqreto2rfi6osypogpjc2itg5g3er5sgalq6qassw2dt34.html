@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Commons — PTSD and Disability Benefits</title>
+<meta name="description" content="PTSD assessment, functional evidence, treatment gaps, Social Security disability standards, and the separate VA compensation system.">
+<style>
+    :root { color-scheme: light; --ink: #242624; --muted: #60655f; --rule: #cdd0c7; --accent: #86503c; }
+    * { box-sizing: border-box; }
+    html { background: #eeeee8; color: var(--ink); }
+    body { margin: 0; padding: 36px 18px; font-family: Georgia, 'Times New Roman', serif; }
+    article { max-width: 840px; margin: 0 auto 28px; padding: 48px 70px 40px; background: #fffef9; border: 1px solid #dbddd3; scroll-margin-top: 20px; }
+    a { color: #77432f; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    .reading-links { margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--rule); font: 13px/1.8 Arial, sans-serif; }
+    .reading-links a { display: block; width: fit-content; }
+    .return-link { font: 13px/1.5 Arial, sans-serif; }
+    .source-note { margin-top: 25px; padding-top: 14px; border-top: 1px solid var(--rule); font: 13px/1.55 Arial, sans-serif; color: var(--muted); }
+    .masthead { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; padding-bottom: 16px; border-bottom: 2px solid var(--ink); font-family: Arial, sans-serif; }
+    .brand { font-size: 16px; letter-spacing: .16em; font-weight: 700; text-transform: uppercase; }
+    .status { color: var(--muted); font-size: 12px; }
+    .eyebrow { margin: 34px 0 13px; font: 700 12px/1.5 Arial, sans-serif; color: var(--accent); letter-spacing: .11em; text-transform: uppercase; }
+    h1 { margin: 0 0 19px; font-size: clamp(36px, 6vw, 50px); font-weight: 400; line-height: 1.06; letter-spacing: -.035em; }
+    .deck { margin: 0 0 28px; font-size: 21px; line-height: 1.45; color: #454b44; }
+    p { margin: 0 0 17px; font-size: 17px; line-height: 1.66; }
+    h2 { margin: 29px 0 12px; font: 700 15px/1.4 Arial, sans-serif; }
+    .principle { margin: 26px 0; padding: 17px 0 17px 21px; border-left: 3px solid var(--accent); font-size: 21px; line-height: 1.45; }
+    .transition { border-top: 1px solid var(--rule); margin-top: 30px; padding-top: 23px; }
+    .transition h2 { margin-top: 0; }
+    footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 9px 20px; border-top: 1px solid var(--rule); margin-top: 30px; padding-top: 14px; color: var(--muted); font: 12px/1.5 Arial, sans-serif; }
+    @media (max-width: 600px) {
+      body { padding: 0; }
+      article { border: 0; padding: 27px 24px 30px; }
+      .masthead { gap: 12px; }
+      .brand { font-size: 14px; }
+      .status { font-size: 11px; }
+      .eyebrow { margin-top: 27px; }
+      p { font-size: 17px; }
+    }
+    .tools { max-width: 840px; margin: 0 auto 20px; padding: 20px 24px; background: #fffef9; border: 1px solid var(--rule); font: 14px/1.5 Arial, sans-serif; }
+    .tools summary { cursor: pointer; font-weight: 700; }
+    .fields { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 16px; }
+    label { display: block; font-weight: 700; }
+    input, select, button { font: inherit; }
+    input, select { display: block; width: 100%; margin-top: 5px; padding: 9px; border: 1px solid #9b9f95; background: white; color: var(--ink); border-radius: 3px; }
+    button { cursor: pointer; padding: 8px 12px; border: 1px solid #9b9f95; border-radius: 3px; background: white; color: var(--ink); }
+    .print-tools { display: flex; flex-wrap: wrap; align-items: end; gap: 12px; margin-top: 16px; }
+    .print-tools label { flex: 1; min-width: 190px; }
+    .tools .hint { font: 13px/1.5 Arial, sans-serif; margin: 13px 0 0; color: var(--muted); }
+    .term-link, .party { font-weight: 700; }
+    .party { text-decoration-style: dotted; }
+    .fields input:focus, .fields select:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+    @media (max-width: 600px) { .tools { margin: 12px; padding: 16px; } .fields { grid-template-columns: 1fr; } }
+    @page { size: Letter; margin: .7in .75in; }
+    @media print {
+      html, body { background: white; }
+      .screen-only { display: none !important; }
+      body[data-print="request"] article:not(#request) { display: none; }
+      a.party { text-decoration: none; }
+      .reading-links a { font-weight: 700; }
+      body { padding: 0; }
+      article { max-width: none; margin: 0; padding: 0; border: 0; background: white; }
+      article + article { break-before: page; }
+      a { color: inherit; }
+      .return-link { display: none; }
+      h1 { font-size: 29pt; }
+      p { font-size: 11pt; line-height: 1.5; margin-bottom: 10pt; orphans: 3; widows: 3; }
+      .deck { font-size: 14pt; margin-bottom: 18pt; }
+      .principle { font-size: 14pt; margin: 16pt 0; padding-top: 8pt; padding-bottom: 8pt; }
+      h2 { break-after: avoid; margin-top: 17pt; }
+      .eyebrow { margin-top: 21pt; }
+      footer { break-inside: avoid; }
+    }
+  
+.byline, .scope-note { font: 13px/1.6 Arial, sans-serif; color: var(--muted); }
+.scope-note { padding: 14px 16px; border-left: 2px solid var(--rule); background: #f6f5ef; }
+sup { font: 11px/1 Arial, sans-serif; white-space: nowrap; }
+table { width: 100%; border-collapse: collapse; margin: 18px 0 22px; font: 15px/1.55 Arial, sans-serif; }
+th, td { text-align: left; vertical-align: top; padding: 12px; border-bottom: 1px solid var(--rule); }
+thead { background: #eeeee6; }
+tbody th { width: 28%; font-size: 14px; }
+.money-table td { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sources { padding-left: 23px; font: 15px/1.6 Arial, sans-serif; }
+.sources li { padding-left: 3px; margin-bottom: 15px; overflow-wrap: anywhere; }
+.tools { display: flex; flex-wrap: wrap; gap: 9px 18px; align-items: center; }
+[id] { scroll-margin-top: 20px; }
+@media (max-width: 600px) {
+  th, td { padding: 10px 8px; }
+  table { font-size: 14px; }
+  tbody th { width: 31%; font-size: 13px; }
+  .masthead { align-items: flex-start; }
+}
+@media print {
+  table { font-size: 9.5pt; }
+  tbody th { font-size: 9pt; }
+  tr { break-inside: avoid; }
+  th, td { padding: 8pt; }
+  .byline, .scope-note { font-size: 8.5pt; }
+  .sources { font-size: 9.5pt; line-height: 1.5; }
+  .sources li { break-inside: avoid; margin-bottom: 9pt; }
+  sup { font-size: 8pt; }
+}
+</style>
+</head><body>
+<nav class="tools screen-only" aria-label="Read and print this collection">
+<a href="../../index.html">Commons feed</a><a href="#ptsd-disability">PTSD and disability</a><a href="#ptsd-sources">Sources</a><button id="print-button" type="button">Print / save PDF</button>
+</nav>
+<article id="ptsd-disability">
+  <header>
+    <div class="masthead"><span class="brand">Commons</span><span class="status">Explanation · Disability and public benefits</span></div>
+    <p class="eyebrow">PTSD · Function · Evidence</p>
+    <h1>PTSD, functional limitations, and disability benefits</h1>
+    <p class="deck">PTSD can be a basis for disability benefits when its documented effects meet the program's requirements. Assessment, work capacity, and access to care are separate parts of that question.</p>
+    <p class="byline">John Rigler · 22 October 2026 · AI-assisted research and editing</p>
+  </header>
+  <p>Post-traumatic stress disorder can follow experiences such as assault, abuse, a serious accident, a disaster, or military trauma. It can affect civilians and veterans. Symptoms can involve intrusive memories, avoidance, disturbed sleep, heightened alertness, and changes in mood or thinking.<sup><a href="#ptsd-source-nimh">[1]</a></sup> Their effects on everyday activities and sustained work provide important evidence in a disability claim.</p>
+  <h2>A diagnosis and a benefits decision answer different questions</h2>
+  <p>NIMH describes PTSD diagnosis as involving symptoms lasting longer than a month and interfering with daily life, with assessment by a mental-health professional.<sup><a href="#ptsd-source-nimh">[1]</a></sup> Adult Social Security disability claims apply a separate standard: inability to perform substantial gainful activity because of a medically determinable impairment lasting, or expected to last, at least twelve continuous months, or expected to result in death.<sup><a href="#ptsd-source-ssi">[2]</a></sup> The expected-duration rule means someone need not wait for twelve months to pass before applying.</p>
+  <p>SSDI ordinarily also requires sufficient covered work history. SSI has income, resource, and other eligibility conditions.<sup><a href="#ptsd-source-qualify">[3]</a></sup><sup><a href="#ptsd-source-ssi">[2]</a></sup> Military service is not a prerequisite for Social Security disability benefits.<sup><a href="#ptsd-source-va-comparison">[8]</a></sup> A PTSD diagnosis can support a claim; the decision still needs evidence addressing the applicable functional and nonmedical requirements.</p>
+  <h2>Social Security's trauma-related listing has two routes</h2>
+  <p>Adult listing 12.15 covers trauma- and stressor-related disorders. Paragraph A requires medical documentation of specified exposure, re-experiencing, avoidance, mood/behavior changes, and increased arousal or reactivity. The listing then requires either paragraph B or paragraph C.<sup><a href="#ptsd-source-listing">[4]</a></sup></p>
+  <table>
+    <thead><tr><th scope="col">Listing route</th><th scope="col">Additional showing</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">A and B</th><td>An extreme limitation in one, or marked limitations in two, of four areas: using information, social interaction, sustaining attention and pace, and adaptation or self-management.</td></tr>
+      <tr><th scope="row">A and C</th><td>A medically documented history of at least two years, ongoing treatment or support that reduces symptoms, and minimal capacity to adapt to new demands or environmental changes.</td></tr>
+    </tbody>
+  </table>
+  <p>The full rule defines these terms and conditions.<sup><a href="#ptsd-source-listing">[4]</a></sup> The two-year history belongs to the paragraph C route; it is not a universal waiting period for PTSD claims. If a severe impairment does not meet or medically equal a listing, SSA continues to evaluate remaining work capacity and the ability to perform past or other work.<sup><a href="#ptsd-source-qualify">[3]</a></sup></p>
+  <h2>Connect symptoms to the demands of daily work</h2>
+  <p>A usable record describes what happens, how often, how long it lasts, and what help is required. For example, interrupted sleep may affect reliable attendance or concentration; reminders of trauma may disrupt particular tasks; avoidance may affect travel or contact with others. These are illustrations of questions to investigate, not assumptions about everyone with PTSD.</p>
+  <p>Reports can identify changes over time, missed or shortened work periods, difficulty completing tasks, treatment effects, and the support that makes an activity possible. A successful appointment or an activity performed with extensive help does not describe an entire workweek. SSA's guidance calls for assessing sustained functioning in context, including structured settings and support.<sup><a href="#ptsd-source-listing">[4]</a></sup></p>
+  <p>Medical evidence must establish the impairment. Once it is established, information from the applicant and others can help explain severity and functioning.<sup><a href="#ptsd-source-evidence">[5]</a></sup> The <a href="../../index.html#item=disability-evidence">disability-record article</a> explains how to organize provider information, reports, work demands, and outstanding evidence requests.</p>
+  <h2>A gap in care needs an explanation</h2>
+  <p>SSA's symptom-evaluation ruling requires considering possible reasons for limited treatment before using that history to find reported symptoms inconsistent with the record. Examples include inability to afford care and mental limitations affecting the ability to understand or pursue treatment.<sup><a href="#ptsd-source-treatment-gaps">[6]</a></sup> This requires examination of the circumstances; it does not automatically resolve the claim or remove the need for medical evidence.</p>
+  <p>SSA also tells applicants not to delay filing while waiting for medical records. It requests evidence from identified sources and may arrange an examination at its expense when information is insufficient.<sup><a href="#ptsd-source-medical-records">[7]</a></sup> Recording why evidence is missing, what was requested, and who is obtaining it helps distinguish an unfinished record from a substantive finding about disability.</p>
+  <h2>VA compensation is a separate system</h2>
+  <p>For qualifying veterans, VA PTSD compensation examines the diagnosis and its connection to service. VA uses a disability-rating system; SSA applies its own eligibility rules and work-related standard. A VA award does not itself establish entitlement to SSDI, and the applications are separate.<sup><a href="#ptsd-source-va-ptsd">[9]</a></sup><sup><a href="#ptsd-source-va-ratings">[10]</a></sup><sup><a href="#ptsd-source-va-comparison">[8]</a></sup> The label “disability” should not obscure which agency is deciding which benefit.</p>
+  <h2>When the process adds another burden</h2>
+  <p>An application can require repeated calls, unfamiliar appointments, detailed accounts of distressing events, and responses to deadlines. Where symptoms make those tasks harder, the procedure can interfere with obtaining the evidence the agency needs. This is a reason to examine assistance, clear requests, and avoidable repetition. It does not establish that every difficult procedure was designed to exclude applicants.</p>
+  <p>The connected articles on <a href="../../index.html#item=disability-assistance">application assistance</a>, <a href="../../index.html#item=disability-review">review</a>, and <a href="../../index.html#item=disability-new-mexico">New Mexico's programs</a> describe further routes and responsibilities. Private clinical and trauma records belong in the appropriate case file. The public Commons entry supplies an explanation without requiring publication of a person's experiences or medical evidence.</p>
+  <p class="scope-note">This entry focuses on adult benefit claims. Childhood SSI uses a different disability standard. Treatment decisions and benefit eligibility are separate matters; no individual diagnosis or eligibility finding is made here.</p>
+  <div class="reading-links"><a href="../../index.html#item=disability-access">Disability benefits and the cost of proving eligibility →</a><a href="../../index.html#item=disability-evidence">The work of building a disability record →</a><a href="#ptsd-sources">Research and program rules →</a></div>
+</article>
+<article id="ptsd-sources">
+  <header><p class="eyebrow">Sources · Checked 22 October 2026</p><h1>PTSD: assessment, evidence, and benefits</h1><p class="deck">Clinical diagnosis, Social Security disability, and VA compensation follow different standards.</p></header>
+  <ol class="sources">
+    <li id="ptsd-source-nimh"><a href="https://www.nimh.nih.gov/health/publications/post-traumatic-stress-disorder-ptsd">National Institute of Mental Health, Post-Traumatic Stress Disorder</a>. Civilian and military experiences, symptom groups, clinical assessment, and duration of symptoms.</li>
+    <li id="ptsd-source-ssi"><a href="https://www.ssa.gov/ssi/text-eligibility-ussi.htm">SSA, SSI Eligibility, 2026 edition</a>. Adult and childhood disability definitions, duration, financial conditions, and other requirements.</li>
+    <li id="ptsd-source-qualify"><a href="https://www.ssa.gov/benefits/disability/qualify.html">SSA, How Does Someone Become Eligible?</a>. SSDI insurance/work conditions and the sequential disability evaluation, including work-related steps after the listings.</li>
+    <li id="ptsd-source-listing"><a href="https://www.ssa.gov/disability/professionals/bluebook/12.00-MentalDisorders-Adult.htm">SSA, Adult Mental Disorders, listing 12.15 and sections 12.00C–G</a>. Required medical findings, the alternative A+B and A+C routes, functional severity, sustained functioning, support, and marginal adjustment.</li>
+    <li id="ptsd-source-evidence"><a href="https://www.ssa.gov/disability/professionals/bluebook/evidentiary.htm">SSA, Evidentiary Requirements</a>. Establishing a medically determinable impairment and evaluating severity with medical and nonmedical evidence.</li>
+    <li id="ptsd-source-treatment-gaps"><a href="https://www.ssa.gov/OP_Home/rulings/di/01/SSR2016-03-di-01.html">SSA, SSR 16-3p, Evaluation of Symptoms in Disability Claims</a>. Effective 28 March 2016, revised in 2017; symptom evaluation and consideration of reasons for limited treatment. Rules addressing failure to follow prescribed treatment are a separate issue.</li>
+    <li id="ptsd-source-medical-records"><a href="https://www.ssa.gov/help/iClaim_medicalEvidence.html">SSA, Medical Evidence</a>. Do not delay filing for records; agency evidence requests and possible examinations at agency expense.</li>
+    <li id="ptsd-source-va-comparison"><a href="https://www.ssa.gov/people/veterans/index.html">SSA, Information for Military &amp; Veterans: SSDI and VA Disability comparison</a>. Different definitions, military-service conditions, work standards, and separate applications.</li>
+    <li id="ptsd-source-va-ptsd"><a href="https://www.va.gov/disability/eligibility/ptsd/">VA, Disability Compensation for PTSD</a>. PTSD diagnosis and connection to an in-service traumatic event; specific eligibility and claim requirements.</li>
+    <li id="ptsd-source-va-ratings"><a href="https://www.va.gov/disability/about-disability-ratings/">VA, About Disability Ratings</a>. The rating system, evidence, examinations, and compensation rates.</li>
+  </ol>
+  <p class="source-note">The discussion of application burden and the proposed organization of functional evidence are editorial analysis. Examples of work effects illustrate documentation questions; they do not diagnose PTSD or predict a benefit award. This is an adult-focused explanation of selected federal standards, with links to the existing New Mexico/Texas series. No independent clinical or legal review is recorded.</p>
+</article>
+<script>document.getElementById('print-button').addEventListener('click', () => window.print());
+</script>
+</body></html>

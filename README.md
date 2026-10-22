@@ -60,6 +60,10 @@ Medicaid and assistance routes. The articles are in the live feed under
 **Disability & public benefits**, with sources and connected reading in each
 popup. [Edition notes](reading/disability/) record the dated research scope.
 
+[PTSD, functional limitations, and disability benefits](reading/ptsd/index.html)
+adds assessment, SSA's trauma-related listing, treatment gaps, evidence, and
+the separate VA compensation system to **Disability & public benefits**.
+
 [The cost of challenging a claim](reading/arguments/index.html) consolidates the
 collection into seven general arguments and an adaptable reporting-dispute
 request. The live feed leads with the institutional mechanism and published

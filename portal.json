@@ -9,6 +9,29 @@
   },
   "items": [
     {
+      "id": "ptsd-disability",
+      "kind": "explanation",
+      "title": "PTSD, functional limitations, and disability benefits",
+      "summary": "PTSD assessment, SSA listing 12.15, functional evidence, treatment gaps, and the separate VA compensation system.",
+      "cid": "bafkreiaeir2vwqreto2rfi6osypogpjc2itg5g3er5sgalq6qassw2dt34",
+      "path": "reading/ptsd/bafkreiaeir2vwqreto2rfi6osypogpjc2itg5g3er5sgalq6qassw2dt34.html",
+      "fragment": "ptsd-disability",
+      "author": "John Rigler",
+      "status": "Unsigned researched explanation · 22 October 2026",
+      "indexed": true,
+      "related": [
+        "disability-access",
+        "disability-evidence",
+        "disability-assistance",
+        "disability-review",
+        "disability-new-mexico",
+        "disability-texas"
+      ],
+      "topics": [
+        "Disability & public benefits"
+      ]
+    },
+    {
       "id": "autism-assessment",
       "kind": "explanation",
       "title": "Autism, assessment, and access to disability benefits",
@@ -47,7 +70,8 @@
         "disability-texas",
         "disability-evidence",
         "administrative-burden",
-        "autism-assessment"
+        "autism-assessment",
+        "ptsd-disability"
       ],
       "topics": [
         "Disability & public benefits"
@@ -88,7 +112,8 @@
         "disability-general-assistance",
         "disability-assistance",
         "disability-review",
-        "autism-assessment"
+        "autism-assessment",
+        "ptsd-disability"
       ],
       "topics": [
         "Disability & public benefits"
@@ -128,7 +153,8 @@
       "related": [
         "disability-general-assistance",
         "disability-assistance",
-        "administrative-burden"
+        "administrative-burden",
+        "ptsd-disability"
       ],
       "topics": [
         "Disability & public benefits"
@@ -150,7 +176,8 @@
         "prepare",
         "assistance-record",
         "disability-texas",
-        "autism-assessment"
+        "autism-assessment",
+        "ptsd-disability"
       ],
       "topics": [
         "Disability & public benefits"

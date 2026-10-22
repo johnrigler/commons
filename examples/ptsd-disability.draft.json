@@ -1,0 +1,79 @@
+{
+  "schema": "commons/litecoin-announcement/1",
+  "state": "draft",
+  "coin": "litecoin",
+  "network": "mainnet",
+  "roleProfile": {
+    "name": "LLx",
+    "transport": "LMx",
+    "subject": "LNx"
+  },
+  "mainThunderword": {
+    "address": "LLLLLLLLLLLLLLLLLLLLLLLLLLLLXgkk2V",
+    "label": "Litecoin general Thunderword"
+  },
+  "tags": [
+    {
+      "role": "name",
+      "prefix": "LLx",
+      "phrase": "John Rigler",
+      "encoded": "JoHNxRiGLER",
+      "address": "LLxJoHNxRiGLERzzzzzzzzzzzzzzV5pZ1p"
+    },
+    {
+      "role": "transport",
+      "prefix": "LMx",
+      "phrase": "Commons",
+      "encoded": "CoMMoNS",
+      "address": "LMxCoMMoNSzzzzzzzzzzzzzzzzzzZU8MFW"
+    },
+    {
+      "role": "subject",
+      "prefix": "LNx",
+      "phrase": "PTSD disability",
+      "encoded": "PTSDxDiSABiLiTY",
+      "address": "LNxPTSDxDiSABiLiTYzzzzzzzzzzZ7Lj1M"
+    }
+  ],
+  "message": {
+    "text": "ipfs://bafkreidcwaqssb7zimbyypi7akhr7rqai7ostoxzxqzsdodescce3suj6e",
+    "encoding": "utf-8",
+    "hex": "697066733a2f2f6261666b7265696463776171737362377a696d627979706937616b68723772716169376f73746f787a78717a73646f6465736363653373756a3665",
+    "bytes": 66
+  },
+  "outputs": [
+    {
+      "role": "general-index",
+      "address": "LLLLLLLLLLLLLLLLLLLLLLLLLLLLXgkk2V",
+      "amountLitoshis": null
+    },
+    {
+      "role": "name",
+      "address": "LLxJoHNxRiGLERzzzzzzzzzzzzzzV5pZ1p",
+      "amountLitoshis": null
+    },
+    {
+      "role": "transport",
+      "address": "LMxCoMMoNSzzzzzzzzzzzzzzzzzzZU8MFW",
+      "amountLitoshis": null
+    },
+    {
+      "role": "subject",
+      "address": "LNxPTSDxDiSABiLiTYzzzzzzzzzzZ7Lj1M",
+      "amountLitoshis": null
+    },
+    {
+      "role": "op-return",
+      "amountLitoshis": 0,
+      "scriptPubKey": "6a42697066733a2f2f6261666b7265696463776171737362377a696d627979706937616b68723772716169376f73746f787a78717a73646f6465736363653373756a3665"
+    }
+  ],
+  "commonsIndex": {
+    "prefix": "LMx",
+    "phrase": "Commons",
+    "encoded": "CoMMoNS",
+    "address": "LMxCoMMoNSzzzzzzzzzzzzzzzzzzZU8MFW",
+    "role": "commons-index",
+    "form": "B / transport"
+  }
+}

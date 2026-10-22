@@ -1,0 +1,105 @@
+{
+  "title": "Commons - PTSD and Disability Benefits",
+  "author": "John Rigler",
+  "date": "2026-10-22",
+  "status": "Unsigned AI-assisted research and editorial draft; no independent clinical or legal review recorded",
+  "scope": "One adult-focused PTSD entry covering assessment, Social Security listing and work standards, functional evidence, treatment gaps, and the separate VA compensation system",
+  "base_commons_commit": "526ba22351f96c61e49553dd9834caf544a860d7",
+  "artifacts": [
+    {
+      "path": "bafkreiaeir2vwqreto2rfi6osypogpjc2itg5g3er5sgalq6qassw2dt34.html",
+      "media_type": "text/html",
+      "sha256": "0444755b42249bb512a3ce961ee33d22d2266e9b648f64602e1e80252b6873df",
+      "cid": "bafkreiaeir2vwqreto2rfi6osypogpjc2itg5g3er5sgalq6qassw2dt34"
+    }
+  ],
+  "articles": [
+    {
+      "id": "ptsd-disability",
+      "title": "PTSD, functional limitations, and disability benefits",
+      "cid": "bafkreiaeir2vwqreto2rfi6osypogpjc2itg5g3er5sgalq6qassw2dt34",
+      "fragment": "ptsd-disability",
+      "related": [
+        "disability-access",
+        "disability-evidence",
+        "disability-assistance",
+        "disability-review",
+        "disability-new-mexico",
+        "disability-texas"
+      ]
+    }
+  ],
+  "sources_checked": "2026-10-22",
+  "sources": [
+    {
+      "id": "ptsd-source-nimh",
+      "url": "https://www.nimh.nih.gov/health/publications/post-traumatic-stress-disorder-ptsd",
+      "description": "National Institute of Mental Health, Post-Traumatic Stress Disorder. Civilian and military experiences, symptom groups, clinical assessment, and duration of symptoms."
+    },
+    {
+      "id": "ptsd-source-ssi",
+      "url": "https://www.ssa.gov/ssi/text-eligibility-ussi.htm",
+      "description": "SSA, SSI Eligibility, 2026 edition. Adult and childhood disability definitions, duration, financial conditions, and other requirements."
+    },
+    {
+      "id": "ptsd-source-qualify",
+      "url": "https://www.ssa.gov/benefits/disability/qualify.html",
+      "description": "SSA, How Does Someone Become Eligible?. SSDI insurance/work conditions and the sequential disability evaluation, including work-related steps after the listings."
+    },
+    {
+      "id": "ptsd-source-listing",
+      "url": "https://www.ssa.gov/disability/professionals/bluebook/12.00-MentalDisorders-Adult.htm",
+      "description": "SSA, Adult Mental Disorders, listing 12.15 and sections 12.00C–G. Required medical findings, the alternative A+B and A+C routes, functional severity, sustained functioning, support, and marginal adjustment."
+    },
+    {
+      "id": "ptsd-source-evidence",
+      "url": "https://www.ssa.gov/disability/professionals/bluebook/evidentiary.htm",
+      "description": "SSA, Evidentiary Requirements. Establishing a medically determinable impairment and evaluating severity with medical and nonmedical evidence."
+    },
+    {
+      "id": "ptsd-source-treatment-gaps",
+      "url": "https://www.ssa.gov/OP_Home/rulings/di/01/SSR2016-03-di-01.html",
+      "description": "SSA, SSR 16-3p, Evaluation of Symptoms in Disability Claims. Effective 28 March 2016, revised in 2017; symptom evaluation and consideration of reasons for limited treatment. Rules addressing failure to follow prescribed treatment are a separate issue."
+    },
+    {
+      "id": "ptsd-source-medical-records",
+      "url": "https://www.ssa.gov/help/iClaim_medicalEvidence.html",
+      "description": "SSA, Medical Evidence. Do not delay filing for records; agency evidence requests and possible examinations at agency expense."
+    },
+    {
+      "id": "ptsd-source-va-comparison",
+      "url": "https://www.ssa.gov/people/veterans/index.html",
+      "description": "SSA, Information for Military & Veterans: SSDI and VA Disability comparison. Different definitions, military-service conditions, work standards, and separate applications."
+    },
+    {
+      "id": "ptsd-source-va-ptsd",
+      "url": "https://www.va.gov/disability/eligibility/ptsd/",
+      "description": "VA, Disability Compensation for PTSD. PTSD diagnosis and connection to an in-service traumatic event; specific eligibility and claim requirements."
+    },
+    {
+      "id": "ptsd-source-va-ratings",
+      "url": "https://www.va.gov/disability/about-disability-ratings/",
+      "description": "VA, About Disability Ratings. The rating system, evidence, examinations, and compensation rates."
+    }
+  ],
+  "research_scope": {
+    "clinical": "NIMH explains PTSD and clinical assessment in civilian and military populations; no individual diagnosis is offered",
+    "social_security": "Adult duration and work rules, SSA listing 12.15 alternatives A+B and A+C, medical and functional evidence, and symptom evaluation under SSR 16-3p",
+    "veterans_affairs": "VA service-connected compensation and ratings are separate from SSA eligibility; no award is treated as automatically controlling another agency",
+    "analysis": "Application burden and proposed evidence organization are editorial analysis; procedural difficulty alone does not establish deliberate exclusion",
+    "privacy": "Public reusable explanation; personal clinical and trauma records remain outside this collection"
+  },
+  "publication": {
+    "repository": "johnrigler/commons",
+    "state": "Public reading edition and prepared ledger reference",
+    "signature": null,
+    "ipfs_pin_receipt": null,
+    "chain": "litecoin",
+    "transaction_id": null
+  },
+  "ledger_preparation": {
+    "schema": "commons/litecoin-announcement/1",
+    "path": "../../examples/ptsd-disability.draft.json",
+    "state": "Unsigned draft; funding, fees, signing, pinning, and broadcast not performed"
+  }
+}
