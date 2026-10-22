@@ -54,6 +54,7 @@ const root = path.resolve(__dirname,'..');
     await page.locator('#reader-content').waitFor({state:'visible'});
     assert.match(await page.locator('#reader-content').innerText(),/General Assistance/);
     await page.locator('#reader-content').getByRole('link',{name:'practical record',exact:true}).click();
+    await page.locator('#reader-content').getByRole('heading',{name:'Filing and assembling evidence can proceed together',exact:true}).waitFor();
     assert.match(page.url(),/#item=disability-evidence$/);
     assert.match(await page.locator('#reader-content').innerText(),/not to delay filing/);
     await page.getByRole('button',{name:'Back to the feed',exact:false}).click();
