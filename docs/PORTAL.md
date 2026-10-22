@@ -1,7 +1,9 @@
 # Portal, connected records and the Commons index
 
-The entry page is a portal. Readers open stories, attestations, explanations
-and descriptions, then follow direct connections to the appropriate document.
+The entry page is a feed across subjects. Readers filter by subject or type,
+search, and open full articles in a reading window over the feed. Connected
+articles open in the same window; Escape or **Back to the feed** returns to the
+collection. The original frozen document remains available from each article.
 Goals, structure and the broader project argument live in the README and
 `about.html`. Verification, Pinata and Litecoin preparation live in
 `publish.html`. These are self-contained static editions; PHP builds them,
@@ -16,6 +18,14 @@ already ledger publications. The initial assistance record is a blank template,
 not a signed attestation. The portal has an honest empty state for attestations.
 
 The portal currently reads the bundled collection and locally saved additions.
+The collection includes traffic enforcement, housing and credit reporting,
+technology, and Commons practice. Subject labels describe the current view;
+they are not requirements for publishing to Commons. The feed embeds the exact
+original HTML bytes for each edition, verifies their CIDs before reading, and
+copies only allowed article markup into the window. Sources stay with the
+article. Reading the bundled collection works offline without fetching a
+gateway or executing the original document's scripts.
+
 It makes no live chain request and claims no complete address history.
 Independent publishers do not need this catalog's approval to publish to the
 shared address. Later readers and scribes can retrieve those records and build
@@ -122,5 +132,6 @@ entry symlink. Never redirect output through one of those links.
 The browser development check uses Playwright (`node tests/browser.cjs` with
 Playwright installed, or `COMMONS_PLAYWRIGHT` set to its module path). It tests
 connected reading, safe text rendering, saved replies, index filtering, reload,
-publishing handoff, About navigation and a phone viewport. The static reader
+offline article windows, subject filters, publishing handoff, About navigation
+and a phone viewport. The static reader
 has no dependency on Playwright, Node, a framework or a CDN.

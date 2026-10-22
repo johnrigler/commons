@@ -4,14 +4,18 @@ require_once __DIR__ . '/cid.php';
 try {
     $catalog = json_decode(file_get_contents($root . '/portal.json'), true, 512, JSON_THROW_ON_ERROR);
     $ids = [];
+    $documents = [];
     foreach ($catalog['items'] as $record) {
         if (isset($ids[$record['id']])) throw new RuntimeException('Duplicate portal entry.');
         $ids[$record['id']] = true;
         $path = realpath($root . '/' . $record['path']);
         if (!$path || !str_starts_with($path, $root . '/') || commons_cid(file_get_contents($path)) !== $record['cid']) throw new RuntimeException('Portal document does not match its CID.');
-        if (!str_contains(file_get_contents($path), 'id="' . $record['fragment'] . '"')) throw new RuntimeException('Portal fragment not found.');
+        $content = file_get_contents($path);
+        if (!str_contains($content, 'id="' . $record['fragment'] . '"')) throw new RuntimeException('Portal fragment not found.');
+        $documents[$record['cid']] = base64_encode($content);
     }
     foreach ($catalog['items'] as $record) foreach ($record['related'] as $id) if (!isset($ids[$id])) throw new RuntimeException('Unknown connected entry.');
+    $catalog['documents'] = $documents;
     $json = json_encode($catalog, JSON_THROW_ON_ERROR | JSON_HEX_TAG | JSON_HEX_AMP | JSON_UNESCAPED_SLASHES);
 } catch (Throwable $error) {
     if (PHP_SAPI === 'cli') fwrite(STDERR, $error->getMessage() . "\n");
@@ -25,7 +29,7 @@ try {
 <title>Commons — Portal</title><style><?php readfile($root . '/portal.css'); ?></style></head><body>
 <?php foreach (glob($root . '/portal/1_*.html') as $part) include $part; ?>
 <script id="portal-data" type="application/json"><?= $json ?></script>
-<?php foreach (['verify.js', 'portal-core.js', 'portal.js'] as $script) { ?>
+<?php foreach (['verify.js', 'portal-core.js', 'portal-reader.js', 'portal.js'] as $script) { ?>
 <script><?= str_ireplace('</script', '<\/script', file_get_contents($root . '/' . $script)) ?></script>
 <?php } ?>
 </body></html>

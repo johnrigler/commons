@@ -34,3 +34,39 @@ jobs:
         with:
           name: commons-browser-views
           path: ${{ runner.temp }}/commons-screenshots
+
+  deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: reader
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    concurrency:
+      group: commons-pages
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Export static site with frozen entry links resolved
+        run: |
+          python3 - <<'PY'
+          import os
+          import shutil
+          from pathlib import Path
+          shutil.copytree(
+              Path.cwd(), Path(os.environ['RUNNER_TEMP']) / 'commons-pages',
+              symlinks=False,
+              ignore=shutil.ignore_patterns('.git', '.github', 'node_modules', 'tests'),
+          )
+          PY
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ runner.temp }}/commons-pages
+      - name: Publish Commons
+        id: deployment
+        uses: actions/deploy-pages@v4

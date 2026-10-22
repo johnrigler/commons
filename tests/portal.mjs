@@ -7,7 +7,7 @@ if (!globalThis.crypto) Object.defineProperty(globalThis, 'crypto', {value:webcr
 for (const file of ['verify.js', 'thunderwords.js', 'portal-core.js']) vm.runInThisContext(await readFile(new URL('../' + file, import.meta.url), 'utf8'));
 const P = CommonsPortal;
 const catalog = JSON.parse(await readFile(new URL('../portal.json', import.meta.url), 'utf8'));
-const parent = catalog.items[0];
+const parent = catalog.items.find(item => item.id === 'request');
 const fields = {kind:'explanation',title:'An additional observation',text:'Synthetic text <b>kept as text</b>.',author:'Synthetic',source:'https://example.invalid/source',indexed:false,created:'2026-10-21T00:00:00Z'};
 const storage = () => {const map = new Map(); return {getItem:key=>map.get(key)||null,setItem:(key,value)=>map.set(key,value)};};
 

@@ -2,10 +2,12 @@
 
 Shared statements, individual cases, verifiable editions.
 
-**[Open the portal](index.html)** to browse connected stories, attestations,
-explanations and descriptions. Open an entry, read its document, follow its
-connections or add a contribution below it. The first view includes this
-published collection and your locally saved, indexed drafts.
+**[Open the Commons website](https://johnrigler.github.io/commons/)** to browse
+articles across traffic enforcement, housing and credit, technology, and other
+subjects. Filter the feed, open a title to read the full article in a popup,
+follow its connections or add a contribution below it. The first view includes
+this published collection and your locally saved, indexed drafts. The
+[local portal](index.html) also works as a standalone edition.
 
 **[About](about.html)** contains the goals, structure and longer project
 explanations. **[Publish / verify](publish.html)** retains the byte verifier,

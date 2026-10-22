@@ -1,9 +1,11 @@
 <section id="portal-detail" hidden aria-labelledby="detail-title">
-  <a class="back-link" href="#">← All entries</a>
+  <p id="reader-message" class="portal-status" role="status" aria-live="polite" hidden></p>
   <article class="detail-document">
     <p id="detail-meta" class="item-meta"></p>
     <h1 id="detail-title"></h1>
     <p id="detail-text" class="detail-text"></p>
+    <p id="reader-loading" class="reader-loading" role="status" hidden>Opening article…</p>
+    <div id="reader-content" class="reader-content" hidden></div>
     <div id="detail-links" class="document-links"></div>
     <button id="add-below" type="button">Add below</button>
     <details class="reference-details"><summary>Edition reference</summary><code id="detail-cid"></code><p id="document-check"></p></details>
@@ -24,6 +26,7 @@
     </form>
   </section>
 </section>
+</dialog>
 </main>
 <footer class="portal-footer"><span>Commons · Connected records</span><nav aria-label="More"><a href="about.html">About</a><a href="publish.html#pinata">Pinata</a><a href="publish.html#announce">Litecoin</a><a href="https://github.com/johnrigler/commons">Source ↗</a></nav></footer>
 <noscript><p class="portal-status">Open the <a href="reading/bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq.html">request and explanations</a> or <a href="reading/assistance/">preparation companion</a>. Enable JavaScript to browse connections and add contributions.</p></noscript>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Commons — Credit reporting as collection pressure</title>
+<style>
+    :root { color-scheme: light; --ink: #242624; --muted: #60655f; --rule: #cdd0c7; --accent: #86503c; }
+    * { box-sizing: border-box; }
+    html { background: #eeeee8; color: var(--ink); }
+    body { margin: 0; padding: 36px 18px; font-family: Georgia, 'Times New Roman', serif; }
+    article { max-width: 840px; margin: 0 auto 28px; padding: 48px 70px 40px; background: #fffef9; border: 1px solid #dbddd3; scroll-margin-top: 20px; }
+    a { color: #77432f; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    .reading-links { margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--rule); font: 13px/1.8 Arial, sans-serif; }
+    .reading-links a { display: block; width: fit-content; }
+    .return-link { font: 13px/1.5 Arial, sans-serif; }
+    .source-note { margin-top: 25px; padding-top: 14px; border-top: 1px solid var(--rule); font: 13px/1.55 Arial, sans-serif; color: var(--muted); }
+    .source-ref { font: 11px/1 Arial, sans-serif; white-space: nowrap; }
+    .source-note ol { margin: 10px 0 0; padding-left: 22px; }
+    .source-note li { margin-bottom: 8px; overflow-wrap: anywhere; }
+    .masthead { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; padding-bottom: 16px; border-bottom: 2px solid var(--ink); font-family: Arial, sans-serif; }
+    .brand { font-size: 16px; letter-spacing: .16em; font-weight: 700; text-transform: uppercase; }
+    .status { color: var(--muted); font-size: 12px; }
+    .eyebrow { margin: 34px 0 13px; font: 700 12px/1.5 Arial, sans-serif; color: var(--accent); letter-spacing: .11em; text-transform: uppercase; }
+    h1 { margin: 0 0 19px; font-size: clamp(36px, 6vw, 50px); font-weight: 400; line-height: 1.06; letter-spacing: -.035em; }
+    .deck { margin: 0 0 28px; font-size: 21px; line-height: 1.45; color: #454b44; }
+    p { margin: 0 0 17px; font-size: 17px; line-height: 1.66; }
+    h2 { margin: 29px 0 12px; font: 700 15px/1.4 Arial, sans-serif; }
+    .principle { margin: 26px 0; padding: 17px 0 17px 21px; border-left: 3px solid var(--accent); font-size: 21px; line-height: 1.45; }
+    .transition { border-top: 1px solid var(--rule); margin-top: 30px; padding-top: 23px; }
+    .transition h2 { margin-top: 0; }
+    footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 9px 20px; border-top: 1px solid var(--rule); margin-top: 30px; padding-top: 14px; color: var(--muted); font: 12px/1.5 Arial, sans-serif; }
+    @media (max-width: 600px) {
+      body { padding: 0; }
+      article { border: 0; padding: 27px 24px 30px; }
+      .masthead { gap: 12px; }
+      .brand { font-size: 14px; }
+      .status { font-size: 11px; }
+      .eyebrow { margin-top: 27px; }
+      p { font-size: 17px; }
+    }
+    .tools { max-width: 840px; margin: 0 auto 20px; padding: 20px 24px; background: #fffef9; border: 1px solid var(--rule); font: 14px/1.5 Arial, sans-serif; }
+    .tools summary { cursor: pointer; font-weight: 700; }
+    .fields { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 16px; }
+    label { display: block; font-weight: 700; }
+    input, select, button { font: inherit; }
+    input, select { display: block; width: 100%; margin-top: 5px; padding: 9px; border: 1px solid #9b9f95; background: white; color: var(--ink); border-radius: 3px; }
+    button { cursor: pointer; padding: 8px 12px; border: 1px solid #9b9f95; border-radius: 3px; background: white; color: var(--ink); }
+    .print-tools { display: flex; flex-wrap: wrap; align-items: end; gap: 12px; margin-top: 16px; }
+    .print-tools label { flex: 1; min-width: 190px; }
+    .tools .hint { font: 13px/1.5 Arial, sans-serif; margin: 13px 0 0; color: var(--muted); }
+    .term-link, .party { font-weight: 700; }
+    .party { text-decoration-style: dotted; }
+    .fields input:focus, .fields select:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+    @media (max-width: 600px) { .tools { margin: 12px; padding: 16px; } .fields { grid-template-columns: 1fr; } }
+    @page { size: Letter; margin: .7in .75in; }
+    @media print {
+      html, body { background: white; }
+      .screen-only { display: none !important; }
+      body[data-print="request"] article:not(#request) { display: none; }
+      a.party { text-decoration: none; }
+      .reading-links a { font-weight: 700; }
+      body { padding: 0; }
+      article { max-width: none; margin: 0; padding: 0; border: 0; background: white; }
+      article + article { break-before: page; }
+      a { color: inherit; }
+      .return-link { display: none; }
+      h1 { font-size: 29pt; }
+      p { font-size: 11pt; line-height: 1.5; margin-bottom: 10pt; orphans: 3; widows: 3; }
+      .deck { font-size: 14pt; margin-bottom: 18pt; }
+      .principle { font-size: 14pt; margin: 16pt 0; padding-top: 8pt; padding-bottom: 8pt; }
+      h2 { break-after: avoid; margin-top: 17pt; }
+      .eyebrow { margin-top: 21pt; }
+      footer { break-inside: avoid; }
+    }
+  </style></head><body>
+<nav class="tools screen-only" aria-label="Read and print"><a href="../../index.html#item=credit-reporting">Commons portal</a> · <button id="print-button" type="button">Print / save PDF</button></nav>
+<article id="credit-reporting" aria-labelledby="credit-title">
+    <header>
+      <div class="masthead"><span class="brand">Commons</span><span class="status">A part of the process</span></div>
+      <p class="eyebrow">Equifax · Experian · TransUnion</p>
+      <h1 id="credit-title">Credit reporting as collection pressure</h1>
+      <p class="deck">How the three credit reporting agencies can give a disputed demand leverage while leaving the consumer to pursue the evidence.</p>
+    </header>
+
+    <h2>A commercial role with public consequences</h2>
+    <p>Equifax, Experian, and TransUnion are commercial credit reporting companies. They receive information about consumers and sell reports used by businesses making decisions about lending, insurance, and housing. Their reports can affect whether a person obtains credit or a home and how much borrowing costs.<sup class="source-ref"><a href="#credit-source-1" aria-label="Credit reporting source 1">[1]</a></sup> The person described in the file bears those consequences, while businesses buy and use the information. This structure gives the companies a role in the dispute that differs from representing the consumer.</p>
+
+    <h2>How an unsupported balance gains force</h2>
+    <p>A lessor records a charge. A collector demands payment and supplies information to a credit bureau. The bureau makes that information available for decisions elsewhere. With each step, the same amount can appear more authoritative even though the missing lease provision, calculation, or credit remains missing.</p>
+
+    <p>The Commons' analysis is that this can create collection pressure without a lawsuit: a person may pay to protect a housing application or borrowing opportunity before the disputed charges have been adequately explained. In a case involving <a class="term-link" href="../../index.html#item=rent-acceleration">unsupported rent acceleration</a>, credit reporting can therefore extend the leverage of the original demand.</p>
+
+    <h2 id="circular-verification">When verification becomes circular</h2>
+    <p>The industry uses e-OSCAR to exchange disputes between reporting companies and information suppliers, known as furnishers. Its own description says a bureau's dispute is routed to the furnisher, which returns updated information, if any.<sup class="source-ref"><a href="#credit-source-2" aria-label="Credit reporting source 2">[2]</a></sup> That route sends the challenge back to the company that supplied the disputed entry.</p>
+
+    <p><strong>Circular verification</strong> is the Commons' descriptive term for the failure that occurs when the supplier repeats its original position and that repetition substitutes for examining the evidence. A response saying “verified” can leave the central question unanswered: what records support this amount? For example, confirming that a collector's database contains a balance does not explain how accelerated rent was calculated or whether later payments and credits were applied.</p>
+
+    <p>Routing a dispute to the furnisher is part of the statutory process. The relevant question is whether the bureau and furnisher actually investigated the specific issue and considered the relevant evidence. The term identifies a possible failure; an individual case needs records showing what was challenged and how it was answered.</p>
+
+    <h2>The bureaus have their own duties</h2>
+    <p>The Fair Credit Reporting Act requires credit reporting agencies to follow reasonable procedures for accuracy.<sup class="source-ref"><a href="#credit-source-3" aria-label="Credit reporting source 3">[3]</a></sup> For a qualifying dispute, a bureau must conduct a free, reasonable reinvestigation, generally within 30 days, with extensions in specified circumstances. It must send relevant dispute information to the furnisher, consider the relevant material the consumer supplies, and correct or delete information found inaccurate, incomplete, or unverifiable after reinvestigation. The consumer can request a description of the procedure used, including the identity of furnishers contacted; the bureau generally must provide that description within 15 days of the request.<sup class="source-ref"><a href="#credit-source-4" aria-label="Credit reporting source 4">[4]</a></sup></p>
+
+    <p>A bureau's “verified” result is a credit reporting outcome. It supplies no court judgment establishing liability. The right to a description of the reinvestigation procedure also differs from a request for copies of every underlying contract or internal record.</p>
+
+    <h2 id="fragmented-correction">Three files can mean repeated work</h2>
+    <p>The consumer must check each bureau's report and dispute an error with each bureau that carries it.<sup class="source-ref"><a href="#credit-source-1" aria-label="Credit reporting source 1">[1]</a></sup> Suppose Equifax and TransUnion delete a collection while Experian retains it. A business using Experian's report may still encounter the entry. The consumer must then preserve and explain the different outcomes while continuing the remaining dispute.</p>
+
+    <p>Separate files do not remove the furnisher's correction duties. After notice of a dispute from a bureau, the furnisher must investigate and review the relevant information forwarded to it. If it finds the information incomplete or inaccurate, it must report those results to the other nationwide bureaus to which it supplied the information.<sup class="source-ref"><a href="#credit-source-5" aria-label="Credit reporting source 5">[5]</a></sup> The case record should establish whether that happened.</p>
+
+    <p>Deletion from a credit report does not itself cancel a debt. Retention does not establish that the debt is legally owed. Different reporting outcomes raise questions about the investigations; they do not resolve the underlying lease dispute by themselves.</p>
+
+    <h2>Documented problems with consumer relief</h2>
+    <p>The CFPB's January 2023 report examined responses to 488,000 complaints it sent to the three companies from October 2021 through September 2022. It described improvements as well as continuing deficiencies and urged the companies to consider the burden their automated processes impose on consumers.<sup class="source-ref"><a href="#credit-source-6" aria-label="Credit reporting source 6">[6]</a></sup> The report documents problems and changes in that period; the individual case supplies the evidence of the process used today.</p>
+
+    <h2>What the Commons asks to see</h2>
+    <p>The central criticism is that a reporting system can preserve a collector's leverage while returning the work of obtaining a substantive answer to the consumer. An entry's removal can provide real relief. A completed process that leaves the disputed calculation unexplained can leave the consumer carrying the same problem.</p>
+
+    <p>For each bureau, retain the entry, the specific error challenged, the evidence supplied, delivery and response dates, the stated outcome, and any description of the investigation. Identify which questions remain unanswered and document any credit or housing consequences. This connects the reporting companies' role to <a class="term-link" href="../../index.html#item=administrative-burden">deterrence through administrative burden</a> through records a reader can examine.</p>
+
+    <div class="source-note" role="note" aria-label="Credit reporting sources">
+      <strong>Sources · checked 21 October 2026</strong>
+      <ol>
+        <li id="credit-source-1">FTC, <a href="https://consumer.ftc.gov/articles/disputing-errors-your-credit-reports">Disputing Errors on Your Credit Reports</a>: the bureaus' commercial role, effects of reports, and disputes with each bureau carrying an error.</li>
+        <li id="credit-source-2">e-OSCAR, <a href="https://www.e-oscar.org/gettingstarted">Getting Started</a>: the industry's description of dispute routing and furnisher responses.</li>
+        <li id="credit-source-3"><a href="https://uscode.house.gov/us/usc/119-120/t15/s1681e/">15 U.S.C. § 1681e(b)</a>: reporting agencies' accuracy procedures.</li>
+        <li id="credit-source-4"><a href="https://uscode.house.gov/us/usc/119-120/t15/s1681i/">15 U.S.C. § 1681i(a)(1), (2), (4)–(7)</a>: reinvestigation, relevant information, correction or deletion, and descriptions of the procedure.</li>
+        <li id="credit-source-5"><a href="https://uscode.house.gov/us/usc/119-120/t15/s1681s-2/">15 U.S.C. § 1681s–2(b)(1)</a>: furnisher investigations and notification of other nationwide bureaus.</li>
+        <li id="credit-source-6">CFPB, <a href="https://www.consumerfinance.gov/archive/newsroom/cfpb-issues-report-on-transunion-experian-and-equifax/">3 January 2023 report announcement</a>: findings and recommendations concerning complaint responses.</li>
+      </ol>
+      The mechanism described here is the Commons' analysis, connecting the companies' roles and legal duties to the practical pressure a disputed entry can create.
+    </div>
+
+    <p class="return-link"><a href="../../index.html#item=request">Return to the requested action</a></p>
+    <footer><span>Commons · Credit Reporting</span><span>The three credit reporting agencies</span></footer>
+  </article>
+
+  
+<script>document.getElementById('print-button').addEventListener('click', () => window.print());
+</script>
+</body></html>

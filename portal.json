@@ -9,21 +9,104 @@
   },
   "items": [
     {
-      "id": "request",
+      "id": "traffic-toll",
       "kind": "story",
-      "title": "Unsupported rent acceleration",
-      "summary": "A request for the records behind a disputed balance, with explanations of the charge and the process of challenging it.",
-      "cid": "bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq",
-      "path": "reading/bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq.html",
-      "fragment": "request",
-      "pdf": "reading/Commons-Request-and-Explanations.pdf",
+      "title": "The ticket as a toll",
+      "summary": "An extra $50 lawyer payment, a reduced fine, and removal of the insurance consequence: why should a better outcome require an intermediary?",
+      "related": [
+        "traffic-insurance",
+        "traffic-revenue",
+        "administrative-burden"
+      ],
+      "cid": "bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy",
+      "path": "reading/traffic/bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy.html",
+      "fragment": "traffic-toll",
       "author": "John Rigler",
-      "status": "Unsigned reading draft",
+      "status": "Unsigned research draft; attributed recollection and primary sources",
+      "indexed": true,
+      "topics": [
+        "Traffic & public revenue"
+      ]
+    },
+    {
+      "id": "credit-reporting",
+      "kind": "explanation",
+      "title": "Credit reporting as collection pressure",
+      "summary": "Equifax, Experian, and TransUnion: how disputed balances gain leverage, verification becomes circular, and corrections differ across three files.",
+      "cid": "bafkreidpzcdiu777w4uy4jzr7reij3af5etwpybf6n76dabcc5mh7rdtka",
+      "path": "reading/credit/bafkreidpzcdiu777w4uy4jzr7reij3af5etwpybf6n76dabcc5mh7rdtka.html",
+      "fragment": "credit-reporting",
+      "author": "John Rigler",
+      "status": "Unsigned explanatory draft",
       "indexed": true,
       "related": [
-        "rent-acceleration",
         "administrative-burden",
-        "prepare"
+        "rent-acceleration",
+        "request",
+        "traffic-toll"
+      ],
+      "topics": [
+        "Housing & credit"
+      ]
+    },
+    {
+      "id": "value",
+      "kind": "explanation",
+      "title": "Knowledge in the internet of value",
+      "summary": "Reusable explanations, public memory, and independent tools within John Rigler's meaning of Web3.",
+      "cid": "bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre",
+      "path": "reading/overview/bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre.html",
+      "fragment": "value",
+      "pdf": "reading/overview/Commons-Overview-and-Review.pdf",
+      "author": "John Rigler",
+      "status": "Unsigned overview draft · 21 October 2026",
+      "indexed": true,
+      "related": [
+        "scribes",
+        "open-commons",
+        "work"
+      ],
+      "topics": [
+        "Technology & public memory"
+      ]
+    },
+    {
+      "id": "traffic-insurance",
+      "kind": "explanation",
+      "title": "What the insurer gets to see",
+      "summary": "Grapevine and Austin, Texas, alongside California, North Carolina, and Florida: dismissal, different charges, confidentiality, points, and insurance-use rules.",
+      "related": [
+        "traffic-toll",
+        "traffic-revenue"
+      ],
+      "cid": "bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy",
+      "path": "reading/traffic/bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy.html",
+      "fragment": "traffic-insurance",
+      "author": "John Rigler",
+      "status": "Unsigned research draft; attributed recollection and primary sources",
+      "indexed": true,
+      "topics": [
+        "Traffic & public revenue"
+      ]
+    },
+    {
+      "id": "traffic-revenue",
+      "kind": "explanation",
+      "title": "When citations fund the town",
+      "summary": "Municipal dependence on enforcement receipts, a Louisiana General Fund audit, federal findings, and the financial incentives around highway tickets.",
+      "related": [
+        "traffic-toll",
+        "traffic-insurance",
+        "administrative-burden"
+      ],
+      "cid": "bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy",
+      "path": "reading/traffic/bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy.html",
+      "fragment": "traffic-revenue",
+      "author": "John Rigler",
+      "status": "Unsigned research draft; attributed recollection and primary sources",
+      "indexed": true,
+      "topics": [
+        "Traffic & public revenue"
       ]
     },
     {
@@ -40,7 +123,11 @@
       "indexed": true,
       "related": [
         "request",
-        "administrative-burden"
+        "administrative-burden",
+        "credit-reporting"
+      ],
+      "topics": [
+        "Housing & credit"
       ]
     },
     {
@@ -61,7 +148,139 @@
         "prepare",
         "traffic-toll",
         "traffic-insurance",
-        "traffic-revenue"
+        "traffic-revenue",
+        "credit-reporting"
+      ],
+      "topics": [
+        "Commons practice"
+      ]
+    },
+    {
+      "id": "request",
+      "kind": "story",
+      "title": "Unsupported rent acceleration",
+      "summary": "A request for the records behind a disputed balance, with explanations of the charge and the process of challenging it.",
+      "cid": "bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq",
+      "path": "reading/bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq.html",
+      "fragment": "request",
+      "pdf": "reading/Commons-Request-and-Explanations.pdf",
+      "author": "John Rigler",
+      "status": "Unsigned reading draft",
+      "indexed": true,
+      "related": [
+        "rent-acceleration",
+        "administrative-burden",
+        "prepare",
+        "credit-reporting"
+      ],
+      "topics": [
+        "Housing & credit"
+      ]
+    },
+    {
+      "id": "scribes",
+      "kind": "description",
+      "title": "Independent scribes, many doorways",
+      "summary": "Independent servers can preserve and present records without becoming the sole authority over them.",
+      "cid": "bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre",
+      "path": "reading/overview/bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre.html",
+      "fragment": "scribes",
+      "pdf": "reading/overview/Commons-Overview-and-Review.pdf",
+      "author": "John Rigler",
+      "status": "Unsigned overview draft · 21 October 2026",
+      "indexed": true,
+      "related": [
+        "value",
+        "open-commons",
+        "work"
+      ],
+      "topics": [
+        "Technology & public memory"
+      ]
+    },
+    {
+      "id": "open-commons",
+      "kind": "description",
+      "title": "An open place to publish",
+      "summary": "An open stream can carry articles, cases, services, replies, and other records across many subjects.",
+      "cid": "bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre",
+      "path": "reading/overview/bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre.html",
+      "fragment": "open-commons",
+      "pdf": "reading/overview/Commons-Overview-and-Review.pdf",
+      "author": "John Rigler",
+      "status": "Unsigned overview draft · 21 October 2026",
+      "indexed": true,
+      "related": [
+        "foundations",
+        "value",
+        "scribes"
+      ],
+      "topics": [
+        "Commons practice"
+      ]
+    },
+    {
+      "id": "foundations",
+      "kind": "explanation",
+      "title": "Subjects meet in articles",
+      "summary": "Housing, religion, finance, and further subjects can connect through articles and individual cases.",
+      "cid": "bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre",
+      "path": "reading/overview/bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre.html",
+      "fragment": "foundations",
+      "pdf": "reading/overview/Commons-Overview-and-Review.pdf",
+      "author": "John Rigler",
+      "status": "Unsigned overview draft · 21 October 2026",
+      "indexed": true,
+      "related": [
+        "open-commons",
+        "patterns",
+        "traffic-toll",
+        "credit-reporting"
+      ],
+      "topics": [
+        "Commons practice"
+      ]
+    },
+    {
+      "id": "patterns",
+      "kind": "explanation",
+      "title": "Recognizing a shared pattern",
+      "summary": "Compare records, explanations, effort, and consequences across different institutions and individual cases.",
+      "cid": "bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre",
+      "path": "reading/overview/bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre.html",
+      "fragment": "patterns",
+      "pdf": "reading/overview/Commons-Overview-and-Review.pdf",
+      "author": "John Rigler",
+      "status": "Unsigned overview draft · 21 October 2026",
+      "indexed": true,
+      "related": [
+        "administrative-burden",
+        "traffic-toll",
+        "credit-reporting"
+      ],
+      "topics": [
+        "Commons practice"
+      ]
+    },
+    {
+      "id": "work",
+      "kind": "description",
+      "title": "Useful work within the Commons",
+      "summary": "Teaching, research, hosting, professional expertise, and shared material can support one another.",
+      "cid": "bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre",
+      "path": "reading/overview/bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre.html",
+      "fragment": "work",
+      "pdf": "reading/overview/Commons-Overview-and-Review.pdf",
+      "author": "John Rigler",
+      "status": "Unsigned overview draft · 21 October 2026",
+      "indexed": true,
+      "related": [
+        "prepare",
+        "foundations",
+        "value"
+      ],
+      "topics": [
+        "Commons practice"
       ]
     },
     {
@@ -79,6 +298,9 @@
       "related": [
         "request",
         "assistance-record"
+      ],
+      "topics": [
+        "Commons practice"
       ]
     },
     {
@@ -96,57 +318,10 @@
       "related": [
         "prepare",
         "request"
+      ],
+      "topics": [
+        "Commons practice"
       ]
-    },
-    {
-      "id": "traffic-toll",
-      "kind": "story",
-      "title": "The ticket as a toll",
-      "summary": "An extra $50 lawyer payment, a reduced fine, and removal of the insurance consequence: why should a better outcome require an intermediary?",
-      "related": [
-        "traffic-insurance",
-        "traffic-revenue",
-        "administrative-burden"
-      ],
-      "cid": "bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy",
-      "path": "reading/traffic/bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy.html",
-      "fragment": "traffic-toll",
-      "author": "John Rigler",
-      "status": "Unsigned research draft; attributed recollection and primary sources",
-      "indexed": true
-    },
-    {
-      "id": "traffic-insurance",
-      "kind": "explanation",
-      "title": "What the insurer gets to see",
-      "summary": "Grapevine and Austin, Texas, alongside California, North Carolina, and Florida: dismissal, different charges, confidentiality, points, and insurance-use rules.",
-      "related": [
-        "traffic-toll",
-        "traffic-revenue"
-      ],
-      "cid": "bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy",
-      "path": "reading/traffic/bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy.html",
-      "fragment": "traffic-insurance",
-      "author": "John Rigler",
-      "status": "Unsigned research draft; attributed recollection and primary sources",
-      "indexed": true
-    },
-    {
-      "id": "traffic-revenue",
-      "kind": "explanation",
-      "title": "When citations fund the town",
-      "summary": "Municipal dependence on enforcement receipts, a Louisiana General Fund audit, federal findings, and the financial incentives around highway tickets.",
-      "related": [
-        "traffic-toll",
-        "traffic-insurance",
-        "administrative-burden"
-      ],
-      "cid": "bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy",
-      "path": "reading/traffic/bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy.html",
-      "fragment": "traffic-revenue",
-      "author": "John Rigler",
-      "status": "Unsigned research draft; attributed recollection and primary sources",
-      "indexed": true
     }
   ]
 }

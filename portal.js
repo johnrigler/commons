@@ -2,17 +2,32 @@
     'use strict';
     const $ = selector => document.querySelector(selector);
     const data = JSON.parse($('#portal-data').textContent);
-    let drafts = [], selected = null, kind = '';
+    let drafts = [], selected = null, kind = '', topic = '';
+    const dialog = $('#portal-reader');
     let storageError = '';
     try { drafts = await CommonsPortal.load(); }
     catch { storageError = 'Saved contributions could not be read or verified. You can still browse this collection.'; }
-    const all = () => [...drafts.map(CommonsPortal.item), ...data.items];
+    const all = () => {
+        const items = [...drafts.map(CommonsPortal.item), ...data.items];
+        for (const item of items.filter(item => item.local)) {
+            let parent = item;
+            const seen = new Set();
+            while (parent && !seen.has(parent.id)) {
+                seen.add(parent.id);
+                if (parent.topics?.length) { item.topics = parent.topics; break; }
+                parent = parent.parent && items.find(candidate => CommonsPortal.sameReference(CommonsPortal.reference(candidate), parent.parent));
+            }
+        }
+        return items;
+    };
     const find = id => all().find(item => item.id === id);
 
     function message(text, error = false) {
-        $('#portal-status').textContent = text;
-        $('#portal-status').hidden = !text;
-        $('#portal-status').toggleAttribute('data-error', error);
+        for (const status of [$('#portal-status'), $('#reader-message')]) {
+            status.textContent = text;
+            status.hidden = !text;
+            status.toggleAttribute('data-error', error);
+        }
     }
 
     function link(text, href, className = '') {
@@ -23,7 +38,7 @@
 
     function meta(item) {
         const p = document.createElement('p'); p.className = 'item-meta';
-        p.textContent = item.kind + ' · ' + item.status;
+        p.textContent = item.kind + ' · ' + item.author;
         return p;
     }
 
@@ -36,12 +51,29 @@
         bottom.append(link('Open →', '#item=' + encodeURIComponent(item.id)));
         const count = document.createElement('span');
         count.textContent = item.parent ? 'Response' : (item.related?.length || 0) + ' connections';
-        bottom.append(count); article.append(meta(item), heading, p, bottom);
+        const subjects = document.createElement('div'); subjects.className = 'card-subjects';
+        for (const subject of item.topics || []) {
+            const label = document.createElement('span'); label.textContent = subject; subjects.append(label);
+        }
+        bottom.append(count); article.append(meta(item), heading, p, subjects, bottom);
         return article;
     }
 
+    function renderTopics() {
+        const container = $('#portal-topics');
+        if (!container.children.length) {
+            for (const subject of ['', ...new Set(data.items.flatMap(item => item.topics || []))]) {
+                const button = document.createElement('button'); button.type = 'button'; button.dataset.topic = subject;
+                button.textContent = subject || 'All subjects';
+                button.onclick = () => { topic = subject; renderFeed(); };
+                container.append(button);
+            }
+        }
+        for (const button of container.children) button.setAttribute('aria-pressed', String(button.dataset.topic === topic));
+    }
+
     function renderFeed() {
-        const items = CommonsPortal.visible(all(), kind, $('#portal-search').value);
+        const items = CommonsPortal.visible(all(), kind, $('#portal-search').value).filter(item => !topic || item.topics?.includes(topic));
         $('#portal-cards').replaceChildren(...items.map(card));
         $('#portal-count').textContent = items.length + (items.length === 1 ? ' entry' : ' entries');
         $('#portal-empty').hidden = !!items.length;
@@ -49,25 +81,31 @@
             ? 'No attestations in this collection yet. Open a document to add one.'
             : 'No matching entries. Try another term or type.';
         for (const button of document.querySelectorAll('[data-kind]')) button.setAttribute('aria-pressed', String(button.dataset.kind === kind));
+        renderTopics();
     }
 
-    async function checkDocument(item) {
+    async function readArticle(item) {
         $('#document-check').textContent = '';
+        $('#reader-content').replaceChildren(); $('#reader-content').hidden = true;
+        $('#detail-text').hidden = false;
+        $('#reader-loading').hidden = !item.path;
         if (!item.path) return;
-        if (!/^https?:$/.test(location.protocol)) {
-            $('#document-check').textContent = 'Open the document to read this edition; serve the portal on localhost or HTTPS to check its bytes.';
-            return;
-        }
         $('#document-check').textContent = 'Checking document bytes…';
         try {
-            const response = await fetch(item.path, { credentials: 'omit', cache: 'no-store' });
-            if (!response.ok) throw new Error('Document unavailable.');
-            const bytes = new Uint8Array(await response.arrayBuffer());
-            if (await CommonsCID.cid(bytes) !== item.cid) throw new Error('Document bytes differ from this edition reference.');
-            if (selected?.id === item.id) $('#document-check').textContent = 'Document bytes match this edition CID.';
+            const article = await CommonsReader.read(item, data.documents || {}, data.items);
+            if (selected?.id !== item.id) return;
+            $('#reader-content').replaceChildren(article); $('#reader-content').hidden = false;
+            $('#detail-text').hidden = true;
+            $('#document-check').textContent = 'Document bytes match this edition CID.';
         } catch (error) {
-            if (selected?.id === item.id) $('#document-check').textContent = error.message;
+            if (selected?.id === item.id) {
+                $('#document-check').textContent = error.message;
+                $('#reader-loading').textContent = 'The article could not open here. Use the original document link below.';
+                $('#reader-loading').hidden = false;
+                return;
+            }
         }
+        if (selected?.id === item.id) $('#reader-loading').hidden = true;
     }
 
     function download(item) {
@@ -80,15 +118,19 @@
 
     function show(item) {
         selected = item;
-        $('#portal-feed').hidden = !!item; $('#portal-detail').hidden = !item;
+        $('#portal-detail').hidden = !item;
         $('#contribution-form').reset();
-        if (!item) return;
+        if (!item) {
+            if (dialog.open) dialog.close();
+            document.body.classList.remove('reader-open');
+            return;
+        }
         $('#detail-title').textContent = item.title;
         $('#detail-meta').textContent = item.kind + ' · ' + item.status + ' · ' + item.author;
         $('#detail-text').textContent = item.text || item.summary;
         $('#detail-cid').textContent = item.cid + (item.fragment ? '#' + item.fragment : '');
         $('#detail-links').replaceChildren();
-        if (item.path) $('#detail-links').append(link('Read document ↗', item.path + (item.fragment ? '#' + item.fragment : ''), 'primary-link'));
+        if (item.path) $('#detail-links').append(link('Open original document ↗', item.path + (item.fragment ? '#' + item.fragment : '')));
         if (item.pdf) $('#detail-links').append(link('PDF for printing or email', item.pdf));
         if (item.source) $('#detail-links').append(link('Source reference', item.source));
         if (item.local) {
@@ -105,7 +147,11 @@
         $('#response-items').replaceChildren(...children.map(card));
         $('#responses-empty').hidden = !!children.length;
         $('#contribution-parent').textContent = item.title;
-        checkDocument(item);
+        document.body.classList.add('reader-open');
+        if (!dialog.open) dialog.showModal();
+        dialog.scrollTop = 0;
+        $('#reader-loading').textContent = 'Opening article…';
+        readArticle(item);
     }
 
     function route() {
@@ -118,6 +164,23 @@
     }
 
     $('#portal-search').addEventListener('input', renderFeed);
+    $('#reader-close').onclick = () => { location.hash = ''; };
+    $('#reader-print').onclick = () => window.print();
+    dialog.addEventListener('close', () => {
+        document.body.classList.remove('reader-open');
+        if (new URLSearchParams(location.hash.slice(1)).has('item')) location.hash = '';
+    });
+    dialog.addEventListener('click', event => {
+        if (event.target !== dialog) return;
+        const box = dialog.getBoundingClientRect();
+        if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) location.hash = '';
+    });
+    $('#reader-content').addEventListener('click', event => {
+        const anchor = event.target.closest('a[data-reader-anchor]');
+        if (!anchor) return;
+        event.preventDefault();
+        document.getElementById(anchor.dataset.readerAnchor)?.scrollIntoView({ block: 'start' });
+    });
     for (const button of document.querySelectorAll('[data-kind]')) button.onclick = () => { kind = button.dataset.kind; renderFeed(); };
     $('#add-below').onclick = () => { $('#contribution-form').scrollIntoView({ behavior: 'smooth' }); $('#contribution-title').focus(); };
     $('#contribution-form').addEventListener('submit', async event => {

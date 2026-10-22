@@ -80,7 +80,7 @@ globalThis.CommonsPortal = (() => {
     function visible(items, kind = '', query = '') {
         const needle = query.trim().toLowerCase();
         return items.filter(entry => entry.indexed && (!kind || entry.kind === kind)
-            && [entry.title, entry.summary, entry.author].join(' ').toLowerCase().includes(needle));
+            && [entry.title, entry.summary, entry.author, ...(entry.topics || [])].join(' ').toLowerCase().includes(needle));
     }
 
     return { KEY, INDEX, KINDS, reference, sameReference, validate, create, bytes, verify, load, save, item, visible };
