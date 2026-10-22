@@ -38,7 +38,7 @@
 
     function meta(item) {
         const p = document.createElement('p'); p.className = 'item-meta';
-        p.textContent = item.kind + ' · ' + item.author;
+        p.textContent = item.kind + ' · ' + item.author + (item.local ? ' · ' + item.status : '');
         return p;
     }
 
