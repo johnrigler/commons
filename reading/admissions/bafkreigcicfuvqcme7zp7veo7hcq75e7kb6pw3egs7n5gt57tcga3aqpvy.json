@@ -1,0 +1,116 @@
+{
+  "title": "Commons - Admissions, Ownership, and Debt Claims",
+  "author": "John Rigler",
+  "date": "2026-10-22",
+  "status": "Unsigned AI-assisted research and editorial draft; no independent legal review recorded",
+  "scope": "Attributed debt-case recollection and proposed pattern concerning explanations, admissions, and proof of transfer; current Texas contextual sources and historical FTC research",
+  "base_commons_commit": "65ccc4cd89506328bfc6c12ce1efd2e86eae25e3",
+  "artifacts": [
+    {
+      "path": "bafkreie5hacpyhsmg4o3ymzlyzjk2yrx7pgnejfdlm5vikmews3mpn7jmy.html",
+      "media_type": "text/html",
+      "sha256": "9d3804fc1e4c371dbc332bc652ad6237fbccd224a35b3b542984b4b6c7b7e966",
+      "cid": "bafkreie5hacpyhsmg4o3ymzlyzjk2yrx7pgnejfdlm5vikmews3mpn7jmy"
+    }
+  ],
+  "articles": [
+    {
+      "id": "debt-admissions",
+      "title": "When an explanation becomes an admission",
+      "cid": "bafkreie5hacpyhsmg4o3ymzlyzjk2yrx7pgnejfdlm5vikmews3mpn7jmy",
+      "fragment": "debt-admissions",
+      "related": [
+        "debt-ownership",
+        "records-recollection",
+        "debt-recollection",
+        "administrative-burden"
+      ]
+    },
+    {
+      "id": "debt-ownership",
+      "title": "Who owns the debt being claimed?",
+      "cid": "bafkreie5hacpyhsmg4o3ymzlyzjk2yrx7pgnejfdlm5vikmews3mpn7jmy",
+      "fragment": "debt-ownership",
+      "related": [
+        "debt-admissions",
+        "records-proof",
+        "debt-default",
+        "credit-reporting",
+        "administrative-burden"
+      ]
+    }
+  ],
+  "personal_account": {
+    "source": "John Rigler authoring conversation, recorded 2026-10-22",
+    "status": "Attributed recollection; individual case file not supplied",
+    "case_relation": "Clarification in discussion of the unexplained-records case and broader debt cases; exact case association unverified",
+    "reported_acknowledgment": "Had accounts and debts with companies such as credit-card issuers; this is not recorded as a concession of every element of this particular claim",
+    "reported_dispute": "Repeatedly insisted that the law firm needed to prove the particular debt had been transferred to the plaintiff",
+    "reported_response": "Recalls not receiving a satisfactory demonstration of transfer; felt the court proceeded as though he had inadvertently confirmed the debt",
+    "proposed_pattern": "Believes people are commonly encouraged to explain hardship and nonpayment, with embedded concessions retained while their intended explanation does not resolve the claim",
+    "prevalence_status": "Attributed hypothesis; the reviewed sources do not measure this specific pattern or establish it as the norm",
+    "unknowns": [
+      "Precise case association, court, judge, date, docket, plaintiff, and counsel",
+      "Exact questions and answers, whether sworn, and their procedural setting",
+      "Pleadings, formal admissions, verified denials, transfer documents, other evidence, objections, judgment, and stated basis of decision"
+    ],
+    "case_documents_received": [],
+    "evidence_location": "Relevant private Daisy case; no case path supplied"
+  },
+  "research_limitations": [
+    "Current Texas rules may differ from the rules at the case date",
+    "Justice-court rules are presented as a distinct comparison to an unidentified higher-court case",
+    "No determination of what was admitted, deemed admitted, waived, proved, or ruled upon in the individual case",
+    "No finding about a particular judge or firm, debt validity, outcome, or prevalence",
+    "Illustrative statements and proposition-level analysis are editorial examples, not case quotations or a litigation script"
+  ],
+  "sources": [
+    {
+      "id": "admissions-source-evidence",
+      "title": "Texas Rules of Evidence, effective 2 July 2026",
+      "url": "https://www.txcourts.gov/media/1463074/texas-rules-of-evidence-updated-with-amendments-effective-07022026.pdf",
+      "provisions": [
+        "801(e)(2)(A)",
+        "408"
+      ]
+    },
+    {
+      "id": "admissions-source-judicial",
+      "title": "Lake Jackson Medical Spa, Ltd. v. Gaytan, No. 20-0802, Supreme Court of Texas, 25 February 2022",
+      "url": "https://www.txcourts.gov/media/1453693/200802.pdf#page=14",
+      "scope": "Judicial admissions in pleadings; unrelated medical case"
+    },
+    {
+      "id": "admissions-source-civil",
+      "title": "Texas Rules of Civil Procedure, current official compilation checked 22 October 2026",
+      "url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf",
+      "provisions": [
+        "93(8)",
+        "198.2-198.3",
+        "500.1(e)",
+        "508.2(a)(4)",
+        "508.3(b)(3)"
+      ]
+    },
+    {
+      "id": "admissions-source-ftc",
+      "title": "Repairing a Broken System: Protecting Consumers in Debt Collection Litigation and Arbitration, FTC, July 2010",
+      "url": "https://www.ftc.gov/sites/default/files/documents/reports/federal-trade-commission-bureau-consumer-protection-staff-report-repairing-broken-system-protecting/debtcollectionreport.pdf",
+      "scope": "Historical information and unfamiliar-claimant concerns; not a prevalence measure for the specific admission pattern"
+    }
+  ],
+  "sources_checked": "2026-10-22",
+  "publication": {
+    "repository": "johnrigler/commons",
+    "state": "Public reading edition and prepared ledger reference",
+    "signature": null,
+    "ipfs_pin_receipt": null,
+    "chain": "litecoin",
+    "transaction_id": null
+  },
+  "ledger_preparation": {
+    "schema": "commons/litecoin-announcement/1",
+    "path": "../../examples/debt-admissions.draft.json",
+    "state": "Draft; funding, amounts, fees, signing, and broadcast remain to be completed in Chisel"
+  }
+}

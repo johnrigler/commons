@@ -9,6 +9,51 @@
   },
   "items": [
     {
+      "id": "debt-admissions",
+      "kind": "story",
+      "title": "When an explanation becomes an admission",
+      "summary": "Explaining hardship, acknowledging an old account, and repeatedly disputing whether the plaintiff proved that the debt was transferred to it.",
+      "related": [
+        "debt-ownership",
+        "records-recollection",
+        "debt-recollection",
+        "administrative-burden"
+      ],
+      "cid": "bafkreie5hacpyhsmg4o3ymzlyzjk2yrx7pgnejfdlm5vikmews3mpn7jmy",
+      "path": "reading/admissions/bafkreie5hacpyhsmg4o3ymzlyzjk2yrx7pgnejfdlm5vikmews3mpn7jmy.html",
+      "fragment": "debt-admissions",
+      "author": "John Rigler",
+      "status": "Unsigned research draft; attributed recollection and primary sources",
+      "indexed": true,
+      "topics": [
+        "Courts & civil process",
+        "Housing & credit"
+      ]
+    },
+    {
+      "id": "debt-ownership",
+      "kind": "explanation",
+      "title": "Who owns the debt being claimed?",
+      "summary": "Party statements, judicial and discovery admissions, assignment challenges, and the distinction between a past account and the present claimant.",
+      "related": [
+        "debt-admissions",
+        "records-proof",
+        "debt-default",
+        "credit-reporting",
+        "administrative-burden"
+      ],
+      "cid": "bafkreie5hacpyhsmg4o3ymzlyzjk2yrx7pgnejfdlm5vikmews3mpn7jmy",
+      "path": "reading/admissions/bafkreie5hacpyhsmg4o3ymzlyzjk2yrx7pgnejfdlm5vikmews3mpn7jmy.html",
+      "fragment": "debt-ownership",
+      "author": "John Rigler",
+      "status": "Unsigned research draft; attributed recollection and primary sources",
+      "indexed": true,
+      "topics": [
+        "Courts & civil process",
+        "Housing & credit"
+      ]
+    },
+    {
       "id": "records-recollection",
       "kind": "story",
       "title": "A stack of records without an explanation",
@@ -23,7 +68,8 @@
         "records-proof",
         "administrative-burden",
         "debt-recollection",
-        "rent-acceleration"
+        "rent-acceleration",
+        "debt-admissions"
       ],
       "topics": [
         "Courts & civil process",
@@ -46,7 +92,8 @@
         "administrative-burden",
         "traffic-toll",
         "credit-reporting",
-        "records-recollection"
+        "records-recollection",
+        "debt-admissions"
       ],
       "topics": [
         "Courts & civil process",
@@ -90,7 +137,8 @@
         "administrative-burden",
         "rent-acceleration",
         "credit-reporting",
-        "value"
+        "value",
+        "debt-ownership"
       ],
       "topics": [
         "Courts & civil process",
@@ -113,7 +161,8 @@
         "administrative-burden",
         "credit-reporting",
         "traffic-toll",
-        "records-proof"
+        "records-proof",
+        "debt-ownership"
       ],
       "topics": [
         "Courts & civil process",
@@ -138,7 +187,8 @@
         "traffic-toll",
         "debt-recollection",
         "debt-default",
-        "records-proof"
+        "records-proof",
+        "debt-ownership"
       ],
       "topics": [
         "Housing & credit"
@@ -250,7 +300,9 @@
         "debt-recollection",
         "debt-default",
         "records-recollection",
-        "records-proof"
+        "records-proof",
+        "debt-admissions",
+        "debt-ownership"
       ],
       "topics": [
         "Commons practice"

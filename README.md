@@ -75,6 +75,14 @@ scope, review status and exact artifact hashes.
 
 ### Debt claims and pretrial mediation
 
+[When an explanation becomes an admission](https://johnrigler.github.io/commons/#item=debt-admissions)
+records Rigler's repeated dispute about proof of transfer.
+[Who owns the debt being claimed?](https://johnrigler.github.io/commons/#item=debt-ownership)
+distinguishes acknowledgments of an old account, the balance, and the present
+claimant, with research on admissions and assignment procedures. The
+[edition and numbered sources](reading/admissions/) keep the proposed broader
+pattern separate from what the case record and research can establish.
+
 [A stack of records without an explanation](https://johnrigler.github.io/commons/#item=records-recollection)
 records a separate debt-case recollection about spreadsheet-like printouts.
 [What the records actually prove](https://johnrigler.github.io/commons/#item=records-proof)
