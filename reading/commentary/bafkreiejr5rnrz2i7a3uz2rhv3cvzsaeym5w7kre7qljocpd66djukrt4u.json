@@ -1,0 +1,130 @@
+{
+  "title": "Commons - Who Controls the Objection?",
+  "author": "John Rigler",
+  "date": "2026-10-22",
+  "status": "Unsigned author opinion and research proposal, prepared with AI assistance; no independent legal review recorded",
+  "scope": "Shared portal critique and a proposed amicus research agenda; no court, case, organization, or filing selected",
+  "base_commons_commit": "b11ff4c288d2032293903f812daf94b0c2f41a8e",
+  "artifacts": [
+    {
+      "path": "bafkreibsrs6iwd7k7rtczdig7457uw3i75ppgfyauxakq3vh2ji6jug7se.html",
+      "media_type": "text/html",
+      "sha256": "328cbc8b0feafc662c8d06ff3bfa5b68ff5ef31700a5c0a86ea7d251e4d0df91",
+      "cid": "bafkreibsrs6iwd7k7rtczdig7457uw3i75ppgfyauxakq3vh2ji6jug7se"
+    }
+  ],
+  "articles": [
+    {
+      "id": "portals-proof",
+      "title": "When the portal controls the objection",
+      "genre": "opinion",
+      "cid": "bafkreibsrs6iwd7k7rtczdig7457uw3i75ppgfyauxakq3vh2ji6jug7se",
+      "fragment": "portals-proof",
+      "related": [
+        "credit-reporting",
+        "records-proof",
+        "rent-acceleration",
+        "debt-default",
+        "amicus-systems"
+      ],
+      "companies": [
+        "company-experian",
+        "company-equifax",
+        "company-transunion",
+        "company-ncs",
+        "company-rausch-sturm",
+        "company-midland-funding",
+        "company-midland-credit"
+      ]
+    },
+    {
+      "id": "amicus-systems",
+      "title": "Make the recurring system visible to the court",
+      "genre": "opinion",
+      "cid": "bafkreibsrs6iwd7k7rtczdig7457uw3i75ppgfyauxakq3vh2ji6jug7se",
+      "fragment": "amicus-systems",
+      "related": [
+        "portals-proof",
+        "debt-default",
+        "records-proof",
+        "administrative-burden"
+      ],
+      "companies": [
+        "company-experian",
+        "company-equifax",
+        "company-transunion",
+        "company-ncs",
+        "company-rausch-sturm",
+        "company-midland-funding",
+        "company-midland-credit"
+      ]
+    }
+  ],
+  "sources_checked": "2026-10-22",
+  "sources": [
+    {
+      "id": "commentary-source-fcra",
+      "url": "https://uscode.house.gov/us/usc/119-118/t15/s1681i/",
+      "description": "Office of the Law Revision Counsel, 15 U.S.C. §1681i. Current text through 7 October 2026. Reinvestigation and relevant information, results and procedure notices, and the distinct statement-of-dispute provisions in subsections (b)–(c). The latter permit a clear and accurate codification or summary; a downloadable verbatim submission history is a proposed design standard here, not a quoted statutory requirement."
+    },
+    {
+      "id": "commentary-source-experian",
+      "url": "https://www.experian.com/help/dispute-credit/",
+      "description": "Experian, Dispute Credit Report Information. Public instructions for adding a statement and supplying supporting documents. These do not independently reproduce the authenticated interface route described by Rigler."
+    },
+    {
+      "id": "commentary-source-transunion",
+      "url": "https://www.transunion.com/how-to-read-your-credit-report",
+      "description": "TransUnion, How to Read Your Credit Report, Consumer Statement section. Describes prepared statements and writing one's own; relevant counterexample to a universal canned-menu claim."
+    },
+    {
+      "id": "commentary-source-ncs",
+      "url": "https://www.nationalcreditsystems.com/Company.aspx",
+      "description": "National Credit Systems, About NCS. The company's property-collection model and account-service options."
+    },
+    {
+      "id": "commentary-source-rausch",
+      "url": "https://rauschsturm.com/",
+      "description": "Rausch Sturm LLP, official website and consumer FAQ. Creditor representation, the Resolution Specialist Team, portal, and consumer contact routes. It does not independently establish a pattern of delaying lawyer access."
+    },
+    {
+      "id": "commentary-source-midland",
+      "url": "https://www.midlandcredit.com/help-center/faqs/",
+      "description": "Midland Credit Management, FAQs. The company's descriptions of account ownership, servicing, reporting, and resolution."
+    },
+    {
+      "id": "commentary-source-ftc-court",
+      "url": "https://consumer.ftc.gov/articles/what-do-if-debt-collector-sues-you",
+      "description": "FTC, What To Do if a Debt Collector Sues You. Responding to court papers and the distinction between the collector's claim and its responsibility to prove it."
+    },
+    {
+      "id": "commentary-source-rule29",
+      "url": "https://www.ca5.uscourts.gov/docs/c9b3642d-bbbf-4d20-859c-c5b0875d75e8/federalrulesofappellateprocedure_1522ea72-3ef8-4b9d-a035-a4365ea0739c.pdf",
+      "description": "Federal Rules of Appellate Procedure with Fifth Circuit Rules, amended through 1 December 2025, Rule 29. An example of court-specific amicus requirements; not a universal trial-court filing procedure."
+    }
+  ],
+  "attribution": {
+    "author": "John Rigler",
+    "date": "2026-10-22",
+    "scope": "Attributed opinion and observations, distinct from sourced company descriptions and official records"
+  },
+  "research_scope": {
+    "observations": "Experian interface and visible-history limitations, and creditor-litigation counsel-access recollections, supplied by Rigler on 22 October 2026; not independently reproduced",
+    "distinctions": "Reinvestigation, dispute reasons, consumer statement, collection communication, and court filing are distinct; TransUnion expressly describes a free-text statement option",
+    "analysis": "Institutional incentives, portal recommendations, design standards, and proposed amicus work are attributed author opinion",
+    "amicus": "A research outline for adaptation to an actual court and evidentiary record; no filing or acceptance represented"
+  },
+  "publication": {
+    "repository": "johnrigler/commons",
+    "state": "Public reading edition and prepared ledger reference",
+    "signature": null,
+    "ipfs_pin_receipt": null,
+    "chain": "litecoin",
+    "transaction_id": null
+  },
+  "ledger_preparation": {
+    "schema": "commons/litecoin-announcement/1",
+    "path": "../../examples/portal-commentary.draft.json",
+    "state": "Unsigned draft; funding, fees, signing, pinning, and broadcast not performed"
+  }
+}

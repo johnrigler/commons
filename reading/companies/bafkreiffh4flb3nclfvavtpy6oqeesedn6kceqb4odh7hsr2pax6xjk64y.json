@@ -1,0 +1,295 @@
+{
+  "title": "Commons - Company Profiles",
+  "author": "John Rigler",
+  "date": "2026-10-22",
+  "status": "Unsigned company profiles and John Rigler commentary, prepared with AI assistance; no independent legal review recorded",
+  "scope": "Seven profiles with attributed author commentary and observations, connected to general arguments and distinct from personal case evidence",
+  "base_commons_commit": "b11ff4c288d2032293903f812daf94b0c2f41a8e",
+  "artifacts": [
+    {
+      "path": "bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq.html",
+      "media_type": "text/html",
+      "sha256": "ba76e5e7ba61b9fc5aac6618a220a102a8acd38c65c77c6a7dd8cc4cf5919e5c",
+      "cid": "bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "company-experian",
+      "title": "Experian",
+      "legal_name": "Experian Information Solutions, Inc.",
+      "role": "Credit reporting",
+      "cid": "bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq",
+      "fragment": "company-experian",
+      "related": [
+        "credit-reporting",
+        "records-proof",
+        "request",
+        "portals-proof",
+        "amicus-systems"
+      ],
+      "companies": [
+        "company-equifax",
+        "company-transunion"
+      ],
+      "commentary": {
+        "author": "John Rigler",
+        "date": "2026-10-22",
+        "scope": "Attributed opinion and observations, distinct from sourced company descriptions and official records"
+      }
+    },
+    {
+      "id": "company-equifax",
+      "title": "Equifax",
+      "legal_name": "Equifax Information Services LLC",
+      "role": "Credit reporting",
+      "cid": "bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq",
+      "fragment": "company-equifax",
+      "related": [
+        "credit-reporting",
+        "records-proof",
+        "request",
+        "portals-proof",
+        "amicus-systems"
+      ],
+      "companies": [
+        "company-experian",
+        "company-transunion"
+      ],
+      "commentary": {
+        "author": "John Rigler",
+        "date": "2026-10-22",
+        "scope": "Attributed opinion and observations, distinct from sourced company descriptions and official records"
+      }
+    },
+    {
+      "id": "company-transunion",
+      "title": "TransUnion",
+      "legal_name": "Trans Union LLC",
+      "role": "Credit and background reporting",
+      "cid": "bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq",
+      "fragment": "company-transunion",
+      "related": [
+        "credit-reporting",
+        "records-proof",
+        "rent-acceleration",
+        "portals-proof",
+        "amicus-systems"
+      ],
+      "companies": [
+        "company-experian",
+        "company-equifax"
+      ],
+      "commentary": {
+        "author": "John Rigler",
+        "date": "2026-10-22",
+        "scope": "Attributed opinion and observations, distinct from sourced company descriptions and official records"
+      }
+    },
+    {
+      "id": "company-ncs",
+      "title": "National Credit Systems",
+      "legal_name": "National Credit Systems, Inc.",
+      "role": "Rental collections",
+      "cid": "bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq",
+      "fragment": "company-ncs",
+      "related": [
+        "rent-acceleration",
+        "credit-reporting",
+        "records-proof",
+        "request",
+        "portals-proof",
+        "amicus-systems"
+      ],
+      "companies": [],
+      "commentary": {
+        "author": "John Rigler",
+        "date": "2026-10-22",
+        "scope": "Attributed opinion and observations, distinct from sourced company descriptions and official records"
+      }
+    },
+    {
+      "id": "company-rausch-sturm",
+      "title": "Rausch Sturm LLP",
+      "legal_name": "Rausch Sturm LLP",
+      "role": "Creditor representation",
+      "cid": "bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq",
+      "fragment": "company-rausch-sturm",
+      "related": [
+        "debt-default",
+        "records-proof",
+        "portals-proof",
+        "amicus-systems"
+      ],
+      "companies": [],
+      "commentary": {
+        "author": "John Rigler",
+        "date": "2026-10-22",
+        "scope": "Attributed opinion and observations, distinct from sourced company descriptions and official records"
+      }
+    },
+    {
+      "id": "company-midland-funding",
+      "title": "Midland Funding LLC",
+      "legal_name": "Midland Funding LLC",
+      "role": "Debt purchasing",
+      "cid": "bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq",
+      "fragment": "company-midland-funding",
+      "related": [
+        "records-proof",
+        "debt-default",
+        "credit-reporting",
+        "portals-proof",
+        "amicus-systems"
+      ],
+      "companies": [
+        "company-midland-credit"
+      ],
+      "commentary": {
+        "author": "John Rigler",
+        "date": "2026-10-22",
+        "scope": "Attributed opinion and observations, distinct from sourced company descriptions and official records"
+      }
+    },
+    {
+      "id": "company-midland-credit",
+      "title": "Midland Credit Management, Inc.",
+      "legal_name": "Midland Credit Management, Inc.",
+      "role": "Debt purchasing and servicing",
+      "cid": "bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq",
+      "fragment": "company-midland-credit",
+      "related": [
+        "credit-reporting",
+        "records-proof",
+        "debt-default",
+        "portals-proof",
+        "amicus-systems"
+      ],
+      "companies": [
+        "company-midland-funding"
+      ],
+      "commentary": {
+        "author": "John Rigler",
+        "date": "2026-10-22",
+        "scope": "Attributed opinion and observations, distinct from sourced company descriptions and official records"
+      }
+    }
+  ],
+  "sources_checked": "2026-10-22",
+  "sources": [
+    {
+      "id": "company-source-experian-case",
+      "url": "https://www.consumerfinance.gov/enforcement/actions/experian-information-solutions-inc/",
+      "description": "CFPB, Experian Information Solutions, Inc. Case chronology, allegations, and pending discovery; page last modified 13 March 2026. No final merits judgment is reported there."
+    },
+    {
+      "id": "company-source-experian-dispute",
+      "url": "https://www.experian.com/help/dispute-credit/",
+      "description": "Experian, Dispute Credit Report Information. Company's published online and mail dispute routes."
+    },
+    {
+      "id": "company-source-equifax-order",
+      "url": "https://www.consumerfinance.gov/enforcement/actions/equifax-inc-and-equifax-information-services-llc/",
+      "description": "CFPB, Equifax, Inc. and Equifax Information Services LLC. The 17 January 2025 consent order, recorded findings, and $15 million civil penalty."
+    },
+    {
+      "id": "company-source-equifax-docket",
+      "url": "https://www.consumerfinance.gov/administrative-adjudication-proceedings/administrative-adjudication-docket/equifax-inc-and-equifax-information-services-llc/",
+      "description": "CFPB, Equifax administrative docket. Filed consent order and stipulation. The source's dated record is distinguished from an independent assessment of current compliance."
+    },
+    {
+      "id": "company-source-dispute-guide",
+      "url": "https://www.consumerfinance.gov/ask-cfpb/how-do-i-dispute-an-error-on-my-credit-report-en-314/",
+      "description": "CFPB, How do I dispute an error on my credit report? Reviewed 2 September 2026. Reporting-company and furnisher responsibilities, supporting documents, and official company dispute routes. The Equifax dispute and contact URLs are corroborated by this guide."
+    },
+    {
+      "id": "company-source-transunion-case",
+      "url": "https://www.consumerfinance.gov/enforcement/actions/transunion-rental-screening-solutions-inc-and-trans-union-llc/",
+      "description": "CFPB, TransUnion Rental Screening Solutions, Inc. and Trans Union LLC. Named entities, allegations, and the stipulated order entered 18 October 2023, including redress and penalty amounts."
+    },
+    {
+      "id": "company-source-transunion-final",
+      "url": "https://files.consumerfinance.gov/f/documents/cfpb_transunion-rental-screening-solutions-inc-trans-union-llc_stip-final-judg-order.pdf",
+      "description": "U.S. District Court, TransUnion stipulated final judgment and order. Scope, definitions, and the defendants' neither-admit-nor-deny provision. Distinct from the proposed order filed with the complaint."
+    },
+    {
+      "id": "company-source-transunion-support",
+      "url": "https://www.transunion.com/customer-support/contact-us-consumers",
+      "description": "TransUnion, Consumer Support. Company routes for disputes, freezes, fraud alerts, and subscription support."
+    },
+    {
+      "id": "company-source-ncs-company",
+      "url": "https://www.nationalcreditsystems.com/Company.aspx",
+      "description": "National Credit Systems, About NCS. Company's description of apartment and property collections and service options, including account purchases. Marketing claims are not independently endorsed."
+    },
+    {
+      "id": "company-source-ncs-contact",
+      "url": "https://www.nationalcreditsystems.com/Contactus.aspx",
+      "description": "National Credit Systems, Contact Us. Company identity and public contact routes."
+    },
+    {
+      "id": "company-source-ncs-cid",
+      "url": "https://files.consumerfinance.gov/f/documents/cfpb_national-credit-systems-inc_decision-and-order-on-petition_2023-1.pdf",
+      "description": "CFPB, Decision and Order on NCS's Petition to Set Aside a Civil Investigative Demand. Dated 20 December 2022, despite the later filename. A procedural investigation order, not a merits finding of a collection violation."
+    },
+    {
+      "id": "company-source-rausch",
+      "url": "https://rauschsturm.com/",
+      "description": "Rausch Sturm LLP, official website and consumer FAQ. Current name, stated creditor-representation role, written dispute and complaint routes, and payments to clients. This selected source is company self-description."
+    },
+    {
+      "id": "company-source-midland-funding",
+      "url": "https://www.midlandcredit.com/who-is-mcm/midland-funding-llc/",
+      "description": "Midland Credit Management, Midland Funding LLC. Updated 29 August 2025. Company's account-owner and servicer distinctions and Encore family description."
+    },
+    {
+      "id": "company-source-midland-faq",
+      "url": "https://www.midlandcredit.com/help-center/faqs/",
+      "description": "Midland Credit Management, FAQs. Updated 22 September 2026. Debt purchasing and servicing roles, credit-reporting policy, and Consumer Resolution Center."
+    },
+    {
+      "id": "company-source-encore-2020",
+      "url": "https://www.consumerfinance.gov/enforcement/actions/encore-capital-group-et-al/",
+      "description": "CFPB, Encore Capital Group and subsidiaries, 2020 action. Named companies and stipulated final judgment entered 16 October 2020. Historical references on this page to the 2015 order must be read with the separate termination docket."
+    },
+    {
+      "id": "company-source-encore-docket",
+      "url": "https://www.consumerfinance.gov/administrative-adjudication-proceedings/administrative-adjudication-docket/encore/",
+      "description": "CFPB, Encore administrative docket. The 2015 consent order and the order terminating it, filed 20 October 2020."
+    },
+    {
+      "id": "company-source-transunion-statements",
+      "url": "https://www.transunion.com/how-to-read-your-credit-report",
+      "description": "TransUnion, How to Read Your Credit Report, Consumer Statement section. Describes both prepared statements and writing one's own. This distinction limits any claim that all three agencies offer only a canned list."
+    }
+  ],
+  "research_scope": {
+    "entities": "Publicly identified businesses; Experian, Equifax, TransUnion, National Credit Systems, Rausch Sturm LLP, and separate Midland Funding and Midland Credit Management profiles",
+    "status": "Company statements, pending allegations, procedural investigative orders, and settled enforcement records retain distinct labels and dates",
+    "limits": "Selected records, not comprehensive histories or findings about any individual dispute; remembered law-firm names do not establish case identity",
+    "references": "commons/company-reference/1 preserves a separate company identity label and exact profile CID plus fragment; case involvement requires case evidence",
+    "commentary": "Author observations supplied 22 October 2026; authenticated interface and remembered counsel-access sequence not independently reproduced; TransUnion free-text guidance retained as a distinction"
+  },
+  "publication": {
+    "repository": "johnrigler/commons",
+    "state": "Public reading edition and prepared ledger reference",
+    "signature": null,
+    "ipfs_pin_receipt": null,
+    "chain": "litecoin",
+    "transaction_id": null
+  },
+  "ledger_preparation": {
+    "schema": "commons/litecoin-announcement/1",
+    "path": "../../examples/company-profiles.draft.json",
+    "state": "Unsigned draft; funding, fees, signing, pinning, and broadcast not performed"
+  },
+  "supersedes": {
+    "manifest_cid": "bafkreidiqy2o3yubueypeqgn774cdcw7pcwy5ry5mazgtvmlxwwndfkhf4",
+    "document_cid": "bafkreia6cikakacd6dpsj4ctn2p4jwchc4qzkdp4ig5ghcxbtivu25uw3q"
+  },
+  "commentary": {
+    "author": "John Rigler",
+    "date": "2026-10-22",
+    "scope": "Attributed opinion and observations, distinct from sourced company descriptions and official records"
+  }
+}

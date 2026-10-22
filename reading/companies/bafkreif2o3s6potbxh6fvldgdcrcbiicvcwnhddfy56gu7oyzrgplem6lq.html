@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Commons — Company Profiles</title>
+<meta name="description" content="Company identities, business roles, selected official records, and connections to reusable Commons arguments.">
+<style>
+    :root { color-scheme: light; --ink: #242624; --muted: #60655f; --rule: #cdd0c7; --accent: #86503c; }
+    * { box-sizing: border-box; }
+    html { background: #eeeee8; color: var(--ink); }
+    body { margin: 0; padding: 36px 18px; font-family: Georgia, 'Times New Roman', serif; }
+    article { max-width: 840px; margin: 0 auto 28px; padding: 48px 70px 40px; background: #fffef9; border: 1px solid #dbddd3; scroll-margin-top: 20px; }
+    a { color: #77432f; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    .reading-links { margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--rule); font: 13px/1.8 Arial, sans-serif; }
+    .reading-links a { display: block; width: fit-content; }
+    .return-link { font: 13px/1.5 Arial, sans-serif; }
+    .source-note { margin-top: 25px; padding-top: 14px; border-top: 1px solid var(--rule); font: 13px/1.55 Arial, sans-serif; color: var(--muted); }
+    .masthead { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; padding-bottom: 16px; border-bottom: 2px solid var(--ink); font-family: Arial, sans-serif; }
+    .brand { font-size: 16px; letter-spacing: .16em; font-weight: 700; text-transform: uppercase; }
+    .status { color: var(--muted); font-size: 12px; }
+    .eyebrow { margin: 34px 0 13px; font: 700 12px/1.5 Arial, sans-serif; color: var(--accent); letter-spacing: .11em; text-transform: uppercase; }
+    h1 { margin: 0 0 19px; font-size: clamp(36px, 6vw, 50px); font-weight: 400; line-height: 1.06; letter-spacing: -.035em; }
+    .deck { margin: 0 0 28px; font-size: 21px; line-height: 1.45; color: #454b44; }
+    p { margin: 0 0 17px; font-size: 17px; line-height: 1.66; }
+    h2 { margin: 29px 0 12px; font: 700 15px/1.4 Arial, sans-serif; }
+    .principle { margin: 26px 0; padding: 17px 0 17px 21px; border-left: 3px solid var(--accent); font-size: 21px; line-height: 1.45; }
+    .transition { border-top: 1px solid var(--rule); margin-top: 30px; padding-top: 23px; }
+    .transition h2 { margin-top: 0; }
+    footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 9px 20px; border-top: 1px solid var(--rule); margin-top: 30px; padding-top: 14px; color: var(--muted); font: 12px/1.5 Arial, sans-serif; }
+    @media (max-width: 600px) {
+      body { padding: 0; }
+      article { border: 0; padding: 27px 24px 30px; }
+      .masthead { gap: 12px; }
+      .brand { font-size: 14px; }
+      .status { font-size: 11px; }
+      .eyebrow { margin-top: 27px; }
+      p { font-size: 17px; }
+    }
+    .tools { max-width: 840px; margin: 0 auto 20px; padding: 20px 24px; background: #fffef9; border: 1px solid var(--rule); font: 14px/1.5 Arial, sans-serif; }
+    .tools summary { cursor: pointer; font-weight: 700; }
+    .fields { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 16px; }
+    label { display: block; font-weight: 700; }
+    input, select, button { font: inherit; }
+    input, select { display: block; width: 100%; margin-top: 5px; padding: 9px; border: 1px solid #9b9f95; background: white; color: var(--ink); border-radius: 3px; }
+    button { cursor: pointer; padding: 8px 12px; border: 1px solid #9b9f95; border-radius: 3px; background: white; color: var(--ink); }
+    .print-tools { display: flex; flex-wrap: wrap; align-items: end; gap: 12px; margin-top: 16px; }
+    .print-tools label { flex: 1; min-width: 190px; }
+    .tools .hint { font: 13px/1.5 Arial, sans-serif; margin: 13px 0 0; color: var(--muted); }
+    .term-link, .party { font-weight: 700; }
+    .party { text-decoration-style: dotted; }
+    .fields input:focus, .fields select:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+    @media (max-width: 600px) { .tools { margin: 12px; padding: 16px; } .fields { grid-template-columns: 1fr; } }
+    @page { size: Letter; margin: .7in .75in; }
+    @media print {
+      html, body { background: white; }
+      .screen-only { display: none !important; }
+      body[data-print="request"] article:not(#request) { display: none; }
+      a.party { text-decoration: none; }
+      .reading-links a { font-weight: 700; }
+      body { padding: 0; }
+      article { max-width: none; margin: 0; padding: 0; border: 0; background: white; }
+      article + article { break-before: page; }
+      a { color: inherit; }
+      .return-link { display: none; }
+      h1 { font-size: 29pt; }
+      p { font-size: 11pt; line-height: 1.5; margin-bottom: 10pt; orphans: 3; widows: 3; }
+      .deck { font-size: 14pt; margin-bottom: 18pt; }
+      .principle { font-size: 14pt; margin: 16pt 0; padding-top: 8pt; padding-bottom: 8pt; }
+      h2 { break-after: avoid; margin-top: 17pt; }
+      .eyebrow { margin-top: 21pt; }
+      footer { break-inside: avoid; }
+    }
+  
+.byline, .scope-note { font: 13px/1.6 Arial, sans-serif; color: var(--muted); }
+.author-commentary { margin: 25px 0 30px; padding: 22px; background: #f4eee1; border-left: 4px solid #8a6a40; }
+.author-commentary h2 { margin-top: 0; font: 25px/1.3 Georgia, serif; }
+.author-commentary p:last-child { margin-bottom: 0; }
+@media print { .author-commentary { background: white; border: 1px solid #777; border-left: 3px solid #555; } .author-commentary h2 { font-size: 14pt; } }
+.scope-note { padding: 14px 16px; border-left: 2px solid var(--rule); background: #f6f5ef; }
+sup { font: 11px/1 Arial, sans-serif; white-space: nowrap; }
+table { width: 100%; border-collapse: collapse; margin: 18px 0 22px; font: 15px/1.55 Arial, sans-serif; }
+th, td { text-align: left; vertical-align: top; padding: 12px; border-bottom: 1px solid var(--rule); }
+thead { background: #eeeee6; }
+tbody th { width: 28%; font-size: 14px; }
+.money-table td { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sources { padding-left: 23px; font: 15px/1.6 Arial, sans-serif; }
+.sources li { padding-left: 3px; margin-bottom: 15px; overflow-wrap: anywhere; }
+.tools { display: flex; flex-wrap: wrap; gap: 9px 18px; align-items: center; }
+[id] { scroll-margin-top: 20px; }
+@media (max-width: 600px) {
+  th, td { padding: 10px 8px; }
+  table { font-size: 14px; }
+  tbody th { width: 31%; font-size: 13px; }
+  .masthead { align-items: flex-start; }
+}
+@media print {
+  table { font-size: 9.5pt; }
+  tbody th { font-size: 9pt; }
+  tr { break-inside: avoid; }
+  th, td { padding: 8pt; }
+  .byline, .scope-note { font-size: 8.5pt; }
+  .sources { font-size: 9.5pt; line-height: 1.5; }
+  .sources li { break-inside: avoid; margin-bottom: 9pt; }
+  sup { font-size: 8pt; }
+}
+</style>
+</head><body>
+<nav class="tools screen-only" aria-label="Read and print this collection">
+<a href="../../index.html#view=companies">Commons companies</a><a href="#company-guide">Using these profiles</a><a href="#company-sources">Sources</a><button id="print-button" type="button">Print / save PDF</button>
+</nav>
+<article id="company-guide">
+  <header><p class="eyebrow">A separate Commons collection</p><h1>Companies in the process</h1><p class="deck">An argument explains a recurring problem. A company profile identifies an organization and its role. A case supplies the evidence connecting the two.</p></header>
+  <p>These profiles cover businesses that assemble credit information, collect accounts, purchase debts, or represent creditors. Each profile names its scope, identifies selected public records, and connects to reusable arguments. Different legal entities remain separately identifiable even when they share a brand.</p>
+  <p>Company descriptions establish what a business says it does. A regulator's complaint states allegations. An investigative order addresses an investigation. A settlement or consent order has the scope and conditions stated in that record. Those distinctions matter when reusing a reference.</p>
+  <p>Each profile also carries <strong>John Rigler’s view</strong>: attributed criticism, judgments, and observations. Those sections express his position and can disagree with the company's description of its own process. Interface recollections are identified as observations; a proposed standard or inference remains an argument.</p>
+  <p>The Companies view provides a separate reference download for each profile. A final document can cite a company profile for organizational background and attributed commentary, and an article for the relevant reasoning. The underlying case records establish the actor, account, dates, conduct, and requested action.</p>
+  <p class="scope-note">Selected sources checked 22 October 2026. These are unsigned, AI-assisted research and editorial drafts by John Rigler; no independent legal review is recorded. They are not comprehensive litigation histories. Personal case evidence remains in its appropriate case record.</p>
+  <div class="reading-links"><a href="#company-experian">Experian</a><a href="#company-equifax">Equifax</a><a href="#company-transunion">TransUnion</a><a href="#company-ncs">National Credit Systems</a><a href="#company-rausch-sturm">Rausch Sturm LLP</a><a href="#company-midland-funding">Midland Funding LLC</a><a href="#company-midland-credit">Midland Credit Management, Inc.</a></div>
+</article>
+<article id="company-experian">
+  <header><p class="eyebrow">Company profile · Credit reporting</p><h1>Experian</h1><p class="deck">A credit reporting company receives information from furnishers, distributes reports, and processes disputes about those reports.</p><p class="byline">John Rigler · Sources checked 22 October 2026 · Unsigned, AI-assisted research draft</p></header>
+  <section class="author-commentary" aria-label="John Rigler's commentary">
+    <h2>John Rigler’s view</h2>
+    <p class="byline">Opinion and interface observations · 22 October 2026</p>
+    <p>In the Experian statement interface I encountered, the available comments came from a canned list. I could not enter “unverified rent acceleration,” or another statement that actually described that objection. I also could not find a consumer-visible record faithfully reproducing what I had submitted through the internal process.</p>
+    <p>My criticism is that the system controls both the vocabulary of the challenge and access to its history. An objection to the basis of a rental charge can become a generic disagreement with a balance. A completion status does not tell me whether the actual objection survived that translation.</p>
+    <p>Experian's public instructions describe adding a statement and uploading supporting documents.<sup><a href="#company-source-experian-dispute">[2]</a></sup> My observation concerns the route I encountered, not every channel Experian offers. I want an exact retained copy of my words, selected reasons, attachments, and the response addressing them. The broader argument is <a href="../../index.html#item=portals-proof">When the portal controls the objection</a>.</p>
+  </section>
+  <h2>Identity and business role</h2>
+  <p>This profile concerns <strong>Experian Information Solutions, Inc.</strong>, the U.S. consumer reporting company named in the CFPB's 2025 lawsuit. The CFPB describes its business as organizing consumer data into reports sold to creditors and other businesses making eligibility decisions.<sup><a href="#company-source-experian-case">[1]</a></sup> The name “Experian” alone should not substitute for the entity identified on a particular report or notice.</p>
+  <h2>Selected official record: a pending lawsuit</h2>
+  <p>The CFPB sued on 7 January 2025. Its second amended complaint alleges inadequate dispute reinvestigations, failure to remove inaccurate or unverified information, improper reinsertion, and excessive reliance on furnishers. These are allegations. The CFPB's case page reports that the court denied a motion to dismiss on 22 October 2025 and that discovery is ongoing, following a January 2026 ruling on affirmative defenses. The listed record does not report a final merits judgment.<sup><a href="#company-source-experian-case">[1]</a></sup></p>
+  <h2>The consumer-facing process</h2>
+  <p>Experian's <a href="https://www.experian.com/help/dispute-credit/">official dispute page</a> provides online and mail routes.<sup><a href="#company-source-experian-dispute">[2]</a></sup> The CFPB explains that a reporting dispute and a dispute with the business supplying the information address separate responsibilities.<sup><a href="#company-source-dispute-guide">[5]</a></sup></p>
+  <h2>Why this company belongs in the argument</h2>
+  <p>The <a href="../../index.html#item=credit-reporting">credit-reporting article</a> examines the pressure created when a disputed balance circulates as an eligibility signal. Here the organizational question is who maintained the report, what information reached the reinvestigation, and what response followed. A profile supplies background; the report, dispute, supporting documents, and result establish the sequence in a particular case.</p>
+  <div class="reading-links"><a href="../../index.html#item=credit-reporting">Credit reporting as collection pressure →</a><a href="#company-equifax">Equifax →</a><a href="#company-transunion">TransUnion →</a></div>
+</article>
+<article id="company-equifax">
+  <header><p class="eyebrow">Company profile · Credit reporting</p><h1>Equifax</h1><p class="deck">A reporting business can be both the distributor of disputed information and the institution a consumer must ask to correct it.</p><p class="byline">John Rigler · Sources checked 22 October 2026 · Unsigned, AI-assisted research draft</p></header>
+  <section class="author-commentary" aria-label="John Rigler's commentary">
+    <h2>John Rigler’s view</h2>
+    <p class="byline">Opinion · 22 October 2026</p>
+    <p>I apply the same standard to Equifax that I apply to the other reporting agencies: the person challenging an entry should control the wording of the objection and be able to retain a faithful record. A convenient dispute screen has little value to me if it converts a substantive challenge into a category that the supplier can answer without confronting the issue.</p>
+    <p>The 2025 order's findings about reinvestigations and deference to furnishers make that concern concrete.<sup><a href="#company-source-equifax-order">[3]</a></sup> My judgment is that consumers need a record they can carry into another forum, rather than another dependency on the company whose reporting they challenge. This is a criticism of the institutional arrangement; I am not claiming that I tested an identical menu at all three bureaus. See the <a href="../../index.html#item=portals-proof">shared portal argument</a>.</p>
+  </section>
+  <h2>Identity and business role</h2>
+  <p>The selected enforcement record names <strong>Equifax, Inc.</strong> and <strong>Equifax Information Services LLC</strong>. This profile uses the latter as its consumer-reporting entity reference while preserving both names in the record's scope. The CFPB describes Equifax as assembling consumer reports sold to businesses evaluating loans, jobs, housing, and other products.<sup><a href="#company-source-equifax-order">[3]</a></sup></p>
+  <h2>Selected official record: a 2025 consent order</h2>
+  <p>On 17 January 2025, the CFPB issued a consent order recording findings concerning dispute reinvestigations, reinsertion of deleted information, notices, accuracy procedures, and identity-theft blocks. It also found excessive deference to furnishers and the sale of inaccurate scores and attributes after test code entered a production system. The order required a $15 million civil penalty and compliance measures.<sup><a href="#company-source-equifax-order">[3]</a></sup> The administrative docket lists the order and stipulation.<sup><a href="#company-source-equifax-docket">[4]</a></sup> This is a dated enforcement record, whose terms should be read directly when applying it.</p>
+  <h2>The consumer-facing process</h2>
+  <p>The CFPB's current guide links Equifax's <a href="https://www.equifax.com/personal/credit-report-services/credit-dispute/">official dispute page</a> and <a href="https://www.equifax.com/personal/contact-us/">contact page</a>. It recommends identifying the specific error and retaining copies of the dispute and supporting documents.<sup><a href="#company-source-dispute-guide">[5]</a></sup></p>
+  <h2>What a company reference adds</h2>
+  <p>The broader <a href="../../index.html#item=credit-reporting">reporting argument</a> concerns how difficult correction can coexist with powerful downstream consequences. A company reference keeps the institution identifiable while the case record supplies the exact information disputed, its source, the result, and any subsequent reporting. A regulator's earlier findings do not decide the accuracy of a later account.</p>
+  <div class="reading-links"><a href="../../index.html#item=credit-reporting">Credit reporting as collection pressure →</a><a href="#company-experian">Experian →</a><a href="#company-transunion">TransUnion →</a></div>
+</article>
+<article id="company-transunion">
+  <header><p class="eyebrow">Company profile · Credit and background reporting</p><h1>TransUnion</h1><p class="deck">A common brand can encompass different reporting products and separately named legal entities.</p><p class="byline">John Rigler · Sources checked 22 October 2026 · Unsigned, AI-assisted research draft</p></header>
+  <section class="author-commentary" aria-label="John Rigler's commentary">
+    <h2>John Rigler’s view</h2>
+    <p class="byline">Opinion · 22 October 2026</p>
+    <p>I do not accept a dispute system's own description as the measure of whether a consumer can effectively challenge it. My test is whether the person can state the actual objection, preserve the submission, identify the source, and obtain a response that addresses the contested fact.</p>
+    <p>TransUnion's consumer guide expressly describes choosing a prepared statement or writing one's own.<sup><a href="#company-source-transunion-statements">[17]</a></sup> That matters: the interfaces should be compared accurately. The wider criticism still applies. Free text alone does not establish that an attachment reached the investigator, that the submitted text remains available to the consumer, or that the underlying objection was answered. Those are the questions I want asked of all three agencies in <a href="../../index.html#item=portals-proof">When the portal controls the objection</a>.</p>
+  </section>
+  <h2>Identity and business role</h2>
+  <p>The 2023 record discussed here names <strong>Trans Union LLC</strong> and its then-subsidiary, <strong>TransUnion Rental Screening Solutions, Inc.</strong> The CFPB describes the latter as providing tenant and employment background reports to property owners, managers, employers, and other screening businesses.<sup><a href="#company-source-transunion-case">[6]</a></sup> The profile's entity reference uses Trans Union LLC as named in that record. A tenant-screening report and a nationwide credit report should each be matched to the issuer shown on the document.</p>
+  <h2>Selected official record: a 2023 settlement</h2>
+  <p>The CFPB and FTC filed a joint complaint on 12 October 2023 alleging inaccurate eviction reporting and inadequate disclosure of third-party record sources. The court entered a stipulated order on 18 October 2023 requiring accuracy and disclosure measures, $11 million in consumer redress, and a $4 million penalty.<sup><a href="#company-source-transunion-case">[6]</a></sup> The order states that the defendants neither admit nor deny the allegations, apart from specified jurisdictional facts.<sup><a href="#company-source-transunion-final">[7]</a></sup> Its scope concerns the named defendants and background-screening practices.</p>
+  <h2>The consumer-facing process</h2>
+  <p>TransUnion's <a href="https://www.transunion.com/customer-support/contact-us-consumers">consumer support page</a> separates disputes, credit freezes, fraud alerts, and subscription support.<sup><a href="#company-source-transunion-support">[8]</a></sup> The CFPB also lists credit-dispute routes.<sup><a href="#company-source-dispute-guide">[5]</a></sup></p>
+  <h2>Follow the information to its source</h2>
+  <p>The connection to <a href="../../index.html#item=records-proof">traceable records</a> is practical: an adverse report becomes harder to challenge when the source, event, or outcome cannot be reconstructed. A case should preserve the actual product, issuer, record source, disputed field, and decision. The company profile makes that organizational background reusable across different disputes.</p>
+  <div class="reading-links"><a href="../../index.html#item=credit-reporting">Credit reporting as collection pressure →</a><a href="../../index.html#item=records-proof">A debt claim needs a traceable account →</a></div>
+</article>
+<article id="company-ncs">
+  <header><p class="eyebrow">Company profile · Rental collections</p><h1>National Credit Systems</h1><p class="deck">Rental balances can pass from a property owner's records into a specialist collection process.</p><p class="byline">John Rigler · Sources checked 22 October 2026 · Unsigned, AI-assisted research draft</p></header>
+  <section class="author-commentary" aria-label="John Rigler's commentary">
+    <h2>John Rigler’s view</h2>
+    <p class="byline">Opinion · 22 October 2026</p>
+    <p>My objection to NCS's collection model begins with its starting assumption. Its public description presents former-tenant balances as money owed because lease obligations were not fulfilled.<sup><a href="#company-source-ncs-company">[9]</a></sup> When the dispute concerns whether a charge was authorized or how it was calculated, that is precisely what needs to be established.</p>
+    <p>I see a structural imbalance when the collection workflow is ready to negotiate payment while the consumer is still trying to obtain a reproducible account. A landlord's exported balance does not become persuasive to me because a collection agency has imported it. I want the lease provision, period, calculation, payments, credits, and authority to collect connected in one explanation.</p>
+    <p>I would not use a collection portal as the only record of that challenge. I prefer correspondence I can retain in full, with its attachments and delivery record. My standard is preservation of the objection before negotiation of the asserted balance. The <a href="../../index.html#item=portals-proof">portal argument</a> explains this preference.</p>
+  </section>
+  <h2>Identity and business role</h2>
+  <p>This profile identifies <strong>National Credit Systems, Inc.</strong>, using <strong>NCS</strong> as its abbreviation. Its company page describes a receivables-management business focused on residential and commercial property owners, particularly apartment collections. Its listed services include pre-collection, standard collection, legal services, garnishment of existing judgments, and account-purchase options.<sup><a href="#company-source-ncs-company">[9]</a></sup> Those options make the role in a particular account important: collection for an owner and purchase of an account are different relationships.</p>
+  <h2>Selected official record: an investigation procedure</h2>
+  <p>On 20 December 2022, the CFPB denied NCS's petition to set aside a civil investigative demand and directed a response within 21 days of service of the order. The decision addressed NCS's challenge to the Bureau's authority to issue the demand.<sup><a href="#company-source-ncs-cid">[11]</a></sup> It is an investigative procedural record. It is not a finding that a consumer owed a particular balance or an adjudication of a collection violation.</p>
+  <h2>The consumer-facing process</h2>
+  <p>NCS's <a href="https://www.nationalcreditsystems.com/Contactus.aspx">official contact page</a> identifies the company and its public contact routes.<sup><a href="#company-source-ncs-contact">[10]</a></sup> A company name on correspondence should be matched to the actual sender and creditor named there.</p>
+  <h2>The records that carry a rental claim</h2>
+  <p>The <a href="../../index.html#item=rent-acceleration">rent-acceleration article</a> examines the basis for charging future rent; the <a href="../../index.html#item=records-proof">records article</a> examines the account's traceability. In a rental dispute, useful case questions include which lease provision supports each charge, which payments or credits were applied, who supplied the ledger, and who claims the right to collect. The profile provides organizational context without supplying those missing account facts.</p>
+  <div class="reading-links"><a href="../../index.html#item=rent-acceleration">Unsupported rent acceleration →</a><a href="../../index.html#item=records-proof">A debt claim needs a traceable account →</a></div>
+</article>
+<article id="company-rausch-sturm">
+  <header><p class="eyebrow">Company profile · Creditor representation</p><h1>Rausch Sturm LLP</h1><p class="deck">A law firm's name identifies the representative. The creditor, account owner, and evidence remain separate parts of a claim.</p><p class="byline">John Rigler · Sources checked 22 October 2026 · Unsigned, AI-assisted research draft</p></header>
+  <section class="author-commentary" aria-label="John Rigler's commentary">
+    <h2>John Rigler’s view</h2>
+    <p class="byline">Opinion and recollection of creditor-litigation processes · 22 October 2026</p>
+    <p>A law firm's portal or resolution team does not, in my view, provide the same opportunity as an early substantive conversation with the lawyer advancing the claim. Rausch Sturm's website directs consumers toward a Resolution Specialist Team and account-resolution routes.<sup><a href="#company-source-rausch">[12]</a></sup> I want to know when an objection about ownership, amount, or unexplained records will actually reach someone able to address it.</p>
+    <p>I have encountered creditor-litigation processes in which meaningful discussion with counsel was pushed close to court. I see that timing as conserving the repeat participant's time while increasing the defendant's preparation costs and pressure. That is the access pattern I criticize here; the timing and firm's identity in any particular proceeding must come from its records.</p>
+    <p>My preference is to preserve the factual challenge outside a payment-led portal and seek a usable answer before the court date. A possible <a href="../../index.html#item=amicus-systems">amicus research project</a> could examine how such access patterns recur across cases.</p>
+  </section>
+  <h2>Identity and business role</h2>
+  <p><strong>Rausch Sturm LLP</strong> identifies itself as a law firm representing financial institutions, creditor issuers, and creditors. Its consumer material describes acting for a bank or creditor that has enlisted its services.<sup><a href="#company-source-rausch">[12]</a></sup> That description establishes the firm's stated business role. It does not establish who owns a specific account or what documents support a particular lawsuit.</p>
+  <h2>The firm's published process</h2>
+  <p>The <a href="https://rauschsturm.com/">official website</a> lists written disputes by mail or email, a contact form, and a separate complaint route. It also states that payments should be payable to its client.<sup><a href="#company-source-rausch">[12]</a></sup> These are the firm's descriptions of its consumer-facing process; they are distinct from a court order or a regulator's finding.</p>
+  <h2>Representation and proof answer different questions</h2>
+  <p>The <a href="../../index.html#item=debt-default">civil-process article</a> examines how a claim can be resolved through procedure. The <a href="../../index.html#item=records-proof">records article</a> examines whether the account and claimed transfer can be traced. A reusable company profile identifies the law firm; the case record should identify the plaintiff, the firm's role, the account claimed, and the evidence offered for ownership and amount.</p>
+  <p>A letter, pleading, or signature block provides a concrete name to match. Similar-sounding names, remembered spellings, and an old directory entry are insufficient by themselves to establish that two firms are the same legal entity. This profile covers the current firm under the name used on its own website. It makes no finding about an individual suit.</p>
+  <div class="reading-links"><a href="../../index.html#item=debt-default">When procedure decides a debt claim →</a><a href="../../index.html#item=records-proof">A debt claim needs a traceable account →</a></div>
+</article>
+<article id="company-midland-funding">
+  <header><p class="eyebrow">Company profile · Debt purchasing</p><h1>Midland Funding LLC</h1><p class="deck">The account owner and the business communicating about the account can be different legal entities.</p><p class="byline">John Rigler · Sources checked 22 October 2026 · Unsigned, AI-assisted research draft</p></header>
+  <section class="author-commentary" aria-label="John Rigler's commentary">
+    <h2>John Rigler’s view</h2>
+    <p class="byline">Opinion · 22 October 2026</p>
+    <p>I object to treating a company's name on a credit report as the answer to a disputed ownership question. Midland Funding's relationship with a servicer explains a business arrangement. It does not, by itself, trace the particular account through a sale or establish the amount claimed.</p>
+    <p>My standard is an account-specific explanation that survives outside the buyer's or servicer's system. If the consumer must enter another institution-controlled workflow just to reconstruct that explanation, the cost of making the claim understandable has shifted onto the person being pursued. The <a href="../../index.html#item=portals-proof">shared portal argument</a> and <a href="../../index.html#item=records-proof">traceable-account article</a> describe the problem I want this profile to expose.</p>
+  </section>
+  <h2>Identity and business role</h2>
+  <p><strong>Midland Funding LLC</strong> is described by its affiliate's official material as a purchaser and owner of accounts charged off by original lenders. <a href="#company-midland-credit">Midland Credit Management, Inc. (MCM)</a> services Midland Funding accounts and accounts MCM itself owns. The site identifies both within the Encore Capital Group family.<sup><a href="#company-source-midland-funding">[13]</a></sup> These relationships explain why a communication may name more than one business.</p>
+  <h2>Selected official record: a 2020 judgment</h2>
+  <p>The CFPB's 2020 action named Encore Capital Group, Midland Funding, Midland Credit Management, and Asset Acceptance Capital Corp. It alleged violations of an earlier order and federal consumer law. On 16 October 2020, the court entered a stipulated final judgment requiring $79,308.81 in consumer redress and a $15 million civil penalty, with disclosure and other conduct provisions.<sup><a href="#company-source-encore-2020">[15]</a></sup> Separately, the administrative docket records termination of the 2015 consent order on 20 October 2020.<sup><a href="#company-source-encore-docket">[16]</a></sup> These are distinct procedural events; the 2015 order should not be described as still in force solely because it appears in historical background.</p>
+  <h2>Connect the buyer to the account</h2>
+  <p>The <a href="../../index.html#item=records-proof">traceable-account article</a> asks how a claimed transfer identifies the specific account. Naming a debt buyer supplies an entity reference. The sale records, account identifiers, balance history, and other case evidence must still establish the particular claim.</p>
+  <p>MCM's <a href="https://www.midlandcredit.com/who-is-mcm/midland-funding-llc/">Midland Funding page</a> provides its public explanation and contact route.<sup><a href="#company-source-midland-funding">[13]</a></sup> A company statement that a reported name indicates ownership is not a substitute for examining the actual disputed record.</p>
+  <div class="reading-links"><a href="#company-midland-credit">Midland Credit Management, Inc. →</a><a href="../../index.html#item=records-proof">A debt claim needs a traceable account →</a></div>
+</article>
+<article id="company-midland-credit">
+  <header><p class="eyebrow">Company profile · Debt purchasing, servicing, and reporting</p><h1>Midland Credit Management, Inc.</h1><p class="deck">A servicer may communicate, collect, and furnish information while the account is owned by that company or an affiliate.</p><p class="byline">John Rigler · Sources checked 22 October 2026 · Unsigned, AI-assisted research draft</p></header>
+  <section class="author-commentary" aria-label="John Rigler's commentary">
+    <h2>John Rigler’s view</h2>
+    <p class="byline">Opinion · 22 October 2026</p>
+    <p>My criticism of MCM's consumer presentation is that account resolution and payment are offered against a narrative in which the reported balance and ownership are already settled. Its FAQ describes what a reported MCM or Midland Funding name is supposed to mean.<sup><a href="#company-source-midland-faq">[14]</a></sup> I would not treat that general explanation as verification of a contested account.</p>
+    <p>I want the claimed owner, servicer, reporter, and source records kept distinct. I also want a retained copy of any objection and the documents submitted with it. I would not advise relying on the collection portal as the sole place to state and preserve the challenge. A payment policy may be useful information while leaving the basis of the claim unanswered.</p>
+    <p>The common issue is <a href="../../index.html#item=portals-proof">who controls the objection and its record</a>. My proposed <a href="../../index.html#item=amicus-systems">amicus research agenda</a> asks how to document that issue once in a form others can examine and reuse.</p>
+  </section>
+  <h2>Identity and business role</h2>
+  <p><strong>Midland Credit Management, Inc. (MCM)</strong> describes itself as both a debt purchaser and servicer. Its FAQ distinguishes MCM-owned accounts from those it services for affiliates including <a href="#company-midland-funding">Midland Funding LLC</a>.<sup><a href="#company-source-midland-faq">[14]</a></sup> The two names should remain separate in a case's list of organizations and roles.</p>
+  <h2>A published reporting policy</h2>
+  <p>MCM's FAQ describes a policy of delaying credit reporting for the first six months following its initial notification, with conditions under which reporting will not begin, and requesting deletion after an account is paid or settled. It also lists a Consumer Resolution Center for account issues.<sup><a href="#company-source-midland-faq">[14]</a></sup> These are company policy statements checked on the date of this profile. They do not guarantee a credit score outcome, establish a disputed debt, or describe every reporting business's policy.</p>
+  <h2>Selected official record: a shared 2020 action</h2>
+  <p>MCM was among the named companies in the CFPB's 2020 Encore action. The court entered a stipulated final judgment on 16 October 2020, including a $15 million civil penalty, consumer redress, and disclosure and conduct requirements.<sup><a href="#company-source-encore-2020">[15]</a></sup> The separate 2015 administrative order was terminated on 20 October 2020.<sup><a href="#company-source-encore-docket">[16]</a></sup> These dated records do not decide a new individual account dispute.</p>
+  <h2>Separate ownership, servicing, and reporting</h2>
+  <p>The <a href="../../index.html#item=credit-reporting">credit-reporting article</a> concerns the consequences of distributing a balance; the <a href="../../index.html#item=records-proof">records article</a> concerns the basis for the claim. A case can connect both arguments to this company profile while preserving who owned the account, who sent each communication, who furnished the disputed entry, and what each entity did after receiving a dispute.</p>
+  <div class="reading-links"><a href="#company-midland-funding">Midland Funding LLC →</a><a href="../../index.html#item=credit-reporting">Credit reporting as collection pressure →</a><a href="../../index.html#item=records-proof">A debt claim needs a traceable account →</a></div>
+</article>
+<article id="company-sources">
+  <header><p class="eyebrow">Sources · Checked 22 October 2026</p><h1>Company identities and public records</h1><p class="deck">Company statements and official proceedings retain their different evidentiary roles.</p></header>
+  <ol class="sources">
+    <li id="company-source-experian-case"><a href="https://www.consumerfinance.gov/enforcement/actions/experian-information-solutions-inc/">CFPB, Experian Information Solutions, Inc.</a> Case chronology, allegations, and pending discovery; page last modified 13 March 2026. No final merits judgment is reported there.</li>
+    <li id="company-source-experian-dispute"><a href="https://www.experian.com/help/dispute-credit/">Experian, Dispute Credit Report Information</a>. Company's published online and mail dispute routes.</li>
+    <li id="company-source-equifax-order"><a href="https://www.consumerfinance.gov/enforcement/actions/equifax-inc-and-equifax-information-services-llc/">CFPB, Equifax, Inc. and Equifax Information Services LLC</a>. The 17 January 2025 consent order, recorded findings, and $15 million civil penalty.</li>
+    <li id="company-source-equifax-docket"><a href="https://www.consumerfinance.gov/administrative-adjudication-proceedings/administrative-adjudication-docket/equifax-inc-and-equifax-information-services-llc/">CFPB, Equifax administrative docket</a>. Filed consent order and stipulation. The source's dated record is distinguished from an independent assessment of current compliance.</li>
+    <li id="company-source-dispute-guide"><a href="https://www.consumerfinance.gov/ask-cfpb/how-do-i-dispute-an-error-on-my-credit-report-en-314/">CFPB, How do I dispute an error on my credit report?</a> Reviewed 2 September 2026. Reporting-company and furnisher responsibilities, supporting documents, and official company dispute routes. The Equifax dispute and contact URLs are corroborated by this guide.</li>
+    <li id="company-source-transunion-case"><a href="https://www.consumerfinance.gov/enforcement/actions/transunion-rental-screening-solutions-inc-and-trans-union-llc/">CFPB, TransUnion Rental Screening Solutions, Inc. and Trans Union LLC</a>. Named entities, allegations, and the stipulated order entered 18 October 2023, including redress and penalty amounts.</li>
+    <li id="company-source-transunion-final"><a href="https://files.consumerfinance.gov/f/documents/cfpb_transunion-rental-screening-solutions-inc-trans-union-llc_stip-final-judg-order.pdf">U.S. District Court, TransUnion stipulated final judgment and order</a>. Scope, definitions, and the defendants' neither-admit-nor-deny provision. Distinct from the proposed order filed with the complaint.</li>
+    <li id="company-source-transunion-support"><a href="https://www.transunion.com/customer-support/contact-us-consumers">TransUnion, Consumer Support</a>. Company routes for disputes, freezes, fraud alerts, and subscription support.</li>
+    <li id="company-source-ncs-company"><a href="https://www.nationalcreditsystems.com/Company.aspx">National Credit Systems, About NCS</a>. Company's description of apartment and property collections and service options, including account purchases. Marketing claims are not independently endorsed.</li>
+    <li id="company-source-ncs-contact"><a href="https://www.nationalcreditsystems.com/Contactus.aspx">National Credit Systems, Contact Us</a>. Company identity and public contact routes.</li>
+    <li id="company-source-ncs-cid"><a href="https://files.consumerfinance.gov/f/documents/cfpb_national-credit-systems-inc_decision-and-order-on-petition_2023-1.pdf">CFPB, Decision and Order on NCS's Petition to Set Aside a Civil Investigative Demand</a>. Dated 20 December 2022, despite the later filename. A procedural investigation order, not a merits finding of a collection violation.</li>
+    <li id="company-source-rausch"><a href="https://rauschsturm.com/">Rausch Sturm LLP, official website and consumer FAQ</a>. Current name, stated creditor-representation role, written dispute and complaint routes, and payments to clients. This selected source is company self-description.</li>
+    <li id="company-source-midland-funding"><a href="https://www.midlandcredit.com/who-is-mcm/midland-funding-llc/">Midland Credit Management, Midland Funding LLC</a>. Updated 29 August 2025. Company's account-owner and servicer distinctions and Encore family description.</li>
+    <li id="company-source-midland-faq"><a href="https://www.midlandcredit.com/help-center/faqs/">Midland Credit Management, FAQs</a>. Updated 22 September 2026. Debt purchasing and servicing roles, credit-reporting policy, and Consumer Resolution Center.</li>
+    <li id="company-source-encore-2020"><a href="https://www.consumerfinance.gov/enforcement/actions/encore-capital-group-et-al/">CFPB, Encore Capital Group and subsidiaries, 2020 action</a>. Named companies and stipulated final judgment entered 16 October 2020. Historical references on this page to the 2015 order must be read with the separate termination docket.</li>
+    <li id="company-source-encore-docket"><a href="https://www.consumerfinance.gov/administrative-adjudication-proceedings/administrative-adjudication-docket/encore/">CFPB, Encore administrative docket</a>. The 2015 consent order and the order terminating it, filed 20 October 2020.</li>
+    <li id="company-source-transunion-statements"><a href="https://www.transunion.com/how-to-read-your-credit-report">TransUnion, How to Read Your Credit Report, Consumer Statement section</a>. Describes both prepared statements and writing one's own. This distinction limits any claim that all three agencies offer only a canned list.</li>
+  </ol>
+  <p class="source-note">The profiles select sources relevant to the connected arguments. John Rigler's commentary records his opinions and observations supplied on 22 October 2026; the authenticated Experian interface and remembered lawyer-access sequence were not independently reproduced for this edition. The company sources establish what each business publishes, while official records retain their stated scope. Company names and exact profile editions can be cited separately from general arguments; case-specific assertions require case-specific evidence.</p>
+</article>
+<script>document.getElementById('print-button').addEventListener('click', () => window.print());
+</script>
+</body></html>

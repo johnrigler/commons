@@ -10,9 +10,15 @@ statements, allegations, procedural records, and settled findings retain their
 different meanings. The current verified Rausch Sturm name is not treated as
 proof of a party's identity in a remembered suit.
 
+Each also includes **John Rigler’s view**, added 22 October 2026: attributed
+opinion, interface observations, and criticism of how the process works.
+These can disagree with the company's account of its own service. The shared
+portal argument and possible amicus research agenda are connected articles,
+not a court filing or independent confirmation of the recollections.
+
 - Directory: `../../index.html#view=companies`
 - Standalone reading edition: `index.html`
-- Sources: 16 primary references checked 22 October 2026
+- Sources: 17 primary references checked 22 October 2026, plus attributed author observations
 - Sources and assembly: numbered HTML parts, PHP, CSS, and vanilla JavaScript
 - Edition: `edition.json` and its immutable CID copy
 - Prepared ledger reference: `../../examples/company-profiles.draft.json`, unsigned

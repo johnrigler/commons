@@ -52,6 +52,15 @@ any particular case. Company assertions name their sources and dates; a
 company description, complaint, procedural order, and settled finding retain
 their different meanings.
 
+Profiles can include a visible **John Rigler’s view** section for his opinions,
+observations, and criticism of the company's process. Those sections are part
+of the exact edition, with authorship and date, and are distinct from the cited
+official records. The catalog's `commentary` field records that attribution.
+General essays with `genre: "opinion"` display an Opinion label while retaining
+the existing `explanation` kind and contribution protocol. An opinion can make
+a strong argument without being presented as an adjudicated finding or a
+completed audit of every company's interface.
+
 **Download company reference** exports `commons/company-reference/1` JSON:
 
 ```json

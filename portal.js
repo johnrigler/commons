@@ -22,6 +22,7 @@
     };
     const find = id => all().find(item => item.id === id);
     const isCompany = item => CommonsPortal.recordClass(item) === 'company';
+    const entryLabel = item => item.genre === 'opinion' ? 'Opinion' : item.kind;
     const closeReader = () => { location.hash = view === 'company' ? 'view=companies' : ''; };
 
     function message(text, error = false) {
@@ -40,7 +41,7 @@
 
     function meta(item) {
         const p = document.createElement('p'); p.className = 'item-meta';
-        p.textContent = (isCompany(item) ? 'Company profile · ' + item.role : item.kind + ' · ' + item.author) + (item.local ? ' · ' + item.status : '');
+        p.textContent = (isCompany(item) ? 'Company profile · ' + item.role : entryLabel(item) + ' · ' + item.author) + (item.local ? ' · ' + item.status : '');
         return p;
     }
 
@@ -83,7 +84,7 @@
         $('#view-title').textContent = view === 'company' ? 'Company profiles' : 'Articles';
         $('#view-description').textContent = view === 'company'
             ? 'Legal identities, business roles, official records, and connections to the broader arguments. Each company can be referenced separately.'
-            : 'Reusable arguments, explanations, stories, and contributions across subjects.';
+            : 'Reusable arguments, attributed opinions, explanations, stories, and contributions across subjects.';
         $('#portal-search').placeholder = view === 'company' ? 'Experian, NCS, debt buyer…' : 'Disability, New Mexico, Grapevine…';
         for (const button of document.querySelectorAll('[data-view]')) button.setAttribute('aria-pressed', String((button.dataset.view === 'companies') === (view === 'company')));
         $('#portal-empty').hidden = !!items.length;
@@ -144,7 +145,7 @@
             return;
         }
         $('#detail-title').textContent = item.title;
-        $('#detail-meta').textContent = (isCompany(item) ? 'Company profile · ' + item.role : item.kind) + ' · ' + item.status + ' · ' + item.author;
+        $('#detail-meta').textContent = (isCompany(item) ? 'Company profile · ' + item.role : entryLabel(item)) + ' · ' + item.status + ' · ' + item.author;
         $('#reader-print').textContent = isCompany(item) ? 'Print profile' : 'Print article';
         $('#detail-text').textContent = item.text || item.summary;
         $('#detail-cid').textContent = item.cid + (item.fragment ? '#' + item.fragment : '');
