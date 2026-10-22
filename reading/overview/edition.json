@@ -1,0 +1,34 @@
+{
+  "title": "Commons - Overview and Review",
+  "author": "John Rigler",
+  "date": "2026-10-21",
+  "status": "New unsigned editorial draft for author review; AI-assisted from the conversation and current project notes",
+  "scope": "Six short articles explaining the open stream, article relationships, comparison of processes, internet of value, scribes and paid services",
+  "pdf_expected_pages": 6,
+  "pdf_method": "Independent ReportLab typesetting from the same numbered HTML text; not a Chrome print export",
+  "pdf_fonts": "DejaVu Serif/Sans regular and bold, embedded",
+  "artifacts": [
+    {
+      "path": "bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre.html",
+      "media_type": "text/html",
+      "sha256": "8bc974dbbb463c61649e68c75927b94bfcc30c3e405e6e36d30c9df61f371189",
+      "cid": "bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre"
+    },
+    {
+      "path": "Commons-Overview-and-Review.pdf",
+      "media_type": "application/pdf",
+      "sha256": "accbaf4cffbb01d72777b6779b1c5a07792f0a8b81400703b4121c0d87d4fe68",
+      "cid": "bafkreifmzoxuz753ahlso55wo6nrywqhpexqvc4biadqhnasdqgypvh6na"
+    }
+  ],
+  "base_commons_commit": "f396fdb7a508ee9a05aa58b3db4be200d55397de",
+  "publication": "Repository reading edition; no signature, IPFS pin, chain transaction, dispatch or court approval claimed",
+  "references": [
+    "https://www.va.gov/decision-reviews/",
+    "https://bitcoin.org/bitcoin.pdf",
+    "https://github.com/bitcoin/bitcoin/blob/master/src/kernel/chainparams.cpp",
+    "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_1_competence/comment_on_rule_1_1/",
+    "https://www.uscourts.gov/sites/default/files/document/federal-rules-of-evidence.pdf"
+  ],
+  "reference_basis": "Primary sources checked earlier in the October 21, 2026 conversation; case examples do not prescribe filing procedures"
+}

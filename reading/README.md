@@ -1,5 +1,8 @@
 # Request and shared explanations
 
+For the broader model, start with the [new six-page overview and reading order](overview/README.md).
+Then use this issue-specific edition as a concrete example.
+
 The [interactive reading draft](bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq.html) and
 [ready-to-use PDF](Commons-Request-and-Explanations.pdf) are the October 21,
 2026 edition reviewed in conversation. Download the PDF for printing or email

@@ -31,6 +31,23 @@ The initial entries are **draft descriptions of this design**. They do not make
 findings about a debt, company or individual. The NCS / GitHub / rent escalation
 fields in the announcement form are editable examples.
 
+## Start here: documents to read and refine
+
+[The new six-page overview](reading/overview/README.md) gives one short article
+per page, with a review prompt for each. Read the model first, then examine
+the existing concrete request and preparation workflow.
+
+1. [Overview and review PDF](reading/overview/Commons-Overview-and-Review.pdf):
+   open stream, foundations and articles, cross-case patterns, Web3, scribes,
+   naming and paid services.
+2. [Request and explanations PDF](reading/Commons-Request-and-Explanations.pdf):
+   the existing four-page issue example.
+3. [Preparation and assistance PDF](reading/assistance/Commons-Preparation-and-Assistance.pdf):
+   the existing three-page walkthrough and optional assistance record.
+
+The [numbered overview sources](reading/overview/source/) can be revised one
+article at a time. The earlier reading editions are preserved.
+
 ## Current reading draft
 
 [Open the interactive request and explanations](reading/bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq.html)
