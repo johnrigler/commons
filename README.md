@@ -41,6 +41,10 @@ and **Religion**; a proposed **Parsonage Exemption** article connects both.
 Articles may connect several foundations, and cases may cite several articles.
 [Self-service design notes](docs/SELF-SERVICE.md) explain the free-reuse model.
 [Foundations, articles and cases](docs/FOUNDATIONS.md) records the broader structure.
+Commons is open to healthcare, finance and credit, religion, real estate,
+investing, criminal matters, fraud and further subjects. Its scope is not limited
+to the original author's experience. Reader interest and reuse can shape what
+grows; sources and review remain separate from popularity.
 
 ## Label sources, then tell the story
 

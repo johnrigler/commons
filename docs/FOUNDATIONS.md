@@ -8,6 +8,39 @@ multiple foundations. A case can reference multiple articles. Commons is a
 network of these relationships rather than a directory tree in which every
 article has exactly one parent.
 
+## Open subject scope
+
+Commons is a vessel for reusable explanations, arguments and practical material
+wherever they make sense. Its scope is not limited to credit disputes, legal
+process, the first contributors' experience, or a fixed list of foundations.
+
+The subject areas discussed so far include:
+
+| Foundation or subject area | Place in Commons |
+| --- | --- |
+| Finance and credit | One substantial universe of related articles and cases. |
+| Healthcare | An independent subject area, with connections where relevant. |
+| Religion | Its own subject area; articles may intersect with other foundations. |
+| Real Estate | Its own subject area; may connect with religion, finance or other concerns. |
+| Investing | Another possible subject area, not restricted to credit disputes. |
+| Felony proceedings and fraud | Included as possible subject matter even though John has not claimed personal experience in these areas. |
+| Further subjects | Develop where contributors bring useful material and readers find a reason to use it. |
+
+The initial author's experience provides starting material, not a boundary on
+what the Commons may contain. New contributors can bring knowledge and sources
+for areas the original author does not know. Articles can cross subjects without
+requiring those subjects to share one root argument.
+
+## Development follows use
+
+Participation, reader interest and reuse should shape which articles and subject
+areas grow and receive attention. The original author need not predetermine the
+most important topic. Popularity can shape prominence; supporting sources,
+authorship, scope and review status remain separate ways to assess reliability.
+
+This records the intended direction. It does not claim that voting, popularity
+ranking, contribution submission or subject filters are already implemented.
+
 ## The example that defines the model
 
 Real Estate and Religion can be separate foundations. A proposed **Parsonage
