@@ -199,6 +199,7 @@
     $('#reader-close').onclick = closeReader;
     $('#reader-print').onclick = () => window.print();
     $('#download-company-reference').onclick = downloadCompanyReference;
+    dialog.addEventListener('cancel', event => { event.preventDefault(); closeReader(); });
     dialog.addEventListener('close', () => {
         document.body.classList.remove('reader-open');
         if (selected && new URLSearchParams(location.hash.slice(1)).has('item')) closeReader();
