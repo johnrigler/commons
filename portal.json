@@ -9,6 +9,28 @@
   },
   "items": [
     {
+      "id": "debt-recollection",
+      "kind": "story",
+      "title": "Paying $1,000 to get past the process",
+      "summary": "A Tarrant County debt lawsuit, an unwanted pretrial appearance, and a $1,000 lawyer fee: the cost of preserving a chance to contest the claim.",
+      "cid": "bafkreie3rztadosu4sz26wn3md27jfw2v7zee3xh4a6wdrlvfza5s7f624",
+      "path": "reading/debt/bafkreie3rztadosu4sz26wn3md27jfw2v7zee3xh4a6wdrlvfza5s7f624.html",
+      "fragment": "debt-recollection",
+      "author": "John Rigler",
+      "status": "Unsigned research draft; attributed recollection and primary sources",
+      "indexed": true,
+      "related": [
+        "debt-default",
+        "administrative-burden",
+        "traffic-toll",
+        "credit-reporting"
+      ],
+      "topics": [
+        "Courts & civil process",
+        "Housing & credit"
+      ]
+    },
+    {
       "id": "traffic-toll",
       "kind": "story",
       "title": "The ticket as a toll",
@@ -16,7 +38,8 @@
       "related": [
         "traffic-insurance",
         "traffic-revenue",
-        "administrative-burden"
+        "administrative-burden",
+        "debt-recollection"
       ],
       "cid": "bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy",
       "path": "reading/traffic/bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy.html",
@@ -26,6 +49,28 @@
       "indexed": true,
       "topics": [
         "Traffic & public revenue"
+      ]
+    },
+    {
+      "id": "debt-default",
+      "kind": "explanation",
+      "title": "A default risk before the trial",
+      "summary": "Court attendance, settlement consent, confidentiality, and default rules: examining the extra procedural burden between a debt claim and trial.",
+      "cid": "bafkreie3rztadosu4sz26wn3md27jfw2v7zee3xh4a6wdrlvfza5s7f624",
+      "path": "reading/debt/bafkreie3rztadosu4sz26wn3md27jfw2v7zee3xh4a6wdrlvfza5s7f624.html",
+      "fragment": "debt-default",
+      "author": "John Rigler",
+      "status": "Unsigned research draft; attributed recollection and primary sources",
+      "indexed": true,
+      "related": [
+        "debt-recollection",
+        "administrative-burden",
+        "credit-reporting",
+        "traffic-toll"
+      ],
+      "topics": [
+        "Courts & civil process",
+        "Housing & credit"
       ]
     },
     {
@@ -43,7 +88,9 @@
         "administrative-burden",
         "rent-acceleration",
         "request",
-        "traffic-toll"
+        "traffic-toll",
+        "debt-recollection",
+        "debt-default"
       ],
       "topics": [
         "Housing & credit"
@@ -149,7 +196,9 @@
         "traffic-toll",
         "traffic-insurance",
         "traffic-revenue",
-        "credit-reporting"
+        "credit-reporting",
+        "debt-recollection",
+        "debt-default"
       ],
       "topics": [
         "Commons practice"
@@ -256,7 +305,8 @@
       "related": [
         "administrative-burden",
         "traffic-toll",
-        "credit-reporting"
+        "credit-reporting",
+        "debt-default"
       ],
       "topics": [
         "Commons practice"

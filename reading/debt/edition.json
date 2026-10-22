@@ -1,0 +1,119 @@
+{
+  "title": "Commons - Debt Claims, Mediation, and the Burden Before Trial",
+  "author": "John Rigler",
+  "date": "2026-10-22",
+  "status": "Unsigned AI-assisted research and editorial draft; no independent legal review recorded",
+  "scope": "Attributed Tarrant County recollection, a published JP1 comparison, and current Texas primary-source research",
+  "base_commons_commit": "498a08d211971bf6b2449d408deb6260f29a5121",
+  "artifacts": [
+    {
+      "path": "bafkreie3rztadosu4sz26wn3md27jfw2v7zee3xh4a6wdrlvfza5s7f624.html",
+      "media_type": "text/html",
+      "sha256": "9b8e6601ba54e4b3af59bb60f5f496daaff2426ee7e03d61c5752e41d97cbed7",
+      "cid": "bafkreie3rztadosu4sz26wn3md27jfw2v7zee3xh4a6wdrlvfza5s7f624"
+    }
+  ],
+  "articles": [
+    {
+      "id": "debt-recollection",
+      "title": "Paying $1,000 to get past the process",
+      "cid": "bafkreie3rztadosu4sz26wn3md27jfw2v7zee3xh4a6wdrlvfza5s7f624",
+      "fragment": "debt-recollection",
+      "related": [
+        "debt-default",
+        "administrative-burden",
+        "traffic-toll",
+        "credit-reporting"
+      ]
+    },
+    {
+      "id": "debt-default",
+      "title": "A default risk before the trial",
+      "cid": "bafkreie3rztadosu4sz26wn3md27jfw2v7zee3xh4a6wdrlvfza5s7f624",
+      "fragment": "debt-default",
+      "related": [
+        "debt-recollection",
+        "administrative-burden",
+        "credit-reporting",
+        "traffic-toll"
+      ]
+    }
+  ],
+  "personal_account": {
+    "source": "John Rigler authoring conversation, recorded 2026-10-22",
+    "status": "Attributed recollection; individual case documents not supplied",
+    "location": {
+      "county": "Tarrant",
+      "state": "Texas",
+      "precinct": null
+    },
+    "lender_description": "Rigler thinks the lender was a micro-lender; identity unconfirmed",
+    "lawyer_fee_usd": 1000,
+    "reported_sequence": [
+      "Sued over a debt in what he describes as the lowest court",
+      "Directed to a pretrial session involving someone he understood to be a court-appointed mediator",
+      "Repeatedly said he did not want mediation",
+      "Understood nonappearance could lead to default and could not obtain an opt-out while unrepresented",
+      "Appeared in person to decline and told the judge he was there under duress",
+      "Subsequently paid a lawyer $1,000",
+      "Recalls that the case then went away"
+    ],
+    "reported_concerns": [
+      "Feared supplying facts to establish the claimant's case",
+      "Believed counsel could avoid his personal appearance",
+      "Interpreted the added appearance as an opportunity to obtain default before trial"
+    ],
+    "unknowns": [
+      "Case date, court, precinct, and docket",
+      "Lender and law firm identities and claimed amount",
+      "Answer, notices, mediation referral, objections, and rulings",
+      "Exact statements and whether any session was governed by mediation confidentiality",
+      "Any distinction between represented and unrepresented parties",
+      "Lawyer work, any separate debt payment, and final disposition"
+    ],
+    "case_documents_received": [],
+    "evidence_location": "Relevant private Daisy case; no case path supplied"
+  },
+  "research_limitations": [
+    "JP1 is a published comparison, not an identified court in the recollection",
+    "Current rules do not establish historical governing rules without a case date",
+    "No general exemption from personal attendance based solely on having counsel is established",
+    "No finding of manufactured defaults, debt validity, sanction legality, or judicial misconduct"
+  ],
+  "sources": [
+    {
+      "id": "debt-source-packet",
+      "title": "Tarrant County Justice Court Precinct 1: How to Better Prepare for Your Case",
+      "url": "https://www.tarrantcountytx.gov/content/dam/main/justices-of-the-peace/JP1/pre-trial-mediation-and-debt-claims-in-justice-courts/TAMUDisputeResolutionJP1CourtDebtClaimsPTMPacketwithSections.pdf#page=13"
+    },
+    {
+      "id": "debt-source-program",
+      "title": "Tarrant County Dispute Resolution: Request a Mediation",
+      "url": "https://www.tarrantcountytx.gov/en/dispute-resolution/requesting-a-mediation.html"
+    },
+    {
+      "id": "debt-source-statute",
+      "title": "Texas Civil Practice and Remedies Code, Chapter 154",
+      "url": "https://tcss.legis.texas.gov/resources/CP/htm/CP.154.htm"
+    },
+    {
+      "id": "debt-source-rules",
+      "title": "Texas Rules of Civil Procedure, current edition linked 22 October 2026",
+      "url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf"
+    }
+  ],
+  "sources_checked": "2026-10-22",
+  "publication": {
+    "repository": "johnrigler/commons",
+    "state": "Public reading edition and prepared ledger reference",
+    "signature": null,
+    "ipfs_pin_receipt": null,
+    "chain": "litecoin",
+    "transaction_id": null
+  },
+  "ledger_preparation": {
+    "schema": "commons/litecoin-announcement/1",
+    "path": "../../examples/debt-mediation.draft.json",
+    "state": "Draft; funding, amounts, fees, signing, and broadcast remain to be completed in Chisel"
+  }
+}

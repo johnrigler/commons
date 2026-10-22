@@ -73,6 +73,17 @@ scope, review status and exact artifact hashes.
 
 ## Self-service, helpers and other case areas
 
+### Debt claims and pretrial mediation
+
+[Paying $1,000 to get past the process](https://johnrigler.github.io/commons/#item=debt-recollection)
+records Rigler's Tarrant County recollection. Its companion,
+[A default risk before the trial](https://johnrigler.github.io/commons/#item=debt-default),
+compares a published JP1 procedure with current Texas rules and mediation law.
+Both articles open in the feed under **Courts & civil process**, with connections
+to administrative burden, credit reporting, and paid traffic representation.
+The [edition and numbered sources](reading/debt/) preserve the distinction
+between his recollection, published procedures, and facts still needing a case record.
+
 ### Traffic tickets: a separate connected branch
 
 [Traffic tickets, insurance, and municipal revenue](reading/traffic/) adds
