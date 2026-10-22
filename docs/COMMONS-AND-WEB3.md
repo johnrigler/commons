@@ -90,6 +90,23 @@ offer work. Readable labels can coexist; explicit record and identity references
 supply the context needed to distinguish them. This is a design principle, not
 a claim that a new naming protocol has already been deployed.
 
+## A pool of meaning in the digital wilderness
+
+Rigler calls the public medium the digital wilderness. Commons is one pool of
+meaning within it, alongside possible game worlds, news feeds, commerce and
+payment memos. It is one project among others. Its common record can exist
+independently of a business providing particular services around it.
+
+His economic concern is that providers can acquire duties, costs and exposure
+that push them toward charging. That concern is distinct from a claim that
+forming a business or charging fees authorizes legal practice. The
+[digital-wilderness note](DIGITAL-WILDERNESS.md) preserves the comparison with
+Satoshi, separates necessary requirements from sludge, and supplies bounded
+Texas statutory context for his recollection.
+
+The wider architecture is left for later. The point here is the independence
+of the common space and the services people provide within it.
+
 ## From public memory to reusable understanding
 
 Commons begins with a practical question: why should each person have to

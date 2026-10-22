@@ -90,6 +90,11 @@ technological competence, court-use requirements and potential paid expertise
 within Commons. It distinguishes professional duties from compulsory adoption
 of a platform.
 
+[Digital wilderness and pools of meaning](docs/DIGITAL-WILDERNESS.md) adds the
+distinction between the public Commons and a business offering services within
+it. It preserves the institutional-cost comparison while keeping the Texas
+statutory context precise. The broader multi-project architecture is left aside.
+
 ## Label sources, then tell the story
 
 The preferred case workflow is to give the sources descriptive labels, then

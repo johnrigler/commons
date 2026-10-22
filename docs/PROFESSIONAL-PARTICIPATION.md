@@ -83,6 +83,15 @@ reading or using Commons. Fee arrangements remain subject to the applicable
 rules. ABA Model Rule 1.5 addresses reasonable fees and communication of their
 basis; it is a model reference, not a universal fee authorization. [4]
 
+## Public publication and individual services
+
+The [digital-wilderness note](DIGITAL-WILDERNESS.md) distinguishes the existence
+of a shared public space from the work of its individual providers. It also
+records Texas provisions relevant to John's recollection of unauthorized-practice
+law. Payment status alone does not settle the classification of an activity;
+business formation is not professional authorization. The note supplies the
+statutory scope and preserves the recollection as unverified history.
+
 ## How this fits the project story
 
 Commons shifts professional value toward application, evaluation, accountability

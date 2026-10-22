@@ -81,6 +81,14 @@ These are examples rather than exclusive job categories. People can combine
 roles. Fees compensate the service provided; operating a service does not
 confer control over the Commons address or require everyone to use that service.
 
+## One pool of meaning within a wider medium
+
+Rigler calls the shared public medium the digital wilderness. Commons is one
+project within it; game worlds, news, commerce and payment memos are other possible
+pools of meaning. The common space can exist independently of a particular
+provider's business. The [digital-wilderness note](DIGITAL-WILDERNESS.md) records
+this distinction; the architecture connecting the projects is left for later.
+
 ## The language connects the participants
 
 Readable records and references let people publish something another reader
