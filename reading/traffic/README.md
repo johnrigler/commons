@@ -1,3 +1,7 @@
+> Current reading: [The cost of challenging a claim](../arguments/index.html).
+> This branch's former articles are consolidated into the current research collection.
+> The source parts and edition records below preserve earlier publication history.
+
 # Traffic tickets, insurance, and municipal revenue
 
 [Read this branch](index.html). Three connected Commons articles develop a

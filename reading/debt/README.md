@@ -1,3 +1,7 @@
+> Current reading: [The cost of challenging a claim](../arguments/index.html).
+> This branch's former articles are consolidated into the current research collection.
+> The source parts and edition records below preserve earlier publication history.
+
 # Debt claims, mediation, and the burden before trial
 
 Two connected Commons articles preserve John Rigler's Tarrant County recollection

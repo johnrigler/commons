@@ -9,136 +9,48 @@
   },
   "items": [
     {
-      "id": "debt-admissions",
-      "kind": "story",
-      "title": "When an explanation becomes an admission",
-      "summary": "Explaining hardship, acknowledging an old account, and repeatedly disputing whether the plaintiff proved that the debt was transferred to it.",
-      "related": [
-        "debt-ownership",
-        "records-recollection",
-        "debt-recollection",
-        "administrative-burden"
-      ],
-      "cid": "bafkreie5hacpyhsmg4o3ymzlyzjk2yrx7pgnejfdlm5vikmews3mpn7jmy",
-      "path": "reading/admissions/bafkreie5hacpyhsmg4o3ymzlyzjk2yrx7pgnejfdlm5vikmews3mpn7jmy.html",
-      "fragment": "debt-admissions",
-      "author": "John Rigler",
-      "status": "Unsigned research draft; attributed recollection and primary sources",
-      "indexed": true,
-      "topics": [
-        "Courts & civil process",
-        "Housing & credit"
-      ]
-    },
-    {
-      "id": "debt-ownership",
+      "id": "administrative-burden",
       "kind": "explanation",
-      "title": "Who owns the debt being claimed?",
-      "summary": "Party statements, judicial and discovery admissions, assignment challenges, and the distinction between a past account and the present claimant.",
+      "title": "Deterrence through administrative burden",
+      "summary": "How the time, money, and procedural work of obtaining review can give a demand leverage before its basis is examined.",
+      "cid": "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke",
+      "path": "reading/arguments/bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke.html",
+      "fragment": "administrative-burden",
+      "author": "John Rigler",
+      "status": "Unsigned researched argument · 22 October 2026",
+      "indexed": true,
       "related": [
-        "debt-admissions",
         "records-proof",
         "debt-default",
-        "credit-reporting",
-        "administrative-burden"
-      ],
-      "cid": "bafkreie5hacpyhsmg4o3ymzlyzjk2yrx7pgnejfdlm5vikmews3mpn7jmy",
-      "path": "reading/admissions/bafkreie5hacpyhsmg4o3ymzlyzjk2yrx7pgnejfdlm5vikmews3mpn7jmy.html",
-      "fragment": "debt-ownership",
-      "author": "John Rigler",
-      "status": "Unsigned research draft; attributed recollection and primary sources",
-      "indexed": true,
-      "topics": [
-        "Courts & civil process",
-        "Housing & credit"
-      ]
-    },
-    {
-      "id": "records-recollection",
-      "kind": "story",
-      "title": "A stack of records without an explanation",
-      "summary": "Perhaps one relevant line in a spreadsheet-like packet, no one willing to locate it, and a recalled direction to subpoena its creator.",
-      "cid": "bafkreigcjqc3k7sfbxvfrkapd4a4jtudy5ylc3a55o4zhmf3vp6qtc3b6u",
-      "path": "reading/records/bafkreigcjqc3k7sfbxvfrkapd4a4jtudy5ylc3a55o4zhmf3vp6qtc3b6u.html",
-      "fragment": "records-recollection",
-      "author": "John Rigler",
-      "status": "Unsigned research draft; attributed recollection and primary sources",
-      "indexed": true,
-      "related": [
-        "records-proof",
-        "administrative-burden",
-        "debt-recollection",
         "rent-acceleration",
-        "debt-admissions"
-      ],
-      "topics": [
-        "Courts & civil process",
-        "Housing & credit"
-      ]
-    },
-    {
-      "id": "debt-recollection",
-      "kind": "story",
-      "title": "Paying $1,000 to get past the process",
-      "summary": "A Tarrant County debt lawsuit, an unwanted pretrial appearance, and a $1,000 lawyer fee: the cost of preserving a chance to contest the claim.",
-      "cid": "bafkreie3rztadosu4sz26wn3md27jfw2v7zee3xh4a6wdrlvfza5s7f624",
-      "path": "reading/debt/bafkreie3rztadosu4sz26wn3md27jfw2v7zee3xh4a6wdrlvfza5s7f624.html",
-      "fragment": "debt-recollection",
-      "author": "John Rigler",
-      "status": "Unsigned research draft; attributed recollection and primary sources",
-      "indexed": true,
-      "related": [
-        "debt-default",
-        "administrative-burden",
-        "traffic-toll",
         "credit-reporting",
-        "records-recollection",
-        "debt-admissions"
-      ],
-      "topics": [
-        "Courts & civil process",
-        "Housing & credit"
-      ]
-    },
-    {
-      "id": "traffic-toll",
-      "kind": "story",
-      "title": "The ticket as a toll",
-      "summary": "An extra $50 lawyer payment, a reduced fine, and removal of the insurance consequence: why should a better outcome require an intermediary?",
-      "related": [
         "traffic-insurance",
         "traffic-revenue",
-        "administrative-burden",
-        "debt-recollection"
+        "patterns"
       ],
-      "cid": "bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy",
-      "path": "reading/traffic/bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy.html",
-      "fragment": "traffic-toll",
-      "author": "John Rigler",
-      "status": "Unsigned research draft; attributed recollection and primary sources",
-      "indexed": true,
       "topics": [
+        "Commons practice",
+        "Courts & civil process",
+        "Housing & credit",
         "Traffic & public revenue"
       ]
     },
     {
       "id": "records-proof",
       "kind": "explanation",
-      "title": "What the records actually prove",
-      "summary": "Locating the entry used against a defendant, connecting it to the demand, and distinguishing that explanation from a business-record foundation.",
-      "cid": "bafkreigcjqc3k7sfbxvfrkapd4a4jtudy5ylc3a55o4zhmf3vp6qtc3b6u",
-      "path": "reading/records/bafkreigcjqc3k7sfbxvfrkapd4a4jtudy5ylc3a55o4zhmf3vp6qtc3b6u.html",
+      "title": "A debt claim needs a traceable account",
+      "summary": "Debt-sale data, account ownership, readable records, and the reconciliation needed to connect a claimant to an amount.",
+      "cid": "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke",
+      "path": "reading/arguments/bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke.html",
       "fragment": "records-proof",
       "author": "John Rigler",
-      "status": "Unsigned research draft; attributed recollection and primary sources",
+      "status": "Unsigned researched argument · 22 October 2026",
       "indexed": true,
       "related": [
-        "records-recollection",
-        "administrative-burden",
+        "debt-default",
         "rent-acceleration",
         "credit-reporting",
-        "value",
-        "debt-ownership"
+        "administrative-burden"
       ],
       "topics": [
         "Courts & civil process",
@@ -148,21 +60,18 @@
     {
       "id": "debt-default",
       "kind": "explanation",
-      "title": "A default risk before the trial",
-      "summary": "Court attendance, settlement consent, confidentiality, and default rules: examining the extra procedural burden between a debt claim and trial.",
-      "cid": "bafkreie3rztadosu4sz26wn3md27jfw2v7zee3xh4a6wdrlvfza5s7f624",
-      "path": "reading/debt/bafkreie3rztadosu4sz26wn3md27jfw2v7zee3xh4a6wdrlvfza5s7f624.html",
+      "title": "When procedure decides a debt claim",
+      "summary": "Representation gaps, defaults, admissions, and the procedural work required to keep a debt claim open to examination.",
+      "cid": "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke",
+      "path": "reading/arguments/bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke.html",
       "fragment": "debt-default",
       "author": "John Rigler",
-      "status": "Unsigned research draft; attributed recollection and primary sources",
+      "status": "Unsigned researched argument · 22 October 2026",
       "indexed": true,
       "related": [
-        "debt-recollection",
-        "administrative-burden",
-        "credit-reporting",
-        "traffic-toll",
         "records-proof",
-        "debt-ownership"
+        "administrative-burden",
+        "traffic-insurance"
       ],
       "topics": [
         "Courts & civil process",
@@ -170,41 +79,118 @@
       ]
     },
     {
-      "id": "credit-reporting",
+      "id": "rent-acceleration",
       "kind": "explanation",
-      "title": "Credit reporting as collection pressure",
-      "summary": "Equifax, Experian, and TransUnion: how disputed balances gain leverage, verification becomes circular, and corrections differ across three files.",
-      "cid": "bafkreidpzcdiu777w4uy4jzr7reij3af5etwpybf6n76dabcc5mh7rdtka",
-      "path": "reading/credit/bafkreidpzcdiu777w4uy4jzr7reij3af5etwpybf6n76dabcc5mh7rdtka.html",
-      "fragment": "credit-reporting",
+      "title": "Unsupported rent acceleration",
+      "summary": "The lease basis, period, mitigation, and credits needed to explain a demand for remaining rent.",
+      "cid": "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke",
+      "path": "reading/arguments/bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke.html",
+      "fragment": "rent-acceleration",
       "author": "John Rigler",
-      "status": "Unsigned explanatory draft",
+      "status": "Unsigned researched argument · 22 October 2026",
       "indexed": true,
       "related": [
-        "administrative-burden",
-        "rent-acceleration",
-        "request",
-        "traffic-toll",
-        "debt-recollection",
-        "debt-default",
         "records-proof",
-        "debt-ownership"
+        "credit-reporting",
+        "administrative-burden",
+        "request"
       ],
       "topics": [
         "Housing & credit"
       ]
     },
     {
+      "id": "credit-reporting",
+      "kind": "explanation",
+      "title": "Credit reporting as collection pressure",
+      "summary": "The three nationwide bureaus, recurring dispute problems, investigation duties, and the pressure created by a reported balance.",
+      "cid": "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke",
+      "path": "reading/arguments/bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke.html",
+      "fragment": "credit-reporting",
+      "author": "John Rigler",
+      "status": "Unsigned researched argument · 22 October 2026",
+      "indexed": true,
+      "related": [
+        "records-proof",
+        "rent-acceleration",
+        "administrative-burden",
+        "request"
+      ],
+      "topics": [
+        "Housing & credit"
+      ]
+    },
+    {
+      "id": "traffic-insurance",
+      "kind": "explanation",
+      "title": "The price of a different traffic record",
+      "summary": "Published choices in Texas, California, and North Carolina show how fees, eligibility, and procedure shape traffic-record consequences.",
+      "related": [
+        "traffic-revenue",
+        "administrative-burden",
+        "debt-default"
+      ],
+      "cid": "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke",
+      "path": "reading/arguments/bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke.html",
+      "fragment": "traffic-insurance",
+      "author": "John Rigler",
+      "status": "Unsigned researched argument · 22 October 2026",
+      "indexed": true,
+      "topics": [
+        "Traffic & public revenue"
+      ]
+    },
+    {
+      "id": "traffic-revenue",
+      "kind": "explanation",
+      "title": "When citations fund the town",
+      "summary": "Federal findings and a municipal audit show how reliance on fines and fees can create competing enforcement incentives.",
+      "related": [
+        "traffic-insurance",
+        "administrative-burden"
+      ],
+      "cid": "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke",
+      "path": "reading/arguments/bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke.html",
+      "fragment": "traffic-revenue",
+      "author": "John Rigler",
+      "status": "Unsigned researched argument · 22 October 2026",
+      "indexed": true,
+      "topics": [
+        "Traffic & public revenue"
+      ]
+    },
+    {
+      "id": "request",
+      "kind": "description",
+      "title": "Request the basis of a reported balance",
+      "summary": "An adaptable opening for a specific reporting dispute, with evidence references and a request for a substantive reinvestigation.",
+      "cid": "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke",
+      "path": "reading/arguments/bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke.html",
+      "fragment": "request",
+      "author": "John Rigler",
+      "status": "Unsigned model request · 22 October 2026",
+      "indexed": true,
+      "related": [
+        "rent-acceleration",
+        "credit-reporting",
+        "records-proof",
+        "prepare"
+      ],
+      "topics": [
+        "Housing & credit",
+        "Commons practice"
+      ]
+    },
+    {
       "id": "value",
       "kind": "explanation",
       "title": "Knowledge in the internet of value",
-      "summary": "Reusable explanations, public memory, and independent tools within John Rigler's meaning of Web3.",
-      "cid": "bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre",
-      "path": "reading/overview/bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre.html",
+      "summary": "Reusable explanations, portable records, public memory, and independent tools in an internet of value.",
+      "cid": "bafkreie5ma5yzawlwnm7zf32fx62oq6zaevdft7m4a7qqb7v7cdei5t7eq",
+      "path": "reading/overview/bafkreie5ma5yzawlwnm7zf32fx62oq6zaevdft7m4a7qqb7v7cdei5t7eq.html",
       "fragment": "value",
-      "pdf": "reading/overview/Commons-Overview-and-Review.pdf",
       "author": "John Rigler",
-      "status": "Unsigned overview draft · 21 October 2026",
+      "status": "Unsigned overview draft · 22 October 2026",
       "indexed": true,
       "related": [
         "scribes",
@@ -217,130 +203,15 @@
       ]
     },
     {
-      "id": "traffic-insurance",
-      "kind": "explanation",
-      "title": "What the insurer gets to see",
-      "summary": "Grapevine and Austin, Texas, alongside California, North Carolina, and Florida: dismissal, different charges, confidentiality, points, and insurance-use rules.",
-      "related": [
-        "traffic-toll",
-        "traffic-revenue"
-      ],
-      "cid": "bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy",
-      "path": "reading/traffic/bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy.html",
-      "fragment": "traffic-insurance",
-      "author": "John Rigler",
-      "status": "Unsigned research draft; attributed recollection and primary sources",
-      "indexed": true,
-      "topics": [
-        "Traffic & public revenue"
-      ]
-    },
-    {
-      "id": "traffic-revenue",
-      "kind": "explanation",
-      "title": "When citations fund the town",
-      "summary": "Municipal dependence on enforcement receipts, a Louisiana General Fund audit, federal findings, and the financial incentives around highway tickets.",
-      "related": [
-        "traffic-toll",
-        "traffic-insurance",
-        "administrative-burden"
-      ],
-      "cid": "bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy",
-      "path": "reading/traffic/bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy.html",
-      "fragment": "traffic-revenue",
-      "author": "John Rigler",
-      "status": "Unsigned research draft; attributed recollection and primary sources",
-      "indexed": true,
-      "topics": [
-        "Traffic & public revenue"
-      ]
-    },
-    {
-      "id": "rent-acceleration",
-      "kind": "explanation",
-      "title": "What makes rent acceleration unsupported?",
-      "summary": "The basis, calculation, credits and adjustments needed to examine a demand for the remaining rent on a lease.",
-      "cid": "bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq",
-      "path": "reading/bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq.html",
-      "fragment": "rent-acceleration",
-      "pdf": "reading/Commons-Request-and-Explanations.pdf",
-      "author": "John Rigler",
-      "status": "Unsigned explanatory draft",
-      "indexed": true,
-      "related": [
-        "request",
-        "administrative-burden",
-        "credit-reporting",
-        "records-proof"
-      ],
-      "topics": [
-        "Housing & credit"
-      ]
-    },
-    {
-      "id": "administrative-burden",
-      "kind": "explanation",
-      "title": "Deterrence through administrative burden",
-      "summary": "When complexity, repetition, delay or expense discourages a person from pursuing a substantive answer.",
-      "cid": "bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq",
-      "path": "reading/bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq.html",
-      "fragment": "administrative-burden",
-      "pdf": "reading/Commons-Request-and-Explanations.pdf",
-      "author": "John Rigler",
-      "status": "Unsigned explanatory draft",
-      "indexed": true,
-      "related": [
-        "rent-acceleration",
-        "request",
-        "prepare",
-        "traffic-toll",
-        "traffic-insurance",
-        "traffic-revenue",
-        "credit-reporting",
-        "debt-recollection",
-        "debt-default",
-        "records-recollection",
-        "records-proof",
-        "debt-admissions",
-        "debt-ownership"
-      ],
-      "topics": [
-        "Commons practice"
-      ]
-    },
-    {
-      "id": "request",
-      "kind": "story",
-      "title": "Unsupported rent acceleration",
-      "summary": "A request for the records behind a disputed balance, with explanations of the charge and the process of challenging it.",
-      "cid": "bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq",
-      "path": "reading/bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq.html",
-      "fragment": "request",
-      "pdf": "reading/Commons-Request-and-Explanations.pdf",
-      "author": "John Rigler",
-      "status": "Unsigned reading draft",
-      "indexed": true,
-      "related": [
-        "rent-acceleration",
-        "administrative-burden",
-        "prepare",
-        "credit-reporting"
-      ],
-      "topics": [
-        "Housing & credit"
-      ]
-    },
-    {
       "id": "scribes",
       "kind": "description",
       "title": "Independent scribes, many doorways",
       "summary": "Independent servers can preserve and present records without becoming the sole authority over them.",
-      "cid": "bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre",
-      "path": "reading/overview/bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre.html",
+      "cid": "bafkreie5ma5yzawlwnm7zf32fx62oq6zaevdft7m4a7qqb7v7cdei5t7eq",
+      "path": "reading/overview/bafkreie5ma5yzawlwnm7zf32fx62oq6zaevdft7m4a7qqb7v7cdei5t7eq.html",
       "fragment": "scribes",
-      "pdf": "reading/overview/Commons-Overview-and-Review.pdf",
       "author": "John Rigler",
-      "status": "Unsigned overview draft · 21 October 2026",
+      "status": "Unsigned overview draft · 22 October 2026",
       "indexed": true,
       "related": [
         "value",
@@ -356,12 +227,11 @@
       "kind": "description",
       "title": "An open place to publish",
       "summary": "An open stream can carry articles, cases, services, replies, and other records across many subjects.",
-      "cid": "bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre",
-      "path": "reading/overview/bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre.html",
+      "cid": "bafkreie5ma5yzawlwnm7zf32fx62oq6zaevdft7m4a7qqb7v7cdei5t7eq",
+      "path": "reading/overview/bafkreie5ma5yzawlwnm7zf32fx62oq6zaevdft7m4a7qqb7v7cdei5t7eq.html",
       "fragment": "open-commons",
-      "pdf": "reading/overview/Commons-Overview-and-Review.pdf",
       "author": "John Rigler",
-      "status": "Unsigned overview draft · 21 October 2026",
+      "status": "Unsigned overview draft · 22 October 2026",
       "indexed": true,
       "related": [
         "foundations",
@@ -377,17 +247,16 @@
       "kind": "explanation",
       "title": "Subjects meet in articles",
       "summary": "Housing, religion, finance, and further subjects can connect through articles and individual cases.",
-      "cid": "bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre",
-      "path": "reading/overview/bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre.html",
+      "cid": "bafkreie5ma5yzawlwnm7zf32fx62oq6zaevdft7m4a7qqb7v7cdei5t7eq",
+      "path": "reading/overview/bafkreie5ma5yzawlwnm7zf32fx62oq6zaevdft7m4a7qqb7v7cdei5t7eq.html",
       "fragment": "foundations",
-      "pdf": "reading/overview/Commons-Overview-and-Review.pdf",
       "author": "John Rigler",
-      "status": "Unsigned overview draft · 21 October 2026",
+      "status": "Unsigned overview draft · 22 October 2026",
       "indexed": true,
       "related": [
         "open-commons",
         "patterns",
-        "traffic-toll",
+        "traffic-insurance",
         "credit-reporting"
       ],
       "topics": [
@@ -399,16 +268,15 @@
       "kind": "explanation",
       "title": "Recognizing a shared pattern",
       "summary": "Compare records, explanations, effort, and consequences across different institutions and individual cases.",
-      "cid": "bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre",
-      "path": "reading/overview/bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre.html",
+      "cid": "bafkreie5ma5yzawlwnm7zf32fx62oq6zaevdft7m4a7qqb7v7cdei5t7eq",
+      "path": "reading/overview/bafkreie5ma5yzawlwnm7zf32fx62oq6zaevdft7m4a7qqb7v7cdei5t7eq.html",
       "fragment": "patterns",
-      "pdf": "reading/overview/Commons-Overview-and-Review.pdf",
       "author": "John Rigler",
-      "status": "Unsigned overview draft · 21 October 2026",
+      "status": "Unsigned overview draft · 22 October 2026",
       "indexed": true,
       "related": [
         "administrative-burden",
-        "traffic-toll",
+        "traffic-insurance",
         "credit-reporting",
         "debt-default",
         "records-proof"
@@ -422,12 +290,11 @@
       "kind": "description",
       "title": "Useful work within the Commons",
       "summary": "Teaching, research, hosting, professional expertise, and shared material can support one another.",
-      "cid": "bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre",
-      "path": "reading/overview/bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre.html",
+      "cid": "bafkreie5ma5yzawlwnm7zf32fx62oq6zaevdft7m4a7qqb7v7cdei5t7eq",
+      "path": "reading/overview/bafkreie5ma5yzawlwnm7zf32fx62oq6zaevdft7m4a7qqb7v7cdei5t7eq.html",
       "fragment": "work",
-      "pdf": "reading/overview/Commons-Overview-and-Review.pdf",
       "author": "John Rigler",
-      "status": "Unsigned overview draft · 21 October 2026",
+      "status": "Unsigned overview draft · 22 October 2026",
       "indexed": true,
       "related": [
         "prepare",
@@ -477,6 +344,117 @@
       "topics": [
         "Commons practice"
       ]
+    },
+    {
+      "id": "debt-admissions",
+      "kind": "explanation",
+      "title": "When procedure decides a debt claim",
+      "summary": "Representation gaps, defaults, admissions, and the procedural work required to keep a debt claim open to examination.",
+      "cid": "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke",
+      "path": "reading/arguments/bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke.html",
+      "fragment": "debt-default",
+      "author": "John Rigler",
+      "status": "Unsigned researched argument · 22 October 2026",
+      "indexed": false,
+      "related": [
+        "records-proof",
+        "administrative-burden",
+        "traffic-insurance"
+      ],
+      "topics": [
+        "Courts & civil process",
+        "Housing & credit"
+      ],
+      "consolidated_into": "debt-default"
+    },
+    {
+      "id": "debt-ownership",
+      "kind": "explanation",
+      "title": "A debt claim needs a traceable account",
+      "summary": "Debt-sale data, account ownership, readable records, and the reconciliation needed to connect a claimant to an amount.",
+      "cid": "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke",
+      "path": "reading/arguments/bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke.html",
+      "fragment": "records-proof",
+      "author": "John Rigler",
+      "status": "Unsigned researched argument · 22 October 2026",
+      "indexed": false,
+      "related": [
+        "debt-default",
+        "rent-acceleration",
+        "credit-reporting",
+        "administrative-burden"
+      ],
+      "topics": [
+        "Courts & civil process",
+        "Housing & credit"
+      ],
+      "consolidated_into": "records-proof"
+    },
+    {
+      "id": "records-recollection",
+      "kind": "explanation",
+      "title": "A debt claim needs a traceable account",
+      "summary": "Debt-sale data, account ownership, readable records, and the reconciliation needed to connect a claimant to an amount.",
+      "cid": "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke",
+      "path": "reading/arguments/bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke.html",
+      "fragment": "records-proof",
+      "author": "John Rigler",
+      "status": "Unsigned researched argument · 22 October 2026",
+      "indexed": false,
+      "related": [
+        "debt-default",
+        "rent-acceleration",
+        "credit-reporting",
+        "administrative-burden"
+      ],
+      "topics": [
+        "Courts & civil process",
+        "Housing & credit"
+      ],
+      "consolidated_into": "records-proof"
+    },
+    {
+      "id": "debt-recollection",
+      "kind": "explanation",
+      "title": "When procedure decides a debt claim",
+      "summary": "Representation gaps, defaults, admissions, and the procedural work required to keep a debt claim open to examination.",
+      "cid": "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke",
+      "path": "reading/arguments/bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke.html",
+      "fragment": "debt-default",
+      "author": "John Rigler",
+      "status": "Unsigned researched argument · 22 October 2026",
+      "indexed": false,
+      "related": [
+        "records-proof",
+        "administrative-burden",
+        "traffic-insurance"
+      ],
+      "topics": [
+        "Courts & civil process",
+        "Housing & credit"
+      ],
+      "consolidated_into": "debt-default"
+    },
+    {
+      "id": "traffic-toll",
+      "kind": "explanation",
+      "title": "The price of a different traffic record",
+      "summary": "Published choices in Texas, California, and North Carolina show how fees, eligibility, and procedure shape traffic-record consequences.",
+      "related": [
+        "traffic-revenue",
+        "administrative-burden",
+        "debt-default"
+      ],
+      "cid": "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke",
+      "path": "reading/arguments/bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke.html",
+      "fragment": "traffic-insurance",
+      "author": "John Rigler",
+      "status": "Unsigned researched argument · 22 October 2026",
+      "indexed": false,
+      "topics": [
+        "Traffic & public revenue"
+      ],
+      "consolidated_into": "traffic-insurance"
     }
   ]
 }

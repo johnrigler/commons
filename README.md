@@ -44,89 +44,38 @@ The initial entries are **draft descriptions of this design**. They do not make
 findings about a debt, company or individual. The NCS / GitHub / rent escalation
 fields in the announcement form are editable examples.
 
-## Background: documents to read and refine
+## Current arguments and reading editions
 
-[The new six-page overview](reading/overview/README.md) gives one short article
-per page, with a review prompt for each. Read the model first, then examine
-the existing concrete request and preparation workflow.
+[The cost of challenging a claim](reading/arguments/index.html) consolidates the
+collection into seven general arguments and an adaptable reporting-dispute
+request. The live feed leads with the institutional mechanism and published
+research. [Edition notes and numbered sources](reading/arguments/) record source
+scope, current CIDs, and publication status.
 
-1. [Overview and review PDF](reading/overview/Commons-Overview-and-Review.pdf):
-   open stream, foundations and articles, cross-case patterns, Web3, scribes,
-   naming and paid services.
-2. [Request and explanations PDF](reading/Commons-Request-and-Explanations.pdf):
-   the existing four-page issue example.
-3. [Preparation and assistance PDF](reading/assistance/Commons-Preparation-and-Assistance.pdf):
-   the existing three-page walkthrough and optional assistance record.
+| Argument | Main question |
+| --- | --- |
+| Administrative burden | What does obtaining a substantive answer cost? |
+| Debt proof | How do the account, claimant, and amount connect? |
+| Court procedure | What keeps an issue open to a contested decision? |
+| Unsupported rent acceleration | What lease basis, calculation, mitigation, and credits support the charge? |
+| Credit reporting | Did the investigation address the disputed fact and propagate the correction? |
+| Traffic records | How do fees, eligibility, and procedural choices affect the outcome? |
+| Enforcement revenue | How does dependence on receipts affect enforcement incentives? |
 
-The [numbered overview sources](reading/overview/source/) can be revised one
-article at a time. The earlier reading editions are preserved.
+Five overlapping former entries remain reachable through their existing URLs,
+but are not repeated in the main feed. Historical CID-named editions and exact
+contribution parent references remain preserved.
 
-## Current reading draft
+[The overview](reading/overview/index.html) explains the open stream, subjects,
+shared patterns, public memory, scribes, and paid services.
+[Prepare, print, retain](reading/assistance/index.html) supplies the preparation
+walkthrough and blank assistance record. Current HTML editions are printable
+with the browser. Existing PDFs retain their earlier text and dates.
 
-[Open the interactive request and explanations](reading/bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq.html)
-or [download the four-page PDF for printing or email](reading/Commons-Request-and-Explanations.pdf).
-
-The draft covers **unsupported rent acceleration** and **deterrence through
-administrative burden**, with linked explanations and editable organization
-names. [Reading-edition notes and source parts](reading/) record authorship,
-scope, review status and exact artifact hashes.
-
-## Self-service, helpers and other case areas
-
-### Debt claims and pretrial mediation
-
-[When an explanation becomes an admission](https://johnrigler.github.io/commons/#item=debt-admissions)
-records Rigler's repeated dispute about proof of transfer.
-[Who owns the debt being claimed?](https://johnrigler.github.io/commons/#item=debt-ownership)
-distinguishes acknowledgments of an old account, the balance, and the present
-claimant, with research on admissions and assignment procedures. The
-[edition and numbered sources](reading/admissions/) keep the proposed broader
-pattern separate from what the case record and research can establish.
-
-[A stack of records without an explanation](https://johnrigler.github.io/commons/#item=records-recollection)
-records a separate debt-case recollection about spreadsheet-like printouts.
-[What the records actually prove](https://johnrigler.github.io/commons/#item=records-proof)
-examines records witnesses, affidavit foundations, and the work of tracing entries
-to a demanded balance. The [edition and numbered sources](reading/records/)
-keep the uncertain firm identification and unknown court details explicit.
-
-[Paying $1,000 to get past the process](https://johnrigler.github.io/commons/#item=debt-recollection)
-records Rigler's Tarrant County recollection. Its companion,
-[A default risk before the trial](https://johnrigler.github.io/commons/#item=debt-default),
-compares a published JP1 procedure with current Texas rules and mediation law.
-Both articles open in the feed under **Courts & civil process**, with connections
-to administrative burden, credit reporting, and paid traffic representation.
-The [edition and numbered sources](reading/debt/) preserve the distinction
-between his recollection, published procedures, and facts still needing a case record.
-
-### Traffic tickets: a separate connected branch
-
-[Traffic tickets, insurance, and municipal revenue](reading/traffic/) adds
-**The ticket as a toll**, **What the insurer gets to see**, and **When citations
-fund the town**. The articles preserve Rigler's account of an extra $50 lawyer
-payment followed by a reduced fine and removal of the insurance consequence.
-Grapevine, Texas, is identified for one of his tickets. Official court rules,
-state statutes, federal findings, and a visually checked municipal audit support
-the broader inquiry. The branch connects to administrative burden through the
-portal; it remains separate from the individual rent dispute. Its edition
-record and Litecoin announcement are prepared for later anchoring, with no
-IPFS pin or blockchain broadcast claimed.
-
-[Prepare, print, retain](reading/assistance/) adds a three-page PDF, a blank
-assistance record and commented, numbered HTML sources. It separates the person's
-review, the helper's work, signing under stated authority, and actual delivery.
-
-The third page records further article and case areas: veterans dealing with the
-VA, and traffic tickets with insurance consequences. The burden article connects
-these issues. Commons can also organize broad foundations such as **Real Estate**
-and **Religion**; a proposed **Parsonage Exemption** article connects both.
-Articles may connect several foundations, and cases may cite several articles.
-[Self-service design notes](docs/SELF-SERVICE.md) explain the free-reuse model.
-[Foundations, articles and cases](docs/FOUNDATIONS.md) records the broader structure.
-Commons is open to healthcare, finance and credit, religion, real estate,
-investing, criminal matters, fraud and further subjects. Its scope is not limited
-to the original author's experience. Reader interest and reuse can shape what
-grows; sources and review remain separate from popularity.
+[Self-service design notes](docs/SELF-SERVICE.md) explain the reuse model;
+[foundations, articles and cases](docs/FOUNDATIONS.md) records the broader
+structure. Articles may connect several subjects, and individual cases may
+refer to several articles.
 
 ## Commons and the internet of value
 

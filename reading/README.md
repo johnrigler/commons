@@ -1,3 +1,6 @@
+> Current articles: [The cost of challenging a claim](arguments/index.html).
+> Linked PDFs below preserve earlier editions; the live feed uses the revised HTML.
+
 # Request and shared explanations
 
 For the broader model, start with the [new six-page overview and reading order](overview/README.md).

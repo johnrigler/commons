@@ -1,3 +1,7 @@
+> Current reading: [The cost of challenging a claim](../arguments/index.html).
+> This branch's former articles are consolidated into the current research collection.
+> The source parts and edition records below preserve earlier publication history.
+
 # Credit reporting as collection pressure
 
 This is the previously prepared Commons credit-bureau explanation, now part

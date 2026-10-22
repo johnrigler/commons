@@ -1,0 +1,39 @@
+{
+  "title": "Commons - Overview and Review",
+  "author": "John Rigler",
+  "date": "2026-10-22",
+  "status": "Unsigned AI-assisted overview draft",
+  "scope": "Six short articles explaining the open stream, article relationships, comparison of processes, internet of value, scribes and paid services",
+  "artifacts": [
+    {
+      "path": "bafkreie5ma5yzawlwnm7zf32fx62oq6zaevdft7m4a7qqb7v7cdei5t7eq.html",
+      "media_type": "text/html",
+      "sha256": "9d603b8c82cbb359fc977a2dfda743d9012a32cfece03f0807f5f88644767f24",
+      "cid": "bafkreie5ma5yzawlwnm7zf32fx62oq6zaevdft7m4a7qqb7v7cdei5t7eq"
+    }
+  ],
+  "base_commons_commit": "47c3b70b50fa516dea7a985c5788ee19c397da0c",
+  "publication": "Repository reading edition; no signature, IPFS pin, chain transaction, dispatch or court approval claimed",
+  "references": [
+    "https://bitcoin.org/bitcoin.pdf",
+    "https://github.com/bitcoin/bitcoin/blob/master/src/kernel/chainparams.cpp",
+    "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_1_competence/comment_on_rule_1_1/",
+    "https://www.uscourts.gov/sites/default/files/document/federal-rules-of-evidence.pdf"
+  ],
+  "reference_basis": "Unchanged design references retained; Bitcoin white paper and genesis-construction source rechecked 22 October 2026",
+  "historical_artifacts": [
+    {
+      "path": "bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre.html",
+      "media_type": "text/html",
+      "sha256": "8bc974dbbb463c61649e68c75927b94bfcc30c3e405e6e36d30c9df61f371189",
+      "cid": "bafkreielzf2nxo2ghrqwjhtiy5mspokl7tbqypsalzxdnuymtx3b6nyrre"
+    },
+    {
+      "path": "Commons-Overview-and-Review.pdf",
+      "media_type": "application/pdf",
+      "sha256": "accbaf4cffbb01d72777b6779b1c5a07792f0a8b81400703b4121c0d87d4fe68",
+      "cid": "bafkreifmzoxuz753ahlso55wo6nrywqhpexqvc4biadqhnasdqgypvh6na"
+    }
+  ],
+  "revision": "Impersonal editorial framing and links to the consolidated research collection; prior PDF remains an earlier edition"
+}

@@ -1,3 +1,6 @@
+> Current articles: [The cost of challenging a claim](../arguments/index.html).
+> Linked PDFs below preserve earlier editions; the live feed uses the revised HTML.
+
 # Six short articles to read and refine
 
 [Download the six-page PDF](Commons-Overview-and-Review.pdf) or

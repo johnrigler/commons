@@ -24,6 +24,19 @@ test('portal references existing frozen documents and valid fragments without in
     }
 });
 
+test('consolidated entry URLs open the current article without duplicating the feed', () => {
+    const folded = catalog.items.filter(item=>item.consolidated_into);
+    assert.equal(folded.length,5);
+    for (const item of folded) {
+        const current=catalog.items.find(entry=>entry.id===item.consolidated_into);
+        assert.ok(current?.indexed);
+        assert.equal(item.indexed,false);
+        assert.equal(item.title,current.title);
+        assert.deepEqual(P.reference(item),P.reference(current));
+        assert.ok(!P.visible(catalog.items).some(entry=>entry.id===item.id));
+    }
+});
+
 test('responses name exact parent editions and preserve bytes through local save and load', async () => {
     const entry = await P.create(parent, fields);
     assert.deepEqual(entry.record.parent, {cid:parent.cid,fragment:'request'});
@@ -43,7 +56,7 @@ test('unindexed branches remain reachable by exact reference and stay out of the
     const indexed = await P.create(parent,{...fields,indexed:true,title:'Indexed contribution'});
     const items = [P.item(unindexed),P.item(indexed),...catalog.items];
     assert.ok(P.sameReference(items[0].parent,P.reference(parent)));
-    assert.equal(P.visible(items).length,catalog.items.length+1);
+    assert.equal(P.visible(items).length,P.visible(catalog.items).length+1);
     assert.ok(!P.visible(items).some(item=>item.id===unindexed.cid));
     assert.equal(P.visible(items,'explanation','Indexed contribution').length,1);
     const reply = await P.create(items[0],fields);
