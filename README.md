@@ -55,6 +55,11 @@ with John Rigler's meaning of Web3: public memory, portable contributions and
 independent use. It records the hypothesis that shared explanations can reduce
 repeated paid work while keeping professional judgment and representation distinct.
 
+[Professional participation](docs/PROFESSIONAL-PARTICIPATION.md) explains
+technological competence, court-use requirements and potential paid expertise
+within Commons. It distinguishes professional duties from compulsory adoption
+of a platform.
+
 ## Label sources, then tell the story
 
 The preferred case workflow is to give the sources descriptive labels, then

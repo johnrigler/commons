@@ -91,6 +91,20 @@ distinct contributions. Commons makes reusable reasoning inspectable and
 portable so that the same basic understanding need not remain a recurring
 barrier to participation.
 
+## Professional participation within Commons
+
+Rigler also sees Commons as an opportunity for professional development and paid
+expertise. Lawyers can review articles, apply them to a client's facts, examine
+records with technical specialists, prepare evidence, negotiate and advocate.
+Shared explanations and compensated professional judgment can coexist.
+
+Relevant technological competence is already a professional-conduct concern.
+That creates a possible entry point for Commons, while the claim that courts
+must adopt a particular system goes beyond the rules reviewed here. The
+[professional-participation note](PROFESSIONAL-PARTICIPATION.md) distinguishes
+competence, court understanding, authentication, admissibility and paid work,
+with links to the primary authorities.
+
 ## Value that can be carried forward
 
 This is part of what Rigler calls Web3, or the internet of value. Value includes
