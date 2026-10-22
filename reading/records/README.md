@@ -10,6 +10,17 @@ tentatively recalled firm name, not a confirmed participant. Court, jurisdiction
 date, claimant, procedural stage, rulings, objections, and outcome are unknown.
 No fee or outcome from the separate mediation case is attributed to this case.
 
+Rigler clarified that perhaps one line concerned him, yet counsel would not
+navigate the packet to show it. He describes a wide, long worksheet printed
+across pages; the source format and printing method are unverified. The revised
+articles foreground locating the relevant entry and connecting it to the demand.
+
+He also clarified that the judge told him to subpoena the creator and described
+that person as the only one able to explain the records. The current edition
+corrects the earlier attribution of that idea to Rigler's hindsight. The companion
+addresses death or unavailability, records foundations, relevance, and access to
+an explanation. Earlier immutable editions remain preserved.
+
 The companion explains that a qualified records witness need not be the creator,
 that a compliant affidavit can supply a business-record foundation, and that
 readability and a traceable calculation need examination apart from admission.

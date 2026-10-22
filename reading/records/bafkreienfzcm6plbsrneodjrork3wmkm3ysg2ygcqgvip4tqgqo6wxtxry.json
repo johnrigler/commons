@@ -1,0 +1,124 @@
+{
+  "title": "Commons - Account Records, Explanation, and Proof",
+  "author": "John Rigler",
+  "date": "2026-10-22",
+  "status": "Unsigned AI-assisted research and editorial draft; no independent legal review recorded",
+  "scope": "Separate debt-case recollection about spreadsheet-like printouts, with current Texas evidence rules and a published appellate comparison",
+  "base_commons_commit": "e663dd4e0f592e9bcbf9290a4f01cf1448eac421",
+  "artifacts": [
+    {
+      "path": "bafkreifikz2guraeveklevqi43d5pxo46agn7wd3nqp5zzn6mbwuzmqvgq.html",
+      "media_type": "text/html",
+      "sha256": "a856746a4404a914b25608e6c7d7dddcf00cdfd87b6c1fdce5be606d4cb21534",
+      "cid": "bafkreifikz2guraeveklevqi43d5pxo46agn7wd3nqp5zzn6mbwuzmqvgq"
+    }
+  ],
+  "articles": [
+    {
+      "id": "records-recollection",
+      "title": "A stack of records without an explanation",
+      "cid": "bafkreifikz2guraeveklevqi43d5pxo46agn7wd3nqp5zzn6mbwuzmqvgq",
+      "fragment": "records-recollection",
+      "related": [
+        "records-proof",
+        "administrative-burden",
+        "debt-recollection",
+        "rent-acceleration"
+      ]
+    },
+    {
+      "id": "records-proof",
+      "title": "What the records actually prove",
+      "cid": "bafkreifikz2guraeveklevqi43d5pxo46agn7wd3nqp5zzn6mbwuzmqvgq",
+      "fragment": "records-proof",
+      "related": [
+        "records-recollection",
+        "administrative-burden",
+        "rent-acceleration",
+        "credit-reporting",
+        "value"
+      ]
+    }
+  ],
+  "personal_account": {
+    "source": "John Rigler authoring conversation and subsequent clarification, recorded 2026-10-22",
+    "status": "Attributed recollection; packet and individual case documents not supplied",
+    "case_relation": "Separate from the earlier Tarrant County mediation and $1,000-lawyer recollection",
+    "court_description": "Higher-level court as recalled; court and jurisdiction not identified",
+    "law_firm_name_recalled": "Rausch and Strom",
+    "possible_firm_name_match": {
+      "name": "Rausch Sturm LLP",
+      "basis": "Firm website describes its debt-collection practice",
+      "confirmed_in_case": false
+    },
+    "page_count": {
+      "status": "Rough estimate, not a verified count",
+      "approximate_minimum": 20,
+      "approximate_maximum": 40
+    },
+    "reported_sequence": [
+      "Sued in a separate debt case in what he recalls as a higher-level court",
+      "Received a large packet that appeared to be a printed spreadsheet",
+      "Recalls numbers and headings failing to align across pages",
+      "Asked opposing counsel to explain the packet",
+      "Recalls receiving no satisfactory explanation and no expectation from the court that counsel would provide the explanation he sought",
+      "Clarifies that the judge instructed him to subpoena the creator and described that person as the only one able to explain the records"
+    ],
+    "reported_expectation": "Assumed a lawyer offering records accepted by the court could explain them",
+    "case_documents_received": [],
+    "unknowns": [
+      "Court, jurisdiction, judge, case date, docket, and claimant",
+      "Confirmed law firm and whether it represented a separate claimant",
+      "Exact number of pages, source file format, headings, and underlying data",
+      "Affidavits, witnesses, procedural stage, actual admission ruling, objections, and outcome",
+      "Exact wording and scope of the judge's subpoena instruction, including whether it concerned a particular explanation or a general admissibility requirement"
+    ],
+    "evidence_location": "Relevant private Daisy case; no case path supplied",
+    "reported_judicial_instruction": "Rigler recalls that the judge said he should have subpoenaed the records' creator and that the creator was the only person who could explain them; no transcript supplied.",
+    "question_raised": "Whether a creator's death or unavailability would invalidate records that remain accepted while further explanation is inaccessible"
+  },
+  "research_limitations": [
+    "Texas sources are contextual comparisons pending identification of the court and case date",
+    "No original packet was inspected",
+    "No finding about a particular firm's conduct or the packet's admissibility",
+    "No finding of debt validity, deliberate concealment, or case outcome",
+    "No general requirement to call the document creator is asserted"
+  ],
+  "sources": [
+    {
+      "id": "records-source-firm",
+      "title": "Rausch Sturm LLP: firm website",
+      "url": "https://rauschsturm.com/"
+    },
+    {
+      "id": "records-source-rules",
+      "title": "Texas Rules of Evidence, amendments effective 2 July 2026",
+      "url": "https://www.txcourts.gov/media/1463074/texas-rules-of-evidence-updated-with-amendments-effective-07022026.pdf"
+    },
+    {
+      "id": "records-source-opinion",
+      "title": "Star Electricity, Inc. v. Northpark Office Tower, LP, No. 01-17-00364-CV, First Court of Appeals, 14 July 2020",
+      "url": "https://www.txcourts.gov/media/1448830/170364rf-2.pdf#page=36"
+    }
+  ],
+  "sources_checked": "2026-10-22",
+  "publication": {
+    "repository": "johnrigler/commons",
+    "state": "Public reading edition and prepared ledger reference",
+    "signature": null,
+    "ipfs_pin_receipt": null,
+    "chain": "litecoin",
+    "transaction_id": null
+  },
+  "ledger_preparation": {
+    "schema": "commons/litecoin-announcement/1",
+    "path": "../../examples/account-records.draft.json",
+    "state": "Draft; funding, amounts, fees, signing, and broadcast remain to be completed in Chisel"
+  },
+  "revision": {
+    "date": "2026-10-22",
+    "supersedes_edition_cid": "bafkreifalcvybrxj75fj2zh6udpn3l3lojhr7zwx2mpi5n3uc6ttje2yri",
+    "supersedes_html_cid": "bafkreibqmerfobc7uqlj32lajrghi7bphp7r4ogamejy6etr5v72agezp4",
+    "reason": "Rigler clarified that the instruction to subpoena the creator, described as the only person able to explain the records, came from the judge; correct prior attribution to Rigler's hindsight and address creator unavailability."
+  }
+}

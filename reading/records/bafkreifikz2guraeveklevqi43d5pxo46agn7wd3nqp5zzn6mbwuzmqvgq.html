@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Commons — Account Records, Explanation, and Proof</title>
+<meta name="description" content="John Rigler's recollection of an unexplained spreadsheet packet, with research on records witnesses, business-record affidavits, and traceable account calculations.">
+<style>
+    :root { color-scheme: light; --ink: #242624; --muted: #60655f; --rule: #cdd0c7; --accent: #86503c; }
+    * { box-sizing: border-box; }
+    html { background: #eeeee8; color: var(--ink); }
+    body { margin: 0; padding: 36px 18px; font-family: Georgia, 'Times New Roman', serif; }
+    article { max-width: 840px; margin: 0 auto 28px; padding: 48px 70px 40px; background: #fffef9; border: 1px solid #dbddd3; scroll-margin-top: 20px; }
+    a { color: #77432f; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    .reading-links { margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--rule); font: 13px/1.8 Arial, sans-serif; }
+    .reading-links a { display: block; width: fit-content; }
+    .return-link { font: 13px/1.5 Arial, sans-serif; }
+    .source-note { margin-top: 25px; padding-top: 14px; border-top: 1px solid var(--rule); font: 13px/1.55 Arial, sans-serif; color: var(--muted); }
+    .masthead { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; padding-bottom: 16px; border-bottom: 2px solid var(--ink); font-family: Arial, sans-serif; }
+    .brand { font-size: 16px; letter-spacing: .16em; font-weight: 700; text-transform: uppercase; }
+    .status { color: var(--muted); font-size: 12px; }
+    .eyebrow { margin: 34px 0 13px; font: 700 12px/1.5 Arial, sans-serif; color: var(--accent); letter-spacing: .11em; text-transform: uppercase; }
+    h1 { margin: 0 0 19px; font-size: clamp(36px, 6vw, 50px); font-weight: 400; line-height: 1.06; letter-spacing: -.035em; }
+    .deck { margin: 0 0 28px; font-size: 21px; line-height: 1.45; color: #454b44; }
+    p { margin: 0 0 17px; font-size: 17px; line-height: 1.66; }
+    h2 { margin: 29px 0 12px; font: 700 15px/1.4 Arial, sans-serif; }
+    .principle { margin: 26px 0; padding: 17px 0 17px 21px; border-left: 3px solid var(--accent); font-size: 21px; line-height: 1.45; }
+    .transition { border-top: 1px solid var(--rule); margin-top: 30px; padding-top: 23px; }
+    .transition h2 { margin-top: 0; }
+    footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 9px 20px; border-top: 1px solid var(--rule); margin-top: 30px; padding-top: 14px; color: var(--muted); font: 12px/1.5 Arial, sans-serif; }
+    @media (max-width: 600px) {
+      body { padding: 0; }
+      article { border: 0; padding: 27px 24px 30px; }
+      .masthead { gap: 12px; }
+      .brand { font-size: 14px; }
+      .status { font-size: 11px; }
+      .eyebrow { margin-top: 27px; }
+      p { font-size: 17px; }
+    }
+    .tools { max-width: 840px; margin: 0 auto 20px; padding: 20px 24px; background: #fffef9; border: 1px solid var(--rule); font: 14px/1.5 Arial, sans-serif; }
+    .tools summary { cursor: pointer; font-weight: 700; }
+    .fields { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 16px; }
+    label { display: block; font-weight: 700; }
+    input, select, button { font: inherit; }
+    input, select { display: block; width: 100%; margin-top: 5px; padding: 9px; border: 1px solid #9b9f95; background: white; color: var(--ink); border-radius: 3px; }
+    button { cursor: pointer; padding: 8px 12px; border: 1px solid #9b9f95; border-radius: 3px; background: white; color: var(--ink); }
+    .print-tools { display: flex; flex-wrap: wrap; align-items: end; gap: 12px; margin-top: 16px; }
+    .print-tools label { flex: 1; min-width: 190px; }
+    .tools .hint { font: 13px/1.5 Arial, sans-serif; margin: 13px 0 0; color: var(--muted); }
+    .term-link, .party { font-weight: 700; }
+    .party { text-decoration-style: dotted; }
+    .fields input:focus, .fields select:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+    @media (max-width: 600px) { .tools { margin: 12px; padding: 16px; } .fields { grid-template-columns: 1fr; } }
+    @page { size: Letter; margin: .7in .75in; }
+    @media print {
+      html, body { background: white; }
+      .screen-only { display: none !important; }
+      body[data-print="request"] article:not(#request) { display: none; }
+      a.party { text-decoration: none; }
+      .reading-links a { font-weight: 700; }
+      body { padding: 0; }
+      article { max-width: none; margin: 0; padding: 0; border: 0; background: white; }
+      article + article { break-before: page; }
+      a { color: inherit; }
+      .return-link { display: none; }
+      h1 { font-size: 29pt; }
+      p { font-size: 11pt; line-height: 1.5; margin-bottom: 10pt; orphans: 3; widows: 3; }
+      .deck { font-size: 14pt; margin-bottom: 18pt; }
+      .principle { font-size: 14pt; margin: 16pt 0; padding-top: 8pt; padding-bottom: 8pt; }
+      h2 { break-after: avoid; margin-top: 17pt; }
+      .eyebrow { margin-top: 21pt; }
+      footer { break-inside: avoid; }
+    }
+  
+.byline, .scope-note { font: 13px/1.6 Arial, sans-serif; color: var(--muted); }
+.scope-note { padding: 14px 16px; border-left: 2px solid var(--rule); background: #f6f5ef; }
+sup { font: 11px/1 Arial, sans-serif; white-space: nowrap; }
+table { width: 100%; border-collapse: collapse; margin: 18px 0 22px; font: 15px/1.55 Arial, sans-serif; }
+th, td { text-align: left; vertical-align: top; padding: 12px; border-bottom: 1px solid var(--rule); }
+thead { background: #eeeee6; }
+tbody th { width: 28%; font-size: 14px; }
+.money-table td { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sources { padding-left: 23px; font: 15px/1.6 Arial, sans-serif; }
+.sources li { padding-left: 3px; margin-bottom: 15px; overflow-wrap: anywhere; }
+.tools { display: flex; flex-wrap: wrap; gap: 9px 18px; align-items: center; }
+[id] { scroll-margin-top: 20px; }
+@media (max-width: 600px) {
+  th, td { padding: 10px 8px; }
+  table { font-size: 14px; }
+  tbody th { width: 31%; font-size: 13px; }
+  .masthead { align-items: flex-start; }
+}
+@media print {
+  table { font-size: 9.5pt; }
+  tbody th { font-size: 9pt; }
+  tr { break-inside: avoid; }
+  th, td { padding: 8pt; }
+  .byline, .scope-note { font-size: 8.5pt; }
+  .sources { font-size: 9.5pt; line-height: 1.5; }
+  .sources li { break-inside: avoid; margin-bottom: 9pt; }
+  sup { font-size: 8pt; }
+}
+</style>
+</head><body>
+<nav class="tools screen-only" aria-label="Read and print this branch">
+<a href="../../index.html#item=records-recollection">Commons feed</a>
+<a href="#records-recollection">The recollection</a><a href="#records-proof">Explanation and proof</a><a href="#records-sources">Sources</a>
+<button id="print-button" type="button">Print / save PDF</button>
+</nav>
+<article id="records-recollection">
+  <header>
+    <div class="masthead"><span class="brand">Commons</span><span class="status">Attributed recollection · Research draft</span></div>
+    <p class="eyebrow">Debt litigation · Understanding the evidence</p>
+    <h1>A stack of records without an explanation</h1>
+    <p class="deck">What can a defendant examine when a large packet of numbers arrives without a usable account of what the numbers mean?</p>
+    <p class="byline">John Rigler · Recollection recorded 22 October 2026 · AI-assisted research and drafting</p>
+  </header>
+
+  <h2>The printed spreadsheet</h2>
+  <p>In a separate debt case, John Rigler recalls appearing before a judge in a court at a higher level than the one in his mediation account. He estimates receiving twenty to forty pages that appeared to be a printed spreadsheet. He remembers numbers continuing across pages without their headings lining up correctly, leaving parts of the packet difficult to interpret.</p>
+  <p>He wanted the opposing lawyer to go through the pages and explain them. He recalls that the lawyer could not supply a satisfactory explanation, and that the court did not expect the lawyer to explain the document in the way he had anticipated. Rigler had assumed that a lawyer presenting records accepted by the court would be able to explain their contents.</p>
+  <h2>The judge's direction to subpoena the creator</h2>
+  <p>Rigler clarifies that the judge told him he should have subpoenaed the person who created the records, and that the creator was the only person who could explain them. This is his recollection of the judge's instruction, not merely his own later suggestion. No transcript has been supplied to establish the exact wording or scope of that instruction.</p>
+  <p>He questions what would happen if that person had died or could not be reached: would the records lose their force, or could they remain accepted while their explanation was inaccessible? <a href="#records-proof">What the records actually prove</a> examines the distinction between a business-record foundation and the knowledge needed to explain particular entries or calculations.</p>
+
+  <h2>The firm identification remains tentative</h2>
+  <p>Rigler recalls the law firm's name as “Rausch and Strom.” A firm named <a href="https://rauschsturm.com/">Rausch Sturm LLP</a> identifies itself as representing creditors in debt collection.<sup><a href="#records-source-firm">[1]</a></sup> This is a possible spelling match, not confirmation of which firm appeared in this case. The petition, correspondence, or signature block would establish that identity. The recollection also does not establish whether the law firm itself was a named plaintiff or represented a separate claimant.</p>
+
+  <h2>Receiving the pages did not answer the question</h2>
+  <p>The practical problem in this account is intelligibility. If a column loses its heading at a page break, a reader can see a number without knowing whether it is a charge, payment, interest entry, adjustment, or running balance. Producing more pages does not supply those meanings. Even an accurately preserved export can become difficult to use when its printed layout breaks the relationship between labels and values.</p>
+  <p>Rigler's expectation was understandable as an expectation about communication: someone relying on a set of figures should be able to show the path through them. The procedural role of the lawyer, the foundation for admitting a record, and the explanation needed to test a calculation are separate questions. The case record would show which of those questions the court was actually deciding.</p>
+
+  <h2>The work of reconstructing someone else's demand</h2>
+  <p>A poorly presented account can leave the recipient reconstructing the creditor's explanation before being able to challenge it. The person must work out which pages connect, restore headings, identify codes, distinguish totals from transactions, and locate payments or credits. That work can consume the time otherwise available to examine whether the demanded amount follows from the records.</p>
+  <p>This is another form of <a href="../../index.html#item=administrative-burden">administrative burden</a>. The concern can be investigated through the packet's layout and the answers actually supplied. No conclusion about deliberate concealment follows merely from the number of pages or from a formatting failure.</p>
+  <p>The connection to <a href="../../index.html#item=rent-acceleration">unsupported rent acceleration</a> is the need for a traceable calculation. The connection to <a href="../../index.html#item=credit-reporting">credit reporting as collection pressure</a> is the difference between repeating an amount and explaining its basis. These are shared questions across separate cases.</p>
+  <p class="scope-note">Account basis: Rigler's authoring conversation, 22 October 2026. No packet or case documents were supplied. The court, jurisdiction, date, docket, claimant, confirmed law firm, procedural stage, admission ruling, objections, and outcome remain unknown. The page count is an estimate; the spreadsheet format and layout problems are recalled descriptions. This is distinct from the earlier $1,000-lawyer recollection.</p>
+  <div class="reading-links"><a href="#records-proof">Read: What the records actually prove →</a><a href="../../index.html#item=debt-default">Read: A default risk before the trial →</a></div>
+</article>
+<article id="records-proof">
+  <header>
+    <div class="masthead"><span class="brand">Commons</span><span class="status">Explanation · Primary sources</span></div>
+    <p class="eyebrow">Business records · Explanation and proof</p>
+    <h1>What the records actually prove</h1>
+    <p class="deck">Receiving a packet, establishing its evidentiary foundation, understanding its entries, and proving a claimed balance each call for different work.</p>
+    <p class="byline">John Rigler · 22 October 2026 · AI-assisted research and drafting</p>
+  </header>
+
+  <h2>The surprise about the lawyer's role</h2>
+  <p><a href="#records-recollection">Rigler's account of an unexplained spreadsheet packet</a> includes his recollection that the judge directed him to subpoena the records' creator and described that person as the only one who could explain them. The questions concern who supplied the evidentiary foundation, who could explain the figures, and what the judge meant by that instruction.</p>
+  <p>Texas Rules 803(6) and 902(10) permit a qualifying business-record foundation through a custodian, another qualified witness, or a compliant affidavit or declaration. Recordkeeping, knowledge, timing, trustworthiness, and service requirements apply.<sup><a href="#records-source-rules">[2]</a></sup></p>
+  <p>That structure can explain a proceeding in which litigation counsel offers records without being their creator or keeper. It does not establish what happened in Rigler's case. An affidavit, a live witness's testimony, counsel's argument, and the court's ruling would need to be identified separately.</p>
+
+  <h2>The original creator is not always required</h2>
+  <p>In <em>Star Electricity, Inc. v. Northpark Office Tower, LP</em>, the First Court of Appeals explained that a witness establishing the business-record foundation need not have created the document or worked for its creator. Knowledge of how the records were prepared could suffice. The court held that the invoices there were authenticated by an affidavit and should not have been excluded on the challenged ground.<sup><a href="#records-source-opinion">[3]</a></sup></p>
+  <p>This is a limited comparison from another case. It explains why identifying a competent records witness can involve someone other than the person who originally entered data or printed an export. It does not establish that any particular affidavit or witness in Rigler's case was sufficient. The relevant practical question is who can competently explain the records and calculation, and what procedure makes that explanation available.</p>
+
+  <h2>If the creator has died or cannot be reached</h2>
+  <p>Rule 803 applies irrespective of the declarant's availability. A creator's death or unavailability does not by itself disqualify business records; the exception's conditions still apply.<sup><a href="#records-source-rules">[2]</a></sup></p>
+  <p>A person familiar with a recordkeeping system may establish its foundation while a different person has the knowledge needed to explain a particular calculation. A categorical rule that only the creator can supply any explanation does not follow from the authorities reviewed. The case record would need to show whether the judge was identifying a particular knowledgeable witness or asserting such a general restriction.</p>
+  <p>The practical asymmetry deserves examination: a party may use a permitted foundation to offer records, while a recipient seeking further answers must identify a knowledgeable person and understand how to obtain that person's testimony. Unavailability can make that task harder without automatically excluding the records. The Commons' question is what meaningful route remained for testing the figures, and what cost that route imposed.</p>
+
+  <h2>What kind of spreadsheet is it?</h2>
+  <p>Under Rule 1001(d), accurate electronic output can constitute an original. Rule 1006 permits voluminous-record summaries with access to originals or duplicates. Rule 901 addresses a record's claimed identity.<sup><a href="#records-source-rules">[2]</a></sup></p>
+  <p>A routine account export and a summary prepared for litigation may therefore raise different questions. The label “spreadsheet” does not identify which kind Rigler received. Nor does admission, standing alone, tell a reader which entries establish the requested amount. The foundation for receiving a record and the conclusions drawn from its contents need their own explanations.</p>
+
+  <h2>Questions for an understandable account</h2>
+  <p>The Commons proposes the following reading questions. They make the calculation inspectable; the case's claims and governing procedure determine which evidence is legally necessary.</p>
+  <table>
+    <thead><tr><th scope="col">Question</th><th scope="col">What the explanation should connect</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Whose account and which period?</th><td>Account identifier, relevant person, beginning and ending dates, and the claimant's asserted connection to the account.</td></tr>
+      <tr><th scope="row">What do the columns and codes mean?</th><td>Each heading, unit, transaction code, sign convention, and continuation across page breaks.</td></tr>
+      <tr><th scope="row">How does the balance change?</th><td>The starting balance, charges, interest and fees, payments, credits, adjustments, and ending balance, without counting subtotals twice.</td></tr>
+      <tr><th scope="row">How does it support the demand?</th><td>The specific rows and other records relied on for each part of the requested amount, including any difference between the export's ending date and the demand date.</td></tr>
+    </tbody>
+  </table>
+  <p>A legible export with repeated headings, a code legend, and a reconciliation to the demand would address much of the communication problem described in the recollection. If a person still cannot follow the calculation, the missing link should be identified precisely. A general complaint about a large packet leaves less to examine than a specific missing heading, unexplained code, omitted credit, or unreconciled total.</p>
+
+  <h2>Preserve the original and label the explanation</h2>
+  <p>For a Commons case record, retain the exact packet received and its delivery context. A clearer transcription, reflowed table, or reconciliation can be a separately identified derivative with references back to original pages. It should not silently replace the received evidence. The original layout matters when the complaint concerns that layout.</p>
+  <p>A CID can identify the exact bytes of an unreadable export. Byte verification does not restore missing headings, identify a competent witness, or reconcile a balance. The explanatory article must do that additional work and show the reader how its interpretation connects to the preserved source.</p>
+  <p>This connects to <a href="../../index.html#item=debt-default">the burden before trial</a>: a person may need procedural knowledge to obtain an answer to a factual question. It also connects to <a href="../../index.html#item=rent-acceleration">the basis and calculation behind a charge</a> and <a href="../../index.html#item=administrative-burden">the cumulative cost of challenging it</a>.</p>
+  <p class="scope-note">Texas authorities checked 22 October 2026 provide a contextual comparison. The recollection does not identify this case's jurisdiction, court, date, or procedural stage. Its governing rules and any preserved objections require the actual case record. No finding is made about a particular firm's conduct, the packet's admissibility, debt validity, or the case outcome.</p>
+  <div class="reading-links"><a href="#records-recollection">Read the recollection →</a><a href="../../index.html#item=value">Read: Knowledge in the internet of value →</a></div>
+</article>
+<article id="records-sources">
+  <header><p class="eyebrow">Research record · Checked 22 October 2026</p><h1>Sources and scope</h1></header>
+  <ol class="sources">
+    <li id="records-source-firm"><a href="https://rauschsturm.com/">Rausch Sturm LLP: firm website</a>. Supports the possible name match and the firm's own description of its practice. It does not identify counsel or the claimant in Rigler's case.</li>
+    <li id="records-source-rules"><a href="https://www.txcourts.gov/media/1463074/texas-rules-of-evidence-updated-with-amendments-effective-07022026.pdf">Texas Rules of Evidence, amendments effective 2 July 2026</a>. Rule 803's availability provision and Rules 803(6), 901, 902(10), 1001(d), and 1006; PDF pages 48–49, 55–58, and 59–61. Current edition linked by the <a href="https://www.txcourts.gov/rules-forms/rules-standards/">Texas Judicial Branch rules index</a>.</li>
+    <li id="records-source-opinion"><a href="https://www.txcourts.gov/media/1448830/170364rf-2.pdf#page=36"><em>Star Electricity, Inc. v. Northpark Office Tower, LP</em>, No. 01-17-00364-CV, First Court of Appeals, 14 July 2020</a>. Opinion on rehearing, pages 36–38, especially page 37 on the records witness and authentication of invoices. An unrelated case used for its explanation of the evidentiary foundation.</li>
+  </ol>
+  <p class="source-note">Rigler supplied the recollection; no case packet was supplied for inspection. The proposed reading questions and Commons preservation method are editorial analysis. No outside account or unrelated complaint is used to establish what occurred in his case.</p>
+</article>
+<script>document.getElementById('print-button').addEventListener('click', () => window.print());
+</script>
+</body></html>

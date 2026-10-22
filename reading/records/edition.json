@@ -4,20 +4,20 @@
   "date": "2026-10-22",
   "status": "Unsigned AI-assisted research and editorial draft; no independent legal review recorded",
   "scope": "Separate debt-case recollection about spreadsheet-like printouts, with current Texas evidence rules and a published appellate comparison",
-  "base_commons_commit": "41d099190fee0a360ad4abf65533f58260ad479c",
+  "base_commons_commit": "e663dd4e0f592e9bcbf9290a4f01cf1448eac421",
   "artifacts": [
     {
-      "path": "bafkreibqmerfobc7uqlj32lajrghi7bphp7r4ogamejy6etr5v72agezp4.html",
+      "path": "bafkreigcjqc3k7sfbxvfrkapd4a4jtudy5ylc3a55o4zhmf3vp6qtc3b6u.html",
       "media_type": "text/html",
-      "sha256": "30612257045fa4169de9604c4c747c2f3bff1e38c061138f1271ed7fa018997f",
-      "cid": "bafkreibqmerfobc7uqlj32lajrghi7bphp7r4ogamejy6etr5v72agezp4"
+      "sha256": "c24c05b57e450dea58a80f1f01c4ce83c770b16c1debb993b0bbabfd098b61f5",
+      "cid": "bafkreigcjqc3k7sfbxvfrkapd4a4jtudy5ylc3a55o4zhmf3vp6qtc3b6u"
     }
   ],
   "articles": [
     {
       "id": "records-recollection",
       "title": "A stack of records without an explanation",
-      "cid": "bafkreibqmerfobc7uqlj32lajrghi7bphp7r4ogamejy6etr5v72agezp4",
+      "cid": "bafkreigcjqc3k7sfbxvfrkapd4a4jtudy5ylc3a55o4zhmf3vp6qtc3b6u",
       "fragment": "records-recollection",
       "related": [
         "records-proof",
@@ -29,7 +29,7 @@
     {
       "id": "records-proof",
       "title": "What the records actually prove",
-      "cid": "bafkreibqmerfobc7uqlj32lajrghi7bphp7r4ogamejy6etr5v72agezp4",
+      "cid": "bafkreigcjqc3k7sfbxvfrkapd4a4jtudy5ylc3a55o4zhmf3vp6qtc3b6u",
       "fragment": "records-proof",
       "related": [
         "records-recollection",
@@ -41,7 +41,7 @@
     }
   ],
   "personal_account": {
-    "source": "John Rigler authoring conversation, recorded 2026-10-22",
+    "source": "John Rigler authoring conversation and subsequent clarification, recorded 2026-10-22",
     "status": "Attributed recollection; packet and individual case documents not supplied",
     "case_relation": "Separate from the earlier Tarrant County mediation and $1,000-lawyer recollection",
     "court_description": "Higher-level court as recalled; court and jurisdiction not identified",
@@ -58,21 +58,30 @@
     },
     "reported_sequence": [
       "Sued in a separate debt case in what he recalls as a higher-level court",
-      "Received a large packet that appeared to be a printed spreadsheet",
+      "Received an estimated twenty to forty pages that appeared to be a large worksheet printed across pages",
       "Recalls numbers and headings failing to align across pages",
-      "Asked opposing counsel to explain the packet",
-      "Recalls receiving no satisfactory explanation and no expectation from the court that counsel would provide the explanation he sought"
+      "Thinks about one line in the packet concerned him",
+      "Recalls opposing counsel being unwilling to navigate the packet to identify and show that line or satisfactorily explain the figures",
+      "Understood the court to have accepted the packet as evidence despite the missing explanation",
+      "Clarifies that the judge instructed him to subpoena the creator and described that person as the only one able to explain the records"
     ],
-    "reported_expectation": "Assumed a lawyer offering records accepted by the court could explain them",
-    "reported_hindsight": "Thought calling the document creator might have helped; not a determination that the creator was legally required",
+    "reported_expectation": "Assumed someone presenting records accepted by the court could locate the relevant entry and explain how it supported the demand",
     "case_documents_received": [],
     "unknowns": [
       "Court, jurisdiction, judge, case date, docket, and claimant",
       "Confirmed law firm and whether it represented a separate claimant",
       "Exact number of pages, source file format, headings, and underlying data",
-      "Affidavits, witnesses, procedural stage, actual admission ruling, objections, and outcome"
+      "Affidavits, witnesses, procedural stage, actual admission ruling, objections, and outcome",
+      "Exact wording and scope of the judge's subpoena instruction, including whether it concerned a particular explanation or a general admissibility requirement",
+      "Exact relevant entries, their locations, the requested navigation, and the responses to that request"
     ],
-    "evidence_location": "Relevant private Daisy case; no case path supplied"
+    "evidence_location": "Relevant private Daisy case; no case path supplied",
+    "reported_judicial_instruction": "Rigler recalls that the judge said he should have subpoenaed the records' creator and that the creator was the only person who could explain them; no transcript supplied.",
+    "question_raised": "Whether a creator's death or unavailability would invalidate records that remain accepted while further explanation is inaccessible",
+    "reported_relevant_entries": "Tentatively recalls about one line concerning him; neither the count nor the connection has been independently checked",
+    "reported_printing_appearance": "Compares it to a Microsoft Excel worksheet wider and longer than one page printed to PDF across pages; source format and actual printing method are unknown",
+    "reported_completeness_rationale": "Understood inclusion of the whole record as intended completeness; this rationale is his interpretation",
+    "reported_burden": "Describes the process as one-sided because he was directed to obtain the creator while counsel would not locate the relevant line in the packet relied upon"
   },
   "research_limitations": [
     "Texas sources are contextual comparisons pending identification of the court and case date",
@@ -111,5 +120,11 @@
     "schema": "commons/litecoin-announcement/1",
     "path": "../../examples/account-records.draft.json",
     "state": "Draft; funding, amounts, fees, signing, and broadcast remain to be completed in Chisel"
+  },
+  "revision": {
+    "date": "2026-10-22",
+    "supersedes_edition_cid": "bafkreifalcvybrxj75fj2zh6udpn3l3lojhr7zwx2mpi5n3uc6ttje2yri",
+    "supersedes_html_cid": "bafkreibqmerfobc7uqlj32lajrghi7bphp7r4ogamejy6etr5v72agezp4",
+    "reason": "Rigler clarified that the judge directed him to subpoena the creator; correct the prior hindsight attribution, address creator unavailability, and foreground his recollection that perhaps one line concerned him but counsel would not locate it."
   }
 }
