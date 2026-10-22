@@ -71,6 +71,19 @@ scope, review status and exact artifact hashes.
 
 ## Self-service, helpers and other case areas
 
+### Traffic tickets: a separate connected branch
+
+[Traffic tickets, insurance, and municipal revenue](reading/traffic/) adds
+**The ticket as a toll**, **What the insurer gets to see**, and **When citations
+fund the town**. The articles preserve Rigler's account of an extra $50 lawyer
+payment followed by a reduced fine and removal of the insurance consequence.
+Grapevine, Texas, is identified for one of his tickets. Official court rules,
+state statutes, federal findings, and a visually checked municipal audit support
+the broader inquiry. The branch connects to administrative burden through the
+portal; it remains separate from the individual rent dispute. Its edition
+record and Litecoin announcement are prepared for later anchoring, with no
+IPFS pin or blockchain broadcast claimed.
+
 [Prepare, print, retain](reading/assistance/) adds a three-page PDF, a blank
 assistance record and commented, numbered HTML sources. It separates the person's
 review, the helper's work, signing under stated authority, and actual delivery.

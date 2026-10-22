@@ -1,0 +1,198 @@
+{
+  "title": "Commons - Traffic Tickets, Insurance, and Municipal Revenue",
+  "author": "John Rigler",
+  "date": "2026-10-21",
+  "status": "Unsigned AI-assisted research and editorial draft; no independent legal review recorded",
+  "scope": "Three connected articles, sixteen public references, and an attributed personal recollection; separate from the rent-dispute packet",
+  "base_commons_commit": "2743de35ab007f209749c4347a69fc5c9b41924d",
+  "artifacts": [
+    {
+      "path": "bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy.html",
+      "media_type": "text/html",
+      "sha256": "102c3181e30aa8c6ebe6f7cc25d5c524d1c396b5431f5d78d48fbbaa197b4586",
+      "cid": "bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy"
+    }
+  ],
+  "articles": [
+    {
+      "id": "traffic-toll",
+      "title": "The ticket as a toll",
+      "cid": "bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy",
+      "fragment": "traffic-toll",
+      "related": [
+        "traffic-insurance",
+        "traffic-revenue",
+        "administrative-burden"
+      ]
+    },
+    {
+      "id": "traffic-insurance",
+      "title": "What the insurer gets to see",
+      "cid": "bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy",
+      "fragment": "traffic-insurance",
+      "related": [
+        "traffic-toll",
+        "traffic-revenue"
+      ]
+    },
+    {
+      "id": "traffic-revenue",
+      "title": "When citations fund the town",
+      "cid": "bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy",
+      "fragment": "traffic-revenue",
+      "related": [
+        "traffic-toll",
+        "traffic-insurance",
+        "administrative-burden"
+      ]
+    }
+  ],
+  "foundation_references": [
+    {
+      "id": "administrative-burden",
+      "cid": "bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq",
+      "fragment": "administrative-burden"
+    }
+  ],
+  "personal_account": {
+    "source": "John Rigler statements and clarifications in the authoring conversation, recorded 2026-10-21",
+    "status": "Attributed recollection; case documents not supplied",
+    "additional_lawyer_fee_usd": 50,
+    "reported_sequence": [
+      "Received a speeding ticket",
+      "Paid a lawyer an additional $50",
+      "Lawyer spoke to the court",
+      "Court reduced the fine",
+      "Insurance consequence was removed"
+    ],
+    "reported_interpretation": "Probably came out ahead financially; asks why the intermediary payment was necessary; used the toll framing before a judge",
+    "identified_ticket_locations": [
+      {
+        "city": "Grapevine",
+        "state": "Texas",
+        "basis": "Identified by Rigler as the location of one of his tickets"
+      }
+    ],
+    "case_documents_received": [],
+    "unknowns": [
+      "Incident date and docket",
+      "Which identified ticket the lawyer-negotiated disposition concerned",
+      "Original and final charge and fine",
+      "Court costs and other fees",
+      "Legal mechanism removing the insurance consequence",
+      "Actual premium effect and net saving",
+      "Exact words before the judge and any response"
+    ],
+    "individual_evidence_location": "Retain in the relevant Daisy case; no local case path supplied"
+  },
+  "calculations": [
+    {
+      "subject": "Henderson FY2025 General Fund fines and forfeitures share of actual revenue",
+      "numerator": 2117485,
+      "denominator": 2715222,
+      "ratio_percent": 77.985704,
+      "display_percent": 78.0,
+      "source": "traffic-source-henderson",
+      "scope": "General Fund revenue, year ended June 30, 2025; aggregated fine category, not a citation-location count"
+    }
+  ],
+  "sources": [
+    {
+      "id": "traffic-source-nc-courts",
+      "title": "North Carolina Judicial Branch: Traffic Violations",
+      "url": "https://www.nccourts.gov/help-topics/traffic-and-vehicles/traffic-violations"
+    },
+    {
+      "id": "traffic-source-austin-options",
+      "title": "Austin Municipal Court: Ways to Request a Deferral for a Moving Violation",
+      "url": "https://www.austintexas.gov/municipal-court/ways-request-deferral-moving-violation"
+    },
+    {
+      "id": "traffic-source-ca-dmv",
+      "title": "California DMV: Driver's Handbook, Traffic Violator School",
+      "url": "https://www.dmv.ca.gov/portal/handbook/california-driver-handbook/laws-and-rules-of-the-road-cont2/"
+    },
+    {
+      "id": "traffic-source-ca-court",
+      "title": "San Mateo Superior Court: How to Take Care of Your Traffic Citation / Ticket",
+      "url": "https://sanmateo.courts.ca.gov/divisions/traffic/how-take-care-your-traffic-citation-ticket"
+    },
+    {
+      "id": "traffic-source-austin-deferral",
+      "title": "Austin Municipal Court: Apply for a Municipal Court Deferral",
+      "url": "https://www.austintexas.gov/municipal-court/apply-municipal-court-deferral"
+    },
+    {
+      "id": "traffic-source-nc-statute",
+      "title": "North Carolina G.S. 20-141(o)",
+      "url": "https://www.ncleg.gov/enactedlegislation/statutes/html/bysection/chapter_20/gs_20-141.html"
+    },
+    {
+      "id": "traffic-source-fl-traffic",
+      "title": "Florida Statutes 318.14(9), (11), 2026 edition",
+      "url": "https://www.flsenate.gov/Laws/Statutes/2026/318.14"
+    },
+    {
+      "id": "traffic-source-fl-insurance",
+      "title": "Florida Statutes 626.9541(1)(o)12",
+      "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0626/Sections/0626.9541.html"
+    },
+    {
+      "id": "traffic-source-usccr",
+      "title": "U.S. Commission on Civil Rights: Targeted Fines and Fees Against Communities of Color, 21 September 2017",
+      "url": "https://usccr.gov/reports/2017/targeted-fines-and-fees-against-communities-color"
+    },
+    {
+      "id": "traffic-source-doj",
+      "title": "DOJ: Investigation of the Ferguson Police Department, 4 March 2015",
+      "url": "https://www.justice.gov/crt/about/spl/documents/ferguson_findings_3-4-15.pdf"
+    },
+    {
+      "id": "traffic-source-dotd",
+      "title": "Louisiana DOTD: I-10 widening from Henderson to the Atchafalaya Basin Bridge, 19 January 2021",
+      "url": "https://wwwapps.dotd.la.gov/administration/announcements/announcement.aspx?key=25623"
+    },
+    {
+      "id": "traffic-source-henderson",
+      "title": "Town of Henderson, Louisiana: audited financial statements, year ended 30 June 2025",
+      "url": "https://app.lla.la.gov/publicreports.nsf/0/c8eef98b7d08e0a086258d8d0075fc24/%24file/00009a17.pdf#page=40",
+      "pdf_page": 40,
+      "printed_page": 37,
+      "checked_copy_sha256": "94197cdb20f640a6c81c8daf6872faab422ba2df4303ffe9cc2b6bebd4ed4a7c"
+    },
+    {
+      "id": "traffic-source-la-statute",
+      "title": "Louisiana R.S. 32:266",
+      "url": "https://www.legis.la.gov/legis/Law.aspx?d=670625"
+    },
+    {
+      "id": "traffic-source-grapevine-pay",
+      "title": "Grapevine Municipal Court: Online Payments",
+      "url": "https://grapevinetexas.gov/724/Online-Payments"
+    },
+    {
+      "id": "traffic-source-grapevine-school",
+      "title": "Grapevine Municipal Court: Defensive Driving",
+      "url": "https://www.grapevinetexas.gov/326/Defensive-Driving"
+    },
+    {
+      "id": "traffic-source-grapevine-deferral",
+      "title": "Grapevine Municipal Court: Deferred Disposition",
+      "url": "https://grapevinetexas.gov/930/Deferred-Disposition"
+    }
+  ],
+  "sources_checked": "2026-10-21",
+  "publication": {
+    "repository": "johnrigler/commons",
+    "state": "Prepared public reading edition and ledger reference",
+    "signature": null,
+    "ipfs_pin_receipt": null,
+    "chain": "litecoin",
+    "transaction_id": null
+  },
+  "ledger_preparation": {
+    "schema": "commons/litecoin-announcement/1",
+    "path": "../../examples/traffic-tickets.draft.json",
+    "state": "Draft; address amounts, funding, fees, signing, and broadcast remain to be completed in Chisel"
+  }
+}

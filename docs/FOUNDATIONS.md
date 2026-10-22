@@ -63,7 +63,7 @@ no substantive exemption rule or tax guidance has been drafted or verified.
 | Deterrence through administrative burden | Procedural burden across institutions and subject areas. | Reusable explanation in the current reading edition. |
 | Unsupported rent acceleration | Real Estate and procedural burden; credit-reporting consequences where relevant. | Reusable reading draft exists; individual evidence remains separate. |
 | Parsonage Exemption | Real Estate and Religion. | Proposed intersection article; scope and sources not yet selected. |
-| Traffic tickets and insurance consequences | Traffic enforcement, insurance and procedural burden. | Proposed sludge case/article area; John's documents and jurisdiction not yet supplied. |
+| Traffic tickets and insurance consequences | Traffic enforcement, insurance, municipal finance and procedural burden. | [Three connected research articles](../reading/traffic/) now exist. Grapevine, Texas, is identified for one of John's tickets; the actual case documents remain separate. |
 | Veterans dealing with the VA | Veterans' affairs and procedural burden. | Proposed case/article area; identify the particular decision and procedure. |
 
 These connections describe relevance, not a finding about an individual case.
@@ -78,8 +78,11 @@ excessive or unjustified procedural friction. It can support articles or cases
 about credit reporting, traffic tickets or VA processes without becoming the
 single root of all Commons material.
 
-The traffic-ticket inquiry examines which burdens discourage a challenge and
-how record or insurance consequences depend on resources. Arizona diversion in
+The [traffic-ticket branch](../reading/traffic/) examines which burdens
+discourage a challenge, how record or insurance consequences depend on
+resources, and how municipalities rely on enforcement revenue. It records
+Rigler's additional $50 lawyer payment and the outcome he reports, alongside
+Grapevine and other primary-source examples. Arizona diversion in
 the [reading companion](../reading/assistance/) documents one mechanism; it does
 not identify John's case or establish uniform purposes or rules for traffic
 systems. Insurers' downstream use of risk information differs from credit

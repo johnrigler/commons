@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Commons — Traffic Tickets, Insurance, and Municipal Revenue</title>
+  <meta name="description" content="Connected Commons articles on the ticket as a toll, insurance records, municipal dependence on fines, and John Rigler's account of an extra fifty-dollar lawyer payment.">
+  <style>
+    :root { color-scheme: light; --ink: #242624; --muted: #60655f; --rule: #cdd0c7; --accent: #86503c; }
+    * { box-sizing: border-box; }
+    html { background: #eeeee8; color: var(--ink); }
+    body { margin: 0; padding: 36px 18px; font-family: Georgia, 'Times New Roman', serif; }
+    article { max-width: 840px; margin: 0 auto 28px; padding: 48px 70px 40px; background: #fffef9; border: 1px solid #dbddd3; scroll-margin-top: 20px; }
+    a { color: #77432f; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    .reading-links { margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--rule); font: 13px/1.8 Arial, sans-serif; }
+    .reading-links a { display: block; width: fit-content; }
+    .return-link { font: 13px/1.5 Arial, sans-serif; }
+    .source-note { margin-top: 25px; padding-top: 14px; border-top: 1px solid var(--rule); font: 13px/1.55 Arial, sans-serif; color: var(--muted); }
+    .masthead { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; padding-bottom: 16px; border-bottom: 2px solid var(--ink); font-family: Arial, sans-serif; }
+    .brand { font-size: 16px; letter-spacing: .16em; font-weight: 700; text-transform: uppercase; }
+    .status { color: var(--muted); font-size: 12px; }
+    .eyebrow { margin: 34px 0 13px; font: 700 12px/1.5 Arial, sans-serif; color: var(--accent); letter-spacing: .11em; text-transform: uppercase; }
+    h1 { margin: 0 0 19px; font-size: clamp(36px, 6vw, 50px); font-weight: 400; line-height: 1.06; letter-spacing: -.035em; }
+    .deck { margin: 0 0 28px; font-size: 21px; line-height: 1.45; color: #454b44; }
+    p { margin: 0 0 17px; font-size: 17px; line-height: 1.66; }
+    h2 { margin: 29px 0 12px; font: 700 15px/1.4 Arial, sans-serif; }
+    .principle { margin: 26px 0; padding: 17px 0 17px 21px; border-left: 3px solid var(--accent); font-size: 21px; line-height: 1.45; }
+    .transition { border-top: 1px solid var(--rule); margin-top: 30px; padding-top: 23px; }
+    .transition h2 { margin-top: 0; }
+    footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 9px 20px; border-top: 1px solid var(--rule); margin-top: 30px; padding-top: 14px; color: var(--muted); font: 12px/1.5 Arial, sans-serif; }
+    @media (max-width: 600px) {
+      body { padding: 0; }
+      article { border: 0; padding: 27px 24px 30px; }
+      .masthead { gap: 12px; }
+      .brand { font-size: 14px; }
+      .status { font-size: 11px; }
+      .eyebrow { margin-top: 27px; }
+      p { font-size: 17px; }
+    }
+    .tools { max-width: 840px; margin: 0 auto 20px; padding: 20px 24px; background: #fffef9; border: 1px solid var(--rule); font: 14px/1.5 Arial, sans-serif; }
+    .tools summary { cursor: pointer; font-weight: 700; }
+    .fields { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 16px; }
+    label { display: block; font-weight: 700; }
+    input, select, button { font: inherit; }
+    input, select { display: block; width: 100%; margin-top: 5px; padding: 9px; border: 1px solid #9b9f95; background: white; color: var(--ink); border-radius: 3px; }
+    button { cursor: pointer; padding: 8px 12px; border: 1px solid #9b9f95; border-radius: 3px; background: white; color: var(--ink); }
+    .print-tools { display: flex; flex-wrap: wrap; align-items: end; gap: 12px; margin-top: 16px; }
+    .print-tools label { flex: 1; min-width: 190px; }
+    .tools .hint { font: 13px/1.5 Arial, sans-serif; margin: 13px 0 0; color: var(--muted); }
+    .term-link, .party { font-weight: 700; }
+    .party { text-decoration-style: dotted; }
+    .fields input:focus, .fields select:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+    @media (max-width: 600px) { .tools { margin: 12px; padding: 16px; } .fields { grid-template-columns: 1fr; } }
+    @page { size: Letter; margin: .7in .75in; }
+    @media print {
+      html, body { background: white; }
+      .screen-only { display: none !important; }
+      body[data-print="request"] article:not(#request) { display: none; }
+      a.party { text-decoration: none; }
+      .reading-links a { font-weight: 700; }
+      body { padding: 0; }
+      article { max-width: none; margin: 0; padding: 0; border: 0; background: white; }
+      article + article { break-before: page; }
+      a { color: inherit; }
+      .return-link { display: none; }
+      h1 { font-size: 29pt; }
+      p { font-size: 11pt; line-height: 1.5; margin-bottom: 10pt; orphans: 3; widows: 3; }
+      .deck { font-size: 14pt; margin-bottom: 18pt; }
+      .principle { font-size: 14pt; margin: 16pt 0; padding-top: 8pt; padding-bottom: 8pt; }
+      h2 { break-after: avoid; margin-top: 17pt; }
+      .eyebrow { margin-top: 21pt; }
+      footer { break-inside: avoid; }
+    }
+  
+.byline, .scope-note { font: 13px/1.6 Arial, sans-serif; color: var(--muted); }
+.scope-note { padding: 14px 16px; border-left: 2px solid var(--rule); background: #f6f5ef; }
+sup { font: 11px/1 Arial, sans-serif; white-space: nowrap; }
+table { width: 100%; border-collapse: collapse; margin: 18px 0 22px; font: 15px/1.55 Arial, sans-serif; }
+th, td { text-align: left; vertical-align: top; padding: 12px; border-bottom: 1px solid var(--rule); }
+thead { background: #eeeee6; }
+tbody th { width: 28%; font-size: 14px; }
+.money-table td { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sources { padding-left: 23px; font: 15px/1.6 Arial, sans-serif; }
+.sources li { padding-left: 3px; margin-bottom: 15px; overflow-wrap: anywhere; }
+.tools { display: flex; flex-wrap: wrap; gap: 9px 18px; align-items: center; }
+[id] { scroll-margin-top: 20px; }
+@media (max-width: 600px) {
+  th, td { padding: 10px 8px; }
+  table { font-size: 14px; }
+  tbody th { width: 31%; font-size: 13px; }
+  .masthead { align-items: flex-start; }
+}
+@media print {
+  table { font-size: 9.5pt; }
+  tbody th { font-size: 9pt; }
+  tr { break-inside: avoid; }
+  th, td { padding: 8pt; }
+  .byline, .scope-note { font-size: 8.5pt; }
+  .sources { font-size: 9.5pt; line-height: 1.5; }
+  .sources li { break-inside: avoid; margin-bottom: 9pt; }
+  sup { font-size: 8pt; }
+}
+</style>
+</head>
+<body>
+  <nav class="tools screen-only" aria-label="Read and print this branch">
+    <a href="../../index.html">Commons portal</a>
+    <a href="#traffic-toll">The ticket as a toll</a>
+    <a href="#traffic-insurance">The insurance record</a>
+    <a href="#traffic-revenue">Municipal funding</a>
+    <a href="#traffic-sources">Sources</a>
+    <button id="print-button" type="button">Print / save PDF</button>
+  </nav>
+  <article id="traffic-toll" aria-labelledby="toll-title">
+    <header>
+      <div class="masthead"><span class="brand">Commons</span><span class="status">Unsigned research draft</span></div>
+      <p class="eyebrow">Traffic enforcement · Access to a better outcome</p>
+      <h1 id="toll-title">The ticket as a toll</h1>
+      <p class="deck">Why should a motorist have to pay an intermediary to obtain a lower fine and avoid an insurance consequence?</p>
+      <p class="byline">John Rigler · 21 October 2026 · AI-assisted research and drafting</p>
+    </header>
+
+    <h2>The extra fifty dollars</h2>
+    <p>John Rigler recalls receiving a speeding ticket, paying a lawyer an additional $50, and having that lawyer speak to the court. He says the court then reduced his fine and removed the insurance consequence. He believes he probably came out ahead financially. He also recalls using the language of a toll before a judge.</p>
+    <p>Rigler identifies Grapevine, Texas, as one city where he received a ticket. Grapevine's own court website warns that paying online may produce a conviction affecting the driving record, while other options may be available. Its defensive-driving page describes a qualifying route to dismissal without the citation being reported to the driving record.<sup><a href="#traffic-source-grapevine-pay">[14]</a> <a href="#traffic-source-grapevine-school">[15]</a></sup></p>
+    <p>The $50 was the lawyer's fee, separate from the ticket payment. The question raised by this account is straightforward: if a lower fine and a different insurance outcome were available, why did reaching them require paying someone who knew how to approach the court?</p>
+    <p class="scope-note">Account basis: Rigler's statements and clarification recorded 21 October 2026. Grapevine is identified for one ticket. The incident date, docket, original and reduced amounts, and legal form of the lawyer-negotiated disposition remain to be documented. This records his account without supplying a quotation from the judge or attributing an endorsement to the court.</p>
+
+    <h2>What the extra payment changes</h2>
+    <p>If the fine reduction exceeded $50 and other charges were unchanged, the lawyer's fee would have reduced the immediate total cost. Any avoided insurance increase would be a separate benefit. The missing amounts prevent calculating Rigler's actual saving, but do not erase the question about access.</p>
+    <p>A lawyer can supply advice, representation, and knowledge of local procedure. Those are real services. The structural criticism concerns a routine outcome becoming easier to obtain through paid access, while a person who simply follows the payment instructions can receive a more expensive or more damaging result.</p>
+    <p>North Carolina's courts explicitly distinguish paying a charge as issued from requesting a reduction. They also describe situations in which a person may negotiate directly with a prosecutor or request an online reduction.<sup><a href="#traffic-source-nc-courts">[1]</a></sup> This shows that a lawyer is not universally required. It also shows why the available routes and their different consequences should be explained before a person chooses.</p>
+
+    <h2>Why call it a toll?</h2>
+    <p>The toll analogy describes an economic function: money is collected, the case is closed or softened, and the motorist continues without the full downstream consequence associated with the original allegation. The alleged past driving has not changed. The payment, procedure, and resulting legal record have.</p>
+    <p>The companion article, <a class="term-link" href="#traffic-insurance">What the insurer gets to see</a>, documents several mechanisms. Austin, for example, publishes a deferral option without a driving course that costs $50 more than its option with a course.<sup><a href="#traffic-source-austin-options">[2]</a></sup> That is a court fee difference, entirely separate from the $50 lawyer's fee in Rigler's recollection.</p>
+    <p>Education, a clean-driving period, and limits on eligibility can serve future safety goals. A fee or negotiated record outcome is not, by itself, evidence that the driver became safer. The relevant policy question is what the system is measuring, what the payment purchases, and whether comparable drivers can obtain comparable treatment.</p>
+
+    <h2>The price of challenging the price</h2>
+    <p>A motorist may compare the ticket with lost work, travel, waiting, uncertainty, a lawyer's fee, and a possible insurance increase. Those costs can make accepting an unfavorable offer rational even when another outcome is available. This connects the ticket to <a href="../../index.html#item=administrative-burden">deterrence through administrative burden</a>: the process itself can discourage a person from seeking a substantive answer.</p>
+    <p><a class="term-link" href="#traffic-revenue">When citations fund the town</a> examines the institution's side of that exchange. The toll argument becomes stronger where records show that enforcement receipts are important to the operating budget. It remains an argument to examine through local offers, revenue records, and actual dispositions.</p>
+
+    <nav class="reading-links" aria-label="Connected Commons articles">
+      <a href="#traffic-insurance">Next: What the insurer gets to see</a>
+      <a href="#traffic-revenue">Related: When citations fund the town</a>
+      <a href="../../index.html#item=administrative-burden">Foundation connection: Administrative burden</a>
+    </nav>
+    <footer><span>Commons · Traffic tickets</span><span>Argument and attributed recollection</span></footer>
+  </article>
+  <article id="traffic-insurance" aria-labelledby="insurance-title">
+    <header>
+      <div class="masthead"><span class="brand">Commons</span><span class="status">Unsigned research draft</span></div>
+      <p class="eyebrow">Traffic enforcement · Insurance · Official records</p>
+      <h1 id="insurance-title">What the insurer gets to see</h1>
+      <p class="deck">A ticket, a conviction, a license point, a visible record, and an insurance surcharge are different things.</p>
+      <p class="byline">John Rigler · Sources checked 21 October 2026</p>
+    </header>
+
+    <p>A promise that a ticket will not affect insurance can describe several legal arrangements. Some restrict disclosure. Others change the final charge, dismiss the case after conditions are completed, or restrict what an insurer can do with an entry. A police officer's explanation needs to be matched to the court's actual disposition and the applicable recording and insurance rules.</p>
+
+    <h2>Five documented examples in four states</h2>
+    <table>
+      <thead><tr><th scope="col">Jurisdiction and route</th><th scope="col">Documented effect</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Grapevine, Texas<br>Defensive driving and deferral</th><td>The court says timely completion of its approved defensive-driving process results in dismissal and no citation reported to the driving record. It separately offers eligible deferred disposition; its online route requires payment in full when requested. Simply paying online can produce a conviction affecting the record.<sup><a href="#traffic-source-grapevine-pay">[14]</a> <a href="#traffic-source-grapevine-school">[15]</a> <a href="#traffic-source-grapevine-deferral">[16]</a></sup></td></tr>
+        <tr><th scope="row">California<br>Eligible traffic school</th><td>The DMV says an eligible one-point citation can remain on the driving record while not being reported to the insurer. San Mateo Superior Court describes confidentiality after eligible course completion and requires ticket payment, a court administrative fee, and school tuition.<sup><a href="#traffic-source-ca-dmv">[3]</a> <a href="#traffic-source-ca-court">[4]</a></sup></td></tr>
+        <tr><th scope="row">Austin, Texas<br>Deferred disposition</th><td>The court postpones judgment and dismisses the case if the defendant completes the conditions. Its published choices include deferrals with and without a driving course; the no-course choice costs $50 more. Eligibility, fees, and the remaining conditions still apply.<sup><a href="#traffic-source-austin-options">[2]</a> <a href="#traffic-source-austin-deferral">[5]</a></sup> A particular insurance outcome requires checking the resulting record and applicable policy rules.</td></tr>
+        <tr><th scope="row">North Carolina<br>Reduced charge</th><td>State law permits specified speeding charges to be resolved as the lesser offense of improper equipment. That offense is recorded as “Improper equipment - Speedometer,” and the statute bars license points and an insurance surcharge for it. Eligibility restrictions apply.<sup><a href="#traffic-source-nc-statute">[6]</a></sup> This is a recorded different offense, rather than a universal promise to hide a ticket.</td></tr>
+        <tr><th scope="row">Florida<br>Eligible driver-improvement election</th><td>Section 318.14(9) provides for withholding adjudication and no license points after the qualifying school election. Section 626.9541(1)(o)12 bars specified adverse insurance action because of such an infraction, with an exception for an accident causing an insurer loss due to the insured's fault.<sup><a href="#traffic-source-fl-traffic">[7]</a> <a href="#traffic-source-fl-insurance">[8]</a></sup> This includes a restriction on insurance use, which is a different mechanism from confidentiality.</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Is information being withheld?</h2>
+    <p>In the California example, restricting what the insurer sees is an express part of the system. In North Carolina, the final offense is recorded and its insurance consequence is limited by law. Florida separately limits insurance action under the stated conditions. These distinctions matter when assessing the claim that authorities are withholding information from insurers.</p>
+    <p>The sharper criticism is that an insurance-facing history can reflect procedural choices, eligibility, education, negotiation, and financial resources as well as alleged driving conduct. The relevant record is produced by a legal process. It is not an unfiltered account of everything that happened on the road.</p>
+
+    <h2>Who controls the outcome?</h2>
+    <p>Depending on the jurisdiction, the police issue the citation; a prosecutor may negotiate a charge; a court enters or defers judgment; the licensing agency applies record and point rules; and insurance law and the policy determine downstream use. The court's written order and the resulting record identify what actually changed. The original citation, payment receipt, and an insurer's later premium notice answer different questions.</p>
+    <p>The examples establish that these arrangements exist across multiple jurisdictions. They do not count how many American cities use each mechanism. Nor do they identify which mechanism applied in <a href="#traffic-toll">Rigler's account</a>. The current rules also do not establish the rules in force on the unidentified date of his ticket.</p>
+
+    <nav class="reading-links" aria-label="Connected Commons articles">
+      <a href="#traffic-toll">Argument: The ticket as a toll</a>
+      <a href="#traffic-revenue">Institutional incentives: When citations fund the town</a>
+      <a href="#traffic-sources">Primary sources and research scope</a>
+    </nav>
+    <footer><span>Commons · Traffic tickets</span><span>Mechanisms and jurisdictional scope</span></footer>
+  </article>
+  <article id="traffic-revenue" aria-labelledby="revenue-title">
+    <header>
+      <div class="masthead"><span class="brand">Commons</span><span class="status">Unsigned research draft</span></div>
+      <p class="eyebrow">Municipal finance · Highway enforcement · Institutional incentives</p>
+      <h1 id="revenue-title">When citations fund the town</h1>
+      <p class="deck">A government that depends on enforcement receipts has a financial interest in the activity that produces them.</p>
+      <p class="byline">John Rigler · Sources checked 21 October 2026</p>
+    </header>
+
+    <p>The concern about small-town speed traps has two connected parts. Motorists are asked to pay, often while facing record and insurance consequences. The government collecting the money may use fines and fees to support ordinary operations. Where an operating budget depends heavily on those receipts, fewer citations can become a fiscal problem.</p>
+
+    <h2>The incentive has been officially documented</h2>
+    <p>In its 2017 report, the U.S. Commission on Civil Rights identified government dependence on traffic citations as an incentive to issue more citations and fines, and warned that revenue goals can displace public safety.<sup><a href="#traffic-source-usccr">[9]</a></sup> This places the issue beyond a dispute about whether one driver deserved one ticket.</p>
+    <p>DOJ's 2015 Ferguson investigation documented a particular instance of police and municipal court practices driven by revenue generation. Its findings included unconstitutional practices, racial bias, and especially severe consequences for residents with little money.<sup><a href="#traffic-source-doj">[10]</a></sup> Those are findings about Ferguson in the investigated period, not an attribution of the same conduct to every town.</p>
+
+    <h2>A town's books show the scale</h2>
+    <p>Henderson, Louisiana, is in the I-10 corridor described by the state's transportation department.<sup><a href="#traffic-source-dotd">[11]</a></sup> Its audited General Fund budget comparison for the year ended June 30, 2025 reports the following actual amounts:<sup><a href="#traffic-source-henderson">[12]</a></sup></p>
+    <table class="money-table">
+      <thead><tr><th scope="col">General Fund item</th><th scope="col">Actual amount</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Fines and forfeitures revenue</th><td>$2,117,485</td></tr>
+        <tr><th scope="row">Total revenue</th><td>$2,715,222</td></tr>
+        <tr><th scope="row">Public safety expenditure</th><td>$1,380,849</td></tr>
+      </tbody>
+    </table>
+    <p>Fines and forfeitures supplied about <strong>78.0% of General Fund revenue</strong>: $2,117,485 divided by $2,715,222. The denominator is this fund's revenue; other town funds and financing sources are separate. The fine category aggregates fines and forfeitures. Citation-level records would be needed to attribute receipts to speeding or I-10 stops. Public safety is the expenditure category shown in the schedule.</p>
+    <p>The audit establishes substantial financial reliance on the category. It does not establish whether a particular stop was justified, whether a quota existed, or how a specific insurance outcome was negotiated. Those questions require their own records.</p>
+
+    <h2>Follow the money on the interstate</h2>
+    <p>A driver's total payment can be divided among fines, court costs, state funds, local funds, and other recipients. Louisiana R.S. 32:266, for example, directs fines for interstate speeding of less than ten miles per hour over the limit, collected by the covered local bodies in jurisdictions without a home rule charter, to the Louisiana Highway Safety Fund.<sup><a href="#traffic-source-la-statute">[13]</a></sup> The jurisdiction and statutory allocation determine which institution retains the revenue.</p>
+    <p>That is why an interstate ticket's price and the local police budget should not simply be treated as the same number. The useful inquiry follows the actual remittances and retained amounts, then compares them with the budget, enforcement locations, and safety outcomes.</p>
+
+    <h2>What would establish a revenue-driven practice?</h2>
+    <p>Useful evidence includes adopted revenue targets, internal instructions about ticket production, fine and fee receipts, transfers to other bodies, and spending supported by retained collections. Citation locations and times can be compared with crash history, traffic volume, speed-limit changes, and enforcement priorities. Comparing similarly situated defendants' offers can show how money, representation, and procedure affect the result.</p>
+    <p>The Commons' argument is that routine ticket negotiation and financial dependence can make enforcement function like a toll on motorists, including people passing through a town. <a href="#traffic-toll">Rigler's extra lawyer payment</a> concerns access to a better outcome; this article concerns the recipient institution's incentive to collect. They are separate parts of the same inquiry.</p>
+
+    <nav class="reading-links" aria-label="Connected Commons articles">
+      <a href="#traffic-toll">Return to the argument: The ticket as a toll</a>
+      <a href="#traffic-insurance">Related: What the insurer gets to see</a>
+      <a href="../../index.html#item=administrative-burden">Shared mechanism: Administrative burden</a>
+      <a href="#traffic-sources">Primary sources and research scope</a>
+    </nav>
+    <footer><span>Commons · Traffic tickets</span><span>Fiscal dependence and evidence</span></footer>
+  </article>
+  <article id="traffic-sources" aria-labelledby="sources-title">
+    <header>
+      <div class="masthead"><span class="brand">Commons</span><span class="status">Research record</span></div>
+      <p class="eyebrow">Sources, scope, and the remaining case record</p>
+      <h1 id="sources-title">Sources for this branch</h1>
+      <p class="deck">The policy argument, the official rules, the financial evidence, and the personal account have different evidentiary roles.</p>
+    </header>
+    <p class="byline">Checked 21 October 2026. Rules and fees are jurisdiction-specific and may change. These sources document the examples identified in the articles.</p>
+    <ol class="sources">
+      <li id="traffic-source-nc-courts"><a href="https://www.nccourts.gov/help-topics/traffic-and-vehicles/traffic-violations">North Carolina Judicial Branch: Traffic Violations</a>. Paying as charged, requests for reduced charges, representation, and the reporting of final dispositions.</li>
+      <li id="traffic-source-austin-options"><a href="https://www.austintexas.gov/municipal-court/ways-request-deferral-moving-violation">Austin Municipal Court: Ways to Request a Deferral for a Moving Violation</a>. Course and no-course choices and the $50 difference between those court options.</li>
+      <li id="traffic-source-ca-dmv"><a href="https://www.dmv.ca.gov/portal/handbook/california-driver-handbook/laws-and-rules-of-the-road-cont2/">California DMV: Driver's Handbook, Traffic Violator School</a>. Eligible citation remaining on a record while not reported to the insurer.</li>
+      <li id="traffic-source-ca-court"><a href="https://sanmateo.courts.ca.gov/divisions/traffic/how-take-care-your-traffic-citation-ticket">San Mateo Superior Court: How to Take Care of Your Traffic Citation / Ticket</a>. Traffic school, confidentiality, court charges, and tuition.</li>
+      <li id="traffic-source-austin-deferral"><a href="https://www.austintexas.gov/municipal-court/apply-municipal-court-deferral">Austin Municipal Court: Apply for a Municipal Court Deferral</a>. Postponed judgment, eligibility, conditions, and dismissal after successful completion.</li>
+      <li id="traffic-source-nc-statute"><a href="https://www.ncleg.gov/enactedlegislation/statutes/html/bysection/chapter_20/gs_20-141.html">North Carolina G.S. 20-141(o)</a>. Improper equipment as a lesser offense, the record entry, eligibility limitation, and the prohibition on license points and an insurance surcharge.</li>
+      <li id="traffic-source-fl-traffic"><a href="https://www.flsenate.gov/Laws/Statutes/2026/318.14">Florida Statutes 318.14(9), (11), 2026 edition</a>. Qualifying school election, withheld adjudication, points, and conviction status.</li>
+      <li id="traffic-source-fl-insurance"><a href="https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&amp;URL=0600-0699/0626/Sections/0626.9541.html">Florida Statutes 626.9541(1)(o)12</a>. Insurance-use restriction and the at-fault-loss exception.</li>
+      <li id="traffic-source-usccr"><a href="https://usccr.gov/reports/2017/targeted-fines-and-fees-against-communities-color">U.S. Commission on Civil Rights: Targeted Fines and Fees Against Communities of Color, 21 September 2017</a>. See also <a href="https://www.usccr.gov/files/pubs/docs/Statutory_Enforcement_Report2017.pdf">the report</a>, printed page 72, findings on conflicts of interest and traffic-revenue dependence.</li>
+      <li id="traffic-source-doj"><a href="https://www.justice.gov/crt/about/spl/documents/ferguson_findings_3-4-15.pdf">DOJ: Investigation of the Ferguson Police Department, 4 March 2015</a>. Revenue-driven enforcement and court practices; see the opening summary and section III. <a href="https://www.justice.gov/archives/opa/pr/justice-department-announces-findings-two-civil-rights-investigations-ferguson-missouri">Official findings announcement</a>.</li>
+      <li id="traffic-source-dotd"><a href="https://wwwapps.dotd.la.gov/administration/announcements/announcement.aspx?key=25623">Louisiana DOTD: I-10 widening from Henderson to the Atchafalaya Basin Bridge, 19 January 2021</a>. Geographic context only.</li>
+      <li id="traffic-source-henderson"><a href="https://app.lla.la.gov/publicreports.nsf/0/c8eef98b7d08e0a086258d8d0075fc24/%24file/00009a17.pdf#page=40">Town of Henderson, Louisiana: audited financial statements, year ended 30 June 2025</a>. General Fund Budgetary Comparison Schedule, printed page 37 / PDF page 40, actual column. Figures extracted and visually checked against the table. The 78.0% share is calculated here.</li>
+      <li id="traffic-source-la-statute"><a href="https://www.legis.la.gov/legis/Law.aspx?d=670625">Louisiana R.S. 32:266</a>. Disposition of fines for certain local interstate-speeding citations.</li>
+      <li id="traffic-source-grapevine-pay"><a href="https://grapevinetexas.gov/724/Online-Payments">Grapevine Municipal Court: Online Payments</a>. Warning about conviction and record consequences, options before payment, and eligible deferral.</li>
+      <li id="traffic-source-grapevine-school"><a href="https://www.grapevinetexas.gov/326/Defensive-Driving">Grapevine Municipal Court: Defensive Driving</a>. Eligibility, court and record costs, required documentation, dismissal, and driving-record treatment.</li>
+      <li id="traffic-source-grapevine-deferral"><a href="https://grapevinetexas.gov/930/Deferred-Disposition">Grapevine Municipal Court: Deferred Disposition</a>. Online payment-in-full requirement, exclusions, and age-related course condition.</li>
+    </ol>
+    <h2>The individual record</h2>
+    <p>Rigler's account comes from his statements and clarifications in this discussion, recorded 21 October 2026, including his identification of Grapevine, Texas, for one ticket. No ticket, receipt, lawyer's invoice, docket, order, driving-record extract, or insurance notice was supplied for this branch. The $50 lawyer payment, the lawyer's court contact, the reduced fine, the removed insurance consequence, and the toll argument are attributed to him.</p>
+    <p>Later evidence can identify the court, date, original and final charge, exact amounts, disposition, and record treatment. Preserve that evidence in the individual Daisy case; publish selected material with its stated scope. A later supported edition should reference this one, preserving the history of what was known when.</p>
+    <p>The articles are unsigned editorial drafts. Their hashes identify exact versions. The edition record and prepared Litecoin announcement identify the material to be anchored; a transaction reference belongs in a later receipt after an actual broadcast.</p>
+    <p class="return-link"><a href="#traffic-toll">Return to The ticket as a toll</a> · <a href="../../index.html">Open the Commons portal</a></p>
+    <footer><span>Commons · Traffic tickets</span><span>Public sources and attributed account</span></footer>
+  </article>
+<script>document.getElementById('print-button').addEventListener('click', () => window.print());
+</script>
+</body>
+</html>

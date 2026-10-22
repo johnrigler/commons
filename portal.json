@@ -20,7 +20,11 @@
       "author": "John Rigler",
       "status": "Unsigned reading draft",
       "indexed": true,
-      "related": ["rent-acceleration", "administrative-burden", "prepare"]
+      "related": [
+        "rent-acceleration",
+        "administrative-burden",
+        "prepare"
+      ]
     },
     {
       "id": "rent-acceleration",
@@ -34,7 +38,10 @@
       "author": "John Rigler",
       "status": "Unsigned explanatory draft",
       "indexed": true,
-      "related": ["request", "administrative-burden"]
+      "related": [
+        "request",
+        "administrative-burden"
+      ]
     },
     {
       "id": "administrative-burden",
@@ -48,7 +55,14 @@
       "author": "John Rigler",
       "status": "Unsigned explanatory draft",
       "indexed": true,
-      "related": ["rent-acceleration", "request", "prepare"]
+      "related": [
+        "rent-acceleration",
+        "request",
+        "prepare",
+        "traffic-toll",
+        "traffic-insurance",
+        "traffic-revenue"
+      ]
     },
     {
       "id": "prepare",
@@ -62,7 +76,10 @@
       "author": "John Rigler",
       "status": "Unsigned procedural draft",
       "indexed": true,
-      "related": ["request", "assistance-record"]
+      "related": [
+        "request",
+        "assistance-record"
+      ]
     },
     {
       "id": "assistance-record",
@@ -76,7 +93,60 @@
       "author": "John Rigler",
       "status": "Blank template — no attestation made",
       "indexed": true,
-      "related": ["prepare", "request"]
+      "related": [
+        "prepare",
+        "request"
+      ]
+    },
+    {
+      "id": "traffic-toll",
+      "kind": "story",
+      "title": "The ticket as a toll",
+      "summary": "An extra $50 lawyer payment, a reduced fine, and removal of the insurance consequence: why should a better outcome require an intermediary?",
+      "related": [
+        "traffic-insurance",
+        "traffic-revenue",
+        "administrative-burden"
+      ],
+      "cid": "bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy",
+      "path": "reading/traffic/bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy.html",
+      "fragment": "traffic-toll",
+      "author": "John Rigler",
+      "status": "Unsigned research draft; attributed recollection and primary sources",
+      "indexed": true
+    },
+    {
+      "id": "traffic-insurance",
+      "kind": "explanation",
+      "title": "What the insurer gets to see",
+      "summary": "Grapevine and Austin, Texas, alongside California, North Carolina, and Florida: dismissal, different charges, confidentiality, points, and insurance-use rules.",
+      "related": [
+        "traffic-toll",
+        "traffic-revenue"
+      ],
+      "cid": "bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy",
+      "path": "reading/traffic/bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy.html",
+      "fragment": "traffic-insurance",
+      "author": "John Rigler",
+      "status": "Unsigned research draft; attributed recollection and primary sources",
+      "indexed": true
+    },
+    {
+      "id": "traffic-revenue",
+      "kind": "explanation",
+      "title": "When citations fund the town",
+      "summary": "Municipal dependence on enforcement receipts, a Louisiana General Fund audit, federal findings, and the financial incentives around highway tickets.",
+      "related": [
+        "traffic-toll",
+        "traffic-insurance",
+        "administrative-burden"
+      ],
+      "cid": "bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy",
+      "path": "reading/traffic/bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy.html",
+      "fragment": "traffic-revenue",
+      "author": "John Rigler",
+      "status": "Unsigned research draft; attributed recollection and primary sources",
+      "indexed": true
     }
   ]
 }

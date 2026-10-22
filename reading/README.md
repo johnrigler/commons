@@ -25,6 +25,11 @@ truth or the PDF's legal effect.
 
 ## Walk through the process
 
+The [traffic-ticket branch](traffic/) is a separate set of connected articles:
+the ticket as a toll, what reaches an insurer, and municipal dependence on
+citation revenue. It connects to the administrative-burden explanation while
+preserving the original rent-dispute edition and its scope.
+
 The [preparation and assistance directory](assistance/) provides a separate
 three-page PDF: a self-service walkthrough, an optional blank credit-correspondence
 assistance record, and the shared structure for future traffic-ticket and VA cases.

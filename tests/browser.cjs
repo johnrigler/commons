@@ -7,6 +7,8 @@ const {chromium} = require(process.env.COMMONS_PLAYWRIGHT || 'playwright');
 const root = path.resolve(__dirname,'..');
 
 (async()=>{
+  const catalog=JSON.parse(await fs.readFile(path.join(root,'portal.json'),'utf8'));
+  const publishedCount=catalog.items.filter(item=>item.indexed).length;
   const server = http.createServer(async(req,res)=>{
     try {
       const pathname = decodeURIComponent(new URL(req.url,'http://localhost').pathname);
@@ -26,7 +28,7 @@ const root = path.resolve(__dirname,'..');
     page.on('request',req=>{if(!req.url().startsWith(origin))outbound.push(req.url());});
     await page.goto(origin);
     await page.locator('#portal-cards .portal-card').first().waitFor();
-    assert.equal(await page.locator('#portal-cards .portal-card').count(),5);
+    assert.equal(await page.locator('#portal-cards .portal-card').count(),publishedCount);
     assert.equal(await page.locator('#pinata-form').count(),0);
     await page.getByRole('button',{name:'Attestations',exact:true}).click();
     assert.ok(await page.locator('#portal-empty').isVisible());
@@ -61,7 +63,7 @@ const root = path.resolve(__dirname,'..');
     await page.locator('#portal-status').filter({hasText:'Saved in this browser.'}).waitFor();
     await page.goto(origin);
     await page.locator('#portal-cards .portal-card').first().waitFor();
-    assert.equal(await page.locator('#portal-cards .portal-card').count(),6);
+    assert.equal(await page.locator('#portal-cards .portal-card').count(),publishedCount+1);
     assert.equal(await page.getByRole('link',{name:'Synthetic private branch',exact:true}).count(),0);
     await page.getByRole('button',{name:'Attestations',exact:true}).click();
     assert.equal(await page.locator('#portal-cards .portal-card').count(),1);
@@ -78,7 +80,7 @@ const root = path.resolve(__dirname,'..');
     const mobile=await fresh.newPage();
     await mobile.goto(origin);
     await mobile.locator('#portal-cards .portal-card').first().waitFor();
-    assert.equal(await mobile.locator('#portal-cards .portal-card').count(),5);
+    assert.equal(await mobile.locator('#portal-cards .portal-card').count(),publishedCount);
     assert.ok(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
     if(process.env.COMMONS_SCREENSHOTS){
       await fs.mkdir(process.env.COMMONS_SCREENSHOTS,{recursive:true});
