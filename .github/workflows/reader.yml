@@ -16,10 +16,10 @@ jobs:
       - name: Install PHP CLI for publication checks
         run: |
           sudo apt-get update
-          sudo apt-get install -y php8.3-cli
+          sudo apt-get install -y php-cli
       - name: Check content, index behavior and frozen editions
         env:
-          SB_PHP: php8.3
+          SB_PHP: php
         run: node --test tests/core.mjs tests/portal.mjs tests/publication.mjs
       - name: Install development browser
         run: |
