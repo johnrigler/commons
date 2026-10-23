@@ -1,23 +1,23 @@
 {
   "title": "Commons - Debt Claims, Mediation, and the Burden Before Trial",
-  "author": "John Rigler",
-  "date": "2026-10-22",
+  "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+  "date": "2026-10-23",
   "status": "Unsigned AI-assisted research and editorial draft; no independent legal review recorded",
   "scope": "Attributed Tarrant County recollection, a published JP1 comparison, and current Texas primary-source research",
-  "base_commons_commit": "498a08d211971bf6b2449d408deb6260f29a5121",
+  "base_commons_commit": "91cf1dd5ffb0e09d311cc4e55bf968fa01be7a79",
   "artifacts": [
     {
-      "path": "bafkreie3rztadosu4sz26wn3md27jfw2v7zee3xh4a6wdrlvfza5s7f624.html",
+      "path": "bafkreihxy7g2va3ziymmxbxvxg7jpi272n7p6mm34xdcls5r5cdtwlog4a.html",
       "media_type": "text/html",
-      "sha256": "9b8e6601ba54e4b3af59bb60f5f496daaff2426ee7e03d61c5752e41d97cbed7",
-      "cid": "bafkreie3rztadosu4sz26wn3md27jfw2v7zee3xh4a6wdrlvfza5s7f624"
+      "sha256": "f7c7cdaa83794618cb86f5b9be97a35fd37eff319be5c625cbb1e8873b2dc6e0",
+      "cid": "bafkreihxy7g2va3ziymmxbxvxg7jpi272n7p6mm34xdcls5r5cdtwlog4a"
     }
   ],
   "articles": [
     {
       "id": "debt-recollection",
       "title": "Paying $1,000 to get past the process",
-      "cid": "bafkreie3rztadosu4sz26wn3md27jfw2v7zee3xh4a6wdrlvfza5s7f624",
+      "cid": "bafkreihxy7g2va3ziymmxbxvxg7jpi272n7p6mm34xdcls5r5cdtwlog4a",
       "fragment": "debt-recollection",
       "related": [
         "debt-default",
@@ -29,7 +29,7 @@
     {
       "id": "debt-default",
       "title": "A default risk before the trial",
-      "cid": "bafkreie3rztadosu4sz26wn3md27jfw2v7zee3xh4a6wdrlvfza5s7f624",
+      "cid": "bafkreihxy7g2va3ziymmxbxvxg7jpi272n7p6mm34xdcls5r5cdtwlog4a",
       "fragment": "debt-default",
       "related": [
         "debt-recollection",
@@ -40,18 +40,20 @@
     }
   ],
   "personal_account": {
-    "source": "John Rigler authoring conversation, recorded 2026-10-22",
+    "source": "Authoring conversation recorded 2026-10-22, corrected by intake/story00 on 2026-10-23",
     "status": "Attributed recollection; individual case documents not supplied",
     "location": {
       "county": "Tarrant",
       "state": "Texas",
       "precinct": null
     },
-    "lender_description": "Rigler thinks the lender was a micro-lender; identity unconfirmed",
+    "lender_description": "The author thinks the lender was a micro-lender; identity unconfirmed",
     "lawyer_fee_usd": 1000,
     "reported_sequence": [
       "Sued over a debt in what he describes as the lowest court",
-      "Directed to a pretrial session involving someone he understood to be a court-appointed mediator",
+      "Served a summons with a small canary-yellow note stapled to it, offering resolution outside court by calling the lawyers' collection phone number",
+      "Mediation was scheduled that day in the courtroom, with the judge and mediators present",
+      "The judge said those attending could trust the mediators",
       "Repeatedly said he did not want mediation",
       "Understood nonappearance could lead to default and could not obtain an opt-out while unrepresented",
       "Appeared in person to decline and told the judge he was there under duress",
@@ -59,7 +61,11 @@
       "Recalls that the case then went away"
     ],
     "reported_concerns": [
-      "Feared supplying facts to establish the claimant's case",
+      "Experienced the proposed discussion as assuming the claimant's records were correct and directing him toward payment arrangements",
+      "Saw no meaningful opportunity in that setting to challenge the records or the fundamentals of the claimant's case",
+      "Believed the mediator would lead him into acting as a witness against his own interests about documents prepared by someone absent from court",
+      "Interpreted this as giving the claimant's lawyers an extraordinary advantage",
+      "Understood the phone number on the canary-yellow note to be for debt collection",
       "Believed counsel could avoid his personal appearance",
       "Interpreted the added appearance as an opportunity to obtain default before trial"
     ],
@@ -72,7 +78,8 @@
       "Lawyer work, any separate debt payment, and final disposition"
     ],
     "case_documents_received": [],
-    "evidence_location": "Relevant private Daisy case; no case path supplied"
+    "evidence_location": "Relevant private Daisy case; no case path supplied",
+    "recollection_corrected": "2026-10-23"
   },
   "research_limitations": [
     "JP1 is a published comparison, not an identified court in the recollection",
@@ -115,5 +122,20 @@
     "schema": "commons/litecoin-announcement/1",
     "path": "../../examples/debt-mediation.draft.json",
     "state": "Draft; funding, amounts, fees, signing, and broadcast remain to be completed in Chisel"
-  }
+  },
+  "author_identity": {
+    "chain": "litecoin",
+    "network": "mainnet",
+    "address": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+    "status": "Author-supplied identity; cryptographic signature not supplied"
+  },
+  "correction_source": {
+    "path": "../../intake/story00",
+    "recorded": "2026-10-23",
+    "sha256": "4eb20b564028b35490ddcce8852b00d1f70e5908f6ac4ded2aa32fbbe79e743e",
+    "kind": "Author-supplied correction of recollection; not a case document"
+  },
+  "supersedes_documents": [
+    "bafkreie3rztadosu4sz26wn3md27jfw2v7zee3xh4a6wdrlvfza5s7f624"
+  ]
 }

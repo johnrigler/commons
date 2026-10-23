@@ -155,8 +155,20 @@ test('OP_RETURN handles the 75/76 boundary and counts UTF-8 bytes', async () => 
     await assert.rejects(TW.draft({ ...fields, message: 'é'.repeat(41) }), /80-byte/);
 });
 
+test('an author address is retained verbatim and checked without asserting a signature', async () => {
+    const address = 'LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb';
+    const fields = { name: address, transport: 'Commons', subject: 'Debt claims', message: 'Author correction' };
+    const value = await TW.draft(fields);
+    assert.equal(value.tags.find(tag => tag.role === 'name').kind, 'address');
+    assert.equal(value.outputs.find(output => output.role === 'name').address, address);
+    assert.equal(value.author_identity.address, address);
+    assert.match(value.author_identity.status, /signature not supplied/);
+    assert.equal(value.outputs.find(output => output.role === 'name').amountLitoshis, null);
+    await assert.rejects(TW.draft({ ...fields, name: address.slice(0, -1) + 'a' }), /checksum/);
+});
+
 test('included announcement files match the actual generator', async () => {
-    for (const name of ['commons-announcement.draft.json', 'ncs-rent-escalation.draft.json', 'traffic-tickets.draft.json', 'debt-mediation.draft.json', 'account-records.draft.json']) {
+    for (const name of ['commons-announcement.draft.json', 'ncs-rent-escalation.draft.json', 'traffic-tickets.draft.json', 'debt-mediation.draft.json', 'commons-arguments.draft.json', 'account-records.draft.json']) {
         const value = JSON.parse(await readFile(new URL('../examples/' + name, import.meta.url), 'utf8'));
         const tags = Object.fromEntries(value.tags.map(tag => [tag.role, tag.phrase]));
         assert.deepEqual(await TW.draft({ ...tags, message: value.message.text, prefixes: value.roleProfile, includeCommons: Boolean(value.commonsIndex) }), value);

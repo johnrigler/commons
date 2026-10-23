@@ -294,6 +294,10 @@ Commons makes its default role mapping explicit:
 
 These are configurable Commons defaults. They do not claim that Chisel's
 existing A/B/C semantic parser already recognizes this chain-specific mapping.
+The name field also accepts a Litecoin mainnet P2PKH address directly. Its
+version and checksum are checked, and the address is retained verbatim rather
+than encoded as a word address. Draft metadata identifies it as an author-supplied
+identity; this does not establish a cryptographic signature.
 Chisel also uses `LLx` plus 16 hexadecimal digits for sticker IDs; that particular
 shape should not be used as an entity label without coordinating the reader.
 The exported draft records the chosen role profile alongside each address.

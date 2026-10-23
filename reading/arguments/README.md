@@ -4,6 +4,10 @@ The current Commons argument collection consolidates the debt-record, ownership,
 admission, representation, and traffic recollection branches into seven general
 articles and one adaptable request. The articles lead with institutional
 mechanisms and published research rather than an individual's case history.
+The court-process article also includes the author's $1,000 mediation
+recollection, corrected from `../../intake/story00` on 23 October 2026, and links
+the complete account. Revised bylines and edition authorship use the supplied
+Litecoin address `LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb`; no signature is asserted.
 
 | Current article | Entry ID |
 | --- | --- |

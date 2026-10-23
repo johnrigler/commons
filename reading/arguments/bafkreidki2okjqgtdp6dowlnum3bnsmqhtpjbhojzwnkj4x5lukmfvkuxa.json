@@ -1,0 +1,290 @@
+{
+  "title": "Commons - The Cost of Challenging a Claim",
+  "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+  "date": "2026-10-23",
+  "status": "Unsigned AI-assisted research and editorial draft; no independent legal review recorded",
+  "scope": "Seven general arguments and an adaptable request concerning dispute costs, debt evidence and procedure, rental balances, credit reporting, and traffic-enforcement incentives",
+  "base_commons_commit": "91cf1dd5ffb0e09d311cc4e55bf968fa01be7a79",
+  "artifacts": [
+    {
+      "path": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze.html",
+      "media_type": "text/html",
+      "sha256": "a31ca66b3e6984d3f33352ce6d71cc78ec9a18fca02d2b55ab95372727b4c7c9",
+      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze"
+    }
+  ],
+  "articles": [
+    {
+      "id": "administrative-burden",
+      "title": "Deterrence through administrative burden",
+      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
+      "fragment": "administrative-burden",
+      "related": [
+        "records-proof",
+        "debt-default",
+        "rent-acceleration",
+        "credit-reporting",
+        "traffic-insurance",
+        "traffic-revenue",
+        "patterns"
+      ]
+    },
+    {
+      "id": "records-proof",
+      "title": "A debt claim needs a traceable account",
+      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
+      "fragment": "records-proof",
+      "related": [
+        "debt-default",
+        "rent-acceleration",
+        "credit-reporting",
+        "administrative-burden"
+      ]
+    },
+    {
+      "id": "debt-default",
+      "title": "When procedure decides a debt claim",
+      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
+      "fragment": "debt-default",
+      "related": [
+        "records-proof",
+        "administrative-burden",
+        "traffic-insurance"
+      ]
+    },
+    {
+      "id": "rent-acceleration",
+      "title": "Unsupported rent acceleration",
+      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
+      "fragment": "rent-acceleration",
+      "related": [
+        "records-proof",
+        "credit-reporting",
+        "administrative-burden",
+        "request"
+      ]
+    },
+    {
+      "id": "credit-reporting",
+      "title": "Credit reporting as collection pressure",
+      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
+      "fragment": "credit-reporting",
+      "related": [
+        "records-proof",
+        "rent-acceleration",
+        "administrative-burden",
+        "request"
+      ]
+    },
+    {
+      "id": "traffic-insurance",
+      "title": "The price of a different traffic record",
+      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
+      "fragment": "traffic-insurance",
+      "related": [
+        "traffic-revenue",
+        "administrative-burden",
+        "debt-default"
+      ]
+    },
+    {
+      "id": "traffic-revenue",
+      "title": "When citations fund the town",
+      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
+      "fragment": "traffic-revenue",
+      "related": [
+        "traffic-insurance",
+        "administrative-burden"
+      ]
+    },
+    {
+      "id": "request",
+      "title": "Request the basis of a reported balance",
+      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
+      "fragment": "request",
+      "related": [
+        "rent-acceleration",
+        "credit-reporting",
+        "records-proof",
+        "prepare"
+      ]
+    }
+  ],
+  "consolidated_entries": {
+    "debt-admissions": "debt-default",
+    "debt-ownership": "records-proof",
+    "records-recollection": "records-proof",
+    "debt-recollection": "debt-default",
+    "traffic-toll": "traffic-insurance"
+  },
+  "supersedes_documents": [
+    "bafkreicu3dwh77loihteozbsd4obycblqe24bw3iwdrcyzxkjealctmknq",
+    "bafkreigcjqc3k7sfbxvfrkapd4a4jtudy5ylc3a55o4zhmf3vp6qtc3b6u",
+    "bafkreie3rztadosu4sz26wn3md27jfw2v7zee3xh4a6wdrlvfza5s7f624",
+    "bafkreidpzcdiu777w4uy4jzr7reij3af5etwpybf6n76dabcc5mh7rdtka",
+    "bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy",
+    "bafkreie5hacpyhsmg4o3ymzlyzjk2yrx7pgnejfdlm5vikmews3mpn7jmy",
+    "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke"
+  ],
+  "sources_checked": "2026-10-22",
+  "sources": [
+    {
+      "id": "argument-source-burden",
+      "url": "https://www.rsfjournal.org/content/9/5/1",
+      "description": "Herd, Hoynes, Michener, and Moynihan, “Administrative Burden as a Mechanism of Inequality in Policy Implementation,” RSF 9(5), 2023 . Framework of learning, compliance, and psychological costs in public services. Its application to these dispute processes is editorial analysis."
+    },
+    {
+      "id": "argument-source-sludge",
+      "url": "https://hls.harvard.edu/bibliography/sludge-audits/",
+      "description": "Cass R. Sunstein, “Sludge Audits,” 2020; author bibliography and abstract . Auditing excessive procedural friction and its costs."
+    },
+    {
+      "id": "argument-source-ftc-buying",
+      "url": "https://www.ftc.gov/sites/default/files/documents/reports/structure-and-practices-debt-buying-industry/debtbuyingreport.pdf",
+      "description": "The Structure and Practices of the Debt Buying Industry , FTC, January 2013 . Executive summary; printed pages 34–36 and Table 9. The 12% documentation figure concerns the subset of accounts bought in March–August 2009, not current litigation success or the share of debts that were invalid."
+    },
+    {
+      "id": "argument-source-pew",
+      "url": "https://www.pew.org/en/research-and-analysis/reports/2020/05/how-debt-collectors-are-transforming-the-business-of-state-courts",
+      "description": "How Debt Collectors Are Transforming the Business of State Courts , Pew Charitable Trusts, 6 May 2020 . Research review, methods, representation, and default findings. Jurisdictions and study periods vary; associations do not isolate the causal effect of representation."
+    },
+    {
+      "id": "argument-source-evidence",
+      "url": "https://www.txcourts.gov/media/1463074/texas-rules-of-evidence-updated-with-amendments-effective-07022026.pdf",
+      "description": "Texas Rules of Evidence, effective 2 July 2026 . Rules 801(e)(2)(A), 803(6), and 902(10). Foundation and party-statement rules, with their conditions; relevance and other admissibility requirements remain separate."
+    },
+    {
+      "id": "argument-source-civil",
+      "url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf",
+      "description": "Texas Rules of Civil Procedure, official compilation checked 22 October 2026 . Rules 93(8), 198.2–198.3, 500.1(e), 503.5, and 508.3. Official index lists the compilation as last amended 1 October 2026. Forum, issue, and case date determine applicability."
+    },
+    {
+      "id": "argument-source-judicial",
+      "url": "https://www.txcourts.gov/media/1453693/200802.pdf#page=14",
+      "description": "Lake Jackson Medical Spa, Ltd. v. Gaytan , No. 20-0802, Supreme Court of Texas, 25 February 2022 . Pages 14–15 discuss judicial admissions in pleadings; this is an unrelated medical case used for that legal distinction."
+    },
+    {
+      "id": "argument-source-mediation",
+      "url": "https://tcss.legis.texas.gov/resources/CP/htm/CP.154.htm",
+      "description": "Texas Civil Practice and Remedies Code, Chapter 154 . Sections 154.021–.023 and .073: referral, mediation, and confidentiality. Court-ordered attendance and voluntary agreement are distinct."
+    },
+    {
+      "id": "argument-source-rental",
+      "url": "https://files.consumerfinance.gov/f/documents/cfpb_fdcpa-2024-annual-report_2024-09.pdf",
+      "description": "Fair Debt Collection Practices Act: CFPB Annual Report 2024 , September 2024 . Sections 1.2.1 and 1.2.4 discuss rental debts not owed and verification problems. Reported consumer complaints do not adjudicate every underlying dispute."
+    },
+    {
+      "id": "argument-source-mitigation",
+      "url": "https://tcss.legis.texas.gov/resources/pr/htm/pr.91.htm",
+      "description": "Texas Property Code §91.006 . Landlord's duty to mitigate after abandonment in breach of a lease; purported waiver is void."
+    },
+    {
+      "id": "argument-source-lease-guide",
+      "url": "https://guides.sll.texas.gov/landlord-tenant-law/ending-the-lease",
+      "description": "Texas State Law Library, “Ending the Lease” . Official explanation of replacement-tenancy efforts and rent liability after early departure."
+    },
+    {
+      "id": "argument-source-fcra-disputes",
+      "url": "https://uscode.house.gov/us/usc/119-120/t15/s1681i/",
+      "description": "15 U.S.C. §1681i . Reinvestigation, relevant information, correction or deletion, and descriptions of the procedure. Official text through Public Law 119-120."
+    },
+    {
+      "id": "argument-source-fcra-accuracy",
+      "url": "https://uscode.house.gov/us/usc/119-120/t15/s1681e/",
+      "description": "15 U.S.C. §1681e(b) . Reporting agencies' accuracy procedures."
+    },
+    {
+      "id": "argument-source-furnishers",
+      "url": "https://uscode.house.gov/us/usc/119-120/t15/s1681s-2/",
+      "description": "15 U.S.C. §1681s–2(b) . Furnisher duties after notice from a reporting agency, including review and correction notices to other nationwide agencies."
+    },
+    {
+      "id": "argument-source-ftc-disputes",
+      "url": "https://consumer.ftc.gov/articles/disputing-errors-your-credit-reports",
+      "description": "FTC, “Disputing Errors on Your Credit Reports” . Commercial reporting, consequences, and disputes with each company carrying an error."
+    },
+    {
+      "id": "argument-source-eoscar",
+      "url": "https://www.e-oscar.org/gettingstarted",
+      "description": "e-OSCAR, “Getting Started” . The system operator's account of routing disputes, furnisher responses, and corrections. Describes the route, not the adequacy of any particular investigation."
+    },
+    {
+      "id": "argument-source-cfpb-credit",
+      "url": "https://files.consumerfinance.gov/f/documents/cfpb_fcra-611e-report_2025-12.pdf",
+      "description": "Annual Report of Credit and Consumer Reporting Complaints , CFPB, December 2025 . Sections 2–3: January 2024–June 2025 complaints, prior-dispute disagreements, repeated response language, and company-reported outcomes. Complaint volumes are not population error rates."
+    },
+    {
+      "id": "argument-source-grapevine",
+      "url": "https://grapevinetexas.gov/724/Online-Payments",
+      "description": "Grapevine Municipal Court, “Online Payments” . Conviction warning, alternative routes, online deferral payment requirement, and exclusions."
+    },
+    {
+      "id": "argument-source-austin",
+      "url": "https://www.austintexas.gov/municipal-court/ways-request-deferral-moving-violation",
+      "description": "Austin Municipal Court, “Ways to Request a Deferral for a Moving Violation” . Published course and no-course choices and the $50 fee difference; not a lawyer's fee."
+    },
+    {
+      "id": "argument-source-california",
+      "url": "https://www.dmv.ca.gov/portal/handbook/california-driver-handbook/laws-and-rules-of-the-road-cont2/",
+      "description": "California DMV, “Laws and Rules of the Road,” Traffic Violator School . Eligible citation's driving-record and insurer-reporting treatment."
+    },
+    {
+      "id": "argument-source-nc-law",
+      "url": "https://www.ncleg.gov/enactedlegislation/statutes/html/bysection/chapter_20/gs_20-141.html",
+      "description": "North Carolina G.S. 20-141(o) . Lesser improper-equipment offense, eligibility limits, license points, and insurance surcharge."
+    },
+    {
+      "id": "argument-source-nc-courts",
+      "url": "https://www.nccourts.gov/help-topics/traffic-and-vehicles/traffic-violations",
+      "description": "North Carolina Judicial Branch, “Traffic Violations” . Representation, negotiation, self-representation, and county-specific court procedures."
+    },
+    {
+      "id": "argument-source-usccr",
+      "url": "https://www.usccr.gov/files/pubs/docs/Statutory_Enforcement_Report2017.pdf",
+      "description": "Targeted Fines and Fees Against Communities of Color , U.S. Commission on Civil Rights, September 2017 . Printed page 72, findings on revenue dependence and traffic-enforcement incentives."
+    },
+    {
+      "id": "argument-source-ferguson",
+      "url": "https://www.justice.gov/crt/about/spl/documents/ferguson_findings_3-4-15.pdf",
+      "description": "Investigation of the Ferguson Police Department , DOJ Civil Rights Division, 4 March 2015 . Summary and section III: revenue expectations and their connection to police and court practices."
+    },
+    {
+      "id": "argument-source-henderson",
+      "url": "https://app.lla.la.gov/publicreports.nsf/0/c8eef98b7d08e0a086258d8d0075fc24/%24file/00009a17.pdf#page=40",
+      "description": "Town of Henderson, Louisiana, audited financial statements, year ended 30 June 2025 . General Fund Budgetary Comparison Schedule, printed page 37 / PDF page 40, actual column. The 78.0% share is calculated from that schedule."
+    }
+  ],
+  "research_scope": {
+    "empirical_findings": "Samples, observation periods, and jurisdictions remain attached to reported findings; historical studies are not presented as current universal rates",
+    "complaint_data": "Complaints establish reported problems and response patterns, not population error rates or adjudicated facts in every matter",
+    "law": "Texas procedural rules and statutory examples have forum- and issue-specific application; other traffic jurisdictions are identified individually",
+    "analysis": "Cross-institution mechanisms and proposed presentation standards are editorial analysis",
+    "municipal_audit_validation": "Henderson General Fund actual column, printed page 37 / PDF page 40, visually rechecked against the retained page image on 22 October 2026; share recalculated from reported amounts",
+    "recollection": "The court-process article includes the author's corrected $1,000 mediation recollection from intake/story00, with recollection and opinion distinguished from the existing primary-source research."
+  },
+  "publication": {
+    "repository": "johnrigler/commons",
+    "state": "Public reading edition and prepared ledger reference",
+    "signature": null,
+    "ipfs_pin_receipt": null,
+    "chain": "litecoin",
+    "transaction_id": null
+  },
+  "ledger_preparation": {
+    "schema": "commons/litecoin-announcement/1",
+    "path": "../../examples/commons-arguments.draft.json",
+    "state": "Unsigned draft; funding, fees, signing, pinning, and broadcast not performed"
+  },
+  "author_identity": {
+    "chain": "litecoin",
+    "network": "mainnet",
+    "address": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+    "status": "Author-supplied identity; cryptographic signature not supplied"
+  },
+  "correction_source": {
+    "path": "../../intake/story00",
+    "recorded": "2026-10-23",
+    "sha256": "4eb20b564028b35490ddcce8852b00d1f70e5908f6ac4ded2aa32fbbe79e743e",
+    "kind": "Author-supplied correction of recollection; not a case document"
+  }
+}

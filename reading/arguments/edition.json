@@ -1,23 +1,23 @@
 {
   "title": "Commons - The Cost of Challenging a Claim",
-  "author": "John Rigler",
-  "date": "2026-10-22",
+  "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+  "date": "2026-10-23",
   "status": "Unsigned AI-assisted research and editorial draft; no independent legal review recorded",
   "scope": "Seven general arguments and an adaptable request concerning dispute costs, debt evidence and procedure, rental balances, credit reporting, and traffic-enforcement incentives",
-  "base_commons_commit": "47c3b70b50fa516dea7a985c5788ee19c397da0c",
+  "base_commons_commit": "91cf1dd5ffb0e09d311cc4e55bf968fa01be7a79",
   "artifacts": [
     {
-      "path": "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke.html",
+      "path": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze.html",
       "media_type": "text/html",
-      "sha256": "6e4849164d7b06e0cb8bfb00d890e9f1c67b4364a82b2580299fe9e8daf7ac51",
-      "cid": "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke"
+      "sha256": "a31ca66b3e6984d3f33352ce6d71cc78ec9a18fca02d2b55ab95372727b4c7c9",
+      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze"
     }
   ],
   "articles": [
     {
       "id": "administrative-burden",
       "title": "Deterrence through administrative burden",
-      "cid": "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke",
+      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
       "fragment": "administrative-burden",
       "related": [
         "records-proof",
@@ -32,7 +32,7 @@
     {
       "id": "records-proof",
       "title": "A debt claim needs a traceable account",
-      "cid": "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke",
+      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
       "fragment": "records-proof",
       "related": [
         "debt-default",
@@ -44,7 +44,7 @@
     {
       "id": "debt-default",
       "title": "When procedure decides a debt claim",
-      "cid": "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke",
+      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
       "fragment": "debt-default",
       "related": [
         "records-proof",
@@ -55,7 +55,7 @@
     {
       "id": "rent-acceleration",
       "title": "Unsupported rent acceleration",
-      "cid": "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke",
+      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
       "fragment": "rent-acceleration",
       "related": [
         "records-proof",
@@ -67,7 +67,7 @@
     {
       "id": "credit-reporting",
       "title": "Credit reporting as collection pressure",
-      "cid": "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke",
+      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
       "fragment": "credit-reporting",
       "related": [
         "records-proof",
@@ -79,7 +79,7 @@
     {
       "id": "traffic-insurance",
       "title": "The price of a different traffic record",
-      "cid": "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke",
+      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
       "fragment": "traffic-insurance",
       "related": [
         "traffic-revenue",
@@ -90,7 +90,7 @@
     {
       "id": "traffic-revenue",
       "title": "When citations fund the town",
-      "cid": "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke",
+      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
       "fragment": "traffic-revenue",
       "related": [
         "traffic-insurance",
@@ -100,7 +100,7 @@
     {
       "id": "request",
       "title": "Request the basis of a reported balance",
-      "cid": "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke",
+      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
       "fragment": "request",
       "related": [
         "rent-acceleration",
@@ -123,7 +123,8 @@
     "bafkreie3rztadosu4sz26wn3md27jfw2v7zee3xh4a6wdrlvfza5s7f624",
     "bafkreidpzcdiu777w4uy4jzr7reij3af5etwpybf6n76dabcc5mh7rdtka",
     "bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy",
-    "bafkreie5hacpyhsmg4o3ymzlyzjk2yrx7pgnejfdlm5vikmews3mpn7jmy"
+    "bafkreie5hacpyhsmg4o3ymzlyzjk2yrx7pgnejfdlm5vikmews3mpn7jmy",
+    "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke"
   ],
   "sources_checked": "2026-10-22",
   "sources": [
@@ -258,7 +259,8 @@
     "complaint_data": "Complaints establish reported problems and response patterns, not population error rates or adjudicated facts in every matter",
     "law": "Texas procedural rules and statutory examples have forum- and issue-specific application; other traffic jurisdictions are identified individually",
     "analysis": "Cross-institution mechanisms and proposed presentation standards are editorial analysis",
-    "municipal_audit_validation": "Henderson General Fund actual column, printed page 37 / PDF page 40, visually rechecked against the retained page image on 22 October 2026; share recalculated from reported amounts"
+    "municipal_audit_validation": "Henderson General Fund actual column, printed page 37 / PDF page 40, visually rechecked against the retained page image on 22 October 2026; share recalculated from reported amounts",
+    "recollection": "The court-process article includes the author's corrected $1,000 mediation recollection from intake/story00, with recollection and opinion distinguished from the existing primary-source research."
   },
   "publication": {
     "repository": "johnrigler/commons",
@@ -272,5 +274,17 @@
     "schema": "commons/litecoin-announcement/1",
     "path": "../../examples/commons-arguments.draft.json",
     "state": "Unsigned draft; funding, fees, signing, pinning, and broadcast not performed"
+  },
+  "author_identity": {
+    "chain": "litecoin",
+    "network": "mainnet",
+    "address": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+    "status": "Author-supplied identity; cryptographic signature not supplied"
+  },
+  "correction_source": {
+    "path": "../../intake/story00",
+    "recorded": "2026-10-23",
+    "sha256": "4eb20b564028b35490ddcce8852b00d1f70e5908f6ac4ded2aa32fbbe79e743e",
+    "kind": "Author-supplied correction of recollection; not a case document"
   }
 }

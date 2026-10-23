@@ -73,7 +73,13 @@ globalThis.CommonsThunderwords = (() => {
         await inspect(ROOT);
         const tags = [];
         for (const [role, text] of Object.entries({ name, transport, subject })) {
-            tags.push({ role, ...await generate(prefixes[role], text) });
+            const phrase = String(text).trim();
+            if (role === 'name' && /^L[1-9A-HJ-NP-Za-km-z]{33}$/.test(phrase)) {
+                await inspect(phrase);
+                tags.push({ role, phrase, address: phrase, kind: 'address' });
+            } else {
+                tags.push({ role, ...await generate(prefixes[role], text) });
+            }
         }
         const payload = new TextEncoder().encode(message);
         if (payload.length > 80) throw new Error('The announcement body exceeds the Chisel 80-byte OP_RETURN profile.');
@@ -89,6 +95,11 @@ globalThis.CommonsThunderwords = (() => {
                 ...tags.map(tag => ({ role: tag.role, address: tag.address, amountLitoshis: null })),
                 { role: 'op-return', amountLitoshis: 0, scriptPubKey: '6a' + push + hex }
             ]
+        };
+        const identity = tags.find(tag => tag.role === 'name' && tag.kind === 'address');
+        if (identity) result.author_identity = {
+            chain: 'litecoin', network: 'mainnet', address: identity.address,
+            status: 'Author-supplied identity; cryptographic signature not supplied'
         };
         if (includeCommons) {
             const commons = await generate(PREFIXES.transport, 'Commons');

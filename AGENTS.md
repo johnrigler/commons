@@ -3,6 +3,7 @@
 - This repository is public. Publish reusable statements and public source references; keep personal case evidence in its intended Daisy record.
 - The browser runtime is vanilla JavaScript. No framework, build service, CDN or Node runtime is required by readers.
 - Preserve the existing CC0 license. Record authorship, sources, scope, date and review status independently of byte verification.
+- Attribute new and revised author content to the Litecoin address `LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb` in place of the author's personal name. Use "the author" in prose where repeating the address would impede reading. The address is a supplied author identity; record a verified signature only when an actual signature has been supplied and checked. Preserve historical CID-named editions.
 - The content profile is lowercase base32 CIDv1, raw codec, SHA-256, at most 1 MiB. Exact UTF-8 bytes include whitespace and the final newline.
 - Never edit a CID-named file in place. Create a new filename and update the catalog or symlink. Keep historical snapshots.
 - SB Shell's filesystem composition applies: numbered parts, includes, relative paths and deliberate symlinks are primary mechanisms. index.php points to sb/portal.php; index.html points to the completed portal snapshot. about.html and publish.html select separate snapshots from sb/about.php and sb/page.php.
