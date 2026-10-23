@@ -28,7 +28,7 @@ test('private fill updates text only, repeats names, clears fields and leaves th
     const reference = JSON.parse(await readFile(new URL('source/pdf-reference.json', folder), 'utf8'));
     const before = JSON.stringify(reference);
     class Element {
-        constructor() { this.textContent = ''; this.value = ''; this.checked = false; this.children = []; this.listeners = {}; this.attributes = {}; this.clientHeight = 20; this.scrollHeight = 20; }
+        constructor() { this.textContent = ''; this.value = ''; this.checked = false; this.children = []; this.listeners = {}; this.attributes = {}; this.clientHeight = 20; this.scrollHeight = 20; this.clientWidth = 100; this.scrollWidth = 100; }
         append(child) { this.children.push(child); if (child.name) inputs.set(child.name, child); }
         addEventListener(event, action) { this.listeners[event] = action; }
         setAttribute(key, value) { this.attributes[key] = value; }
@@ -62,6 +62,10 @@ test('private fill updates text only, repeats names, clears fields and leaves th
     assert.equal(printed, 0);
     assert.match(ids.get('copy-status').textContent, /longer than its space/);
     targets[0].scrollHeight = 20;
+    targets[0].scrollWidth = 120;
+    ids.get('print-private').listeners.click();
+    assert.equal(printed, 0);
+    targets[0].scrollWidth = 100;
     ids.get('print-private').listeners.click();
     assert.equal(printed, 1);
     for (const input of inputs.values()) { input.value = ''; input.checked = false; }

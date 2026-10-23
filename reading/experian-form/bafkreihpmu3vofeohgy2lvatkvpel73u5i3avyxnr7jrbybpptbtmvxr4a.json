@@ -1,0 +1,52 @@
+{
+  "schema": "commons/blank-form-edition/1",
+  "title": "Experian correction form",
+  "date": "2026-10-23",
+  "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+  "status": "Unsigned reusable blank template; author signature and IPFS pin pending",
+  "scope": "Written accuracy/completeness dispute for one or two consumers; private evidence excluded",
+  "canonical_record": "blank_pdf",
+  "consumer_fields": "blank",
+  "pdf_expected_pages": 2,
+  "pdf_method": "ReportLab typesetting from numbered HTML text with drawn handwriting rules",
+  "author_signature": {
+    "status": "pending",
+    "verified": false,
+    "certificate_fingerprint": null
+  },
+  "ipfs": {
+    "uri": "ipfs://bafkreih6hu6dw4wdd2nkrriev7b4xomtgvgqo2qge4k2vhqkbeam2ln5nu",
+    "status": "not-pinned",
+    "receipt": null
+  },
+  "artifacts": [
+    {
+      "path": "bafkreih6hu6dw4wdd2nkrriev7b4xomtgvgqo2qge4k2vhqkbeam2ln5nu.pdf",
+      "media_type": "application/pdf",
+      "sha256": "fe3d3c3b72c31e9aa8c504afc3cbb993354d076a062715aa9e0a0900cd2dbd6d",
+      "cid": "bafkreih6hu6dw4wdd2nkrriev7b4xomtgvgqo2qge4k2vhqkbeam2ln5nu",
+      "bytes": 90235,
+      "pages": 2
+    },
+    {
+      "path": "bafkreiakxsf4icvfz7nbjmtkqojydqdahi44no2qhgjq7w3rwtyaafklkm.html",
+      "media_type": "text/html",
+      "sha256": "0abc8bc40aa5cfda14b26a839381c0603a39c6bb5039930fdb71b4f000154b53",
+      "cid": "bafkreiakxsf4icvfz7nbjmtkqojydqdahi44no2qhgjq7w3rwtyaafklkm",
+      "bytes": 21612
+    }
+  ],
+  "private_copy": {
+    "storage": "Current tab DOM only",
+    "submission": false,
+    "canonical_pdf_unchanged": true
+  },
+  "publication": "GitHub Pages edition; no signature, IPFS pin, ledger announcement or consumer submission claimed",
+  "intended_final_record": "Author-signed PDF with consumer fields blank, identified by a new CID after signing",
+  "sources_checked": "2026-10-23",
+  "sources": [
+    "https://uscode.house.gov/us/usc/119-120/t15/s1681i/",
+    "https://www.experian.com/help/dispute-credit"
+  ],
+  "review": "AI-assisted adaptation; independent legal review not recorded"
+}

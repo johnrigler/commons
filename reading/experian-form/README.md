@@ -11,6 +11,8 @@ analytics or upload. Print / save PDF makes a separate completed working copy.
 The blank PDF download always selects the unchanged canonical file. Signatures
 are handwritten on the private copy. Additional identification/address sheets
 and supporting copies are separate enclosures.
+The print button checks whether entered text fits its fixed space; continue
+long explanations on an attachment rather than printing clipped text.
 
 ## Edition and intended signing
 

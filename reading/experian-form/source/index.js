@@ -24,6 +24,7 @@
     }
     const targets = [...document.querySelectorAll('[data-field]')];
     function update() {
+        status.removeAttribute('data-error');
         let filled = false;
         for (const target of targets) {
             const value = form.elements.namedItem(target.dataset.field).value.trim();
@@ -41,7 +42,7 @@
     form.addEventListener('reset', () => { setTimeout(update, 0); });
     document.getElementById('print-private').addEventListener('click', () => {
         update();
-        const overflow = targets.some(target => target.scrollHeight > target.clientHeight + 2);
+        const overflow = targets.some(target => target.scrollHeight > target.clientHeight + 2 || target.scrollWidth > target.clientWidth + 2);
         if (overflow) {
             status.textContent = 'Some text is longer than its space. Shorten it or continue on an attachment before printing.';
             status.setAttribute('data-error', 'true');
