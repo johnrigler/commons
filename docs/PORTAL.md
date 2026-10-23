@@ -31,6 +31,27 @@ Independent publishers do not need this catalog's approval to publish to the
 shared address. Later readers and scribes can retrieve those records and build
 their own views, as described in [the address and scribes](ADDRESS-AND-SCRIBES.md).
 
+## Full entry URLs
+
+Every catalog entry has a stable static path, including entries omitted from the
+main feed. For example, `entry/debt-recollection.html` opens **Paying $1,000 to get
+past the process**, rather than the general court-process argument. Every reader
+shows its complete URL and a **Copy link** button. Article and company entries
+use the same path format.
+
+`sb.publish` creates `entry/<entry-id>.html` symlinks to `../index.html` when
+publishing the main portal. The path selects an entry inside that self-contained
+portal; links and original document references resolve from the site root.
+No server rewrite, framework, or CDN is required. These paths also work in an
+IPFS directory and a local checkout. Existing `#item=<id>` links and
+`?item=<id>` URLs remain supported. Closing a directly opened entry returns to
+the feed, and browser Back restores that entry.
+
+A stable entry URL selects the current edition. The separate CID and section
+fragment continue to identify exact historical bytes. A locally saved draft
+uses an absolute `index.html#item=<CID>` URL and still exists only in the browser
+where it was saved; copying its link does not publish its content.
+
 ## Company profiles and typed references
 
 The **Articles** and **Companies** collections are separate views. Open
@@ -158,12 +179,10 @@ as part of this repository change.
 
 ## Build and checks
 
-The public website is served by the existing GitHub Pages deployment from
-`portal-first`. Development on `main` does not update that website by itself.
-After the reader checks pass, fast-forward `portal-first` to the tested commit;
-the existing Pages build and deployment publishes that branch. The reader
-workflow checks both branches. Preserve the configured publication branch and
-its environment rules.
+The public website is served by GitHub Pages from `main` at the repository
+root. Changes, reader checks, and publication use the same branch; `portal-first`
+is an earlier development branch and is no longer a publication step. Verify
+the deployed page after a change before giving out its URL.
 
 Numbered HTML parts, ordinary source scripts and deliberate symlinks remain
 the publication mechanism. Historical CID-named HTML files are retained.

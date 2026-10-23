@@ -4,6 +4,8 @@ sb.publish() (
     local sb_source="${1:-index.php}"
     local sb_entry="${2:-index.html}"
     local sb_cid_tool="${BASH_SOURCE[0]%/*}/cid.php"
+    local sb_portal_source="${BASH_SOURCE[0]%/*}/portal.php"
+    local sb_routes_tool="${BASH_SOURCE[0]%/*}/routes.php"
     local sb_temp sb_link sb_cid sb_snapshot
     command -v "$sb_php" >/dev/null || { echo 'Set SB_PHP to your PHP CLI binary.' >&2; return 1; }
     [ -f "$sb_source" ] && [ -f "$sb_cid_tool" ] || { echo 'Cannot find the PHP assembler or CID tool.' >&2; return 1; }
@@ -23,6 +25,9 @@ sb.publish() (
     else
         mv "$sb_temp" "$sb_snapshot" || return 1
         chmod 644 "$sb_snapshot" || return 1
+    fi
+    if [ "$sb_entry" = index.html ] && [ "$("$sb_php" -r 'echo realpath($argv[1]);' "$sb_source")" = "$sb_portal_source" ]; then
+        "$sb_php" "$sb_routes_tool" || return 1
     fi
     rm -f "$sb_link"
     ln -s "$sb_snapshot" "$sb_link" || return 1

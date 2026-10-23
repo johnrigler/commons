@@ -20,8 +20,9 @@ Litecoin address `LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb`; no signature is asserted.
 | When citations fund the town | `traffic-revenue` |
 | Request the basis of a reported balance | `request` |
 
-The main feed presents these articles once. Earlier entry URLs remain usable as
-unindexed references to the appropriate consolidated article. Historical
+The main feed presents these articles once. Four earlier entry URLs remain usable as
+unindexed references to the appropriate consolidated article. The corrected
+mediation story retains its own distinct entry at `../../entry/debt-recollection.html`. Historical
 CID-named editions remain unchanged; existing contribution parent CIDs are not
 rewritten.
 

@@ -4,7 +4,7 @@ import {readFile} from 'node:fs/promises';
 import {webcrypto} from 'node:crypto';
 import vm from 'node:vm';
 if (!globalThis.crypto) Object.defineProperty(globalThis, 'crypto', {value:webcrypto});
-for (const file of ['verify.js', 'thunderwords.js', 'portal-core.js']) vm.runInThisContext(await readFile(new URL('../' + file, import.meta.url), 'utf8'));
+for (const file of ['verify.js', 'thunderwords.js', 'portal-core.js', 'portal-urls.js']) vm.runInThisContext(await readFile(new URL('../' + file, import.meta.url), 'utf8'));
 const P = CommonsPortal;
 const catalog = JSON.parse(await readFile(new URL('../portal.json', import.meta.url), 'utf8'));
 const parent = catalog.items.find(item => item.id === 'request');
@@ -67,7 +67,7 @@ test('company references preserve separate entity labels and exact profile secti
 
 test('consolidated entry URLs open the current article without duplicating the feed', () => {
     const folded = catalog.items.filter(item=>item.consolidated_into);
-    assert.equal(folded.length,5);
+    assert.equal(folded.length,4);
     for (const item of folded) {
         const current=catalog.items.find(entry=>entry.id===item.consolidated_into);
         assert.ok(current?.indexed);
@@ -75,6 +75,32 @@ test('consolidated entry URLs open the current article without duplicating the f
         assert.equal(item.title,current.title);
         assert.deepEqual(P.reference(item),P.reference(current));
         assert.ok(!P.visible(catalog.items).some(entry=>entry.id===item.id));
+    }
+});
+
+test('the mediation story has a distinct document and direct URL without duplicating the feed', () => {
+    const story=catalog.items.find(item=>item.id==='debt-recollection');
+    const argument=catalog.items.find(item=>item.id==='debt-default');
+    assert.equal(story.kind,'story');
+    assert.equal(story.title,'Paying $1,000 to get past the process');
+    assert.equal(story.fragment,'debt-recollection');
+    assert.notEqual(story.cid,argument.cid);
+    assert.ok(argument.related.includes(story.id));
+    assert.ok(!P.visible(catalog.items).some(item=>item.id===story.id));
+});
+
+test('full entry URLs survive refresh on Pages, IPFS, and a local directory', () => {
+    const item={id:'debt-recollection'};
+    for (const root of ['https://johnrigler.github.io/commons/','https://example.test/ipfs/bafyexample/','file:///home/user/commons/']) {
+        const direct=root+'entry/debt-recollection.html';
+        assert.equal(CommonsURLs.entryURL(item,root),direct);
+        assert.equal(CommonsURLs.entryURL(item,direct),direct);
+        assert.equal(CommonsURLs.entryId(direct),'debt-recollection');
+        assert.equal(CommonsURLs.entryId(root+'#item=debt-recollection'),'debt-recollection');
+        assert.equal(CommonsURLs.entryId(root+'?item=debt-recollection'),'debt-recollection');
+        assert.equal(CommonsURLs.entryId(direct+'#view=companies'),null);
+        assert.equal(CommonsURLs.documentURL('reading/debt/index.html',direct),root+'reading/debt/index.html');
+        assert.equal(CommonsURLs.entryURL({id:'local-id',local:true},direct),root+'index.html#item=local-id');
     }
 });
 

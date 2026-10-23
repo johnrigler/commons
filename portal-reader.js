@@ -10,7 +10,7 @@ globalThis.CommonsReader = (() => {
                 let bytes;
                 if (bundled[item.cid]) bytes = Uint8Array.from(atob(bundled[item.cid]), c => c.charCodeAt(0));
                 else {
-                    const response = await fetch(item.path, { credentials: 'omit', cache: 'no-store' });
+                    const response = await fetch(CommonsURLs.documentURL(item.path, location.href), { credentials: 'omit', cache: 'no-store' });
                     if (!response.ok) throw new Error('The original document is unavailable.');
                     bytes = new Uint8Array(await response.arrayBuffer());
                 }
@@ -31,7 +31,7 @@ globalThis.CommonsReader = (() => {
         const root = document.createElement('div');
         const present = new Set();
         const cited = new Set();
-        const base = new URL(item.path, location.href);
+        const base = new URL(CommonsURLs.documentURL(item.path, location.href));
 
         function clean(node) {
             if (node.nodeType === Node.TEXT_NODE) return document.createTextNode(node.textContent);
@@ -57,8 +57,8 @@ globalThis.CommonsReader = (() => {
                                 if (source.getElementById(id)?.tagName === 'LI') cited.add(id);
                             }
                         } else {
-                            const connected = new URLSearchParams(url.hash.slice(1)).get('item');
-                            if (url.origin === location.origin && catalog.some(entry => entry.id === connected)) copy.href = '#item=' + encodeURIComponent(connected);
+                            const connected = CommonsURLs.entryId(url.href);
+                            if (CommonsURLs.base(url.href).href === CommonsURLs.base(location.href).href && catalog.some(entry => entry.id === connected)) copy.href = '#item=' + encodeURIComponent(connected);
                             else if (['https:', 'http:', 'ipfs:'].includes(url.protocol) || (!/^[a-z][a-z0-9+.-]*:/i.test(href) && url.protocol === 'file:')) {
                                 copy.href = url.href; copy.target = '_blank'; copy.rel = 'noopener noreferrer';
                             }

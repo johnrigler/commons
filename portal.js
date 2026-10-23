@@ -2,6 +2,11 @@
     'use strict';
     const $ = selector => document.querySelector(selector);
     const data = JSON.parse($('#portal-data').textContent);
+    const siteBase = CommonsURLs.base(location.href);
+    for (const anchor of document.querySelectorAll('a[href]')) {
+        const href = anchor.getAttribute('href');
+        if (href && !href.startsWith('#')) anchor.href = new URL(href, siteBase).href;
+    }
     let drafts = [], selected = null, kind = '', topic = '', view = 'article';
     const dialog = $('#portal-reader');
     let storageError = '';
@@ -23,7 +28,13 @@
     const find = id => all().find(item => item.id === id);
     const isCompany = item => CommonsPortal.recordClass(item) === 'company';
     const entryLabel = item => item.genre === 'opinion' ? 'Opinion' : item.kind;
-    const closeReader = () => { location.hash = view === 'company' ? 'view=companies' : ''; };
+    const closeReader = () => {
+        const hash = view === 'company' ? 'view=companies' : '';
+        if (/\/entry\/[^/]+\.html$/.test(location.pathname) || new URLSearchParams(location.search).has('item')) {
+            const url = new URL(siteBase); url.hash = hash;
+            history.pushState(null, '', url); route();
+        } else location.hash = hash;
+    };
 
     function message(text, error = false) {
         for (const status of [$('#portal-status'), $('#reader-message')]) {
@@ -135,8 +146,27 @@
         setTimeout(() => URL.revokeObjectURL(url), 1000);
     }
 
+    async function copyEntryURL() {
+        if (!selected) return;
+        const url = CommonsURLs.entryURL(selected, location.href);
+        try {
+            try {
+                if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable.');
+                await navigator.clipboard.writeText(url);
+            } catch {
+                const field = document.createElement('textarea'); field.value = url;
+                field.style.cssText = 'position:fixed;opacity:0;width:1px;height:1px';
+                dialog.append(field); field.select();
+                try { if (!document.execCommand('copy')) throw new Error('Copy unavailable.'); }
+                finally { field.remove(); $('#copy-entry-url').focus(); }
+            }
+            message('Link copied.');
+        } catch { message('Select and copy the full URL shown above.', true); }
+    }
+
     function show(item) {
         selected = item;
+        document.title = item ? item.title + ' — Commons' : 'Commons — Portal';
         $('#portal-detail').hidden = !item;
         $('#contribution-form').reset();
         if (!item) {
@@ -150,13 +180,15 @@
         $('#detail-text').textContent = item.text || item.summary;
         $('#detail-cid').textContent = item.cid + (item.fragment ? '#' + item.fragment : '');
         $('#detail-links').replaceChildren();
-        if (item.path) $('#detail-links').append(link('Open original document ↗', item.path + (item.fragment ? '#' + item.fragment : '')));
-        if (item.pdf) $('#detail-links').append(link('PDF for printing or email', item.pdf));
-        if (item.source) $('#detail-links').append(link('Source reference', item.source));
+        $('#entry-url').href = CommonsURLs.entryURL(item, location.href);
+        $('#entry-url').textContent = $('#entry-url').href;
+        if (item.path) $('#detail-links').append(link('Open original document ↗', CommonsURLs.documentURL(item.path, location.href) + (item.fragment ? '#' + item.fragment : '')));
+        if (item.pdf) $('#detail-links').append(link('PDF for printing or email', CommonsURLs.documentURL(item.pdf, location.href)));
+        if (item.source) $('#detail-links').append(link('Source reference', CommonsURLs.documentURL(item.source, location.href)));
         if (item.local) {
             const save = document.createElement('button'); save.type = 'button'; save.textContent = 'Download contribution';
             save.onclick = () => download(item);
-            $('#detail-links').append(save, link('Publish / announce', 'publish.html#contribution=' + item.id));
+            $('#detail-links').append(save, link('Publish / announce', new URL('publish.html#contribution=' + item.id, siteBase).href));
         }
         $('#company-reference').hidden = !isCompany(item);
         $('#company-reference-json').textContent = isCompany(item) ? JSON.stringify(CommonsPortal.companyReference(item), null, 2) : '';
@@ -184,9 +216,9 @@
 
     function route() {
         const hash = new URLSearchParams(location.hash.slice(1));
-        const id = hash.get('item');
+        const id = CommonsURLs.entryId(location.href);
         const item = id && find(id);
-        const nextView = item ? CommonsPortal.recordClass(item) : hash.get('view') === 'companies' ? 'company' : 'article';
+        const nextView = item ? CommonsPortal.recordClass(item) : (hash.get('view') || new URLSearchParams(location.search).get('view')) === 'companies' ? 'company' : 'article';
         if (nextView !== view) {
             view = nextView; kind = ''; topic = ''; $('#portal-search').value = '';
         }
@@ -199,11 +231,12 @@
     $('#portal-search').addEventListener('input', renderFeed);
     $('#reader-close').onclick = closeReader;
     $('#reader-print').onclick = () => window.print();
+    $('#copy-entry-url').onclick = copyEntryURL;
     $('#download-company-reference').onclick = downloadCompanyReference;
     dialog.addEventListener('cancel', event => { event.preventDefault(); closeReader(); });
     dialog.addEventListener('close', () => {
         document.body.classList.remove('reader-open');
-        if (selected && new URLSearchParams(location.hash.slice(1)).has('item')) closeReader();
+        if (selected && CommonsURLs.entryId(location.href)) closeReader();
     });
     dialog.addEventListener('click', event => {
         if (event.target !== dialog) return;
@@ -237,6 +270,7 @@
         finally { button.disabled = false; }
     });
     window.addEventListener('hashchange', route);
+    window.addEventListener('popstate', route);
     renderFeed(); route();
     if (storageError) message(storageError, true);
 })().catch(error => {

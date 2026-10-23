@@ -80,8 +80,10 @@ scope, current CIDs, and publication status.
 | Traffic records | How do fees, eligibility, and procedural choices affect the outcome? |
 | Enforcement revenue | How does dependence on receipts affect enforcement incentives? |
 
-Five overlapping former entries remain reachable through their existing URLs,
-but are not repeated in the main feed. Historical CID-named editions and exact
+Four overlapping former entries remain reachable through their existing URLs,
+but are not repeated in the main feed. The corrected $1,000 mediation story
+has its own [direct entry path](entry/debt-recollection.html). Each published
+entry shows a full URL and a **Copy link** button. Historical CID-named editions and exact
 contribution parent references remain preserved.
 
 [The overview](reading/overview/index.html) explains the open stream, subjects,

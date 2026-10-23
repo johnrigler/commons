@@ -11,6 +11,16 @@ const php = process.env.SB_PHP || 'php';
 const available = spawnSync(php, ['-n', '-v']).status === 0;
 const options = available ? {} : { skip: 'Set SB_PHP to an installed PHP 8+ CLI binary.' };
 
+test('every published entry has a static path selecting the current portal', async () => {
+    const catalog=JSON.parse(await readFile(join(root,'portal.json'),'utf8'));
+    const portal=await readFile(join(root,'index.html'));
+    for (const item of catalog.items) {
+        const route=join(root,'entry',item.id+'.html');
+        assert.equal(await readlink(route),'../index.html');
+        assert.deepEqual(await readFile(route),portal);
+    }
+});
+
 test('portal, about and publishing snapshots match their PHP sources and CID filenames', options, async () => {
     for (const [entry, source, marker] of [['index.html', 'index.php', 'id="portal-data"'], ['about.html', 'sb/about.php', 'About Commons'], ['publish.html', 'sb/page.php', 'id="commons-data"']]) {
         const html = execFileSync(php, ['-n', join(root, source)]);

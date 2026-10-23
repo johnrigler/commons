@@ -4,20 +4,20 @@
   "date": "2026-10-23",
   "status": "Unsigned AI-assisted research and editorial draft; no independent legal review recorded",
   "scope": "Seven general arguments and an adaptable request concerning dispute costs, debt evidence and procedure, rental balances, credit reporting, and traffic-enforcement incentives",
-  "base_commons_commit": "91cf1dd5ffb0e09d311cc4e55bf968fa01be7a79",
+  "base_commons_commit": "4bbf9f5527770ddff6070a9635230b4756256fb3",
   "artifacts": [
     {
-      "path": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze.html",
+      "path": "bafkreigrxbce4vw65jbd3g2n74uxllc7i7pw2wuap7cego35s6glvk5bhm.html",
       "media_type": "text/html",
-      "sha256": "a31ca66b3e6984d3f33352ce6d71cc78ec9a18fca02d2b55ab95372727b4c7c9",
-      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze"
+      "sha256": "d1b8444e56deea423d9b4dff2975ac5f47df6d5a807fc4433b7d978cbaaba13b",
+      "cid": "bafkreigrxbce4vw65jbd3g2n74uxllc7i7pw2wuap7cego35s6glvk5bhm"
     }
   ],
   "articles": [
     {
       "id": "administrative-burden",
       "title": "Deterrence through administrative burden",
-      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
+      "cid": "bafkreigrxbce4vw65jbd3g2n74uxllc7i7pw2wuap7cego35s6glvk5bhm",
       "fragment": "administrative-burden",
       "related": [
         "records-proof",
@@ -32,7 +32,7 @@
     {
       "id": "records-proof",
       "title": "A debt claim needs a traceable account",
-      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
+      "cid": "bafkreigrxbce4vw65jbd3g2n74uxllc7i7pw2wuap7cego35s6glvk5bhm",
       "fragment": "records-proof",
       "related": [
         "debt-default",
@@ -44,9 +44,10 @@
     {
       "id": "debt-default",
       "title": "When procedure decides a debt claim",
-      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
+      "cid": "bafkreigrxbce4vw65jbd3g2n74uxllc7i7pw2wuap7cego35s6glvk5bhm",
       "fragment": "debt-default",
       "related": [
+        "debt-recollection",
         "records-proof",
         "administrative-burden",
         "traffic-insurance"
@@ -55,7 +56,7 @@
     {
       "id": "rent-acceleration",
       "title": "Unsupported rent acceleration",
-      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
+      "cid": "bafkreigrxbce4vw65jbd3g2n74uxllc7i7pw2wuap7cego35s6glvk5bhm",
       "fragment": "rent-acceleration",
       "related": [
         "records-proof",
@@ -67,7 +68,7 @@
     {
       "id": "credit-reporting",
       "title": "Credit reporting as collection pressure",
-      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
+      "cid": "bafkreigrxbce4vw65jbd3g2n74uxllc7i7pw2wuap7cego35s6glvk5bhm",
       "fragment": "credit-reporting",
       "related": [
         "records-proof",
@@ -79,7 +80,7 @@
     {
       "id": "traffic-insurance",
       "title": "The price of a different traffic record",
-      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
+      "cid": "bafkreigrxbce4vw65jbd3g2n74uxllc7i7pw2wuap7cego35s6glvk5bhm",
       "fragment": "traffic-insurance",
       "related": [
         "traffic-revenue",
@@ -90,7 +91,7 @@
     {
       "id": "traffic-revenue",
       "title": "When citations fund the town",
-      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
+      "cid": "bafkreigrxbce4vw65jbd3g2n74uxllc7i7pw2wuap7cego35s6glvk5bhm",
       "fragment": "traffic-revenue",
       "related": [
         "traffic-insurance",
@@ -100,7 +101,7 @@
     {
       "id": "request",
       "title": "Request the basis of a reported balance",
-      "cid": "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
+      "cid": "bafkreigrxbce4vw65jbd3g2n74uxllc7i7pw2wuap7cego35s6glvk5bhm",
       "fragment": "request",
       "related": [
         "rent-acceleration",
@@ -114,7 +115,6 @@
     "debt-admissions": "debt-default",
     "debt-ownership": "records-proof",
     "records-recollection": "records-proof",
-    "debt-recollection": "debt-default",
     "traffic-toll": "traffic-insurance"
   },
   "supersedes_documents": [
@@ -124,7 +124,8 @@
     "bafkreidpzcdiu777w4uy4jzr7reij3af5etwpybf6n76dabcc5mh7rdtka",
     "bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy",
     "bafkreie5hacpyhsmg4o3ymzlyzjk2yrx7pgnejfdlm5vikmews3mpn7jmy",
-    "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke"
+    "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke",
+    "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze"
   ],
   "sources_checked": "2026-10-22",
   "sources": [
@@ -260,7 +261,7 @@
     "law": "Texas procedural rules and statutory examples have forum- and issue-specific application; other traffic jurisdictions are identified individually",
     "analysis": "Cross-institution mechanisms and proposed presentation standards are editorial analysis",
     "municipal_audit_validation": "Henderson General Fund actual column, printed page 37 / PDF page 40, visually rechecked against the retained page image on 22 October 2026; share recalculated from reported amounts",
-    "recollection": "The court-process article includes the author's corrected $1,000 mediation recollection from intake/story00, with recollection and opinion distinguished from the existing primary-source research."
+    "recollection": "The corrected mediation recollection retains its own story entry, linked from the court-process argument and its static full URL."
   },
   "publication": {
     "repository": "johnrigler/commons",

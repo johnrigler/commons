@@ -2,7 +2,7 @@ name: Commons reader checks
 
 on:
   push:
-    branches: [main, portal-first]
+    branches: [main]
   pull_request:
 
 jobs:
