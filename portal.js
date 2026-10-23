@@ -235,6 +235,7 @@
     $('#download-company-reference').onclick = downloadCompanyReference;
     dialog.addEventListener('cancel', event => { event.preventDefault(); closeReader(); });
     dialog.addEventListener('close', () => {
+        if (dialog.open) return;
         document.body.classList.remove('reader-open');
         if (selected && CommonsURLs.entryId(location.href)) closeReader();
     });
