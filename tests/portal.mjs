@@ -29,7 +29,7 @@ test('company and article views filter independently and search company roles an
     const companies=P.visible(catalog.items,'','','company');
     const articles=P.visible(catalog.items,'','','article');
     assert.equal(companies.length,7);
-    assert.ok(articles.some(item=>item.id==='portals-proof' && item.genre==='opinion' && item.author==='John Rigler'));
+    assert.ok(articles.some(item=>item.id==='portals-proof' && item.genre==='opinion' && item.author==='LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb'));
     assert.ok(articles.some(item=>item.id==='amicus-systems' && item.genre==='opinion'));
     assert.equal(companies.length+articles.length,P.visible(catalog.items).length);
     assert.ok(companies.every(item=>item.kind==='description' && item.legal_name && item.role));

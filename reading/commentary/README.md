@@ -1,23 +1,29 @@
 # Who controls the objection?
 
-Two connected opinion pieces by John Rigler:
+Three connected pieces by `LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb`:
 
-- `portals-proof` — **When the portal controls the objection**
-- `amicus-systems` — **Make the recurring system visible to the court**
+- `portals-proof`: When the portal controls the objection.
+- `dispute-referral-loop`: Answer the dispute that was made.
+- `amicus-systems`: Make the recurring system visible to the court.
 
-The first consolidates criticism of controlled dispute wording, inaccessible
-submission histories, payment-led collection portals, and delayed access to
-people able to address the claim. It states Rigler's preference for a portable
-retained record. The second proposes a research collection that could support
-an amicus brief in an appropriate proceeding; it is not a filed brief.
+The October 23 update features the Experian/NCS referral sequence in a separate
+author attestation and opinion and in both company commentaries. Experian's notice
+uses fraud wording and requests direct creditor contact. NCS's separate letter
+supplies the collection-portal steps. The article asks for investigation of the
+actual lease, amount, mitigation and credit dispute, with retained written records.
 
-Firsthand observations and opinion are attributed to Rigler. The public
-sources explain the different functions of reinvestigation and consumer
-statements, company descriptions, court-response responsibilities, and an
-example of court-specific amicus rules. TransUnion's published free-text option
-is retained as a meaningful distinction between interfaces.
+Private correspondence was inspected for those statements. No private account
+identifier, portal credential, identity record or source image is published here.
+The telephone characterization is the author's account; no recording was supplied.
+Additional category-menu screenshots remain pending. A notice's wording does not
+prove an internal dispute code or a universal company practice. A proposed lawful
+recording is conditional, not a claim that a call or recording occurred.
 
-Sources checked 22 October 2026. Original numbered source parts assemble the
-printable `index.html` edition. `edition.json` has an immutable CID copy;
-`examples/portal-commentary.draft.json` prepares an unsigned ledger reference.
-No live pin or transaction is represented as completed.
+The FCRA and FTC court-response guidance were rechecked October 23. Other sources
+retain the October 22 check date. A generic referral, the author's interpretation,
+the evidence needed for litigation and an actual court order remain distinct.
+
+Numbered source parts assemble the printable edition. New CID-named HTML and
+manifest snapshots preserve the earlier edition. `edition.json` selects the current
+metadata. `examples/portal-commentary.draft.json` remains an unsigned ledger
+reference; no live pin, signature, broadcast or court filing is claimed.

@@ -9,16 +9,46 @@
   },
   "items": [
     {
+      "id": "dispute-referral-loop",
+      "kind": "explanation",
+      "genre": "opinion",
+      "title": "Answer the dispute that was made",
+      "summary": "The author's response to Experian's fraud-themed creditor referral and NCS's collection route, with a request to investigate the actual lease and amount dispute.",
+      "cid": "bafkreifqytkf2zyc4mkxyu37ut4iasrcjhoylgzipmsfrnvfudzniigx3y",
+      "path": "reading/commentary/bafkreifqytkf2zyc4mkxyu37ut4iasrcjhoylgzipmsfrnvfudzniigx3y.html",
+      "fragment": "dispute-referral-loop",
+      "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+      "status": "Unsigned author commentary · Updated 23 October 2026",
+      "sources_checked": "2026-10-23",
+      "indexed": true,
+      "related": [
+        "portals-proof",
+        "rent-acceleration",
+        "credit-reporting",
+        "records-proof",
+        "administrative-burden"
+      ],
+      "companies": [
+        "company-experian",
+        "company-ncs"
+      ],
+      "topics": [
+        "Systems & institutions",
+        "Housing & credit",
+        "Courts & civil process"
+      ]
+    },
+    {
       "id": "portals-proof",
       "kind": "explanation",
       "genre": "opinion",
       "title": "When the portal controls the objection",
-      "summary": "John Rigler’s criticism of controlled dispute wording, missing visible histories, payment-led portals, and access to decision makers.",
-      "cid": "bafkreibsrs6iwd7k7rtczdig7457uw3i75ppgfyauxakq3vh2ji6jug7se",
-      "path": "reading/commentary/bafkreibsrs6iwd7k7rtczdig7457uw3i75ppgfyauxakq3vh2ji6jug7se.html",
+      "summary": "The author's criticism of controlled dispute wording, missing visible histories, payment-led portals, and access to decision makers.",
+      "cid": "bafkreifqytkf2zyc4mkxyu37ut4iasrcjhoylgzipmsfrnvfudzniigx3y",
+      "path": "reading/commentary/bafkreifqytkf2zyc4mkxyu37ut4iasrcjhoylgzipmsfrnvfudzniigx3y.html",
       "fragment": "portals-proof",
-      "author": "John Rigler",
-      "status": "Unsigned author commentary · 22 October 2026",
+      "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+      "status": "Unsigned author commentary · Updated 23 October 2026",
       "sources_checked": "2026-10-22",
       "indexed": true,
       "related": [
@@ -26,7 +56,8 @@
         "records-proof",
         "rent-acceleration",
         "debt-default",
-        "amicus-systems"
+        "amicus-systems",
+        "dispute-referral-loop"
       ],
       "companies": [
         "company-experian",
@@ -48,19 +79,20 @@
       "kind": "explanation",
       "genre": "opinion",
       "title": "Make the recurring system visible to the court",
-      "summary": "John Rigler’s proposal to document recurring institutional mechanisms for a possible amicus brief, with case evidence kept distinct.",
-      "cid": "bafkreibsrs6iwd7k7rtczdig7457uw3i75ppgfyauxakq3vh2ji6jug7se",
-      "path": "reading/commentary/bafkreibsrs6iwd7k7rtczdig7457uw3i75ppgfyauxakq3vh2ji6jug7se.html",
+      "summary": "The author's proposal to document recurring institutional mechanisms for a possible amicus brief, with case evidence kept distinct.",
+      "cid": "bafkreifqytkf2zyc4mkxyu37ut4iasrcjhoylgzipmsfrnvfudzniigx3y",
+      "path": "reading/commentary/bafkreifqytkf2zyc4mkxyu37ut4iasrcjhoylgzipmsfrnvfudzniigx3y.html",
       "fragment": "amicus-systems",
-      "author": "John Rigler",
-      "status": "Unsigned author commentary · 22 October 2026",
+      "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+      "status": "Unsigned author commentary · Updated 23 October 2026",
       "sources_checked": "2026-10-22",
       "indexed": true,
       "related": [
         "portals-proof",
         "debt-default",
         "records-proof",
-        "administrative-burden"
+        "administrative-burden",
+        "dispute-referral-loop"
       ],
       "companies": [
         "company-experian",
@@ -793,11 +825,11 @@
       "title": "Experian",
       "legal_name": "Experian Information Solutions, Inc.",
       "role": "Credit reporting",
-      "summary": "Canned-statement and record-access observations, John Rigler’s criticism, and the U.S. reporting entity.",
-      "cid": "bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq",
-      "path": "reading/companies/bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq.html",
+      "summary": "Canned-statement and record-access observations, The author's criticism, and the U.S. reporting entity.",
+      "cid": "bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku",
+      "path": "reading/companies/bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku.html",
       "fragment": "company-experian",
-      "author": "John Rigler",
+      "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
       "status": "Unsigned profile and author commentary · 22 October 2026",
       "sources_checked": "2026-10-22",
       "indexed": true,
@@ -806,7 +838,8 @@
         "records-proof",
         "request",
         "portals-proof",
-        "amicus-systems"
+        "amicus-systems",
+        "dispute-referral-loop"
       ],
       "companies": [
         "company-equifax",
@@ -816,7 +849,7 @@
         "Housing & credit"
       ],
       "commentary": {
-        "author": "John Rigler",
+        "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
         "date": "2026-10-22",
         "scope": "Attributed opinion and observations, distinct from sourced company descriptions and official records"
       }
@@ -828,11 +861,11 @@
       "title": "Equifax",
       "legal_name": "Equifax Information Services LLC",
       "role": "Credit reporting",
-      "summary": "John Rigler’s standard for a usable dispute record, alongside the reporting entity and 2025 consent order.",
-      "cid": "bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq",
-      "path": "reading/companies/bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq.html",
+      "summary": "The author's standard for a usable dispute record, alongside the reporting entity and 2025 consent order.",
+      "cid": "bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku",
+      "path": "reading/companies/bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku.html",
       "fragment": "company-equifax",
-      "author": "John Rigler",
+      "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
       "status": "Unsigned profile and author commentary · 22 October 2026",
       "sources_checked": "2026-10-22",
       "indexed": true,
@@ -851,7 +884,7 @@
         "Housing & credit"
       ],
       "commentary": {
-        "author": "John Rigler",
+        "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
         "date": "2026-10-22",
         "scope": "Attributed opinion and observations, distinct from sourced company descriptions and official records"
       }
@@ -863,11 +896,11 @@
       "title": "TransUnion",
       "legal_name": "Trans Union LLC",
       "role": "Credit and background reporting",
-      "summary": "John Rigler’s critique of institutional control, the published free-text option, and the 2023 screening settlement.",
-      "cid": "bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq",
-      "path": "reading/companies/bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq.html",
+      "summary": "The author's critique of institutional control, the published free-text option, and the 2023 screening settlement.",
+      "cid": "bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku",
+      "path": "reading/companies/bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku.html",
       "fragment": "company-transunion",
-      "author": "John Rigler",
+      "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
       "status": "Unsigned profile and author commentary · 22 October 2026",
       "sources_checked": "2026-10-22",
       "indexed": true,
@@ -886,7 +919,7 @@
         "Housing & credit"
       ],
       "commentary": {
-        "author": "John Rigler",
+        "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
         "date": "2026-10-22",
         "scope": "Attributed opinion and observations, distinct from sourced company descriptions and official records"
       }
@@ -898,11 +931,11 @@
       "title": "National Credit Systems",
       "legal_name": "National Credit Systems, Inc.",
       "role": "Rental collections",
-      "summary": "Collection workflows, retained dispute records, and John Rigler’s criticism of NCS’s starting assumptions.",
-      "cid": "bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq",
-      "path": "reading/companies/bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq.html",
+      "summary": "Collection workflows, retained dispute records, and The author's criticism of NCS’s starting assumptions.",
+      "cid": "bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku",
+      "path": "reading/companies/bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku.html",
       "fragment": "company-ncs",
-      "author": "John Rigler",
+      "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
       "status": "Unsigned profile and author commentary · 22 October 2026",
       "sources_checked": "2026-10-22",
       "indexed": true,
@@ -912,14 +945,15 @@
         "records-proof",
         "request",
         "portals-proof",
-        "amicus-systems"
+        "amicus-systems",
+        "dispute-referral-loop"
       ],
       "companies": [],
       "topics": [
         "Housing & credit"
       ],
       "commentary": {
-        "author": "John Rigler",
+        "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
         "date": "2026-10-22",
         "scope": "Attributed opinion and observations, distinct from sourced company descriptions and official records"
       }
@@ -931,11 +965,11 @@
       "title": "Rausch Sturm LLP",
       "legal_name": "Rausch Sturm LLP",
       "role": "Creditor representation",
-      "summary": "John Rigler’s criticism of lawyer-access bottlenecks, with the firm’s identity and published routes.",
-      "cid": "bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq",
-      "path": "reading/companies/bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq.html",
+      "summary": "The author's criticism of lawyer-access bottlenecks, with the firm’s identity and published routes.",
+      "cid": "bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku",
+      "path": "reading/companies/bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku.html",
       "fragment": "company-rausch-sturm",
-      "author": "John Rigler",
+      "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
       "status": "Unsigned profile and author commentary · 22 October 2026",
       "sources_checked": "2026-10-22",
       "indexed": true,
@@ -950,7 +984,7 @@
         "Courts & civil process"
       ],
       "commentary": {
-        "author": "John Rigler",
+        "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
         "date": "2026-10-22",
         "scope": "Attributed opinion and observations, distinct from sourced company descriptions and official records"
       }
@@ -962,11 +996,11 @@
       "title": "Midland Funding LLC",
       "legal_name": "Midland Funding LLC",
       "role": "Debt purchasing",
-      "summary": "John Rigler’s account-ownership criticism, the buyer/servicer distinction, and dated official records.",
-      "cid": "bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq",
-      "path": "reading/companies/bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq.html",
+      "summary": "The author's account-ownership criticism, the buyer/servicer distinction, and dated official records.",
+      "cid": "bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku",
+      "path": "reading/companies/bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku.html",
       "fragment": "company-midland-funding",
-      "author": "John Rigler",
+      "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
       "status": "Unsigned profile and author commentary · 22 October 2026",
       "sources_checked": "2026-10-22",
       "indexed": true,
@@ -985,7 +1019,7 @@
         "Courts & civil process"
       ],
       "commentary": {
-        "author": "John Rigler",
+        "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
         "date": "2026-10-22",
         "scope": "Attributed opinion and observations, distinct from sourced company descriptions and official records"
       }
@@ -997,11 +1031,11 @@
       "title": "Midland Credit Management, Inc.",
       "legal_name": "Midland Credit Management, Inc.",
       "role": "Debt purchasing and servicing",
-      "summary": "John Rigler’s portal and proof criticism, with MCM’s buying, servicing, and reporting roles.",
-      "cid": "bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq",
-      "path": "reading/companies/bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq.html",
+      "summary": "The author's portal and proof criticism, with MCM’s buying, servicing, and reporting roles.",
+      "cid": "bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku",
+      "path": "reading/companies/bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku.html",
       "fragment": "company-midland-credit",
-      "author": "John Rigler",
+      "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
       "status": "Unsigned profile and author commentary · 22 October 2026",
       "sources_checked": "2026-10-22",
       "indexed": true,
@@ -1020,7 +1054,7 @@
         "Courts & civil process"
       ],
       "commentary": {
-        "author": "John Rigler",
+        "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
         "date": "2026-10-22",
         "scope": "Attributed opinion and observations, distinct from sourced company descriptions and official records"
       }

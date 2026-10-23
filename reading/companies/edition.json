@@ -1,16 +1,16 @@
 {
   "title": "Commons - Company Profiles",
-  "author": "John Rigler",
-  "date": "2026-10-22",
-  "status": "Unsigned company profiles and John Rigler commentary, prepared with AI assistance; no independent legal review recorded",
+  "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+  "date": "2026-10-23",
+  "status": "Unsigned company profiles and LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb commentary, prepared with AI assistance; no independent legal review recorded",
   "scope": "Seven profiles with attributed author commentary and observations, connected to general arguments and distinct from personal case evidence",
-  "base_commons_commit": "b11ff4c288d2032293903f812daf94b0c2f41a8e",
+  "base_commons_commit": "f108164c2261ce1d316f56dc63ed6f1392efdede",
   "artifacts": [
     {
-      "path": "bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq.html",
+      "path": "bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku.html",
       "media_type": "text/html",
-      "sha256": "ba76e5e7ba61b9fc5aac6618a220a102a8acd38c65c77c6a7dd8cc4cf5919e5c",
-      "cid": "bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq"
+      "sha256": "caa674d38cabe437c5b81542cf2c81efa17e913455802a027586c24a95e36655",
+      "cid": "bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku"
     }
   ],
   "profiles": [
@@ -19,22 +19,23 @@
       "title": "Experian",
       "legal_name": "Experian Information Solutions, Inc.",
       "role": "Credit reporting",
-      "cid": "bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq",
+      "cid": "bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku",
       "fragment": "company-experian",
       "related": [
         "credit-reporting",
         "records-proof",
         "request",
         "portals-proof",
-        "amicus-systems"
+        "amicus-systems",
+        "dispute-referral-loop"
       ],
       "companies": [
         "company-equifax",
         "company-transunion"
       ],
       "commentary": {
-        "author": "John Rigler",
-        "date": "2026-10-22",
+        "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+        "date": "2026-10-23",
         "scope": "Attributed opinion and observations, distinct from sourced company descriptions and official records"
       }
     },
@@ -43,7 +44,7 @@
       "title": "Equifax",
       "legal_name": "Equifax Information Services LLC",
       "role": "Credit reporting",
-      "cid": "bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq",
+      "cid": "bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku",
       "fragment": "company-equifax",
       "related": [
         "credit-reporting",
@@ -57,7 +58,7 @@
         "company-transunion"
       ],
       "commentary": {
-        "author": "John Rigler",
+        "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
         "date": "2026-10-22",
         "scope": "Attributed opinion and observations, distinct from sourced company descriptions and official records"
       }
@@ -67,7 +68,7 @@
       "title": "TransUnion",
       "legal_name": "Trans Union LLC",
       "role": "Credit and background reporting",
-      "cid": "bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq",
+      "cid": "bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku",
       "fragment": "company-transunion",
       "related": [
         "credit-reporting",
@@ -81,7 +82,7 @@
         "company-equifax"
       ],
       "commentary": {
-        "author": "John Rigler",
+        "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
         "date": "2026-10-22",
         "scope": "Attributed opinion and observations, distinct from sourced company descriptions and official records"
       }
@@ -91,7 +92,7 @@
       "title": "National Credit Systems",
       "legal_name": "National Credit Systems, Inc.",
       "role": "Rental collections",
-      "cid": "bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq",
+      "cid": "bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku",
       "fragment": "company-ncs",
       "related": [
         "rent-acceleration",
@@ -99,12 +100,13 @@
         "records-proof",
         "request",
         "portals-proof",
-        "amicus-systems"
+        "amicus-systems",
+        "dispute-referral-loop"
       ],
       "companies": [],
       "commentary": {
-        "author": "John Rigler",
-        "date": "2026-10-22",
+        "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+        "date": "2026-10-23",
         "scope": "Attributed opinion and observations, distinct from sourced company descriptions and official records"
       }
     },
@@ -113,7 +115,7 @@
       "title": "Rausch Sturm LLP",
       "legal_name": "Rausch Sturm LLP",
       "role": "Creditor representation",
-      "cid": "bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq",
+      "cid": "bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku",
       "fragment": "company-rausch-sturm",
       "related": [
         "debt-default",
@@ -123,7 +125,7 @@
       ],
       "companies": [],
       "commentary": {
-        "author": "John Rigler",
+        "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
         "date": "2026-10-22",
         "scope": "Attributed opinion and observations, distinct from sourced company descriptions and official records"
       }
@@ -133,7 +135,7 @@
       "title": "Midland Funding LLC",
       "legal_name": "Midland Funding LLC",
       "role": "Debt purchasing",
-      "cid": "bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq",
+      "cid": "bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku",
       "fragment": "company-midland-funding",
       "related": [
         "records-proof",
@@ -146,7 +148,7 @@
         "company-midland-credit"
       ],
       "commentary": {
-        "author": "John Rigler",
+        "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
         "date": "2026-10-22",
         "scope": "Attributed opinion and observations, distinct from sourced company descriptions and official records"
       }
@@ -156,7 +158,7 @@
       "title": "Midland Credit Management, Inc.",
       "legal_name": "Midland Credit Management, Inc.",
       "role": "Debt purchasing and servicing",
-      "cid": "bafkreif2o3s6potbxh6fvldgdcrcbiicvcwnhddfy56gu7oyzrgplem6lq",
+      "cid": "bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku",
       "fragment": "company-midland-credit",
       "related": [
         "credit-reporting",
@@ -169,7 +171,7 @@
         "company-midland-funding"
       ],
       "commentary": {
-        "author": "John Rigler",
+        "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
         "date": "2026-10-22",
         "scope": "Attributed opinion and observations, distinct from sourced company descriptions and official records"
       }
@@ -268,7 +270,8 @@
     "status": "Company statements, pending allegations, procedural investigative orders, and settled enforcement records retain distinct labels and dates",
     "limits": "Selected records, not comprehensive histories or findings about any individual dispute; remembered law-firm names do not establish case identity",
     "references": "commons/company-reference/1 preserves a separate company identity label and exact profile CID plus fragment; case involvement requires case evidence",
-    "commentary": "Author observations supplied 22 October 2026; authenticated interface and remembered counsel-access sequence not independently reproduced; TransUnion free-text guidance retained as a distinction"
+    "commentary": "Author observations supplied 22 October 2026; authenticated interface and remembered counsel-access sequence not independently reproduced; TransUnion free-text guidance retained as a distinction",
+    "referral_update": "Experian and NCS author commentary updated from inspected private correspondence on October 23; telephone account remains author-supplied; menu screenshots pending."
   },
   "publication": {
     "repository": "johnrigler/commons",
@@ -288,8 +291,15 @@
     "document_cid": "bafkreia6cikakacd6dpsj4ctn2p4jwchc4qzkdp4ig5ghcxbtivu25uw3q"
   },
   "commentary": {
-    "author": "John Rigler",
+    "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
     "date": "2026-10-22",
     "scope": "Attributed opinion and observations, distinct from sourced company descriptions and official records"
-  }
+  },
+  "author_identity": {
+    "chain": "litecoin",
+    "network": "mainnet",
+    "address": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+    "status": "Author-supplied identity; cryptographic signature not supplied"
+  },
+  "update_checked": "2026-10-23"
 }

@@ -15,10 +15,9 @@
   "tags": [
     {
       "role": "name",
-      "prefix": "LLx",
-      "phrase": "John Rigler",
-      "encoded": "JoHNxRiGLER",
-      "address": "LLxJoHNxRiGLERzzzzzzzzzzzzzzV5pZ1p"
+      "phrase": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+      "address": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+      "kind": "address"
     },
     {
       "role": "transport",
@@ -36,9 +35,9 @@
     }
   ],
   "message": {
-    "text": "ipfs://bafkreiffh4flb3nclfvavtpy6oqeesedn6kceqb4odh7hsr2pax6xjk64y",
+    "text": "ipfs://bafkreic5m43h5rkzoqpd44tevtevhq4yzpbbflu6cmttoerjncl7bq7sue",
     "encoding": "utf-8",
-    "hex": "697066733a2f2f6261666b72656966666834666c62336e636c66766176747079366f7165657365646e366b63657162346f6468376873723270617836786a6b363479",
+    "hex": "697066733a2f2f6261666b72656963356d34336835726b7a6f7170643434746576746576687134797a706262666c7536636d74746f65726a6e636c37627137737565",
     "bytes": 66
   },
   "outputs": [
@@ -49,7 +48,7 @@
     },
     {
       "role": "name",
-      "address": "LLxJoHNxRiGLERzzzzzzzzzzzzzzV5pZ1p",
+      "address": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
       "amountLitoshis": null
     },
     {
@@ -65,7 +64,7 @@
     {
       "role": "op-return",
       "amountLitoshis": 0,
-      "scriptPubKey": "6a42697066733a2f2f6261666b72656966666834666c62336e636c66766176747079366f7165657365646e366b63657162346f6468376873723270617836786a6b363479"
+      "scriptPubKey": "6a42697066733a2f2f6261666b72656963356d34336835726b7a6f7170643434746576746576687134797a706262666c7536636d74746f65726a6e636c37627137737565"
     }
   ],
   "commonsIndex": {
@@ -75,5 +74,11 @@
     "address": "LMxCoMMoNSzzzzzzzzzzzzzzzzzzZU8MFW",
     "role": "commons-index",
     "form": "B / transport"
+  },
+  "author_identity": {
+    "chain": "litecoin",
+    "network": "mainnet",
+    "address": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+    "status": "Author-supplied identity; cryptographic signature not supplied"
   }
 }

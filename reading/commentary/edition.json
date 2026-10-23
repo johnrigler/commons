@@ -1,16 +1,16 @@
 {
   "title": "Commons - Who Controls the Objection?",
-  "author": "John Rigler",
-  "date": "2026-10-22",
-  "status": "Unsigned author opinion and research proposal, prepared with AI assistance; no independent legal review recorded",
-  "scope": "Shared portal critique and a proposed amicus research agenda; no court, case, organization, or filing selected",
-  "base_commons_commit": "b11ff4c288d2032293903f812daf94b0c2f41a8e",
+  "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+  "date": "2026-10-23",
+  "status": "Unsigned author account, opinion and research proposal, prepared with AI assistance; no independent legal review recorded",
+  "scope": "Three connected opinion pieces: portal critique, an author attestation and response to the Experian/NCS referral sequence, and a proposed amicus research agenda.",
+  "base_commons_commit": "f108164c2261ce1d316f56dc63ed6f1392efdede",
   "artifacts": [
     {
-      "path": "bafkreibsrs6iwd7k7rtczdig7457uw3i75ppgfyauxakq3vh2ji6jug7se.html",
+      "path": "bafkreifqytkf2zyc4mkxyu37ut4iasrcjhoylgzipmsfrnvfudzniigx3y.html",
       "media_type": "text/html",
-      "sha256": "328cbc8b0feafc662c8d06ff3bfa5b68ff5ef31700a5c0a86ea7d251e4d0df91",
-      "cid": "bafkreibsrs6iwd7k7rtczdig7457uw3i75ppgfyauxakq3vh2ji6jug7se"
+      "sha256": "b0c4d45d6702e3157c537fa4f8804a2249dd859b287b2458b6a5a0f2d420d7de",
+      "cid": "bafkreifqytkf2zyc4mkxyu37ut4iasrcjhoylgzipmsfrnvfudzniigx3y"
     }
   ],
   "articles": [
@@ -18,14 +18,15 @@
       "id": "portals-proof",
       "title": "When the portal controls the objection",
       "genre": "opinion",
-      "cid": "bafkreibsrs6iwd7k7rtczdig7457uw3i75ppgfyauxakq3vh2ji6jug7se",
+      "cid": "bafkreifqytkf2zyc4mkxyu37ut4iasrcjhoylgzipmsfrnvfudzniigx3y",
       "fragment": "portals-proof",
       "related": [
         "credit-reporting",
         "records-proof",
         "rent-acceleration",
         "debt-default",
-        "amicus-systems"
+        "amicus-systems",
+        "dispute-referral-loop"
       ],
       "companies": [
         "company-experian",
@@ -38,16 +39,35 @@
       ]
     },
     {
+      "id": "dispute-referral-loop",
+      "title": "Answer the dispute that was made",
+      "genre": "opinion",
+      "cid": "bafkreifqytkf2zyc4mkxyu37ut4iasrcjhoylgzipmsfrnvfudzniigx3y",
+      "fragment": "dispute-referral-loop",
+      "related": [
+        "portals-proof",
+        "rent-acceleration",
+        "credit-reporting",
+        "records-proof",
+        "administrative-burden"
+      ],
+      "companies": [
+        "company-experian",
+        "company-ncs"
+      ]
+    },
+    {
       "id": "amicus-systems",
       "title": "Make the recurring system visible to the court",
       "genre": "opinion",
-      "cid": "bafkreibsrs6iwd7k7rtczdig7457uw3i75ppgfyauxakq3vh2ji6jug7se",
+      "cid": "bafkreifqytkf2zyc4mkxyu37ut4iasrcjhoylgzipmsfrnvfudzniigx3y",
       "fragment": "amicus-systems",
       "related": [
         "portals-proof",
         "debt-default",
         "records-proof",
-        "administrative-burden"
+        "administrative-burden",
+        "dispute-referral-loop"
       ],
       "companies": [
         "company-experian",
@@ -64,13 +84,13 @@
   "sources": [
     {
       "id": "commentary-source-fcra",
-      "url": "https://uscode.house.gov/us/usc/119-118/t15/s1681i/",
+      "url": "https://uscode.house.gov/us/usc/119-120/t15/s1681i/",
       "description": "Office of the Law Revision Counsel, 15 U.S.C. §1681i. Current text through 7 October 2026. Reinvestigation and relevant information, results and procedure notices, and the distinct statement-of-dispute provisions in subsections (b)–(c). The latter permit a clear and accurate codification or summary; a downloadable verbatim submission history is a proposed design standard here, not a quoted statutory requirement."
     },
     {
       "id": "commentary-source-experian",
       "url": "https://www.experian.com/help/dispute-credit/",
-      "description": "Experian, Dispute Credit Report Information. Public instructions for adding a statement and supplying supporting documents. These do not independently reproduce the authenticated interface route described by Rigler."
+      "description": "Experian, Dispute Credit Report Information. Public instructions for adding a statement and supplying supporting documents. These do not independently reproduce the authenticated interface route described by the author."
     },
     {
       "id": "commentary-source-transunion",
@@ -104,15 +124,18 @@
     }
   ],
   "attribution": {
-    "author": "John Rigler",
-    "date": "2026-10-22",
+    "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+    "date": "2026-10-23",
     "scope": "Attributed opinion and observations, distinct from sourced company descriptions and official records"
   },
   "research_scope": {
-    "observations": "Experian interface and visible-history limitations, and creditor-litigation counsel-access recollections, supplied by Rigler on 22 October 2026; not independently reproduced",
+    "observations": "Experian interface and visible-history limitations, and creditor-litigation counsel-access recollections, supplied by the author on 22 October 2026; not independently reproduced",
     "distinctions": "Reinvestigation, dispute reasons, consumer statement, collection communication, and court filing are distinct; TransUnion expressly describes a free-text statement option",
     "analysis": "Institutional incentives, portal recommendations, design standards, and proposed amicus work are attributed author opinion",
-    "amicus": "A research outline for adaptation to an actual court and evidentiary record; no filing or acceptance represented"
+    "amicus": "A research outline for adaptation to an actual court and evidentiary record; no filing or acceptance represented",
+    "referral_sequence": "Experian May 27 result page 2 and NCS May 20 response inspected in private case material. Public commentary excludes account identifiers, private images and credentials.",
+    "call": "The collection-oriented phone characterization is the author's account; no recording supplied. A proposed lawful recording is conditional.",
+    "categories": "Further authenticated category-menu screenshots remain pending. Notice wording does not establish an internal dispute code or a universal company practice."
   },
   "publication": {
     "repository": "johnrigler/commons",
@@ -126,5 +149,12 @@
     "schema": "commons/litecoin-announcement/1",
     "path": "../../examples/portal-commentary.draft.json",
     "state": "Unsigned draft; funding, fees, signing, pinning, and broadcast not performed"
-  }
+  },
+  "author_identity": {
+    "chain": "litecoin",
+    "network": "mainnet",
+    "address": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+    "status": "Author-supplied identity; cryptographic signature not supplied"
+  },
+  "update_checked": "2026-10-23"
 }

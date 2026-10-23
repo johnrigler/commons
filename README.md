@@ -86,6 +86,10 @@ has its own [direct entry path](entry/debt-recollection.html). Each published
 entry shows a full URL and a **Copy link** button. Historical CID-named editions and exact
 contribution parent references remain preserved.
 
+The [referral commentary](entry/dispute-referral-loop.html) applies the portal
+critique to Experian's fraud-themed notice and NCS's collection route. It presents
+the author's response, the inspected notice sequence and the evidence still pending.
+
 [The overview](reading/overview/index.html) explains the open stream, subjects,
 shared patterns, public memory, scribes, and paid services.
 [Prepare, print, retain](reading/assistance/index.html) supplies the preparation

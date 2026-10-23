@@ -10,7 +10,7 @@ statements, allegations, procedural records, and settled findings retain their
 different meanings. The current verified Rausch Sturm name is not treated as
 proof of a party's identity in a remembered suit.
 
-Each also includes **John Rigler’s view**, added 22 October 2026: attributed
+Each also includes **The author's view**, added 22 October 2026: attributed
 opinion, interface observations, and criticism of how the process works.
 These can disagree with the company's account of its own service. The shared
 portal argument and possible amicus research agenda are connected articles,
