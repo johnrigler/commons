@@ -1,0 +1,20 @@
+{
+  "media_type": "application/pdf",
+  "path": "bafkreih6hu6dw4wdd2nkrriev7b4xomtgvgqo2qge4k2vhqkbeam2ln5nu.pdf",
+  "cid": "bafkreih6hu6dw4wdd2nkrriev7b4xomtgvgqo2qge4k2vhqkbeam2ln5nu",
+  "sha256": "fe3d3c3b72c31e9aa8c504afc3cbb993354d076a062715aa9e0a0900cd2dbd6d",
+  "bytes": 90235,
+  "pages": 2,
+  "consumer_fields": "blank",
+  "template_author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+  "author_signature": {
+    "status": "pending",
+    "verified": false,
+    "certificate_fingerprint": null
+  },
+  "ipfs": {
+    "uri": "ipfs://bafkreih6hu6dw4wdd2nkrriev7b4xomtgvgqo2qge4k2vhqkbeam2ln5nu",
+    "status": "not-pinned",
+    "receipt": null
+  }
+}

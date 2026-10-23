@@ -160,6 +160,21 @@ identity verification or transaction is implied by pressing Go.
 
 ## Publication path
 
+### Reusable Experian form
+
+`entry/experian-correction-form.html` opens the reusable blank correction request.
+`reading/experian-form/index.html` provides local fill controls and a two-page
+print preview. The separately downloadable CID-named PDF remains blank. Form
+values stay in the tab's DOM; they are not saved as contributions or sent to
+the publishing workbench. A completed copy belongs to its consumer's case.
+
+The edition manifest records the exact PDF bytes, supplied template author,
+author-signature status and IPFS pin receipt separately. The current edition
+has a calculated raw CID but no signature or pin receipt. The intended final
+record is an author-signed PDF with the consumer fields still blank; signing
+changes its bytes and requires a new CID and edition. See
+[the form record](../reading/experian-form/README.md).
+
 From a saved contribution, **Download contribution** retains its exact JSON
 bytes. **Publish / announce** opens the publishing workbench in the same origin.
 It verifies and loads that local record, prepares `ipfs://<CID>` as the message,
