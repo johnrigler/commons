@@ -5,11 +5,11 @@
   "status": "Unsigned tool edition; source metadata extraction, not signature validation",
   "artifacts": [
     {
-      "path": "bafkreif5qewgc5webqdrepk6npafrerbn4xrbldibj6ac7hmrjemgdbeme.html",
+      "path": "bafkreichd3izgom32wce3p3qhdaqpfyvih2ge7funkwytggfdoammnufi4.html",
       "media_type": "text/html",
-      "cid": "bafkreif5qewgc5webqdrepk6npafrerbn4xrbldibj6ac7hmrjemgdbeme",
-      "sha256": "bd812c6176c40c07123d5e6bc05892216f2f10ac680a7c017cec8a48c30c2461",
-      "bytes": 551960
+      "cid": "bafkreichd3izgom32wce3p3qhdaqpfyvih2ge7funkwytggfdoammnufi4",
+      "sha256": "471ed193399bd5844dbf7038c107971541f4627cb46aad8998c51b80c6368547",
+      "bytes": 551968
     }
   ],
   "publication": {
@@ -22,5 +22,8 @@
     "version": "1.17.1",
     "license": "MIT",
     "sha256": "0f9a5cad07941f0826586c94e089d89b918c46e5c17cf2d5a3c6f666e3bc694f"
-  }
+  },
+  "supersedes_documents": [
+    "bafkreif5qewgc5webqdrepk6npafrerbn4xrbldibj6ac7hmrjemgdbeme"
+  ]
 }

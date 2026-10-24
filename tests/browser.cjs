@@ -273,6 +273,7 @@ const root = path.resolve(__dirname,'..');
     assert.ok(await direct.evaluate(()=>Array.from(document.querySelectorAll('[data-field]')).every(field=>field.textContent==='')));
     await direct.goto(origin+'/commons/tools/artifacts/index.html');
     await direct.getByRole('heading',{name:'Two documents. Exact bytes.',exact:true}).waitFor();
+    assert.deepEqual(await direct.locator('#anchor-target option').evaluateAll(options=>options.map(option=>option.value)),['original','correspondence','pair']);
     const PDFLib=require('../vendor/pdf-lib/pdf-lib-1.17.1.min.js');
     const syntheticPDF=await PDFLib.PDFDocument.create();syntheticPDF.addPage();syntheticPDF.setTitle('Synthetic browser artifact');
     const pdfBytes=Buffer.from(await syntheticPDF.save());
