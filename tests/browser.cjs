@@ -267,6 +267,7 @@ const root = path.resolve(__dirname,'..');
     assert.match(await direct.locator('#email-text').inputValue(),/Synthetic Sender/);
     assert.match(await direct.locator('#email-text').inputValue(),/You digitally signed the original PDF/);
     await direct.getByRole('button',{name:'Clear fields',exact:true}).click();
+    await direct.locator('#email-panel').waitFor({state:'hidden'});
     assert.equal(await direct.locator('#email-text').inputValue(),'');
     assert.ok(!(await direct.locator('#email-panel').isVisible()));
     assert.ok(await direct.evaluate(()=>Array.from(document.querySelectorAll('[data-field]')).every(field=>field.textContent==='')));
