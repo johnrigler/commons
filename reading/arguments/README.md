@@ -42,3 +42,9 @@ sb.publish ./source/page.php index.html
 `edition.json` and its frozen CID copy record the selected artifacts and sources.
 `examples/commons-arguments.draft.json` prepares the current unsigned ledger
 reference. Pinning, funding, signing, and broadcast have not been performed.
+
+The 24 October 2026 update connects unsupported rent acceleration to the shared
+legal reference, deadline and remedies articles. It preserves the author's
+position that a substantive answer is overdue while keeping receipt, statutory
+response duties and permanent forfeiture distinct. See `../law/README.md` and
+`../../docs/RENT-ACCELERATION-CONTEXT.md` before a case-specific application.

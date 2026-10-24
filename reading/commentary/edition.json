@@ -1,16 +1,16 @@
 {
   "title": "Commons - Who Controls the Objection?",
   "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-  "date": "2026-10-23",
+  "date": "2026-10-24",
   "status": "Unsigned author account, opinion and research proposal, prepared with AI assistance; no independent legal review recorded",
   "scope": "Three connected opinion pieces: portal critique, an author attestation and response to the Experian/NCS referral sequence, and a proposed amicus research agenda.",
-  "base_commons_commit": "f108164c2261ce1d316f56dc63ed6f1392efdede",
+  "base_commons_commit": "854d7034ff86dfeea7e9015e05d234f03e70b534",
   "artifacts": [
     {
-      "path": "bafkreifqytkf2zyc4mkxyu37ut4iasrcjhoylgzipmsfrnvfudzniigx3y.html",
+      "path": "bafkreigvvvr4e6mykxlzrbcg45cvkqioavxghv7wzzehckyyqz3ywx5szm.html",
       "media_type": "text/html",
-      "sha256": "b0c4d45d6702e3157c537fa4f8804a2249dd859b287b2458b6a5a0f2d420d7de",
-      "cid": "bafkreifqytkf2zyc4mkxyu37ut4iasrcjhoylgzipmsfrnvfudzniigx3y"
+      "sha256": "d5ad63c2799855d7988446e74555410e056e63d7f6ce48712b1886778b5fb2cb",
+      "cid": "bafkreigvvvr4e6mykxlzrbcg45cvkqioavxghv7wzzehckyyqz3ywx5szm"
     }
   ],
   "articles": [
@@ -18,7 +18,7 @@
       "id": "portals-proof",
       "title": "When the portal controls the objection",
       "genre": "opinion",
-      "cid": "bafkreifqytkf2zyc4mkxyu37ut4iasrcjhoylgzipmsfrnvfudzniigx3y",
+      "cid": "bafkreigvvvr4e6mykxlzrbcg45cvkqioavxghv7wzzehckyyqz3ywx5szm",
       "fragment": "portals-proof",
       "related": [
         "credit-reporting",
@@ -42,14 +42,17 @@
       "id": "dispute-referral-loop",
       "title": "Answer the dispute that was made",
       "genre": "opinion",
-      "cid": "bafkreifqytkf2zyc4mkxyu37ut4iasrcjhoylgzipmsfrnvfudzniigx3y",
+      "cid": "bafkreigvvvr4e6mykxlzrbcg45cvkqioavxghv7wzzehckyyqz3ywx5szm",
       "fragment": "dispute-referral-loop",
       "related": [
         "portals-proof",
         "rent-acceleration",
         "credit-reporting",
         "records-proof",
-        "administrative-burden"
+        "administrative-burden",
+        "legal-reference",
+        "dispute-deadlines",
+        "debt-remedies"
       ],
       "companies": [
         "company-experian",
@@ -60,7 +63,7 @@
       "id": "amicus-systems",
       "title": "Make the recurring system visible to the court",
       "genre": "opinion",
-      "cid": "bafkreifqytkf2zyc4mkxyu37ut4iasrcjhoylgzipmsfrnvfudzniigx3y",
+      "cid": "bafkreigvvvr4e6mykxlzrbcg45cvkqioavxghv7wzzehckyyqz3ywx5szm",
       "fragment": "amicus-systems",
       "related": [
         "portals-proof",
@@ -135,7 +138,8 @@
     "amicus": "A research outline for adaptation to an actual court and evidentiary record; no filing or acceptance represented",
     "referral_sequence": "Experian May 27 result page 2 and NCS May 20 response inspected in private case material. Public commentary excludes account identifiers, private images and credentials.",
     "call": "The collection-oriented phone characterization is the author's account; no recording supplied. A proposed lawful recording is conditional.",
-    "categories": "Further authenticated category-menu screenshots remain pending. Notice wording does not establish an internal dispute code or a universal company practice."
+    "categories": "Further authenticated category-menu screenshots remain pending. Notice wording does not establish an internal dispute code or a universal company practice.",
+    "followup_2026_10_24": "Author reports NCS portal upload, telephone acknowledgment, inaccessible reviewer and Firmus referral; no new recording, signature verification, court filing or independent portal audit inspected."
   },
   "publication": {
     "repository": "johnrigler/commons",
@@ -156,5 +160,13 @@
     "address": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
     "status": "Author-supplied identity; cryptographic signature not supplied"
   },
-  "update_checked": "2026-10-23"
+  "update_checked": "2026-10-24",
+  "supersedes_documents": [
+    "bafkreifqytkf2zyc4mkxyu37ut4iasrcjhoylgzipmsfrnvfudzniigx3y"
+  ],
+  "legal_reference": {
+    "path": "../law/edition.json",
+    "registry_cid": "bafkreicujonkq5hladqxqj5j5vpqlhisklwrx4xk5kpymqaul5qapzk6f4",
+    "reference_entry": "../../entry/legal-reference.html"
+  }
 }

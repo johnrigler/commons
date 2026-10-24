@@ -221,3 +221,14 @@ connected reading, safe text rendering, saved replies, index filtering, reload,
 offline article windows, subject filters, publishing handoff, About navigation
 and a phone viewport. The static reader
 has no dependency on Playwright, Node, a framework or a CDN.
+
+## Shared legal references
+
+`entry/legal-reference.html`, `entry/dispute-deadlines.html` and
+`entry/debt-remedies.html` are connected printable articles. `legal-references.json`
+provides the editable source, and `reading/law/edition.json` records the exact
+registry and rendered edition. New legal assertions should register their
+provisions with stable IDs and actor/trigger/deadline/limit fields. The imported
+inventory preserves earlier editions' legal sources without claiming a fresh
+review of each. See `RENT-ACCELERATION-CONTEXT.md` before applying these rules to
+the Firmus / NCS / Experian record.

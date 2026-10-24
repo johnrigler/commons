@@ -1,5 +1,7 @@
 # Commons
 
+- Before answering or editing the unsupported-rent-acceleration / Firmus / NCS / Experian work, read `docs/RENT-ACCELERATION-CONTEXT.md`, the current `reading/arguments/source/1_40-rental-debt.html`, and `legal-references.json`. Follow the linked current editions; do not restart from generic debt-validation advice.
+- When adding or changing a legal assertion anywhere in Commons, add or update its stable reference in `legal-references.json`: citation, jurisdiction, covered actor, trigger, deadline, required action, consequences, limits, primary URL, and check date. Keep inherited source inventory distinct from newly reviewed rules. Rebuild `reading/law/` and affected frozen editions; never change historical CID files.
 - This repository is public. Publish reusable statements and public source references; keep personal case evidence in its intended Daisy record.
 - The browser runtime is vanilla JavaScript. No framework, build service, CDN or Node runtime is required by readers.
 - Preserve the existing CC0 license. Record authorship, sources, scope, date and review status independently of byte verification.

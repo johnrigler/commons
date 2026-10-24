@@ -90,6 +90,19 @@ The [referral commentary](entry/dispute-referral-loop.html) applies the portal
 critique to Experian's fraud-themed notice and NCS's collection route. It presents
 the author's response, the inspected notice sequence and the evidence still pending.
 
+[Laws, duties, deadlines and remedies](entry/legal-reference.html) provides the
+common law index. [Which deadline belongs to which party?](entry/dispute-deadlines.html)
+keeps the landlord, collector, furnisher and bureau triggers separate;
+[Damages follow the claim](entry/debt-remedies.html) distinguishes the available
+remedies. Add newly cited provisions to [legal-references.json](legal-references.json)
+when extending the collection. Prior legal sources across disability, traffic
+and other subjects are inventoried with their original scope.
+
+For continuity on the Firmus / NCS / Experian work, start with
+[the case-context notes](docs/RENT-ACCELERATION-CONTEXT.md). They record the
+underlying unsupported-rent-acceleration objection, the actual entity roles,
+record locations and the distinctions future sessions should not relearn.
+
 [The overview](reading/overview/index.html) explains the open stream, subjects,
 shared patterns, public memory, scribes, and paid services.
 [Prepare, print, retain](reading/assistance/index.html) supplies the preparation

@@ -1,23 +1,23 @@
 {
   "title": "Commons - The Cost of Challenging a Claim",
   "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-  "date": "2026-10-23",
+  "date": "2026-10-24",
   "status": "Unsigned AI-assisted research and editorial draft; no independent legal review recorded",
   "scope": "Seven general arguments and an adaptable request concerning dispute costs, debt evidence and procedure, rental balances, credit reporting, and traffic-enforcement incentives",
-  "base_commons_commit": "4bbf9f5527770ddff6070a9635230b4756256fb3",
+  "base_commons_commit": "854d7034ff86dfeea7e9015e05d234f03e70b534",
   "artifacts": [
     {
-      "path": "bafkreigrxbce4vw65jbd3g2n74uxllc7i7pw2wuap7cego35s6glvk5bhm.html",
+      "path": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y.html",
       "media_type": "text/html",
-      "sha256": "d1b8444e56deea423d9b4dff2975ac5f47df6d5a807fc4433b7d978cbaaba13b",
-      "cid": "bafkreigrxbce4vw65jbd3g2n74uxllc7i7pw2wuap7cego35s6glvk5bhm"
+      "sha256": "56120d1f4d21e6f567a5ca39ef3895439ee996659a875d40a48ab0de53d538fe",
+      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y"
     }
   ],
   "articles": [
     {
       "id": "administrative-burden",
       "title": "Deterrence through administrative burden",
-      "cid": "bafkreigrxbce4vw65jbd3g2n74uxllc7i7pw2wuap7cego35s6glvk5bhm",
+      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
       "fragment": "administrative-burden",
       "related": [
         "records-proof",
@@ -32,7 +32,7 @@
     {
       "id": "records-proof",
       "title": "A debt claim needs a traceable account",
-      "cid": "bafkreigrxbce4vw65jbd3g2n74uxllc7i7pw2wuap7cego35s6glvk5bhm",
+      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
       "fragment": "records-proof",
       "related": [
         "debt-default",
@@ -44,7 +44,7 @@
     {
       "id": "debt-default",
       "title": "When procedure decides a debt claim",
-      "cid": "bafkreigrxbce4vw65jbd3g2n74uxllc7i7pw2wuap7cego35s6glvk5bhm",
+      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
       "fragment": "debt-default",
       "related": [
         "debt-recollection",
@@ -56,19 +56,22 @@
     {
       "id": "rent-acceleration",
       "title": "Unsupported rent acceleration",
-      "cid": "bafkreigrxbce4vw65jbd3g2n74uxllc7i7pw2wuap7cego35s6glvk5bhm",
+      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
       "fragment": "rent-acceleration",
       "related": [
         "records-proof",
         "credit-reporting",
         "administrative-burden",
-        "request"
+        "request",
+        "legal-reference",
+        "dispute-deadlines",
+        "debt-remedies"
       ]
     },
     {
       "id": "credit-reporting",
       "title": "Credit reporting as collection pressure",
-      "cid": "bafkreigrxbce4vw65jbd3g2n74uxllc7i7pw2wuap7cego35s6glvk5bhm",
+      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
       "fragment": "credit-reporting",
       "related": [
         "records-proof",
@@ -80,7 +83,7 @@
     {
       "id": "traffic-insurance",
       "title": "The price of a different traffic record",
-      "cid": "bafkreigrxbce4vw65jbd3g2n74uxllc7i7pw2wuap7cego35s6glvk5bhm",
+      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
       "fragment": "traffic-insurance",
       "related": [
         "traffic-revenue",
@@ -91,7 +94,7 @@
     {
       "id": "traffic-revenue",
       "title": "When citations fund the town",
-      "cid": "bafkreigrxbce4vw65jbd3g2n74uxllc7i7pw2wuap7cego35s6glvk5bhm",
+      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
       "fragment": "traffic-revenue",
       "related": [
         "traffic-insurance",
@@ -101,7 +104,7 @@
     {
       "id": "request",
       "title": "Request the basis of a reported balance",
-      "cid": "bafkreigrxbce4vw65jbd3g2n74uxllc7i7pw2wuap7cego35s6glvk5bhm",
+      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
       "fragment": "request",
       "related": [
         "rent-acceleration",
@@ -125,7 +128,8 @@
     "bafkreiaqfqyydyykvddoxzxxzqs5lrje2hbznnkdd5oxrvepxovbs62fqy",
     "bafkreie5hacpyhsmg4o3ymzlyzjk2yrx7pgnejfdlm5vikmews3mpn7jmy",
     "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke",
-    "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze"
+    "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
+    "bafkreigrxbce4vw65jbd3g2n74uxllc7i7pw2wuap7cego35s6glvk5bhm"
   ],
   "sources_checked": "2026-10-22",
   "sources": [
@@ -287,5 +291,10 @@
     "recorded": "2026-10-23",
     "sha256": "4eb20b564028b35490ddcce8852b00d1f70e5908f6ac4ded2aa32fbbe79e743e",
     "kind": "Author-supplied correction of recollection; not a case document"
+  },
+  "legal_reference": {
+    "path": "../law/edition.json",
+    "registry_cid": "bafkreicujonkq5hladqxqj5j5vpqlhisklwrx4xk5kpymqaul5qapzk6f4",
+    "reference_entry": "../../entry/legal-reference.html"
   }
 }
