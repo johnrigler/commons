@@ -1,0 +1,28 @@
+{
+  "title": "Two-document artifact intake",
+  "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+  "date": "2026-10-24",
+  "status": "Unsigned tool edition; source metadata extraction, not signature validation",
+  "artifacts": [
+    {
+      "path": "bafkreieppfvlvkxrix6umi2qewetywcf3fcgetazkrcsadseegngyfjwme.html",
+      "media_type": "text/html",
+      "cid": "bafkreieppfvlvkxrix6umi2qewetywcf3fcgetazkrcsadseegngyfjwme",
+      "sha256": "8f796abaaaf145fd46235025893c5845d944624c195445200e44219a6c153661",
+      "bytes": 1982
+    }
+  ],
+  "publication": {
+    "author_signature": null,
+    "ipfs_pin_receipt": null,
+    "transaction_id": null
+  },
+  "articles": [
+    {
+      "id": "artifact-intake",
+      "title": "Two-document artifact intake",
+      "cid": "bafkreieppfvlvkxrix6umi2qewetywcf3fcgetazkrcsadseegngyfjwme",
+      "fragment": "artifact-intake"
+    }
+  ]
+}

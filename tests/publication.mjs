@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdtemp, writeFile, readFile, readlink, readdir, rm } from 'node:fs/promises';
 import { execFileSync, spawnSync } from 'node:child_process';
 import { tmpdir } from 'node:os';
-import { join, resolve } from 'node:path';
+import { join, resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
@@ -22,11 +22,12 @@ test('every published entry has a static path selecting the current portal', asy
 });
 
 test('portal, about and publishing snapshots match their PHP sources and CID filenames', options, async () => {
-    for (const [entry, source, marker] of [['index.html', 'index.php', 'id="portal-data"'], ['about.html', 'sb/about.php', 'About Commons'], ['publish.html', 'sb/page.php', 'id="commons-data"']]) {
+    for (const [entry, source, marker] of [['index.html', 'index.php', 'id="portal-data"'], ['about.html', 'sb/about.php', 'About Commons'], ['publish.html', 'sb/page.php', 'id="commons-data"'], ['tools/artifacts/index.html','tools/artifacts/source/page.php','id="original-file"'], ['reading/artifact-intake/index.html','reading/artifact-intake/source/page.php','id="artifact-intake"']]) {
         const html = execFileSync(php, ['-n', join(root, source)]);
         const target = await readlink(join(root, entry));
-        assert.deepEqual(await readFile(join(root, target)), html);
-        const cid = execFileSync(php, ['-n', join(root, 'sb/cid.php'), join(root, target)], { encoding: 'utf8' }).trim();
+        const snapshot = resolve(root, dirname(entry), target);
+        assert.deepEqual(await readFile(snapshot), html);
+        const cid = execFileSync(php, ['-n', join(root, 'sb/cid.php'), snapshot], { encoding: 'utf8' }).trim();
         assert.equal(target, cid + '.html');
         const text = html.toString('utf8');
         assert.ok(text.includes(marker));

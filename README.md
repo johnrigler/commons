@@ -72,6 +72,14 @@ See [correspondence policy](docs/CORRESPONDENCE.md) and the
 
 ## Current arguments and reading editions
 
+[Artifact intake](tools/artifacts/index.html) accepts an original digitally signed
+PDF and related correspondence locally. It hashes the exact source bytes,
+extracts PDF/signature/certificate details or email headers, and saves a private
+pair record. The Chisel handoff carries only a selected SHA-256 as 71 readable
+ASCII bytes (`sha256:` plus the full hex digest), tagged with the Litecoin
+CertLedger transport address. Signature validation and certificate trust are
+not performed by this intake. [Implementation and record contract](docs/ARTIFACT-INTAKE.md).
+
 [Autism, assessment, and access to disability benefits](reading/autism/index.html)
 opens the **Autism** subject. It covers childhood screening, adults without an
 earlier diagnosis, medical and functional evidence, and the distinct routes to

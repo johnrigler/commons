@@ -9,6 +9,28 @@
   },
   "items": [
     {
+      "id": "artifact-intake",
+      "title": "Two documents. Exact bytes.",
+      "summary": "Choose an original signed PDF and related correspondence locally; inspect metadata, retain full SHA-256 hashes and review a CertLedger draft in Chisel.",
+      "kind": "description",
+      "genre": "tool",
+      "cid": "bafkreieppfvlvkxrix6umi2qewetywcf3fcgetazkrcsadseegngyfjwme",
+      "path": "reading/artifact-intake/bafkreieppfvlvkxrix6umi2qewetywcf3fcgetazkrcsadseegngyfjwme.html",
+      "fragment": "artifact-intake",
+      "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+      "status": "Unsigned tool description; no source upload or transaction",
+      "indexed": true,
+      "topics": [
+        "Commons practice",
+        "Housing & credit"
+      ],
+      "related": [
+        "authority-clarification",
+        "records-proof",
+        "rent-acceleration"
+      ]
+    },
+    {
       "id": "authority-clarification",
       "title": "Clarify the signed document and company policy",
       "summary": "Blank correspondence asking a digital signer about their capacity, policy, instructions and responsibility for answering an unsupported-rent-acceleration dispute.",
@@ -28,7 +50,8 @@
         "rent-acceleration",
         "dispute-referral-loop",
         "legal-reference",
-        "dispute-deadlines"
+        "dispute-deadlines",
+        "artifact-intake"
       ]
     },
     {
