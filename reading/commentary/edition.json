@@ -2,15 +2,15 @@
   "title": "Commons - Who Controls the Objection?",
   "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
   "date": "2026-10-24",
-  "status": "Unsigned author account, opinion and research proposal, prepared with AI assistance; no independent legal review recorded",
-  "scope": "Three connected opinion pieces: portal critique, an author attestation and response to the Experian/NCS referral sequence, and a proposed amicus research agenda.",
-  "base_commons_commit": "854d7034ff86dfeea7e9015e05d234f03e70b534",
+  "status": "Unsigned AI-assisted commentary and reusable correspondence; no independent legal review recorded",
+  "scope": "General portal critique, reusable response to a referral loop, and proposed amicus research agenda; specific case facts are kept privately.",
+  "base_commons_commit": "a335b680203479dedc5e5976e120b5942ce73d80",
   "artifacts": [
     {
-      "path": "bafkreigvvvr4e6mykxlzrbcg45cvkqioavxghv7wzzehckyyqz3ywx5szm.html",
+      "path": "bafkreigmys7evpfqkl2j5ixqqaj42sgecck5z72eiiexllh47orrf4oeoa.html",
       "media_type": "text/html",
-      "sha256": "d5ad63c2799855d7988446e74555410e056e63d7f6ce48712b1886778b5fb2cb",
-      "cid": "bafkreigvvvr4e6mykxlzrbcg45cvkqioavxghv7wzzehckyyqz3ywx5szm"
+      "sha256": "ccc4be4abcb052f49ea2f08013cd48c41095dcff44420975acfcfba312f1c470",
+      "cid": "bafkreigmys7evpfqkl2j5ixqqaj42sgecck5z72eiiexllh47orrf4oeoa"
     }
   ],
   "articles": [
@@ -18,7 +18,7 @@
       "id": "portals-proof",
       "title": "When the portal controls the objection",
       "genre": "opinion",
-      "cid": "bafkreigvvvr4e6mykxlzrbcg45cvkqioavxghv7wzzehckyyqz3ywx5szm",
+      "cid": "bafkreigmys7evpfqkl2j5ixqqaj42sgecck5z72eiiexllh47orrf4oeoa",
       "fragment": "portals-proof",
       "related": [
         "credit-reporting",
@@ -42,7 +42,7 @@
       "id": "dispute-referral-loop",
       "title": "Answer the dispute that was made",
       "genre": "opinion",
-      "cid": "bafkreigvvvr4e6mykxlzrbcg45cvkqioavxghv7wzzehckyyqz3ywx5szm",
+      "cid": "bafkreigmys7evpfqkl2j5ixqqaj42sgecck5z72eiiexllh47orrf4oeoa",
       "fragment": "dispute-referral-loop",
       "related": [
         "portals-proof",
@@ -52,7 +52,8 @@
         "administrative-burden",
         "legal-reference",
         "dispute-deadlines",
-        "debt-remedies"
+        "debt-remedies",
+        "authority-clarification"
       ],
       "companies": [
         "company-experian",
@@ -63,7 +64,7 @@
       "id": "amicus-systems",
       "title": "Make the recurring system visible to the court",
       "genre": "opinion",
-      "cid": "bafkreigvvvr4e6mykxlzrbcg45cvkqioavxghv7wzzehckyyqz3ywx5szm",
+      "cid": "bafkreigmys7evpfqkl2j5ixqqaj42sgecck5z72eiiexllh47orrf4oeoa",
       "fragment": "amicus-systems",
       "related": [
         "portals-proof",
@@ -136,10 +137,8 @@
     "distinctions": "Reinvestigation, dispute reasons, consumer statement, collection communication, and court filing are distinct; TransUnion expressly describes a free-text statement option",
     "analysis": "Institutional incentives, portal recommendations, design standards, and proposed amicus work are attributed author opinion",
     "amicus": "A research outline for adaptation to an actual court and evidentiary record; no filing or acceptance represented",
-    "referral_sequence": "Experian May 27 result page 2 and NCS May 20 response inspected in private case material. Public commentary excludes account identifiers, private images and credentials.",
-    "call": "The collection-oriented phone characterization is the author's account; no recording supplied. A proposed lawful recording is conditional.",
     "categories": "Further authenticated category-menu screenshots remain pending. Notice wording does not establish an internal dispute code or a universal company practice.",
-    "followup_2026_10_24": "Author reports NCS portal upload, telephone acknowledgment, inaccessible reviewer and Firmus referral; no new recording, signature verification, court filing or independent portal audit inspected."
+    "followup_2026_10_24": "Referral-loop correspondence generalized into a blank template; company profiles retain separately sourced public descriptions. Private case notes preserve actual parties, source signatures, chronology and correspondence."
   },
   "publication": {
     "repository": "johnrigler/commons",
@@ -162,11 +161,12 @@
   },
   "update_checked": "2026-10-24",
   "supersedes_documents": [
-    "bafkreifqytkf2zyc4mkxyu37ut4iasrcjhoylgzipmsfrnvfudzniigx3y"
+    "bafkreifqytkf2zyc4mkxyu37ut4iasrcjhoylgzipmsfrnvfudzniigx3y",
+    "bafkreigvvvr4e6mykxlzrbcg45cvkqioavxghv7wzzehckyyqz3ywx5szm"
   ],
   "legal_reference": {
     "path": "../law/edition.json",
-    "registry_cid": "bafkreicujonkq5hladqxqj5j5vpqlhisklwrx4xk5kpymqaul5qapzk6f4",
+    "registry_cid": "bafkreict2inrddysb656bx2dmkdkfz5j2an7kpk4fjpx5puz34kjt5ojcu",
     "reference_entry": "../../entry/legal-reference.html"
   }
 }

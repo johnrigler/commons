@@ -1,0 +1,989 @@
+{
+  "schema": "commons/legal-references/1",
+  "title": "Laws, duties, deadlines and remedies",
+  "date": "2026-10-24",
+  "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+  "status": "Unsigned AI-assisted reference; no independent legal review",
+  "scope": "Shared reference for unsupported rent acceleration and connected collection, reporting, recording and court-process questions; imported legal sources from other current Commons subjects",
+  "rules": [
+    {
+      "id": "tx-property-91-006",
+      "group": "Texas housing",
+      "citation": "Texas Property Code §91.006",
+      "title": "Mitigation after abandonment",
+      "source_url": "https://statutes.capitol.texas.gov/?code=PR&chapter=PR.91&artSec=91.006&tab=1",
+      "applies_to": "Landlord of the leased premises; identify the legally responsible owner/lessor.",
+      "trigger": "Abandonment in breach of a lease.",
+      "deadline": "Duty concerns reasonable efforts during the relevant vacancy period; this section specifies no 30-day response deadline for a records request.",
+      "required_action": "Take reasonable steps to reduce avoidable rental loss; a purported waiver of the duty is void.",
+      "consequence": "Failure to mitigate can reduce recoverable loss to the extent it reasonably could have been avoided.",
+      "limits": "A missing answer does not itself prove no mitigation occurred. The lease, events, efforts and avoidable amount require evidence.",
+      "related": [
+        "rent-acceleration"
+      ],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "Texas",
+      "additional_sources": [
+        "https://guides.sll.texas.gov/landlord-tenant-law/ending-the-lease"
+      ]
+    },
+    {
+      "id": "tx-property-92-deposit",
+      "group": "Texas housing",
+      "citation": "Texas Property Code §§92.103–92.109",
+      "title": "Security deposits and a distinct 30-day rule",
+      "source_url": "https://tcss.legis.texas.gov/docs/PR/htm/PR.92.htm",
+      "applies_to": "Residential landlord as defined by §92.001(2); a management agent is not automatically that landlord.",
+      "trigger": "Surrender of possession and the written forwarding-address condition in §92.107.",
+      "deadline": "Generally refund within 30 days after surrender; the refund/itemization obligation is conditioned on the written forwarding address.",
+      "required_action": "Refund the deposit or account for lawful deductions, subject to statutory exceptions.",
+      "consequence": "§92.109 provides bad-faith presumptions, deposit remedies and specified forfeitures; §92.109(b) addresses suit for damages to the premises.",
+      "limits": "This is not a blanket 30-day deadline to prove accelerated rent or an automatic forfeiture of every lease claim.",
+      "related": [
+        "rent-acceleration"
+      ],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "Texas",
+      "additional_sources": []
+    },
+    {
+      "id": "tx-finance-392-001",
+      "group": "Texas collection",
+      "citation": "Texas Finance Code §392.001(3), (5)–(7)",
+      "title": "Creditor, collector and third-party collector",
+      "source_url": "https://statutes.capitol.texas.gov/?code=FI&chapter=FI.392&artSec=392.001&tab=1",
+      "applies_to": "Persons directly or indirectly engaged in consumer debt collection, including qualifying original creditors.",
+      "trigger": "The entity’s actual conduct and role in collecting an alleged consumer debt.",
+      "deadline": "Definition; no response clock.",
+      "required_action": "Distinguish the broad Texas debt-collector definition from the narrower third-party definition.",
+      "consequence": "Determines which provisions and duties may apply.",
+      "limits": "Texas location alone does not make every entity a third-party collector; federal FDCPA coverage is a separate question.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "Texas",
+      "additional_sources": []
+    },
+    {
+      "id": "tx-finance-392-202",
+      "group": "Texas collection",
+      "citation": "Texas Finance Code §392.202(a)–(e)",
+      "title": "Written disputes and the 30-day statement",
+      "source_url": "https://statutes.capitol.texas.gov/?code=FI&chapter=FI.392&artSec=392.202&tab=1",
+      "applies_to": "Covered third-party debt collectors; determine the actual collector separately from the source creditor or property manager.",
+      "trigger": "Receipt by that collector of qualifying written notice identifying an inaccuracy in its file.",
+      "deadline": "Written statement no later than day 30 after receipt. Admitted inaccuracies: correction within five business days.",
+      "required_action": "Investigate and send a statement admitting or denying the inaccuracy, or explaining insufficient investigation time. Collection must cease as provided in (a). The insufficient-time route requires interim file changes, recipient notices and cessation under (d).",
+      "consequence": "On completion notify the consumer. Under (e), a determination of accuracy permits reporting and collection to resume. Civil remedies are addressed by §392.403.",
+      "limits": "A denial is not an obligation to send every requested document. Missing the response deadline does not automatically erase the underlying lease debt; a later investigation does not make an earlier response timely.",
+      "related": [
+        "dispute-referral-loop"
+      ],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "Texas",
+      "additional_sources": []
+    },
+    {
+      "id": "tx-finance-392-303",
+      "group": "Texas collection",
+      "citation": "Texas Finance Code §392.303(a)(2)",
+      "title": "Unauthorized incidental charges",
+      "source_url": "https://statutes.capitol.texas.gov/?code=FI&chapter=FI.392&artSec=392.303&tab=1",
+      "applies_to": "Covered Texas debt collectors.",
+      "trigger": "Attempt to collect interest or an incidental charge, fee or expense.",
+      "deadline": "Conduct rule; no general reply deadline.",
+      "required_action": "Collect those amounts only when expressly authorized by the agreement or legally chargeable.",
+      "consequence": "A proven violation can support applicable Chapter 392 remedies.",
+      "limits": "A disputed fee is not automatically unauthorized; identify the governing provision and facts.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "Texas",
+      "additional_sources": []
+    },
+    {
+      "id": "tx-finance-392-304",
+      "group": "Texas collection",
+      "citation": "Texas Finance Code §392.304(a)(8), (19)",
+      "title": "False amounts and deceptive collection",
+      "source_url": "https://statutes.capitol.texas.gov/?code=FI&chapter=FI.392&artSec=392.304&tab=1",
+      "applies_to": "Covered Texas debt collectors, potentially including the source creditor’s own collection conduct.",
+      "trigger": "A qualifying misrepresentation or deceptive means in collection.",
+      "deadline": "Conduct rule; no general reply deadline.",
+      "required_action": "Avoid misrepresenting the character, extent or amount of a consumer debt and other prohibited deception.",
+      "consequence": "A proven violation can support applicable Chapter 392 remedies.",
+      "limits": "Silence alone does not establish that every charge was false; connect the communication, inaccuracy and applicable legal elements.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "Texas",
+      "additional_sources": []
+    },
+    {
+      "id": "us-fdcpa-1692a",
+      "group": "Federal collection",
+      "citation": "15 U.S.C. §1692a(4)–(6)",
+      "title": "Federal coverage and creditor exclusions",
+      "source_url": "https://uscode.house.gov/us/usc/119-120/t15/s1692a/",
+      "applies_to": "Qualifying federal debt collectors and consumer debts.",
+      "trigger": "Actual business, ownership, collection and acquisition circumstances.",
+      "deadline": "Definition; no response clock.",
+      "required_action": "Determine coverage independently for each defendant.",
+      "consequence": "Controls availability of FDCPA claims.",
+      "limits": "An original creditor or qualifying manager may be excluded federally while remaining subject to other law.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "United States (federal)",
+      "additional_sources": []
+    },
+    {
+      "id": "us-fdcpa-1692g",
+      "group": "Federal collection",
+      "citation": "15 U.S.C. §1692g; 12 CFR §1006.38",
+      "title": "Validation period and collection pause",
+      "source_url": "https://uscode.house.gov/us/usc/119-120/t15/s1692g/",
+      "applies_to": "Covered debt collector receiving a timely written dispute.",
+      "trigger": "Written dispute submitted within the validation period, generally 30 days after validation information is received.",
+      "deadline": "30 days is principally the consumer’s dispute period. This provision sets no fixed number of days for the collector to provide verification.",
+      "required_action": "Stop collecting the disputed portion pending the required verification response; Regulation F recognizes a portal that accepts consumer communications.",
+      "consequence": "Collection can resume after compliant verification; stopping indefinitely is different from responding within a fixed deadline.",
+      "limits": "Do not substitute this rule for Texas §392.202. Verification is not necessarily disclosure of every document needed to litigate the merits.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "United States (federal)",
+      "additional_sources": [
+        "https://www.consumerfinance.gov/rules-policy/regulations/1006/38/"
+      ]
+    },
+    {
+      "id": "us-regf-1006-38",
+      "group": "Federal collection",
+      "citation": "12 CFR §1006.38 and official interpretations",
+      "title": "Portal submissions and duplicative disputes",
+      "source_url": "https://www.consumerfinance.gov/rules-policy/regulations/1006/38/",
+      "applies_to": "Covered debt collectors and timely written consumer disputes.",
+      "trigger": "Use of a medium through which the collector accepts consumer communications.",
+      "deadline": "Validation-period conditions apply; no daily-upload entitlement or automatic new deadline.",
+      "required_action": "Apply the written-dispute and collection-pause rules. Duplicative treatment has conditions, including prior compliant verification and absence of new material information.",
+      "consequence": "A compliant verification or duplicative-dispute response can permit resumption under the rule.",
+      "limits": "A portal submission to the creditor is not automatically receipt by the collector; preserve the recipient and exact submission.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "United States (federal)",
+      "additional_sources": []
+    },
+    {
+      "id": "us-fdcpa-1692ef",
+      "group": "Federal collection",
+      "citation": "15 U.S.C. §§1692e(2)(A), (8), 1692f(1)",
+      "title": "False balances, disputed status and unauthorized amounts",
+      "source_url": "https://uscode.house.gov/us/usc/119-120/t15/s1692e/",
+      "applies_to": "Covered federal debt collectors.",
+      "trigger": "Collection representations, credit communications and amounts sought.",
+      "deadline": "Conduct rules; no general response clock.",
+      "required_action": "Avoid false debt representations; communicate known disputed status; collect amounts authorized by agreement or law.",
+      "consequence": "Proven violations can support §1692k remedies.",
+      "limits": "A failure to send requested records and a false or unauthorized amount are distinct propositions to prove.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "United States (federal)",
+      "additional_sources": [
+        "https://uscode.house.gov/us/usc/119-120/t15/s1692f/"
+      ]
+    },
+    {
+      "id": "us-fdcpa-1692c",
+      "group": "Federal collection",
+      "citation": "15 U.S.C. §1692c(a)(2); 12 CFR §1006.6(b)(2)",
+      "title": "Represented consumers",
+      "source_url": "https://uscode.house.gov/us/usc/119-120/t15/s1692c/",
+      "applies_to": "Covered collectors who know the consumer is represented about the debt and know or can readily ascertain counsel’s name/address.",
+      "trigger": "Knowledge of representation, subject to statutory exceptions.",
+      "deadline": "Ongoing communication restriction.",
+      "required_action": "Generally communicate through counsel.",
+      "consequence": "A prohibited direct communication may support an FDCPA claim.",
+      "limits": "Does not guarantee the attorney access to a particular company officer or reviewer.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "United States (federal)",
+      "additional_sources": [
+        "https://www.consumerfinance.gov/rules-policy/regulations/1006/6/"
+      ]
+    },
+    {
+      "id": "us-fcra-1681i",
+      "group": "Federal reporting",
+      "citation": "15 U.S.C. §1681i(a)",
+      "title": "Bureau reinvestigation and results",
+      "source_url": "https://uscode.house.gov/us/usc/119-120/t15/s1681i/",
+      "applies_to": "Consumer reporting agencies.",
+      "trigger": "Receipt of a qualifying dispute by the bureau.",
+      "deadline": "Generally 30 days; up to 15 additional days for qualifying relevant information during that period. Results generally within five business days after completion; procedure description within 15 days after request under (7).",
+      "required_action": "Reinvestigate reasonably, forward relevant information, consider relevant consumer material, and correct/delete/modify as the statute requires.",
+      "consequence": "Inaccurate, incomplete or unverifiable information requires appropriate correction or deletion; qualifying violations may support civil claims.",
+      "limits": "The bureau’s clock is not automatically triggered by a letter delivered only to the source creditor or property manager. Deletion from a report does not itself extinguish a contractual debt.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "United States (federal)",
+      "additional_sources": []
+    },
+    {
+      "id": "us-fcra-1681e",
+      "group": "Federal reporting",
+      "citation": "15 U.S.C. §1681e(b)",
+      "title": "Reasonable accuracy procedures",
+      "source_url": "https://uscode.house.gov/us/usc/119-120/t15/s1681e/",
+      "applies_to": "Consumer reporting agencies preparing consumer reports.",
+      "trigger": "Preparation of a consumer report.",
+      "deadline": "Ongoing procedure duty.",
+      "required_action": "Follow reasonable procedures to assure maximum possible accuracy.",
+      "consequence": "Qualifying failures and harm can support applicable FCRA remedies.",
+      "limits": "A bureau’s repeated balance is not independent evidence of the underlying lease calculation.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "United States (federal)",
+      "additional_sources": []
+    },
+    {
+      "id": "us-fcra-1681s2",
+      "group": "Federal reporting",
+      "citation": "15 U.S.C. §1681s–2(a)–(d)",
+      "title": "Furnisher duties and private-claim boundaries",
+      "source_url": "https://uscode.house.gov/us/usc/119-120/t15/s1681s-2/",
+      "applies_to": "The entity furnishing information to a consumer reporting agency; do not automatically assign that role to the property manager.",
+      "trigger": "For (b), notice from a bureau under §1681i(a)(2); direct disputes and known inaccuracies implicate different provisions.",
+      "deadline": "The (b) investigation must finish within the applicable bureau investigation period.",
+      "required_action": "Investigate, review relevant bureau-supplied material, report results and make required corrections. (a)(3) addresses disputed-status reporting.",
+      "consequence": "Privately enforceable investigation claims generally arise under (b); (c)–(d) restrict private enforcement of (a), including its regulations.",
+      "limits": "Sending documents directly to the collector or source creditor does not by itself establish the bureau-notice trigger for a (b) damages claim.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "United States (federal)",
+      "additional_sources": []
+    },
+    {
+      "id": "us-regv-1022-43",
+      "group": "Federal reporting",
+      "citation": "12 CFR §1022.43",
+      "title": "Direct disputes to furnishers",
+      "source_url": "https://www.consumerfinance.gov/rules-policy/regulations/1022/43/",
+      "applies_to": "The actual furnisher receiving a qualifying direct dispute at a specified or otherwise qualifying address.",
+      "trigger": "Receipt of an adequately identified account, disputed information, explanation and supporting material, subject to exceptions.",
+      "deadline": "Generally the applicable §1681i investigation period; frivolous/irrelevant determination notice within five business days of determination.",
+      "required_action": "Investigate reasonably, consider relevant supplied material, report results to the consumer and correct inaccurate furnishing.",
+      "consequence": "A regulatory duty exists; private damages enforcement must be analyzed with §1681s–2(c)–(d).",
+      "limits": "No automatic email receipt is specified here. A new upload is not automatically a fresh independent investigation duty.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "United States (federal)",
+      "additional_sources": []
+    },
+    {
+      "id": "tx-finance-392-403",
+      "group": "Remedies",
+      "citation": "Texas Finance Code §§392.403–392.404",
+      "title": "Texas collection remedies",
+      "source_url": "https://statutes.capitol.texas.gov/?code=FI&chapter=FI.392&artSec=392.403&tab=1",
+      "applies_to": "Persons with an actionable Chapter 392 violation and the required injury or basis for relief.",
+      "trigger": "Proof of a covered violation and the remedy’s conditions.",
+      "deadline": "No general response clock in these provisions.",
+      "required_action": "§392.403 permits injunctions, actual damages caused by violations, and fees/costs for a successful action; (e) provides at least $100 for successful specified violations including §392.202. §392.404 links Chapter 392 violations to DTPA remedies.",
+      "consequence": "Possible recovery is not confined to the federal FDCPA additional-damages ceiling.",
+      "limits": "The $100 provision is not for every Chapter 392 violation. DTPA requirements, defenses and damages rules still require analysis.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "Texas",
+      "additional_sources": [
+        "https://statutes.capitol.texas.gov/?code=FI&chapter=FI.392&artSec=392.404&tab=1"
+      ]
+    },
+    {
+      "id": "tx-dtpa-17-50",
+      "group": "Remedies",
+      "citation": "Texas Business & Commerce Code §§17.45, 17.50",
+      "title": "Deceptive-practices remedies",
+      "source_url": "https://statutes.capitol.texas.gov/?code=BC&chapter=BC.17&artSec=17.50&tab=1",
+      "applies_to": "Qualifying consumers and actionable practices; consider statutory definitions, exclusions and any tie-in claim.",
+      "trigger": "A covered practice causing the required harm, with additional findings for enhanced damages.",
+      "deadline": "Remedy provision; see §17.505 for notice.",
+      "required_action": "Establish the applicable claim, causation and damages. Knowing or intentional conduct can support enhanced damages under the specified rules.",
+      "consequence": "Economic damages, qualifying mental-anguish damages, fees and potentially up to treble damages, depending on findings and claim.",
+      "limits": "A demand amount is not itself the plaintiff’s actual loss. Enhanced damages are not automatic or interchangeable with common-law punitive damages.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "Texas",
+      "additional_sources": [
+        "https://statutes.capitol.texas.gov/?code=BC&chapter=BC.17&artSec=17.45&tab=1"
+      ]
+    },
+    {
+      "id": "tx-dtpa-17-505",
+      "group": "Remedies",
+      "citation": "Texas Business & Commerce Code §17.505",
+      "title": "DTPA pre-suit notice",
+      "source_url": "https://statutes.capitol.texas.gov/?code=BC&chapter=BC.17&artSec=17.505&tab=1",
+      "applies_to": "Consumer contemplating a covered damages suit and the intended defendant.",
+      "trigger": "Notice reasonably detailing the complaint, damages and reasonably incurred expenses, including attorney fees if any.",
+      "deadline": "Generally at least 60 days before filing; statutory exceptions apply.",
+      "required_action": "Give the required written notice and particulars.",
+      "consequence": "Noncompliance can lead to abatement while notice is supplied and the period runs.",
+      "limits": "This is a claimant’s pre-suit requirement, not 60 days for a creditor to prove the debt. An ordinary follow-up email is not automatically a compliant notice.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "Texas",
+      "additional_sources": []
+    },
+    {
+      "id": "us-fdcpa-1692k",
+      "group": "Remedies",
+      "citation": "15 U.S.C. §1692k",
+      "title": "FDCPA damages, fees and filing period",
+      "source_url": "https://uscode.house.gov/us/usc/119-120/t15/s1692k/",
+      "applies_to": "Each plaintiff with a viable FDCPA claim against a covered collector.",
+      "trigger": "A proven violation of that plaintiff’s rights; separate proof is needed for each person.",
+      "deadline": "Generally file within one year of the violation under (d); tolling issues require specific analysis.",
+      "required_action": "Prove the claim and any actual damages caused. Additional individual statutory damages are discretionary up to $1,000 per action; successful actions can recover reasonable fees/costs.",
+      "consequence": "Two qualifying plaintiffs can each receive an award. Multiple calls do not each generate $1,000.",
+      "limits": "Do not automatically multiply awards by defendants acting together for the same injury. §1692k has no separate punitive-damages award; other claims may have other remedies.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "United States (federal)",
+      "additional_sources": []
+    },
+    {
+      "id": "us-fcra-1681no",
+      "group": "Remedies",
+      "citation": "15 U.S.C. §§1681n–1681o",
+      "title": "Willful and negligent FCRA noncompliance",
+      "source_url": "https://uscode.house.gov/us/usc/119-120/t15/s1681n/",
+      "applies_to": "A defendant violating a privately enforceable FCRA requirement and a plaintiff with a viable claim.",
+      "trigger": "Willful or negligent noncompliance, as applicable.",
+      "deadline": "See §1681p for filing limits.",
+      "required_action": "Prove the actionable duty, violation, required injury/causation and culpability.",
+      "consequence": "Willful: actual damages or $100–$1,000 statutory damages, possible punitive damages and fees/costs. Negligent: actual damages and fees/costs.",
+      "limits": "These are not automatic amounts per letter or per defendant. A direct-dispute regulatory breach alone does not establish private FCRA liability.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "United States (federal)",
+      "additional_sources": [
+        "https://uscode.house.gov/us/usc/119-120/t15/s1681o/"
+      ]
+    },
+    {
+      "id": "us-fcra-1681p",
+      "group": "Remedies",
+      "citation": "15 U.S.C. §1681p",
+      "title": "FCRA filing period",
+      "source_url": "https://uscode.house.gov/us/usc/119-120/t15/s1681p/",
+      "applies_to": "Persons bringing FCRA civil actions.",
+      "trigger": "Discovery of the violation and occurrence of the violation.",
+      "deadline": "Earlier of two years after discovery or five years after occurrence.",
+      "required_action": "Identify each claim’s dates and any applicable exceptions.",
+      "consequence": "A late lawsuit can be time-barred.",
+      "limits": "A follow-up letter or company investigation does not automatically restart a filing period.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "United States (federal)",
+      "additional_sources": []
+    },
+    {
+      "id": "us-recording-2511",
+      "group": "Recording",
+      "citation": "18 U.S.C. §2511(2)(d)",
+      "title": "Federal participant recording",
+      "source_url": "https://uscode.house.gov/us/usc/119-120/t18/s2511/",
+      "applies_to": "Private participants in a wire, oral or electronic communication.",
+      "trigger": "A participant recording, or one participant’s prior consent.",
+      "deadline": "Consent relates to the recording when made.",
+      "required_action": "Federal law generally permits participant recording, subject to the criminal-or-tortious-purpose exception.",
+      "consequence": "State recording laws can add restrictions.",
+      "limits": "A company’s own recording notice is not automatically permission for every other recording or publication.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "United States (federal)",
+      "additional_sources": []
+    },
+    {
+      "id": "nm-recording-30-12-1",
+      "group": "Recording",
+      "citation": "NMSA 1978 §30-12-1(C)",
+      "title": "New Mexico telephone recording",
+      "source_url": "https://law.justia.com/codes/new-mexico/chapter-30/article-12/section-30-12-1/",
+      "applies_to": "Participants in telephone communications involving New Mexico.",
+      "trigger": "Consent of a sender or intended recipient.",
+      "deadline": "Consent concerns the recording when made.",
+      "required_action": "Generally one-party consent for a participant’s telephone recording.",
+      "consequence": "Potential recording-law liability if recording is unlawful.",
+      "limits": "Interstate facts and other participants’ actual locations matter; a corporate address does not establish an employee’s location.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "New Mexico",
+      "additional_sources": []
+    },
+    {
+      "id": "ga-recording-16-11-66",
+      "group": "Recording",
+      "citation": "O.C.G.A. §16-11-66(a)",
+      "title": "Georgia participant audio recording",
+      "source_url": "https://law.justia.com/codes/georgia/title-16/chapter-11/article-3/part-1/section-16-11-66/",
+      "applies_to": "Participants in communications involving Georgia.",
+      "trigger": "The person recording is a participant, or a participant gives prior consent.",
+      "deadline": "Consent concerns the recording when made.",
+      "required_action": "Generally permits participant audio recording.",
+      "consequence": "Assess any other applicable jurisdiction independently.",
+      "limits": "The audio rule does not create blanket permission for private video surveillance or recording court proceedings.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "Georgia",
+      "additional_sources": []
+    },
+    {
+      "id": "us-frcp-26",
+      "group": "Court procedure",
+      "citation": "Federal Rule of Civil Procedure 26",
+      "title": "Discovery scope",
+      "source_url": "https://www.law.cornell.edu/rules/frcp/rule_26",
+      "applies_to": "Litigants in federal civil proceedings.",
+      "trigger": "A pending case and the particular discovery or testimony request.",
+      "deadline": "Case orders and the rule determine timing.",
+      "required_action": "Discovery must concern relevant, nonprivileged material and be proportional to the case.",
+      "consequence": "Court orders can enforce or limit properly presented requests.",
+      "limits": "A plan to subpoena everyone is not automatically proper.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "United States (federal)",
+      "additional_sources": []
+    },
+    {
+      "id": "us-frcp-30",
+      "group": "Court procedure",
+      "citation": "Federal Rule of Civil Procedure 30",
+      "title": "Depositions and organizational witnesses",
+      "source_url": "https://www.law.cornell.edu/rules/frcp/rule_30",
+      "applies_to": "Litigants in federal civil proceedings.",
+      "trigger": "A pending case and the particular discovery or testimony request.",
+      "deadline": "Case orders and the rule determine timing.",
+      "required_action": "Parties may agree, or a court may order, remote depositions. Under (b)(6), an organization must designate and prepare witnesses on reasonably particularized topics.",
+      "consequence": "Court orders can enforce or limit properly presented requests.",
+      "limits": "An informal call is not a deposition; applicable notice, oath, recording and discovery rules remain.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "United States (federal)",
+      "additional_sources": []
+    },
+    {
+      "id": "us-frcp-43",
+      "group": "Court procedure",
+      "citation": "Federal Rule of Civil Procedure 43",
+      "title": "Remote trial testimony",
+      "source_url": "https://www.law.cornell.edu/rules/frcp/rule_43",
+      "applies_to": "Litigants in federal civil proceedings.",
+      "trigger": "A pending case and the particular discovery or testimony request.",
+      "deadline": "Case orders and the rule determine timing.",
+      "required_action": "Remote testimony requires the applicable good-cause/compelling-circumstances showing and safeguards under (a).",
+      "consequence": "Court orders can enforce or limit properly presented requests.",
+      "limits": "A preference for Zoom does not guarantee a remote hearing or trial.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "United States (federal)",
+      "additional_sources": []
+    },
+    {
+      "id": "us-frcp-45",
+      "group": "Court procedure",
+      "citation": "Federal Rule of Civil Procedure 45",
+      "title": "Subpoenas",
+      "source_url": "https://www.law.cornell.edu/rules/frcp/rule_45",
+      "applies_to": "Litigants in federal civil proceedings.",
+      "trigger": "A pending case and the particular discovery or testimony request.",
+      "deadline": "Case orders and the rule determine timing.",
+      "required_action": "Attendance and production subpoenas have service, geographic, burden and objection limits.",
+      "consequence": "Court orders can enforce or limit properly presented requests.",
+      "limits": "Remote technology does not automatically eliminate subpoena restrictions.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "United States (federal)",
+      "additional_sources": []
+    },
+    {
+      "id": "tx-civil-rules",
+      "group": "Court procedure",
+      "citation": "Texas Rules of Civil Procedure 93(8), 198.2–198.3, 500.1(e), 508.3",
+      "title": "Admissions, defaults and justice-court distinctions",
+      "source_url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf",
+      "applies_to": "Parties in the Texas court and proceeding governed by the specific rule.",
+      "trigger": "A pleading, formal discovery request, failure to answer or failure to attend, as specified.",
+      "deadline": "Rule-specific; a private demand letter is not formal requests for admissions.",
+      "required_action": "Use the applicable procedural response and identify what is actually admitted or established.",
+      "consequence": "Defaults and deemed admissions can have legal consequences under their own conditions.",
+      "limits": "Do not import district-court rules automatically into justice court or treat unanswered ordinary correspondence as a judicial admission.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "Texas",
+      "additional_sources": []
+    },
+    {
+      "id": "tx-evidence-rules",
+      "group": "Court procedure",
+      "citation": "Texas Rules of Evidence 801(e)(2), 803(6), 902(10)",
+      "title": "Party statements and business-record foundations",
+      "source_url": "https://www.txcourts.gov/media/1463074/texas-rules-of-evidence-updated-with-amendments-effective-07022026.pdf",
+      "applies_to": "Evidence offered in a proceeding where these rules apply.",
+      "trigger": "An offered statement or business record and its foundation.",
+      "deadline": "Applicable filing/service and court rules determine timing.",
+      "required_action": "Establish relevance, authenticity and the applicable evidentiary basis.",
+      "consequence": "Qualifying statements or records may be admitted.",
+      "limits": "A digital signature does not independently prove every charge; a record maker need not always personally testify.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "Texas",
+      "additional_sources": []
+    },
+    {
+      "id": "tx-mediation-154",
+      "group": "Court procedure",
+      "citation": "Texas Civil Practice & Remedies Code §§154.021–154.023, 154.073",
+      "title": "Referral, mediation and confidentiality",
+      "source_url": "https://tcss.legis.texas.gov/resources/CP/htm/CP.154.htm",
+      "applies_to": "Parties in covered dispute-resolution proceedings.",
+      "trigger": "A court referral or covered mediation communication.",
+      "deadline": "Orders and statutory provisions control.",
+      "required_action": "Distinguish attendance requirements from agreement to settle and assess confidentiality.",
+      "consequence": "Objections and confidentiality rules have their own consequences.",
+      "limits": "A recollection about mediation does not alone establish judicial misconduct or the disposition of a case.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "Texas",
+      "additional_sources": []
+    },
+    {
+      "id": "us-appellate-29",
+      "group": "Court procedure",
+      "citation": "Federal Rule of Appellate Procedure 29",
+      "title": "Amicus briefs",
+      "source_url": "https://www.law.cornell.edu/rules/frap/rule_29",
+      "applies_to": "Proposed amici in federal appellate proceedings.",
+      "trigger": "A proposed amicus filing in a specific appeal.",
+      "deadline": "Rule and court-specific filing requirements.",
+      "required_action": "Meet applicable permission/consent, disclosure, timing and form requirements.",
+      "consequence": "The court determines acceptance.",
+      "limits": "Publishing a Commons article does not make it an accepted amicus brief or establish trial-court admissibility.",
+      "related": [],
+      "checked": "2026-10-24",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "jurisdiction": "United States (federal)",
+      "additional_sources": []
+    }
+  ],
+  "case_law": [
+    {
+      "id": "tx-mitigation-cases",
+      "citation": "Austin Hill Country Realty v. Palisades Plaza, 948 S.W.2d 293 (Tex. 1997); subsequent applications",
+      "url": "https://law.justia.com/cases/texas/thirteenth-court-of-appeals/2026/13-25-00529-cv.html",
+      "scope": "Reasonable reletting efforts; failure to mitigate as an affirmative defense and proof of avoidable loss. The linked 2026 opinion is a commercial-lease application; it is not a ruling in the author’s case."
+    },
+    {
+      "id": "nm-fdcpa-multiple-defendants",
+      "citation": "Lucero v. Debt Recovery Attorneys, D.N.M., No. 1:19-cv-00106, Doc. 97 (2020)",
+      "url": "https://law.justia.com/cases/federal/district-courts/new-mexico/nmdce/1%3A2019cv00106/412146/97/",
+      "scope": "Rejected another statutory recovery after satisfaction of the same indivisible FDCPA injury. A district-court decision, not a universal ruling for independent violations."
+    },
+    {
+      "id": "us-fdcpa-multiple-plaintiffs",
+      "citation": "Horton Brothers damages opinion, D. Del., No. 02-1656 (2007)",
+      "url": "https://www.ded.uscourts.gov/sites/ded/files/opinions/02-1656_1.pdf",
+      "scope": "Awarded a separate $1,000 to each qualifying plaintiff. Shared account status does not automatically establish each person’s claim."
+    },
+    {
+      "id": "interstate-recording-kearney",
+      "citation": "Kearney v. Salomon Smith Barney, 39 Cal.4th 95 (2006)",
+      "url": "https://law.justia.com/cases/california/supreme-court/2006/s124739.html",
+      "scope": "Illustrates interstate recording choice-of-law analysis; not a ruling that California governs a New Mexico–Georgia call."
+    }
+  ],
+  "existing_legal_sources": [
+    {
+      "url": "https://www.txcourts.gov/media/1463074/texas-rules-of-evidence-updated-with-amendments-effective-07022026.pdf",
+      "description": "Texas Rules of Evidence, effective 2 July 2026",
+      "source_ids": [
+        "admissions-source-evidence",
+        "argument-source-evidence",
+        "records-source-rules"
+      ],
+      "cited_by": [
+        "reading/admissions/edition.json",
+        "reading/arguments/edition.json",
+        "reading/records/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-22",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://www.txcourts.gov/media/1453693/200802.pdf#page=14",
+      "description": "Lake Jackson Medical Spa, Ltd. v. Gaytan, No. 20-0802, Supreme Court of Texas, 25 February 2022",
+      "source_ids": [
+        "admissions-source-judicial",
+        "argument-source-judicial"
+      ],
+      "cited_by": [
+        "reading/admissions/edition.json",
+        "reading/arguments/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-22",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf",
+      "description": "Texas Rules of Civil Procedure, current official compilation checked 22 October 2026",
+      "source_ids": [
+        "admissions-source-civil",
+        "argument-source-civil",
+        "debt-source-rules"
+      ],
+      "cited_by": [
+        "reading/admissions/edition.json",
+        "reading/arguments/edition.json",
+        "reading/debt/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-22",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/CP/htm/CP.154.htm",
+      "description": "Texas Civil Practice and Remedies Code, Chapter 154 . Sections 154.021–.023 and .073: referral, mediation, and confidentiality. Court-ordered attendance and voluntary agreement are distinct.",
+      "source_ids": [
+        "argument-source-mediation",
+        "debt-source-statute"
+      ],
+      "cited_by": [
+        "reading/arguments/edition.json",
+        "reading/debt/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-22",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://tcss.legis.texas.gov/resources/pr/htm/pr.91.htm",
+      "description": "Texas Property Code §91.006 . Landlord's duty to mitigate after abandonment in breach of a lease; purported waiver is void.",
+      "source_ids": [
+        "argument-source-mitigation"
+      ],
+      "cited_by": [
+        "reading/arguments/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-22",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://uscode.house.gov/us/usc/119-120/t15/s1681i/",
+      "description": "15 U.S.C. §1681i . Reinvestigation, relevant information, correction or deletion, and descriptions of the procedure. Official text through Public Law 119-120.",
+      "source_ids": [
+        "argument-source-fcra-disputes",
+        "commentary-source-fcra"
+      ],
+      "cited_by": [
+        "reading/arguments/edition.json",
+        "reading/commentary/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-22",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://uscode.house.gov/us/usc/119-120/t15/s1681e/",
+      "description": "15 U.S.C. §1681e(b) . Reporting agencies' accuracy procedures.",
+      "source_ids": [
+        "argument-source-fcra-accuracy"
+      ],
+      "cited_by": [
+        "reading/arguments/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-22",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://uscode.house.gov/us/usc/119-120/t15/s1681s-2/",
+      "description": "15 U.S.C. §1681s–2(b) . Furnisher duties after notice from a reporting agency, including review and correction notices to other nationwide agencies.",
+      "source_ids": [
+        "argument-source-furnishers"
+      ],
+      "cited_by": [
+        "reading/arguments/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-22",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://www.ncleg.gov/enactedlegislation/statutes/html/bysection/chapter_20/gs_20-141.html",
+      "description": "North Carolina G.S. 20-141(o) . Lesser improper-equipment offense, eligibility limits, license points, and insurance surcharge.",
+      "source_ids": [
+        "argument-source-nc-law",
+        "traffic-source-nc-statute"
+      ],
+      "cited_by": [
+        "reading/arguments/edition.json",
+        "reading/traffic/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-22",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://www.ssa.gov/disability/professionals/bluebook/12.00-MentalDisorders-Adult.htm",
+      "description": "SSA, Adult Mental Disorders, listing 12.10 and sections 12.00C–F. Autism medical and functional criteria, evidence over time, and the effects of structured or supportive settings.",
+      "source_ids": [
+        "autism-source-adult-listing",
+        "ptsd-source-listing"
+      ],
+      "cited_by": [
+        "reading/autism/edition.json",
+        "reading/ptsd/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-22",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://www.ssa.gov/disability/professionals/bluebook/112.00-MentalDisorders-Childhood.htm",
+      "description": "SSA, Childhood Mental Disorders, listing 112.10. Autism listing for ages three to under eighteen. Section 112.00A identifies separate developmental-disorder criteria for children under three.",
+      "source_ids": [
+        "autism-source-child-listing"
+      ],
+      "cited_by": [
+        "reading/autism/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-22",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://www.ssa.gov/OP_Home/cfr20/416/416-0926a.htm",
+      "description": "20 CFR §416.926a, Functional equivalence for children. Six functional domains, age-peer comparison, supportive settings, and the severity and duration requirements for this route.",
+      "source_ids": [
+        "autism-source-child-function"
+      ],
+      "cited_by": [
+        "reading/autism/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-22",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://www.srca.nm.gov/parts/title08/08.106.0500.html",
+      "description": "8.106.500 NMAC, General Assistance benefit and eligibility provisions. Section 8: state funding limits; current compilation includes amendments effective 1 March 2025. A rule permitting suspension is not evidence of a current suspension.",
+      "source_ids": [
+        "disability-source-ga-funding"
+      ],
+      "cited_by": [
+        "reading/disability/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-22",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://www.srca.nm.gov/parts/title08/08.106.0420.html",
+      "description": "8.106.420 NMAC, Requirements for Determining Disability. Sections 8–9: case development, medical statements, current evidence, applicant responsibilities, and department assistance. Agency payment for an examination is funding-dependent.",
+      "source_ids": [
+        "disability-source-ga-evidence"
+      ],
+      "cited_by": [
+        "reading/disability/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-22",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://www.ssa.gov/OP_Home/cfr20/404/404-1512.htm",
+      "description": "20 CFR §404.1512, Responsibility for evidence. Title II claimant duties, complete submissions, medical-history development, and reasonable efforts to obtain reports.",
+      "source_ids": [
+        "disability-source-ssa-duty"
+      ],
+      "cited_by": [
+        "reading/disability/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-22",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://www.srca.nm.gov/parts/title08/08.106.0110.html",
+      "description": "8.106.110 NMAC, General Assistance application procedures. Sections 9–13: right to apply, form assistance, interview hardship alternatives, medical reconsideration, delay, and written notice. The 15-day request and 30-day evidence periods run from the denial date.",
+      "source_ids": [
+        "disability-source-ga-application"
+      ],
+      "cited_by": [
+        "reading/disability/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-22",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://www.srca.nm.gov/parts/title08/08.100.0970.html",
+      "description": "8.100.970 NMAC, Administrative Hearings. Section 9(A)–(B): request methods and 90-day adverse-action notice period; separate program and service rules can apply.",
+      "source_ids": [
+        "disability-source-nm-hearing"
+      ],
+      "cited_by": [
+        "reading/disability/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-22",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://secure.ssa.gov/poms.nsf/lnx/0203101020",
+      "description": "SSA POMS GN 03101.020, Good Cause for Extending the Time Limit to File an Appeal. Relevant barriers, written explanation, assistance, and an individualized agency determination.",
+      "source_ids": [
+        "disability-source-ssa-good-cause"
+      ],
+      "cited_by": [
+        "reading/disability/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-22",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://fhb.hhs.texas.gov/handbooks/medicaid-elderly-people-disabilities-handbook/a-2100-supplemental-security-income",
+      "description": "Texas HHSC, MEPD Handbook A-2100, Supplemental Security Income. Revision effective 1 September 2025: automatic Medicaid eligibility for SSI recipients and the state data interface.",
+      "source_ids": [
+        "disability-source-tx-ssi"
+      ],
+      "cited_by": [
+        "reading/disability/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-22",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://fhb.hhs.texas.gov/handbooks/medicaid-elderly-people-disabilities-handbook/d-2300-requesting-a-decision-disability-determination-unit",
+      "description": "Texas HHSC, MEPD Handbook D-2300, Requesting a Decision from the Disability Determination Unit. State Medicaid medical determinations, records, and forms H3034/H3035. This DDU route is distinct from the federal claim described by SSA.",
+      "source_ids": [
+        "disability-source-tx-ddu"
+      ],
+      "cited_by": [
+        "reading/disability/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-22",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://www.srca.nm.gov/parts/title08/08.296.0400.html",
+      "description": "8.296.400 NMAC, Medicaid Eligibility—Other Adults. Section 9 lists this category's conditions without a disability-proof requirement; other ACA requirements still apply.",
+      "source_ids": [
+        "disability-source-nm-adults"
+      ],
+      "cited_by": [
+        "reading/disability/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-22",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://fhb.hhs.texas.gov/handbooks/medicaid-elderly-people-disabilities-handbook/m-3200-disability",
+      "description": "Texas HHSC, MEPD Handbook M-3200, Disability. Medicaid Buy-In's disability standard and substantial-gainful-activity exception. Other program conditions remain separate.",
+      "source_ids": [
+        "disability-source-tx-buy-in"
+      ],
+      "cited_by": [
+        "reading/disability/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-22",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://secure.ssa.gov/POMS.nsf/lnx/0501730008DAL",
+      "description": "SSA POMS SI DAL01730.008, New Mexico SSA/State Agreement under Section 1634. Automatic Medicaid eligibility for SSI cash and Section 1619(b) recipients, subject to stated limitations. Reviewed policy dated 30 May 2024.",
+      "source_ids": [
+        "disability-source-nm-ssi"
+      ],
+      "cited_by": [
+        "reading/disability/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-22",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://www.ssa.gov/OP_Home/rulings/di/01/SSR2016-03-di-01.html",
+      "description": "SSA, SSR 16-3p, Evaluation of Symptoms in Disability Claims. Effective 28 March 2016, revised in 2017; symptom evaluation and consideration of reasons for limited treatment. Rules addressing failure to follow prescribed treatment are a separate issue.",
+      "source_ids": [
+        "ptsd-source-treatment-gaps"
+      ],
+      "cited_by": [
+        "reading/ptsd/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-22",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://www.txcourts.gov/media/1448830/170364rf-2.pdf#page=36",
+      "description": "Star Electricity, Inc. v. Northpark Office Tower, LP, No. 01-17-00364-CV, First Court of Appeals, 14 July 2020",
+      "source_ids": [
+        "records-source-opinion"
+      ],
+      "cited_by": [
+        "reading/records/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-22",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://www.flsenate.gov/Laws/Statutes/2026/318.14",
+      "description": "Florida Statutes 318.14(9), (11), 2026 edition",
+      "source_ids": [
+        "traffic-source-fl-traffic"
+      ],
+      "cited_by": [
+        "reading/traffic/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-21",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0626/Sections/0626.9541.html",
+      "description": "Florida Statutes 626.9541(1)(o)12",
+      "source_ids": [
+        "traffic-source-fl-insurance"
+      ],
+      "cited_by": [
+        "reading/traffic/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-21",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    },
+    {
+      "url": "https://www.legis.la.gov/legis/Law.aspx?d=670625",
+      "description": "Louisiana R.S. 32:266",
+      "source_ids": [
+        "traffic-source-la-statute"
+      ],
+      "cited_by": [
+        "reading/traffic/edition.json"
+      ],
+      "previous_sources_checked": "2026-10-21",
+      "review_status": "Imported from the current edition source list; substantive summary and currency remain those of that edition"
+    }
+  ],
+  "case_application": "Private case evidence, entity status, receipt dates, responses, harms and findings must be established in the intended Daisy case. No finding of liability or permanent debt forfeiture is made by this registry."
+}

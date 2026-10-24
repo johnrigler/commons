@@ -4,20 +4,20 @@
   "date": "2026-10-24",
   "status": "Unsigned AI-assisted research and editorial draft; no independent legal review recorded",
   "scope": "Seven general arguments and an adaptable request concerning dispute costs, debt evidence and procedure, rental balances, credit reporting, and traffic-enforcement incentives",
-  "base_commons_commit": "854d7034ff86dfeea7e9015e05d234f03e70b534",
+  "base_commons_commit": "a335b680203479dedc5e5976e120b5942ce73d80",
   "artifacts": [
     {
-      "path": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y.html",
+      "path": "bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue.html",
       "media_type": "text/html",
-      "sha256": "56120d1f4d21e6f567a5ca39ef3895439ee996659a875d40a48ab0de53d538fe",
-      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y"
+      "sha256": "9256e35454256e5af6695f87fbdc44df4be5ee9eb9a4097b9622c3faae9fd6a1",
+      "cid": "bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue"
     }
   ],
   "articles": [
     {
       "id": "administrative-burden",
       "title": "Deterrence through administrative burden",
-      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
+      "cid": "bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue",
       "fragment": "administrative-burden",
       "related": [
         "records-proof",
@@ -32,7 +32,7 @@
     {
       "id": "records-proof",
       "title": "A debt claim needs a traceable account",
-      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
+      "cid": "bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue",
       "fragment": "records-proof",
       "related": [
         "debt-default",
@@ -44,7 +44,7 @@
     {
       "id": "debt-default",
       "title": "When procedure decides a debt claim",
-      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
+      "cid": "bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue",
       "fragment": "debt-default",
       "related": [
         "debt-recollection",
@@ -56,7 +56,7 @@
     {
       "id": "rent-acceleration",
       "title": "Unsupported rent acceleration",
-      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
+      "cid": "bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue",
       "fragment": "rent-acceleration",
       "related": [
         "records-proof",
@@ -65,13 +65,14 @@
         "request",
         "legal-reference",
         "dispute-deadlines",
-        "debt-remedies"
+        "debt-remedies",
+        "authority-clarification"
       ]
     },
     {
       "id": "credit-reporting",
       "title": "Credit reporting as collection pressure",
-      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
+      "cid": "bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue",
       "fragment": "credit-reporting",
       "related": [
         "records-proof",
@@ -83,7 +84,7 @@
     {
       "id": "traffic-insurance",
       "title": "The price of a different traffic record",
-      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
+      "cid": "bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue",
       "fragment": "traffic-insurance",
       "related": [
         "traffic-revenue",
@@ -94,7 +95,7 @@
     {
       "id": "traffic-revenue",
       "title": "When citations fund the town",
-      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
+      "cid": "bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue",
       "fragment": "traffic-revenue",
       "related": [
         "traffic-insurance",
@@ -104,7 +105,7 @@
     {
       "id": "request",
       "title": "Request the basis of a reported balance",
-      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
+      "cid": "bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue",
       "fragment": "request",
       "related": [
         "rent-acceleration",
@@ -129,7 +130,8 @@
     "bafkreie5hacpyhsmg4o3ymzlyzjk2yrx7pgnejfdlm5vikmews3mpn7jmy",
     "bafkreidojbermtl3a3qmxc73admjb2pryz5ugzfifmsyakm75hunv55mke",
     "bafkreifddstgwptjqtj7gm2szzwxdtdy5snbr7fafuvvlk4vg4tspnghze",
-    "bafkreigrxbce4vw65jbd3g2n74uxllc7i7pw2wuap7cego35s6glvk5bhm"
+    "bafkreigrxbce4vw65jbd3g2n74uxllc7i7pw2wuap7cego35s6glvk5bhm",
+    "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y"
   ],
   "sources_checked": "2026-10-22",
   "sources": [
@@ -294,7 +296,7 @@
   },
   "legal_reference": {
     "path": "../law/edition.json",
-    "registry_cid": "bafkreicujonkq5hladqxqj5j5vpqlhisklwrx4xk5kpymqaul5qapzk6f4",
+    "registry_cid": "bafkreict2inrddysb656bx2dmkdkfz5j2an7kpk4fjpx5puz34kjt5ojcu",
     "reference_entry": "../../entry/legal-reference.html"
   }
 }

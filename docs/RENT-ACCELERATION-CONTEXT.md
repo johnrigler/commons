@@ -1,110 +1,88 @@
-# Unsupported rent acceleration: continuity notes
+# Rental correspondence: agent continuity notes
 
-Read this before answering or editing the Firmus / NCS / Experian cluster.
-Updated 24 October 2026. These notes preserve project context and known limits;
-they are not a legal finding or a substitute for reading the current evidence.
+Updated 24 October 2026. Read this before composing or revising rental-dispute
+correspondence. This public note describes the reusable workflow. Real party
+names, exact source mapping, dates, individual strategy and completed letters
+belong in the user-designated private `johnrigler/daisy_2026` repository.
 
-## Start with the actual objection
+## Public template and private message
 
-The author's term is **unsupported rent acceleration**, consistently using
+The underlying term is **unsupported rent acceleration**, consistently using
 *acceleration*. The issue is the lease authority, trigger, period, calculation,
-mitigation, reletting and credits supporting a demanded rental balance. The
-collector's workflow and bureau's response are additional questions about the
-handling of that same objection. Do not replace it with identity theft, hardship,
-payment arrangements, or a generic request for validation.
+mitigation, reletting and credits supporting a demand for future rent. Collector
+and bureau workflows are additional questions about handling that objection.
+Do not replace it with identity theft, hardship or payment arrangements.
 
-The author wants this record to support substantive correction and possible
-affirmative litigation for damages and recoverable fees. Do not assume the goal
-is merely waiting for a collector to sue. A remotely conducted proceeding is a
-preference; no court or platform entitlement has been established.
+Each actual correspondence has a particular recipient and purpose. Build its
+reasoning from reusable Commons entries, then supply the actual parties and
+facts privately. A general template can carry precise questions and nuance
+without publishing the values used in one case.
 
-## Preserve the roles
+Printed public copies have blank fields, enough space for handwriting and a
+signature line. Filling those blanks by hand is ordinary use of the letter.
+The person keeps the completed original, makes a copy and mails the copy.
+Electronic fields supply the same values privately. Preserve an exact sent copy
+and the later delivery/response record; do not overwrite the public blank edition.
 
-| Entity or person | Role and limits |
+## Signing, policy and individual action
+
+When a source shows that a person **digitally signed the original PDF**, say that directly.
+Do not weaken it to reviewing, approving or signing some other document. The
+inquiry concerns that act of digitally signing, the document's contents and the capacity
+in which the person acted.
+
+Distinguish the act established by the source from the open questions: company
+policy, delegated authority, outside instructions, another responsible function,
+or the signer's own initiative. Ask those questions in good faith. A demand for
+organizational accountability can preserve an employee's opportunity to explain
+without assuming personal wrongdoing or offering immunity.
+
+Company-specific information may be collected in a separate sourced profile or
+case record. Reusable letters do not hardcode an employer, employee or collector.
+Personal signatures and identifying source documents stay with the private case.
+
+## Read before applying a rule
+
+- Read the current [rental article](../reading/arguments/source/1_40-rental-debt.html),
+  [referral explanation](../reading/commentary/source/1_15-referral.html),
+  [law registry](../legal-references.json) and private current-week case notes.
+- Establish creditor/owner/manager, collector/furnisher and bureau separately.
+  Receipt by one is not automatically receipt by another. Do not conflate the
+  document signer with a co-lessee or another person with a similar name.
+- Read the original signed source, the actual request, receipt and response.
+  Mailing date, delivery date, signature integrity, authority and truth are
+  distinct observations. A summary or filename is not the original evidence.
+- Some responses may exist while failing to address the disputed point. Do not
+  turn an adequacy objection into an inaccurate claim of complete silence.
+- The goal may include affirmative legal review and available damages and fees;
+  do not assume the person is only waiting to defend a collection suit.
+
+## Deadline distinctions to retain
+
+| Question | Reference and limit |
 | --- | --- |
-| Firmus / Centro | Texas property-management/source-accounting side. Identify the actual owner, lessor, manager and entity responsible for each act before assigning landlord liability. Voice transcription may say Fermus, Fermis, farmers or pharmacist. |
-| NCS | National Credit Systems, collection channel and reported furnisher to Experian. Its Georgia business location does not independently establish each employee's physical location. |
-| Experian | Consumer reporting agency. Its receipt, forwarding and investigation are separate events from delivery to Firmus or NCS. |
-| Sean Shannon | The Firmus correspondent and PDF signer identified by the author. Do not confuse him with the author's co-lessee based on the word Shannon. Do not treat a signature as independent verification of the amounts or as proof of personal liability. |
+| Landlord mitigation | Texas Property Code §91.006; no general 30-day deadline in that section to supply mitigation records on demand. |
+| Collector's written inaccuracy dispute | Texas Finance Code §392.202 applies to covered third-party collectors; denial, investigation adequacy and source-document disclosure are different questions. Subsection (e) contemplates later resumption after an accuracy determination. |
+| Federal validation | §1692g distinguishes the consumer's validation-period timing from the collector's collection pause; it is not a fixed 30-day response rule for the collector. |
+| Reporting investigation | FCRA §1681i, §1681s–2(b), and Regulation V §1022.43 have different recipients, notice triggers, duties and private-enforcement limits. |
+| Certified delivery | Evidence of receipt; identify the actual provision and duty before declaring a missed deadline. |
+| Later evidence | Does not retroactively make an earlier response timely; delay alone does not automatically extinguish a debt or exclude all later evidence. |
 
-The author reports that Firmus has no portal and has substantively responded only
-through Sean Shannon's email directing him to NCS. The recent upload was to
-**NCS's portal**, not Firmus's. NCS staff reportedly acknowledged seeing the
-packet but said another, inaccessible person would review it. An email receipt
-has not been confirmed. Possible daily portal uploads are an observation to
-check, not an established right or a daily damages entitlement.
+Preserve the sender's complaint that a substantive answer is overdue. A legal
+conclusion about an expired deadline still needs the provision, triggering event,
+required action and evidence of failure. Do not invent an automatic forfeiture.
 
-## Read the records before giving advice
+## Keep professional work focused
 
-1. Read the current [rental article](../reading/arguments/source/1_40-rental-debt.html),
-   [referral commentary](../reading/commentary/source/1_15-referral.html), and
-   [legal reference](../legal-references.json).
-2. The current user-facing case packet is `Experian-Print-Packet.pdf`; locate and
-   read the current version through the connected file source. It contains the
-   May correspondence and bureau results. A blank reusable Commons form is a
-   different artifact from the completed private case packet.
-3. Private case material belongs in Daisy. Relevant paths previously identified
-   include `daisy_2026/42/firmus-ncs/`, with original Centro documents under
-   `Centro/`; the older GitHub path is `johnrigler/daisy/2026/firmus-ncs/`.
-   `certLedger/cases/firmus-ncs/` was removed from the current CertLedger tree;
-   do not assume it remains the live evidence location.
-4. May 4 creditor-side and May 5 collector-side requests, NCS's May 20 response,
-   Experian's May 27 result and the later bureau deletion results are distinct
-   records. Mailing date is not delivery date. A reply date alone does not show
-   adequate investigation. Do not describe the record as having no response at
-   all: some responses exist, and their substance is disputed.
-5. Read the original signed PDF and the actual email before quoting their exact
-   contents, dates, authoring role or signature-validation result. Do not infer
-   those from a filename, a summary, or the person's name.
+An organized chronology, exact records, reusable explanations and clear questions
+can reduce repeated drafting and record reconstruction for a professional.
+They do not establish a measured time saving or replace case-specific legal
+judgment. Read the project README for the broader Web3 and legal-cost rationale. That
+analysis can be public in README and contributor notes; decide whether it helps
+the particular outward message before adding it there.
 
-Do not publish identity sheets, account identifiers, private addresses, portal
-credentials or source evidence into this public repository. Public discussion
-may retain attributed observations and reusable legal references.
-
-## The confusion to avoid repeating
-
-The author considers the time for a substantive answer long past. Preserve that
-position and the accumulated burden. The current article already explains why a
-posted balance does not establish its lease basis and net calculation. It did
-**not** previously establish a universal statutory cutoff after certified mail.
-
-| Question | Legal distinction |
-| --- | --- |
-| Must the landlord mitigate? | Texas Property Code §91.006. It specifies no general 30-day deadline to answer a mitigation-records request. Historical efforts and avoidable loss need evidence. |
-| Must NCS answer a qualifying written inaccuracy dispute in 30 days? | Texas Finance Code §392.202 concerns covered third-party collectors. A written denial differs from disclosure of every source document; investigation adequacy remains a separate issue. Subsection (e) expressly permits later resumption on an accuracy determination. |
-| Does the federal validation rule give the collector 30 days to answer? | No fixed response period under §1692g; the consumer's validation-period window and the collector's pause obligation are different. |
-| Does the bureau/furnisher have an investigation deadline? | FCRA §1681i, §1681s–2(b), and Regulation V §1022.43 have their own recipients, triggers, duties and enforcement limits. |
-| Does certified delivery create the rule? | Delivery supports receipt. Identify the statute, covered recipient, qualifying notice and required action before declaring a missed deadline. |
-| Does elapsed time automatically forfeit accelerated rent? | No general basis for that conclusion was established in this session. Distinguish an earlier actionable compliance failure, present accuracy, contractual liability, court disclosure limits, deposit-specific forfeitures and claim limitation periods. |
-
-Later proof does not retroactively make a late response timely or automatically
-dispose of earlier actionable misconduct. Conversely, lack of an answer does not
-by itself prove the charge is false or exclude all later evidence. Do not turn
-either proposition into a blanket finding for this case. A courtesy follow-up
-does not automatically restart every clock or waive an earlier violation.
-
-## Claims and damages
-
-- Firmus's possible exclusion from the federal FDCPA is not immunity. Texas
-  Chapter 392 has a broader collector definition; inspect its own conduct and
-  the relevant landlord/consumer provisions separately.
-- FDCPA §1692k's discretionary additional award is up to $1,000 per qualifying
-  plaintiff per action, not automatically per call or coordinated defendant.
-  Actual damages and recoverable fees are separate.
-- FCRA private furnisher-investigation claims generally require bureau notice
-  under §1681s–2(b). Subsection (a) and direct-dispute duties have different
-  private-enforcement limits. Do not promise punitive damages from a portal
-  upload alone.
-- Texas Chapter 392, DTPA and deposit remedies have their own elements and
-  amounts. The demanded debt is not automatically either person's damages.
-- No collusion, liability, damages award, filed NCS action or court order has
-  been verified here. Test witness and document requests against actual claims.
-
-## Maintain a shared base
-
-Use [legal-references.json](../legal-references.json) and
-[the law edition](../reading/law/README.md) for cited laws, triggers, deadlines
-and limits. Add new provisions there when they enter another article. Preserve
-older CID editions, exact contribution parents and author attribution to
-`LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb`. Update these continuity notes when the
-author corrects a role or a verified record changes the factual basis.
+New legal assertions belong in [legal-references.json](../legal-references.json).
+Preserve older CID editions and exact contribution parents. A new generic edition
+does not automatically remove earlier wording from Git history or historical
+content-addressed files. Do not claim historical erasure without doing and
+verifying a separately scoped removal.

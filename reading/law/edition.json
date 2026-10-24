@@ -4,26 +4,26 @@
   "date": "2026-10-24",
   "status": "Unsigned AI-assisted reference; no independent legal review",
   "scope": "Shared reference for unsupported rent acceleration and connected collection, reporting, recording and court-process questions; imported legal sources from other current Commons subjects",
-  "base_commons_commit": "854d7034ff86dfeea7e9015e05d234f03e70b534",
+  "base_commons_commit": "a335b680203479dedc5e5976e120b5942ce73d80",
   "artifacts": [
     {
-      "path": "bafkreiejegl2girjotzbxwip4fwo3e3spzmmytmcljv7if5lpjfome4l4u.html",
+      "path": "bafkreic5bn5cdbrxs5jamjisfzznin43voavyph2wtmj673edhph3axk5y.html",
       "media_type": "text/html",
-      "sha256": "892197a3222974f21bd90fe16ced93727e58cc4d825a6bf417ab7a4ae6138be5",
-      "cid": "bafkreiejegl2girjotzbxwip4fwo3e3spzmmytmcljv7if5lpjfome4l4u"
+      "sha256": "5d0b7a21863797520625122e72d4379bab815c3cfab4d89f7f6419de7d82eaee",
+      "cid": "bafkreic5bn5cdbrxs5jamjisfzznin43voavyph2wtmj673edhph3axk5y"
     },
     {
-      "path": "bafkreicujonkq5hladqxqj5j5vpqlhisklwrx4xk5kpymqaul5qapzk6f4.json",
+      "path": "bafkreict2inrddysb656bx2dmkdkfz5j2an7kpk4fjpx5puz34kjt5ojcu.json",
       "media_type": "application/json",
-      "sha256": "544b9aa874eb00e17827a9ed5f059d1252ed1bf2eaea9f8640145f6007e55e2f",
-      "cid": "bafkreicujonkq5hladqxqj5j5vpqlhisklwrx4xk5kpymqaul5qapzk6f4"
+      "sha256": "53d21b118f120fbbe0df436286a2e7a9d01bf53d5c2a5f7ebe99df1499f5c915",
+      "cid": "bafkreict2inrddysb656bx2dmkdkfz5j2an7kpk4fjpx5puz34kjt5ojcu"
     }
   ],
   "articles": [
     {
       "id": "legal-reference",
       "title": "Laws, duties, deadlines and remedies",
-      "cid": "bafkreiejegl2girjotzbxwip4fwo3e3spzmmytmcljv7if5lpjfome4l4u",
+      "cid": "bafkreic5bn5cdbrxs5jamjisfzznin43voavyph2wtmj673edhph3axk5y",
       "fragment": "legal-reference",
       "related": [
         "rent-acceleration",
@@ -35,7 +35,7 @@
     {
       "id": "dispute-deadlines",
       "title": "Which deadline belongs to which party?",
-      "cid": "bafkreiejegl2girjotzbxwip4fwo3e3spzmmytmcljv7if5lpjfome4l4u",
+      "cid": "bafkreic5bn5cdbrxs5jamjisfzznin43voavyph2wtmj673edhph3axk5y",
       "fragment": "dispute-deadlines",
       "related": [
         "rent-acceleration",
@@ -48,7 +48,7 @@
     {
       "id": "debt-remedies",
       "title": "Damages follow the claim",
-      "cid": "bafkreiejegl2girjotzbxwip4fwo3e3spzmmytmcljv7if5lpjfome4l4u",
+      "cid": "bafkreic5bn5cdbrxs5jamjisfzznin43voavyph2wtmj673edhph3axk5y",
       "fragment": "debt-remedies",
       "related": [
         "legal-reference",
@@ -227,5 +227,13 @@
     "signature": null,
     "ipfs_pin_receipt": null,
     "transaction_id": null
+  },
+  "supersedes_documents": [
+    "bafkreiejegl2girjotzbxwip4fwo3e3spzmmytmcljv7if5lpjfome4l4u"
+  ],
+  "legal_reference": {
+    "path": "edition.json",
+    "registry_cid": "bafkreict2inrddysb656bx2dmkdkfz5j2an7kpk4fjpx5puz34kjt5ojcu",
+    "reference_entry": "../../entry/legal-reference.html"
   }
 }

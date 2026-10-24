@@ -1,0 +1,10 @@
+<section class="editor screen-only" id="private-copy" aria-labelledby="fill-title">
+  <h2 id="fill-title">Fill a private copy, or print the blanks</h2>
+  <p>You can leave every field empty and write on the printed letter. Typed values change this tab's working copy only.</p>
+  <form id="correspondence-form" autocomplete="off">
+    <div id="field-controls"></div>
+    <div class="actions"><button id="print-blank" type="button">Print blank form</button><button id="print-copy" type="button">Print current copy</button><button id="prepare-email" type="button">Prepare email text</button><button type="reset" class="secondary">Clear fields</button></div>
+  </form>
+  <p id="copy-status" role="status">All fields are blank.</p>
+  <section id="email-panel" hidden><h3>Review and copy the email text</h3><p>Add the real recipient, review the wording and attach the actual documents in your mail app. Preparing this text does not send it.</p><textarea id="email-text" rows="18" readonly aria-label="Prepared email text"></textarea></section>
+</section>

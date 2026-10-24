@@ -1,9 +1,9 @@
 
 (() => {
-  const defaults = { bureau: 'Experian', collector: 'National Credit Systems', lessor: 'Firmus' };
+  const defaults = { bureau: '', collector: '', lessor: '' };
   function update() {
     Object.keys(defaults).forEach(key => {
-      const value = document.getElementById(key).value.trim() || '[' + key + ']';
+      const value = document.getElementById(key).value.trim() || '____________________';
       document.querySelectorAll('[data-party="' + key + '"]').forEach(node => { node.textContent = value; });
     });
   }

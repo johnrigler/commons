@@ -144,3 +144,4 @@ test('index choice controls prepared Commons output and rejects inconsistent rec
     await assert.rejects(P.create(parent,{...fields,source:'javascript:alert(1)'}));
     assert.throws(()=>P.validate({...tagged.record,transport:null}),/transport/);
 });
+import './correspondence.mjs';

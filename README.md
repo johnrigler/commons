@@ -45,6 +45,31 @@ The initial entries are **draft descriptions of this design**. They do not make
 findings about a debt, company or individual. The NCS / GitHub / rent escalation
 fields in the announcement form are editable examples.
 
+## Why correspondence, Commons and Web3 belong together
+
+The immediate task is a specific message to a person or company. Commons supplies
+reusable explanations, requests and references from which that message can be
+built; the completed correspondence supplies the private parties and facts.
+A public template can therefore retain a detailed argument without exposing an
+individual case. It prints with blanks for handwriting or accepts the same values
+privately through electronic fields.
+
+The broader purpose is to advance Web3 through useful records: portable documents,
+shared explanations, content addresses, signatures and inspectable provenance.
+The technical work supports a practical approach to mitigating legal costs by
+reducing the repeated drafting, explanation and record reconstruction a law firm
+would otherwise need to perform. Counsel still supplies case-specific judgment;
+no measured time saving or guaranteed outcome is asserted.
+
+These goals operate together. A letter should serve its recipient and purpose.
+Its author can explain the technology and degree of preparation when that helps
+the recipient assess the record's seriousness or provenance. It need not become
+boilerplate promotion in every letter. This README and contributor notes are
+appropriate places to state the broader intent openly.
+
+See [correspondence policy](docs/CORRESPONDENCE.md) and the
+[blank signed-document inquiry](entry/authority-clarification.html).
+
 ## Current arguments and reading editions
 
 [Autism, assessment, and access to disability benefits](reading/autism/index.html)
@@ -86,9 +111,10 @@ has its own [direct entry path](entry/debt-recollection.html). Each published
 entry shows a full URL and a **Copy link** button. Historical CID-named editions and exact
 contribution parent references remain preserved.
 
-The [referral commentary](entry/dispute-referral-loop.html) applies the portal
-critique to Experian's fraud-themed notice and NCS's collection route. It presents
-the author's response, the inspected notice sequence and the evidence still pending.
+The [referral commentary](entry/dispute-referral-loop.html) supplies reusable
+wording for a dispute that is redirected without a substantive answer. The
+[authority-clarification form](entry/authority-clarification.html) asks about the
+document, delegated authority and company policy, with blank fields for all parties.
 
 [Laws, duties, deadlines and remedies](entry/legal-reference.html) provides the
 common law index. [Which deadline belongs to which party?](entry/dispute-deadlines.html)
@@ -98,10 +124,12 @@ remedies. Add newly cited provisions to [legal-references.json](legal-references
 when extending the collection. Prior legal sources across disability, traffic
 and other subjects are inventoried with their original scope.
 
-For continuity on the Firmus / NCS / Experian work, start with
+For continuity on rental-dispute correspondence, start with
 [the case-context notes](docs/RENT-ACCELERATION-CONTEXT.md). They record the
 underlying unsupported-rent-acceleration objection, the actual entity roles,
-record locations and the distinctions future sessions should not relearn.
+private-record boundaries and the distinctions future sessions should not relearn.
+[Correspondence policy](docs/CORRESPONDENCE.md) keeps public templates generic
+and their completed copies private.
 
 [The overview](reading/overview/index.html) explains the open stream, subjects,
 shared patterns, public memory, scribes, and paid services.

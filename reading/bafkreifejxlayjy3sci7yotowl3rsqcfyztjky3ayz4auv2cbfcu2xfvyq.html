@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Commons — Dispute Request and Shared Explanations</title>
+  <style>
+    :root { color-scheme: light; --ink: #242624; --muted: #60655f; --rule: #cdd0c7; --accent: #86503c; }
+    * { box-sizing: border-box; }
+    html { background: #eeeee8; color: var(--ink); }
+    body { margin: 0; padding: 36px 18px; font-family: Georgia, 'Times New Roman', serif; }
+    article { max-width: 840px; margin: 0 auto 28px; padding: 48px 70px 40px; background: #fffef9; border: 1px solid #dbddd3; scroll-margin-top: 20px; }
+    a { color: #77432f; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    .reading-links { margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--rule); font: 13px/1.8 Arial, sans-serif; }
+    .reading-links a { display: block; width: fit-content; }
+    .return-link { font: 13px/1.5 Arial, sans-serif; }
+    .source-note { margin-top: 25px; padding-top: 14px; border-top: 1px solid var(--rule); font: 13px/1.55 Arial, sans-serif; color: var(--muted); }
+    .masthead { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; padding-bottom: 16px; border-bottom: 2px solid var(--ink); font-family: Arial, sans-serif; }
+    .brand { font-size: 16px; letter-spacing: .16em; font-weight: 700; text-transform: uppercase; }
+    .status { color: var(--muted); font-size: 12px; }
+    .eyebrow { margin: 34px 0 13px; font: 700 12px/1.5 Arial, sans-serif; color: var(--accent); letter-spacing: .11em; text-transform: uppercase; }
+    h1 { margin: 0 0 19px; font-size: clamp(36px, 6vw, 50px); font-weight: 400; line-height: 1.06; letter-spacing: -.035em; }
+    .deck { margin: 0 0 28px; font-size: 21px; line-height: 1.45; color: #454b44; }
+    p { margin: 0 0 17px; font-size: 17px; line-height: 1.66; }
+    h2 { margin: 29px 0 12px; font: 700 15px/1.4 Arial, sans-serif; }
+    .principle { margin: 26px 0; padding: 17px 0 17px 21px; border-left: 3px solid var(--accent); font-size: 21px; line-height: 1.45; }
+    .transition { border-top: 1px solid var(--rule); margin-top: 30px; padding-top: 23px; }
+    .transition h2 { margin-top: 0; }
+    footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 9px 20px; border-top: 1px solid var(--rule); margin-top: 30px; padding-top: 14px; color: var(--muted); font: 12px/1.5 Arial, sans-serif; }
+    @media (max-width: 600px) {
+      body { padding: 0; }
+      article { border: 0; padding: 27px 24px 30px; }
+      .masthead { gap: 12px; }
+      .brand { font-size: 14px; }
+      .status { font-size: 11px; }
+      .eyebrow { margin-top: 27px; }
+      p { font-size: 17px; }
+    }
+    .tools { max-width: 840px; margin: 0 auto 20px; padding: 20px 24px; background: #fffef9; border: 1px solid var(--rule); font: 14px/1.5 Arial, sans-serif; }
+    .tools summary { cursor: pointer; font-weight: 700; }
+    .fields { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 16px; }
+    label { display: block; font-weight: 700; }
+    input, select, button { font: inherit; }
+    input, select { display: block; width: 100%; margin-top: 5px; padding: 9px; border: 1px solid #9b9f95; background: white; color: var(--ink); border-radius: 3px; }
+    button { cursor: pointer; padding: 8px 12px; border: 1px solid #9b9f95; border-radius: 3px; background: white; color: var(--ink); }
+    .print-tools { display: flex; flex-wrap: wrap; align-items: end; gap: 12px; margin-top: 16px; }
+    .print-tools label { flex: 1; min-width: 190px; }
+    .tools .hint { font: 13px/1.5 Arial, sans-serif; margin: 13px 0 0; color: var(--muted); }
+    .term-link, .party { font-weight: 700; }
+    .party { text-decoration-style: dotted; }
+    .fields input:focus, .fields select:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+    @media (max-width: 600px) { .tools { margin: 12px; padding: 16px; } .fields { grid-template-columns: 1fr; } }
+    @page { size: Letter; margin: .7in .75in; }
+    @media print {
+      html, body { background: white; }
+      .screen-only { display: none !important; }
+      body[data-print="request"] article:not(#request) { display: none; }
+      a.party { text-decoration: none; }
+      .reading-links a { font-weight: 700; }
+      body { padding: 0; }
+      article { max-width: none; margin: 0; padding: 0; border: 0; background: white; }
+      article + article { break-before: page; }
+      a { color: inherit; }
+      .return-link { display: none; }
+      h1 { font-size: 29pt; }
+      p { font-size: 11pt; line-height: 1.5; margin-bottom: 10pt; orphans: 3; widows: 3; }
+      .deck { font-size: 14pt; margin-bottom: 18pt; }
+      .principle { font-size: 14pt; margin: 16pt 0; padding-top: 8pt; padding-bottom: 8pt; }
+      h2 { break-after: avoid; margin-top: 17pt; }
+      .eyebrow { margin-top: 21pt; }
+      footer { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body data-print="all">
+  <aside class="tools screen-only" aria-label="Customize and print">
+    <details id="request-fields">
+      <summary>Customize this request</summary>
+      <div class="fields">
+        <label for="bureau">Credit reporting agency
+          <input id="bureau" value="" maxlength="160">
+        </label>
+        <label for="collector">Debt collector<input id="collector" value="" maxlength="160"></label>
+        <label for="lessor">Lessor / property company<input id="lessor" value="" maxlength="160"></label>
+      </div>
+      <p class="hint">Click an organization name in the request to edit its field. Names update the opening only; attach and review the evidence for the individual case.</p>
+    </details>
+    <div class="print-tools">
+      <label for="print-scope">Pages to print<select id="print-scope"><option value="all">Request and all explanations</option><option value="request">Request only</option></select></label>
+      <button id="print-button" type="button">Print / save PDF</button>
+      <button id="reset-button" type="button">Reset names</button>
+    </div>
+    <p class="hint">Edits stay in this open page. To retain them, print or save a PDF. No information is submitted by this page.</p>
+  </aside>
+  <article id="request" aria-labelledby="document-title">
+    <header>
+      <div class="masthead"><span class="brand">Commons</span><span class="status">Reading draft · 21 October 2026</span></div>
+      <p class="eyebrow">To <span data-party="bureau">____________________</span> · Regarding <span data-party="collector">____________________</span></p>
+      <h1 id="document-title">Unsupported Rent Acceleration</h1>
+      <p class="deck">Request for reinvestigation and correction or deletion of an unsupported reported balance.</p>
+    </header>
+
+    <p>I ask <a class="party" href="#request-fields" data-edit="bureau" data-party="bureau">____________________</a> to reinvestigate the accuracy and completeness of the balance reported by <a class="party" href="#request-fields" data-edit="collector" data-party="collector">____________________</a> and attributed to <a class="party" href="#request-fields" data-edit="lessor" data-party="lessor">____________________</a>, obtain the records supporting the disputed charges, and correct or delete any reported amount that cannot be substantiated. Please address the specific issues raised in my dispute and provide the results in writing.</p>
+
+    <p>A central issue is <a class="term-link" href="#rent-acceleration">unsupported rent acceleration</a>: rent charged in advance for a remaining lease period without sufficient supporting records to evaluate the amount claimed. My request concerns the basis for those charges, the calculation used, and the credits or adjustments that should affect the reported balance.</p>
+
+    <p>The broader concern is <a class="term-link" href="#administrative-burden">deterrence through administrative burden</a>: a process whose unnecessary complexity, repetition, delay, or expense discourages a person from pursuing a substantive answer. Unsupported rent acceleration can operate through this mechanism when the difficulty of challenging a demand gives it leverage before its basis has been demonstrated.</p>
+
+    <p>The individual case document presents the chronology, correspondence, disputed entries, and supporting evidence. The shared explanation in the Commons provides background for the issue. The evidence in the individual case establishes how that issue applies here.</p>
+
+    <p>I am using written correspondence to preserve a complete, readable account of the dispute and the material supplied with it. Identification material belongs in a separate private packet for matching the submission to my credit file.</p>
+
+    <nav class="reading-links" aria-label="Explanatory pages">
+      <a class="term-link" href="#rent-acceleration">Explanation — Unsupported rent acceleration</a>
+      <a class="term-link" href="#administrative-burden">Explanation — Deterrence through administrative burden</a>
+      <a href="#about-commons">Background — About the Commons</a>
+    </nav>
+    <footer><span>LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb · Commons</span><span>1 · Requested action</span></footer>
+  </article>
+  <article id="rent-acceleration" aria-labelledby="term-title">
+    <header>
+      <div class="masthead"><span class="brand">Commons</span><span class="status">Explanatory term</span></div>
+      <p class="eyebrow">A reusable explanation</p>
+      <h1 id="term-title">Unsupported rent acceleration</h1>
+      <p class="deck">How an unsupported charge can gain force through the difficulty of challenging it.</p>
+    </header>
+
+    <p><em>Rent acceleration</em> means demanding payment now for rent attributed to the remaining period of a lease. <em>Unsupported</em> identifies the problem disputed here: the records supplied do not establish the basis or calculation of that demand, including the credits or adjustments that should affect it.</p>
+
+    <p>This issue can be understood as an example of <a class="term-link" href="#administrative-burden">deterrence through administrative burden</a> when procedural obstacles discourage examination of the underlying charge.</p>
+
+    <h2>Why this can work as a tactic</h2>
+    <p>Adding a charge to a ledger is easy. Challenging it can require a tenant to reconstruct a lease, obtain records held by the lessor, question calculations, correspond with a collector, and repeat the dispute with a credit reporting company. Each additional step costs time and attention. Confusing explanations and cumbersome procedures can make a person abandon a challenge or pay to end the problem.</p>
+
+    <p>This creates leverage even before the disputed amount has been substantiated. A balance can acquire the appearance of authority as it moves from the lessor's ledger to a collection demand and a credit report. Repetition of the amount supplies no missing calculation or evidence. Yet the tenant faces the practical consequences while trying to obtain those records.</p>
+
+    <h2>What the individual case must establish</h2>
+    <p>The case record should identify the lease provision relied on, the calculation of accelerated rent, relevant credits and adjustments, and the responses to requests for those records. It should also document repeated submissions, unanswered questions, conflicting explanations, or other obstacles encountered while seeking a substantive answer.</p>
+
+    <p>A burdensome process can deter a challenge regardless of whether its designer intended that result. Its effects can be examined without first establishing a company's motive. Whether the particular demand is supported, and whether the obstacles were deliberate, are questions for the individual evidence.</p>
+
+    <p class="source-note">Broader context: the CFPB's <a href="https://files.consumerfinance.gov/f/documents/cfpb_fdcpa-2024-annual-report_2024-09.pdf#page=12">2024 FDCPA Annual Report, section 1.2.1</a>, describes rental liability as difficult for consumers to assess and discusses complaints about amounts not owed. That report provides broader context; the individual case must establish its own facts.</p>
+
+    <p class="return-link"><a href="#request">Return to the requested action</a></p>
+    <footer><span>Commons · Unsupported Rent Acceleration</span><span>Term explanation</span></footer>
+  </article>
+  <article id="administrative-burden" aria-labelledby="burden-title">
+    <header>
+      <div class="masthead"><span class="brand">Commons</span><span class="status">Explanatory term</span></div>
+      <p class="eyebrow">The broader mechanism</p>
+      <h1 id="burden-title">Deterrence through administrative burden</h1>
+      <p class="deck">When the difficulty of obtaining an answer discourages people from pursuing one.</p>
+    </header>
+
+    <p><strong>Administrative burden</strong> describes the costs of understanding a process, completing its requirements, and enduring its psychological strain. Excessive or unjustified procedural friction is also discussed in behavioral economics (sludge). <strong>Deterrence through administrative burden</strong> is the Commons' descriptive phrase for the way those costs can discourage a person from pursuing a claim, correction, or explanation.</p>
+
+    <h2>How the mechanism works</h2>
+    <p>The person seeking an answer may have to learn unfamiliar rules, reconstruct records, meet submission requirements, repeat information, and wait through successive responses. Each step consumes time, money, or attention. When those costs become large enough, a person may stop pursuing the issue even though the underlying question remains unanswered.</p>
+
+    <p>The imbalance matters: an organization may generate a demand through a routine process, while each recipient must undertake a separate, demanding challenge. A demand can therefore gain practical force from the cost of disputing it. When obstacles are deliberately imposed or maintained for this effect, they function as a strategy. Burden alone does not establish intention.</p>
+
+    <h2>Connection to unsupported rent acceleration</h2>
+    <p><a class="term-link" href="#rent-acceleration">Unsupported rent acceleration</a> concerns the evidentiary basis for a demand. Administrative burden concerns the process of challenging it. The two overlap when a recipient faces cumbersome procedures while trying to obtain the lease basis, calculations, and credits needed to evaluate accelerated rent.</p>
+
+    <h2>What to document</h2>
+    <p>Record what was requested, what was supplied, how many steps were required, what had to be repeated, and which substantive questions remain unanswered. Distinguish necessary identity or security checks from avoidable obstacles. A chronology lets readers assess the burden and its consequences without assuming motives.</p>
+
+    <p class="source-note">Sources: Cass R. Sunstein, <a href="https://hls.harvard.edu/bibliography/sludge-audits/">study of excessive procedural friction (2020)</a>; Pamela Herd, Hilary Hoynes, Jamila Michener and Donald Moynihan, <a href="https://www.rsfjournal.org/content/9/5/1">Administrative Burden as a Mechanism of Inequality in Policy Implementation (2023)</a>. Administrative burden is an established research concept; this page applies it to dispute processes using the descriptive phrase in its title.</p>
+
+    <p class="return-link"><a href="#request">Return to the requested action</a></p>
+    <footer><span>Commons · Administrative Burden</span><span>Term explanation</span></footer>
+  </article>
+  <article id="about-commons" aria-labelledby="commons-title">
+    <header>
+      <div class="masthead"><span class="brand">Commons</span><span class="status">About this practice</span></div>
+      <p class="eyebrow">A shared reference</p>
+      <h1 id="commons-title">About the Commons</h1>
+      <p class="deck">Reusable explanations, connected to the evidence in individual cases.</p>
+    </header>
+
+    <p>The Commons is a place to publish explanations and arguments that people can refer to in their own correspondence. A recurring issue can have its own page, with a clear title, an explanation, and supporting sources. A reader can follow a reference when more background is needed.</p>
+
+    <p>For example, <a class="term-link" href="#rent-acceleration">unsupported rent acceleration</a> identifies a disputed demand, while <a class="term-link" href="#administrative-burden">deterrence through administrative burden</a> explains a broader mechanism that can make such a demand difficult to challenge. Both terms link to reusable explanations.</p>
+
+    <p>The correspondence begins with the action requested. It then connects the issue to the individual evidence. That keeps the request readable while making the underlying argument available for examination and reuse.</p>
+
+    <p>The opening can be reused by selecting the credit reporting agency and filling in the collector and lessor. Prefilled names provide a starting point. The sender must adapt the requested action and supporting evidence to the actual case.</p>
+
+    <p>The proposed common practice is straightforward: state the issue in ordinary language, identify the supporting records, preserve the version sent, and retain the responses. An individual case can document where the process actually used falls short of that practice.</p>
+
+    <p>Public explanations, private case records, and identity documents have different audiences. Sharing an argument does not require publishing the person's identification material. Selected completed documents can also carry signatures and ledger references for independent verification of the retained versions.</p>
+
+    <p class="return-link"><a href="#request">Return to the requested action</a></p>
+    <footer><span>LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb · Commons</span><span>About the Commons</span></footer>
+  </article><script>
+(() => {
+  const defaults = { bureau: '', collector: '', lessor: '' };
+  function update() {
+    Object.keys(defaults).forEach(key => {
+      const value = document.getElementById(key).value.trim() || '____________________';
+      document.querySelectorAll('[data-party="' + key + '"]').forEach(node => { node.textContent = value; });
+    });
+  }
+  Object.keys(defaults).forEach(key => { document.getElementById(key).addEventListener('input', update); });
+  document.querySelectorAll('[data-edit]').forEach(link => {
+    link.addEventListener('click', event => {
+      event.preventDefault();
+      document.getElementById('request-fields').open = true;
+      document.getElementById(link.dataset.edit).focus();
+    });
+  });
+  document.getElementById('print-scope').addEventListener('change', event => { document.body.dataset.print = event.target.value; });
+  document.getElementById('print-button').addEventListener('click', () => { window.print(); });
+  document.getElementById('reset-button').addEventListener('click', () => {
+    Object.keys(defaults).forEach(key => { document.getElementById(key).value = defaults[key]; });
+    update();
+  });
+  update();
+})();
+</script>
+</body>
+</html>

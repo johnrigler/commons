@@ -9,6 +9,29 @@
   },
   "items": [
     {
+      "id": "authority-clarification",
+      "title": "Clarify the signed document and company policy",
+      "summary": "Blank correspondence asking a digital signer about their capacity, policy, instructions and responsibility for answering an unsupported-rent-acceleration dispute.",
+      "kind": "description",
+      "genre": "template",
+      "cid": "bafkreiddnkciqrerv2hzvt6muwv7bc6bcsf2s5xekp6262grgfk4a6dyum",
+      "path": "reading/correspondence/bafkreiddnkciqrerv2hzvt6muwv7bc6bcsf2s5xekp6262grgfk4a6dyum.html",
+      "fragment": "authority-clarification",
+      "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+      "status": "Unsigned reusable template; all case fields blank",
+      "indexed": true,
+      "topics": [
+        "Housing & credit",
+        "Commons practice"
+      ],
+      "related": [
+        "rent-acceleration",
+        "dispute-referral-loop",
+        "legal-reference",
+        "dispute-deadlines"
+      ]
+    },
+    {
       "id": "legal-reference",
       "title": "Laws, duties, deadlines and remedies",
       "summary": "The common reference for Texas, federal, New Mexico and Georgia laws: covered actor, trigger, deadline, duty, consequence and source.",
@@ -19,8 +42,8 @@
         "dispute-referral-loop"
       ],
       "kind": "explanation",
-      "cid": "bafkreiejegl2girjotzbxwip4fwo3e3spzmmytmcljv7if5lpjfome4l4u",
-      "path": "reading/law/bafkreiejegl2girjotzbxwip4fwo3e3spzmmytmcljv7if5lpjfome4l4u.html",
+      "cid": "bafkreic5bn5cdbrxs5jamjisfzznin43voavyph2wtmj673edhph3axk5y",
+      "path": "reading/law/bafkreic5bn5cdbrxs5jamjisfzznin43voavyph2wtmj673edhph3axk5y.html",
       "fragment": "legal-reference",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
       "status": "Unsigned AI-assisted reference; no independent legal review",
@@ -35,7 +58,7 @@
     {
       "id": "dispute-deadlines",
       "title": "Which deadline belongs to which party?",
-      "summary": "Keep Firmus, NCS and Experian duties distinct: mitigation, written disputes, bureau investigations, certified receipt and consequences of delay.",
+      "summary": "Separate owner/manager, collector/furnisher and bureau duties: mitigation, written disputes, certified receipt and consequences of delay.",
       "related": [
         "rent-acceleration",
         "legal-reference",
@@ -44,8 +67,8 @@
         "credit-reporting"
       ],
       "kind": "explanation",
-      "cid": "bafkreiejegl2girjotzbxwip4fwo3e3spzmmytmcljv7if5lpjfome4l4u",
-      "path": "reading/law/bafkreiejegl2girjotzbxwip4fwo3e3spzmmytmcljv7if5lpjfome4l4u.html",
+      "cid": "bafkreic5bn5cdbrxs5jamjisfzznin43voavyph2wtmj673edhph3axk5y",
+      "path": "reading/law/bafkreic5bn5cdbrxs5jamjisfzznin43voavyph2wtmj673edhph3axk5y.html",
       "fragment": "dispute-deadlines",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
       "status": "Unsigned AI-assisted reference; no independent legal review",
@@ -69,8 +92,8 @@
         "debt-default"
       ],
       "kind": "explanation",
-      "cid": "bafkreiejegl2girjotzbxwip4fwo3e3spzmmytmcljv7if5lpjfome4l4u",
-      "path": "reading/law/bafkreiejegl2girjotzbxwip4fwo3e3spzmmytmcljv7if5lpjfome4l4u.html",
+      "cid": "bafkreic5bn5cdbrxs5jamjisfzznin43voavyph2wtmj673edhph3axk5y",
+      "path": "reading/law/bafkreic5bn5cdbrxs5jamjisfzznin43voavyph2wtmj673edhph3axk5y.html",
       "fragment": "debt-remedies",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
       "status": "Unsigned AI-assisted reference; no independent legal review",
@@ -116,12 +139,12 @@
       "kind": "explanation",
       "genre": "opinion",
       "title": "Answer the dispute that was made",
-      "summary": "The author's response to Experian's fraud-themed creditor referral and NCS's collection route, with a request to investigate the actual lease and amount dispute.",
-      "cid": "bafkreigvvvr4e6mykxlzrbcg45cvkqioavxghv7wzzehckyyqz3ywx5szm",
-      "path": "reading/commentary/bafkreigvvvr4e6mykxlzrbcg45cvkqioavxghv7wzzehckyyqz3ywx5szm.html",
+      "summary": "Reusable questions for a referral loop: preserve the actual rental-charge objection and ask who can give a substantive answer.",
+      "cid": "bafkreigmys7evpfqkl2j5ixqqaj42sgecck5z72eiiexllh47orrf4oeoa",
+      "path": "reading/commentary/bafkreigmys7evpfqkl2j5ixqqaj42sgecck5z72eiiexllh47orrf4oeoa.html",
       "fragment": "dispute-referral-loop",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-      "status": "Unsigned AI-assisted article \u00b7 Updated 24 October 2026",
+      "status": "Unsigned AI-assisted article · Updated 24 October 2026",
       "sources_checked": "2026-10-24",
       "indexed": true,
       "related": [
@@ -133,7 +156,8 @@
         "experian-correction-form",
         "legal-reference",
         "dispute-deadlines",
-        "debt-remedies"
+        "debt-remedies",
+        "authority-clarification"
       ],
       "companies": [
         "company-experian",
@@ -151,11 +175,11 @@
       "genre": "opinion",
       "title": "When the portal controls the objection",
       "summary": "The author's criticism of controlled dispute wording, missing visible histories, payment-led portals, and access to decision makers.",
-      "cid": "bafkreigvvvr4e6mykxlzrbcg45cvkqioavxghv7wzzehckyyqz3ywx5szm",
-      "path": "reading/commentary/bafkreigvvvr4e6mykxlzrbcg45cvkqioavxghv7wzzehckyyqz3ywx5szm.html",
+      "cid": "bafkreigmys7evpfqkl2j5ixqqaj42sgecck5z72eiiexllh47orrf4oeoa",
+      "path": "reading/commentary/bafkreigmys7evpfqkl2j5ixqqaj42sgecck5z72eiiexllh47orrf4oeoa.html",
       "fragment": "portals-proof",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-      "status": "Unsigned author commentary \u00b7 Updated 23 October 2026",
+      "status": "Unsigned author commentary · Updated 23 October 2026",
       "sources_checked": "2026-10-22",
       "indexed": true,
       "related": [
@@ -187,11 +211,11 @@
       "genre": "opinion",
       "title": "Make the recurring system visible to the court",
       "summary": "The author's proposal to document recurring institutional mechanisms for a possible amicus brief, with case evidence kept distinct.",
-      "cid": "bafkreigvvvr4e6mykxlzrbcg45cvkqioavxghv7wzzehckyyqz3ywx5szm",
-      "path": "reading/commentary/bafkreigvvvr4e6mykxlzrbcg45cvkqioavxghv7wzzehckyyqz3ywx5szm.html",
+      "cid": "bafkreigmys7evpfqkl2j5ixqqaj42sgecck5z72eiiexllh47orrf4oeoa",
+      "path": "reading/commentary/bafkreigmys7evpfqkl2j5ixqqaj42sgecck5z72eiiexllh47orrf4oeoa.html",
       "fragment": "amicus-systems",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-      "status": "Unsigned author commentary \u00b7 Updated 23 October 2026",
+      "status": "Unsigned author commentary · Updated 23 October 2026",
       "sources_checked": "2026-10-22",
       "indexed": true,
       "related": [
@@ -225,7 +249,7 @@
       "path": "reading/ptsd/bafkreiaeir2vwqreto2rfi6osypogpjc2itg5g3er5sgalq6qassw2dt34.html",
       "fragment": "ptsd-disability",
       "author": "John Rigler",
-      "status": "Unsigned researched explanation \u00b7 22 October 2026",
+      "status": "Unsigned researched explanation · 22 October 2026",
       "indexed": true,
       "related": [
         "disability-access",
@@ -248,7 +272,7 @@
       "path": "reading/autism/bafkreihgo2yzb62esmlxxsnpj64xxla6x2273ppg6qghknfh4gjbyzcgs4.html",
       "fragment": "autism-assessment",
       "author": "John Rigler",
-      "status": "Unsigned researched explanation \u00b7 22 October 2026",
+      "status": "Unsigned researched explanation · 22 October 2026",
       "indexed": true,
       "related": [
         "disability-access",
@@ -271,7 +295,7 @@
       "path": "reading/disability/bafkreigbs2umxd6go76elbg2v35pe7sipvsttdahq2muftzkewdtjps5re.html",
       "fragment": "disability-access",
       "author": "John Rigler",
-      "status": "Unsigned researched article \u00b7 22 October 2026",
+      "status": "Unsigned researched article · 22 October 2026",
       "indexed": true,
       "related": [
         "disability-new-mexico",
@@ -294,7 +318,7 @@
       "path": "reading/disability/bafkreigbs2umxd6go76elbg2v35pe7sipvsttdahq2muftzkewdtjps5re.html",
       "fragment": "disability-new-mexico",
       "author": "John Rigler",
-      "status": "Unsigned researched article \u00b7 22 October 2026",
+      "status": "Unsigned researched article · 22 October 2026",
       "indexed": true,
       "related": [
         "disability-evidence",
@@ -314,7 +338,7 @@
       "path": "reading/disability/bafkreigbs2umxd6go76elbg2v35pe7sipvsttdahq2muftzkewdtjps5re.html",
       "fragment": "disability-evidence",
       "author": "John Rigler",
-      "status": "Unsigned researched article \u00b7 22 October 2026",
+      "status": "Unsigned researched article · 22 October 2026",
       "indexed": true,
       "related": [
         "disability-general-assistance",
@@ -336,7 +360,7 @@
       "path": "reading/disability/bafkreigbs2umxd6go76elbg2v35pe7sipvsttdahq2muftzkewdtjps5re.html",
       "fragment": "disability-general-assistance",
       "author": "John Rigler",
-      "status": "Unsigned researched article \u00b7 22 October 2026",
+      "status": "Unsigned researched article · 22 October 2026",
       "indexed": true,
       "related": [
         "disability-new-mexico",
@@ -356,7 +380,7 @@
       "path": "reading/disability/bafkreigbs2umxd6go76elbg2v35pe7sipvsttdahq2muftzkewdtjps5re.html",
       "fragment": "disability-review",
       "author": "John Rigler",
-      "status": "Unsigned researched article \u00b7 22 October 2026",
+      "status": "Unsigned researched article · 22 October 2026",
       "indexed": true,
       "related": [
         "disability-general-assistance",
@@ -377,7 +401,7 @@
       "path": "reading/disability/bafkreigbs2umxd6go76elbg2v35pe7sipvsttdahq2muftzkewdtjps5re.html",
       "fragment": "disability-assistance",
       "author": "John Rigler",
-      "status": "Unsigned researched article \u00b7 22 October 2026",
+      "status": "Unsigned researched article · 22 October 2026",
       "indexed": true,
       "related": [
         "disability-evidence",
@@ -400,7 +424,7 @@
       "path": "reading/disability/bafkreigbs2umxd6go76elbg2v35pe7sipvsttdahq2muftzkewdtjps5re.html",
       "fragment": "disability-texas",
       "author": "John Rigler",
-      "status": "Unsigned researched article \u00b7 22 October 2026",
+      "status": "Unsigned researched article · 22 October 2026",
       "indexed": true,
       "related": [
         "disability-new-mexico",
@@ -417,11 +441,11 @@
       "kind": "explanation",
       "title": "Deterrence through administrative burden",
       "summary": "How the time, money, and procedural work of obtaining review can give a demand leverage before its basis is examined.",
-      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
-      "path": "reading/arguments/bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y.html",
+      "cid": "bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue",
+      "path": "reading/arguments/bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue.html",
       "fragment": "administrative-burden",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-      "status": "Unsigned researched argument \u00b7 22 October 2026",
+      "status": "Unsigned researched argument · 22 October 2026",
       "indexed": true,
       "related": [
         "records-proof",
@@ -448,11 +472,11 @@
       "kind": "explanation",
       "title": "A debt claim needs a traceable account",
       "summary": "Debt-sale data, account ownership, readable records, and the reconciliation needed to connect a claimant to an amount.",
-      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
-      "path": "reading/arguments/bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y.html",
+      "cid": "bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue",
+      "path": "reading/arguments/bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue.html",
       "fragment": "records-proof",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-      "status": "Unsigned researched argument \u00b7 22 October 2026",
+      "status": "Unsigned researched argument · 22 October 2026",
       "indexed": true,
       "related": [
         "debt-default",
@@ -478,11 +502,11 @@
       "kind": "explanation",
       "title": "When procedure decides a debt claim",
       "summary": "Representation gaps, defaults, admissions, and the author's corrected $1,000 courtroom-mediation recollection.",
-      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
-      "path": "reading/arguments/bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y.html",
+      "cid": "bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue",
+      "path": "reading/arguments/bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue.html",
       "fragment": "debt-default",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-      "status": "Unsigned researched argument \u00b7 Recollection corrected 23 October 2026",
+      "status": "Unsigned researched argument · Recollection corrected 23 October 2026",
       "indexed": true,
       "related": [
         "debt-recollection",
@@ -507,11 +531,11 @@
       "kind": "explanation",
       "title": "Unsupported rent acceleration",
       "summary": "The lease basis, period, mitigation, and credits needed to explain a demand for remaining rent.",
-      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
-      "path": "reading/arguments/bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y.html",
+      "cid": "bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue",
+      "path": "reading/arguments/bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue.html",
       "fragment": "rent-acceleration",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-      "status": "Unsigned AI-assisted article \u00b7 Updated 24 October 2026",
+      "status": "Unsigned AI-assisted article · Updated 24 October 2026",
       "indexed": true,
       "related": [
         "records-proof",
@@ -521,7 +545,8 @@
         "portals-proof",
         "legal-reference",
         "dispute-deadlines",
-        "debt-remedies"
+        "debt-remedies",
+        "authority-clarification"
       ],
       "topics": [
         "Housing & credit"
@@ -536,11 +561,11 @@
       "kind": "explanation",
       "title": "Credit reporting as collection pressure",
       "summary": "The three nationwide bureaus, recurring dispute problems, investigation duties, and the pressure created by a reported balance.",
-      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
-      "path": "reading/arguments/bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y.html",
+      "cid": "bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue",
+      "path": "reading/arguments/bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue.html",
       "fragment": "credit-reporting",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-      "status": "Unsigned researched argument \u00b7 22 October 2026",
+      "status": "Unsigned researched argument · 22 October 2026",
       "indexed": true,
       "related": [
         "records-proof",
@@ -570,11 +595,11 @@
         "administrative-burden",
         "debt-default"
       ],
-      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
-      "path": "reading/arguments/bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y.html",
+      "cid": "bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue",
+      "path": "reading/arguments/bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue.html",
       "fragment": "traffic-insurance",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-      "status": "Unsigned researched argument \u00b7 22 October 2026",
+      "status": "Unsigned researched argument · 22 October 2026",
       "indexed": true,
       "topics": [
         "Traffic & public revenue"
@@ -589,11 +614,11 @@
         "traffic-insurance",
         "administrative-burden"
       ],
-      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
-      "path": "reading/arguments/bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y.html",
+      "cid": "bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue",
+      "path": "reading/arguments/bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue.html",
       "fragment": "traffic-revenue",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-      "status": "Unsigned researched argument \u00b7 22 October 2026",
+      "status": "Unsigned researched argument · 22 October 2026",
       "indexed": true,
       "topics": [
         "Traffic & public revenue"
@@ -604,11 +629,11 @@
       "kind": "description",
       "title": "Request the basis of a reported balance",
       "summary": "An adaptable opening for a specific reporting dispute, with evidence references and a request for a substantive reinvestigation.",
-      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
-      "path": "reading/arguments/bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y.html",
+      "cid": "bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue",
+      "path": "reading/arguments/bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue.html",
       "fragment": "request",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-      "status": "Unsigned model request \u00b7 22 October 2026",
+      "status": "Unsigned model request · 22 October 2026",
       "indexed": true,
       "related": [
         "rent-acceleration",
@@ -638,7 +663,7 @@
       "path": "reading/overview/bafkreie5ma5yzawlwnm7zf32fx62oq6zaevdft7m4a7qqb7v7cdei5t7eq.html",
       "fragment": "value",
       "author": "John Rigler",
-      "status": "Unsigned overview draft \u00b7 22 October 2026",
+      "status": "Unsigned overview draft · 22 October 2026",
       "indexed": true,
       "related": [
         "scribes",
@@ -659,7 +684,7 @@
       "path": "reading/overview/bafkreie5ma5yzawlwnm7zf32fx62oq6zaevdft7m4a7qqb7v7cdei5t7eq.html",
       "fragment": "scribes",
       "author": "John Rigler",
-      "status": "Unsigned overview draft \u00b7 22 October 2026",
+      "status": "Unsigned overview draft · 22 October 2026",
       "indexed": true,
       "related": [
         "value",
@@ -679,7 +704,7 @@
       "path": "reading/overview/bafkreie5ma5yzawlwnm7zf32fx62oq6zaevdft7m4a7qqb7v7cdei5t7eq.html",
       "fragment": "open-commons",
       "author": "John Rigler",
-      "status": "Unsigned overview draft \u00b7 22 October 2026",
+      "status": "Unsigned overview draft · 22 October 2026",
       "indexed": true,
       "related": [
         "foundations",
@@ -699,7 +724,7 @@
       "path": "reading/overview/bafkreie5ma5yzawlwnm7zf32fx62oq6zaevdft7m4a7qqb7v7cdei5t7eq.html",
       "fragment": "foundations",
       "author": "John Rigler",
-      "status": "Unsigned overview draft \u00b7 22 October 2026",
+      "status": "Unsigned overview draft · 22 October 2026",
       "indexed": true,
       "related": [
         "open-commons",
@@ -720,7 +745,7 @@
       "path": "reading/overview/bafkreie5ma5yzawlwnm7zf32fx62oq6zaevdft7m4a7qqb7v7cdei5t7eq.html",
       "fragment": "patterns",
       "author": "John Rigler",
-      "status": "Unsigned overview draft \u00b7 22 October 2026",
+      "status": "Unsigned overview draft · 22 October 2026",
       "indexed": true,
       "related": [
         "administrative-burden",
@@ -743,7 +768,7 @@
       "path": "reading/overview/bafkreie5ma5yzawlwnm7zf32fx62oq6zaevdft7m4a7qqb7v7cdei5t7eq.html",
       "fragment": "work",
       "author": "John Rigler",
-      "status": "Unsigned overview draft \u00b7 22 October 2026",
+      "status": "Unsigned overview draft · 22 October 2026",
       "indexed": true,
       "related": [
         "prepare",
@@ -787,7 +812,7 @@
       "fragment": "assistance-record",
       "pdf": "reading/assistance/Commons-Preparation-and-Assistance.pdf",
       "author": "John Rigler",
-      "status": "Blank template \u2014 no attestation made",
+      "status": "Blank template — no attestation made",
       "indexed": true,
       "related": [
         "prepare",
@@ -802,11 +827,11 @@
       "kind": "explanation",
       "title": "When procedure decides a debt claim",
       "summary": "Representation gaps, defaults, admissions, and the procedural work required to keep a debt claim open to examination.",
-      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
-      "path": "reading/arguments/bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y.html",
+      "cid": "bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue",
+      "path": "reading/arguments/bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue.html",
       "fragment": "debt-default",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-      "status": "Unsigned researched argument \u00b7 22 October 2026",
+      "status": "Unsigned researched argument · 22 October 2026",
       "indexed": false,
       "related": [
         "records-proof",
@@ -831,11 +856,11 @@
       "kind": "explanation",
       "title": "A debt claim needs a traceable account",
       "summary": "Debt-sale data, account ownership, readable records, and the reconciliation needed to connect a claimant to an amount.",
-      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
-      "path": "reading/arguments/bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y.html",
+      "cid": "bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue",
+      "path": "reading/arguments/bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue.html",
       "fragment": "records-proof",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-      "status": "Unsigned researched argument \u00b7 22 October 2026",
+      "status": "Unsigned researched argument · 22 October 2026",
       "indexed": false,
       "related": [
         "debt-default",
@@ -862,11 +887,11 @@
       "kind": "explanation",
       "title": "A debt claim needs a traceable account",
       "summary": "Debt-sale data, account ownership, readable records, and the reconciliation needed to connect a claimant to an amount.",
-      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
-      "path": "reading/arguments/bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y.html",
+      "cid": "bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue",
+      "path": "reading/arguments/bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue.html",
       "fragment": "records-proof",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-      "status": "Unsigned researched argument \u00b7 22 October 2026",
+      "status": "Unsigned researched argument · 22 October 2026",
       "indexed": false,
       "related": [
         "debt-default",
@@ -897,7 +922,7 @@
       "path": "reading/debt/bafkreihxy7g2va3ziymmxbxvxg7jpi272n7p6mm34xdcls5r5cdtwlog4a.html",
       "fragment": "debt-recollection",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-      "status": "Unsigned attributed recollection \u00b7 Corrected 23 October 2026",
+      "status": "Unsigned attributed recollection · Corrected 23 October 2026",
       "indexed": false,
       "related": [
         "debt-default",
@@ -920,11 +945,11 @@
         "administrative-burden",
         "debt-default"
       ],
-      "cid": "bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y",
-      "path": "reading/arguments/bafkreicwcigr6tjb432wpjokhhxtrfkdt3uzmzm2q5oubjekwdpfhvjy7y.html",
+      "cid": "bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue",
+      "path": "reading/arguments/bafkreiesk3rvivbfnznpm2k7q755yrg7jps65hvzuqexxfrcyp5k5h6wue.html",
       "fragment": "traffic-insurance",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-      "status": "Unsigned researched argument \u00b7 22 October 2026",
+      "status": "Unsigned researched argument · 22 October 2026",
       "indexed": false,
       "topics": [
         "Traffic & public revenue"
@@ -943,7 +968,7 @@
       "path": "reading/companies/bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku.html",
       "fragment": "company-experian",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-      "status": "Unsigned profile and author commentary \u00b7 22 October 2026",
+      "status": "Unsigned profile and author commentary · 22 October 2026",
       "sources_checked": "2026-10-22",
       "indexed": true,
       "related": [
@@ -980,7 +1005,7 @@
       "path": "reading/companies/bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku.html",
       "fragment": "company-equifax",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-      "status": "Unsigned profile and author commentary \u00b7 22 October 2026",
+      "status": "Unsigned profile and author commentary · 22 October 2026",
       "sources_checked": "2026-10-22",
       "indexed": true,
       "related": [
@@ -1015,7 +1040,7 @@
       "path": "reading/companies/bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku.html",
       "fragment": "company-transunion",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-      "status": "Unsigned profile and author commentary \u00b7 22 October 2026",
+      "status": "Unsigned profile and author commentary · 22 October 2026",
       "sources_checked": "2026-10-22",
       "indexed": true,
       "related": [
@@ -1045,12 +1070,12 @@
       "title": "National Credit Systems",
       "legal_name": "National Credit Systems, Inc.",
       "role": "Rental collections",
-      "summary": "Collection workflows, retained dispute records, and The author's criticism of NCS\u2019s starting assumptions.",
+      "summary": "Collection workflows, retained dispute records, and The author's criticism of NCS’s starting assumptions.",
       "cid": "bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku",
       "path": "reading/companies/bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku.html",
       "fragment": "company-ncs",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-      "status": "Unsigned profile and author commentary \u00b7 22 October 2026",
+      "status": "Unsigned profile and author commentary · 22 October 2026",
       "sources_checked": "2026-10-22",
       "indexed": true,
       "related": [
@@ -1079,12 +1104,12 @@
       "title": "Rausch Sturm LLP",
       "legal_name": "Rausch Sturm LLP",
       "role": "Creditor representation",
-      "summary": "The author's criticism of lawyer-access bottlenecks, with the firm\u2019s identity and published routes.",
+      "summary": "The author's criticism of lawyer-access bottlenecks, with the firm’s identity and published routes.",
       "cid": "bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku",
       "path": "reading/companies/bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku.html",
       "fragment": "company-rausch-sturm",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-      "status": "Unsigned profile and author commentary \u00b7 22 October 2026",
+      "status": "Unsigned profile and author commentary · 22 October 2026",
       "sources_checked": "2026-10-22",
       "indexed": true,
       "related": [
@@ -1115,7 +1140,7 @@
       "path": "reading/companies/bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku.html",
       "fragment": "company-midland-funding",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-      "status": "Unsigned profile and author commentary \u00b7 22 October 2026",
+      "status": "Unsigned profile and author commentary · 22 October 2026",
       "sources_checked": "2026-10-22",
       "indexed": true,
       "related": [
@@ -1145,12 +1170,12 @@
       "title": "Midland Credit Management, Inc.",
       "legal_name": "Midland Credit Management, Inc.",
       "role": "Debt purchasing and servicing",
-      "summary": "The author's portal and proof criticism, with MCM\u2019s buying, servicing, and reporting roles.",
+      "summary": "The author's portal and proof criticism, with MCM’s buying, servicing, and reporting roles.",
       "cid": "bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku",
       "path": "reading/companies/bafkreigkuz2nhdfl4q34loavilhszappuf7jcncvqavae5mgyjfjly3gku.html",
       "fragment": "company-midland-credit",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-      "status": "Unsigned profile and author commentary \u00b7 22 October 2026",
+      "status": "Unsigned profile and author commentary · 22 October 2026",
       "sources_checked": "2026-10-22",
       "indexed": true,
       "related": [

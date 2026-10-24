@@ -28,9 +28,8 @@ manifest snapshots preserve the earlier edition. `edition.json` selects the curr
 metadata. `examples/portal-commentary.draft.json` remains an unsigned ledger
 reference; no live pin, signature, broadcast or court filing is claimed.
 
-The 24 October 2026 update records the author's report of an NCS portal upload,
-telephone acknowledgment and inaccessible reviewer, distinguishes Firmus from
-NCS, and connects contemplated affirmative litigation to the common law index.
-The new interaction remains attributed; no new call recording or portal audit
-is represented as inspected. Continuity notes are in
-`../../docs/RENT-ACCELERATION-CONTEXT.md`.
+The 24 October 2026 template revision generalizes the referral sequence into
+role-based correspondence. Company policy, delegated authority and the signer's
+own act are questions to distinguish in good faith. Real parties, private
+source mapping and individual strategy belong in private Daisy. Continuity
+notes are in `../../docs/RENT-ACCELERATION-CONTEXT.md`.

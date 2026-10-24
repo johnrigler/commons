@@ -13,10 +13,10 @@
       <summary>Customize this request</summary>
       <div class="fields">
         <label for="bureau">Credit reporting agency
-          <select id="bureau"><option>Experian</option><option>Equifax</option><option>TransUnion</option></select>
+          <input id="bureau" value="" maxlength="160">
         </label>
-        <label for="collector">Debt collector<input id="collector" value="National Credit Systems" maxlength="160"></label>
-        <label for="lessor">Lessor / property company<input id="lessor" value="Firmus" maxlength="160"></label>
+        <label for="collector">Debt collector<input id="collector" value="" maxlength="160"></label>
+        <label for="lessor">Lessor / property company<input id="lessor" value="" maxlength="160"></label>
       </div>
       <p class="hint">Click an organization name in the request to edit its field. Names update the opening only; attach and review the evidence for the individual case.</p>
     </details>

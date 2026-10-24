@@ -231,4 +231,15 @@ registry and rendered edition. New legal assertions should register their
 provisions with stable IDs and actor/trigger/deadline/limit fields. The imported
 inventory preserves earlier editions' legal sources without claiming a fresh
 review of each. See `RENT-ACCELERATION-CONTEXT.md` before applying these rules to
-the Firmus / NCS / Experian record.
+an individual rental-dispute record.
+
+## Generic authority-clarification correspondence
+
+`entry/authority-clarification.html` describes the reusable letter;
+`reading/correspondence/index.html` prints two Letter pages with blank fields or
+privately filled values. `reading/correspondence/source/fields.json` contains
+only field definitions. The runtime writes text nodes in the current tab and
+uses no storage, URL parameters or network submission. Print blank does not
+clear a filled private copy. The email-text control produces text for the user
+to review; it does not create a mail draft or send it. Real parties, source
+signatures, completed copies and delivery evidence belong in private Daisy.

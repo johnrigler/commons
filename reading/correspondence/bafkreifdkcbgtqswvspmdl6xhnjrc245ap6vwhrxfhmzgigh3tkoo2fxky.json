@@ -1,0 +1,36 @@
+{
+  "title": "Clarify the signed document and company policy",
+  "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+  "date": "2026-10-24",
+  "status": "Unsigned reusable template; all case fields blank",
+  "scope": "Two-page printable blank letter and private browser completion; email text preparation without dispatch",
+  "consumer_fields": "blank",
+  "artifacts": [
+    {
+      "path": "bafkreiddnkciqrerv2hzvt6muwv7bc6bcsf2s5xekp6262grgfk4a6dyum.html",
+      "media_type": "text/html",
+      "sha256": "636a84884491ae8f9acfcca5abf08bc1148ba976e453fdaf68d13155c07878a3",
+      "cid": "bafkreiddnkciqrerv2hzvt6muwv7bc6bcsf2s5xekp6262grgfk4a6dyum"
+    }
+  ],
+  "articles": [
+    {
+      "id": "authority-clarification",
+      "title": "Clarify the signed document and company policy",
+      "cid": "bafkreiddnkciqrerv2hzvt6muwv7bc6bcsf2s5xekp6262grgfk4a6dyum",
+      "fragment": "authority-clarification",
+      "related": [
+        "rent-acceleration",
+        "dispute-referral-loop",
+        "legal-reference",
+        "dispute-deadlines"
+      ]
+    }
+  ],
+  "publication": {
+    "signature": null,
+    "ipfs_pin_receipt": null,
+    "transaction_id": null,
+    "dispatch": null
+  }
+}
