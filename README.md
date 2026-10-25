@@ -74,6 +74,10 @@ See [correspondence policy](docs/CORRESPONDENCE.md) and the
 
 [Calling the collector: a recollection and a performance](reading/recollections/2026-10-25-collector-call.html) preserves the author’s 25 October 2026 first-person commentary, a deliberate role-play demonstrating how collection scripts and emotional pressure can escalate, and the proposal to record the complete call process. The selected author identity is the Litecoin address `LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb`; **the written edition is not yet signed or published on IPFS**. The [exact written source](reading/recollections/2026-10-25-collector-call.md) and [call-recording artifact model](docs/CALL-RECORDING-ARTIFACTS.md) are separate. This standalone reading page is available independently of the bundled portal feed, which requires a formal rebuild before including a new catalog item.
 
+## Tech
+
+[Tech](entry/tech.html) collects practical guides for retaining control of devices and records. Start with [F-Droid](entry/fdroid.html) and [Shizuku call recording](entry/shizuku-call-recording.html): setup, limitations, pairing failures, version differences, and testing both voices. The Galaxy A15 setup remains unverified; Termux/Mogwai collection is proposed, not implemented.
+
 ## Current arguments and reading editions
 
 [Artifact intake](tools/artifacts/index.html) accepts an original digitally signed
