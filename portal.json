@@ -9,6 +9,66 @@
   },
   "items": [
     {
+      "id": "tech",
+      "title": "Keep the tools and the knowledge in reach",
+      "summary": "Practical technology guides, independent copies and records you control.",
+      "kind": "explanation",
+      "cid": "bafkreie6gjipqhldsmlfjovrgldmjfzsrnxrzfnvpg6bqjmzpxa6w3fera",
+      "path": "reading/tech/bafkreie6gjipqhldsmlfjovrgldmjfzsrnxrzfnvpg6bqjmzpxa6w3fera.html",
+      "fragment": "tech",
+      "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+      "status": "Unsigned technical guide; handset recording not yet verified",
+      "sources_checked": "2026-10-25",
+      "indexed": true,
+      "topics": [
+        "Tech"
+      ],
+      "related": [
+        "fdroid",
+        "shizuku-call-recording"
+      ]
+    },
+    {
+      "id": "fdroid",
+      "title": "F-Droid: another route to Android software",
+      "summary": "Finding free software, checking for ads, and understanding separate update channels.",
+      "kind": "explanation",
+      "cid": "bafkreie6gjipqhldsmlfjovrgldmjfzsrnxrzfnvpg6bqjmzpxa6w3fera",
+      "path": "reading/tech/bafkreie6gjipqhldsmlfjovrgldmjfzsrnxrzfnvpg6bqjmzpxa6w3fera.html",
+      "fragment": "fdroid",
+      "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+      "status": "Unsigned technical guide; handset recording not yet verified",
+      "sources_checked": "2026-10-25",
+      "indexed": true,
+      "topics": [
+        "Tech"
+      ],
+      "related": [
+        "tech",
+        "shizuku-call-recording"
+      ]
+    },
+    {
+      "id": "shizuku-call-recording",
+      "title": "Recording calls with Shizuku and ShizuCallRecorder",
+      "summary": "Wireless pairing, troubleshooting, audio tests and a proposed private Mogwai collection workflow.",
+      "kind": "explanation",
+      "cid": "bafkreie6gjipqhldsmlfjovrgldmjfzsrnxrzfnvpg6bqjmzpxa6w3fera",
+      "path": "reading/tech/bafkreie6gjipqhldsmlfjovrgldmjfzsrnxrzfnvpg6bqjmzpxa6w3fera.html",
+      "fragment": "shizuku-call-recording",
+      "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+      "status": "Unsigned technical guide; handset recording not yet verified",
+      "sources_checked": "2026-10-25",
+      "indexed": true,
+      "topics": [
+        "Tech"
+      ],
+      "related": [
+        "tech",
+        "fdroid"
+      ]
+    },
+    {
       "id": "artifact-intake",
       "title": "Two documents. Exact bytes.",
       "summary": "Choose an original signed PDF and related correspondence locally; inspect metadata, retain full SHA-256 hashes and review a CertLedger draft in Chisel.",

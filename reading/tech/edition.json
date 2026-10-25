@@ -1,0 +1,40 @@
+{
+  "title": "Commons Tech",
+  "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+  "date": "2026-10-25",
+  "status": "Unsigned AI-assisted technical guides; source review, not handset verification",
+  "artifacts": [
+    {
+      "path": "bafkreie6gjipqhldsmlfjovrgldmjfzsrnxrzfnvpg6bqjmzpxa6w3fera.html",
+      "media_type": "text/html",
+      "cid": "bafkreie6gjipqhldsmlfjovrgldmjfzsrnxrzfnvpg6bqjmzpxa6w3fera",
+      "sha256": "9e3250f81d63931654bab132c6c497328b6f1c95b579bc1825997dc1eb6ca488",
+      "bytes": 13762
+    }
+  ],
+  "publication": {
+    "author_signature": null,
+    "ipfs_pin_receipt": null,
+    "transaction_id": null
+  },
+  "articles": [
+    {
+      "id": "tech",
+      "title": "Keep the tools and the knowledge in reach",
+      "cid": "bafkreie6gjipqhldsmlfjovrgldmjfzsrnxrzfnvpg6bqjmzpxa6w3fera",
+      "fragment": "tech"
+    },
+    {
+      "id": "fdroid",
+      "title": "F-Droid: another route to Android software",
+      "cid": "bafkreie6gjipqhldsmlfjovrgldmjfzsrnxrzfnvpg6bqjmzpxa6w3fera",
+      "fragment": "fdroid"
+    },
+    {
+      "id": "shizuku-call-recording",
+      "title": "Recording calls with Shizuku and ShizuCallRecorder",
+      "cid": "bafkreie6gjipqhldsmlfjovrgldmjfzsrnxrzfnvpg6bqjmzpxa6w3fera",
+      "fragment": "shizuku-call-recording"
+    }
+  ]
+}
