@@ -17,6 +17,26 @@ Texas Property Code §91.006 imposes mitigation after abandonment in breach of a
 
 If future rent had already been paid, later replacement rent would need to be accounted for in determining whether the landlord retained an overpayment. Do not assume an automatic refund schedule, a dollar-for-dollar calculation regardless of replacement terms, or that the original acceleration clause was enforceable without reviewing the lease. Lease expiration does not itself erase unpaid rent attributable to the original term. This plan does not recommend paying the disputed amount first. [2–3]
 
+## Open hypothesis: was the unit withheld from leasing?
+
+The author raises this possibility: when a complex has several vacancies, management could prioritize other units and leave a former tenant's unit vacant while continuing to claim accelerated rent against that tenant. This is a hypothesis to investigate, not evidence that any particular landlord followed such a policy. Market weakness or other vacancies alone does not establish that the unit was withheld, that reasonable efforts were absent, or that a replacement tenant would have rented it.
+
+Distinguish a unit made available but not successfully rented from a unit deliberately excluded from leasing. A general advertisement for the complex does not, by itself, answer what happened to the particular unit. Conversely, the absence of a separate public advertisement does not, by itself, prove the unit was unavailable to prospective tenants. These are evidentiary distinctions, not an assertion that Texas requires a particular advertising channel or gives the abandoned unit priority over every other vacancy.
+
+The existing reasonable-efforts standard remains the legal question; any claimed reduction requires evidence of loss actually avoided or reasonably avoidable. Do not infer that the entire accelerated balance disappears simply because the landlord had other vacancies. See sources 1–3 and the common mitigation reference.
+
+**Questions for the records custodian or responsible manager:**
+
+- Was the unit marked available, unavailable, reserved, under repair, or held off-market during the remaining lease term? Preserve status changes, dates, reason codes and approvals.
+- When was it physically ready, entered into leasing inventory, offered, shown, reserved and occupied?
+- What procedure allocated prospects among comparable vacant units, and was that procedure applied to this unit? Was there an instruction to fill other units first, and why?
+- Were its asking rent, concessions and availability comparable to similar units? What documented condition, repair or other restriction prevented leasing?
+- Which unit-specific records connect marketing and prospective-tenant activity to the ultimate replacement lease and ledger credits?
+
+**Suggested discovery supplement:** Request the unit's availability/status audit trail, relevant leasing instructions, showing or prospect-assignment records, and records sufficient to compare how similar available units were offered during the same period. Limit the comparison to a reasonable period and genuinely comparable units; redact tenant/applicant personal information. Ask the court to approve the scope. This is a proposed request, not an automatic entitlement to every unit's records.
+
+The central question is: **Was this unit withheld from leasing, for what dates and reasons, under whose instructions, and what rental loss could reasonably have been avoided?** The answer may support or contradict the hypothesis. Keep the actual unit, dates, company mapping and source documents in the private case record.
+
 ## Before choosing a lawsuit
 
 Identify the actual owner/lessor, manager, collector and credit furnisher separately. A trade name is not enough to establish the correct defendant or registered agent. Do not assume a manager has the landlord's contractual liability, that an employee is personally liable because of a signature, or that every creditor is covered by the federal FDCPA.
