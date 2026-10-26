@@ -74,6 +74,10 @@ See [correspondence policy](docs/CORRESPONDENCE.md) and the
 
 [Calling the collector: a recollection and a performance](reading/recollections/2026-10-25-collector-call.html) preserves the author’s 25 October 2026 first-person commentary, a deliberate role-play demonstrating how collection scripts and emotional pressure can escalate, and the proposal to record the complete call process. The selected author identity is the Litecoin address `LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb`; **the written edition is not yet signed or published on IPFS**. The [exact written source](reading/recollections/2026-10-25-collector-call.md) and [call-recording artifact model](docs/CALL-RECORDING-ARTIFACTS.md) are separate. This standalone reading page is available independently of the bundled portal feed, which requires a formal rebuild before including a new catalog item.
 
+## Start with the record
+
+[What you can do before hiring a lawyer](entry/dispute-without-lawyer.html) walks a reader through identifying the issue, preparing evidence, making disputes, documenting unanswered questions and purchasing a defined legal review. It includes a consultation agenda and preserves the distinction between institutional burden and an established legal violation.
+
 ## Texas rental-lawsuit preparation
 
 [Challenging an accelerated-rent balance in Austin, Texas](entry/texas-rental-lawsuit.html) adds observations about later reconciliation, policy versus individual action, a filing and cost-relief walkthrough, a partial petition, and a limited-discovery motion. Public parties and case fields remain blank. The claim, damages, jurisdiction and deadlines must be resolved before filing; no case has been filed.

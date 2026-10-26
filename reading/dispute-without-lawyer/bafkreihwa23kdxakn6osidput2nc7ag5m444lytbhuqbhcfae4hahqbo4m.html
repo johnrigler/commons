@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Commons — Start with the record</title><style>
+    :root { color-scheme: light; --ink: #242624; --muted: #60655f; --rule: #cdd0c7; --accent: #86503c; }
+    * { box-sizing: border-box; }
+    html { background: #eeeee8; color: var(--ink); }
+    body { margin: 0; padding: 36px 18px; font-family: Georgia, 'Times New Roman', serif; }
+    article { max-width: 840px; margin: 0 auto 28px; padding: 48px 70px 40px; background: #fffef9; border: 1px solid #dbddd3; scroll-margin-top: 20px; }
+    a { color: #77432f; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    .reading-links { margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--rule); font: 13px/1.8 Arial, sans-serif; }
+    .reading-links a { display: block; width: fit-content; }
+    .return-link { font: 13px/1.5 Arial, sans-serif; }
+    .source-note { margin-top: 25px; padding-top: 14px; border-top: 1px solid var(--rule); font: 13px/1.55 Arial, sans-serif; color: var(--muted); }
+    .masthead { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; padding-bottom: 16px; border-bottom: 2px solid var(--ink); font-family: Arial, sans-serif; }
+    .brand { font-size: 16px; letter-spacing: .16em; font-weight: 700; text-transform: uppercase; }
+    .status { color: var(--muted); font-size: 12px; }
+    .eyebrow { margin: 34px 0 13px; font: 700 12px/1.5 Arial, sans-serif; color: var(--accent); letter-spacing: .11em; text-transform: uppercase; }
+    h1 { margin: 0 0 19px; font-size: clamp(36px, 6vw, 50px); font-weight: 400; line-height: 1.06; letter-spacing: -.035em; }
+    .deck { margin: 0 0 28px; font-size: 21px; line-height: 1.45; color: #454b44; }
+    p { margin: 0 0 17px; font-size: 17px; line-height: 1.66; }
+    h2 { margin: 29px 0 12px; font: 700 15px/1.4 Arial, sans-serif; }
+    .principle { margin: 26px 0; padding: 17px 0 17px 21px; border-left: 3px solid var(--accent); font-size: 21px; line-height: 1.45; }
+    .transition { border-top: 1px solid var(--rule); margin-top: 30px; padding-top: 23px; }
+    .transition h2 { margin-top: 0; }
+    footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 9px 20px; border-top: 1px solid var(--rule); margin-top: 30px; padding-top: 14px; color: var(--muted); font: 12px/1.5 Arial, sans-serif; }
+    @media (max-width: 600px) {
+      body { padding: 0; }
+      article { border: 0; padding: 27px 24px 30px; }
+      .masthead { gap: 12px; }
+      .brand { font-size: 14px; }
+      .status { font-size: 11px; }
+      .eyebrow { margin-top: 27px; }
+      p { font-size: 17px; }
+    }
+    .tools { max-width: 840px; margin: 0 auto 20px; padding: 20px 24px; background: #fffef9; border: 1px solid var(--rule); font: 14px/1.5 Arial, sans-serif; }
+    .tools summary { cursor: pointer; font-weight: 700; }
+    .fields { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 16px; }
+    label { display: block; font-weight: 700; }
+    input, select, button { font: inherit; }
+    input, select { display: block; width: 100%; margin-top: 5px; padding: 9px; border: 1px solid #9b9f95; background: white; color: var(--ink); border-radius: 3px; }
+    button { cursor: pointer; padding: 8px 12px; border: 1px solid #9b9f95; border-radius: 3px; background: white; color: var(--ink); }
+    .print-tools { display: flex; flex-wrap: wrap; align-items: end; gap: 12px; margin-top: 16px; }
+    .print-tools label { flex: 1; min-width: 190px; }
+    .tools .hint { font: 13px/1.5 Arial, sans-serif; margin: 13px 0 0; color: var(--muted); }
+    .term-link, .party { font-weight: 700; }
+    .party { text-decoration-style: dotted; }
+    .fields input:focus, .fields select:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+    @media (max-width: 600px) { .tools { margin: 12px; padding: 16px; } .fields { grid-template-columns: 1fr; } }
+    @page { size: Letter; margin: .7in .75in; }
+    @media print {
+      html, body { background: white; }
+      .screen-only { display: none !important; }
+      body[data-print="request"] article:not(#request) { display: none; }
+      a.party { text-decoration: none; }
+      .reading-links a { font-weight: 700; }
+      body { padding: 0; }
+      article { max-width: none; margin: 0; padding: 0; border: 0; background: white; }
+      article + article { break-before: page; }
+      a { color: inherit; }
+      .return-link { display: none; }
+      h1 { font-size: 29pt; }
+      p { font-size: 11pt; line-height: 1.5; margin-bottom: 10pt; orphans: 3; widows: 3; }
+      .deck { font-size: 14pt; margin-bottom: 18pt; }
+      .principle { font-size: 14pt; margin: 16pt 0; padding-top: 8pt; padding-bottom: 8pt; }
+      h2 { break-after: avoid; margin-top: 17pt; }
+      .eyebrow { margin-top: 21pt; }
+      footer { break-inside: avoid; }
+    }
+  
+.byline, .scope-note { font: 13px/1.6 Arial, sans-serif; color: var(--muted); }
+.scope-note { padding: 14px 16px; border-left: 2px solid var(--rule); background: #f6f5ef; }
+sup { font: 11px/1 Arial, sans-serif; white-space: nowrap; }
+table { width: 100%; border-collapse: collapse; margin: 18px 0 22px; font: 15px/1.55 Arial, sans-serif; }
+th, td { text-align: left; vertical-align: top; padding: 12px; border-bottom: 1px solid var(--rule); }
+thead { background: #eeeee6; }
+tbody th { width: 28%; font-size: 14px; }
+.money-table td { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sources { padding-left: 23px; font: 15px/1.6 Arial, sans-serif; }
+.sources li { padding-left: 3px; margin-bottom: 15px; overflow-wrap: anywhere; }
+.tools { display: flex; flex-wrap: wrap; gap: 9px 18px; align-items: center; }
+[id] { scroll-margin-top: 20px; }
+@media (max-width: 600px) {
+  th, td { padding: 10px 8px; }
+  table { font-size: 14px; }
+  tbody th { width: 31%; font-size: 13px; }
+  .masthead { align-items: flex-start; }
+}
+@media print {
+  table { font-size: 9.5pt; }
+  tbody th { font-size: 9pt; }
+  tr { break-inside: avoid; }
+  th, td { padding: 8pt; }
+  .byline, .scope-note { font-size: 8.5pt; }
+  .sources { font-size: 9.5pt; line-height: 1.5; }
+  .sources li { break-inside: avoid; margin-bottom: 9pt; }
+  sup { font-size: 8pt; }
+}
+</style></head><body><nav class="tools"><a href="../../index.html">Commons</a><a href="../dispute-without-lawyer.md">Exact source</a></nav><article id="dispute-without-lawyer"><h1>Start with the record: what you can do before hiring a lawyer</h1>
+<p>Author identity: LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb<br />
+25 October 2026 · CC0 · Unsigned, AI-assisted guide; no independent legal review.</p>
+<p>You have a disputed charge or negative credit entry. You want someone to examine the facts, explain the calculation and correct an error. You should be able to understand the available process before deciding what legal help to purchase.</p>
+<p>This walkthrough helps you prepare that work. It does not determine that a debt is invalid, that a company violated the law, or that you have time to wait. If court papers have arrived or a filing deadline may be close, address that deadline while gathering the record.</p>
+<h2>1. Identify the specific problem</h2>
+<p>Write one sentence stating what you dispute. For example: “The balance includes future rent, but the records provided do not explain the remaining lease period, reletting history or credits.” Use the issue that actually applies to you; do not select identity theft or claim the account is not yours merely because a portal lacks an accurate category.</p>
+<p>Then state the result you want: an explanation, a corrected balance, correction or deletion of inaccurate reporting, or assessment of a legal claim. These outcomes are different. Removal from one credit report does not by itself establish cancellation of the underlying debt.</p>
+<h2>2. Identify who can answer each part</h2>
+<table>
+<thead>
+<tr>
+<th>Organization or role</th>
+<th>What to ask about</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Owner, lessor or property manager</td>
+<td>Lease authority, charge calculation, unit availability, reletting, deposits and credits</td>
+</tr>
+<tr>
+<td>Debt collector</td>
+<td>The amount it is asserting, the information supporting it and how it handled your dispute</td>
+</tr>
+<tr>
+<td>Credit furnisher</td>
+<td>What it supplied to the bureau and what investigation or correction followed</td>
+</tr>
+<tr>
+<td>Credit bureau</td>
+<td>What it received from you, investigation results and the entry it continues to report</td>
+</tr>
+</tbody>
+</table>
+<p>A company may perform more than one role. Record exact legal names and addresses. A response from one organization is not automatically a response from another. The collector serves the creditor's collection interests; you did not necessarily choose this relationship. “Unwilling client” is the author's description of the experience, not a legal status or an attorney-client relationship.</p>
+<h2>3. Build a small evidence packet</h2>
+<p>Keep originals unchanged and work from copies. Your packet should contain:</p>
+<ul>
+<li>A one-page chronology: event date, organization, action, source file and unanswered question.</li>
+<li>The contract and relevant clauses, original charge and latest itemized ledger.</li>
+<li>Your exact dispute letters, portal submissions, attachments and delivery confirmations.</li>
+<li>Every substantive response, including one you consider inadequate.</li>
+<li>Credit reports before and after the dispute, with the relevant entry identified.</li>
+<li>Evidence of any claimed loss, such as an actual adverse decision and related expense.</li>
+</ul>
+<p>Separate what you know from what you suspect. “They did not provide reletting records” is different from “They never tried to relet.” Record the first if that is what the evidence supports; investigate the second. Do not publicly upload account numbers, identification records, unredacted reports or completed correspondence. Commons supplies reusable material; your completed case record stays private.</p>
+<h2>4. Use the dispute processes yourself</h2>
+<p>You can write your own debt dispute and credit-report dispute, provide copies of supporting documents and keep the results without hiring a lawyer. The <a href="https://www.consumerfinance.gov/ask-cfpb/can-a-debt-collector-still-collect-a-debt-after-ive-disputed-it-en-338/">CFPB's collector-dispute guidance</a> explains these consumer steps. The <a href="../../entry/request.html">Commons request</a>, <a href="../../entry/dispute-deadlines.html">deadline reference</a> and <a href="../../entry/legal-reference.html">law index</a> help distinguish the applicable recipient and duty.</p>
+<p>Choose the request that fits the facts. Identify the specific amount or entry, explain the error or missing reconciliation, attach relevant evidence, and ask for a specific answer. Retain exactly what you sent, where, when and what establishes receipt. Do not repeatedly send an identical dispute as a substitute for identifying new facts or an unanswered issue.</p>
+<p><strong>Keep the clocks separate.</strong> Federal debt validation, a Texas third-party collector's written-inaccuracy dispute, and a bureau or furnisher investigation are different procedures. A collector's federal validation process does not generally require it to send evidence within thirty days. Certain credit-report investigations and qualifying Texas disputes do involve response or investigation periods. See the linked actor-specific references rather than assuming every certified letter starts the same clock.</p>
+<h2>5. Record the gap in the answer</h2>
+<p>Compare the response with what you actually asked:</p>
+<table>
+<thead>
+<tr>
+<th>Your question</th>
+<th>What the response supplied</th>
+<th>What remains unresolved</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Which lease clause supports this amount?</td>
+<td>__________</td>
+<td>__________</td>
+</tr>
+<tr>
+<td>What dates and calculation make up the charge?</td>
+<td>__________</td>
+<td>__________</td>
+</tr>
+<tr>
+<td>What payments, deposits or reletting credits were applied?</td>
+<td>__________</td>
+<td>__________</td>
+</tr>
+<tr>
+<td>Who reviewed the specific disputed fact?</td>
+<td>__________</td>
+<td>__________</td>
+</tr>
+<tr>
+<td>What was corrected, and who was told?</td>
+<td>__________</td>
+<td>__________</td>
+</tr>
+</tbody>
+</table>
+<p>A denial, referral or repeated balance may leave the substantive issue unanswered. Describe the omission precisely. An unsatisfactory explanation does not alone prove a statutory violation or establish a right to every internal record.</p>
+<p>You may also use the <a href="https://www.consumerfinance.gov/complaint/">CFPB complaint process</a> for a covered collection or credit-reporting problem. Preserve the complaint and response. A complaint is not a court judgment and should not be assumed to stop a lawsuit deadline.</p>
+<h2>6. Decide what work to purchase</h2>
+<p>The author's objection is to having to purchase access to a substantive answer: paying someone to obtain routine accounting or factual review that the institution should meaningfully address through its own process. That is an analysis of administrative burden, not a finding that every refusal or referral is unlawful.</p>
+<p>You may choose to prepare the chronology and factual comparison yourself, then pay for a specific professional task:</p>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Concrete deliverable to request</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Legal assessment</td>
+<td>Identify viable claims, defendants, deadlines, remedies and major weaknesses</td>
+</tr>
+<tr>
+<td>Petition review</td>
+<td>Check a prepared draft for factual sufficiency, jurisdiction, venue and service</td>
+</tr>
+<tr>
+<td>Demand or negotiation</td>
+<td>An agreed letter or negotiation directed toward a defined correction or settlement</td>
+</tr>
+<tr>
+<td>Discovery planning</td>
+<td>Identify records that can properly be obtained and the required court procedure</td>
+</tr>
+<tr>
+<td>A hearing or continued litigation</td>
+<td>Define who handles filings, appearances, deadlines and settlement decisions</td>
+</tr>
+</tbody>
+</table>
+<p>Ask whether the attorney offers that task and obtain the scope and price in writing. A free consultation does not mean free representation. Ask about legal-aid eligibility, contingency arrangements or statutory fee shifting where relevant; none guarantees that an attorney will take the case or recover fees.</p>
+<h2>7. Take this agenda to counsel</h2>
+<p><strong>Purpose:</strong> I want a substantive resolution of a documented dispute. I would prefer not to pay for repeated factual requests, but I am willing to purchase defined legal judgment or representation where it is needed.</p>
+<p><strong>Prepared record:</strong> My chronology, contract, disputed calculation, correspondence, proof of receipt, reporting history and evidence of harm are organized. The unresolved factual question is __________. My requested outcome is __________.</p>
+<p><strong>Requested review:</strong> Please identify the legally supported claims, proper defendants, earliest filing deadline and available remedies. Tell me the least expensive effective next step you can offer, its deliverable and price, and what I would remain responsible for. If a demand is unlikely to help, please explain why. If litigation is appropriate, please identify what evidence is still missing and whether any fee-shifting or contingency arrangement is available.</p>
+<p><strong>Budget and scope:</strong> My available budget is __________. I am asking for __________ rather than assuming full representation. Please tell me whether you can accept that scope and whether another provider would be more appropriate.</p>
+<p>No attorney has reviewed or approved a case merely because this agenda is completed.</p>
+<h2>8. If voluntary cooperation fails</h2>
+<p>Court discovery can sometimes obtain relevant records that voluntary requests did not produce, but a lawsuit needs a legally supported claim. Filing is not simply a way to buy a subpoena, and litigation does not guarantee disclosure, credit deletion or settlement.</p>
+<p>The <a href="../../entry/texas-rental-lawsuit.html">Austin, Texas rental-lawsuit preparation guide</a> includes a partial petition, cost-relief information and proposed discovery. Its unresolved claim and damages fields must be completed and assessed before filing. Preserve deadlines while considering options; do not rely on another company's pending case to protect a claim against a different defendant.</p>
+<p>For local referrals, the <a href="https://austinlrs.com/contact-us/">Lawyer Referral Service of Central Texas</a> lists <strong>512-472-8303</strong> and an initial consultation of up to thirty minutes free. Additional work is separately priced. Ask whether it can refer you based on your residence and the dispute's location. The <a href="https://lawlibrary.traviscountytx.gov/faq">Travis County Law Library FAQ</a> identifies legal-aid and volunteer routes and explains its own service limits. Eligibility and acceptance require screening. Service information checked 25 October 2026.</p>
+<h2>What Commons contributes</h2>
+<p>The goal is that the next person starts with a map: who holds the information, what can be requested directly, how to preserve an inadequate response, and what professional help would add. Preparation can reduce repeated reconstruction; no measured cost saving is claimed.</p>
+<p>A useful record includes the effort needed to obtain an answer. Keep a factual log of hours, expenses, referrals and repeated requests. Whether any of those amounts are legally recoverable is a separate question for the selected claim.</p>
+<p>This guide uses the existing <a href="../../legal-references.json">legal registry</a>, especially us-fdcpa-1692g, tx-finance-392-202, us-fcra-1681i, us-fcra-1681s2, us-regv-1022-43, us-fdcpa-1692k, us-fcra-1681p, tx-jp-discovery and tx-jp-filing. No individual deadline or liability finding is made. Author identity is supplied, not a verified signature. No court submission, dispatch, IPFS pin or ledger announcement is recorded here.</p></article></body></html>

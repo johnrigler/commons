@@ -9,6 +9,29 @@
   },
   "items": [
     {
+      "id": "dispute-without-lawyer",
+      "title": "Start with the record: before hiring a lawyer",
+      "summary": "A practical route through a disputed charge: prepare evidence, use dispute processes yourself, document unanswered questions and request defined legal help.",
+      "kind": "description",
+      "genre": "guide",
+      "cid": "bafkreihwa23kdxakn6osidput2nc7ag5m444lytbhuqbhcfae4hahqbo4m",
+      "path": "reading/dispute-without-lawyer/bafkreihwa23kdxakn6osidput2nc7ag5m444lytbhuqbhcfae4hahqbo4m.html",
+      "fragment": "dispute-without-lawyer",
+      "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+      "status": "Unsigned AI-assisted guide; no individual legal assessment",
+      "indexed": true,
+      "topics": [
+        "Housing & credit",
+        "Commons practice"
+      ],
+      "related": [
+        "texas-rental-lawsuit",
+        "administrative-burden",
+        "dispute-deadlines",
+        "request"
+      ]
+    },
+    {
       "id": "texas-rental-lawsuit",
       "title": "Challenging an accelerated-rent balance in Austin, Texas",
       "summary": "Policy or individual action? A filing walkthrough, cost-relief route, partial petition and focused discovery motion, with unresolved claims kept explicit.",
