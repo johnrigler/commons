@@ -9,6 +9,30 @@
   },
   "items": [
     {
+      "id": "pre-suit-dispute",
+      "title": "Written disputes, response clocks and unanswered accounting questions",
+      "summary": "A blank working document and two letters separating written notice, collector response duties, investigation and property-side accounting.",
+      "kind": "explanation",
+      "genre": "working document",
+      "cid": "bafkreievbynol6ejglb6sluky7apdtrvto2z5ghaxwsufwl34koay25jfu",
+      "path": "reading/correspondence/bafkreievbynol6ejglb6sluky7apdtrvto2z5ghaxwsufwl34koay25jfu.html",
+      "fragment": "pre-suit-dispute",
+      "author": "",
+      "status": "Unsigned blank working document and templates; case fields unfilled",
+      "indexed": true,
+      "topics": [
+        "Housing & credit",
+        "Commons practice"
+      ],
+      "related": [
+        "rent-acceleration",
+        "legal-reference",
+        "dispute-deadlines",
+        "dispute-referral-loop",
+        "texas-rental-lawsuit"
+      ]
+    },
+    {
       "id": "dispute-without-lawyer",
       "title": "Start with the record: before hiring a lawyer",
       "summary": "A practical route through a disputed charge: prepare evidence, use dispute processes yourself, document unanswered questions and request defined legal help.",
@@ -111,12 +135,12 @@
         "dispute-referral-loop"
       ],
       "kind": "explanation",
-      "cid": "bafkreihd6qzkot3hw5unnrxtn4pctevc7sruc3woxste546zifnjlpniyu",
-      "path": "reading/law/bafkreihd6qzkot3hw5unnrxtn4pctevc7sruc3woxste546zifnjlpniyu.html",
+      "cid": "bafkreih6r2bkremrrfeyml52jva5kkwqziiykrebpghz4gauusytr4bqka",
+      "path": "reading/law/bafkreih6r2bkremrrfeyml52jva5kkwqziiykrebpghz4gauusytr4bqka.html",
       "fragment": "legal-reference",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
       "status": "Unsigned AI-assisted reference; no independent legal review",
-      "sources_checked": "2026-10-24",
+      "sources_checked": "2026-10-26",
       "indexed": true,
       "topics": [
         "Housing & credit",
@@ -136,12 +160,12 @@
         "credit-reporting"
       ],
       "kind": "explanation",
-      "cid": "bafkreihd6qzkot3hw5unnrxtn4pctevc7sruc3woxste546zifnjlpniyu",
-      "path": "reading/law/bafkreihd6qzkot3hw5unnrxtn4pctevc7sruc3woxste546zifnjlpniyu.html",
+      "cid": "bafkreih6r2bkremrrfeyml52jva5kkwqziiykrebpghz4gauusytr4bqka",
+      "path": "reading/law/bafkreih6r2bkremrrfeyml52jva5kkwqziiykrebpghz4gauusytr4bqka.html",
       "fragment": "dispute-deadlines",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
       "status": "Unsigned AI-assisted reference; no independent legal review",
-      "sources_checked": "2026-10-24",
+      "sources_checked": "2026-10-26",
       "indexed": true,
       "topics": [
         "Housing & credit",
@@ -161,8 +185,8 @@
         "debt-default"
       ],
       "kind": "explanation",
-      "cid": "bafkreihd6qzkot3hw5unnrxtn4pctevc7sruc3woxste546zifnjlpniyu",
-      "path": "reading/law/bafkreihd6qzkot3hw5unnrxtn4pctevc7sruc3woxste546zifnjlpniyu.html",
+      "cid": "bafkreih6r2bkremrrfeyml52jva5kkwqziiykrebpghz4gauusytr4bqka",
+      "path": "reading/law/bafkreih6r2bkremrrfeyml52jva5kkwqziiykrebpghz4gauusytr4bqka.html",
       "fragment": "debt-remedies",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
       "status": "Unsigned AI-assisted reference; no independent legal review",

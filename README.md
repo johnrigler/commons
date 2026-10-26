@@ -78,6 +78,17 @@ See [correspondence policy](docs/CORRESPONDENCE.md) and the
 
 [What you can do before hiring a lawyer](entry/dispute-without-lawyer.html) walks a reader through identifying the issue, preparing evidence, making disputes, documenting unanswered questions and purchasing a defined legal review. It includes a consultation agenda and preserves the distinction between institutional burden and an established legal violation.
 
+## Written disputes before court
+
+[Written disputes, response clocks and unanswered accounting questions](reading/correspondence/pre-suit-dispute-working-document.html)
+is a blank working document distinguishing a legally meaningful inaccuracy notice,
+the statutory written-statement clock, investigation duties and requested source
+records. Its [collector letter](reading/correspondence/collector-amount-dispute.md)
+and [property-side accounting request](reading/correspondence/property-accounting-request.md)
+leave all case fields blank. They preserve the mitigation and credit objections
+without promising that one rule applies to every recipient or that every requested
+document must arrive within thirty days.
+
 ## Texas rental-lawsuit preparation
 
 [Challenging an accelerated-rent balance in Austin, Texas](entry/texas-rental-lawsuit.html) adds observations about later reconciliation, policy versus individual action, a filing and cost-relief walkthrough, a partial petition, and a limited-discovery motion. Public parties and case fields remain blank. The claim, damages, jurisdiction and deadlines must be resolved before filing; no case has been filed.

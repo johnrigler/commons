@@ -33,3 +33,5 @@ Read `../../docs/RENT-ACCELERATION-CONTEXT.md` before interpreting a case-specif
 deadline. Do not turn the author's overdue-answer position into a finding that
 the debt was extinguished. This edition records no independent legal review,
 signature, public IPFS pin, ledger announcement or court acceptance.
+
+The current revision distinguishes receipt of a qualifying inaccuracy notice from a universal document-production deadline. The blank working document and both recipient-specific letters are at ../correspondence/pre-suit-dispute-working-document.html.

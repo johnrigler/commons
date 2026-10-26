@@ -1,7 +1,7 @@
 {
   "schema": "commons/legal-references/1",
   "title": "Laws, duties, deadlines and remedies",
-  "date": "2026-10-25",
+  "date": "2026-10-26",
   "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
   "status": "Unsigned AI-assisted reference; no independent legal review",
   "scope": "Shared reference for unsupported rent acceleration and connected collection, reporting, recording and court-process questions; imported legal sources from other current Commons subjects",
@@ -71,20 +71,23 @@
       "group": "Texas collection",
       "citation": "Texas Finance Code §392.202(a)–(e)",
       "title": "Written disputes and the 30-day statement",
-      "source_url": "https://statutes.capitol.texas.gov/?code=FI&chapter=FI.392&artSec=392.202&tab=1",
+      "source_url": "https://tcss.legis.texas.gov/resources/fi/htm/fi.392.htm",
       "applies_to": "Covered third-party debt collectors; determine the actual collector separately from the source creditor or property manager.",
-      "trigger": "Receipt by that collector of qualifying written notice identifying an inaccuracy in its file.",
-      "deadline": "Written statement no later than day 30 after receipt. Admitted inaccuracies: correction within five business days.",
-      "required_action": "Investigate and send a statement admitting or denying the inaccuracy, or explaining insufficient investigation time. Collection must cease as provided in (a). The insufficient-time route requires interim file changes, recipient notices and cessation under (d).",
-      "consequence": "On completion notify the consumer. Under (e), a determination of accuracy permits reporting and collection to resume. Civil remedies are addressed by §392.403.",
-      "limits": "A denial is not an obligation to send every requested document. Missing the response deadline does not automatically erase the underlying lease debt; a later investigation does not make an earlier response timely.",
+      "trigger": "Receipt by the covered third-party collector of written notice identifying an alleged inaccuracy in the relevant debt/file item. No lawyer, pending lawsuit, certified delivery or statutory citation is prescribed for the notice.",
+      "deadline": "For a collector initiating an investigation, send the subsection (b) written statement no later than day 30 after notice receipt. An admitted inaccuracy must be corrected within five business days of admission.",
+      "required_action": "Make a written dispute record. Subsection (a) distinguishes reporting and nonreporting collectors and imposes collection-cessation/investigation conditions until the accurate amount is determined. The subsection (b) statement admits, denies, or states insufficient investigation time. An insufficient-time statement triggers immediate interim changes, recipient notices and cessation under (d); completion requires the determination notice under (e).",
+      "consequence": "A completed accuracy determination can permit reporting and collection to resume under (e). A proven earlier violation is not made timely by later compliance; civil remedies require their own conditions under 392.403.",
+      "limits": "The written statement is not a general 30-day production deadline for every requested source document. A timely denial does not itself establish every investigation/cessation duty was satisfied; missing documents alone do not establish a violation. Receipt by a source creditor is not automatically collector receipt. Ordinary written mail can carry the response; this section prescribes no reciprocal certified-mail requirement. Delay does not automatically extinguish the underlying debt.",
       "related": [
-        "dispute-referral-loop"
+        "dispute-referral-loop",
+        "pre-suit-dispute"
       ],
-      "checked": "2026-10-24",
-      "review_status": "Primary text reviewed; no independent legal review",
+      "checked": "2026-10-26",
+      "review_status": "Primary statutory text and Attorney General consumer guidance reviewed; no independent legal review",
       "jurisdiction": "Texas",
-      "additional_sources": []
+      "additional_sources": [
+        "https://www.texasattorneygeneral.gov/consumer-protection/financial-and-insurance-scams/debt-collection-and-relief/your-debt-collection-rights"
+      ]
     },
     {
       "id": "tx-finance-392-303",

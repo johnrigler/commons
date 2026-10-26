@@ -1,0 +1,255 @@
+{
+  "title": "Laws, duties, deadlines and remedies",
+  "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+  "date": "2026-10-26",
+  "status": "Unsigned AI-assisted reference; no independent legal review",
+  "scope": "Shared reference for unsupported rent acceleration and connected collection, reporting, recording and court-process questions; imported legal sources from other current Commons subjects",
+  "base_commons_commit": "a335b680203479dedc5e5976e120b5942ce73d80",
+  "artifacts": [
+    {
+      "path": "bafkreih6r2bkremrrfeyml52jva5kkwqziiykrebpghz4gauusytr4bqka.html",
+      "media_type": "text/html",
+      "sha256": "fe8e82a891918949862fba4d41d52ad0ca11854481798f9e1814a4b138f03050",
+      "cid": "bafkreih6r2bkremrrfeyml52jva5kkwqziiykrebpghz4gauusytr4bqka"
+    },
+    {
+      "path": "bafkreih5qmskojbpz25wenm5pvye6hj7irzqvhfcqatqtnztbcef4m72se.json",
+      "media_type": "application/json",
+      "sha256": "fd8324a7242fcebb62359d7d704f1d3f44730a9ca2802709b73308885e33fa91",
+      "cid": "bafkreih5qmskojbpz25wenm5pvye6hj7irzqvhfcqatqtnztbcef4m72se"
+    }
+  ],
+  "articles": [
+    {
+      "id": "legal-reference",
+      "title": "Laws, duties, deadlines and remedies",
+      "cid": "bafkreih6r2bkremrrfeyml52jva5kkwqziiykrebpghz4gauusytr4bqka",
+      "fragment": "legal-reference",
+      "related": [
+        "rent-acceleration",
+        "dispute-deadlines",
+        "debt-remedies",
+        "dispute-referral-loop"
+      ]
+    },
+    {
+      "id": "dispute-deadlines",
+      "title": "Which deadline belongs to which party?",
+      "cid": "bafkreih6r2bkremrrfeyml52jva5kkwqziiykrebpghz4gauusytr4bqka",
+      "fragment": "dispute-deadlines",
+      "related": [
+        "rent-acceleration",
+        "legal-reference",
+        "debt-remedies",
+        "dispute-referral-loop",
+        "credit-reporting"
+      ]
+    },
+    {
+      "id": "debt-remedies",
+      "title": "Damages follow the claim",
+      "cid": "bafkreih6r2bkremrrfeyml52jva5kkwqziiykrebpghz4gauusytr4bqka",
+      "fragment": "debt-remedies",
+      "related": [
+        "legal-reference",
+        "dispute-deadlines",
+        "rent-acceleration",
+        "administrative-burden",
+        "debt-default"
+      ]
+    }
+  ],
+  "sources_checked": "2026-10-26",
+  "sources": [
+    {
+      "id": "tx-property-91-006",
+      "url": "https://statutes.capitol.texas.gov/?code=PR&chapter=PR.91&artSec=91.006&tab=1",
+      "description": "Texas Property Code §91.006 — Mitigation after abandonment"
+    },
+    {
+      "id": "tx-property-92-deposit",
+      "url": "https://tcss.legis.texas.gov/docs/PR/htm/PR.92.htm",
+      "description": "Texas Property Code §§92.103–92.109 — Security deposits and a distinct 30-day rule"
+    },
+    {
+      "id": "tx-finance-392-001",
+      "url": "https://statutes.capitol.texas.gov/?code=FI&chapter=FI.392&artSec=392.001&tab=1",
+      "description": "Texas Finance Code §392.001(3), (5)–(7) — Creditor, collector and third-party collector"
+    },
+    {
+      "id": "tx-finance-392-202",
+      "url": "https://tcss.legis.texas.gov/resources/fi/htm/fi.392.htm",
+      "description": "Texas Finance Code §392.202(a)–(e) — Written disputes and the 30-day statement"
+    },
+    {
+      "id": "tx-finance-392-303",
+      "url": "https://statutes.capitol.texas.gov/?code=FI&chapter=FI.392&artSec=392.303&tab=1",
+      "description": "Texas Finance Code §392.303(a)(2) — Unauthorized incidental charges"
+    },
+    {
+      "id": "tx-finance-392-304",
+      "url": "https://statutes.capitol.texas.gov/?code=FI&chapter=FI.392&artSec=392.304&tab=1",
+      "description": "Texas Finance Code §392.304(a)(8), (19) — False amounts and deceptive collection"
+    },
+    {
+      "id": "us-fdcpa-1692a",
+      "url": "https://uscode.house.gov/us/usc/119-120/t15/s1692a/",
+      "description": "15 U.S.C. §1692a(4)–(6) — Federal coverage and creditor exclusions"
+    },
+    {
+      "id": "us-fdcpa-1692g",
+      "url": "https://uscode.house.gov/us/usc/119-120/t15/s1692g/",
+      "description": "15 U.S.C. §1692g; 12 CFR §1006.38 — Validation period and collection pause"
+    },
+    {
+      "id": "us-regf-1006-38",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1006/38/",
+      "description": "12 CFR §1006.38 and official interpretations — Portal submissions and duplicative disputes"
+    },
+    {
+      "id": "us-fdcpa-1692ef",
+      "url": "https://uscode.house.gov/us/usc/119-120/t15/s1692e/",
+      "description": "15 U.S.C. §§1692e(2)(A), (8), 1692f(1) — False balances, disputed status and unauthorized amounts"
+    },
+    {
+      "id": "us-fdcpa-1692c",
+      "url": "https://uscode.house.gov/us/usc/119-120/t15/s1692c/",
+      "description": "15 U.S.C. §1692c(a)(2); 12 CFR §1006.6(b)(2) — Represented consumers"
+    },
+    {
+      "id": "us-fcra-1681i",
+      "url": "https://uscode.house.gov/us/usc/119-120/t15/s1681i/",
+      "description": "15 U.S.C. §1681i(a) — Bureau reinvestigation and results"
+    },
+    {
+      "id": "us-fcra-1681e",
+      "url": "https://uscode.house.gov/us/usc/119-120/t15/s1681e/",
+      "description": "15 U.S.C. §1681e(b) — Reasonable accuracy procedures"
+    },
+    {
+      "id": "us-fcra-1681s2",
+      "url": "https://uscode.house.gov/us/usc/119-120/t15/s1681s-2/",
+      "description": "15 U.S.C. §1681s–2(a)–(d) — Furnisher duties and private-claim boundaries"
+    },
+    {
+      "id": "us-regv-1022-43",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1022/43/",
+      "description": "12 CFR §1022.43 — Direct disputes to furnishers"
+    },
+    {
+      "id": "tx-finance-392-403",
+      "url": "https://statutes.capitol.texas.gov/?code=FI&chapter=FI.392&artSec=392.403&tab=1",
+      "description": "Texas Finance Code §§392.403–392.404 — Texas collection remedies"
+    },
+    {
+      "id": "tx-dtpa-17-50",
+      "url": "https://statutes.capitol.texas.gov/?code=BC&chapter=BC.17&artSec=17.50&tab=1",
+      "description": "Texas Business & Commerce Code §§17.45, 17.50 — Deceptive-practices remedies"
+    },
+    {
+      "id": "tx-dtpa-17-505",
+      "url": "https://statutes.capitol.texas.gov/?code=BC&chapter=BC.17&artSec=17.505&tab=1",
+      "description": "Texas Business & Commerce Code §17.505 — DTPA pre-suit notice"
+    },
+    {
+      "id": "us-fdcpa-1692k",
+      "url": "https://uscode.house.gov/us/usc/119-120/t15/s1692k/",
+      "description": "15 U.S.C. §1692k — FDCPA damages, fees and filing period"
+    },
+    {
+      "id": "us-fcra-1681no",
+      "url": "https://uscode.house.gov/us/usc/119-120/t15/s1681n/",
+      "description": "15 U.S.C. §§1681n–1681o — Willful and negligent FCRA noncompliance"
+    },
+    {
+      "id": "us-fcra-1681p",
+      "url": "https://uscode.house.gov/us/usc/119-120/t15/s1681p/",
+      "description": "15 U.S.C. §1681p — FCRA filing period"
+    },
+    {
+      "id": "us-recording-2511",
+      "url": "https://uscode.house.gov/us/usc/119-120/t18/s2511/",
+      "description": "18 U.S.C. §2511(2)(d) — Federal participant recording"
+    },
+    {
+      "id": "nm-recording-30-12-1",
+      "url": "https://law.justia.com/codes/new-mexico/chapter-30/article-12/section-30-12-1/",
+      "description": "NMSA 1978 §30-12-1(C) — New Mexico telephone recording"
+    },
+    {
+      "id": "ga-recording-16-11-66",
+      "url": "https://law.justia.com/codes/georgia/title-16/chapter-11/article-3/part-1/section-16-11-66/",
+      "description": "O.C.G.A. §16-11-66(a) — Georgia participant audio recording"
+    },
+    {
+      "id": "us-frcp-26",
+      "url": "https://www.law.cornell.edu/rules/frcp/rule_26",
+      "description": "Federal Rule of Civil Procedure 26 — Discovery scope"
+    },
+    {
+      "id": "us-frcp-30",
+      "url": "https://www.law.cornell.edu/rules/frcp/rule_30",
+      "description": "Federal Rule of Civil Procedure 30 — Depositions and organizational witnesses"
+    },
+    {
+      "id": "us-frcp-43",
+      "url": "https://www.law.cornell.edu/rules/frcp/rule_43",
+      "description": "Federal Rule of Civil Procedure 43 — Remote trial testimony"
+    },
+    {
+      "id": "us-frcp-45",
+      "url": "https://www.law.cornell.edu/rules/frcp/rule_45",
+      "description": "Federal Rule of Civil Procedure 45 — Subpoenas"
+    },
+    {
+      "id": "tx-civil-rules",
+      "url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf",
+      "description": "Texas Rules of Civil Procedure 93(8), 198.2–198.3, 500.1(e), 508.3 — Admissions, defaults and justice-court distinctions"
+    },
+    {
+      "id": "tx-evidence-rules",
+      "url": "https://www.txcourts.gov/media/1463074/texas-rules-of-evidence-updated-with-amendments-effective-07022026.pdf",
+      "description": "Texas Rules of Evidence 801(e)(2), 803(6), 902(10) — Party statements and business-record foundations"
+    },
+    {
+      "id": "tx-mediation-154",
+      "url": "https://tcss.legis.texas.gov/resources/CP/htm/CP.154.htm",
+      "description": "Texas Civil Practice & Remedies Code §§154.021–154.023, 154.073 — Referral, mediation and confidentiality"
+    },
+    {
+      "id": "us-appellate-29",
+      "url": "https://www.law.cornell.edu/rules/frap/rule_29",
+      "description": "Federal Rule of Appellate Procedure 29 — Amicus briefs"
+    },
+    {
+      "id": "tx-jp-discovery",
+      "url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf",
+      "description": "Texas Rules of Civil Procedure 500.7–500.9 — Justice Court discovery, subpoenas and remote appearances"
+    },
+    {
+      "id": "tx-jp-filing",
+      "url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf",
+      "description": "Texas Rules of Civil Procedure 500.1, 500.3, 501, 502.1–502.4, 502.7 — Justice Court filing, fees, venue and amendments"
+    },
+    {
+      "id": "tx-travis-jp-fees-2026",
+      "url": "https://www.traviscountytx.gov/images/justices_of_peace/Doc/2026_JP_Civil_Fee_Schedule.pdf",
+      "description": "Travis County JP Civil Fee Schedule, effective January 1, 2026 — Filing and local service costs"
+    }
+  ],
+  "publication": {
+    "repository": "johnrigler/commons",
+    "signature": null,
+    "ipfs_pin_receipt": null,
+    "transaction_id": null
+  },
+  "supersedes_documents": [
+    "bafkreihd6qzkot3hw5unnrxtn4pctevc7sruc3woxste546zifnjlpniyu"
+  ],
+  "legal_reference": {
+    "path": "edition.json",
+    "registry_cid": "bafkreih5qmskojbpz25wenm5pvye6hj7irzqvhfcqatqtnztbcef4m72se",
+    "reference_entry": "../../entry/legal-reference.html"
+  },
+  "revision_scope": "Clarified only tx-finance-392-202 notice, recipient, statement and investigation distinctions; other entries retain their recorded source-check dates."
+}
