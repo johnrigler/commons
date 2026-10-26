@@ -97,6 +97,20 @@ The [Austin, Texas rental-lawsuit preparation guide](../entry/texas-rental-lawsu
 
 For local referrals, the [Lawyer Referral Service of Central Texas](https://austinlrs.com/contact-us/) lists **512-472-8303** and an initial consultation of up to thirty minutes free. Additional work is separately priced. Ask whether it can refer you based on your residence and the dispute's location. The [Travis County Law Library FAQ](https://lawlibrary.traviscountytx.gov/faq) identifies legal-aid and volunteer routes and explains its own service limits. Eligibility and acceptance require screening. Service information checked 25 October 2026.
 
+## The author's assessment: neglect can be cheaper than compliance
+
+The author describes the underlying experience as low-rent housing, not a high-service apartment operation. His judgment is that the operator did not perform meaningful reletting efforts or keep a record capable of demonstrating those efforts. A replacement lease may establish when another tenant moved in; that is different from documenting what the operator did during the intervening vacancy.
+
+His assessment is that the organization has developed the collection and dispute machinery more thoroughly than the process for substantiating the charge. The demand moves forward, while the tenant encounters referrals, repeated explanations, confusing procedures and pressure to buy legal help. The author calls that accumulated friction **sludge**: work and emotional strain imposed on the person trying to obtain an answer.
+
+The economic argument is direct: if most tenants cannot sustain the challenge, it can be cheaper for an operator to disregard the mitigation obligation and deal with the few challenges that survive. On that account, the cost of occasional disputes becomes an operating expense, while unchallenged balances continue through collection and credit reporting. This paragraph records the author's assessment and inference about incentives; it is not a court finding or an internal company admission.
+
+Commons should help a reader act on that assessment: identify the disputed calculation, preserve the requests and responses, and seek records of actual unit availability, marketing, prospect handling, reletting and credits. Do not replace the substantive question with another round of general reassurances or instructions to pay for someone to ask it again.
+
+If records are produced, compare them with the charge and the relevant dates. If the organization says records were never created, cannot be located or were destroyed, preserve that exact answer and the identified custodian, search and retention explanation. If it declines to answer, record the refusal separately. These are distinct outcomes that can be taken to counsel and, in a pending case, addressed through the applicable court process.
+
+The point is to make the challenge practicable for the next tenant: fewer repeated explanations, clearer requests, a usable chronology and a defined professional task when legal judgment is needed. Real parties, unit identifiers and supporting evidence remain in the private case; the public argument and workflow are reusable.
+
 ## What Commons contributes
 
 The goal is that the next person starts with a map: who holds the information, what can be requested directly, how to preserve an inadequate response, and what professional help would add. Preparation can reduce repeated reconstruction; no measured cost saving is claimed.
