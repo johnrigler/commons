@@ -78,6 +78,10 @@ See [correspondence policy](docs/CORRESPONDENCE.md) and the
 
 [What you can do before hiring a lawyer](entry/dispute-without-lawyer.html) walks a reader through identifying the issue, preparing evidence, making disputes, documenting unanswered questions and purchasing a defined legal review. It includes a consultation agenda and preserves the distinction between institutional burden and an established legal violation.
 
+## Draft request to the court
+
+[Draft court-facing request](reading/correspondence/court-request-draft.md) begins the account of the disputed rental balance and the handling after written notice. It leaves party, event, claim, damages, jurisdiction and service fields blank for completion.
+
 ## Written disputes before court
 
 [Written disputes, response clocks and unanswered accounting questions](reading/correspondence/pre-suit-dispute-working-document.html)
