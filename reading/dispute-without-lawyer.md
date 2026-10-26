@@ -111,6 +111,16 @@ If records are produced, compare them with the charge and the relevant dates. If
 
 The point is to make the challenge practicable for the next tenant: fewer repeated explanations, clearer requests, a usable chronology and a defined professional task when legal judgment is needed. Real parties, unit identifiers and supporting evidence remain in the private case; the public argument and workflow are reusable.
 
+## NCS acknowledges that larger balances are harder to collect
+
+National Credit Systems publishes this statement in its client-facing material:
+
+> “In general, the lower the account balance, the higher the likelihood that an account will be collected.”
+
+Source: [NCS client services, “Interesting Facts”](https://www.nationalcreditsystems.com/ClientLogin.aspx), which redirects to the [NCS 360 client page](https://www.myncs360.com/ClientLogin.aspx). Checked 25 October 2026. This is the collector's own published description of collection economics: larger balances are generally harder to collect.
+
+This supports the author's economic argument about large accelerated-rent demands. The amount entered on a ledger and the likelihood of actually recovering it are different things. NCS itself points out that balance size affects recovery. The statement supplies no particular $10,000 threshold, recovery percentage or instruction to abandon a claim; none is attributed to it here.
+
 ## What Commons contributes
 
 The goal is that the next person starts with a map: who holds the information, what can be requested directly, how to preserve an inadequate response, and what professional help would add. Preparation can reduce repeated reconstruction; no measured cost saving is claimed.
