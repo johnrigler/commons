@@ -1,29 +1,29 @@
 {
   "title": "Laws, duties, deadlines and remedies",
   "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
-  "date": "2026-10-24",
+  "date": "2026-10-25",
   "status": "Unsigned AI-assisted reference; no independent legal review",
   "scope": "Shared reference for unsupported rent acceleration and connected collection, reporting, recording and court-process questions; imported legal sources from other current Commons subjects",
   "base_commons_commit": "a335b680203479dedc5e5976e120b5942ce73d80",
   "artifacts": [
     {
-      "path": "bafkreic5bn5cdbrxs5jamjisfzznin43voavyph2wtmj673edhph3axk5y.html",
+      "path": "bafkreihd6qzkot3hw5unnrxtn4pctevc7sruc3woxste546zifnjlpniyu.html",
       "media_type": "text/html",
-      "sha256": "5d0b7a21863797520625122e72d4379bab815c3cfab4d89f7f6419de7d82eaee",
-      "cid": "bafkreic5bn5cdbrxs5jamjisfzznin43voavyph2wtmj673edhph3axk5y"
+      "sha256": "e3f432a74f67b768d6c6f36f1e2992a2fca3416ecebca64ef3d9415a95bda8c5",
+      "cid": "bafkreihd6qzkot3hw5unnrxtn4pctevc7sruc3woxste546zifnjlpniyu"
     },
     {
-      "path": "bafkreict2inrddysb656bx2dmkdkfz5j2an7kpk4fjpx5puz34kjt5ojcu.json",
+      "path": "bafkreiezqfi23ibktmn76btvusxgkimk7kfvmmviytmfzjertn3h5ugghe.json",
       "media_type": "application/json",
-      "sha256": "53d21b118f120fbbe0df436286a2e7a9d01bf53d5c2a5f7ebe99df1499f5c915",
-      "cid": "bafkreict2inrddysb656bx2dmkdkfz5j2an7kpk4fjpx5puz34kjt5ojcu"
+      "sha256": "998151ada02a9b1bff0675a4ae65218afa8b5632a8c4d85ca4919b767ed0c639",
+      "cid": "bafkreiezqfi23ibktmn76btvusxgkimk7kfvmmviytmfzjertn3h5ugghe"
     }
   ],
   "articles": [
     {
       "id": "legal-reference",
       "title": "Laws, duties, deadlines and remedies",
-      "cid": "bafkreic5bn5cdbrxs5jamjisfzznin43voavyph2wtmj673edhph3axk5y",
+      "cid": "bafkreihd6qzkot3hw5unnrxtn4pctevc7sruc3woxste546zifnjlpniyu",
       "fragment": "legal-reference",
       "related": [
         "rent-acceleration",
@@ -35,7 +35,7 @@
     {
       "id": "dispute-deadlines",
       "title": "Which deadline belongs to which party?",
-      "cid": "bafkreic5bn5cdbrxs5jamjisfzznin43voavyph2wtmj673edhph3axk5y",
+      "cid": "bafkreihd6qzkot3hw5unnrxtn4pctevc7sruc3woxste546zifnjlpniyu",
       "fragment": "dispute-deadlines",
       "related": [
         "rent-acceleration",
@@ -48,7 +48,7 @@
     {
       "id": "debt-remedies",
       "title": "Damages follow the claim",
-      "cid": "bafkreic5bn5cdbrxs5jamjisfzznin43voavyph2wtmj673edhph3axk5y",
+      "cid": "bafkreihd6qzkot3hw5unnrxtn4pctevc7sruc3woxste546zifnjlpniyu",
       "fragment": "debt-remedies",
       "related": [
         "legal-reference",
@@ -59,7 +59,7 @@
       ]
     }
   ],
-  "sources_checked": "2026-10-24",
+  "sources_checked": "2026-10-25",
   "sources": [
     {
       "id": "tx-property-91-006",
@@ -220,6 +220,21 @@
       "id": "us-appellate-29",
       "url": "https://www.law.cornell.edu/rules/frap/rule_29",
       "description": "Federal Rule of Appellate Procedure 29 — Amicus briefs"
+    },
+    {
+      "id": "tx-jp-discovery",
+      "url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf",
+      "description": "Texas Rules of Civil Procedure 500.7–500.9 — Justice Court discovery, subpoenas and remote appearances"
+    },
+    {
+      "id": "tx-jp-filing",
+      "url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf",
+      "description": "Texas Rules of Civil Procedure 500.1, 500.3, 501, 502.1–502.4, 502.7 — Justice Court filing, fees, venue and amendments"
+    },
+    {
+      "id": "tx-travis-jp-fees-2026",
+      "url": "https://www.traviscountytx.gov/images/justices_of_peace/Doc/2026_JP_Civil_Fee_Schedule.pdf",
+      "description": "Travis County JP Civil Fee Schedule, effective January 1, 2026 — Filing and local service costs"
     }
   ],
   "publication": {
@@ -233,7 +248,7 @@
   ],
   "legal_reference": {
     "path": "edition.json",
-    "registry_cid": "bafkreict2inrddysb656bx2dmkdkfz5j2an7kpk4fjpx5puz34kjt5ojcu",
+    "registry_cid": "bafkreiezqfi23ibktmn76btvusxgkimk7kfvmmviytmfzjertn3h5ugghe",
     "reference_entry": "../../entry/legal-reference.html"
   }
 }

@@ -1,7 +1,7 @@
 {
   "schema": "commons/legal-references/1",
   "title": "Laws, duties, deadlines and remedies",
-  "date": "2026-10-24",
+  "date": "2026-10-25",
   "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
   "status": "Unsigned AI-assisted reference; no independent legal review",
   "scope": "Shared reference for unsupported rent acceleration and connected collection, reporting, recording and court-process questions; imported legal sources from other current Commons subjects",
@@ -601,6 +601,66 @@
       "review_status": "Primary text reviewed; no independent legal review",
       "jurisdiction": "United States (federal)",
       "additional_sources": []
+    },
+    {
+      "group": "Texas court preparation",
+      "jurisdiction": "Texas",
+      "checked": "2026-10-25",
+      "review_status": "Primary procedural text reviewed; no independent legal review",
+      "related": [
+        "texas-rental-lawsuit",
+        "rent-acceleration"
+      ],
+      "id": "tx-jp-discovery",
+      "citation": "Texas Rules of Civil Procedure 500.7–500.9",
+      "title": "Justice Court discovery, subpoenas and remote appearances",
+      "applies_to": "A party seeking evidence or a remote appearance in a pending Justice Court case.",
+      "trigger": "A pending case and a request for reasonable and necessary evidence.",
+      "deadline": "Court-controlled deadlines; no automatic entitlement to all requested records.",
+      "required_action": "Present pretrial discovery to the judge under current Rule 500.8; use proper subpoena procedure and request remote appearance as needed.",
+      "consequence": "The court determines permissible discovery; disobedience of a discovery order can lead to sanctions.",
+      "limits": "Current Rule 500.9 concerns appearances. Older editions numbered discovery 500.9. Subpoenas have territorial and attendance limits; do not assume a Texas subpoena binds a Georgia witness.",
+      "source_url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf"
+    },
+    {
+      "group": "Texas court preparation",
+      "jurisdiction": "Texas",
+      "checked": "2026-10-25",
+      "review_status": "Primary procedural text reviewed; no independent legal review",
+      "related": [
+        "texas-rental-lawsuit",
+        "rent-acceleration"
+      ],
+      "id": "tx-jp-filing",
+      "citation": "Texas Rules of Civil Procedure 500.1, 500.3, 501, 502.1–502.4, 502.7",
+      "title": "Justice Court filing, fees, venue and amendments",
+      "applies_to": "Prospective or existing Justice Court litigants.",
+      "trigger": "Filing a qualifying claim, requesting relief from costs, or amending a pending case.",
+      "deadline": "Check each substantive limitations period separately. Amendments generally at least seven days before trial.",
+      "required_action": "Identify parties, factual basis, damages, relief, venue and service information; sign and file the petition. Submit an accurate inability statement if unable to afford costs; arrange formal service.",
+      "consequence": "A properly supported inability statement permits proceeding without paying court costs subject to the rule and any challenge.",
+      "limits": "Money limit $20,000 excluding statutory interest and court costs but including attorney fees. Jurisdiction over nonmonetary relief requires separate review. Each individual represents themselves or has counsel; agency, personal liability and substantive claims are not established by naming someone.",
+      "source_url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf"
+    },
+    {
+      "group": "Texas court preparation",
+      "jurisdiction": "Texas",
+      "checked": "2026-10-25",
+      "review_status": "Primary procedural text reviewed; no independent legal review",
+      "related": [
+        "texas-rental-lawsuit",
+        "rent-acceleration"
+      ],
+      "id": "tx-travis-jp-fees-2026",
+      "citation": "Travis County JP Civil Fee Schedule, effective January 1, 2026",
+      "title": "Filing and local service costs",
+      "applies_to": "Travis County Justice Court civil filers.",
+      "trigger": "Filing and arranging citation service.",
+      "deadline": "2026 fee schedule; verify at filing.",
+      "required_action": "Budget $54 filing and $90 service for one local party unless proceeding under an applicable inability statement.",
+      "consequence": "Listed local total for one served defendant is $144.",
+      "limits": "Different counties, states and private process servers can charge differently. An inability statement does not promise payment of all private expenses.",
+      "source_url": "https://www.traviscountytx.gov/images/justices_of_peace/Doc/2026_JP_Civil_Fee_Schedule.pdf"
     }
   ],
   "case_law": [
@@ -627,6 +687,20 @@
       "citation": "Kearney v. Salomon Smith Barney, 39 Cal.4th 95 (2006)",
       "url": "https://law.justia.com/cases/california/supreme-court/2006/s124739.html",
       "scope": "Illustrates interstate recording choice-of-law analysis; not a ruling that California governs a New Mexico–Georgia call."
+    },
+    {
+      "id": "tx-austin-hill-mitigation-proof",
+      "citation": "Austin Hill Country Realty v. Palisades Plaza, 948 S.W.2d 293, 299–300 (Tex. 1997)",
+      "url": "https://caselaw.findlaw.com/court/tx-supreme-court/1013257.html",
+      "scope": "Reasonable efforts, actual and avoidable loss, tenant burden of proving mitigation/failure and amount; failure to mitigate does not itself create a tenant cause of action. Commercial facts; read historical waiver language with later Property Code §91.006.",
+      "checked": "2026-10-25"
+    },
+    {
+      "id": "tx-new-party-relation-back",
+      "citation": "Texas Supreme Court, No. 24-0286; University of Texas Health Science Center v. Bailey, 332 S.W.3d 395, 400 (Tex. 2011)",
+      "url": "https://www.txcourts.gov/media/1462798/240286.pdf",
+      "scope": "An amendment adding a new party ordinarily does not relate back; misnomer/misidentification exceptions require individual analysis. Starting against one defendant does not generally preserve a later-added defendant deadline.",
+      "checked": "2026-10-25"
     }
   ],
   "existing_legal_sources": [

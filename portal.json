@@ -9,6 +9,29 @@
   },
   "items": [
     {
+      "id": "texas-rental-lawsuit",
+      "title": "Challenging an accelerated-rent balance in Austin, Texas",
+      "summary": "Policy or individual action? A filing walkthrough, cost-relief route, partial petition and focused discovery motion, with unresolved claims kept explicit.",
+      "kind": "description",
+      "genre": "guide",
+      "cid": "bafkreib6fea2unro7rkdojqnsgggia6moxspdjtfosyhoc57b3h2gc4d2a",
+      "path": "reading/texas-rental-lawsuit/bafkreib6fea2unro7rkdojqnsgggia6moxspdjtfosyhoc57b3h2gc4d2a.html",
+      "fragment": "texas-rental-lawsuit",
+      "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+      "status": "Unsigned preparation draft; incomplete petition; no court filing",
+      "indexed": true,
+      "topics": [
+        "Housing & credit",
+        "Commons practice"
+      ],
+      "related": [
+        "rent-acceleration",
+        "legal-reference",
+        "debt-remedies",
+        "authority-clarification"
+      ]
+    },
+    {
       "id": "artifact-intake",
       "title": "Two documents. Exact bytes.",
       "summary": "Choose an original signed PDF and related correspondence locally; inspect metadata, retain full SHA-256 hashes and review a CertLedger draft in Chisel.",
@@ -65,8 +88,8 @@
         "dispute-referral-loop"
       ],
       "kind": "explanation",
-      "cid": "bafkreic5bn5cdbrxs5jamjisfzznin43voavyph2wtmj673edhph3axk5y",
-      "path": "reading/law/bafkreic5bn5cdbrxs5jamjisfzznin43voavyph2wtmj673edhph3axk5y.html",
+      "cid": "bafkreihd6qzkot3hw5unnrxtn4pctevc7sruc3woxste546zifnjlpniyu",
+      "path": "reading/law/bafkreihd6qzkot3hw5unnrxtn4pctevc7sruc3woxste546zifnjlpniyu.html",
       "fragment": "legal-reference",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
       "status": "Unsigned AI-assisted reference; no independent legal review",
@@ -90,8 +113,8 @@
         "credit-reporting"
       ],
       "kind": "explanation",
-      "cid": "bafkreic5bn5cdbrxs5jamjisfzznin43voavyph2wtmj673edhph3axk5y",
-      "path": "reading/law/bafkreic5bn5cdbrxs5jamjisfzznin43voavyph2wtmj673edhph3axk5y.html",
+      "cid": "bafkreihd6qzkot3hw5unnrxtn4pctevc7sruc3woxste546zifnjlpniyu",
+      "path": "reading/law/bafkreihd6qzkot3hw5unnrxtn4pctevc7sruc3woxste546zifnjlpniyu.html",
       "fragment": "dispute-deadlines",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
       "status": "Unsigned AI-assisted reference; no independent legal review",
@@ -115,8 +138,8 @@
         "debt-default"
       ],
       "kind": "explanation",
-      "cid": "bafkreic5bn5cdbrxs5jamjisfzznin43voavyph2wtmj673edhph3axk5y",
-      "path": "reading/law/bafkreic5bn5cdbrxs5jamjisfzznin43voavyph2wtmj673edhph3axk5y.html",
+      "cid": "bafkreihd6qzkot3hw5unnrxtn4pctevc7sruc3woxste546zifnjlpniyu",
+      "path": "reading/law/bafkreihd6qzkot3hw5unnrxtn4pctevc7sruc3woxste546zifnjlpniyu.html",
       "fragment": "debt-remedies",
       "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
       "status": "Unsigned AI-assisted reference; no independent legal review",
