@@ -50,9 +50,22 @@
         return a;
     }
 
+    function appendAuthor(container, author) {
+        const addressURL = CommonsURLs.chiselLitecoinURL(author);
+        if (addressURL) {
+            const anchor = link(author, addressURL, 'identity-address');
+            anchor.title = 'Open Litecoin address in Chisel';
+            container.append(anchor);
+        } else {
+            container.append(document.createTextNode(author || ''));
+        }
+    }
+
     function meta(item) {
         const p = document.createElement('p'); p.className = 'item-meta';
-        p.textContent = (isCompany(item) ? 'Company profile · ' + item.role : entryLabel(item) + ' · ' + item.author) + (item.local ? ' · ' + item.status : '');
+        p.append(document.createTextNode(isCompany(item) ? 'Company profile · ' + item.role : entryLabel(item) + ' · '));
+        if (!isCompany(item)) appendAuthor(p, item.author);
+        if (item.local) p.append(document.createTextNode(' · ' + item.status));
         return p;
     }
 
@@ -175,7 +188,9 @@
             return;
         }
         $('#detail-title').textContent = item.title;
-        $('#detail-meta').textContent = (isCompany(item) ? 'Company profile · ' + item.role : entryLabel(item)) + ' · ' + item.status + ' · ' + item.author;
+        const detailMeta = $('#detail-meta');
+        detailMeta.replaceChildren(document.createTextNode((isCompany(item) ? 'Company profile · ' + item.role : entryLabel(item)) + ' · ' + item.status + ' · '));
+        appendAuthor(detailMeta, item.author);
         $('#reader-print').textContent = isCompany(item) ? 'Print profile' : 'Print article';
         $('#detail-text').textContent = item.text || item.summary;
         $('#detail-cid').textContent = item.cid + (item.fragment ? '#' + item.fragment : '');
