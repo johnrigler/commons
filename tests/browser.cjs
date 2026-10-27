@@ -36,6 +36,15 @@ const root = path.resolve(__dirname,'..');
     await page.goto(origin);
     await page.locator('#portal-cards .portal-card').first().waitFor();
     assert.equal(await page.locator('#portal-cards .portal-card').count(),publishedCount);
+    const author='LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb';
+    const attribution=page.locator('#portal-cards .portal-card').first().locator('.item-meta .identity-address');
+    assert.equal(await attribution.textContent(),author);
+    const chisel=new URL(await attribution.getAttribute('href'));
+    assert.equal(chisel.searchParams.get('mode'),'portal');
+    assert.equal(chisel.searchParams.get('coin'),'litecoin');
+    assert.equal(chisel.searchParams.get('address'),author);
+    assert.equal(await attribution.evaluate(node=>getComputedStyle(node).textTransform),'none');
+
     assert.equal(await page.locator('#pinata-form').count(),0);
     await page.getByRole('button',{name:'Companies',exact:true}).click();
     await page.getByRole('heading',{name:'Company profiles',exact:true}).waitFor();
@@ -61,6 +70,10 @@ const root = path.resolve(__dirname,'..');
     await page.locator('#reader-content .author-commentary').getByRole('link',{name:'portal argument',exact:true}).click();
     await page.locator('#reader-content').getByRole('heading',{name:'A status is not a copy of the submission',exact:true}).waitFor();
     assert.match(await page.locator('#detail-meta').textContent(),/Opinion.*LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb/);
+    const detailAuthor=page.locator('#detail-meta .identity-address');
+    assert.equal(await detailAuthor.textContent(),author);
+    assert.equal(new URL(await detailAuthor.getAttribute('href')).searchParams.get('address'),author);
+
     await page.locator('#reader-content').getByRole('link',{name:'amicus research agenda',exact:true}).click();
     await page.locator('#reader-content').getByRole('heading',{name:'The argument I would want a brief to carry',exact:true}).waitFor();
     await page.locator('#company-items').getByRole('link',{name:'National Credit Systems',exact:true}).click();
