@@ -30,5 +30,20 @@ globalThis.CommonsURLs = (() => {
     }
 
     const documentURL = (path, href) => new URL(path, base(href)).href;
-    return { base, entryId, entryURL, documentURL };
+
+    // Base58 is case-sensitive; preserve every character in the author identity.
+    // This is link recognition, not proof of address ownership or a signature.
+    function chiselLitecoinURL(address) {
+        if (typeof address !== 'string') return null;
+        const base58 = /^[LM3][1-9A-HJ-NP-Za-km-z]{25,39}$/;
+        const bech32 = /^(?:ltc1[ac-hj-np-z02-9]{6,87}|LTC1[AC-HJ-NP-Z02-9]{6,87})$/;
+        if (!base58.test(address) && !bech32.test(address)) return null;
+        const url = new URL('https://johnrigler.github.io/chisel/');
+        url.searchParams.set('mode', 'portal');
+        url.searchParams.set('coin', 'litecoin');
+        url.searchParams.set('address', address);
+        return url.href;
+    }
+
+    return { base, entryId, entryURL, documentURL, chiselLitecoinURL };
 })();
