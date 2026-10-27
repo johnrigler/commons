@@ -116,7 +116,7 @@ test('Litecoin author links preserve case and use Chisel portal address loading'
     assert.equal(CommonsURLs.chiselLitecoinURL(address.toUpperCase()),null);
     assert.equal(CommonsURLs.chiselLitecoinURL('John Rigler'),null);
     assert.equal(CommonsURLs.chiselLitecoinURL(''),null);
-    assert.equal(CommonsURLs.chiselLitecoinURL('ltc1qg82w3x'),result===null?null:CommonsURLs.chiselLitecoinURL('ltc1qg82w3x'));
+    assert.equal(CommonsURLs.chiselLitecoinURL(address.slice(0,-1)+'0'),null);
 });
 
 test('responses name exact parent editions and preserve bytes through local save and load', async () => {
