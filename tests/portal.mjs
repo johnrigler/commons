@@ -104,6 +104,21 @@ test('full entry URLs survive refresh on Pages, IPFS, and a local directory', ()
     }
 });
 
+test('Litecoin author links preserve case and use Chisel portal address loading', () => {
+    const address='LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb';
+    const result=CommonsURLs.chiselLitecoinURL(address);
+    const url=new URL(result);
+    assert.equal(url.origin,'https://johnrigler.github.io');
+    assert.equal(url.pathname,'/chisel/');
+    assert.equal(url.searchParams.get('mode'),'portal');
+    assert.equal(url.searchParams.get('coin'),'litecoin');
+    assert.equal(url.searchParams.get('address'),address);
+    assert.equal(CommonsURLs.chiselLitecoinURL(address.toUpperCase()),null);
+    assert.equal(CommonsURLs.chiselLitecoinURL('John Rigler'),null);
+    assert.equal(CommonsURLs.chiselLitecoinURL(''),null);
+    assert.equal(CommonsURLs.chiselLitecoinURL('ltc1qg82w3x'),result===null?null:CommonsURLs.chiselLitecoinURL('ltc1qg82w3x'));
+});
+
 test('responses name exact parent editions and preserve bytes through local save and load', async () => {
     const entry = await P.create(parent, fields);
     assert.deepEqual(entry.record.parent, {cid:parent.cid,fragment:'request'});
