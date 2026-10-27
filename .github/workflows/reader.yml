@@ -25,6 +25,10 @@ jobs:
         run: |
           npm install --prefix "$RUNNER_TEMP/commons-browser" playwright
           node "$RUNNER_TEMP/commons-browser/node_modules/playwright/cli.js" install --with-deps chromium
+      - name: Build current portal source for browser tests
+        run: |
+          source "$GITHUB_WORKSPACE/sb/publish.bash"
+          sb.publish
       - name: Check portal in a browser
         run: |
           COMMONS_PLAYWRIGHT="$RUNNER_TEMP/commons-browser/node_modules/playwright" \
