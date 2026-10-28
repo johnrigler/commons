@@ -1,8 +1,34 @@
 # Telephone calls as Commons artifacts
 
-*Design note · 25 October 2026 · proposed functionality, not yet implemented.*
+*Design note · updated 28 October 2026 · proposed functionality, not yet implemented.*
+
+Audio is part of the source-label workflow. A phone voice note preserves the
+contributor's account; a recorded interaction preserves the captured exchange;
+a performance illustrates a mechanism. Record the source type explicitly.
+Each can contribute to an individual chronology and, after review, to a shared
+account. See [the public audio workflow](../entry/audio-records.html) and
+[the shared-accountability argument](../entry/shared-accountability.html).
 
 A call record begins when the author decides to contact a debt collector. Capture the operator/IVR, receptionist, transfers, collection representative, and any later callback as separate segments. A multi-call compilation can tell the complete procedural history, including whom the caller was attempting to reach and what was requested.
+
+The same model can describe other institutional interactions. Collection calls
+are one example; the source type and context control what the artifact supports.
+
+## Minimum intake and source connections
+
+Record a descriptive source label, source type, provider, original filename,
+format, duration, SHA-256, and archive intake date. Preserve the original file's
+metadata separately. A capture date/time is a claimed observation with its time
+zone and basis, not an automatic consequence of a file timestamp. The archive
+intake time and any later ledger anchor are distinct events. Leave unknown
+values unknown.
+
+A transcript adds time references, provisional speaker labels, transcription
+method, reviewer status, and uncertain passages. Give corrections their own
+version. Connect each quoted passage to its source identifier and time range,
+the chronology event it supports, and any related correspondence. Include
+questions left unanswered, later replies, corrections, and contrary evidence.
+Several copies of the same recording remain one source.
 
 ## Identity and derivation
 

@@ -1,0 +1,42 @@
+{
+  "title": "Shared records and collective accountability",
+  "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+  "date": "2026-10-28",
+  "status": "Unsigned AI-assisted editorial edition and proposed audio workflow",
+  "scope": "Public project direction and reusable source workflow; no private case material or new substantive legal rules",
+  "artifacts": [
+    {
+      "path": "bafkreibgcxh5urqfv7pmwbuuz7ctik37lfnam6xzdds36bh5zscd56mxcq.html",
+      "media_type": "text/html",
+      "cid": "bafkreibgcxh5urqfv7pmwbuuz7ctik37lfnam6xzdds36bh5zscd56mxcq",
+      "sha256": "2615cfda4605afdecb0694cfc5342b7f595a067af918e5bf04fdcc843ef99714",
+      "bytes": 16241
+    }
+  ],
+  "articles": [
+    {
+      "id": "shared-accountability",
+      "title": "Shared records, collective accountability",
+      "cid": "bafkreibgcxh5urqfv7pmwbuuz7ctik37lfnam6xzdds36bh5zscd56mxcq",
+      "fragment": "shared-accountability"
+    },
+    {
+      "id": "audio-records",
+      "title": "A conversation can become a source record",
+      "cid": "bafkreibgcxh5urqfv7pmwbuuz7ctik37lfnam6xzdds36bh5zscd56mxcq",
+      "fragment": "audio-records"
+    }
+  ],
+  "sources_checked": "2026-10-28",
+  "references": [
+    "https://www.gao.gov/products/gao-26-108448",
+    "https://files.consumerfinance.gov/f/documents/cfpb_transfer-of-_funds-FY2027_2026-10_Q1_5II7RHc.pdf",
+    "https://www.consumerfinance.gov/complaint/",
+    "https://nvlpubs.nist.gov/nistpubs/ir/2022/NIST.IR.8387.pdf"
+  ],
+  "publication": {
+    "author_signature": null,
+    "ipfs_pin_receipt": null,
+    "transaction_id": null
+  }
+}

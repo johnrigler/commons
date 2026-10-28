@@ -16,6 +16,14 @@ Useful labels identify an observation, for example:
 - Office-use panel — visible digital-signature appearance.
 - Mailing receipt — acceptance date shown.
 - Ledger — accelerated-rent posting.
+- Voice note — the contributor's account recorded after an event.
+- Recorded call — the captured request, transfer, or response, with a time range.
+
+For audio, retain the original and identify the recording type. A transcript or
+redacted excerpt is a separate derivative with its own version and source link.
+The claimed event date, archive intake date, and blockchain anchor date are
+separate observations. See the [audio workflow](../entry/audio-records.html)
+and [artifact design](CALL-RECORDING-ARTIFACTS.md).
 
 A label describes the source. It does not make an unexplained conclusion such
 as “fraudulent signature” or “valid debt.” The PDF's visible signature artwork,

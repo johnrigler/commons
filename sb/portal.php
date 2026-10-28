@@ -29,7 +29,7 @@ try {
 ?>
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Browse connected Commons articles and separate company profiles, with sources and reusable references.">
+<meta name="description" content="Turn individual experiences into shared, checkable records. Explore Commons arguments, source-preservation workflows, and connected reading across subjects.">
 <title>Commons — Portal</title><style><?php readfile($root . '/portal.css'); ?></style></head><body>
 <?php foreach (glob($root . '/portal/1_*.html') as $part) include $part; ?>
 <script id="portal-data" type="application/json"><?= $json ?></script>

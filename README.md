@@ -1,14 +1,30 @@
 # Commons
 
-Shared statements, individual cases, verifiable editions.
+**Individual stories. Shared accountability.**
 
-**[Open the Commons website](https://johnrigler.github.io/commons/)** to browse
-articles across disability and public benefits, traffic enforcement, housing
-and credit, technology, and other
-subjects. Filter the feed, open a title to read the full article in a popup,
-follow its connections or add a contribution below it. The first view includes
-this published collection and your locally saved, indexed drafts. The
-[local portal](index.html) also works as a standalone edition.
+Commons helps people turn documents, recordings, and lived experience into
+records others can examine, connect, and use. It brings reusable explanations
+together with source references so the next person can build on work already
+done. The central concern is the effort required to obtain a meaningful answer:
+time, cost, repeated handoffs, and questions that remain unresolved.
+
+**[Open the Commons website](https://johnrigler.github.io/commons/)** for the
+welcome, three starting paths, and searchable collection. The reading order is
+purpose → a place to start → articles and company profiles → sources and
+contributions. Subjects include housing and credit, disability and public
+benefits, traffic enforcement, technology, and further areas people bring.
+
+| Start here | What it supplies |
+| --- | --- |
+| [Shared records, collective accountability](entry/shared-accountability.html) | The purpose: independent documentation, shared scrutiny, AI and blockchain, and the need for useful routes outside a single regulator |
+| [Deterrence through administrative burden](entry/administrative-burden.html) | The recurring mechanism and the evidence needed to examine it |
+| [Build your own record](entry/dispute-without-lawyer.html) | A preparation route that can also support a professional review |
+| [Audio as a source record](entry/audio-records.html) | A proposed workflow for original audio, checked transcripts, public derivatives, and source references |
+
+Open a collection title to read it in the page, follow its sources and
+connections, or add a contribution. The collection includes the bundled
+published documents and locally saved, indexed drafts. The [local
+portal](index.html) also works as a standalone edition.
 
 **[About](about.html)** contains the goals, structure and longer project
 explanations. **[Publish / verify](publish.html)** retains the byte verifier,
@@ -70,7 +86,40 @@ appropriate places to state the broader intent openly.
 See [correspondence policy](docs/CORRESPONDENCE.md) and the
 [blank signed-document inquiry](entry/authority-clarification.html).
 
+## Independent records and collective accountability
+
+Reducing public oversight leaves the need for an answer unresolved. The
+author's argument is that independent documentation and coordination become
+more necessary when official channels are weakened or difficult to use.
+Commons should support useful action outside dependence on one regulator,
+while remaining useful for a complaint, professional review, or court record.
+The [28 October purpose article](entry/shared-accountability.html) preserves
+that argument, dated sources on the CFPB, and its limits.
+
+AI can help transcribe, organize a chronology, connect claims to sources, and
+compare independently documented experiences. Human review keeps facts,
+recollections, interpretations, and uncertainties distinguishable. Blockchain
+references identify selected versions for independent checking; they do not
+establish a claim's truth. Private originals remain in the case archive.
+
+Repeated, independently documented conduct can support shared scrutiny and
+public pressure. Keep each case's identity, scope, response, corrections, and
+unanswered questions clear. Copies of one account are not independent cases.
+Hiring a professional later preserves the record of earlier attempts; nobody
+needs to create additional failed attempts merely to demonstrate burden.
+
+These are project goals and editorial principles. The public reader does not
+provide an automated cross-case analysis or audio editing service. Current
+capabilities and the proposed audio workflow are identified separately.
+
 ## Recollections and recorded conversations
+
+[A conversation can become a source record](entry/audio-records.html) extends
+the existing artifact model to phone recordings and contemporaneous voice
+notes. Label a recollection, recorded interaction, and performance accurately;
+preserve the source, check the transcript, and link excerpts to the chronology.
+Capture, intake, and anchoring times are separate observations. The audio
+intake/editor remains proposed functionality.
 
 [Calling the collector: a recollection and a performance](reading/recollections/2026-10-25-collector-call.html) preserves the author’s 25 October 2026 first-person commentary, a deliberate role-play demonstrating how collection scripts and emotional pressure can escalate, and the proposal to record the complete call process. The selected author identity is the Litecoin address `LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb`; **the written edition is not yet signed or published on IPFS**. The [exact written source](reading/recollections/2026-10-25-collector-call.md) and [call-recording artifact model](docs/CALL-RECORDING-ARTIFACTS.md) are separate. This standalone reading page is available independently of the bundled portal feed, which requires a formal rebuild before including a new catalog item.
 

@@ -9,6 +9,56 @@
   },
   "items": [
     {
+      "id": "shared-accountability",
+      "title": "Shared records, collective accountability",
+      "summary": "Why Commons connects independent experiences: make administrative burden visible, organize sources with AI, and preserve selected versions for shared scrutiny.",
+      "kind": "explanation",
+      "genre": "opinion",
+      "related": [
+        "audio-records",
+        "administrative-burden",
+        "patterns",
+        "dispute-referral-loop",
+        "value"
+      ],
+      "topics": [
+        "Commons practice",
+        "Systems & institutions",
+        "Technology & public memory"
+      ],
+      "status": "Unsigned author's argument; AI-assisted editing; dated public sources",
+      "cid": "bafkreibgcxh5urqfv7pmwbuuz7ctik37lfnam6xzdds36bh5zscd56mxcq",
+      "path": "reading/shared-records/bafkreibgcxh5urqfv7pmwbuuz7ctik37lfnam6xzdds36bh5zscd56mxcq.html",
+      "fragment": "shared-accountability",
+      "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+      "indexed": true,
+      "date": "2026-10-28"
+    },
+    {
+      "id": "audio-records",
+      "title": "A conversation can become a source record",
+      "summary": "A proposed phone-recording workflow: preserve original audio, check timestamped transcripts, connect excerpts to claims, and review public derivatives.",
+      "kind": "description",
+      "genre": "guide",
+      "related": [
+        "shared-accountability",
+        "artifact-intake",
+        "prepare",
+        "patterns"
+      ],
+      "topics": [
+        "Commons practice",
+        "Technology & public memory"
+      ],
+      "status": "Unsigned AI-assisted workflow proposal; audio intake/editor not implemented",
+      "cid": "bafkreibgcxh5urqfv7pmwbuuz7ctik37lfnam6xzdds36bh5zscd56mxcq",
+      "path": "reading/shared-records/bafkreibgcxh5urqfv7pmwbuuz7ctik37lfnam6xzdds36bh5zscd56mxcq.html",
+      "fragment": "audio-records",
+      "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+      "indexed": true,
+      "date": "2026-10-28"
+    },
+    {
       "id": "pre-suit-dispute",
       "title": "Written disputes, response clocks and unanswered accounting questions",
       "summary": "A blank working document and two letters separating written notice, collector response duties, investigation and property-side accounting.",
@@ -52,7 +102,8 @@
         "texas-rental-lawsuit",
         "administrative-burden",
         "dispute-deadlines",
-        "request"
+        "request",
+        "shared-accountability"
       ]
     },
     {
@@ -97,7 +148,8 @@
       "related": [
         "authority-clarification",
         "records-proof",
-        "rent-acceleration"
+        "rent-acceleration",
+        "audio-records"
       ]
     },
     {
@@ -551,7 +603,8 @@
         "disability-access",
         "disability-texas",
         "portals-proof",
-        "amicus-systems"
+        "amicus-systems",
+        "shared-accountability"
       ],
       "topics": [
         "Commons practice",
@@ -846,7 +899,8 @@
         "credit-reporting",
         "debt-default",
         "records-proof",
-        "disability-access"
+        "disability-access",
+        "shared-accountability"
       ],
       "topics": [
         "Commons practice"

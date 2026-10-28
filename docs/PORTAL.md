@@ -1,6 +1,13 @@
 # Portal, connected records and the Commons index
 
-The entry page is a feed across subjects. Readers filter by subject or type,
+The entry page introduces Commons before the feed: its purpose, a small set of
+starting paths, and then the searchable collection. `portal/1_05-welcome.html`
+supplies this orientation. The three paths lead to the administrative-burden
+argument, record preparation, and the proposed audio workflow. The shared-records
+purpose article explains independent accountability, AI, and blockchain without
+making those concepts prerequisites for reading.
+
+The collection is a feed across subjects. Readers filter by subject or type,
 search, and open full articles in a reading window over the feed. Connected
 articles open in the same window; Escape or **Back to the feed** returns to the
 collection. The original frozen document remains available from each article.
