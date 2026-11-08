@@ -112,6 +112,10 @@ These are project goals and editorial principles. The public reader does not
 provide an automated cross-case analysis or audio editing service. Current
 capabilities and the proposed audio workflow are identified separately.
 
+## Independent review of disputed claims
+
+[Who can say the creditor is wrong?](reading/commentary/2026-11-08-independent-debt-review.html) is a standalone public, printable opinion article (8 November 2026). It asks whether ordinary consumers can reach someone authorized to reject a creditor's claim; whether attorney involvement changes escalation; what source evidence is examined; and what would falsify the criticism that verification is circular. It includes the author's firsthand, unverified recollection of encountering similar difficulties with NCS and creditor-side law firm Rausch Sturm LLP, without speculating about any individual employee's educational credentials. The official firm website provides written-dispute and complaint channels, but their substantive review function remains an open question. The [companion conceptual notes](docs/2026-11-08-informal-discovery-and-sludge.md) preserve the broader procedural-sludge argument. No individual call audio or account identifiers are made public by this article.
+
 ## Recollections and recorded conversations
 
 [A conversation can become a source record](entry/audio-records.html) extends
