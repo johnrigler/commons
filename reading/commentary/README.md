@@ -4,6 +4,10 @@
 
 The [standalone article](2026-11-08-independent-debt-review.html) frames debt-collection escalation and decision authority as a falsifiable procedural inquiry. It includes eleven concrete questions, the author's separately identified firsthand experiences with National Credit Systems and Rausch Sturm LLP, and a clear distinction between collector qualifications/decision powers and unsupported guesses about staff education. The article cites Rausch Sturm's public dispute and complaint routes while leaving their effectiveness unresolved. It is public HTML, not yet a signed or ledger-announced edition. Private call evidence remains in Daisy.
 
+## NCS/Firmus dossier (8 November 2026)
+
+[Eight connected public articles](../ncs-collection/index.html) expand the independent-review argument into a chronology/source map, legislation and limitations, verified NCS proceedings, the limits of proving a creditor's actual knowledge under Texas §392.306, damages and credit reporting, the public case record, and the next investigative questions. Originals with sensitive details are not exposed; public HTML remains unsigned and not on-chain.
+
 Three connected pieces by `LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb`:
 
 - `portals-proof`: When the portal controls the objection.
