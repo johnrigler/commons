@@ -475,5 +475,6 @@ symlink behavior. Run browser checks after changing the interface.
 
 The repository retains its existing CC0 1.0 Universal dedication in `LICENSE`.
 Record third-party material and its terms separately when adding sources.
+## New editorial notes
 
-
+- [8 November 2026 — Informal discovery, procedural sludge and representation](docs/2026-11-08-informal-discovery-and-sludge.md). Working Commons argument about the cost of challenging a claim, direct recorded questioning of collectors, attorney gatekeeping as a factual question, and professional-system incentives. No individual case facts are published in this note.
