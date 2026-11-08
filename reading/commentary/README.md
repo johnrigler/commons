@@ -1,5 +1,9 @@
 # Who controls the objection?
 
+## 8 November 2026: Who can say the creditor is wrong?
+
+The [standalone article](2026-11-08-independent-debt-review.html) frames debt-collection escalation and decision authority as a falsifiable procedural inquiry. It includes eleven concrete questions, the author's separately identified firsthand experiences with National Credit Systems and Rausch Sturm LLP, and a clear distinction between collector qualifications/decision powers and unsupported guesses about staff education. The article cites Rausch Sturm's public dispute and complaint routes while leaving their effectiveness unresolved. It is public HTML, not yet a signed or ledger-announced edition. Private call evidence remains in Daisy.
+
 Three connected pieces by `LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb`:
 
 - `portals-proof`: When the portal controls the objection.
