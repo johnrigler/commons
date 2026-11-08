@@ -114,6 +114,9 @@ capabilities and the proposed audio workflow are identified separately.
 
 ## NCS / Firmus public research dossier (8 November 2026)
 
+**Current direction:** Commons is the active public publication and dossier home. Legacy CertLedger links in older documents are historical; new public case analysis should go here.
+
+
 [**NCS, Firmus, and the Test of Debt Verification**](reading/ncs-collection/index.html) is an eight-part, readable, printable HTML investigation series in Commons. It consolidates the disputed rental-acceleration chronology, collector dispute-handling and escalation questions, Texas/federal legal theories and separate deadlines, the **2008 Reichert appellate decision**, CFPB investigatory proceedings and a documented settlement, the Texas §392.306 creditor-knowledge test, credit-reporting harm and possible damages, the public-record implications of litigation, and unanswered questions/records requests. It marks consumer allegations and tentative theories separately from established judicial holdings. The underlying audio and identifying transcript remain private. These standalone pages are linked here and from the commentary index; they are **not yet a rebuilt or CID-registered portal-feed edition**, nor signed or etched on Litecoin.
 
 ## Independent review of disputed claims
