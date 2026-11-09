@@ -1,6 +1,6 @@
 # Proposed Texas Finance Code § 392.3061: Notice Following Qualifying Debt-Collection Findings
 
-**DISCUSSION DRAFT ONLY — NOVEMBER 8, 2026.** Not enacted, introduced, endorsed by a legislator, filed in court, or reviewed by Texas legislative counsel. Section 392.3061 is a *proposed* number, not an existing provision. Exact timing, penalties, federal-law interaction, agency jurisdiction and definitions require formal drafting review.
+**DISCUSSION DRAFT ONLY — NOVEMBER 8, 2026.** Proposal initiated by John Rigler; AI-assisted research and statutory drafting. Not enacted, introduced, endorsed by a legislator, filed in court, or reviewed by Texas legislative counsel. Section 392.3061 is a *proposed* number, not an existing provision. Exact timing, penalties, federal-law interaction, agency jurisdiction and definitions require formal drafting review.
 
 Purpose: close the creditor-client information gap associated with existing Texas Finance Code § 392.306, while protecting confidential consumer records and preserving the requirement to prove actual knowledge of repeated Chapter 392 practices. This is not a legal finding against NCS or Firmus.
 
