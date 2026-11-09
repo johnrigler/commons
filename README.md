@@ -112,6 +112,10 @@ These are project goals and editorial principles. The public reader does not
 provide an automated cross-case analysis or audio editing service. Current
 capabilities and the proposed audio workflow are identified separately.
 
+## Policy & legislative reform
+
+[**Policy & Legislative Reform**](reading/legislation/index.html) is a separate Commons publication category for proposals derived from documented institutional problems. The first proposal, [Mandatory Creditor Notification Following Established Debt-Collection Violations](reading/legislation/collector-notice-policy.html), identifies a possible notice gap under Texas Finance Code §392.306 and provides a [discussion draft of proposed §392.3061](reading/legislation/texas-392-3061-draft.html), also available as [plain Markdown source](reading/legislation/texas-392-3061-discussion-draft.md). These are **policy proposals, not current law**, and have not been filed or adopted. The material includes credible regulatory comparisons and privacy/due-process limits. This is a standalone repository/Pages collection, not yet an SB Shell/CID portal-feed edition.
+
 ## NCS / Firmus public research dossier (8 November 2026)
 
 **Current direction:** Commons is the active public publication and dossier home. Legacy CertLedger links in older documents are historical; new public case analysis should go here.
