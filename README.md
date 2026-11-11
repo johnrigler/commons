@@ -157,6 +157,10 @@ leave all case fields blank. They preserve the mitigation and credit objections
 without promising that one rule applies to every recipient or that every requested
 document must arrive within thirty days.
 
+## Measuring court-access friction
+
+[**The cost of procedural access**](reading/assistance/court-access-burden.html) is a standalone, printable Commons article and blank observation worksheet for recording formal access rules alongside actual filing attempts, equipment needs, costs, elapsed time, assistance, decisions and unresolved questions. Its [field mapping and counting rules](docs/COURT-ACCESS-BURDEN-SCHEMA.md) separate observed events from interpretation and avoid treating an available fee waiver or e-filing route as proof of practical access. Individual case entries and original receipts belong in the private record. This new page is not yet in a frozen portal/CID edition or published on-chain.
+
 ## Texas rental-lawsuit preparation
 
 [Challenging an accelerated-rent balance in Austin, Texas](entry/texas-rental-lawsuit.html) adds observations about later reconciliation, policy versus individual action, a filing and cost-relief walkthrough, a partial petition, and a limited-discovery motion. Public parties and case fields remain blank. The claim, damages, jurisdiction and deadlines must be resolved before filing; no case has been filed.
