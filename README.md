@@ -157,6 +157,10 @@ leave all case fields blank. They preserve the mitigation and credit objections
 without promising that one rule applies to every recipient or that every requested
 document must arrive within thirty days.
 
+## From a dispute to a reviewable record
+
+[**From a disputed claim to an inspectable record**](reading/process/from-dispute-to-inspectable-record.html) connects the Commons' existing administrative-burden, correspondence, call-recording, debt-verification, court-preparation and publication articles into one process. It distinguishes the private original media, reviewed transcript, Recast project and MP4, and separates source SHA-256, FileProxy custody/copy verification, optional IPFS and Litecoin commitments. A specific large-media upload and replication API is proposed, not yet implemented. This standalone HTML article is linked from the NCS dossier but is not automatically a frozen portal/CID edition.
+
 ## Measuring court-access friction
 
 [**The cost of procedural access**](reading/assistance/court-access-burden.html) is a standalone, printable Commons article and blank observation worksheet for recording formal access rules alongside actual filing attempts, equipment needs, costs, elapsed time, assistance, decisions and unresolved questions. Its [field mapping and counting rules](docs/COURT-ACCESS-BURDEN-SCHEMA.md) separate observed events from interpretation and avoid treating an available fee waiver or e-filing route as proof of practical access. Individual case entries and original receipts belong in the private record. This new page is not yet in a frozen portal/CID edition or published on-chain.
