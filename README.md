@@ -157,6 +157,14 @@ leave all case fields blank. They preserve the mitigation and credit objections
 without promising that one rule applies to every recipient or that every requested
 document must arrive within thirty days.
 
+## Litecoin Commons source fingerprints
+
+[**Commons ledger view**](reading/ledger/index.html) reads the Litecoin mainnet history for the existing `LMxCoMMoNSzzzzzzzzzzzzzzzzzzZU8MFW` transport address, displaying only provider-reported transactions that also contain an exact `sha256:` 64-hex-character OP_RETURN. Each entry links to the transaction in Chisel. This is a live external-provider view, not an independent full-node verification or a repository catalog; network failures and pagination must be distinguished from absence. [Chisel's Commons SHA-256 sender](https://johnrigler.github.io/chisel/tools/commons/) stages the same address and payload in Send without transmitting the source file or broadcasting automatically.
+
+## From a dispute to a reviewable record
+
+[**From a disputed claim to an inspectable record**](reading/process/from-dispute-to-inspectable-record.html) connects the Commons' existing administrative-burden, correspondence, call-recording, debt-verification, court-preparation and publication articles into one process. It distinguishes the private original media, reviewed transcript, Recast project and MP4, and separates source SHA-256, FileProxy custody/copy verification, optional IPFS and Litecoin commitments. A specific large-media upload and replication API is proposed, not yet implemented. This standalone HTML article is linked from the NCS dossier but is not automatically a frozen portal/CID edition.
+
 ## Measuring court-access friction
 
 [**The cost of procedural access**](reading/assistance/court-access-burden.html) is a standalone, printable Commons article and blank observation worksheet for recording formal access rules alongside actual filing attempts, equipment needs, costs, elapsed time, assistance, decisions and unresolved questions. Its [field mapping and counting rules](docs/COURT-ACCESS-BURDEN-SCHEMA.md) separate observed events from interpretation and avoid treating an available fee waiver or e-filing route as proof of practical access. Individual case entries and original receipts belong in the private record. This new page is not yet in a frozen portal/CID edition or published on-chain.

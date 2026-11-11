@@ -1,0 +1,41 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Commons Litecoin SHA-256 commitments tagged through the existing Chisel transport address, with per-transaction links and explicit provenance limitations.">
+<title>Commons · Litecoin source fingerprints</title>
+<style>
+:root{color-scheme:light;background:#faf9f5;color:#24352e;font:16px/1.65 system-ui,sans-serif}
+*{box-sizing:border-box}body{margin:0}main{max-width:1000px;margin:auto;padding:28px 26px 75px}
+a{color:#1e6754;text-underline-offset:3px}h1{font:normal clamp(34px,5vw,51px)/1.15 Georgia,serif;margin:28px 0 12px}
+h2{font:normal 26px/1.25 Georgia,serif;margin:30px 0 10px}
+nav{display:flex;flex-wrap:wrap;gap:20px;font-size:14px;border-bottom:1px solid #cbd4cb;padding-bottom:15px}
+.deck{font:20px/1.5 Georgia,serif;color:#445f53}.small{font-size:13px;color:#576a60}
+address,code{overflow-wrap:anywhere;word-break:break-all}
+address{font:16px/1.6 ui-monospace,monospace;font-style:normal;padding:12px;background:#f0f3ee}
+.tools{display:flex;flex-wrap:wrap;gap:11px;align-items:center;margin:20px 0}
+button,input{font:inherit;border:1px solid #809889;border-radius:4px;padding:9px 12px;background:white}
+button{cursor:pointer;font-weight:650}button:disabled{opacity:.5;cursor:default}
+input{flex:1 1 220px;min-width:0}
+#status{padding:10px 0;min-height:40px}
+.entry{background:white;border:1px solid #cbd5cb;border-radius:6px;padding:19px;margin:13px 0}
+.entry-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:7px}.entry-top>span{font-size:13px;color:#576a60}
+.digest{display:block;margin-top:9px;font:14px/1.7 ui-monospace,monospace;color:#1b4c3c}
+.txid{display:block}.links{display:flex;flex-wrap:wrap;gap:17px;margin:13px 0 0;font-size:14px}
+.note{border-left:3px solid #9eab9c;padding:12px 17px;background:#f0f3ee;font-size:14px}
+footer{font-size:13px;border-top:1px solid #cbd5cb;padding-top:15px;margin-top:50px}
+@media(max-width:600px){main{padding:18px}.digest{font-size:12px}}
+</style></head><body><main>
+<nav><a href="../../index.html">Commons home</a><a href="../process/from-dispute-to-inspectable-record.html">Record-keeping process</a><a href="https://johnrigler.github.io/chisel/tools/commons/">Commit a SHA-256 in Chisel</a></nav>
+<header><p class="small">Commons / Litecoin mainnet / Chisel index</p><h1>Source fingerprints on Litecoin</h1>
+<p class="deck">Browse transactions to the Commons transport address that also contain a complete SHA-256 commitment in OP_RETURN.</p></header>
+<h2>Commons transport address</h2><address id="address">LMxCoMMoNSzzzzzzzzzzzzzzzzzzZU8MFW</address>
+<p class="small">This is a public unspendable index, not a receiving wallet. The same transaction may include a general Litecoin index output. <a id="index-link" rel="noopener noreferrer" target="_blank" href="https://live.blockcypher.com/">Inspect all address activity</a>.</p>
+<div class="tools">
+<input type="search" id="filter" aria-label="Filter SHA-256 or transaction ID" placeholder="Filter SHA-256 or TXID">
+<button type="button" id="refresh">Refresh index</button>
+<button type="button" id="older" hidden>Load older</button>
+</div>
+<p id="status" role="status" aria-live="polite">Public address query not yet completed.</p><p id="count" class="small"></p>
+<section id="results" aria-label="Ledger commitments"></section>
+<p class="note"><strong>Evidence boundaries:</strong> This view uses the public BlockCypher Litecoin API, not an independent fully validating node. It only displays transactions where the provider reports both a payment to the Commons index address and a literal <code>sha256:</code> followed by 64 lowercase hex digits in OP_RETURN. It neither retrieves source media nor authenticates the creator, recording time or truth of a file. IPFS CIDs, public recordings and signing envelopes are separate. A failed query or unloaded older page is not proof of absence. Public providers may impose rate limits or omit historical results.</p>
+<footer>Commons · Chisel Litecoin transport index · Source bytes remain controlled by their holders · No source media uploaded by this view</footer>
+</main><script src="ledger-core.js"></script><script src="ledger.js"></script></body></html>
