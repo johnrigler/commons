@@ -165,6 +165,12 @@ record to someone else's browser. Download the contribution to retain its exact
 bytes before changing browser/origin or clearing site data. No remote save,
 identity verification or transaction is implied by pressing Go.
 
+## Dedicated Commons SHA-256 ledger view
+
+`reading/ledger/index.html` is a standalone browser view of BlockCypher-reported Litecoin mainnet transactions involving `LMxCoMMoNSzzzzzzzzzzzzzzzzzzZU8MFW`. It requires the transport output *and* a literal `sha256:` plus 64 lowercase hex digits in OP_RETURN before showing a transaction. It pages address history with the provider's `hasMore` cursor, filters locally by digest or txid, and links to Chisel's canonical transaction record. It does not expose the private source bytes or suggest the provider independently validates recording authenticity. A failed API call, missing page or provider rate limit is not an empty ledger.
+
+The [Chisel Commons hash handoff](https://github.com/johnrigler/chisel/tree/main/tools/commons) uses its existing Send payload importer with two unspendable recipients (the general Litecoin index and this Commons transport address). It is a new, distinct route from the legacy CertLedger hash tool; the earlier transport address and record formats are left intact. The digest remains exactly `sha256:` plus 64 hex characters, 71 ASCII bytes, not JSON. This page is a standalone view and is not yet embedded in the frozen Commons portal/CID edition.
+
 ## Publication path
 
 ### Reusable Experian form
