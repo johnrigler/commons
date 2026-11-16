@@ -15,6 +15,7 @@ on:
       - 'sb/*.bash'
       - 'portal.json'
       - 'statements.json'
+      - 'tools/ledger-reference.html'
       - '.github/workflows/publish-checksum.yml'
 
 permissions:
