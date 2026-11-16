@@ -1,0 +1,46 @@
+name: Publish Commons checksum page
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '1_20-verify.html'
+      - 'index.js'
+      - 'verify.js'
+      - 'sb/page.php'
+      - 'sb/publish.bash'
+      - '.github/workflows/publish-checksum.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: commons-publish-checksum-main
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - name: Install PHP
+        run: sudo apt-get update && sudo apt-get install -y php-cli
+      - name: Publish content-addressed HTML edition
+        shell: bash
+        run: |
+          set -euo pipefail
+          source "$GITHUB_WORKSPACE/sb/publish.bash"
+          snapshot="$(sb.publish sb/page.php publish.html)"
+          grep -q 'SHA-256 checksum' "$snapshot"
+          grep -q 'Pinata' "$snapshot"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$snapshot" publish.html
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(commons): publish SHA-256 checksum edition [skip ci]"
+            git push origin HEAD:main
+          fi
