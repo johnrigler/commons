@@ -86,3 +86,37 @@ Preserve older CID editions and exact contribution parents. A new generic editio
 does not automatically remove earlier wording from Git history or historical
 content-addressed files. Do not claim historical erasure without doing and
 verifying a separately scoped removal.
+
+## Direct collector follow-up: portal, call and mail
+
+When the disputed collector/furnisher changes the amount it reports, capture the
+before/after reports first. A changed number does not by itself establish which
+charges were withdrawn, whether the change is permanent, or how prior disputes
+were investigated. Ask for the dated ledger, adjustment entries, source records,
+review outcome and reporting history. Do not treat a partial reduction as
+acceptance of the residual amount.
+
+For the **collector-facing** inquiry, address the covered collector directly,
+not merely the property office. A property owner/manager may still be the
+separate source for lease, mitigation and reletting records; the credit bureau
+also has its own dispute channel. Preserve which entity actually received each
+communication.
+
+A useful evidence sequence is a written **collector portal** submission, a
+separately documented **lawfully recorded** confirmation call, and optional
+**certified mail to the collector** when independently provable delivery is
+valuable. Record the exact portal content, reference IDs, acknowledgment and
+upload date, then the call date, participants, statements and original audio.
+Check applicable recording-consent rules before making a recording. A phone
+call does not replace a written notice when a particular duty requires one.
+Retain any certified-mail copy, enclosures, tracking and delivery separately;
+certified service is evidence of receipt, not itself a new statutory deadline.
+
+An earlier portal upload and later follow-up are separate submissions. Reconcile
+all dispute IDs, correspondence, credit-report dates and prior responses before
+claiming silence or a missed deadline. Apply the existing distinctions in
+`legal-references.json` and the deadline section above; the Texas collector's
+written accuracy-dispute statement is not a universal order to produce every
+requested document within 30 days. Specific names, balances, dates, receipts,
+completed messages and recordings belong in the private case, not this public
+workflow.
