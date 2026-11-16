@@ -222,6 +222,27 @@
       ]
     },
     {
+      "id": "us-fcra-1681c",
+      "group": "Federal reporting",
+      "citation": "15 U.S.C. §1681c(a)(4), (b), (c)(1)",
+      "title": "Collection-account exclusion period and first-delinquency anchor",
+      "source_url": "https://uscode.house.gov/us/usc/119-142/t15/s1681c/",
+      "jurisdiction": "United States (federal)",
+      "applies_to": "Consumer reporting agencies publishing collection-account information, subject to statutory report-purpose exceptions.",
+      "trigger": "Delinquent account placed for collection, charged to profit and loss, or similar action.",
+      "deadline": "Generally the 7-year exclusion period runs from expiration of the 180-day period beginning when the delinquency immediately preceding collection commenced; qualifying report-purpose exceptions in subsection (b) may apply.",
+      "required_action": "Exclude collection accounts once the applicable obsolescence period has elapsed; identify the original underlying delinquency, not the collector's account-opening or later monthly balance-update date.",
+      "consequence": "Outdated reporting may require correction or exclusion and, where applicable conditions are met, support FCRA relief.",
+      "limits": "Bureau-specific early deletion policies and display estimates may differ from the statutory outside period. An account opening date, update date, or estimated deletion date by itself does not establish a misreported first-delinquency date or unlawful re-aging. Subsection (b) contains exceptions.",
+      "related": [
+        "rent-acceleration",
+        "credit-reporting"
+      ],
+      "checked": "2026-11-15",
+      "review_status": "Primary text reviewed; no independent legal review",
+      "additional_sources": []
+    },
+    {
       "id": "us-fcra-1681i",
       "group": "Federal reporting",
       "citation": "15 U.S.C. §1681i(a)",
