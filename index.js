@@ -3,7 +3,7 @@
     const $ = selector => document.querySelector(selector);
     const catalog = JSON.parse($('#commons-data').textContent);
     const records = catalog.statements.map(record => ({ ...record, selected: true, valid: false, pin: 'Not checked' }));
-    let token = '', busy = false, local = null, receipt = null, announcement = null, announcementVersion = 0;
+    let token = '', busy = false, fileDigest = '', receipt = null, announcement = null, announcementVersion = 0;
 
     function status(message, error = false) {
         $('#status').textContent = message;
@@ -37,7 +37,6 @@
         $('#pin-selected').disabled = busy || !token || !count;
         $('#check-pins').disabled = busy || !token || !count;
         $('#pin-page').disabled = busy || !token;
-        $('#pin-file').disabled = busy || !token || !local || local.valid === false;
         $('#connect').disabled = busy || !!token;
         $('#disconnect').disabled = busy || !token;
         $('#pinata-token').disabled = busy || !!token;
@@ -142,32 +141,45 @@
         status('Selected edition manifest downloaded.');
     });
 
-    $('#verify-file').onclick = () => operation(async () => {
-        local = null; $('#download-file').hidden = true;
+    async function checksumFile(file) {
+        if (!globalThis.crypto?.subtle) throw new Error('SHA-256 requires HTTPS or localhost.');
+        const bytes = await file.arrayBuffer();
+        const digest = new Uint8Array(await crypto.subtle.digest('SHA-256', bytes));
+        return Array.from(digest, byte => byte.toString(16).padStart(2, '0')).join('');
+    }
+
+    let fileSelectionVersion = 0;
+    $('#local-file').addEventListener('change', () => {
+        const version = ++fileSelectionVersion;
         const file = $('#local-file').files[0];
-        if (!file) throw new Error('Choose a local file first.');
-        if (file.size > CommonsCID.MAX_BYTES) throw new Error('This profile supports files up to 1 MiB.');
-        const bytes = new Uint8Array(await file.arrayBuffer());
-        const cid = await CommonsCID.cid(bytes);
-        const explicit = $('#expected-cid').value.trim();
-        const expected = explicit || CommonsCID.filenameCID(file.name);
-        if (explicit && CommonsCID.filenameCID(explicit) !== explicit) throw new Error('Expected CID must use the Commons raw CIDv1 profile.');
-        const valid = expected ? cid === expected : null;
-        $('#file-result').textContent = (valid === true ? 'MATCH' : valid === false ? 'MISMATCH' : 'CID CALCULATED') + '\n' + cid + '\n' + bytes.length + ' bytes' + (expected ? '\nExpected: ' + expected : '\nThe original filename contains no supported CID.');
-        const suffix = file.name.match(/\.[a-z0-9]{1,10}$/i)?.[0] || '';
-        local = { bytes, cid, suffix, valid, type: file.type || 'application/octet-stream' };
-        $('#download-file').hidden = false;
-        status(valid === false ? 'The file differs from the expected CID.' : 'Local file processed; no upload was made.', valid === false);
+        fileDigest = '';
+        $('#copy-file-sha').hidden = true;
+        $('#file-result').textContent = file ? 'Calculating SHA-256…' : '';
+        if (!file) return;
+        (async () => {
+            try {
+                const sha = await checksumFile(file);
+                if (version !== fileSelectionVersion) return;
+                fileDigest = sha;
+                $('#file-result').textContent = 'SHA-256\n' + sha + '\n' + file.size + ' bytes · ' + file.name;
+                $('#copy-file-sha').hidden = false;
+                status('SHA-256 calculated locally. No file was uploaded or modified.');
+            } catch (error) {
+                if (version !== fileSelectionVersion) return;
+                $('#file-result').textContent = 'Checksum unavailable: ' + error.message;
+                status('Could not calculate SHA-256: ' + error.message, true);
+            }
+        })();
     });
-    for (const element of [$('#local-file'), $('#expected-cid')]) element.addEventListener('input', () => { local = null; $('#file-result').textContent = ''; $('#download-file').hidden = true; controls(); });
-    $('#download-file').onclick = () => { if (local) download(local.bytes, local.cid + local.suffix, local.type); };
-    $('#pin-file').onclick = () => operation(async () => {
-        if (!local || local.valid === false) throw new Error('Calculate a matching local file CID first.');
-        status('Pinning the local file to public IPFS…');
-        const result = await CommonsPinata.pin(token, local.bytes, local.cid, local.cid + local.suffix);
-        receipt = { schema: 'commons/pin-receipt/1', checkedAt: new Date().toISOString(), complete: true, files: [result], manifest: null };
-        $('#download-receipt').hidden = false; status('Local file stored in Pinata: ' + result.cid);
-    });
+    $('#copy-file-sha').onclick = async () => {
+        if (!fileDigest) return;
+        try {
+            await navigator.clipboard.writeText(fileDigest);
+            status('SHA-256 checksum copied.');
+        } catch {
+            status('Clipboard unavailable. Select the SHA-256 above and copy it.', true);
+        }
+    };
 
     $('#pinata-form').addEventListener('submit', event => {
         event.preventDefault();
@@ -269,18 +281,18 @@
     const contribution = new URLSearchParams(location.hash.slice(1)).get('contribution');
     if (contribution) await operation(async () => {
         const entry = (await CommonsPortal.load()).find(entry => entry.cid === contribution);
-        if (!entry) throw new Error('This contribution is not saved in this browser. Choose its downloaded file under Verify a file.');
+        if (!entry) throw new Error('This contribution is not saved in this browser. Select a file in the SHA-256 section to calculate its checksum.');
         const bytes = CommonsPortal.bytes(entry);
-        local = { bytes, cid: entry.cid, suffix: '.json', valid: true, type: 'application/json' };
-        $('#file-result').textContent = 'LOCAL CONTRIBUTION / CID MATCH\n' + entry.cid + '\n' + bytes.length + ' bytes';
-        $('#download-file').hidden = false;
+        fileDigest = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)), byte => byte.toString(16).padStart(2, '0')).join('');
+        $('#file-result').textContent = 'SAVED CONTRIBUTION SHA-256\n' + fileDigest + '\n' + bytes.length + ' bytes';
+        $('#copy-file-sha').hidden = false;
         $('#tag-name').value = entry.record.author || 'Unstated author';
         $('#tag-transport').value = entry.record.indexed ? 'Commons' : 'IPFS';
         $('#tag-subject').value = entry.record.kind;
         $('#commons-index').checked = entry.record.indexed;
         $('#announcement-body').value = 'ipfs://' + entry.cid;
         invalidateAnnouncement();
-        status('Contribution loaded. Connect Pinata to pin its bytes, then prepare the announcement for Chisel. Nothing has been published yet.');
+        status('Contribution hash shown. The CID announcement can be prepared separately; nothing has been published yet.');
         $('#verify').scrollIntoView();
     });
 })().catch(() => {
