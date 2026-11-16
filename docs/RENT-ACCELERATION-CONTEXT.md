@@ -120,3 +120,14 @@ written accuracy-dispute statement is not a universal order to produce every
 requested document within 30 days. Specific names, balances, dates, receipts,
 completed messages and recordings belong in the private case, not this public
 workflow.
+
+## Reporting data lineage and first-delinquency audit
+
+The [NCS–Experian reporting audit and action plan](2026-11-15-ncs-experian-reporting-audit.md)
+uses named organizations as a public illustration while keeping individual
+account records private. It separates source accounting, collector furnishing,
+bureau processing and displayed report values; tests the original-balance field,
+monthly history and date-of-first-delinquency; and provides a phased request and
+escalation plan. The corresponding legal reporting-age rule is indexed as
+`us-fcra-1681c` in the law registry. Naming NCS or Experian in a research note
+is not an allegation of a proven violation.
