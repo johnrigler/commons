@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'none'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>Commons · Ledger source reference</title>
+<style>
+:root{font:16px/1.55 system-ui,sans-serif;color:#263934;background:#faf9f5}
+*{box-sizing:border-box}body{margin:0}main{max-width:840px;padding:26px;margin:auto}
+a{color:#245c51}h1{font:clamp(2rem,5vw,3.2rem)/1.1 Georgia,serif}
+section{border-top:1px solid #ced8d0;padding:20px 0}label,small{color:#586e62}
+code,pre{font:14px/1.6 ui-monospace,monospace;overflow-wrap:anywhere;white-space:pre-wrap}
+.value{padding:12px;background:#edf2eb;border-radius:6px;display:block;margin:8px 0 14px}
+button{background:#245c51;border:0;color:white;border-radius:5px;padding:11px 18px;cursor:pointer;font:inherit}
+button:disabled{opacity:.45}p{max-width:70ch}.warning{color:#93402c}
+</style>
+</head>
+<body>
+<main>
+<nav><a href="../index.html">Commons</a> · <a href="../entry/credit-reporting.html">Credit reporting</a> · <a href="../publish.html#verify">File checksum</a></nav>
+<header><h1>Ledger source reference</h1>
+<p>A handoff from Chisel: cite a public Litecoin transaction and compare a privately held file to the SHA-256 it records. This page does not publish, upload, or store your file.</p></header>
+<section><h2>Public ledger reference</h2>
+<div><label>Subject (decoded text, not verified publisher identity)</label><strong class="value" id="subject">No record loaded.</strong></div>
+<div><label>Subject index address</label><code class="value" id="address">—</code></div>
+<div><label>SHA-256 in OP_RETURN</label><code class="value" id="hash">—</code></div>
+<div><label>Litecoin transaction</label><code class="value" id="txid">—</code></div>
+<p><a id="chisel" hidden target="_blank" rel="noreferrer noopener">Open transaction in Chisel</a></p>
+<button id="copy" type="button" disabled>Copy source reference for Commons</button>
+<p id="copy-status" role="status" aria-live="polite"></p></section>
+<section><h2>Check a source file locally</h2>
+<label for="file">Original unchanged file</label>
+<input id="file" type="file" aria-describedby="result">
+<p id="result" role="status" aria-live="polite">Choose a file to calculate its SHA-256 locally and compare it with the ledger value.</p>
+<p>Matching bytes establish integrity relative to the published digest, not the truth of the contents, the claimed author, or when the file was created.</p></section>
+<section><h2>Next step in Commons</h2>
+<p>Open the <a href="../entry/credit-reporting.html">credit-reporting article</a>, add a source-linked contribution, and paste the reference above. Review what you publish: a hash of a private file can still be a correlatable public identifier. This handoff creates no Commons contribution automatically.</p>
+</section>
+</main>
+<script>
+(() => {
+  "use strict";
+  const $ = id => document.getElementById(id);
+  const args = new URLSearchParams(location.hash.slice(1));
+  const txid = String(args.get("txid") || "").toLowerCase();
+  const sha = String(args.get("sha256") || "").toLowerCase();
+  const subject = String(args.get("subject") || "").trim();
+  const address = String(args.get("address") || "").trim();
+  const valid = args.get("coin") === "litecoin" &&
+    /^[0-9a-f]{64}$/.test(txid) && /^[0-9a-f]{64}$/.test(sha) &&
+    /^[1-9A-HJ-NP-Za-km-z]{26,40}$/.test(address);
+  if (!valid) {
+    $("subject").textContent = "Missing or invalid Litecoin reference.";
+    $("copy-status").className = "warning";
+    $("copy-status").textContent = "Open a supported SHA-256 record in Chisel, then select Use in Commons.";
+    return;
+  }
+  $("subject").textContent = subject.slice(0,120) || "Unlabeled subject";
+  $("address").textContent = address;
+  $("hash").textContent = sha;
+  $("txid").textContent = txid;
+  const source = "https://johnrigler.github.io/chisel/?mode=portal&coin=litecoin&txid=" + txid;
+  $("chisel").href = source;
+  $("chisel").hidden = false;
+  const citation = [
+    "Subject: " + (subject.slice(0,120) || "Unlabeled subject") + " (address text only)",
+    "Ledger: Litecoin",
+    "Subject index: " + address,
+    "Transaction: " + txid,
+    "SHA-256: " + sha,
+    "Chisel source: " + source,
+    "Source file: [identify separately; not publicly uploaded by this tool]"
+  ].join("\n");
+  $("copy").disabled = false;
+  $("copy").onclick = async () => {
+    try { await navigator.clipboard.writeText(citation); $("copy-status").textContent = "Reference copied. Paste into your Commons contribution."; }
+    catch (_) { $("copy-status").textContent = "Clipboard unavailable. Select and copy the fields above."; }
+  };
+  $("file").addEventListener("change", async () => {
+    const file = $("file").files[0];
+    if (!file) return;
+    $("result").textContent = "Calculating SHA-256 locally…";
+    try {
+      if (!crypto.subtle) throw Error("Secure browser context required.");
+      const bytes = await file.arrayBuffer();
+      const digest = Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256", bytes)),
+        b => b.toString(16).padStart(2,"0")).join("");
+      $("result").textContent = (digest === sha ? "MATCH" : "MISMATCH") + " · " + file.name +
+        "\nCalculated: " + digest + "\nLedger: " + sha;
+    } catch (e) { $("result").textContent = "Cannot calculate checksum: " + e.message; }
+  });
+})();
+</script>
+</body>
+</html>
