@@ -21,6 +21,8 @@ benefits, traffic enforcement, technology, and further areas people bring.
 | [Build your own record](entry/dispute-without-lawyer.html) | A preparation route that can also support a professional review |
 | [Audio as a source record](entry/audio-records.html) | A proposed workflow for original audio, checked transcripts, public derivatives, and source references |
 
+**[NCS and Experian reporting audit: data lineage and game plan](docs/2026-11-15-ncs-experian-reporting-audit.md)** examines how a collector's changed balance reaches a bureau, how to test the first-delinquency reporting date, and what records to request without publishing individual account details. This is a source research note, not yet a newly assembled standalone reading edition.
+
 Open a collection title to read it in the page, follow its sources and
 connections, or add a contribution. The collection includes the bundled
 published documents and locally saved, indexed drafts. The [local
