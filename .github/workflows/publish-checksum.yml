@@ -1,21 +1,27 @@
-name: Publish Commons checksum page
+name: Publish versioned Commons editions
 
 on:
   push:
     branches: [main]
     paths:
-      - '1_20-verify.html'
+      - '1_*.html'
+      - 'portal/1_*.html'
       - 'index.js'
       - 'verify.js'
-      - 'sb/page.php'
-      - 'sb/publish.bash'
+      - 'pinata.js'
+      - 'thunderwords.js'
+      - 'portal*.js'
+      - 'sb/*.php'
+      - 'sb/*.bash'
+      - 'portal.json'
+      - 'statements.json'
       - '.github/workflows/publish-checksum.yml'
 
 permissions:
   contents: write
 
 concurrency:
-  group: commons-publish-checksum-main
+  group: commons-publication-main
   cancel-in-progress: false
 
 jobs:
@@ -29,18 +35,34 @@ jobs:
           persist-credentials: true
       - name: Install PHP
         run: sudo apt-get update && sudo apt-get install -y php-cli
-      - name: Publish content-addressed HTML edition
+      - name: Bump canonical version, publish both pages
         shell: bash
         run: |
           set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          version_file = Path('VERSION')
+          old = version_file.read_text(encoding='utf-8').strip()
+          match = re.fullmatch(r'(\d+)\.(\d+)\.(\d+)', old)
+          if not match:
+              raise SystemExit('Invalid Commons VERSION: ' + old)
+          major, minor, patch = map(int, match.groups())
+          updated = f'{major}.{minor}.{patch + 1}'
+          version_file.write_text(updated + '\n', encoding='utf-8')
+          print('Commons version', old, '->', updated)
+          PY
           source "$GITHUB_WORKSPACE/sb/publish.bash"
-          snapshot="$(sb.publish sb/page.php publish.html)"
-          grep -q 'SHA-256 checksum' "$snapshot"
-          grep -q 'Pinata' "$snapshot"
+          portal_snapshot="$(sb.publish sb/portal.php index.html)"
+          verify_snapshot="$(sb.publish sb/page.php publish.html)"
+          grep -q 'AN OPEN COLLECTION · v' "$portal_snapshot"
+          grep -q 'PUBLISH / VERIFY · v' "$verify_snapshot"
+          grep -q 'SHA-256 checksum' "$verify_snapshot"
+          grep -q 'Pinata' "$verify_snapshot"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "$snapshot" publish.html
+          git add VERSION index.html publish.html "$portal_snapshot" "$verify_snapshot" entry/
           if ! git diff --cached --quiet; then
-            git commit -m "chore(commons): publish SHA-256 checksum edition [skip ci]"
+            git commit -m "chore(commons): bump version and publish editions [skip ci]"
             git push origin HEAD:main
           fi
