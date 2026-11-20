@@ -1,5 +1,9 @@
 # Who controls the objection?
 
+## 20 November 2026: When paperwork becomes proof
+
+The [standalone source-linked commentary](2026-11-20-evidentiary-deference-debt-buyers.html) develops institutionalized evidentiary deference as a hypothesis, not a legal presumption or established finding. It contrasts *Ortega v. CACH, LLC* with *Simien v. Unifund CCR Partners*, addresses current Texas justice-court rules separately from an older unverified recollection, and lays out a court-record sampling plan. It cites the FTC, CFPB and Pew research. This public HTML is not yet an SB Shell/CID portal-feed edition, a signed edition or an on-chain announcement.
+
 ## 8 November 2026: Who can say the creditor is wrong?
 
 The [standalone article](2026-11-08-independent-debt-review.html) frames debt-collection escalation and decision authority as a falsifiable procedural inquiry. It includes eleven concrete questions, the author's separately identified firsthand experiences with National Credit Systems and Rausch Sturm LLP, and a clear distinction between collector qualifications/decision powers and unsupported guesses about staff education. The article cites Rausch Sturm's public dispute and complaint routes while leaving their effectiveness unresolved. It is public HTML, not yet a signed or ledger-announced edition. Private call evidence remains in Daisy.
