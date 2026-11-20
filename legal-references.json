@@ -685,6 +685,28 @@
       "consequence": "Listed local total for one served defendant is $144.",
       "limits": "Different counties, states and private process servers can charge differently. An inability statement does not promise payment of all private expenses.",
       "source_url": "https://www.traviscountytx.gov/images/justices_of_peace/Doc/2026_JP_Civil_Fee_Schedule.pdf"
+    },
+    {
+      "id": "tx-jp-evidence-debt-claims",
+      "group": "Texas court preparation",
+      "citation": "Texas Rules of Civil Procedure 500.3(e) and 508.3",
+      "title": "Justice court evidence and debt-claim proof",
+      "source_url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf",
+      "applies_to": "Texas justice court civil cases, including a debt claim brought by an assignee, debt collector, collection agency or qualifying lender.",
+      "jurisdiction": "Texas",
+      "trigger": "Evidence or default-judgment proof offered in a Texas justice court debt-claim proceeding.",
+      "deadline": "Court-controlled pleading and hearing deadlines; no general business-record production deadline arises from these rules.",
+      "required_action": "Use the applicable justice-court procedures. Under Rule 500.3(e), the other civil/evidence rules generally do not apply unless a particular rule is needed for fairness or otherwise made applicable. Rule 508.3 requires qualifying evidence of damages to support default judgments in debt claims.",
+      "consequence": "Evidence treatment and default judgment requirements differ from county and district court procedures.",
+      "limits": "Current rules do not establish the historical rules for an older Fort Worth case. The type of court, date, record and defendant's appearance determine which provisions govern; a contested judgment is not a default merely because the plaintiff is a debt buyer.",
+      "checked": "2026-11-20",
+      "review_status": "Primary procedural text and Texas court guidance reviewed; no independent legal review",
+      "related": [
+        "debt-evidentiary-deference"
+      ],
+      "additional_sources": [
+        "https://www.jp.hctx.net/suits/about.htm"
+      ]
     }
   ],
   "case_law": [
@@ -725,6 +747,27 @@
       "url": "https://www.txcourts.gov/media/1462798/240286.pdf",
       "scope": "An amendment adding a new party ordinarily does not relate back; misnomer/misidentification exceptions require individual analysis. Starting against one defendant does not generally preserve a later-added defendant deadline.",
       "checked": "2026-10-25"
+    },
+    {
+      "id": "us-chemical-foundation-regularity",
+      "citation": "United States v. Chemical Foundation, Inc., 272 U.S. 1, 14–15 (1926)",
+      "url": "https://www.law.cornell.edu/supremecourt/text/272/1",
+      "scope": "The presumption of regularity concerns official acts by public officers. This does not grant debt buyers a presumption that their account statements are true.",
+      "checked": "2026-11-20"
+    },
+    {
+      "id": "tx-ortega-cach-business-records",
+      "citation": "Ortega v. CACH, LLC, 396 S.W.3d 622 (Tex. App.—Houston [14th Dist.] 2013)",
+      "url": "https://law.justia.com/cases/texas/fourteenth-court-of-appeals/2013/14-11-00768-cv.html",
+      "scope": "On the record and preserved objections in a debt-buyer collection suit, parts of assignment affidavits did not qualify as reliable business records; reversed and remanded. Other challenges were not preserved; no categorical bar on purchased-account records.",
+      "checked": "2026-11-20"
+    },
+    {
+      "id": "tx-simien-unifund-business-records",
+      "citation": "Simien v. Unifund CCR Partners, 321 S.W.3d 235 (Tex. App.—Houston [1st Dist.] 2010)",
+      "url": "https://law.justia.com/cases/texas/first-court-of-appeals/2010/88085.html",
+      "scope": "Debt buyer's integrated predecessor account records were admitted under the business-records exception on the foundation and evidence shown; not a presumption that all debt-buyer records are accurate.",
+      "checked": "2026-11-20"
     }
   ],
   "existing_legal_sources": [
