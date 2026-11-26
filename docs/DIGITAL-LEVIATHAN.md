@@ -106,6 +106,24 @@ World 3.0 asks whether legitimate activities such as publishing, association and
 
 The research hypothesis is that reducing mandatory intermediation can reduce dependency on a particular administrator while preserving legitimate safety, privacy, correction and accountability mechanisms. Test the distinction by identifying which actual actor can deny publication, revoke identity, suppress discovery, or withhold access, and whether a participant has a viable alternative. Do not confuse an available alternative in theory with practical access. Commons should support lawful collective agency, not evasion of applicable obligations or publication of private grievances without consent.
 
+### Twetch and Chisel: coexistence through portable identity
+
+Twetch is an example of a governed application surface, not necessarily an adversary of World 3.0. Its operators can curate feeds, manage accounts, establish membership rules and comply with applicable obligations. Chisel can provide a separate route to publish and inspect records in the larger ledger environment. Both models can coexist.
+
+The proposed demonstration is cryptographic continuity outside the original platform: where a Twetch participant independently controls the private key used to sign historical posts, Chisel could produce a new, explicitly independent publication signed by the same key. An independent reader could verify both signatures and connect the records by signer, even if the platform changes its membership rules, declines to display the new publication, or ceases operating.
+
+Distinguish four facts in the reader:
+- **Signer:** cryptographically verified signing key/address and the exact signed bytes.
+- **Historical affiliation:** independently supported evidence connecting the signer to a historical Twetch account or publication.
+- **Publication origin:** protocol, declared application and record provenance; a self-declared app label is not proof of official origin.
+- **Current membership:** separately sourced platform account status, if available; never inferred from key possession.
+
+The [Twetch field note](2026-11-26-twetch-after-the-platform.md) describes an observed B + MAP + AIP structure; its sample signature and coverage have not yet been verified. Funding inputs, change outputs and account identifiers must not be treated as interchangeable with the AIP author key. Test key accessibility and signature conventions using a consenting user's own identity or a disposable test identity. Do not assume all Twetch accounts have exportable or user-controlled author keys. Where keys change, an explicit verified continuity mechanism is needed. A valid signature demonstrates control of a key over specified bytes, not proof of a unique human, current membership, or truth of the content.
+
+For a proof of concept, verify a historical publication, locally sign a new Chisel-labelled record under the same author key using an explicitly documented compatible signing convention, and show both in an independent signer timeline. Record exact bytes, signature coverage, network and transaction ID. Do not spoof Twetch's application label or imply that an independent publication is an official Twetch post. Inclusion in Twetch's own feed is not a requirement.
+
+The broader World 3.0 principle is that a moderated surface need not become the boundary of the person's identity or the entire public information environment. Independent readers can recognize portable continuity while respecting differences in provenance and local editorial policy.
+
 ### Commons as an application of the documentary element
 
 Debt collection is a concrete test domain. Individual consumers often reconstruct similar institutional processes independently. Commons can publish reusable questions, evidence schemas, dated explanations and reviewed aggregate observations, while sensitive originals remain private. Independent scribes and indexers can present competing collections; Commons need not be the exclusive gatekeeper.
