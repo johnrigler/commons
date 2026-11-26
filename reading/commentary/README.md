@@ -1,5 +1,9 @@
 # Who controls the objection?
 
+## 26 November 2026: Twetch after the platform
+
+[Read the standalone field note](2026-11-26-twetch-after-the-platform.html) on the revived network and independent reconstruction. [Research source](../../docs/2026-11-26-twetch-after-the-platform.md).
+
 ## 26 November 2026: The public ledger as a playground
 
 [Read the standalone article](2026-11-26-the-public-ledger-as-a-playground.html) for two BSV case studies, Zoide #0216 and Indelible's declared encrypted envelope, and their implications for independent interpretation, law and decentralized belief. [Research source](../../docs/2026-11-26-the-public-ledger-as-a-playground.md). Unsigned, not pinned or ledger-announced.

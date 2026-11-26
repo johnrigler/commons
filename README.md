@@ -1,5 +1,7 @@
 # Commons
 
+[**Twetch after the platform: reconstructing a social network from the ledger**](reading/commentary/2026-11-26-twetch-after-the-platform.html) examines the 2026 return, a recent B + MAP + AIP transaction, independent archive reconstruction and an audit plan. [Research source](docs/2026-11-26-twetch-after-the-platform.md). Unsigned, standalone HTML.
+
 **Individual stories. Shared accountability.**
 
 Commons helps people turn documents, recordings, and lived experience into
