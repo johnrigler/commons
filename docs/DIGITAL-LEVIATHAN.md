@@ -54,6 +54,28 @@ Record network, transaction ID, output index or field, raw bytes or hash, parser
 
 The publication model separates an artifact from an interpretation of it. A ledger commitment or CID identifies bytes, not factual accuracy. Maintain reproducible examples and preserve exact publication versions.
 
+## World 3.0 — Collective agency and bargaining
+
+The social purpose of Commons is not merely publishing or preserving information. It is to explore whether durable, portable shared records can reduce the cost of organizing people around common interests and negotiating with institutions. "World 3.0" is a working name for the social and institutional dimension of Web3, not a claim that a new social order already exists.
+
+A measurable historical backdrop is the U.S. union membership rate among wage and salary workers: 20.1% in 1983 and 10.0% in 2025 ([BLS, Union Members](https://www.bls.gov/news.release/union2.htm)). The 2025 annual estimate excludes October because of the federal shutdown and is not strictly comparable to full-year estimates. Membership is one indicator, not a complete measure of bargaining power or evidence of why it changed.
+
+The proposed system should complement existing unions and other associations rather than presume to replace them. It also explores analogous coordination among consumers, tenants and other groups. Formal labor bargaining rights and duties are not created by software; protected concerted activity under the NLRA applies to covered employees, with statutory exclusions ([NLRB, Employee Rights](https://www.nlrb.gov/about-nlrb/rights-we-protect/your-rights/employee-rights)). Other groups require their own legal and organizational analysis.
+
+A practical coordination workflow:
+
+1. People independently document experiences, with private originals and consent-controlled disclosure.
+2. Commons publishes reusable, source-grounded explanations and carefully reviewed, de-identified findings.
+3. Independent readers and indexers discover patterns, distinguish separate cases from duplicates, and allow corrections and replies.
+4. Participants explicitly opt into a common issue, authorize a representative if desired, and pool resources or professional expertise under transparent rules.
+5. A representative can present a defined request, evidence, and mandate to an institution; participants can evaluate the response and choose next steps.
+
+Technical requirements include portable records, selective disclosure, pseudonymous participation where suitable, explicit and revocable delegation, independent verification, duplicate and fabricated-claim controls, and accountable governance of shared resources. Never place sensitive grievances, membership lists, or private evidence directly on an immutable public ledger. Hash commitments are not automatically anonymous or proof that an allegation is true.
+
+**Research hypothesis:** a shared evidence and coordination layer could reduce duplicated effort and make collective action more feasible without requiring everyone to belong to a single platform. Measure coordination costs, independent participation, evidence quality, representative accountability and actual negotiated outcomes before claiming success. Technology cannot by itself supply legal recognition, bargaining leverage, trust or collective solidarity.
+
+This is the bridge from the Digital Leviathan investigation to Commons' existing work on administrative burden and shared accountability. Chisel provides the means to write and independently inspect records; the Digital Leviathan explores the environment; Commons tests whether those records can support collective agency in World 3.0.
+
 ## Outreach pipeline
 
 Use the existing Security and BSV Conference Watch and ETHDenver watch as discovery channels. This document is the project backlog, not a live event calendar. Check organizer pages before recording dates or deadlines.
