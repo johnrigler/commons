@@ -76,6 +76,34 @@ Technical requirements include portable records, selective disclosure, pseudonym
 
 This is the bridge from the Digital Leviathan investigation to Commons' existing work on administrative burden and shared accountability. Chisel provides the means to write and independently inspect records; the Digital Leviathan explores the environment; Commons tests whether those records can support collective agency in World 3.0.
 
+## The monetary and documentary elements of World 3.0
+
+A close reading of the [Bitcoin white paper](https://nakamotoinstitute.org/library/bitcoin/) (31 October 2008), especially sections 1–3 and 10, supplies the conceptual bridge. Section 1 describes mediation costs, reversible payments and spreading demands for trust and customer information. Section 2 describes dependence on a central mint. Section 3 describes a timestamp server for data. Section 10 addresses privacy by separating public transactions from identity, with explicit limitations on linkability.
+
+Rigler's extension is that the data element of World 3.0 mirrors the monetary element: publication, authentication, chronological evidence and discovery need not depend on an indispensable publishing intermediary. This is an interpretation, not a claim that Nakamoto explicitly proposed Commons, collective bargaining or avoidance of KYC/AML requirements. Money and information have different semantics: information is copyable and may require confidentiality, correction, deletion or contextual interpretation; transaction inclusion does not establish the truth of a statement.
+
+### The instrument maker is not necessarily the intermediary
+
+Chisel's objective is to make its maintainer dispensable to activities carried out with the software. A maintainer can control a repository, deployment or index without being the mandatory custodian of keys, funds or public records. Demonstrate this distinction by testing whether a user can:
+
+- run a reviewed local or independently hosted copy without developer-controlled login or permission;
+- retain keys locally and construct, inspect and sign transactions without developer infrastructure;
+- choose independent retrieval, broadcasting and indexing providers, including a compatible node;
+- reproduce artifact interpretation using published formats and fixtures;
+- export records and migrate to another implementation if the original maintainer disappears.
+
+Inventory actual dependencies, including GitHub Pages, rigler.org/FileProxy, RPC providers, third-party APIs, gateways, libraries and update trust. Distinguish local signing from independent verification, availability and broadcast. Operators can still decline service; independent alternatives and portable records are the goal.
+
+The U.S. regulatory analogy is limited: [FinCEN FIN-2019-G001](https://www.fincen.gov/system/files/2019-05/FinCEN%20Guidance%20CVC%20FINAL%20508.pdf) (May 2019) distinguishes software development itself from using or deploying software to engage in money transmission. Applicable obligations depend on actual activities and jurisdiction, not a project's terminology or noncustodial design alone. This is not a legal determination for Chisel or associated services, nor a proposal to evade applicable compliance obligations.
+
+### Commons as an application of the documentary element
+
+Debt collection is a concrete test domain. Individual consumers often reconstruct similar institutional processes independently. Commons can publish reusable questions, evidence schemas, dated explanations and reviewed aggregate observations, while sensitive originals remain private. Independent scribes and indexers can present competing collections; Commons need not be the exclusive gatekeeper.
+
+A group can identify a shared problem, request evidence of accounting or dispute-handling processes, appoint representatives with consent, seek professional assistance and propose specific changes. Preserve responses, corrections, differences between cases and unresolved issues. Formal remedies and collective bargaining authority depend on applicable law and organizational arrangements; independent publication alone does not compel changes.
+
+**Design principle:** the person who supplies an instrument should not have to authorize every legitimate use of that instrument. The social purpose is independent inquiry, shared institutional memory and lawful collective agency rather than another indispensable administrator.
+
 ## Outreach pipeline
 
 Use the existing Security and BSV Conference Watch and ETHDenver watch as discovery channels. This document is the project backlog, not a live event calendar. Check organizer pages before recording dates or deadlines.
