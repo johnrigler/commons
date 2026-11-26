@@ -124,6 +124,18 @@ For a proof of concept, verify a historical publication, locally sign a new Chis
 
 The broader World 3.0 principle is that a moderated surface need not become the boundary of the person's identity or the entire public information environment. Independent readers can recognize portable continuity while respecting differences in provenance and local editorial policy.
 
+### Institutional recognition as one episode in a portable identity history
+
+A governed community such as Twetch is a bounded view of a larger ledger environment. Chisel's intended discovery scope is not limited to Twetch membership or any other application. This is a distinction in scope, not a claim about the relative number of active users.
+
+An independent reader should be able to display a sequence of historical publications with verified signatures and, where independently supported, dated evidence of institutional recognition, followed by independently authored publications. A gap in platform activity is not evidence of suspension, expulsion, voluntary departure or revocation. Show such reasons only when supported by separate evidence. A historical application label or author signature alone does not prove that the platform authenticated an account; preserve the evidence and provenance for that assertion.
+
+The strongest demonstration goes beyond using another application's signing interface. A participant uses an independently controlled key and mundane, reproducible processes to assemble exact message bytes, sign them locally, construct a transaction, submit it through a replaceable network interface, and independently recover and verify the result. A small inspectable browser script or command-line fixture should reproduce the signing and encoding without a Twetch session or a Chisel-controlled service. Distinguish evidence of signing-key control from exclusive custody or the identity of a particular human; a valid signature alone cannot prove how it was produced.
+
+Chisel should expose a signer-centered timeline with separate fields for verified signature, signed-byte coverage, declared application, independently established publication origin, dated evidence of platform recognition, and current membership if known. Unknowns remain unknown. The aim is not to build a larger compulsory social network but to expose the overlapping public records of many communities, including independent publications belonging to none of them.
+
+**Institutional recognition is an event in an identity's history, not necessarily the boundary of that identity.**
+
 ### Commons as an application of the documentary element
 
 Debt collection is a concrete test domain. Individual consumers often reconstruct similar institutional processes independently. Commons can publish reusable questions, evidence schemas, dated explanations and reviewed aggregate observations, while sensitive originals remain private. Independent scribes and indexers can present competing collections; Commons need not be the exclusive gatekeeper.
