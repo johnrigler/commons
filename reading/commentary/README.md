@@ -1,5 +1,9 @@
 # Who controls the objection?
 
+## 26 November 2026: The public ledger as a playground
+
+[Read the standalone article](2026-11-26-the-public-ledger-as-a-playground.html) for two BSV case studies, Zoide #0216 and Indelible's declared encrypted envelope, and their implications for independent interpretation, law and decentralized belief. [Research source](../../docs/2026-11-26-the-public-ledger-as-a-playground.md). Unsigned, not pinned or ledger-announced.
+
 ## 20 November 2026: When paperwork becomes proof
 
 The [standalone source-linked commentary](2026-11-20-evidentiary-deference-debt-buyers.html) develops institutionalized evidentiary deference as a hypothesis, not a legal presumption or established finding. It contrasts *Ortega v. CACH, LLC* with *Simien v. Unifund CCR Partners*, addresses current Texas justice-court rules separately from an older unverified recollection, and lays out a court-record sampling plan. It cites the FTC, CFPB and Pew research. This public HTML is not yet an SB Shell/CID portal-feed edition, a signed edition or an on-chain announcement.

@@ -23,6 +23,8 @@ benefits, traffic enforcement, technology, and further areas people bring.
 
 **[NCS and Experian reporting audit: data lineage and game plan](docs/2026-11-15-ncs-experian-reporting-audit.md)** examines how a collector's changed balance reaches a bureau, how to test the first-delinquency reporting date, and what records to request without publishing individual account details. This is a source research note, not yet a newly assembled standalone reading edition.
 
+[**The public ledger as a playground: art, secrecy and independent interpretation**](reading/commentary/2026-11-26-the-public-ledger-as-a-playground.html) examines Zoide #0216's 1Sat Ordinals GLB and the Indelible Claude Code-labelled encrypted OP_RETURN envelope as two independently created BSV conventions. It connects Chisel's evolving reader to the Commons project of public memory, legal argument and decentralized ethical or religious expression. [Research source](docs/2026-11-26-the-public-ledger-as-a-playground.md). Unsigned, standalone HTML; not a rebuilt CID portal edition.
+
 Open a collection title to read it in the page, follow its sources and
 connections, or add a contribution. The collection includes the bundled
 published documents and locally saved, indexed drafts. The [local

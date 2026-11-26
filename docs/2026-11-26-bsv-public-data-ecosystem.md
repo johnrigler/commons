@@ -54,3 +54,7 @@ Chisel is an instrument for examining records. Commons is a place to preserve th
 - Primary observation: supplied WhatsOnChain JSON export of the BSV transaction linked above; the GLB header and complete JSON chunk were decoded from output 0's partial script hex. MAP strings were identified in output 3.
 - Protocol and service references: 1Sat Ordinals, its metadata documentation, Khronos glTF 2.0, and WhatsOnChain transaction API documentation, linked above.
 - This is a dated research note, not a verified ownership report, signed edition, IPFS publication or ledger announcement. No Chisel code changes are implied.
+
+## Follow-up: two different kinds of publication
+
+[The public ledger as a playground](./2026-11-26-the-public-ledger-as-a-playground.md) extends this note with the Indelible encrypted envelope in block 976662, Chisel's subsequent media support, and the philosophical distinction between public storage and public intelligibility. [Printable reading page](../reading/commentary/2026-11-26-the-public-ledger-as-a-playground.html).
