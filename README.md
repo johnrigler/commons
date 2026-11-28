@@ -517,3 +517,9 @@ Record third-party material and its terms separately when adding sources.
 ## New editorial notes
 
 - [8 November 2026 — Informal discovery, procedural sludge and representation](docs/2026-11-08-informal-discovery-and-sludge.md). Working Commons argument about the cost of challenging a claim, direct recorded questioning of collectors, attorney gatekeeping as a factual question, and professional-system incentives. No individual case facts are published in this note.
+
+## Ledger format field notes
+
+[Media, presentation and format names](reading/formats/ledger-media.html) documents observed BSV section feeds, collapsible JSON inspection and Bitcom B authoring. The Commons collection has a separate entry for each format.
+
+Rebuild the static portal with `node scripts/publish-portal.mjs`. This optional authoring tool validates frozen document CIDs, writes a new immutable snapshot and updates entry links. Readers use static HTML and vanilla JavaScript.

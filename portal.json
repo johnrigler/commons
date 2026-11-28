@@ -9,6 +9,98 @@
   },
   "items": [
     {
+      "id": "ledger-media-formats",
+      "title": "Ledger media: content, presentation and format names",
+      "summary": "A field guide to sourced format names, collapsible JSON, image metadata and original bytes.",
+      "kind": "explanation",
+      "genre": "guide",
+      "related": [
+        "bsv-section-feed",
+        "json-presentation-records",
+        "bitcom-b-files"
+      ],
+      "topics": [
+        "Technology & public memory",
+        "Ledger formats"
+      ],
+      "status": "Unsigned technical field note; AI-assisted; observed schema and primary carrier specification",
+      "cid": "bafkreiceqmg3rpwuuhbnpfs6cjurvum7fx6fhsdgdza4py36afddwggwvi",
+      "path": "reading/formats/bafkreiceqmg3rpwuuhbnpfs6cjurvum7fx6fhsdgdza4py36afddwggwvi.html",
+      "fragment": "ledger-media-formats",
+      "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+      "indexed": true,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "bsv-section-feed",
+      "title": "BSV section feed — BSV_SECTION_1",
+      "summary": "The observed section-feed layout, its 37-item source example, field roles and compatible JSON source.",
+      "kind": "explanation",
+      "genre": "guide",
+      "related": [
+        "ledger-media-formats",
+        "json-presentation-records",
+        "bitcom-b-files"
+      ],
+      "topics": [
+        "Technology & public memory",
+        "Ledger formats"
+      ],
+      "status": "Unsigned technical field note; AI-assisted; observed schema and primary carrier specification",
+      "cid": "bafkreiceqmg3rpwuuhbnpfs6cjurvum7fx6fhsdgdza4py36afddwggwvi",
+      "path": "reading/formats/bafkreiceqmg3rpwuuhbnpfs6cjurvum7fx6fhsdgdza4py36afddwggwvi.html",
+      "fragment": "bsv-section-1",
+      "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+      "indexed": true,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "json-presentation-records",
+      "title": "JSON media and presentation records",
+      "summary": "How the reader separates media, style instructions and unknown schemas without inventing an application.",
+      "kind": "explanation",
+      "genre": "guide",
+      "related": [
+        "ledger-media-formats",
+        "bsv-section-feed",
+        "bitcom-b-files"
+      ],
+      "topics": [
+        "Technology & public memory",
+        "Ledger formats"
+      ],
+      "status": "Unsigned technical field note; AI-assisted; observed schema and primary carrier specification",
+      "cid": "bafkreiceqmg3rpwuuhbnpfs6cjurvum7fx6fhsdgdza4py36afddwggwvi",
+      "path": "reading/formats/bafkreiceqmg3rpwuuhbnpfs6cjurvum7fx6fhsdgdza4py36afddwggwvi.html",
+      "fragment": "json-records",
+      "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+      "indexed": true,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "bitcom-b-files",
+      "title": "Bitcom B: a typed file carrier",
+      "summary": "Original protocol source, Script push order, MIME types and intentional binary or HTML authoring.",
+      "kind": "explanation",
+      "genre": "guide",
+      "related": [
+        "ledger-media-formats",
+        "bsv-section-feed",
+        "json-presentation-records"
+      ],
+      "topics": [
+        "Technology & public memory",
+        "Ledger formats"
+      ],
+      "status": "Unsigned technical field note; AI-assisted; observed schema and primary carrier specification",
+      "cid": "bafkreiceqmg3rpwuuhbnpfs6cjurvum7fx6fhsdgdza4py36afddwggwvi",
+      "path": "reading/formats/bafkreiceqmg3rpwuuhbnpfs6cjurvum7fx6fhsdgdza4py36afddwggwvi.html",
+      "fragment": "bitcom-b",
+      "author": "LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb",
+      "indexed": true,
+      "date": "2026-11-27"
+    },
+    {
       "id": "shared-accountability",
       "title": "Shared records, collective accountability",
       "summary": "Why Commons connects independent experiences: make administrative burden visible, organize sources with AI, and preserve selected versions for shared scrutiny.",

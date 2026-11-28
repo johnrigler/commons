@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ledger media: content, presentation and format names | Commons</title>
+<style>body{margin:0;background:#f2f5f7;color:#182b35;font:17px/1.65 system-ui,sans-serif}main{max-width:880px;margin:24px auto;padding:clamp(18px,5vw,52px);background:white}h1,h2{line-height:1.2}h1{font-size:clamp(1.9rem,5vw,2.8rem)}h2{margin-top:2em;border-top:1px solid #ccd7de;padding-top:1em}a{color:#18577a;overflow-wrap:anywhere}p,td,code{overflow-wrap:anywhere}nav,.byline{font-size:.85rem}pre{overflow:auto;background:#f2f5f7;padding:16px;font:13px/1.6 ui-monospace,monospace;white-space:pre-wrap}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid #ccd7de;padding:10px;text-align:left;vertical-align:top}@media print{body{background:white;font-size:11pt}main{margin:0;padding:0}nav{display:none}h2{break-after:avoid}}</style></head>
+<body><main><nav><a href="../../index.html">Commons</a> · <a href="https://johnrigler.github.io/chisel/">Chisel portal</a></nav>
+<article><section id="ledger-media-formats"><h1>Ledger media: content, presentation and format names</h1>
+<p class="byline">27 November 2026 · Author identity: <code>LcudkPQzLuuqsnzHSmJ7iLREaHStvPKRVb</code> · Unsigned, AI-assisted technical field notes. CC0.</p>
+<p>A ledger record can contain an image, a catalog of links, and instructions for how an application should display them. A useful reader separates those roles. Chisel names recognized shapes, shows a compact format tag, and opens structured content in a colored, collapsible JSON tree. The original fields remain available as formatted source and as a JSON download.</p>
+<p>Each format deserves its own entry: the identifying marker and field layout, an actual transaction and output, the application or specification when established, an authoring example, and the reader's current limits. These entries document interpretations without changing the stored transaction.</p></section>
+
+<section id="bsv-section-1"><h2>BSV section feed — BSV_SECTION_1</h2>
+<p>This is the reader's name for an observed JSON layout, not a claim that it became an industry standard. The supplied Chisel export of <a href="https://whatsonchain.com/tx/7f137c54145aa78fa04adb7a256157fb504a275cb0fa74534c1776f157198665">BSV transaction 7f137c54…198665, output 0</a> contains an object with <code>p: "BSV_SECTION_1"</code>, section <code>deepdive</code>, a numeric timestamp, and 37 media entries under <code>f</code>. The current reader recognizes the marker together with an array-valued <code>f</code>.</p>
+<table><thead><tr><th>Field</th><th>Observed role</th></tr></thead><tbody>
+<tr><td><code>p</code></td><td>Declared layout identifier, <code>BSV_SECTION_1</code>.</td></tr>
+<tr><td><code>s</code></td><td>Section label. Other sections can use the same layout.</td></tr>
+<tr><td><code>t</code></td><td>Numeric timestamp; the sample is consistent with milliseconds since the Unix epoch. It is a payload claim.</td></tr>
+<tr><td><code>f</code></td><td>Array of media-catalog entries.</td></tr>
+<tr><td>Fields inside each entry</td><td><code>txid</code>, <code>title</code>, <code>channelName</code>, <code>owner</code>, <code>category</code>, <code>duration</code>, <code>section</code>, <code>ts</code>, <code>tags</code>, <code>isLinked</code>, <code>platform</code>, <code>embedId</code>, <code>externalUrl</code>, <code>thumbnailUrl</code>.</td></tr>
+</tbody></table>
+<p>The embedded labels and links identify claimed platforms and channels. They do not establish which application or person originally wrote the catalog, whether an <code>owner</code> controlled a key, or whether linked media remain available. Some item <code>txid</code> values are platform identifiers rather than 64-digit transaction hashes. No independently verified publisher specification is established for this layout in this note.</p>
+<h3>Writing compatible source</h3>
+<p>The following is a synthetic example of the observed shape. Keep the exact declared identifier, an array for <code>f</code>, JSON numbers and booleans in their native types, and UTF-8 text. Preserve unknown fields when editing an existing record. This example describes intentional legacy JSON authoring; it introduces no new Chisel publishing envelope.</p>
+<pre>{
+  "p": "BSV_SECTION_1",
+  "s": "example",
+  "t": 1700000000000,
+  "f": [{
+    "txid": "youtube_example",
+    "title": "Example media item",
+    "channelName": "example",
+    "platform": "youtube",
+    "isLinked": true,
+    "externalUrl": "https://example.org/watch",
+    "thumbnailUrl": "https://example.org/thumbnail.png",
+    "tags": ["example"]
+  }]
+}</pre>
+<p>A compatible reader must also know the original transaction carrier. A JSON object alone does not specify a locking script, fee, signing procedure, or complete transaction. Chisel currently inspects this structure and its original output; this guide does not add a section-feed writer.</p></section>
+
+<section id="json-records"><h2>JSON media and presentation records</h2>
+<p>For an unfamiliar layout, start with what the bytes establish: a JSON object or array, its field names, and any explicit <code>p</code>, <code>protocol</code>, <code>schema</code> or <code>format</code> identifier. Chisel labels image-related fields plus style-related fields as an <strong>Image &amp; presentation record</strong>. That is a descriptive category, not an attribution to a particular publisher.</p>
+<p>The JSON viewer uses indentation and separate colors for keys, strings, numbers, booleans and null. Each object and array opens independently. Large arrays show 100 children at a time; long strings open separately. Formatted source and the JSON download preserve access to every value. The format tag filters the currently loaded catalog; it does not scan the entire blockchain.</p>
+<p>To reproduce an established application format, retain its exact identifier, field names, types, encoding, media references and version rules. Establish required fields from its own specification or multiple complete examples before presenting a guessed recipe as compatible. Base64 inside JSON, a binary image push and an outbound image URL are different storage choices with different byte costs and dependencies.</p>
+<p>The image-with-faded-edges example has not been identified from a transaction source in this investigation. Its specific application, effect semantics and authoring rules remain unassigned. A later entry should cite that transaction and output before naming its original format.</p></section>
+
+<section id="presentation"><h2>Presentation instructions belong with the artifact</h2>
+<p>HTML and CSS can describe layout, opacity, masks and edge fading. Their presence is meaningful source material; printing their syntax in the main feed makes the record difficult to read. Chisel puts detected presentation source in its own collapsed source entry. It does not apply carried styles to the portal or run carried scripts.</p>
+<p>Reproducing an original effect requires its actual declaration, image reference, dimensions, color or transparency model, and any application-specific interpretation. A <code>style</code> field might contain CSS or an application-defined preset. Treating every such field as ordinary browser CSS would invent behavior. Once its rules are established, a dedicated bounded renderer can interpret supported properties and identify the rest as source.</p></section>
+
+<section id="bitcom-b"><h2>Bitcom B: a typed file carrier</h2>
+<p>The <a href="https://github.com/unwriter/B">original B specification by unwriter</a> defines a carrier for file data. Its protocol address is <code>19HxigV4QyBv3tHpQVcUEQyq1pzZVdoAut</code>. Following the OP_RETURN marker, use separate Script data pushes for the address, file bytes, media type, encoding and optional filename, in that order. A MIME type describes content; it does not name the application that published it.</p>
+<pre>Protocol push: 19HxigV4QyBv3tHpQVcUEQyq1pzZVdoAut
+Data push:     exact file bytes
+Media push:    image/png
+Encoding push: binary
+Filename push: example.png</pre>
+<p>For an intentional HTML file, use UTF-8 source bytes, <code>text/html</code>, <code>UTF-8</code> and the chosen filename. These are separate push fields, not a space-joined text string. B can carry binary images directly; Base64 is not required. Actual network policy, input selection and signing are separate transaction-building concerns. B itself does not authenticate an author's identity.</p></section>
+
+<section id="format-sources"><h2>Sources and review status</h2>
+<p>Primary observation: the supplied Chisel export for BSV transaction <code>7f137c54145aa78fa04adb7a256157fb504a275cb0fa74534c1776f157198665</code>, output 0. The section-feed interpretation is based on its decoded OP_RETURN JSON, not an independently authenticated publisher specification. The screenshot's section label differs; the same layout name applies when the identifier and array shape match.</p>
+<p>Carrier reference: <a href="https://github.com/unwriter/B">unwriter/B</a>, consulted 27 November 2026. Reader implementation: <a href="https://github.com/johnrigler/chisel/blob/main/chisel.portal.json.js">Chisel JSON viewer</a> and <a href="https://github.com/johnrigler/chisel/blob/main/chisel.portal.js">portal record handling</a>. No signature, pin, chain announcement, new transaction or verification of linked media is claimed.</p></section>
+</article></main></body></html>

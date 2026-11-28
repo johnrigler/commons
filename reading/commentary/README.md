@@ -1,5 +1,9 @@
 # Who controls the objection?
 
+## 27 November 2026: Ledger format field notes
+
+[Read the media and presentation guide](../formats/ledger-media.html). Separate Commons entries explain BSV_SECTION_1 section feeds, JSON presentation metadata and Bitcom B file authoring. Each keeps its source and review limits visible.
+
 ## 26 November 2026: Twetch after the platform
 
 [Read the standalone field note](2026-11-26-twetch-after-the-platform.html) on the revived network and independent reconstruction. [Research source](../../docs/2026-11-26-twetch-after-the-platform.md).
