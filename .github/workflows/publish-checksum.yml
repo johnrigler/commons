@@ -1,69 +1,32 @@
-name: Publish versioned Commons editions
+name: Check versioned Commons editions
 
 on:
   push:
     branches: [main]
     paths:
-      - '1_*.html'
-      - 'portal/1_*.html'
-      - 'index.js'
-      - 'verify.js'
-      - 'pinata.js'
-      - 'thunderwords.js'
+      - 'portal/**'
       - 'portal*.js'
-      - 'sb/*.php'
-      - 'sb/*.bash'
+      - 'portal.css'
+      - 'verify.js'
+      - 'VERSION'
       - 'portal.json'
-      - 'statements.json'
-      - 'tools/ledger-reference.html'
+      - 'scripts/publish-portal.mjs'
+      - 'reading/**'
       - '.github/workflows/publish-checksum.yml'
 
 permissions:
-  contents: write
-
-concurrency:
-  group: commons-publication-main
-  cancel-in-progress: false
+  contents: read
 
 jobs:
-  publish:
-    if: github.actor != 'github-actions[bot]'
+  publication:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          ref: main
-          persist-credentials: true
-      - name: Install PHP
-        run: sudo apt-get update && sudo apt-get install -y php-cli
-      - name: Bump canonical version, publish both pages
-        shell: bash
+          node-version: '22'
+      - name: Validate and rebuild the static portal
         run: |
-          set -euo pipefail
-          python3 - <<'PY'
-          from pathlib import Path
-          import re
-          version_file = Path('VERSION')
-          old = version_file.read_text(encoding='utf-8').strip()
-          match = re.fullmatch(r'(\d+)\.(\d+)\.(\d+)', old)
-          if not match:
-              raise SystemExit('Invalid Commons VERSION: ' + old)
-          major, minor, patch = map(int, match.groups())
-          updated = f'{major}.{minor}.{patch + 1}'
-          version_file.write_text(updated + '\n', encoding='utf-8')
-          print('Commons version', old, '->', updated)
-          PY
-          source "$GITHUB_WORKSPACE/sb/publish.bash"
-          portal_snapshot="$(sb.publish sb/portal.php index.html)"
-          verify_snapshot="$(sb.publish sb/page.php publish.html)"
-          grep -q 'AN OPEN COLLECTION · v' "$portal_snapshot"
-          grep -q 'PUBLISH / VERIFY · v' "$verify_snapshot"
-          grep -q 'SHA-256 checksum' "$verify_snapshot"
-          grep -q 'Pinata' "$verify_snapshot"
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add VERSION index.html publish.html "$portal_snapshot" "$verify_snapshot" entry/
-          if ! git diff --cached --quiet; then
-            git commit -m "chore(commons): bump version and publish editions [skip ci]"
-            git push origin HEAD:main
-          fi
+          node scripts/publish-portal.mjs
+          git diff --exit-code -- index.html entry/
+          test -z "$(git ls-files --others --exclude-standard)"

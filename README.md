@@ -523,3 +523,5 @@ Record third-party material and its terms separately when adding sources.
 [Media, presentation and format names](reading/formats/ledger-media.html) documents observed BSV section feeds, collapsible JSON inspection and Bitcom B authoring. The Commons collection has a separate entry for each format.
 
 Rebuild the static portal with `node scripts/publish-portal.mjs`. This optional authoring tool validates frozen document CIDs, writes a new immutable snapshot and updates entry links. Readers use static HTML and vanilla JavaScript.
+
+The publication workflow checks the JavaScript build against the committed snapshot; it no longer installs an interpreter or rewrites editions after a push. Historical assemblers remain archived. `tests/static-publication.mjs` checks reproducibility, frozen-byte preservation, routes and rejection of tampered sources.
