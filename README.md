@@ -1,5 +1,7 @@
 # Commons
 
+[**The Builder and the Storyteller**](reading/commentary/2026-11-28-the-builder-and-the-storyteller.html) (28 November 2026) explores the difference between doing competent work and communicating a credible account of it, the hypothesis of intermittent social crises versus chronic friction, and how builders can develop narrative competence without misrepresentation. Research-linked, unsigned standalone commentary; not a rebuilt CID portal edition.
+
 [**The Digital Leviathan: Chisel, public-ledger archaeology, and conference outreach**](docs/DIGITAL-LEVIATHAN.md) is an ongoing project with two presentation tracks: Chisel as a tool for independent writing and verification, and the Digital Leviathan as an investigation of the larger Web3 world that applications such as Twetch expose. The charter connects existing case studies to conference targets, reproducible demonstrations and a working deliverable backlog.
 
 [**Twetch after the platform: reconstructing a social network from the ledger**](reading/commentary/2026-11-26-twetch-after-the-platform.html) examines the 2026 return, a recent B + MAP + AIP transaction, independent archive reconstruction and an audit plan. [Research source](docs/2026-11-26-twetch-after-the-platform.md). Unsigned, standalone HTML.
